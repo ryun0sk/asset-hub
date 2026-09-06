@@ -1,6 +1,6 @@
 # AI関連銘柄をサプライチェーンで整理する
 
-[調達の流れと36社の株価比較を開く](index.html)
+[調達の流れと43社の株価比較を開く](index.html)
 
 調査日：2026-09-05。日本・海外を工程ごとに併記。国・地域は企業の本拠を基本とし、工場所在地や上場市場とは区別する。銘柄コードは日本株、米国ティッカー、台湾・韓国の現地コードを使用する。
 
@@ -51,11 +51,21 @@ flowchart TD
 | ⑦ HBM・DRAM：計算中のデータを高速に保持 | **SK hynix【海外／韓国・000660】、Micron【海外／米国・MU】、Samsung Electronics【海外／韓国・005930】** | GPU当たり搭載容量・帯域増加が需要を支える。HBMの世代、顧客認定、歩留まり、供給能力が重要。キオクシアはこの直接比較グループに入らない。[SK hynix](https://news.skhynix.com/en/sk-hynix-completes-worlds-first-hbm4-development-and-readies-mass-production/)・[Micron](https://www.micron.com/markets-industries/ai/ai-data-center)・[Samsung](https://semiconductor.samsung.com/dram/hbm/) |
 | **⑧ 企業向けSSD：NANDを完成品ストレージにする** | **キオクシアHD【日本・285A】、Sandisk【海外／米国・SNDK】、Samsung Electronics【海外／韓国・005930】、SK hynix／Solidigm【海外／韓国グループ・000660】、Micron【海外／米国・MU】** | NAND、コントローラー、ファームウェアなどを組み合わせ、サーバーが利用できるSSDにする。データセット・モデル・KVキャッシュ・RAG・生成データの増加が容量と性能の需要につながる。[キオクシア](https://americas.kioxia.com/en-us/business/application/ai.html)・[Samsung](https://semiconductor.samsung.com/ssd/)・[Micron](https://www.micron.com/markets-industries/ai/ai-data-center) |
 | **⑨ NANDフラッシュ：SSD内部でデータを記録** | **キオクシアHD【日本・285A】、Sandisk【海外／米国・SNDK】、Samsung Electronics【海外／韓国・005930】、SK hynix【海外／韓国・000660】、Micron【海外／米国・MU】** | SSDメーカーが記録媒体として調達する半導体。利益はNAND価格、ビット出荷量、ビット当たり原価、設備投資に左右される。キオクシアなどはNANDとSSDの両工程にまたがる。[Sandisk](https://investor.sandisk.com/news-releases/news-release-details/sandisk-celebrates-nasdaq-listing-after-completing-separation)・[SK hynix](https://news.skhynix.com/en/sk-hynix-to-establish-ai-solutions-arm-in-us/) |
-| ⑩ サーバー・システム：部品を組み合わせる | **富士通【日本・6702】、Dell Technologies【海外／米国・DELL】** | GPU・CPU・メモリ・SSDをシステム化。売上に高額GPUの仕入れが含まれるため、売上成長だけでなく粗利益と運転資金を確認。[富士通](https://www.fujitsu.com/jp/products/computing/servers/primergy/solution/private-ai-platform/)・[Dell](https://www.dell.com/en-us/shop/poweredge-ai-servers/sf/poweredge-ai-servers) |
+| ⑩ AIサーバー・ラック：部品を組み合わせる | **富士通【日本・6702】、NEC【日本・6701】、Dell【海外／米国・DELL】、HPE【海外／米国・HPE】、Supermicro【海外／米国・SMCI】、Lenovo【海外／香港・0992】、NVIDIA【海外／米国・NVDA】、Quanta【海外／台湾・2382】、Wiwynn【海外／台湾・6669】、Hon Hai／Foxconn【海外／台湾・2317】** | GPU・CPU・HBM・DRAM・SSD・ネットワーク・冷却を組み合わせる。ブランドOEM、NVIDIAのDGX、クラウド向けODMでは販売方法と利益構造が異なる。売上に高額GPUの仕入れが含まれるため、売上成長だけでなく粗利益・運転資金・顧客構成を確認。[富士通](https://www.fujitsu.com/jp/products/computing/servers/primergy/solution/private-ai-platform/)・[NEC](https://jpn.nec.com/gpu/index.html)・[Dell](https://www.dell.com/en-us/shop/poweredge-ai-servers/sf/poweredge-ai-servers)・[HPE](https://www.hpe.com/emea_europe/en/compute/ai-servers.html)・[Supermicro](https://www.supermicro.com/en/accelerators/nvidia)・[Lenovo](https://pubs.lenovo.com/ai-solution)・[NVIDIA DGX](https://docs.nvidia.com/dgx-systems/index.html)・[Quanta／QCT](https://go.qct.io/wp-content/uploads/2025/06/NV-Leaflet_20250517.pdf)・[Wiwynn](https://www.wiwynn.com/hubfs/Investors/Shareholders_Services/2026_Annual_Report_EN.pdf)・[Hon Hai](https://www.honhai.com/en-us/press-center/press-releases/latest-news/2044) |
 | ⑪ ネットワーク：多数のGPU・サーバーを接続 | **Broadcom【海外／米国・AVGO】、Arista Networks【海外／米国・ANET】、NVIDIA【海外／米国・NVDA】** | Broadcomはスイッチ半導体など、AristaはEthernetスイッチシステム、NVIDIAはNVLinkやネットワーク製品。接続速度・ポート数増加が需要につながる。規格変更と顧客構成を確認。[Broadcom](https://www.broadcom.com/topics/what-is-networking-for-ai)・[Arista](https://www.arista.com/assets/data/pdf/Whitepapers/AI-Network-WP.pdf)・[NVIDIA](https://perspectives.nvidia.com/networking/) |
 | ⑫ 光通信：データを光にして運ぶ | **フジクラ【日本・5803】、Coherent【海外／米国・COHR】、Lumentum【海外／米国・LITE】** | フジクラは光ファイバー・配線、Coherent・Lumentumは光部品・光トランシーバーなど。同じ光通信でも役割は違う。高速化、配線密度、光電変換の方式変更を確認。[フジクラ](https://www.optic-product.fujikura.com/jp/data-center-solution/)・[Coherent](https://www.coherent.com/communications/datacom/cloud-networking)・[Lumentum](https://www.lumentum.com/products/16t-2dr4-tro-osfp-transceiver-module) |
 | ⑬ 電力供給・配電：データセンターを動かす | **日立製作所【日本・6501】、Eaton【海外／アイルランド登記・ETN】、Vertiv【海外／米国・VRT】** | 日立はHitachi Energyを通じた変圧器など、Eatonは配電・電源、VertivはUPS・ラック配電など。部位の違いに注意。必要電力、受注残、納期、設備の稼働開始を追う。Eatonは米国事業基盤が大きい。[日立](https://www.hitachienergy.com/us/en/products-and-solutions/transformers/by-customer-segment/transformers-for-data-centers)・[Eaton](https://www.eaton.com/us/en-us/markets/data-centers/impact-of-ai-data-center-infrastructure/managing-ai-power-requirements.html)・[Vertiv](https://www.vertiv.com/en-ca/solutions/ai-hub/design/infrastructure-designed-to-move-as-one/) |
 | ⑭ 冷却：熱を外へ逃がす | **ダイキン工業【日本・6367】、Vertiv【海外／米国・VRT】** | ダイキンは大型空調・冷熱源など、Vertivはデータセンター冷却・液冷など。施設側冷却とチップ側液冷は補完関係もある。液冷化がすべての空調企業に同じ利益をもたらすわけではない。[ダイキン](https://www.daikin.com/about/corporate/tic/topics/feature/2026/20260630)・[Vertiv](https://www.vertiv.com/en-us/solutions/360ai/) |
+
+AIサーバーを売る会社はDellだけではない。画面では同じ「AIサーバー・ラック」工程にまとめるが、投資比較では次の3種類を分けて見る。
+
+| 種類 | 代表企業 | 主な顧客と役割 |
+|---|---|---|
+| ブランドOEM・インテグレーター | 富士通、NEC、Dell、HPE、Supermicro、Lenovo | 企業・官公庁・研究機関・クラウド事業者へ、自社ブランドのGPUサーバー、保守、導入支援を提供する |
+| 半導体・プラットフォーム企業の完成システム | NVIDIA | GPUに加え、DGXやラックスケールシステムを設計・販売する。GPU単体の供給と同じ役割ではない |
+| ODM・製造／統合企業 | Quanta、Wiwynn、Hon Hai／Foxconn | ハイパースケーラーやブランド企業の仕様に沿ってサーバー・ラックを設計、製造、統合する。最終顧客の画面にはODM名が出ないことも多い |
+
+このためDellの売上だけでAIサーバー市場全体を測れない。企業向けのブランド販売、クラウド向けODM出荷、NVIDIAのプラットフォーム販売を分け、各社のAIサーバー売上・受注残・粗利益・顧客集中を見る必要がある。
 
 OpenAI、Anthropic、Googleは同じ需要側でも立場が異なる。OpenAIはAzureやOracle Cloudを含む外部パートナーとStargate基盤を構築し、AnthropicはAWSを主要な学習・クラウド基盤としながらGoogle CloudのTPUも利用する。GoogleはGeminiを提供し、その学習・推論基盤となるGoogle CloudとTPUを自社グループで持つ。モデル企業がサーバーをすべて直接購入するとは限らず、クラウド利用契約や専用データセンター計画を通じて需要が設備側へ流れる。[OpenAI](https://openai.com/index/building-the-compute-infrastructure-for-the-intelligence-age/)・[AnthropicとAWS](https://www.anthropic.com/news/anthropic-amazon-compute)・[AnthropicとGoogle Cloud](https://www.anthropic.com/news/expanding-our-use-of-google-cloud-tpus-and-services)・[Google Cloud](https://cloud.google.com/tpu)
 

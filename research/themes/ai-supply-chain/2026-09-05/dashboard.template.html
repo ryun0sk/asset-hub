@@ -20,7 +20,7 @@
 </head>
 <body>
 <header>
- <div class="masthead"><div><div class="eyebrow">ASSET HUB / RESEARCH ATLAS</div><h1>AIの供給網と、企業の値動き。</h1><p class="subtitle">買い手 → 調達する製品 → 売り手。事業のつながりから、同じ工程の銘柄を比較する。</p></div><div class="stamp"><strong>2026.09.05 調査</strong><br>株価：2026.09.04まで<br>36社 · 日本／海外を併記</div></div>
+ <div class="masthead"><div><div class="eyebrow">ASSET HUB / RESEARCH ATLAS</div><h1>AIの供給網と、企業の値動き。</h1><p class="subtitle">買い手 → 調達する製品 → 売り手。事業のつながりから、同じ工程の銘柄を比較する。</p></div><div class="stamp"><strong>2026.09.05 調査</strong><br>株価：2026.09.04まで<br>43社 · 日本／海外を併記</div></div>
  <nav role="tablist" aria-label="表示内容"><a id="tab-map" role="tab" href="?tab=supply-chain" aria-selected="true" aria-controls="panel-map">01　調達の流れ</a><a id="tab-guide" role="tab" href="?tab=ai-functions" aria-selected="false" aria-controls="panel-guide">02　AI時代の機能整理</a><a id="tab-chart" role="tab" href="?tab=stock-comparison" aria-selected="false" aria-controls="panel-chart">03　同じ工程の株価比較</a></nav>
 </header>
 <main>
@@ -76,7 +76,7 @@ const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'
 let activeGroup='nand',selected=['285A.T','SNDK'],chart=null,currentComparison=null;
 const COLORS=['#e8424b','#327bf1','#1d8d68','#9851c8','#c47b15','#22a0b2'];
 const colorFor=s=>s==='285A.T'?COLORS[0]:s==='SNDK'?COLORS[1]:COLORS[GROUPS[activeGroup].symbols.indexOf(s)%COLORS.length];
-const shortNames={'4063.T':'信越化学','6488.TWO':'GlobalWafers','8035.T':'TEL','LRCX':'Lam','005930.KS':'Samsung','000660.KS':'SK hynix','285A.T':'キオクシア','3711.TW':'ASE','6501.T':'日立','6367.T':'ダイキン','6702.T':'富士通','DELL':'Dell','ANET':'Arista','AVGO':'Broadcom'};
+const shortNames={'4063.T':'信越化学','6488.TWO':'GlobalWafers','8035.T':'TEL','LRCX':'Lam','005930.KS':'Samsung','000660.KS':'SK hynix','285A.T':'キオクシア','3711.TW':'ASE','6501.T':'日立','6367.T':'ダイキン','6702.T':'富士通','6701.T':'NEC','DELL':'Dell','HPE':'HPE','SMCI':'Supermicro','0992.HK':'Lenovo','2382.TW':'Quanta','6669.TW':'Wiwynn','2317.TW':'Hon Hai','ANET':'Arista','AVGO':'Broadcom'};
 const groupMembers=g=>[...(g.entities||[]).map(e=>({name:e.name+(e.service?'／'+e.service:''),tag:e.status+'／'+e.country,detail:'海外／'+e.country+'・'+e.status,private:true})),...g.symbols.map(s=>({name:(g.displayNames&&g.displayNames[s])||shortNames[s]||CO[s].name,tag:CO[s].domestic?'日':CO[s].country.replace('登記',''),detail:CO[s].domestic?'日本':'海外／'+CO[s].country,symbol:s}))];
 const TAB_QUERY={map:'supply-chain',guide:'ai-functions',chart:'stock-comparison'},QUERY_TAB=Object.fromEntries(Object.entries(TAB_QUERY).map(([key,value])=>[value,key]));
 const tabFromLocation=()=>QUERY_TAB[new URLSearchParams(location.search).get('tab')]||'map';

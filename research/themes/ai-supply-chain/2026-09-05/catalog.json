@@ -66,19 +66,35 @@
     },
     {
       "id": "server",
-      "name": "サーバー・ラック",
+      "name": "AIサーバー・ラック",
       "short": "部品をシステムにする",
       "symbols": [
         "6702.T",
-        "DELL"
+        "6701.T",
+        "DELL",
+        "HPE",
+        "SMCI",
+        "0992.HK",
+        "NVDA",
+        "2382.TW",
+        "6669.TW",
+        "2317.TW"
       ],
       "row": 2,
-      "product": "GPUサーバー・統合システム",
-      "purpose": "演算・記憶・通信を組み合わせ、動作する計算機として納める",
-      "note": "実際の調達はOEM・ODM・クラウドの直接調達が混在。富士通とDellの事業構成は異なる。",
+      "product": "GPUサーバー・統合システム・ラックスケールAI基盤",
+      "purpose": "GPU・CPU・HBM・DRAM・SSD・ネットワーク・冷却を組み合わせ、導入できるサーバーやラックとして納める",
+      "note": "Dell・HPE・Supermicro・Lenovo・富士通・NECは自社ブランドのサーバーや導入支援を提供。NVIDIAはGPUだけでなくDGXなどの完成システムも販売する。Quanta・Wiwynn・Hon Haiは、主にクラウド事業者やブランド企業向けに設計・製造するODM／製造・統合企業。販売先や契約形態により、クラウド会社が部品を直接指定・調達する場合もある。",
       "roles": {
-        "6702.T": "GPUサーバー／導入サービス",
-        "DELL": "GPUサーバー／システム統合"
+        "6702.T": "PRIMERGY／GPUサーバー・導入サービス",
+        "6701.T": "Express5800／GPU・AI基盤の統合",
+        "DELL": "PowerEdge／AIサーバー・システム統合",
+        "HPE": "ProLiant・Compute XD／AIファクトリー",
+        "SMCI": "GPUサーバー・ラック統合",
+        "0992.HK": "ThinkSystem／GPUサーバー",
+        "NVDA": "DGX／ラックスケールAIシステム",
+        "2382.TW": "Quanta・QCT／クラウド向けODM",
+        "6669.TW": "Wiwynn／クラウド向けAIラックODM",
+        "2317.TW": "Hon Hai・Foxconn／AIサーバー・ラック製造"
       }
     },
     {

@@ -5,7 +5,7 @@ s=(BASE/'dashboard.template.html').read_text()
 prices=json.loads((BASE/'prices.json').read_text())
 catalog=json.loads((BASE/'catalog.json').read_text())
 known={c['symbol'] for c in prices['companies']}
-assert len(known)==36
+assert len(known)==43
 assert all(set(g['symbols']) <= known for g in catalog['groups'])
 groups={g['id'] for g in catalog['groups']}
 assert all(e[0] in groups and e[1] in groups for e in catalog['edges'])

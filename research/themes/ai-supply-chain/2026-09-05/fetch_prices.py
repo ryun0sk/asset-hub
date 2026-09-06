@@ -11,7 +11,7 @@ COMPANIES=[
 ('NVDA','NVIDIA','米国','USD'),('AMD','AMD','米国','USD'),('AVGO','Broadcom','米国','USD'),
 ('2330.TW','TSMC','台湾','TWD'),('3711.TW','ASE Technology','台湾','TWD'),('2802.T','味の素','日本','JPY'),('4062.T','イビデン','日本','JPY'),('3037.TW','Unimicron','台湾','TWD'),('6146.T','ディスコ','日本','JPY'),
 ('6857.T','アドバンテスト','日本','JPY'),('TER','Teradyne','米国','USD'),('000660.KS','SK hynix','韓国','KRW'),('MU','Micron','米国','USD'),('005930.KS','Samsung Electronics','韓国','KRW'),('285A.T','キオクシアHD','日本','JPY'),('SNDK','Sandisk','米国','USD'),
-('6702.T','富士通','日本','JPY'),('DELL','Dell Technologies','米国','USD'),('ANET','Arista Networks','米国','USD'),('5803.T','フジクラ','日本','JPY'),('COHR','Coherent','米国','USD'),('LITE','Lumentum','米国','USD'),('6501.T','日立製作所','日本','JPY'),('ETN','Eaton','アイルランド登記','USD'),('VRT','Vertiv','米国','USD'),('6367.T','ダイキン工業','日本','JPY'),('AMZN','Amazon','米国','USD'),('GOOGL','Alphabet','米国','USD'),('AAPL','Apple','米国','USD')]
+('6702.T','富士通','日本','JPY'),('6701.T','NEC','日本','JPY'),('DELL','Dell Technologies','米国','USD'),('HPE','Hewlett Packard Enterprise','米国','USD'),('SMCI','Super Micro Computer','米国','USD'),('0992.HK','Lenovo Group','香港','HKD'),('2382.TW','Quanta Computer','台湾','TWD'),('6669.TW','Wiwynn','台湾','TWD'),('2317.TW','Hon Hai Precision','台湾','TWD'),('ANET','Arista Networks','米国','USD'),('5803.T','フジクラ','日本','JPY'),('COHR','Coherent','米国','USD'),('LITE','Lumentum','米国','USD'),('6501.T','日立製作所','日本','JPY'),('ETN','Eaton','アイルランド登記','USD'),('VRT','Vertiv','米国','USD'),('6367.T','ダイキン工業','日本','JPY'),('AMZN','Amazon','米国','USD'),('GOOGL','Alphabet','米国','USD'),('AAPL','Apple','米国','USD')]
 
 def fetch(item):
  symbol,name,country,currency=item
