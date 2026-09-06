@@ -1,0 +1,218 @@
+{
+  "date": "2026-09-05",
+  "sourceRoot": "/Users/ryu/Documents/Codex/2026-09-05/new-chat-3",
+  "destRoot": "/Users/ryu/Agent/ryun0sk/asset-hub",
+  "files": [
+    {
+      "from": "outputs/kioxia-investment-review-2026-09-05.md",
+      "to": "research/companies/285A-kioxia/2026-09-05/report.md",
+      "bytes": 22757,
+      "sha256": "4c527a06e577679cca918aaf9ce044cc88f4f7dc52347c4d7aa1447f46c47359"
+    },
+    {
+      "from": "outputs/kioxia-valuation-2026-09-05.mjs",
+      "to": "research/companies/285A-kioxia/2026-09-05/valuation.mjs",
+      "bytes": 5197,
+      "sha256": "b1ef16a3eff3e4ffe39f7b5c59b91f5b892c5df951c9a1681dffcf3192891f29"
+    },
+    {
+      "from": "work/photonic-stocks-standalone.html",
+      "to": "research/themes/photonics/2026-09-05/index.html",
+      "bytes": 85452,
+      "sha256": "ed83b6cec0ff2f4d145a21e60f06dbbeaa0497854d5bc6848b7c0075fb7c5154"
+    },
+    {
+      "from": "work/photonic-stocks-2026.html",
+      "to": "research/themes/photonics/2026-09-05/chart-source.html",
+      "bytes": 31032,
+      "sha256": "ff733e711930e1303bd6fade44a942ffe409459f659dd319b8bad46ab62f7e31"
+    },
+    {
+      "from": "work/photonic-360-light.png",
+      "to": "research/themes/photonics/2026-09-05/qa/photonic-360-light.png",
+      "bytes": 117322,
+      "sha256": "4b08480d356eebb21153706d38e339bf77b41d5c608eb141bc345deabf057547"
+    },
+    {
+      "from": "work/photonic-736-dark.png",
+      "to": "research/themes/photonics/2026-09-05/qa/photonic-736-dark.png",
+      "bytes": 141005,
+      "sha256": "2935b46668c49753cae53987f1b68ba6fc26be15c789a44ef743b80b22b471d2"
+    },
+    {
+      "from": "work/photonic-736-light.png",
+      "to": "research/themes/photonics/2026-09-05/qa/photonic-736-light.png",
+      "bytes": 147306,
+      "sha256": "9e0f3f94809c261901435f1d1ed6a4dd6e0ff061bbdd1dbe93bc05c0a83a159d"
+    },
+    {
+      "from": "work/pdfs/company_disclosure.pdf",
+      "to": "research/companies/523A-seiwa/2026-09-05/sources/company_disclosure.pdf",
+      "bytes": 3863875,
+      "sha256": "4fd2e603a8bb810d809af1e7ebd56af814915a27adbc5991af52707f2dab27f0"
+    },
+    {
+      "from": "work/pdfs/company_disclosure.txt",
+      "to": "research/companies/523A-seiwa/2026-09-05/working/company_disclosure.txt",
+      "bytes": 76158,
+      "sha256": "499a5a74082e79dbdb347d1899d7eca0bd1896e5d68891f70886e8c744547a5a"
+    },
+    {
+      "from": "work/pdfs/rendered/p10-10.png",
+      "to": "research/companies/523A-seiwa/2026-09-05/working/rendered/p10-10.png",
+      "bytes": 343516,
+      "sha256": "4120bd1eee60640d1fef5c81dd14431fd450fb31aa985dd0f9017320aad32f68"
+    },
+    {
+      "from": "work/pdfs/rendered/p06-06.png",
+      "to": "research/companies/523A-seiwa/2026-09-05/working/rendered/p06-06.png",
+      "bytes": 392537,
+      "sha256": "f15f8271e303e853f0e2531d09d234fd66f39a934deccb0590869ecbc00111c0"
+    },
+    {
+      "from": "work/pdfs/rendered/p18-21-19.png",
+      "to": "research/companies/523A-seiwa/2026-09-05/working/rendered/p18-21-19.png",
+      "bytes": 184892,
+      "sha256": "96c56c5772b2c5a506e7f01386b613f7a70aaf74176d825538bfda448533b03b"
+    },
+    {
+      "from": "work/pdfs/rendered/p43-44-44.png",
+      "to": "research/companies/523A-seiwa/2026-09-05/working/rendered/p43-44-44.png",
+      "bytes": 181389,
+      "sha256": "3ea2320165dcdc8c3203dfaa08fb9646da92b5da6dd74c257aae04bccb98bfac"
+    },
+    {
+      "from": "work/pdfs/rendered/p18-21-18.png",
+      "to": "research/companies/523A-seiwa/2026-09-05/working/rendered/p18-21-18.png",
+      "bytes": 193313,
+      "sha256": "834aa0f14a562c238da077bc0f7168deeadb69108cbad6a5a7190ed37637e975"
+    },
+    {
+      "from": "work/pdfs/rendered/p18-21-20.png",
+      "to": "research/companies/523A-seiwa/2026-09-05/working/rendered/p18-21-20.png",
+      "bytes": 66257,
+      "sha256": "1166f32af16392b022a691ca59b2ee0a579051b295a54f402454ceeaeceffd89"
+    },
+    {
+      "from": "work/pdfs/rendered/p18-21-21.png",
+      "to": "research/companies/523A-seiwa/2026-09-05/working/rendered/p18-21-21.png",
+      "bytes": 216864,
+      "sha256": "b36a7d952ed59b1e99867e76c1317c9edf700bee789ef61b26f8545d2b58e057"
+    },
+    {
+      "from": "work/pdfs/rendered/p43-44-43.png",
+      "to": "research/companies/523A-seiwa/2026-09-05/working/rendered/p43-44-43.png",
+      "bytes": 238660,
+      "sha256": "4c69fab2066baa783cc6ff5320247a378af24c5ad0ea03524cb7915601ede1b7"
+    },
+    {
+      "from": "work/pdfs/rendered/p28-29-29.png",
+      "to": "research/companies/523A-seiwa/2026-09-05/working/rendered/p28-29-29.png",
+      "bytes": 744899,
+      "sha256": "04d2cd72e7812816ab0c546f2981f8cf455d57f6e18945ef1be328d5378c7276"
+    },
+    {
+      "from": "work/pdfs/rendered/p28-29-28.png",
+      "to": "research/companies/523A-seiwa/2026-09-05/working/rendered/p28-29-28.png",
+      "bytes": 442256,
+      "sha256": "eaf4c1db1bbb3d067889ef8ce13c9a5acc5487b87c05119393ae0c24c2a27dbb"
+    },
+    {
+      "from": "work/kioxia-research/capex-en.pdf",
+      "to": "research/companies/285A-kioxia/2026-09-05/sources/capex-en.pdf",
+      "bytes": 397528,
+      "sha256": "e7ffb1ed4a13cc478ab9060b89ea4a4c9cec9ef9765e8e18733b2909b427d1fc"
+    },
+    {
+      "from": "work/kioxia-research/buyback-completion-en.pdf",
+      "to": "research/companies/285A-kioxia/2026-09-05/sources/buyback-completion-en.pdf",
+      "bytes": 123848,
+      "sha256": "2b08347c0a16357c2bd80c1f47f22e501e6cb89414ee10c0ae458a3daa2b88a5"
+    },
+    {
+      "from": "work/kioxia-research/q1-release-en.pdf",
+      "to": "research/companies/285A-kioxia/2026-09-05/sources/q1-release-en.pdf",
+      "bytes": 283922,
+      "sha256": "b505f383c4dcbc218e9428c48037c0154fed29320231eff6858dfe5ebb08fdcd"
+    },
+    {
+      "from": "work/kioxia-research/q1-deck-script-en.pdf",
+      "to": "research/companies/285A-kioxia/2026-09-05/sources/q1-deck-script-en.pdf",
+      "bytes": 919836,
+      "sha256": "3fdd4e65cd5e26427a59c4b7238811eedf8087680ace992db5b04f4b8a0656ff"
+    },
+    {
+      "from": "work/kioxia-research/q1-qa-en.pdf",
+      "to": "research/companies/285A-kioxia/2026-09-05/sources/q1-qa-en.pdf",
+      "bytes": 144083,
+      "sha256": "33579b810ca221d55a99939995b622bfaf8e6a83e604c8d15f1195c7852a27e3"
+    },
+    {
+      "from": "work/kioxia-research/q1-release-en.txt",
+      "to": "research/companies/285A-kioxia/2026-09-05/working/q1-release-en.txt",
+      "bytes": 67332,
+      "sha256": "fffb928186b0e3375aa2610d022a2bba65bc363a8f7e7b78a3f2a465b8a4876d"
+    },
+    {
+      "from": "work/kioxia-research/q1-deck-script-en.txt",
+      "to": "research/companies/285A-kioxia/2026-09-05/working/q1-deck-script-en.txt",
+      "bytes": 100710,
+      "sha256": "6c62be5e6b973c9b1804edfb372c22b28a76ae54bb55f040f5be8ad85ab73641"
+    },
+    {
+      "from": "work/kioxia-research/eir-config.js",
+      "to": "research/companies/285A-kioxia/2026-09-05/working/eir-config.js",
+      "bytes": 15887,
+      "sha256": "c14d1cb32e3d7cb9d987707f4203f7a67f8e787067ec4781d0c954f5bdda546a"
+    },
+    {
+      "from": "work/kioxia-research/eir-common-conf.js",
+      "to": "research/companies/285A-kioxia/2026-09-05/working/eir-common-conf.js",
+      "bytes": 97820,
+      "sha256": "349508e98c631dff02bc43b809cacfc96fb19670ee212e061a4c6df4d4926b7a"
+    },
+    {
+      "from": "work/kioxia-research/eir-announcements.js",
+      "to": "research/companies/285A-kioxia/2026-09-05/working/eir-announcements.js",
+      "bytes": 118603,
+      "sha256": "4e3c7980cf2e4a82be84e4514c2cbdf3289ee04b771e7e0111f2ca8291875fc6"
+    },
+    {
+      "from": "work/kioxia-research/eir-common.js",
+      "to": "research/companies/285A-kioxia/2026-09-05/working/eir-common.js",
+      "bytes": 99594,
+      "sha256": "fcb86b1019dba5d9e721d73452b8def056671b002a9c5e8d315807cb87bda206"
+    },
+    {
+      "from": "work/kioxia-research/presentation.html",
+      "to": "research/companies/285A-kioxia/2026-09-05/working/presentation.html",
+      "bytes": 47032,
+      "sha256": "31787ad973f00b202e828270a1995a43a8d3a478b268fcd8cf4bfff5070856f3"
+    },
+    {
+      "from": "work/kioxia-research/deck-check-09.png",
+      "to": "research/companies/285A-kioxia/2026-09-05/working/qa/deck-check-09.png",
+      "bytes": 314068,
+      "sha256": "871f47fca62f3451038a1571c9154c943ec1900aa992736251fc543da0931bc5"
+    },
+    {
+      "from": "work/kioxia-research/deck-check-10.png",
+      "to": "research/companies/285A-kioxia/2026-09-05/working/qa/deck-check-10.png",
+      "bytes": 243254,
+      "sha256": "6ed5520910618e8b9814cb217a5a2cf2fdb0ab1f173a9e5a75d7d0cbb697fc40"
+    },
+    {
+      "from": "work/kioxia-research/release-check-01.png",
+      "to": "research/companies/285A-kioxia/2026-09-05/working/qa/release-check-01.png",
+      "bytes": 264066,
+      "sha256": "b05ea879a9c8f9b1162e52c2ba677a292d652147c6864190fe31a23d73ef6f5d"
+    }
+  ],
+  "verification": "All 34 file hashes matched immediately after move. report.md will receive a local-model-link-only update; its recorded hash is the pre-edit hash.",
+  "compatibilitySymlinks": [
+    "outputs/kioxia-investment-review-2026-09-05.md",
+    "outputs/kioxia-valuation-2026-09-05.mjs",
+    "work/photonic-stocks-standalone.html",
+    "work/photonic-stocks-2026.html"
+  ]
+}
