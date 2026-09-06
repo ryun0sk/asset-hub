@@ -20,7 +20,7 @@
 </head>
 <body>
 <header>
- <div class="masthead"><div><div class="eyebrow">ASSET HUB / RESEARCH ATLAS</div><h1>AIの供給網と、企業の値動き。</h1><p class="subtitle">買い手 → 調達する製品 → 売り手。事業のつながりから、同じ工程の銘柄を比較する。</p></div><div class="stamp"><strong>2026.09.05 調査</strong><br>株価：2026.09.04まで<br>35社 · 日本／海外を併記</div></div>
+ <div class="masthead"><div><div class="eyebrow">ASSET HUB / RESEARCH ATLAS</div><h1>AIの供給網と、企業の値動き。</h1><p class="subtitle">買い手 → 調達する製品 → 売り手。事業のつながりから、同じ工程の銘柄を比較する。</p></div><div class="stamp"><strong>2026.09.05 調査</strong><br>株価：2026.09.04まで<br>36社 · 日本／海外を併記</div></div>
  <nav role="tablist" aria-label="表示内容"><a id="tab-map" role="tab" href="?tab=supply-chain" aria-selected="true" aria-controls="panel-map">01　調達の流れ</a><a id="tab-guide" role="tab" href="?tab=ai-functions" aria-selected="false" aria-controls="panel-guide">02　AI時代の機能整理</a><a id="tab-chart" role="tab" href="?tab=stock-comparison" aria-selected="false" aria-controls="panel-chart">03　同じ工程の株価比較</a></nav>
 </header>
 <main>
@@ -82,8 +82,8 @@ const TAB_QUERY={map:'supply-chain',guide:'ai-functions',chart:'stock-comparison
 const tabFromLocation=()=>QUERY_TAB[new URLSearchParams(location.search).get('tab')]||'map';
 function setTab(which,urlMode='push'){if(!TAB_QUERY[which])which='map';for(const id of Object.keys(TAB_QUERY)){$('tab-'+id).setAttribute('aria-selected',String(id===which));$('panel-'+id).hidden=id!==which;}if(urlMode!=='none'){const url=new URL(location.href);url.searchParams.set('tab',TAB_QUERY[which]);if(url.search!==location.search)history[urlMode==='replace'?'replaceState':'pushState']({tab:which},'',url);}if(which==='chart')requestAnimationFrame(drawChart);}
 for(const id of Object.keys(TAB_QUERY))$('tab-'+id).onclick=e=>{e.preventDefault();setTab(id)};
-const rows=[['需要を生む','AIモデル・サービス'],['計算能力を運営','クラウド・AI基盤'],['設備を導入','計算設備・施設'],['部品を搭載','演算・SSD・通信'],['SSDを構成','NAND記録媒体'],['チップを製品化','製造・実装・検査'],['工場を支える','装置・基材']];
-const connectors=['↓　クラウド計算能力・専用AI基盤を調達','↓　サーバー・電源・冷却設備を調達','↓　計算設備に搭載する部品・機器を調達','↓　SSDメーカーがNANDなどを調達','↓　製造・実装を委託／メモリ各社は自社製造も行う','↓　工場で使う装置・材料を調達'];
+const rows=[['需要を生む','AIモデル・サービス'],['需要先を分ける','クラウド・端末メーカー'],['設備を導入','計算設備・施設'],['部品を搭載','演算・SSD・通信'],['SSDを構成','NAND記録媒体'],['チップを製品化','製造・実装・検査'],['工場を支える','装置・基材']];
+const connectors=['↓　クラウド基盤を調達／端末でAIを提供','↓　クラウド側はサーバー・電源・冷却設備を調達','↓　計算設備に搭載する部品・機器を調達','↓　SSDメーカーがNANDなどを調達','↓　製造・実装を委託／メモリ各社は自社製造も行う','↓　工場で使う装置・材料を調達'];
 function renderMap(){
  const incoming=new Set(CAT.edges.filter(e=>e[1]===activeGroup).map(e=>e[0])),outgoing=new Set(CAT.edges.filter(e=>e[0]===activeGroup).map(e=>e[1]));
  $('map-stages').innerHTML=rows.map((r,i)=>{const groups=CAT.groups.filter(g=>g.row===i);return `<div class="stage ${groups.length===1?'single':''}"><div class="stage-label">${r[0]}<b>${r[1]}</b></div><div class="nodes" style="--cols:${groups.length}">${groups.map(g=>{const ms=groupMembers(g);return `<button class="node ${g.id===activeGroup?'selected':incoming.has(g.id)?'buyers':outgoing.has(g.id)?'suppliers':''}" data-node="${g.id}" aria-pressed="${g.id===activeGroup}"><b>${g.name}</b><span class="purpose">${g.short}</span><span class="examples">${ms.slice(0,3).map(m=>`${m.name}〈${m.tag}〉`).join(' · ')}${ms.length>3?' ほか':''}</span></button>`}).join('')}</div></div>${i<rows.length-1?`<div class="connector">${connectors[i]}</div>`:''}`}).join('');

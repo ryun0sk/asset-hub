@@ -1,6 +1,6 @@
 # AI関連銘柄をサプライチェーンで整理する
 
-[調達の流れと35社の株価比較を開く](index.html)
+[調達の流れと36社の株価比較を開く](index.html)
 
 調査日：2026-09-05。日本・海外を工程ごとに併記。国・地域は企業の本拠を基本とし、工場所在地や上場市場とは区別する。銘柄コードは日本株、米国ティッカー、台湾・韓国の現地コードを使用する。
 
@@ -14,6 +14,7 @@
 flowchart TD
   A[企業・個人によるAI利用] --> M[AIモデル・サービス<br>OpenAI・Anthropic・Google]
   M --> B[クラウド・AI基盤<br>AWS・Google Cloudなど]
+  A --> I[スマホ・PCメーカー<br>Appleなど]
   B --> C[AIサーバー・ラック]
   W[シリコン・材料] --> F[半導体製造・先端実装]
   E[製造装置・検査装置] --> F
@@ -22,6 +23,7 @@ flowchart TD
   F --> H[HBM・DRAM]
   F --> N[NANDフラッシュ]
   N --> S[SSD：キオクシアなど]
+  N --> I
   G --> C
   H --> C
   S --> C
@@ -39,6 +41,7 @@ flowchart TD
 |---|---|---|
 | 需要側：AIモデル・サービスを作り提供する | **Google／Gemini【海外／米国・親会社Alphabet GOOGL】、OpenAI／ChatGPT【海外／米国・非上場】、Anthropic／Claude【海外／米国・非上場】** | 利用者・企業のAI利用増加→学習・推論に必要な計算能力の調達増加。OpenAIとAnthropicは独立した上場株がない。Claudeは会社名ではなくAnthropicのサービス。[OpenAI](https://openai.com/index/building-the-compute-infrastructure-for-the-intelligence-age/)・[Anthropic](https://www.anthropic.com/news/anthropic-amazon-compute)・[Google Cloud](https://cloud.google.com/tpu) |
 | 需要側：クラウド・AI基盤を運営する | **Amazon／AWS【海外／米国・AMZN】、Google Cloud【海外／米国・親会社Alphabet GOOGL】** | AIモデル企業や一般企業へ計算能力を提供し、サーバー・半導体・ネットワーク・電力・冷却を調達する。GoogleはGemini、クラウド、TPUを同じ企業グループ内に持つため複数工程に重複する。[AWS Trainium](https://aws.amazon.com/ai/machine-learning/trainium/)・[Google TPU](https://cloud.google.com/tpu) |
+| 需要側：スマホ・PCなどの端末を設計・販売する | **Apple【海外／米国・AAPL】** | iPhone・iPad・MacなどへNAND・組み込みストレージを搭載する。Appleは2026年3月期にキオクシア売上の20.4%を占める最大顧客。クラウド→企業向けSSDの経路とは分け、Apple→NANDの端末向け経路として扱う。Apple向け売上のうちAI由来の比率は非開示。[キオクシア有価証券報告書](https://www.kioxia-holdings.com/content/dam/kioxia-hd/en-jp/ir/library/securities/asset/Annual-Securities-Report-FY2025-EN.pdf) |
 | ① シリコンウェーハ：半導体の土台 | **信越化学【日本・4063】、SUMCO【日本・3436】、GlobalWafers【海外／台湾・6488】、Siltronic【海外／ドイツ・WAF】** | 半導体の生産量増加→ウェーハ需要。AI以外の用途も広く、AI好調でも一般半導体の在庫調整が響く。[製品根拠：SUMCO](https://www.sumcosi.com/products/lineup.html)・[信越化学](https://www.shinetsu.co.jp/wp-content/uploads/2022/07/Business-Activity.pdf)・[GlobalWafers](https://www.sas-globalwafers.com/en/products/)・[Siltronic](https://www.siltronic.com/en/) |
 | ② 前工程装置：回路を形成する | **東京エレクトロン【日本・8035】、Lam Research【海外／米国・LRCX】、ASML【海外／オランダ・ASML】** | 東京エレクトロンとLamはエッチングなど、ASMLは露光。微細化・NAND多層化・能力増強が設備需要を生む。装置同士でも得意工程は異なる。NAND価格上昇と装置発注増加は同時とは限らない。[TEL](https://www.tel.com/news/product/2023/20230609_001.html)・[Lam](https://www.lamresearch.com/products/our-solutions/cryogenic-etching/)・[ASML](https://www.asml.com/en/news/press-releases/2024/asml-investor-day-2024) |
 | ③ GPU・専用AI半導体の設計：計算する | **NVIDIA【海外／米国・NVDA】、AMD【海外／米国・AMD】、Broadcom【海外／米国・AVGO】** | NVIDIA・AMDはGPU、Broadcomは顧客向け専用AI半導体など。計算需要→販売数量・高機能化。GPUと専用半導体の構成比、ソフトウェア、顧客集中を確認。主要な直接比較対象は海外中心。[NVIDIA](https://www.nvidia.com/en-us/data-center/technologies/blackwell-architecture/)・[AMD](https://www.amd.com/en/products/accelerators/instinct.html)・[Broadcom](https://www.broadcom.com/solutions/ai-solutions/ai-infrastructure) |
