@@ -9,7 +9,9 @@ assert len(known)==43
 assert all(set(g['symbols']) <= known for g in catalog['groups'])
 groups={g['id'] for g in catalog['groups']}
 assert all(e[0] in groups and e[1] in groups for e in catalog['edges'])
-for token,path in [('/*__PRICE_DATA__*/','prices.json'),('/*__CATALOG_DATA__*/','catalog.json'),('/*__CHART_LIBRARY__*/','sources/chart.umd.min.js')]:
+fundamentals=json.loads((BASE/'fundamentals.json').read_text())
+assert {c['symbol'] for c in fundamentals['companies']}==known
+for token,path in [('/*__PRICE_DATA__*/','prices.json'),('/*__FUNDAMENTAL_DATA__*/','fundamentals.json'),('/*__CATALOG_DATA__*/','catalog.json'),('/*__CHART_LIBRARY__*/','sources/chart.umd.min.js')]:
     value=(BASE/path).read_text()
     if path.endswith('.json'): value=value.replace('</','<\\/')
     s=s.replace(token,value)

@@ -6,7 +6,7 @@
 
 | 対象 | 調査日 | 内容 |
 |---|---|---|
-| AI関連銘柄・サプライチェーン | 2026-09-05 | [AI時代の機能整理・調達の流れ・43社の株価比較](research/themes/ai-supply-chain/2026-09-05/index.html) · [工程別の日本・海外企業比較／キオクシアの競合](research/themes/ai-supply-chain/2026-09-05/report.md) · [調査範囲・出典方針](research/themes/ai-supply-chain/2026-09-05/README.md) |
+| AI関連銘柄・サプライチェーン | 2026-09-05 | [AI時代の機能整理・調達の流れ・43社の株価・PER・EPS比較](research/themes/ai-supply-chain/2026-09-05/index.html) · [工程別の日本・海外企業比較／キオクシアの競合](research/themes/ai-supply-chain/2026-09-05/report.md) · [調査範囲・出典方針](research/themes/ai-supply-chain/2026-09-05/README.md) |
 | キオクシア（285A） | 2026-09-05 | [投資判断レポート](research/companies/285A-kioxia/2026-09-05/report.md) · [評価モデル](research/companies/285A-kioxia/2026-09-05/valuation.mjs) · [資料・引き継ぎ](research/companies/285A-kioxia/2026-09-05/README.md) |
 | 光半導体・光インターコネクト | 2026-09-05 | [株価比較チャート](research/themes/photonics/2026-09-05/index.html) · [説明・編集元](research/themes/photonics/2026-09-05/README.md) |
 | セイワホールディングス（523A） | 2026-09-05 | [決算資料・調査素材](research/companies/523A-seiwa/2026-09-05/README.md) |
