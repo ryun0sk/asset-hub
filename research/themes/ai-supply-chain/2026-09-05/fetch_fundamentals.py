@@ -1,4 +1,4 @@
-"""Fetch fixed-cutoff annual EPS and the FX series needed for reference P/E charts."""
+"""Fetch fixed-cutoff EPS/P-E histories and FX used by the valuation charts."""
 from pathlib import Path
 import concurrent.futures
 import datetime as dt
@@ -55,7 +55,12 @@ def fetch_eps(company):
     params = urllib.parse.urlencode(
         {
             "symbol": symbol,
-            "type": "annualDilutedEPS,annualBasicEPS",
+            "type": (
+                "annualDilutedEPS,annualBasicEPS,"
+                "quarterlyDilutedEPS,quarterlyBasicEPS,"
+                "trailingDilutedEPS,trailingBasicEPS,"
+                "trailingPeRatio,trailingForwardPeRatio"
+            ),
             "period1": PERIOD1,
             "period2": PERIOD2,
         },
@@ -69,26 +74,52 @@ def fetch_eps(company):
     for result in parsed.get("result") or []:
         kind = result["meta"]["type"][0]
         series[kind] = result.get(kind, [])
-    diluted = series.get("annualDilutedEPS") or []
-    basic = series.get("annualBasicEPS") or []
-    source_rows = diluted if diluted else basic
-    basis = "diluted" if diluted else "basic"
-    rows = []
-    for row in source_rows:
-        value = row.get("reportedValue", {}).get("raw")
-        date = row.get("asOfDate")
-        if not date or date > END or value is None or not math.isfinite(value):
-            continue
-        rows.append({"periodEnd": date, "eps": round(value, 8)})
+
+    def eps_rows(diluted_key, basic_key):
+        diluted = series.get(diluted_key) or []
+        basic = series.get(basic_key) or []
+        source_rows = diluted if diluted else basic
+        basis = "diluted" if diluted else "basic"
+        rows = []
+        for row in source_rows:
+            value = row.get("reportedValue", {}).get("raw")
+            date = row.get("asOfDate")
+            if not date or date > END or value is None or not math.isfinite(value):
+                continue
+            rows.append({"periodEnd": date, "eps": round(value, 8)})
+        currencies = {
+            row.get("currencyCode")
+            for row in source_rows
+            if row.get("currencyCode") and row.get("asOfDate") <= END
+        }
+        return rows, basis, currencies
+
+    def ratio_rows(key):
+        rows = []
+        for row in series.get(key) or []:
+            value = row.get("reportedValue", {}).get("raw")
+            date = row.get("asOfDate")
+            if not date or date > END or value is None or not math.isfinite(value) or value <= 0:
+                continue
+            rows.append({"date": date, "value": round(value, 8)})
+        return rows
+
+    rows, basis, currencies = eps_rows("annualDilutedEPS", "annualBasicEPS")
+    quarterly_rows, quarterly_basis, quarterly_currencies = eps_rows(
+        "quarterlyDilutedEPS", "quarterlyBasicEPS"
+    )
+    ttm_rows, ttm_basis, ttm_currencies = eps_rows(
+        "trailingDilutedEPS", "trailingBasicEPS"
+    )
     assert len(rows) >= 2, (symbol, len(rows))
-    assert len({r["periodEnd"] for r in rows}) == len(rows)
-    currencies = {
-        row.get("currencyCode")
-        for row in source_rows
-        if row.get("currencyCode") and row.get("asOfDate") <= END
-    }
+    for values in (rows, quarterly_rows, ttm_rows):
+        assert len({r["periodEnd"] for r in values}) == len(values)
+    currencies |= quarterly_currencies | ttm_currencies
     assert len(currencies) == 1, (symbol, currencies)
     eps_currency = currencies.pop()
+
+    def divide_eps(values, ratio):
+        return [{**row, "eps": round(row["eps"] / ratio, 8)} for row in values]
 
     # Yahoo had adjusted Wiwynn's price history for the 2026-09-02 stock
     # dividend at the cutoff, while its EPS series still used the old share
@@ -96,7 +127,9 @@ def fetch_eps(company):
     adjustments = []
     if symbol == "6669.TW":
         ratio = 2.9827947
-        rows = [{**row, "eps": round(row["eps"] / ratio, 8)} for row in rows]
+        rows = divide_eps(rows, ratio)
+        quarterly_rows = divide_eps(quarterly_rows, ratio)
+        ttm_rows = divide_eps(ttm_rows, ratio)
         adjustments.append({
             "reason": "2026-09-02 stock dividend / split alignment",
             "ratio": ratio,
@@ -121,11 +154,17 @@ def fetch_eps(company):
         "priceCurrency": company["currency"],
         "epsCurrency": eps_currency,
         "epsBasis": basis,
+        "quarterlyEpsBasis": quarterly_basis,
+        "ttmEpsBasis": ttm_basis,
         "source": url,
         "retrievedAt": dt.datetime.now(dt.timezone.utc).isoformat(),
         "sha256": hashlib.sha256(raw).hexdigest(),
         "adjustments": adjustments,
         "rows": rows,
+        "quarterlyRows": quarterly_rows,
+        "ttmRows": ttm_rows,
+        "trailingPeRows": ratio_rows("trailingPeRatio"),
+        "forwardPeRows": ratio_rows("trailingForwardPeRatio"),
     }
 
 
@@ -174,7 +213,11 @@ if __name__ == "__main__":
         "provider": "Yahoo Finance fundamentals-timeseries and chart endpoints",
         "end": END,
         "retrievedAt": dt.datetime.now(dt.timezone.utc).isoformat(),
-        "methodology": "Annual reported EPS at fiscal period end; diluted EPS, or basic EPS only when diluted is unavailable.",
+        "methodology": (
+            "Annual, quarterly and trailing-twelve-month reported EPS at fiscal "
+            "period end; diluted EPS, or basic EPS only when diluted is unavailable. "
+            "Trailing and forward P/E ratios are provider-reported historical snapshots."
+        ),
         "companies": companies,
         "fx": fx,
     }
