@@ -37,6 +37,14 @@ MISSING_ANNUAL_EPS = {
         "source": "https://www.daikin.com/-/media/DB861448CF134980AE6819F941132C7D.ashx",
     },
 }
+KIOXIA_Q1_FY2026 = {
+    "periodEnd": "2026-06-30",
+    "publishedDate": "2026-07-31",
+    "dilutedEps": 1525.09,
+    "priorYearQuarterDilutedEps": 33.75,
+    "priorAnnualTtmDilutedEps": 1009.15,
+    "source": "https://ssl4.eir-parts.net/doc/285A/tdnet/2859908/00.pdf",
+}
 
 
 def read_url(url):
@@ -111,6 +119,8 @@ def fetch_eps(company):
     ttm_rows, ttm_basis, ttm_currencies = eps_rows(
         "trailingDilutedEPS", "trailingBasicEPS"
     )
+    trailing_pe_rows = ratio_rows("trailingPeRatio")
+    forward_pe_rows = ratio_rows("trailingForwardPeRatio")
     assert len(rows) >= 2, (symbol, len(rows))
     for values in (rows, quarterly_rows, ttm_rows):
         assert len({r["periodEnd"] for r in values}) == len(values)
@@ -144,6 +154,43 @@ def fetch_eps(company):
             "periodEnd": addition["periodEnd"],
             "source": addition["source"],
         })
+    if symbol == "285A.T":
+        correction = KIOXIA_Q1_FY2026
+        ttm_eps = round(
+            correction["priorAnnualTtmDilutedEps"]
+            - correction["priorYearQuarterDilutedEps"]
+            + correction["dilutedEps"],
+            8,
+        )
+        quarterly_rows = [
+            row for row in quarterly_rows if row["periodEnd"] != correction["periodEnd"]
+        ]
+        quarterly_rows.append({
+            "periodEnd": correction["periodEnd"],
+            "eps": correction["dilutedEps"],
+        })
+        quarterly_rows.sort(key=lambda row: row["periodEnd"])
+        ttm_rows = [row for row in ttm_rows if row["periodEnd"] != correction["periodEnd"]]
+        ttm_rows.append({"periodEnd": correction["periodEnd"], "eps": ttm_eps})
+        ttm_rows.sort(key=lambda row: row["periodEnd"])
+        for ratio_row in trailing_pe_rows:
+            if ratio_row["date"] < correction["publishedDate"]:
+                continue
+            prices = [row for row in company["rows"] if row["date"] <= ratio_row["date"]]
+            if not prices:
+                continue
+            price = prices[-1]
+            ratio_row["providerValue"] = ratio_row["value"]
+            ratio_row["value"] = round(price["close"] / ttm_eps, 8)
+            ratio_row["priceDate"] = price["date"]
+        adjustments.append({
+            "reason": "Yahoo TTM EPS lagged the FY2026 Q1 release; inserted official diluted EPS and recalculated post-release trailing P/E snapshots",
+            "periodEnd": correction["periodEnd"],
+            "publishedDate": correction["publishedDate"],
+            "quarterlyDilutedEps": correction["dilutedEps"],
+            "ttmDilutedEps": ttm_eps,
+            "source": correction["source"],
+        })
 
     path = BASE / "sources" / "fundamentals" / f"{symbol}.json"
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -163,8 +210,8 @@ def fetch_eps(company):
         "rows": rows,
         "quarterlyRows": quarterly_rows,
         "ttmRows": ttm_rows,
-        "trailingPeRows": ratio_rows("trailingPeRatio"),
-        "forwardPeRows": ratio_rows("trailingForwardPeRatio"),
+        "trailingPeRows": trailing_pe_rows,
+        "forwardPeRows": forward_pe_rows,
     }
 
 
