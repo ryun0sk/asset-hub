@@ -119,8 +119,8 @@ function showResearch({entry, item}, anchor = '') {
   const url = fileUrl(item.path);
   setHead({
     eyebrow: `${KIND_LABELS[entry.kind] || ''} · 調査日 ${entry.date}`,
-    title: entry.title,
-    meta: `${item.label} · ${item.path}`,
+    title: `【${entry.title}】${item.label}`,
+    meta: item.path,
     crumb: `${entry.title} · ${item.label}`,
     openUrl: url,
     topMeta: `調査日 ${entry.date}`,
