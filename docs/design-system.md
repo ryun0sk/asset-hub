@@ -93,6 +93,8 @@ UiCharts.mount(host);                // host内のすべてのグラフを有効
 | 形 | `--radius-small`(4) / `--radius-control`(7) / `--border-width-thin/medium/strong` |
 | ビューア | `--viewer-offset`（iframeの高さ＝100vh−この値）、`--doc-max-width`（本文の最大幅） |
 
+文字サイズは Pathosion Ops の密度にそろえる。注記・版ボタン・補足は10px、表・一覧の本文は11px、Markdown資料の本文は12px（見出しはh1 16px・h2 14px・h3 13px、表11px・表見出し10px、コード11px）。
+
 ```css
 .example-card {
   padding: var(--space-12) var(--space-16);
