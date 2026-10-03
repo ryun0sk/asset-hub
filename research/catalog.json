@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-03T07:20:35Z",
+  "generatedAt": "2026-10-03T08:52:18Z",
   "groups": [
     {
       "id": "themes",
@@ -157,6 +157,26 @@
             }
           ],
           "code": "285A"
+        },
+        {
+          "id": "6857-advantest-2026-10-03",
+          "title": "アドバンテスト（6857）",
+          "date": "2026-10-03",
+          "kind": "company",
+          "slug": "6857-advantest",
+          "items": [
+            {
+              "label": "株価の変動要因",
+              "path": "research/companies/6857-advantest/2026-10-03/stock-drivers.md",
+              "type": "md"
+            },
+            {
+              "label": "調査の前提・資料",
+              "path": "research/companies/6857-advantest/2026-10-03/README.md",
+              "type": "md"
+            }
+          ],
+          "code": "6857"
         },
         {
           "id": "285A-kioxia-2026-09-05",
