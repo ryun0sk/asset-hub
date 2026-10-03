@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-03T05:16:04Z",
+  "generatedAt": "2026-10-03T07:20:35Z",
   "groups": [
     {
       "id": "themes",
@@ -133,6 +133,11 @@
             {
               "label": "投資判断レポート",
               "path": "research/companies/285A-kioxia/2026-10-03/report.md",
+              "type": "md"
+            },
+            {
+              "label": "株価の変動要因",
+              "path": "research/companies/285A-kioxia/2026-10-03/stock-drivers.md",
               "type": "md"
             },
             {

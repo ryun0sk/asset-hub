@@ -28,6 +28,7 @@ FILES = {
     "index.html": ("html", "ダッシュボード"),
     "chart-source.html": ("html", "編集元HTML"),
     "report.md": ("md", "レポート"),
+    "stock-drivers.md": ("md", "株価の変動要因"),
     "README.md": ("md", "README・資料一覧"),
     "related-links.md": ("md", "関連資料・着想元"),
     "valuation.mjs": ("code", "評価モデル"),
