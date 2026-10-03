@@ -8,7 +8,7 @@
 - 価格: Yahoo Finance 公開チャートAPI (query1.finance.yahoo.com/v8/finance/chart)、キー不要。
 - 系列: 各市場の現地通貨・配当調整後終値 (adjclose)。株式分割はYahoo側で遡及調整済み。
 - 指数: 2026年最初の取引日 = 100。日次を5取引日ごとに間引き、最終取引日を必ず含める。
-- 表示枠（HTMLヘッダ・スタイル・iframeラッパー）は前回版 ../2026-09-05/index.html を流用する。
+- チャート文書（iframe内の srcdoc）は前回版 ../2026-09-05/index.html から取り出して流用し、二重のiframeにせずそのまま index.html にする。
 出力: chart-source.html, index.html, prices-summary.csv（同フォルダ）, working/raw/*.json（Git対象外）
 """
 import csv
@@ -157,9 +157,10 @@ def main():
     a = inner.find('<div id="photonic-stocks-2026"')
     b = inner.find("</script>", inner.find("groups.forEach(buildPanel);")) + len("</script>")
     new_inner = inner[:a] + frag.rstrip("\n") + inner[b:]
-    new_outer = outer[:m_.start(1)] + html.escape(new_inner, quote=True) + outer[m_.end(1):]
-    new_outer = new_outer.replace("Photonic Stocks 2026", "Photonic Stocks 2026 (to %s)" % last_date)
-    (HERE / "index.html").write_text(new_outer)
+    # Serve the chart document itself (no nested sandboxed iframe) so the dashboard can size the
+    # frame to the content and the page scrolls like the other documents.
+    new_inner = new_inner.replace("Photonic Stocks 2026", "Photonic Stocks 2026 (to %s)" % last_date)
+    (HERE / "index.html").write_text(new_inner)
     print("最終取引日", last_date, "系列数", len(raw))
 
 
