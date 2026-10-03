@@ -4,11 +4,18 @@
   "account": "ryun0sk.takagishi@gmail.com",
   "region": "asia-northeast1",
   "service": "asset-hub",
-  "allowed_emails": ["ryun0sk.takagishi@gmail.com"],
+  "allowed_emails": [
+    "ryun0sk.takagishi@gmail.com",
+    "ryunosuke.takagishi@pathosion.com"
+  ],
   "cost_control": {
     "currency": "JPY",
     "monthly_project_budget": 500,
-    "thresholds": [0.5, 0.8, 1.0],
+    "thresholds": [
+      0.5,
+      0.8,
+      1.0
+    ],
     "billing_account": "011D96-201140-611FBC"
   },
   "cost_reporting": {
