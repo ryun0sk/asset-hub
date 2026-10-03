@@ -62,7 +62,7 @@
   border: var(--border-width-thin) solid var(--line);
   border-left: var(--border-width-strong) solid var(--blue-light);
   border-radius: var(--radius-small);
-  font-size: var(--font-size-caption);
+  font-size: var(--font-size-micro);
   color: var(--body);
 }
 .snapshot-note > span { font-size: var(--font-size-subheading); line-height: var(--line-height-heading); color: var(--blue); }
@@ -82,7 +82,7 @@
 .no-archive { color: var(--muted); }
 .research-table td { padding: var(--space-12) var(--space-14); vertical-align: middle; }
 .entry-link {
-  font-size: var(--font-size-small);
+  font-size: var(--font-size-caption);
   font-weight: var(--font-weight-semibold);
   color: var(--navy);
 }
@@ -125,7 +125,7 @@
   align-items: center;
   gap: var(--space-6);
 }
-.version-label { margin-right: var(--space-4); font-size: var(--font-size-caption); color: var(--muted); }
+.version-label { margin-right: var(--space-4); font-size: var(--font-size-micro); color: var(--muted); }
 .version-chip {
   display: inline-flex;
   align-items: center;
@@ -134,7 +134,7 @@
   border: var(--border-width-thin) solid var(--line);
   border-radius: var(--radius-small);
   background: var(--surface);
-  font-size: var(--font-size-caption);
+  font-size: var(--font-size-micro);
   font-variant-numeric: tabular-nums;
   color: var(--body);
 }
@@ -145,7 +145,7 @@
 /* Archive notice: a .snapshot-note in amber. */
 .archive-note { background: var(--amber-mist); border-left-color: var(--amber-ink); }
 .archive-note > span:first-child { color: var(--amber-ink); }
-.archive-note > .archive-text { font-size: var(--font-size-caption); line-height: var(--line-height-reading); color: var(--body); }
+.archive-note > .archive-text { font-size: var(--font-size-micro); line-height: var(--line-height-reading); color: var(--body); }
 .archive-note a { margin-left: var(--space-4); white-space: nowrap; color: var(--navy); font-weight: var(--font-weight-semibold); text-decoration: underline; text-underline-offset: 3px; }
 .viewer {
   background: var(--surface);
@@ -175,7 +175,7 @@
   justify-content: space-between;
   gap: var(--space-12);
   margin-bottom: var(--space-12);
-  font-size: var(--font-size-caption);
+  font-size: var(--font-size-micro);
   color: var(--muted);
 }
 .doc-code {
@@ -187,7 +187,7 @@
   border: var(--border-width-thin) solid var(--line);
   border-radius: var(--radius-small);
   font-family: var(--font-family-mono);
-  font-size: var(--font-size-small);
+  font-size: var(--font-size-caption);
   line-height: var(--line-height-control);
   color: var(--ink);
   tab-size: 2;
