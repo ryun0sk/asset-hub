@@ -86,22 +86,6 @@
 }
 
 /* Research viewer. */
-.doc-tabs {
-  display: flex;
-  gap: var(--space-20);
-  overflow-x: auto;
-  margin-bottom: var(--space-12);
-  border-bottom: var(--border-width-thin) solid var(--line);
-  white-space: nowrap;
-}
-.doc-tabs a {
-  padding: var(--space-6) var(--space-0) var(--space-8);
-  border-bottom: var(--border-width-medium) solid transparent;
-  font-size: var(--font-size-small);
-  color: var(--muted);
-}
-.doc-tabs a:hover { color: var(--navy); }
-.doc-tabs a.active { color: var(--navy); border-bottom-color: var(--blue); font-weight: var(--font-weight-semibold); }
 #researchSection .snapshot-note { margin-bottom: var(--space-12); }
 .viewer {
   background: var(--surface);

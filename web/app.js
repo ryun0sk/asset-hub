@@ -115,7 +115,7 @@ function showHome() {
     </section>`;
 }
 
-function showResearch({entry, item, index}, anchor = '') {
+function showResearch({entry, item}, anchor = '') {
   const url = fileUrl(item.path);
   setHead({
     eyebrow: `${KIND_LABELS[entry.kind] || ''} · 調査日 ${entry.date}`,
@@ -127,23 +127,22 @@ function showResearch({entry, item, index}, anchor = '') {
   });
   if (item.type === 'pdf' && url) $('pageActions').innerHTML = `<a class="button" href="${esc(url)}" download>PDFをダウンロード</a>`;
   const host = $('researchSection');
-  const tabs = `<nav class="doc-tabs" aria-label="${esc(entry.title)}の資料">${entry.items.map((other, n) => `<a href="${routeFor(entry.id, n)}"${n === index ? ' class="active" aria-current="page"' : ''}>${esc(other.label)}</a>`).join('')}</nav>`;
   const note = `<p class="notice snapshot-note"><span aria-hidden="true">ⓘ</span>調査日（${esc(entry.date)}）時点のスナップショットです。現在の株価・投資判断ではありません。</p>`;
   const token = ++renderToken;
   const title = `${entry.title} — ${item.label}`;
   if (!url) {
-    host.innerHTML = `${tabs}<p class="empty" role="alert">この資料は表示できません。</p>`;
+    host.innerHTML = `<p class="empty" role="alert">この資料は表示できません。</p>`;
     return;
   }
   if (item.type === 'html') {
-    host.innerHTML = `${tabs}${note}<div class="viewer"><iframe class="viewer-frame" src="${esc(url)}" title="${esc(title)}" sandbox="${SANDBOX}" referrerpolicy="no-referrer"></iframe></div>`;
+    host.innerHTML = `${note}<div class="viewer"><iframe class="viewer-frame" src="${esc(url)}" title="${esc(title)}" sandbox="${SANDBOX}" referrerpolicy="no-referrer"></iframe></div>`;
     return;
   }
   if (item.type === 'pdf') {
-    host.innerHTML = `${tabs}<div class="viewer"><iframe class="viewer-frame" src="${esc(url)}" title="${esc(title)}"></iframe></div><p class="viewer-fallback">PDFが表示されない場合は <a href="${esc(url)}" download>ダウンロード</a> するか、<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">新しいタブで開いて</a>ください。</p>`;
+    host.innerHTML = `<div class="viewer"><iframe class="viewer-frame" src="${esc(url)}" title="${esc(title)}"></iframe></div><p class="viewer-fallback">PDFが表示されない場合は <a href="${esc(url)}" download>ダウンロード</a> するか、<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">新しいタブで開いて</a>ください。</p>`;
     return;
   }
-  host.innerHTML = `${tabs}${note}<div class="doc-panel"><p class="empty" role="status">資料を読み込んでいます…</p></div>`;
+  host.innerHTML = `${note}<div class="doc-panel"><p class="empty" role="status">資料を読み込んでいます…</p></div>`;
   fetchText(url).then(text => {
     if (token !== renderToken) return;
     const body = item.type === 'md'
