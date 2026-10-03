@@ -1,0 +1,19 @@
+# Allowlist. infra/deploy.py already stages only servable files; this guards local builds too.
+*
+!requirements.txt
+!backend/
+!backend/*.py
+!web/
+!web/*.html
+!web/*.js
+!web/*.css
+!web/*.svg
+!web/*.png
+!web/*.ico
+!web/*.woff2
+!research/
+**/working
+**/qa
+**/.*
+research/**/*.py
+research/**/*.cjs

@@ -13,6 +13,21 @@
 
 すべて調査日時点のスナップショットです。既存資料の移行に伴う株価の再取得や投資判断の更新は行っていません。新規調査の範囲は各フォルダのREADMEに記載しています。
 
+## ダッシュボードアプリ
+
+上の調査を左タブから閲覧できるWebアプリです。デザインは pathosion-ops に準拠し、Cloud Run + IAP（許可したGoogleアカウントのみ）で公開します。最下部の「コスト」タブで、このシステムのGCP利用料金（BigQuery請求エクスポート由来）を確認できます。
+
+| 対象 | 内容 |
+|---|---|
+| [web/](web/) | 画面（素のHTML/CSS/JS、ビルド不要） |
+| [backend/](backend/) | 配信サーバー・IAP検証・コスト集計（Python標準ライブラリ） |
+| [infra/](infra/) | デプロイ設定・スクリプト |
+| [docs/design-system.md](docs/design-system.md) | デザインシステム（トークン・コンポーネント） |
+| [docs/deploy.md](docs/deploy.md) | デプロイ・コスト集計の手順 |
+| [research/catalog.json](research/catalog.json) | 左タブの一覧。調査を追加したら `python3 scripts/build_catalog.py` で再生成 |
+
+ローカル確認: `python3 -m backend.server --port 4330` → http://localhost:4330
+
 ## 整理ルール
 
 ```text
