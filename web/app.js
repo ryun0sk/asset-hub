@@ -56,7 +56,9 @@ function syncNav(view, found) {
   });
 }
 
-function setHead({eyebrow, title, meta, crumb, openUrl, topMeta}) {
+// compact: research documents use a one-line heading (title + meta) so the document starts higher.
+function setHead({eyebrow, title, meta, crumb, openUrl, topMeta, compact = false}) {
+  document.body.classList.toggle('compact-head', compact);
   $('pageEyebrow').textContent = eyebrow || '';
   $('pageTitle').textContent = title;
   $('pageMeta').textContent = meta || '';
@@ -147,9 +149,9 @@ function showResearch({entry, item}, anchor = '') {
   const url = fileUrl(item.path);
   const versions = versionsOf(catalog, entry), newest = versions[0], archived = newest && newest.id !== entry.id;
   setHead({
-    eyebrow: `${KIND_LABELS[entry.kind] || ''} · 調査日 ${entry.date}${archived ? ' · アーカイブ' : ''}`,
     title: `【${entry.title}】${item.label}`,
-    meta: item.path,
+    meta: `${KIND_LABELS[entry.kind] || ''} · 調査日 ${entry.date}${archived ? ' · アーカイブ' : ''} · ${item.path}`,
+    compact: true,
     crumb: `${entry.title} · ${item.label}`,
     openUrl: url,
     topMeta: `調査日 ${entry.date}`,
@@ -158,7 +160,7 @@ function showResearch({entry, item}, anchor = '') {
   const host = $('researchSection');
   const versionNav = versionBar(entry, item);
   const archiveNote = archived ? `<p class="notice snapshot-note archive-note" role="note"><span aria-hidden="true">⏱</span><span class="archive-text">過去の調査（${esc(entry.date)}時点）をアーカイブとして表示しています。<a href="${routeFor(newest.id, counterpartIndex(item, newest))}">最新の調査（${esc(newest.date)}）を開く →</a></span></p>` : '';
-  const note = archiveNote || `<p class="notice snapshot-note"><span aria-hidden="true">ⓘ</span>調査日（${esc(entry.date)}）時点のスナップショットです。現在の株価・投資判断ではありません。</p>`;
+  const note = archiveNote || `<p class="notice snapshot-note"><span aria-hidden="true">ⓘ</span>${esc(entry.date)}時点のスナップショット（現在の株価・投資判断ではありません）</p>`;
   const token = ++renderToken;
   const title = `${entry.title} — ${item.label}`;
   // Version bar and notice share one row so the document starts close to the heading.
