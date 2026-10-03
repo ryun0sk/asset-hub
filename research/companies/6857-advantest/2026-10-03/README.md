@@ -2,7 +2,7 @@
 
 - [株価の変動要因（要因一覧・日経平均寄与度・米国前夜の連動・決算反応・キオクシア等との連動）](stock-drivers.md)
 - [変動要因の計算スクリプト](stock_drivers.py)（`python3 stock_drivers.py`、保存データだけで再計算する場合は `--offline`。取得データは working/）
-- 関連：[キオクシア（285A）株価の変動要因](../../285A-kioxia/2026-10-03/stock-drivers.md) · [AIサプライチェーン調査](../../../themes/ai-supply-chain/2026-10-03/report.md)
+- 関連：[キオクシア（285A）株価の変動要因](../../285A-kioxia/2026-10-03/stock-drivers.md) · [イビデン（4062）株価の変動要因](../../4062-ibiden/2026-10-03/stock-drivers.md) · [AIサプライチェーン調査](../../../themes/ai-supply-chain/2026-10-03/report.md)
 - [全調査の一覧](../../../../README.md)
 
 ## 調査の前提

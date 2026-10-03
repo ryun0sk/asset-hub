@@ -2,7 +2,7 @@
 
 - [投資判断レポート](report.md)
 - [株価の変動要因（要因一覧・SNS投稿の論点の検証）](stock-drivers.md)
-- 関連：[アドバンテスト（6857）株価の変動要因](../../6857-advantest/2026-10-03/stock-drivers.md)
+- 関連：[アドバンテスト（6857）株価の変動要因](../../6857-advantest/2026-10-03/stock-drivers.md) · [イビデン（4062）株価の変動要因](../../4062-ibiden/2026-10-03/stock-drivers.md)
 - [評価モデル](valuation.mjs)
 - [変動要因の計算スクリプト](stock_drivers.py)（`python3 stock_drivers.py`。取得データは working/）
 - [前回版（2026-09-05）](../2026-09-05/report.md)

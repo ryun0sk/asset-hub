@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-03T08:52:18Z",
+  "generatedAt": "2026-10-03T10:20:33Z",
   "groups": [
     {
       "id": "themes",
@@ -177,6 +177,26 @@
             }
           ],
           "code": "6857"
+        },
+        {
+          "id": "4062-ibiden-2026-10-03",
+          "title": "イビデン（4062）",
+          "date": "2026-10-03",
+          "kind": "company",
+          "slug": "4062-ibiden",
+          "items": [
+            {
+              "label": "株価の変動要因",
+              "path": "research/companies/4062-ibiden/2026-10-03/stock-drivers.md",
+              "type": "md"
+            },
+            {
+              "label": "調査の前提・資料",
+              "path": "research/companies/4062-ibiden/2026-10-03/README.md",
+              "type": "md"
+            }
+          ],
+          "code": "4062"
         },
         {
           "id": "285A-kioxia-2026-09-05",
