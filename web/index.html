@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="企業・投資テーマの調査レポート、評価モデル、根拠資料をまとめた株式投資ダッシュボード">
+  <title>Asset Hub</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/tokens.css"><link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/charts.css"><link rel="stylesheet" href="/costs.css"><link rel="stylesheet" href="/app.css"><link rel="stylesheet" href="/doc.css"><script type="module" src="/app.js"></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <nav id="mainNav" aria-label="メインメニュー">
+      <a href="#home" data-view="home" class="nav-link selected"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg></span>ホーム</a>
+      <div id="researchNav"><p class="nav-label nav-status">調査一覧を読み込んでいます…</p></div>
+      <a href="#cost" data-view="cost" class="nav-link cost-nav"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" focusable="false"><circle cx="12" cy="12" r="9"/><path d="m8 7 4 5 4-5M8 12h8M8 15h8M12 12v6"/></svg></span>コスト<span id="costNavAlert" class="cost-nav-alert" hidden></span></a>
+    </nav>
+    <div class="sidebar-bottom"><a class="brand wordmark" href="#home" aria-label="Asset Hub ホーム"><span class="wordmark-mark" aria-hidden="true"></span><span class="wordmark-text">Asset Hub<small>INVESTMENT RESEARCH</small></span></a></div>
+  </aside>
+  <main class="main">
+    <header class="topbar"><div class="crumbs">Asset Hub <span>/</span> <strong id="breadcrumb">ホーム</strong></div><div class="topbar-right"><span id="topbarMeta"></span><a id="openNewTab" class="button open-tab" href="/" target="_blank" rel="noopener noreferrer" hidden>新しいタブで開く ↗</a></div></header>
+    <div class="workspace">
+      <section class="page-head"><div><p class="eyebrow" id="pageEyebrow">OVERVIEW</p><h1 id="pageTitle">ホーム</h1><p id="pageMeta">企業・投資テーマの調査レポート、評価モデル、根拠資料</p></div><div id="pageActions" class="page-actions"></div></section>
+      <section id="homeSection" aria-label="調査の概要"><p class="empty" role="status">調査一覧を読み込んでいます…</p></section>
+      <section id="researchSection" hidden aria-label="調査資料"></section>
+      <section id="costSection" hidden aria-label="システムの維持費"></section>
+    </div>
+  </main>
+</body></html>

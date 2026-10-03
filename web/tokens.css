@@ -1,0 +1,129 @@
+/* Asset Hub design tokens. See docs/design-system.md.
+ * The visual system (navy sidebar, blue accents, typography, chart values) follows the
+ * Pathosion Ops dashboard so both read as one system. Every value lives here.
+ */
+:root {
+  --nav-border: #ffffff30;
+  --font-family-sans: -apple-system, BlinkMacSystemFont, "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  --font-family-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, "Noto Sans Mono CJK JP", monospace;
+  --font-size-root: 16px;
+  --font-size-micro: 10px;
+  --font-size-caption: 11px;
+  --font-size-small: 12px;
+  --font-size-body: 13px;
+  --font-size-subheading: 14px;
+  --font-size-section: 15px;
+  --font-size-large: 16px;
+  --font-size-emphasis: 18px;
+  --font-size-title-compact: 20px;
+  --font-size-title: 22px;
+  --font-size-display: 24px;
+  --font-size-metric: 30px;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --line-height-tight: 1.2;
+  --line-height-heading: 1.35;
+  --line-height-control: 1.5;
+  --line-height-body: 1.6;
+  --line-height-reading: 1.9;
+
+  /* Prefer 4/8/12/16/20/24 for new layouts. */
+  --space-0: 0;
+  --space-1: 1px;
+  --space-2: 2px;
+  --space-4: 4px;
+  --space-6: 6px;
+  --space-8: 8px;
+  --space-10: 10px;
+  --space-12: 12px;
+  --space-14: 14px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-40: 40px;
+
+  /* Shared charts keep one SVG unit equal to one CSS pixel. */
+  --chart-font-axis: 10.5;
+  --chart-font-value: 10;
+  --chart-point-radius: 3;
+  --stroke-chart-point: 1.5px;
+  --stroke-chart-line: 2.5px;
+  --stroke-chart-label: 2.25px;
+  --stroke-grid: 1;
+  --font-size-chart-axis: calc(var(--chart-font-axis) * 1px);
+  --font-size-chart-value: calc(var(--chart-font-value) * 1px);
+  --font-size-chart-legend: calc(var(--chart-font-axis) * 1px);
+
+  /* Brand colours (shared base tokens). */
+  --paper: #fff;
+  --mist: #f6f8fb;
+  --blue-mist: #edf3f8;
+  --line: #d8dee6;
+  --border: var(--line);
+  --surface: var(--paper);
+  --ink: #101418;
+  --body: #2f3640;
+  --muted: #68717c;
+  --navy-dark: #0b1f33;
+  --navy: #102a43;
+  --navy-soft: #1e4568;
+  --blue: #2f80c9;
+  --blue-light: #7ec3ff;
+  --nav-text: #b7c9da;
+  --nav-hover: #ffffff0d;
+  --nav-selected: #ffffff12;
+  --nav-subselected: #ffffff1c;
+  --on-navy: #fff;
+  --amber-mist: #fcf2dc;
+  --amber-ink: #926d26;
+  --code-bg: var(--mist);
+  --overlay-soft: #0b1f3308;
+
+  /* Status colours (cost budget alerts). */
+  --warning-bg: #fff8e6;
+  --warning-line: #d49a26;
+  --warning-ink: #714b00;
+  --danger-bg: #fff0ef;
+  --danger-line: #cf5b53;
+  --danger-ink: #8e2923;
+  --cost-alert-warning: #f6c453;
+  --cost-alert-danger: #ff9494;
+  --cost-budget-bg: #f7f9fc;
+  --cost-total-note: #c8d9e9;
+
+  /* Chart colours are assigned by meaning, not by decoration.
+     primary = actual/measured value, secondary = a second measured series,
+     target = plan or goal, accent = supporting series, context = reference. */
+  --chart-primary: var(--blue);
+  --chart-secondary: var(--navy);
+  --chart-target: #6b8199;
+  --chart-accent: #c08a38;
+  --chart-negative: #b94f47;
+  --chart-context: var(--muted);
+  --chart-grid: #e6edf4;
+  --chart-zero: #9aa9b8;
+  --chart-scrollbar: #b7c9da;
+
+  --radius-control: 7px;
+  --radius-marker: 2px;
+  --radius-small: 4px;
+  --radius-panel: 9px;
+  --border-width-thin: 1px;
+  --border-width-medium: 2px;
+  --border-width-strong: 3px;
+  --border-width-accent: 4px;
+  --shadow-popover: 0 8px 24px #0b1f3324;
+  --shadow-toast: 0 8px 24px #0b1f3324;
+  --z-index-local: 1;
+  --z-index-popover: 20;
+
+  /* Research viewer: the iframe fills the viewport below topbar, title and notice. */
+  --viewer-offset: 210px;
+  --viewer-min-height: 480px;
+  --doc-max-width: 920px;
+}

@@ -1,0 +1,141 @@
+{
+  "version": 1,
+  "generatedAt": "2026-10-02T08:58:42Z",
+  "groups": [
+    {
+      "id": "themes",
+      "label": "テーマ",
+      "entries": [
+        {
+          "id": "ai-supply-chain-2026-09-05",
+          "title": "AI関連銘柄・サプライチェーン",
+          "date": "2026-09-05",
+          "kind": "theme",
+          "slug": "ai-supply-chain",
+          "items": [
+            {
+              "label": "ダッシュボード",
+              "path": "research/themes/ai-supply-chain/2026-09-05/index.html",
+              "type": "html"
+            },
+            {
+              "label": "工程別レポート",
+              "path": "research/themes/ai-supply-chain/2026-09-05/report.md",
+              "type": "md"
+            },
+            {
+              "label": "調査範囲・出典方針",
+              "path": "research/themes/ai-supply-chain/2026-09-05/README.md",
+              "type": "md"
+            },
+            {
+              "label": "関連資料・着想元",
+              "path": "research/themes/ai-supply-chain/2026-09-05/related-links.md",
+              "type": "md"
+            }
+          ]
+        },
+        {
+          "id": "photonics-2026-09-05",
+          "title": "光半導体・光インターコネクト",
+          "date": "2026-09-05",
+          "kind": "theme",
+          "slug": "photonics",
+          "items": [
+            {
+              "label": "株価比較チャート",
+              "path": "research/themes/photonics/2026-09-05/index.html",
+              "type": "html"
+            },
+            {
+              "label": "編集元HTML",
+              "path": "research/themes/photonics/2026-09-05/chart-source.html",
+              "type": "html"
+            },
+            {
+              "label": "README・資料一覧",
+              "path": "research/themes/photonics/2026-09-05/README.md",
+              "type": "md"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "companies",
+      "label": "企業",
+      "entries": [
+        {
+          "id": "285A-kioxia-2026-09-05",
+          "title": "キオクシア（285A）",
+          "date": "2026-09-05",
+          "kind": "company",
+          "slug": "285A-kioxia",
+          "items": [
+            {
+              "label": "投資判断レポート",
+              "path": "research/companies/285A-kioxia/2026-09-05/report.md",
+              "type": "md"
+            },
+            {
+              "label": "資料・引き継ぎ",
+              "path": "research/companies/285A-kioxia/2026-09-05/README.md",
+              "type": "md"
+            },
+            {
+              "label": "評価モデル",
+              "path": "research/companies/285A-kioxia/2026-09-05/valuation.mjs",
+              "type": "code"
+            },
+            {
+              "label": "2026-07-31 決算短信英訳",
+              "path": "research/companies/285A-kioxia/2026-09-05/sources/q1-release-en.pdf",
+              "type": "pdf"
+            },
+            {
+              "label": "2026-07-31 決算説明・スクリプト",
+              "path": "research/companies/285A-kioxia/2026-09-05/sources/q1-deck-script-en.pdf",
+              "type": "pdf"
+            },
+            {
+              "label": "2026-07-31 決算説明会Q&A",
+              "path": "research/companies/285A-kioxia/2026-09-05/sources/q1-qa-en.pdf",
+              "type": "pdf"
+            },
+            {
+              "label": "2026-08-10 自社株取得完了",
+              "path": "research/companies/285A-kioxia/2026-09-05/sources/buyback-completion-en.pdf",
+              "type": "pdf"
+            },
+            {
+              "label": "2026-08-27 共同投資計画",
+              "path": "research/companies/285A-kioxia/2026-09-05/sources/capex-en.pdf",
+              "type": "pdf"
+            }
+          ],
+          "code": "285A"
+        },
+        {
+          "id": "523A-seiwa-2026-09-05",
+          "title": "セイワホールディングス（523A）",
+          "date": "2026-09-05",
+          "kind": "company",
+          "slug": "523A-seiwa",
+          "items": [
+            {
+              "label": "決算資料・調査素材",
+              "path": "research/companies/523A-seiwa/2026-09-05/README.md",
+              "type": "md"
+            },
+            {
+              "label": "2026年5月期 決算説明資料",
+              "path": "research/companies/523A-seiwa/2026-09-05/sources/company_disclosure.pdf",
+              "type": "pdf"
+            }
+          ],
+          "code": "523A"
+        }
+      ]
+    }
+  ]
+}

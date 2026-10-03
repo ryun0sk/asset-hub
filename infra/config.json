@@ -1,0 +1,21 @@
+{
+  "project": "ryun0sk-asset-hub",
+  "project_number": "13870054748",
+  "account": "ryun0sk.takagishi@gmail.com",
+  "region": "asia-northeast1",
+  "service": "asset-hub",
+  "allowed_emails": ["ryun0sk.takagishi@gmail.com"],
+  "cost_control": {
+    "currency": "JPY",
+    "monthly_project_budget": 500,
+    "thresholds": [0.5, 0.8, 1.0],
+    "billing_account": "011D96-201140-611FBC"
+  },
+  "cost_reporting": {
+    "billing_table": "ryun0sk-asset-hub.billing_export.gcp_billing_export_v1_011D96_201140_611FBC",
+    "location": "US",
+    "allow_pending_export": true,
+    "schedule": "0 1 * * *",
+    "time_zone": "Asia/Tokyo"
+  }
+}

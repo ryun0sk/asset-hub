@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "asset-hub",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "backend.server", "--port", "4330"],
+      "port": 4330
+    }
+  ]
+}
