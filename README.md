@@ -6,7 +6,7 @@
 
 | 対象 | 最新の調査日 | 内容（最新版） | アーカイブ（過去の調査） |
 |---|---|---|---|
-| キオクシア（285A） | 2026-10-03 | [投資判断レポート](research/companies/285A-kioxia/2026-10-03/report.md) · [評価モデル](research/companies/285A-kioxia/2026-10-03/valuation.mjs) · [資料・引き継ぎ](research/companies/285A-kioxia/2026-10-03/README.md) | [2026-09-05](research/companies/285A-kioxia/2026-09-05/report.md) |
+| キオクシア（285A） | 2026-10-03 | [投資判断レポート](research/companies/285A-kioxia/2026-10-03/report.md) · [株価の変動要因](research/companies/285A-kioxia/2026-10-03/stock-drivers.md) · [評価モデル](research/companies/285A-kioxia/2026-10-03/valuation.mjs) · [資料・引き継ぎ](research/companies/285A-kioxia/2026-10-03/README.md) | [2026-09-05](research/companies/285A-kioxia/2026-09-05/report.md) |
 | AI関連銘柄・サプライチェーン | 2026-10-03 | [43社の株価・PER・EPS比較](research/themes/ai-supply-chain/2026-10-03/index.html) · [工程別レポート（前回からの変化・考察）](research/themes/ai-supply-chain/2026-10-03/report.md) · [調査範囲・出典方針](research/themes/ai-supply-chain/2026-10-03/README.md) | [2026-09-05](research/themes/ai-supply-chain/2026-09-05/README.md) |
 | 光半導体・光インターコネクト | 2026-10-03 | [考察レポート](research/themes/photonics/2026-10-03/report.md) · [株価比較チャート](research/themes/photonics/2026-10-03/index.html) · [説明・再現方法](research/themes/photonics/2026-10-03/README.md) | [2026-09-05](research/themes/photonics/2026-09-05/README.md) |
 | セイワホールディングス（523A） | 2026-09-05 | [決算資料・調査素材](research/companies/523A-seiwa/2026-09-05/README.md) | — |
