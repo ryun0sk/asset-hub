@@ -10,6 +10,7 @@
 | AI関連銘柄・サプライチェーン | 2026-10-03 | [43社の株価・PER・EPS比較](research/themes/ai-supply-chain/2026-10-03/index.html) · [工程別レポート（前回からの変化・考察）](research/themes/ai-supply-chain/2026-10-03/report.md) · [調査範囲・出典方針](research/themes/ai-supply-chain/2026-10-03/README.md) | [2026-09-05](research/themes/ai-supply-chain/2026-09-05/README.md) |
 | 光半導体・光インターコネクト | 2026-10-03 | [考察レポート](research/themes/photonics/2026-10-03/report.md) · [株価比較チャート](research/themes/photonics/2026-10-03/index.html) · [説明・再現方法](research/themes/photonics/2026-10-03/README.md) | [2026-09-05](research/themes/photonics/2026-09-05/README.md) |
 | アドバンテスト（6857） | 2026-10-03 | [株価の変動要因](research/companies/6857-advantest/2026-10-03/stock-drivers.md) · [調査の前提・資料](research/companies/6857-advantest/2026-10-03/README.md) | — |
+| イビデン（4062） | 2026-10-03 | [株価の変動要因](research/companies/4062-ibiden/2026-10-03/stock-drivers.md) · [調査の前提・資料](research/companies/4062-ibiden/2026-10-03/README.md) | — |
 | セイワホールディングス（523A） | 2026-09-05 | [決算資料・調査素材](research/companies/523A-seiwa/2026-09-05/README.md) | — |
 
 すべて調査日時点のスナップショットです。記載の株価・予想・投資判断は各調査日の見解で、現在の判断ではありません。2026-10-03版はキオクシア・AIサプライチェーン・光半導体を最新情報で再調査し、各レポート冒頭に「前回からの変化」を置いています。2026-09-05版は移行時のまま変更していません。

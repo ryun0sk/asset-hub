@@ -41,6 +41,7 @@ LABEL_OVERRIDES = {
     "285A-kioxia": {"report.md": "投資判断レポート", "README.md": "資料・引き継ぎ"},
     "523A-seiwa": {"README.md": "決算資料・調査素材"},
     "6857-advantest": {"README.md": "調査の前提・資料"},
+    "4062-ibiden": {"README.md": "調査の前提・資料"},
 }
 
 
