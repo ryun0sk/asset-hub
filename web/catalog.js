@@ -7,6 +7,27 @@ export function entries(catalog) {
   return (catalog?.groups || []).flatMap(group => (group.entries || []).map(entry => ({...entry, group: group.id})));
 }
 
+// Every dated snapshot of the same target (kind + slug), newest first. The first one is the
+// current version; the rest are archives.
+export function versionsOf(catalog, entry) {
+  if (!entry) return [];
+  return entries(catalog).filter(e => e.kind === entry.kind && e.slug === entry.slug).sort((a, b) => b.date.localeCompare(a.date));
+}
+
+export const isLatest = (catalog, entry) => versionsOf(catalog, entry)[0]?.id === entry?.id;
+
+// The newest snapshot of each target, in catalog order (groups keep their own order).
+export function latestGroups(catalog) {
+  return (catalog?.groups || []).map(group => ({...group, entries: (group.entries || []).filter(entry => isLatest(catalog, {...entry, group: group.id}))}));
+}
+
+// Index of the same document (same path inside the dated folder) in another version, else 0.
+export function counterpartIndex(item, to) {
+  const tail = path => String(path || '').split('/').slice(4).join('/');
+  const index = (to?.items || []).findIndex(other => tail(other.path) === tail(item?.path));
+  return index >= 0 ? index : 0;
+}
+
 export function parseRoute(hash) {
   const value = String(hash || '').replace(/^#/, '');
   if (value === 'cost') return {view: 'cost'};
@@ -45,10 +66,12 @@ export const fileUrl = path => /^research\/[^?#]+$/.test(String(path || '')) && 
 export function stats(catalog) {
   const all = entries(catalog);
   const dates = all.map(e => e.date).filter(Boolean).sort();
+  const latest = latestGroups(catalog).flatMap(group => group.entries);
   return {
     themes: new Set(all.filter(e => e.kind === 'theme').map(e => e.slug)).size,
     companies: new Set(all.filter(e => e.kind === 'company').map(e => e.slug)).size,
     latest: dates.at(-1) || null,
-    documents: all.reduce((sum, e) => sum + (e.items || []).length, 0),
+    documents: latest.reduce((sum, e) => sum + (e.items || []).length, 0),
+    archives: all.length - latest.length,
   };
 }

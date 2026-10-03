@@ -4,14 +4,27 @@
 
 ## 調査の入口
 
-| 対象 | 調査日 | 内容 |
-|---|---|---|
-| AI関連銘柄・サプライチェーン | 2026-09-05 | [AI時代の機能整理・調達の流れ・43社の株価・PER・EPS比較](research/themes/ai-supply-chain/2026-09-05/index.html) · [工程別の日本・海外企業比較／キオクシアの競合](research/themes/ai-supply-chain/2026-09-05/report.md) · [調査範囲・出典方針](research/themes/ai-supply-chain/2026-09-05/README.md) |
-| キオクシア（285A） | 2026-09-05 | [投資判断レポート](research/companies/285A-kioxia/2026-09-05/report.md) · [評価モデル](research/companies/285A-kioxia/2026-09-05/valuation.mjs) · [資料・引き継ぎ](research/companies/285A-kioxia/2026-09-05/README.md) |
-| 光半導体・光インターコネクト | 2026-09-05 | [株価比較チャート](research/themes/photonics/2026-09-05/index.html) · [説明・編集元](research/themes/photonics/2026-09-05/README.md) |
-| セイワホールディングス（523A） | 2026-09-05 | [決算資料・調査素材](research/companies/523A-seiwa/2026-09-05/README.md) |
+| 対象 | 最新の調査日 | 内容（最新版） | アーカイブ（過去の調査） |
+|---|---|---|---|
+| キオクシア（285A） | 2026-10-03 | [投資判断レポート](research/companies/285A-kioxia/2026-10-03/report.md) · [評価モデル](research/companies/285A-kioxia/2026-10-03/valuation.mjs) · [資料・引き継ぎ](research/companies/285A-kioxia/2026-10-03/README.md) | [2026-09-05](research/companies/285A-kioxia/2026-09-05/report.md) |
+| AI関連銘柄・サプライチェーン | 2026-10-03 | [43社の株価・PER・EPS比較](research/themes/ai-supply-chain/2026-10-03/index.html) · [工程別レポート（前回からの変化・考察）](research/themes/ai-supply-chain/2026-10-03/report.md) · [調査範囲・出典方針](research/themes/ai-supply-chain/2026-10-03/README.md) | [2026-09-05](research/themes/ai-supply-chain/2026-09-05/README.md) |
+| 光半導体・光インターコネクト | 2026-10-03 | [考察レポート](research/themes/photonics/2026-10-03/report.md) · [株価比較チャート](research/themes/photonics/2026-10-03/index.html) · [説明・再現方法](research/themes/photonics/2026-10-03/README.md) | [2026-09-05](research/themes/photonics/2026-09-05/README.md) |
+| セイワホールディングス（523A） | 2026-09-05 | [決算資料・調査素材](research/companies/523A-seiwa/2026-09-05/README.md) | — |
 
-すべて調査日時点のスナップショットです。既存資料の移行に伴う株価の再取得や投資判断の更新は行っていません。新規調査の範囲は各フォルダのREADMEに記載しています。
+すべて調査日時点のスナップショットです。記載の株価・予想・投資判断は各調査日の見解で、現在の判断ではありません。2026-10-03版はキオクシア・AIサプライチェーン・光半導体を最新情報で再調査し、各レポート冒頭に「前回からの変化」を置いています。2026-09-05版は移行時のまま変更していません。
+
+## アーカイブ（過去の調査）の扱い
+
+- 再調査は新しい日付フォルダに作り、古い日付フォルダは**アーカイブとしてそのまま残す**。ダッシュボードは対象ごとに最も新しい日付を最新版として左メニューとホームに出し、過去の版は資料上部の「調査の版」とホームの「アーカイブ」欄から開ける。URL（`#r/<slug>-<日付>/…`）は版ごとに固定で、新しい版が増えても変わらない。
+- アーカイブの全ファイル（`working/`・`qa/` を除く）のサイズとSHA-256を [research/archive-manifest.json](research/archive-manifest.json) に記録し、CIで改変・削除・追加を検出する。
+
+```sh
+python3 scripts/archive_snapshots.py --check    # アーカイブが記録どおりか確認
+python3 scripts/archive_snapshots.py --restore  # 変更・削除されたファイルをGit履歴から記録どおりに戻す
+python3 scripts/archive_snapshots.py --write    # 新しくアーカイブになった版を記録（既存の記録は書き換えない）
+```
+
+新しい版を追加したら、`python3 scripts/build_catalog.py` と `python3 scripts/archive_snapshots.py --write` を実行してcommitする。
 
 ## ダッシュボードアプリ
 
@@ -24,7 +37,8 @@
 | [infra/](infra/) | デプロイ設定・スクリプト |
 | [docs/design-system.md](docs/design-system.md) | デザインシステム（トークン・コンポーネント） |
 | [docs/deploy.md](docs/deploy.md) | デプロイ・コスト集計の手順 |
-| [research/catalog.json](research/catalog.json) | 左タブの一覧。調査を追加したら `python3 scripts/build_catalog.py` で再生成 |
+| [research/catalog.json](research/catalog.json) | 左タブの一覧（全版）。調査を追加したら `python3 scripts/build_catalog.py` で再生成 |
+| [research/archive-manifest.json](research/archive-manifest.json) | アーカイブの改変検出・復元用のハッシュ記録 |
 
 ローカル確認: `python3 -m backend.server --port 4330` → http://localhost:4330
 
@@ -42,14 +56,15 @@ research/
 migrations/            移行元・移行先・ファイルのハッシュ記録
 ```
 
-新しい調査は新しい日付フォルダに置き、この一覧に追記します。元資料と自分の予測・計算を分け、価格の基準日・通貨・株式分割基準を明記します。`working/` と `qa/` はローカルの補助資料として保存し、Gitの対象外にしています。
+新しい調査は新しい日付フォルダに置き、この一覧の最新版を差し替えて古い版をアーカイブ欄へ移します。元資料と自分の予測・計算を分け、価格の基準日・通貨・株式分割基準を明記します。`working/` と `qa/` はローカルの補助資料として保存し、Gitの対象外にしています。
 
 ## 計算を再現する
 
 Node.jsが利用できる環境で、リポジトリのルートから実行します。
 
 ```sh
-node research/companies/285A-kioxia/2026-09-05/valuation.mjs
+node research/companies/285A-kioxia/2026-10-03/valuation.mjs   # 最新版（分割後基準）
+node research/companies/285A-kioxia/2026-09-05/valuation.mjs   # アーカイブ（分割前基準）
 ```
 
 このモデルは外部API・追加パッケージを使わず、計算結果を標準出力に出します。

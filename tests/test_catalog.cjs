@@ -69,7 +69,7 @@ test('hash routes parse and round-trip', async () => {
 });
 
 test('paths map to routes and safe research URLs', async () => {
-  const {routeForPath, fileUrl, stats} = await helpers();
+  const {routeForPath, fileUrl, stats, latestGroups} = await helpers();
   const entry = catalog.groups[1].entries[0];
   assert.equal(routeForPath(catalog, entry.items[0].path), `#r/${entry.id}/0`);
   assert.equal(routeForPath(catalog, entry.items[0].path, 'md-出典'), `#r/${entry.id}/0/${encodeURIComponent('md-出典')}`);
@@ -80,5 +80,30 @@ test('paths map to routes and safe research URLs', async () => {
   assert.equal(fileUrl('research/../x'), null);
   const s = stats(catalog);
   assert.equal(s.themes, catalog.groups[0].entries.length && new Set(catalog.groups[0].entries.map(e => e.slug)).size);
-  assert.equal(s.documents, catalog.groups.flatMap(g => g.entries.flatMap(e => e.items)).length);
+  const latest = latestGroups(catalog).flatMap(g => g.entries);
+  assert.equal(s.documents, latest.flatMap(e => e.items).length);
+  assert.equal(s.archives, catalog.groups.flatMap(g => g.entries).length - latest.length);
+});
+
+test('versions group dated snapshots of one target; the newest is current, the rest archives', async () => {
+  const {versionsOf, isLatest, latestGroups, counterpartIndex, stats} = await helpers();
+  const doc = (slug, date, name) => ({label: name, path: `research/companies/${slug}/${date}/${name}`, type: 'md'});
+  const make = (slug, date, names) => ({id: `${slug}-${date}`, title: slug, date, kind: 'company', slug, items: names.map(name => doc(slug, date, name))});
+  const fixture = {groups: [{id: 'companies', label: '企業', entries: [
+    make('a', '2026-10-03', ['report.md', 'README.md']),
+    make('b', '2026-09-05', ['README.md']),
+    make('a', '2026-09-05', ['README.md', 'report.md', 'valuation.mjs']),
+  ]}]};
+  const [newA, b, oldA] = fixture.groups[0].entries;
+  assert.deepEqual(versionsOf(fixture, oldA).map(e => e.date), ['2026-10-03', '2026-09-05']);
+  assert.equal(isLatest(fixture, newA), true);
+  assert.equal(isLatest(fixture, oldA), false);
+  assert.deepEqual(latestGroups(fixture)[0].entries.map(e => e.id), [newA.id, b.id]);
+  assert.equal(counterpartIndex(oldA.items[1], newA), 0, 'report.md keeps the same document');
+  assert.equal(counterpartIndex(oldA.items[0], newA), 1, 'README.md keeps the same document');
+  assert.equal(counterpartIndex(oldA.items[2], newA), 0, 'missing documents fall back to the first');
+  const s = stats(fixture);
+  assert.equal(s.companies, 2);
+  assert.equal(s.documents, 3, 'only the newest versions count');
+  assert.equal(s.archives, 1);
 });

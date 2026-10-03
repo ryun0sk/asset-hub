@@ -1,11 +1,69 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-02T08:58:42Z",
+  "generatedAt": "2026-10-03T05:16:04Z",
   "groups": [
     {
       "id": "themes",
       "label": "テーマ",
       "entries": [
+        {
+          "id": "ai-supply-chain-2026-10-03",
+          "title": "AI関連銘柄・サプライチェーン",
+          "date": "2026-10-03",
+          "kind": "theme",
+          "slug": "ai-supply-chain",
+          "items": [
+            {
+              "label": "ダッシュボード",
+              "path": "research/themes/ai-supply-chain/2026-10-03/index.html",
+              "type": "html"
+            },
+            {
+              "label": "工程別レポート",
+              "path": "research/themes/ai-supply-chain/2026-10-03/report.md",
+              "type": "md"
+            },
+            {
+              "label": "調査範囲・出典方針",
+              "path": "research/themes/ai-supply-chain/2026-10-03/README.md",
+              "type": "md"
+            },
+            {
+              "label": "関連資料・着想元",
+              "path": "research/themes/ai-supply-chain/2026-10-03/related-links.md",
+              "type": "md"
+            }
+          ]
+        },
+        {
+          "id": "photonics-2026-10-03",
+          "title": "光半導体・光インターコネクト",
+          "date": "2026-10-03",
+          "kind": "theme",
+          "slug": "photonics",
+          "items": [
+            {
+              "label": "株価比較チャート",
+              "path": "research/themes/photonics/2026-10-03/index.html",
+              "type": "html"
+            },
+            {
+              "label": "編集元HTML",
+              "path": "research/themes/photonics/2026-10-03/chart-source.html",
+              "type": "html"
+            },
+            {
+              "label": "考察レポート",
+              "path": "research/themes/photonics/2026-10-03/report.md",
+              "type": "md"
+            },
+            {
+              "label": "README・資料一覧",
+              "path": "research/themes/photonics/2026-10-03/README.md",
+              "type": "md"
+            }
+          ]
+        },
         {
           "id": "ai-supply-chain-2026-09-05",
           "title": "AI関連銘柄・サプライチェーン",
@@ -65,6 +123,36 @@
       "id": "companies",
       "label": "企業",
       "entries": [
+        {
+          "id": "285A-kioxia-2026-10-03",
+          "title": "キオクシア（285A）",
+          "date": "2026-10-03",
+          "kind": "company",
+          "slug": "285A-kioxia",
+          "items": [
+            {
+              "label": "投資判断レポート",
+              "path": "research/companies/285A-kioxia/2026-10-03/report.md",
+              "type": "md"
+            },
+            {
+              "label": "資料・引き継ぎ",
+              "path": "research/companies/285A-kioxia/2026-10-03/README.md",
+              "type": "md"
+            },
+            {
+              "label": "評価モデル",
+              "path": "research/companies/285A-kioxia/2026-10-03/valuation.mjs",
+              "type": "code"
+            },
+            {
+              "label": "2026-08-03 米国訴訟の判決に関するお知らせ（英訳）",
+              "path": "research/companies/285A-kioxia/2026-10-03/sources/lawsuit-judgment-en.pdf",
+              "type": "pdf"
+            }
+          ],
+          "code": "285A"
+        },
         {
           "id": "285A-kioxia-2026-09-05",
           "title": "キオクシア（285A）",

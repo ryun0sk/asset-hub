@@ -1,7 +1,8 @@
 """Build research/catalog.json for the Asset Hub dashboard.
 
 Scans research/{themes,companies}/<slug>/<YYYY-MM-DD>/ and lists the documents the
-web app can show. Titles come from the root README table and each folder README;
+web app can show. Every dated folder is its own entry; the web app treats the newest one of
+each slug as current and the older ones as archives. Titles come from the root README table and each folder README;
 small overrides below keep labels stable. Run from anywhere:
 
     python3 scripts/build_catalog.py          # write research/catalog.json
@@ -35,7 +36,7 @@ FILES = {
 TITLE_OVERRIDES = {}
 LABEL_OVERRIDES = {
     "ai-supply-chain": {"report.md": "工程別レポート", "README.md": "調査範囲・出典方針"},
-    "photonics": {"index.html": "株価比較チャート"},
+    "photonics": {"index.html": "株価比較チャート", "report.md": "考察レポート"},
     "285A-kioxia": {"report.md": "投資判断レポート", "README.md": "資料・引き継ぎ"},
     "523A-seiwa": {"README.md": "決算資料・調査素材"},
 }
@@ -56,6 +57,8 @@ def root_titles():
             parts = Path(href).parts
             if len(parts) >= 4 and parts[0] == "research":
                 titles.setdefault("/".join(parts[:4]), strip_links(cells[0]))
+                # Target folder too, so every dated version of a target shares one title.
+                titles.setdefault("/".join(parts[:3]), strip_links(cells[0]))
     return titles
 
 
@@ -115,7 +118,7 @@ def build():
                     continue
                 entry = {
                     "id": f"{slug}-{date}",
-                    "title": TITLE_OVERRIDES.get(slug) or titles.get(folder) or readme_title(date_dir) or slug,
+                    "title": TITLE_OVERRIDES.get(slug) or titles.get(folder) or titles.get(slug_dir.relative_to(ROOT).as_posix()) or readme_title(date_dir) or slug,
                     "date": date,
                     "kind": kind,
                     "slug": slug,
