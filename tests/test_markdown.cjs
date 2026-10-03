@@ -10,7 +10,7 @@ const routes = {
   'research/companies/1234-x/2026-09-05/README.md': '#r/1234-x-2026-09-05/1',
   'README.md': '#home',
 };
-const options = {basePath: base, resolveLink: p => routes[p] || null, fileUrl: p => p.startsWith('research/') ? '/' + p : null};
+const options = {basePath: base, resolveLink: (p, anchor) => routes[p] ? routes[p] + (anchor ? '/' + anchor : '') : null, fileUrl: p => p.startsWith('research/') ? '/' + p : null};
 
 test('escapes raw HTML everywhere, including attributes, code and tables', async () => {
   const {renderMarkdown} = await load();
@@ -39,6 +39,7 @@ test('relative links resolve against the file and become in-app routes when cata
   assert.match(html, /<a href="\/research\/themes\/demo\/2026-09-05\/prices\.json" target="_blank" rel="noreferrer">data<\/a>/);
   assert.match(html, /<span class="md-link-disabled">up<\/span>/);
   assert.match(html, /<a href="#" data-doc-anchor="md-結論">h<\/a>/);
+  assert.match(renderMarkdown('[s](index.html#Price%20Data)', options), /<a href="#r\/demo-2026-09-05\/0\/md-price-data">s<\/a>/);
 });
 
 test('external links open in a new tab without a referrer; bare URLs are linked', async () => {

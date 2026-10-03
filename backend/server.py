@@ -9,6 +9,9 @@ from urllib.parse import urlsplit
 import argparse
 import json
 import os
+import shutil
+import threading
+import time
 from pathlib import Path
 
 from .paths import ROOT, resolve_research, shell_assets
@@ -28,25 +31,48 @@ RESEARCH_FILE_CSP = "default-src 'none'; style-src 'unsafe-inline'; img-src 'sel
 API_CSP = "default-src 'none'; frame-ancestors 'none'"
 LOCAL_HOSTS = ('127.0.0.1', 'localhost')
 IAP_HEADER = 'X-Goog-IAP-JWT-Assertion'
+# Static files change only with a new image: browsers keep a private copy and revalidate by ETag.
+STATIC_CACHE = 'private, no-cache'
+COST_CACHE_SECONDS = 60
+
+
+def etag(file):
+    stat = file.stat()
+    return f'"{stat.st_size:x}-{stat.st_mtime_ns:x}"'
 
 
 class Handler(BaseHTTPRequestHandler):
     server_version = 'AssetHub'
     sys_version = ''
 
-    def send_bytes(self, status, content, mime, csp, head=False, extra=None):
+    def send_headers(self, status, mime, csp, length, cache='no-store', extra=None):
         self.send_response(status)
-        self.send_header('Content-Type', mime)
-        self.send_header('Content-Length', str(len(content)))
-        self.send_header('Cache-Control', 'no-store')
+        if mime:
+            self.send_header('Content-Type', mime)
+        self.send_header('Content-Length', str(length))
+        self.send_header('Cache-Control', cache)
         self.send_header('X-Content-Type-Options', 'nosniff')
         self.send_header('Referrer-Policy', 'no-referrer')
         self.send_header('Content-Security-Policy', csp)
         for name, value in (extra or {}).items():
             self.send_header(name, value)
         self.end_headers()
+
+    def send_bytes(self, status, content, mime, csp, head=False, extra=None):
+        self.send_headers(status, mime, csp, len(content), extra=extra)
         if not head:
             self.wfile.write(content)
+
+    def send_file(self, file, mime, csp, head):
+        """Stream a static file (research pages reach ~17MB) and answer revalidations with 304."""
+        tag = etag(file)
+        if tag in [value.strip() for value in self.headers.get('If-None-Match', '').split(',')]:
+            self.send_headers(304, None, csp, 0, STATIC_CACHE, {'ETag': tag})
+            return
+        self.send_headers(200, mime, csp, file.stat().st_size, STATIC_CACHE, {'ETag': tag})
+        if not head:
+            with file.open('rb') as source:
+                shutil.copyfileobj(source, self.wfile, 1 << 20)
 
     def json_response(self, status, payload, head=False, extra=None):
         content = json.dumps(payload, ensure_ascii=False).encode()
@@ -81,9 +107,8 @@ class Handler(BaseHTTPRequestHandler):
         if path == '/api/catalog':
             self.serve_catalog(head)
         elif path == '/api/costs':
-            from .costs import cost_payload
             try:
-                payload = cost_payload(self.server.cost_document)
+                payload = self.server.costs()
             except Exception:
                 self.json_response(503, {'error': '費用データを読み込めませんでした。'}, head)
                 return
@@ -96,7 +121,7 @@ class Handler(BaseHTTPRequestHandler):
                 self.error(404, 'Not found', head)
                 return
             file, mime = asset
-            self.send_bytes(200, file.read_bytes(), mime, SHELL_CSP, head)
+            self.send_file(file, mime, SHELL_CSP, head)
 
     def serve_catalog(self, head):
         catalog = self.server.research_dir / 'catalog.json'
@@ -122,7 +147,7 @@ class Handler(BaseHTTPRequestHandler):
             csp = RESEARCH_PDF_CSP
         else:
             csp = RESEARCH_FILE_CSP
-        self.send_bytes(200, file.read_bytes(), mime, csp, head)
+        self.send_file(file, mime, csp, head)
 
     def do_GET(self):
         self.serve(head=False)
@@ -149,10 +174,22 @@ class DashboardServer(ThreadingHTTPServer):
         self.research_dir = Path(research_dir)
         # The image is immutable in cloud; locally rescan so new web/ files appear without restart.
         self._assets = shell_assets(self.web_dir) if cloud else None
+        self._cost_lock = threading.Lock()
+        self._cost_cache = (0.0, None)
         return self
 
     def shell(self):
         return self._assets if self._assets is not None else shell_assets(self.web_dir)
+
+    def costs(self):
+        """The snapshot changes once a day; reuse a GCS read for a minute across requests."""
+        from .costs import cost_payload
+        with self._cost_lock:
+            loaded, payload = self._cost_cache
+            if payload is None or time.monotonic() - loaded >= COST_CACHE_SECONDS:
+                payload = cost_payload(self.cost_document)
+                self._cost_cache = (time.monotonic(), payload)
+            return payload
 
 
 def cloud_settings(environ):

@@ -29,7 +29,7 @@ export function slugify(text) {
 /**
  * Render Markdown to an HTML string.
  * options.basePath     repo-relative path of the Markdown file (for relative links)
- * options.resolveLink  (repoPath, fragment) => in-app href (e.g. '#r/<id>/<n>') or null
+ * options.resolveLink  (repoPath, headingId) => in-app href (e.g. '#r/<id>/<n>/<headingId>') or null
  * options.fileUrl      (repoPath) => URL for files outside the catalog, or null for plain text
  */
 export function renderMarkdown(source, options = {}) {
@@ -209,7 +209,7 @@ export function linkTarget(href, ctx) {
   const [pathPart, fragment = ''] = raw.split('#');
   const path = resolvePath(ctx.basePath, decodeURIComponentSafe(pathPart.split('?')[0]));
   if (path === null) return null;
-  const route = ctx.resolveLink(path, fragment);
+  const route = ctx.resolveLink(path, fragment ? slugify(decodeURIComponentSafe(fragment)) : '');
   if (route) return {href: route};
   const url = ctx.fileUrl(path);
   return url ? {href: url, external: true} : null;

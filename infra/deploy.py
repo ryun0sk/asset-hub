@@ -14,7 +14,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from infra.common import ROOT, REPOSITORY, Gcloud, load_config, names, require_config  # noqa: E402
+from infra.common import COST_JOB, ROOT, REPOSITORY, Gcloud, load_config, names, require_config  # noqa: E402
 from backend.paths import SHELL_TYPES, extension, research_files  # noqa: E402
 
 BUILD_FILES = ['Dockerfile', 'requirements.txt', '.dockerignore']
@@ -55,15 +55,15 @@ def bootstrap(config, gcloud):
             gcloud.run('storage', 'buckets', 'create', 'gs://' + bucket, '--location=' + config['region'],
                        '--uniform-bucket-level-access', '--public-access-prevention')
     # The dashboard only reads costs/state.json; only the cost job writes it (setup_costs.py).
-    gcloud.run('storage', 'buckets', 'add-iam-policy-binding', 'gs://' + n['state_bucket'],
+    gcloud.run_retry('storage', 'buckets', 'add-iam-policy-binding', 'gs://' + n['state_bucket'],
                '--member=serviceAccount:' + n['runtime'], '--role=roles/storage.objectViewer')
-    gcloud.run('storage', 'buckets', 'add-iam-policy-binding', 'gs://' + n['builds_bucket'],
+    gcloud.run_retry('storage', 'buckets', 'add-iam-policy-binding', 'gs://' + n['builds_bucket'],
                '--member=serviceAccount:' + n['builder'], '--role=roles/storage.objectViewer')
     if not gcloud.succeeds('artifacts', 'repositories', 'describe', REPOSITORY, '--location=' + config['region']):
         gcloud.run('artifacts', 'repositories', 'create', REPOSITORY, '--repository-format=docker', '--location=' + config['region'])
-    gcloud.run('artifacts', 'repositories', 'add-iam-policy-binding', REPOSITORY, '--location=' + config['region'],
+    gcloud.run_retry('artifacts', 'repositories', 'add-iam-policy-binding', REPOSITORY, '--location=' + config['region'],
                '--member=serviceAccount:' + n['builder'], '--role=roles/artifactregistry.writer')
-    gcloud.run('projects', 'add-iam-policy-binding', config['project'], '--member=serviceAccount:' + n['builder'],
+    gcloud.run_retry('projects', 'add-iam-policy-binding', config['project'], '--member=serviceAccount:' + n['builder'],
                '--role=roles/logging.logWriter', '--condition=None')
     gcloud.run('beta', 'services', 'identity', 'create', '--service=iap.googleapis.com')
 
@@ -108,6 +108,9 @@ def deploy(config, gcloud, argv):
         if '--skip-costs' not in argv:
             from infra import setup_costs
             setup_costs.main(['--apply'])
+        elif '--existing-image' not in argv and gcloud.succeeds('run', 'jobs', 'describe', COST_JOB, '--region=' + config['region']):
+            # Jobs pin the image digest at deploy time; keep the cost job on the image just built.
+            gcloud.run('run', 'jobs', 'update', COST_JOB, '--region=' + config['region'], '--image=' + n['image'])
         envfile = Path(temp) / 'env.json'
         envfile.write_text(json.dumps(service_env(config)))
         gcloud.run(*deploy_args(config, envfile))

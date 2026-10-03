@@ -4,6 +4,7 @@ import re
 import shlex
 import subprocess
 import sys
+import time
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -91,6 +92,24 @@ class Gcloud:
             return [] if read else None
         result = subprocess.run(command, check=True, text=True, stdout=subprocess.PIPE if read else None)
         return json.loads(result.stdout) if read else None
+
+    def run_retry(self, *args, attempts=6, delay=10, sleep=time.sleep):
+        """For IAM bindings on a just-created service account, which IAM may not see for a while.
+
+        Only the "does not exist" propagation error is retried; any other failure surfaces at once.
+        """
+        if self.dry_run:
+            return self.run(*args)
+        command = self.command(*args)
+        for attempt in range(attempts):
+            result = subprocess.run(command, text=True, stderr=subprocess.PIPE)
+            if result.returncode == 0:
+                return None
+            sys.stderr.write(result.stderr)
+            if 'does not exist' not in result.stderr or attempt == attempts - 1:
+                raise subprocess.CalledProcessError(result.returncode, command, stderr=result.stderr)
+            print(f'# retrying in {delay}s (IAM propagation)', flush=True)
+            sleep(delay)
 
     def succeeds(self, *args):
         """Existence probe; in dry-run nothing exists yet."""

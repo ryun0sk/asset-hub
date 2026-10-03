@@ -9,6 +9,8 @@ const ICONS = {
   theme: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m12 3 9 5-9 5-9-5z"/><path d="m3 13 9 5 9-5"/><path d="m3 17.5 9 4.5 9-4.5"/></svg>',
   company: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M4 21V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v17M16 9h3a1 1 0 0 1 1 1v11M2 21h20M8 7h4M8 11h4M8 15h4M9 21v-3h2v3"/></svg>',
 };
+// allow-same-origin is required: research pages render charts inside nested srcdoc iframes, which
+// stay blank under an opaque origin. Their CDN scripts are limited by RESEARCH_HTML_CSP instead.
 const SANDBOX = 'allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-downloads';
 
 let catalog = null, catalogError = '', renderToken = 0;
@@ -72,7 +74,7 @@ function changeView() {
     setHead({eyebrow: 'COST', title: 'コスト', meta: '', crumb: 'コスト'});
     showCosts();
   } else if (view === 'research') {
-    if (found) showResearch(found);
+    if (found) showResearch(found, route.anchor);
     else setHead({eyebrow: 'RESEARCH', title: '読み込み中', crumb: '読み込み中'});
   } else {
     if (route.view !== 'home' && catalog && location.hash && location.hash !== '#home') history.replaceState(null, '', '#home');
@@ -113,7 +115,7 @@ function showHome() {
     </section>`;
 }
 
-function showResearch({entry, item, index}) {
+function showResearch({entry, item, index}, anchor = '') {
   const url = fileUrl(item.path);
   setHead({
     eyebrow: `${KIND_LABELS[entry.kind] || ''} · 調査日 ${entry.date}`,
@@ -145,9 +147,10 @@ function showResearch({entry, item, index}) {
   fetchText(url).then(text => {
     if (token !== renderToken) return;
     const body = item.type === 'md'
-      ? `<article class="doc">${renderMarkdown(text, {basePath: item.path, resolveLink: path => routeForPath(catalog, path), fileUrl})}</article>`
+      ? `<article class="doc">${renderMarkdown(text, {basePath: item.path, resolveLink: (path, anchor) => routeForPath(catalog, path, anchor), fileUrl})}</article>`
       : `<div class="doc-code-head"><span>${esc(item.path.split('/').pop())}</span><span>${text.split('\n').length}行 · 読み取り専用</span></div><pre class="doc-code"><code>${esc(text)}</code></pre>`;
     host.querySelector('.doc-panel').innerHTML = body;
+    if (anchor) document.getElementById(anchor)?.scrollIntoView({block: 'start'});
   }).catch(() => {
     if (token !== renderToken) return;
     host.querySelector('.doc-panel').innerHTML = '<p class="empty" role="alert">資料を読み込めませんでした。</p>';

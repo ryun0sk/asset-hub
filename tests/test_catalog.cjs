@@ -56,8 +56,9 @@ test('hash routes parse and round-trip', async () => {
   assert.deepEqual(parseRoute(''), {view: 'home'});
   assert.deepEqual(parseRoute('#home'), {view: 'home'});
   assert.deepEqual(parseRoute('#cost'), {view: 'cost'});
-  assert.deepEqual(parseRoute('#r/285A-kioxia-2026-09-05/2'), {view: 'research', entryId: '285A-kioxia-2026-09-05', index: 2});
-  assert.deepEqual(parseRoute('#r/x'), {view: 'research', entryId: 'x', index: 0});
+  assert.deepEqual(parseRoute('#r/285A-kioxia-2026-09-05/2'), {view: 'research', entryId: '285A-kioxia-2026-09-05', index: 2, anchor: ''});
+  assert.deepEqual(parseRoute('#r/x'), {view: 'research', entryId: 'x', index: 0, anchor: ''});
+  assert.deepEqual(parseRoute(routeFor('x', 1, 'md-結論')), {view: 'research', entryId: 'x', index: 1, anchor: 'md-結論'});
   assert.deepEqual(parseRoute('#r/a/b/c'), {view: 'home'});
   const first = catalog.groups[0].entries[0];
   const found = lookup(catalog, parseRoute(routeFor(first.id, 1)));
@@ -71,6 +72,7 @@ test('paths map to routes and safe research URLs', async () => {
   const {routeForPath, fileUrl, stats} = await helpers();
   const entry = catalog.groups[1].entries[0];
   assert.equal(routeForPath(catalog, entry.items[0].path), `#r/${entry.id}/0`);
+  assert.equal(routeForPath(catalog, entry.items[0].path, 'md-出典'), `#r/${entry.id}/0/${encodeURIComponent('md-出典')}`);
   assert.equal(routeForPath(catalog, 'README.md'), '#home');
   assert.equal(routeForPath(catalog, 'research/nope.md'), null);
   assert.equal(fileUrl('research/a b/c.pdf'), '/research/a%20b/c.pdf');

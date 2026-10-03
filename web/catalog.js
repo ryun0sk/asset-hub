@@ -1,5 +1,5 @@
 // Catalog helpers and hash routing. Pure functions so tests can run them without a DOM.
-// Routes: #home (default), #cost, #r/<entryId>/<itemIndex>.
+// Routes: #home (default), #cost, #r/<entryId>/<itemIndex>[/<heading id>].
 export const KIND_LABELS = Object.freeze({theme: 'テーマ', company: '企業'});
 export const TYPE_LABELS = Object.freeze({html: 'HTML', md: '文書', pdf: 'PDF', code: 'コード'});
 
@@ -10,16 +10,15 @@ export function entries(catalog) {
 export function parseRoute(hash) {
   const value = String(hash || '').replace(/^#/, '');
   if (value === 'cost') return {view: 'cost'};
-  const match = value.match(/^r\/([^/]+)(?:\/(\d+))?\/?$/);
+  const match = value.match(/^r\/([^/]+)(?:\/(\d+)(?:\/([^/]+))?)?\/?$/);
   if (match) {
-    let entryId = match[1];
-    try { entryId = decodeURIComponent(entryId); } catch { /* keep the raw id */ }
-    return {view: 'research', entryId, index: match[2] ? Number(match[2]) : 0};
+    const decode = raw => { try { return decodeURIComponent(raw); } catch { return raw; } };
+    return {view: 'research', entryId: decode(match[1]), index: match[2] ? Number(match[2]) : 0, anchor: match[3] ? decode(match[3]) : ''};
   }
   return {view: 'home'};
 }
 
-export const routeFor = (entryId, index = 0) => `#r/${encodeURIComponent(entryId)}/${index}`;
+export const routeFor = (entryId, index = 0, anchor = '') => `#r/${encodeURIComponent(entryId)}/${index}${anchor ? `/${encodeURIComponent(anchor)}` : ''}`;
 
 // Find the catalog entry and item for a route; falls back to the first item.
 export function lookup(catalog, route) {
@@ -30,12 +29,12 @@ export function lookup(catalog, route) {
   return {entry, item: entry.items[index], index};
 }
 
-// Map a repo-relative path to an in-app route when it is a catalog item.
-export function routeForPath(catalog, path) {
+// Map a repo-relative path (and optional heading id) to an in-app route when it is a catalog item.
+export function routeForPath(catalog, path, anchor = '') {
   if (path === 'README.md') return '#home';
   for (const entry of entries(catalog)) {
     const index = (entry.items || []).findIndex(item => item.path === path);
-    if (index >= 0) return routeFor(entry.id, index);
+    if (index >= 0) return routeFor(entry.id, index, anchor);
   }
   return null;
 }

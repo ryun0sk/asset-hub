@@ -12,6 +12,7 @@ import shlex
 import subprocess
 import sys
 import tempfile
+import time
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
@@ -117,22 +118,29 @@ def main(argv=None):
     run('services', 'enable', 'bigquery.googleapis.com', 'cloudscheduler.googleapis.com', 'run.googleapis.com')
     if not gcloud.succeeds('iam', 'service-accounts', 'describe', n['cost']):
         run('iam', 'service-accounts', 'create', 'asset-cost-sync', '--display-name=Asset Hub daily cost reader')
-    run('projects', 'add-iam-policy-binding', project, '--member=serviceAccount:' + n['cost'],
-        '--role=roles/bigquery.jobUser', '--condition=None')
+    gcloud.run_retry('projects', 'add-iam-policy-binding', project, '--member=serviceAccount:' + n['cost'],
+                     '--role=roles/bigquery.jobUser', '--condition=None')
     grant = {'role': 'READER', 'userByEmail': n['cost']}
     if apply:
-        response = session.get(base, timeout=30)
-        response.raise_for_status()
-        metadata = response.json()
-        access = metadata.get('access', [])
-        if grant not in access:
+        for attempt in range(6):
+            response = session.get(base, timeout=30)
+            response.raise_for_status()
+            metadata = response.json()
+            access = metadata.get('access', [])
+            if grant in access:
+                break
             response = session.patch(base, json={'access': access + [grant]},
                                      headers={'If-Match': metadata['etag']}, timeout=30)
+            # 400: the new service account is not visible to IAM yet. 412: concurrent ACL edit.
+            if response.status_code in (400, 412) and attempt < 5:
+                time.sleep(10)
+                continue
             response.raise_for_status()
+            break
     else:
         print(f'# grant dataset READER to {n["cost"]} (REST PATCH {base} access += {json.dumps(grant)})')
     bucket = n['state_bucket']
-    run('storage', 'buckets', 'add-iam-policy-binding', 'gs://' + bucket,
+    gcloud.run_retry('storage', 'buckets', 'add-iam-policy-binding', 'gs://' + bucket,
         '--member=serviceAccount:' + n['cost'], '--role=roles/storage.objectAdmin',
         "--condition=title=asset-cost-snapshot,expression=resource.name == 'projects/_/buckets/" + bucket + "/objects/costs/state.json'")
     with tempfile.TemporaryDirectory() as directory:

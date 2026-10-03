@@ -1,5 +1,8 @@
+import io
 import json
+import subprocess
 import tempfile
+from contextlib import redirect_stderr
 import unittest
 from pathlib import Path
 from unittest.mock import patch
@@ -83,6 +86,36 @@ class DeployPlanTest(unittest.TestCase):
         for invoker, viewers in [(['allUsers'], ok), (['allAuthenticatedUsers'], ok), ([], ok + ['user:other@example.com'])]:
             with self.subTest(invoker=invoker, viewers=viewers), self.assertRaises(AssertionError):
                 deploy.verify(VALID, gcloud(invoker, viewers))
+
+    def test_iam_bindings_retry_only_while_a_new_account_propagates(self):
+        def result(code, stderr=''):
+            return subprocess.CompletedProcess('gcloud', code, stderr=stderr)
+        missing = result(1, 'Service account x does not exist.')
+        with patch('subprocess.run', side_effect=[missing, missing, result(0)]) as run, redirect_stderr(io.StringIO()):
+            Gcloud(VALID).run_retry('projects', 'add-iam-policy-binding', sleep=lambda _: None)
+        self.assertEqual(run.call_count, 3)
+        with patch('subprocess.run', return_value=missing), redirect_stderr(io.StringIO()), \
+                self.assertRaises(subprocess.CalledProcessError):
+            Gcloud(VALID).run_retry('x', attempts=2, sleep=lambda _: None)
+        with patch('subprocess.run', return_value=result(1, 'PERMISSION_DENIED')) as run, redirect_stderr(io.StringIO()), \
+                self.assertRaises(subprocess.CalledProcessError):
+            Gcloud(VALID).run_retry('x', sleep=lambda _: self.fail('must not retry'))
+        self.assertEqual(run.call_count, 1)
+
+    def test_skip_costs_still_moves_the_cost_job_to_the_new_image(self):
+        calls = []
+        class Fake(Gcloud):
+            def run(self, *args, read=False):
+                calls.append(args)
+            def succeeds(self, *args):
+                return args[:3] == ('run', 'jobs', 'describe')
+        deploy.deploy(VALID, Fake(VALID), ['--skip-costs'])
+        updates = [c for c in calls if c[:3] == ('run', 'jobs', 'update')]
+        self.assertEqual(len(updates), 1)
+        self.assertIn('--image=asia-northeast1-docker.pkg.dev/asset-hub-test/asset-hub/app:current', updates[0])
+        calls.clear()
+        deploy.deploy(VALID, Fake(VALID), ['--skip-costs', '--existing-image'])
+        self.assertFalse([c for c in calls if c[:3] == ('run', 'jobs', 'update')])
 
     def test_gcloud_is_pinned_to_project_and_account(self):
         command = Gcloud(VALID).command('run', 'services', 'list', read=True)

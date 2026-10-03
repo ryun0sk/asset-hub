@@ -138,7 +138,8 @@ class LocalServerTest(ServerTest):
                 self.assertEqual(response.getheader('Content-Security-Policy'), SHELL)
                 self.assertEqual(response.getheader('X-Content-Type-Options'), 'nosniff')
                 self.assertEqual(response.getheader('Referrer-Policy'), 'no-referrer')
-                self.assertEqual(response.getheader('Cache-Control'), 'no-store')
+                self.assertEqual(response.getheader('Cache-Control'), 'private, no-cache')
+                self.assertTrue(response.getheader('ETag'))
         self.assertEqual(SHELL_CSP, SHELL)
 
     def test_unlisted_shell_files_are_not_served(self):
@@ -162,7 +163,7 @@ class LocalServerTest(ServerTest):
         self.assertEqual((response.status, body), (200, b'# report'))
         self.assertEqual(response.getheader('Content-Type'), 'text/plain; charset=utf-8')
         self.assertEqual(response.getheader('X-Content-Type-Options'), 'nosniff')
-        self.assertEqual(response.getheader('Cache-Control'), 'no-store')
+        self.assertEqual(response.getheader('Cache-Control'), 'private, no-cache')
         self.assertIn('sandbox', response.getheader('Content-Security-Policy'))
         response, _ = self.request('/research/themes/a/2026-09-05/doc.pdf')
         self.assertEqual(response.getheader('Content-Type'), 'application/pdf')
@@ -192,10 +193,28 @@ class LocalServerTest(ServerTest):
         response, body = self.request('/api/costs')
         self.assertEqual(response.status, 200)
         self.assertEqual(set(json.loads(body)), {'project', 'budget', 'snapshot', 'syncStatus'})
+        self.assertEqual(response.getheader('Cache-Control'), 'no-store')
+        self.server._cost_cache = (0.0, None)
         self.server.cost_document.read.side_effect = RuntimeError('private billing error')
         response, body = self.request('/api/costs')
         self.assertEqual(response.status, 503)
         self.assertNotIn(b'private', body)
+
+    def test_cost_snapshot_is_reused_within_a_minute(self):
+        for _ in range(3):
+            self.assertEqual(self.request('/api/costs')[0].status, 200)
+        self.server.cost_document.read.assert_called_once()
+
+    def test_static_files_revalidate_with_etag(self):
+        path = '/research/themes/a/2026-09-05/index.html'
+        response, _ = self.request(path)
+        tag = response.getheader('ETag')
+        response, body = self.request(path, headers={'If-None-Match': tag})
+        self.assertEqual((response.status, body), (304, b''))
+        self.assertEqual(response.getheader('ETag'), tag)
+        (self.root / 'research/themes/a/2026-09-05/index.html').write_text('<script>changed</script>')
+        response, body = self.request(path, headers={'If-None-Match': tag})
+        self.assertEqual((response.status, body), (200, b'<script>changed</script>'))
 
     def test_head_has_headers_without_body(self):
         response, body = self.request('/', method='HEAD')
