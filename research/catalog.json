@@ -1,11 +1,30 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-03T10:20:33Z",
+  "generatedAt": "2026-10-03T10:56:15Z",
   "groups": [
     {
       "id": "themes",
       "label": "テーマ",
       "entries": [
+        {
+          "id": "ai-year-end-comparison-2026-10-03",
+          "title": "AI関連銘柄 年末までの比較材料",
+          "date": "2026-10-03",
+          "kind": "theme",
+          "slug": "ai-year-end-comparison",
+          "items": [
+            {
+              "label": "比較レポート",
+              "path": "research/themes/ai-year-end-comparison/2026-10-03/report.md",
+              "type": "md"
+            },
+            {
+              "label": "調査範囲・前提",
+              "path": "research/themes/ai-year-end-comparison/2026-10-03/README.md",
+              "type": "md"
+            }
+          ]
+        },
         {
           "id": "ai-supply-chain-2026-10-03",
           "title": "AI関連銘柄・サプライチェーン",
