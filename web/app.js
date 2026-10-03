@@ -161,19 +161,22 @@ function showResearch({entry, item}, anchor = '') {
   const note = archiveNote || `<p class="notice snapshot-note"><span aria-hidden="true">ⓘ</span>調査日（${esc(entry.date)}）時点のスナップショットです。現在の株価・投資判断ではありません。</p>`;
   const token = ++renderToken;
   const title = `${entry.title} — ${item.label}`;
+  // Version bar and notice share one row so the document starts close to the heading.
+  const meta = notice => (versionNav || notice) ? `<div class="viewer-meta">${versionNav}${notice}</div>` : '';
   if (!url) {
-    host.innerHTML = `${versionNav}<p class="empty" role="alert">この資料は表示できません。</p>`;
+    host.innerHTML = `${meta('')}<p class="empty" role="alert">この資料は表示できません。</p>`;
     return;
   }
   if (item.type === 'html') {
-    host.innerHTML = `${versionNav}${note}<div class="viewer"><iframe class="viewer-frame" src="${esc(url)}" title="${esc(title)}" sandbox="${SANDBOX}" referrerpolicy="no-referrer"></iframe></div>`;
+    host.innerHTML = `${meta(note)}<div class="viewer"><iframe class="viewer-frame" src="${esc(url)}" title="${esc(title)}" sandbox="${SANDBOX}" referrerpolicy="no-referrer"></iframe></div>`;
+    fitFrame(host.querySelector('.viewer-frame'));
     return;
   }
   if (item.type === 'pdf') {
-    host.innerHTML = `${versionNav}${archiveNote}<div class="viewer"><iframe class="viewer-frame" src="${esc(url)}" title="${esc(title)}"></iframe></div><p class="viewer-fallback">PDFが表示されない場合は <a href="${esc(url)}" download>ダウンロード</a> するか、<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">新しいタブで開いて</a>ください。</p>`;
+    host.innerHTML = `${meta(archiveNote)}<div class="viewer"><iframe class="viewer-frame" src="${esc(url)}" title="${esc(title)}"></iframe></div><p class="viewer-fallback">PDFが表示されない場合は <a href="${esc(url)}" download>ダウンロード</a> するか、<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">新しいタブで開いて</a>ください。</p>`;
     return;
   }
-  host.innerHTML = `${versionNav}${note}<div class="doc-panel"><p class="empty" role="status">資料を読み込んでいます…</p></div>`;
+  host.innerHTML = `${meta(note)}<div class="doc-panel"><p class="empty" role="status">資料を読み込んでいます…</p></div>`;
   fetchText(url).then(text => {
     if (token !== renderToken) return;
     const body = item.type === 'md'
@@ -185,6 +188,38 @@ function showResearch({entry, item}, anchor = '') {
     if (token !== renderToken) return;
     host.querySelector('.doc-panel').innerHTML = '<p class="empty" role="alert">資料を読み込めませんでした。</p>';
   });
+}
+
+// Grow an HTML document's frame to its content so the page scrolls instead of the frame
+// (same origin: research pages are sandboxed with allow-same-origin). A page whose height
+// follows the frame (100vh layouts) keeps the fixed frame height and its own scrollbar.
+let frameObserver = null;
+function fitFrame(frame) {
+  frameObserver?.disconnect();
+  frameObserver = null;
+  frame.addEventListener('load', () => {
+    let doc;
+    try { doc = frame.contentDocument; } catch { return; }
+    if (!doc?.documentElement) return;
+    const fixed = frame.clientHeight;
+    const fit = () => {
+      if (!frame.isConnected) { frameObserver?.disconnect(); return; }
+      const height = doc.documentElement.scrollHeight;
+      if (Math.abs(height - frame.clientHeight) <= 2) return;
+      frame.style.height = `${Math.max(height, 200)}px`;
+    };
+    // Probe once: if the content height tracks the frame height it is viewport-sized.
+    frame.style.height = `${fixed + 100}px`;
+    requestAnimationFrame(() => {
+      const viewportSized = Math.abs(doc.documentElement.scrollHeight - (fixed + 100)) <= 2;
+      frame.style.height = '';
+      if (viewportSized) return;
+      fit();
+      frameObserver = new ResizeObserver(fit);
+      frameObserver.observe(doc.documentElement);
+      if (doc.body) frameObserver.observe(doc.body);
+    });
+  }, {once: true});
 }
 
 async function fetchText(url) {

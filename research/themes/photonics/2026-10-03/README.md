@@ -18,4 +18,4 @@
 
 ## 再現方法
 
-リポジトリのルートで `python3 research/themes/photonics/2026-10-03/build_chart.py` を実行する（`--offline` を付けると `working/raw/` の保存済みデータから再生成）。表示枠（スタイル・iframe）は `../2026-09-05/index.html` から読み込んで流用する。`index.html` は描画ライブラリ d3（cdn.jsdelivr.net）とアイコン lucide（unpkg.com）を CDN から読み込むため、完全なオフライン版ではない。データは HTML に埋め込んだスナップショットで、自動更新しない。
+リポジトリのルートで `python3 research/themes/photonics/2026-10-03/build_chart.py` を実行する（`--offline` を付けると `working/raw/` の保存済みデータから再生成）。チャート文書は `../2026-09-05/index.html` の iframe 内（srcdoc）から取り出して流用し、二重の iframe にはせず index.html そのものにした（ダッシュボードで高さを中身に合わせるため）。`index.html` は描画ライブラリ d3（cdn.jsdelivr.net）とアイコン lucide（unpkg.com）を CDN から読み込むため、完全なオフライン版ではない。データは HTML に埋め込んだスナップショットで、自動更新しない。
