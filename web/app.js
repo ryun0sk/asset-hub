@@ -1,6 +1,6 @@
 import {showCosts, initCostAlerts} from './costs.js';
 import {renderMarkdown} from './markdown.js';
-import {KIND_LABELS, TYPE_LABELS, entries, parseRoute, routeFor, lookup, routeForPath, fileUrl, stats} from './catalog.js';
+import {KIND_LABELS, TYPE_LABELS, parseRoute, routeFor, lookup, routeForPath, fileUrl, stats, versionsOf, latestGroups, counterpartIndex} from './catalog.js';
 
 const $ = id => document.getElementById(id);
 const esc = value => String(value ?? '').replace(/[&<>"']/g, ch => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[ch]));
@@ -37,9 +37,23 @@ function renderNav() {
     host.innerHTML = `<p class="nav-label nav-status">${esc(catalogError || '調査一覧を読み込んでいます…')}</p>`;
     return;
   }
-  host.innerHTML = catalog.groups.map(group => `<p class="nav-label">${esc(group.label)}</p>${(group.entries || []).map(entry => `
-    <a href="${routeFor(entry.id, 0)}" class="nav-link" data-entry="${esc(entry.id)}"><span class="nav-icon" aria-hidden="true">${ICONS[entry.kind] || ICONS.theme}</span><span class="nav-text">${esc(entry.title)}</span></a>
-    <div class="subnav" data-subnav="${esc(entry.id)}" hidden>${entry.items.map((item, index) => `<a href="${routeFor(entry.id, index)}" data-entry="${esc(entry.id)}" data-index="${index}">${esc(item.label)}</a>`).join('')}</div>`).join('')}`).join('');
+  // One link per target (its newest snapshot); archives are reached from the version bar.
+  host.innerHTML = latestGroups(catalog).map(group => `<p class="nav-label">${esc(group.label)}</p>${group.entries.map(entry => `
+    <a href="${routeFor(entry.id, 0)}" class="nav-link" data-target="${esc(targetKey(entry))}"><span class="nav-icon" aria-hidden="true">${ICONS[entry.kind] || ICONS.theme}</span><span class="nav-text">${esc(entry.title)}</span></a>
+    <div class="subnav" data-subnav="${esc(targetKey(entry))}" hidden></div>`).join('')}`).join('');
+}
+
+const targetKey = entry => `${entry.kind}/${entry.slug}`;
+
+// Expand the viewed target in the sidebar with the documents of the version being shown.
+function syncNav(view, found) {
+  const key = view === 'research' && found ? targetKey(found.entry) : '';
+  document.querySelectorAll('#mainNav .nav-link[data-target]').forEach(link => link.classList.toggle('selected', link.dataset.target === key));
+  document.querySelectorAll('#mainNav [data-subnav]').forEach(sub => {
+    sub.hidden = sub.dataset.subnav !== key;
+    if (sub.hidden) { sub.textContent = ''; return; }
+    sub.innerHTML = found.entry.items.map((item, index) => `<a href="${routeFor(found.entry.id, index)}"${index === found.index ? ' class="selected" aria-current="page"' : ''}>${esc(item.label)}</a>`).join('');
+  });
 }
 
 function setHead({eyebrow, title, meta, crumb, openUrl, topMeta}) {
@@ -63,13 +77,7 @@ function changeView() {
   $('costSection').hidden = view !== 'cost';
   $('pageActions').innerHTML = '';
   document.querySelectorAll('#mainNav [data-view]').forEach(link => link.classList.toggle('selected', link.dataset.view === view));
-  document.querySelectorAll('#mainNav .nav-link[data-entry]').forEach(link => link.classList.toggle('selected', view === 'research' && link.dataset.entry === found?.entry.id));
-  document.querySelectorAll('#mainNav [data-subnav]').forEach(sub => { sub.hidden = view !== 'research' || sub.dataset.subnav !== found?.entry.id; });
-  document.querySelectorAll('#mainNav .subnav a').forEach(link => {
-    const active = view === 'research' && link.dataset.entry === found?.entry.id && Number(link.dataset.index) === found?.index;
-    link.classList.toggle('selected', active);
-    if (active) link.setAttribute('aria-current', 'page'); else link.removeAttribute('aria-current');
-  });
+  syncNav(view, found);
   if (view === 'cost') {
     setHead({eyebrow: 'COST', title: 'コスト', meta: '', crumb: 'コスト'});
     showCosts();
@@ -89,61 +97,83 @@ function showHome() {
     host.innerHTML = `<p class="empty" role="${catalogError ? 'alert' : 'status'}">${esc(catalogError || '調査一覧を読み込んでいます…')}</p>`;
     return;
   }
-  const s = stats(catalog), all = entries(catalog);
+  const s = stats(catalog), latest = latestGroups(catalog).flatMap(group => group.entries);
   const metric = (tone, label, value, unit, note) => `<section class="metric ${tone}"><p class="metric-label">${label}</p><p class="metric-value">${esc(value)}${unit ? `<small>${unit}</small>` : ''}</p><p class="metric-note">${note}</p></section>`;
   host.innerHTML = `<div class="metrics">
       ${metric('green-top', 'テーマ', s.themes, '件', '業界・サプライチェーン単位の調査')}
       ${metric('blue-top', '企業', s.companies, '社', '個別銘柄の調査')}
       ${metric('amber-top', '最新の調査日', s.latest || '—', '', '新しい調査は日付別フォルダに追加')}
-      ${metric('', '資料', s.documents, '件', 'ダッシュボード・レポート・原資料')}
+      ${metric('', '資料', s.documents, '件', `最新版の資料。過去の調査 ${s.archives}版はアーカイブ`)}
     </div>
     <p class="notice snapshot-note"><span aria-hidden="true">ⓘ</span>${SNAPSHOT_NOTE}</p>
     <section class="panel">
-      <div class="panel-heading"><h2>調査一覧<span class="count">${all.length}件</span></h2><span class="subtle">対象名から最初の資料を開きます</span></div>
+      <div class="panel-heading"><h2>調査一覧<span class="count">${latest.length}件</span></h2><span class="subtle">最新の調査を表示。過去の調査はアーカイブ欄から開けます</span></div>
       <div class="table-scroll" tabindex="0" role="region" aria-label="調査一覧。横スクロールで資料を確認">
-        <table class="research-table"><colgroup><col class="col-title"><col class="col-kind"><col class="col-date"><col class="col-items"></colgroup>
-          <thead><tr><th scope="col">対象</th><th scope="col">区分</th><th scope="col">調査日</th><th scope="col">資料</th></tr></thead>
-          <tbody>${all.map(entry => `<tr>
+        <table class="research-table"><colgroup><col class="col-title"><col class="col-kind"><col class="col-date"><col class="col-items"><col class="col-archive"></colgroup>
+          <thead><tr><th scope="col">対象</th><th scope="col">区分</th><th scope="col">最新の調査日</th><th scope="col">資料</th><th scope="col">アーカイブ</th></tr></thead>
+          <tbody>${latest.map(entry => `<tr>
             <td><a class="entry-link" href="${routeFor(entry.id, 0)}">${esc(entry.title)}</a></td>
             <td><span class="badge ${entry.kind === 'company' ? 'medium' : 'high'}">${esc(KIND_LABELS[entry.kind] || entry.kind)}</span></td>
             <td class="numeric-cell">${esc(entry.date)}</td>
             <td><div class="link-stack">${entry.items.map((item, index) => `<a class="channel" href="${routeFor(entry.id, index)}">${esc(item.label)}<span class="type-tag">${esc(TYPE_LABELS[item.type] || item.type)}</span></a>`).join('')}</div></td>
-          </tr>`).join('') || '<tr><td colspan="4" class="empty">調査資料はまだありません。</td></tr>'}</tbody>
+            <td>${archiveLinks(entry)}</td>
+          </tr>`).join('') || '<tr><td colspan="5" class="empty">調査資料はまだありません。</td></tr>'}</tbody>
         </table>
       </div>
       <div class="table-footer"><span>出典: research/catalog.json${catalog.generatedAt ? ` · 生成 ${esc(catalog.generatedAt.slice(0, 10))}` : ''}</span><span>実績・会社予想・外部予想・独自シナリオの区別は各資料を参照</span></div>
     </section>`;
 }
 
-function showResearch({entry, item, index}, anchor = '') {
+function archiveLinks(entry) {
+  const older = versionsOf(catalog, entry).slice(1);
+  if (!older.length) return '<span class="no-archive">—</span>';
+  return `<div class="link-stack">${older.map(version => `<a class="archive-link" href="${routeFor(version.id, 0)}">${esc(version.date)}</a>`).join('')}</div>`;
+}
+
+// Snapshots of the same target, newest first; the shown one is marked and the others keep the
+// same document when it exists in that version.
+function versionBar(entry, item) {
+  const versions = versionsOf(catalog, entry);
+  if (versions.length < 2) return '';
+  const links = versions.map((version, n) => {
+    const current = version.id === entry.id;
+    const tag = n === 0 ? '最新' : 'アーカイブ';
+    return `<a class="version-chip${current ? ' current' : ''}${n === 0 ? ' latest' : ''}" href="${routeFor(version.id, counterpartIndex(item, version))}"${current ? ' aria-current="page"' : ''}>${esc(version.date)}<span>${tag}</span></a>`;
+  }).join('');
+  return `<nav class="version-bar" aria-label="調査の版"><span class="version-label">調査の版</span>${links}</nav>`;
+}
+
+function showResearch({entry, item}, anchor = '') {
   const url = fileUrl(item.path);
+  const versions = versionsOf(catalog, entry), newest = versions[0], archived = newest && newest.id !== entry.id;
   setHead({
-    eyebrow: `${KIND_LABELS[entry.kind] || ''} · 調査日 ${entry.date}`,
-    title: entry.title,
-    meta: `${item.label} · ${item.path}`,
+    eyebrow: `${KIND_LABELS[entry.kind] || ''} · 調査日 ${entry.date}${archived ? ' · アーカイブ' : ''}`,
+    title: `【${entry.title}】${item.label}`,
+    meta: item.path,
     crumb: `${entry.title} · ${item.label}`,
     openUrl: url,
     topMeta: `調査日 ${entry.date}`,
   });
   if (item.type === 'pdf' && url) $('pageActions').innerHTML = `<a class="button" href="${esc(url)}" download>PDFをダウンロード</a>`;
   const host = $('researchSection');
-  const tabs = `<nav class="doc-tabs" aria-label="${esc(entry.title)}の資料">${entry.items.map((other, n) => `<a href="${routeFor(entry.id, n)}"${n === index ? ' class="active" aria-current="page"' : ''}>${esc(other.label)}</a>`).join('')}</nav>`;
-  const note = `<p class="notice snapshot-note"><span aria-hidden="true">ⓘ</span>調査日（${esc(entry.date)}）時点のスナップショットです。現在の株価・投資判断ではありません。</p>`;
+  const versionNav = versionBar(entry, item);
+  const archiveNote = archived ? `<p class="notice snapshot-note archive-note" role="note"><span aria-hidden="true">⏱</span><span class="archive-text">過去の調査（${esc(entry.date)}時点）をアーカイブとして表示しています。<a href="${routeFor(newest.id, counterpartIndex(item, newest))}">最新の調査（${esc(newest.date)}）を開く →</a></span></p>` : '';
+  const note = archiveNote || `<p class="notice snapshot-note"><span aria-hidden="true">ⓘ</span>調査日（${esc(entry.date)}）時点のスナップショットです。現在の株価・投資判断ではありません。</p>`;
   const token = ++renderToken;
   const title = `${entry.title} — ${item.label}`;
   if (!url) {
-    host.innerHTML = `${tabs}<p class="empty" role="alert">この資料は表示できません。</p>`;
+    host.innerHTML = `${versionNav}<p class="empty" role="alert">この資料は表示できません。</p>`;
     return;
   }
   if (item.type === 'html') {
-    host.innerHTML = `${tabs}${note}<div class="viewer"><iframe class="viewer-frame" src="${esc(url)}" title="${esc(title)}" sandbox="${SANDBOX}" referrerpolicy="no-referrer"></iframe></div>`;
+    host.innerHTML = `${versionNav}${note}<div class="viewer"><iframe class="viewer-frame" src="${esc(url)}" title="${esc(title)}" sandbox="${SANDBOX}" referrerpolicy="no-referrer"></iframe></div>`;
     return;
   }
   if (item.type === 'pdf') {
-    host.innerHTML = `${tabs}<div class="viewer"><iframe class="viewer-frame" src="${esc(url)}" title="${esc(title)}"></iframe></div><p class="viewer-fallback">PDFが表示されない場合は <a href="${esc(url)}" download>ダウンロード</a> するか、<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">新しいタブで開いて</a>ください。</p>`;
+    host.innerHTML = `${versionNav}${archiveNote}<div class="viewer"><iframe class="viewer-frame" src="${esc(url)}" title="${esc(title)}"></iframe></div><p class="viewer-fallback">PDFが表示されない場合は <a href="${esc(url)}" download>ダウンロード</a> するか、<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">新しいタブで開いて</a>ください。</p>`;
     return;
   }
-  host.innerHTML = `${tabs}${note}<div class="doc-panel"><p class="empty" role="status">資料を読み込んでいます…</p></div>`;
+  host.innerHTML = `${versionNav}${note}<div class="doc-panel"><p class="empty" role="status">資料を読み込んでいます…</p></div>`;
   fetchText(url).then(text => {
     if (token !== renderToken) return;
     const body = item.type === 'md'
