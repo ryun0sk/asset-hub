@@ -29,12 +29,18 @@ LOCAL_ONLY = {"working", "qa"}
 
 
 def archived_folders():
-    """Every dated folder except the newest one of its target, as repo-relative paths."""
+    """Every dated folder except the newest one of its target, as repo-relative paths.
+
+    Folders holding only local files (working/, qa/) are not versions yet, matching
+    build_catalog.py, so a research run in progress does not turn the current version into
+    an archive.
+    """
     folders = []
     for group in ("themes", "companies"):
         base = RESEARCH / group
         for target in sorted(p for p in base.iterdir() if p.is_dir()) if base.exists() else []:
             dated = sorted(p for p in target.iterdir() if p.is_dir() and DATE.match(p.name))
+            dated = [p for p in dated if snapshot_files(p.relative_to(ROOT).as_posix())]
             folders.extend(p.relative_to(ROOT).as_posix() for p in dated[:-1])
     return folders
 
@@ -92,11 +98,12 @@ def git(*args, binary=False):
 
 
 def restore(manifest):
-    """Rewrite changed or missing files from the newest commit whose blob has the recorded hash."""
-    remaining = []
+    """Rewrite changed or missing files from the newest commit whose blob has the recorded hash.
+
+    Returns what still differs afterwards (unrecorded archives, added files, lost content).
+    """
     for folder, name, message in problems(manifest):
-        if name is None or message == "added after the archive was recorded":
-            remaining.append((folder, name, message))
+        if name is None or message not in ("missing", "changed"):
             continue
         path = f"{folder}/{name}"
         expected = manifest["archives"][folder][name]["sha256"]
@@ -111,8 +118,8 @@ def restore(manifest):
                 print(f"restored {path} from {commit[:12]}")
                 break
         else:
-            remaining.append((folder, name, "no commit has the recorded content"))
-    return remaining
+            print(f"{path}: no commit has the recorded content")
+    return problems(manifest)
 
 
 def report(found):

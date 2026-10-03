@@ -96,7 +96,7 @@
 }
 
 /* Research viewer. */
-#researchSection .snapshot-note, #researchSection .archive-note { margin-bottom: var(--space-12); }
+#researchSection .snapshot-note { margin-bottom: var(--space-12); }
 
 /* Version bar: every dated snapshot of the target; the newest is current, the rest archives. */
 .version-bar {
@@ -123,18 +123,9 @@
 .version-chip.latest span { color: var(--blue); }
 .version-chip:hover { border-color: var(--blue-light); }
 .version-chip.current { border-color: var(--navy); background: var(--blue-mist); color: var(--navy); font-weight: var(--font-weight-semibold); }
-.archive-note {
-  flex-wrap: nowrap;
-  margin: var(--space-0) var(--space-0) var(--space-16);
-  padding: var(--space-8) var(--space-12);
-  background: var(--amber-mist);
-  border: var(--border-width-thin) solid var(--line);
-  border-left: var(--border-width-strong) solid var(--amber-ink);
-  border-radius: var(--radius-small);
-  font-size: var(--font-size-caption);
-  color: var(--body);
-}
-.archive-note > span:first-child { font-size: var(--font-size-subheading); line-height: var(--line-height-heading); color: var(--amber-ink); }
+/* Archive notice: a .snapshot-note in amber. */
+.archive-note { background: var(--amber-mist); border-left-color: var(--amber-ink); }
+.archive-note > span:first-child { color: var(--amber-ink); }
 .archive-note > .archive-text { font-size: var(--font-size-caption); line-height: var(--line-height-reading); color: var(--body); }
 .archive-note a { margin-left: var(--space-4); white-space: nowrap; color: var(--navy); font-weight: var(--font-weight-semibold); text-decoration: underline; text-underline-offset: 3px; }
 .viewer {

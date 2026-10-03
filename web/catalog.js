@@ -18,7 +18,12 @@ export const isLatest = (catalog, entry) => versionsOf(catalog, entry)[0]?.id ==
 
 // The newest snapshot of each target, in catalog order (groups keep their own order).
 export function latestGroups(catalog) {
-  return (catalog?.groups || []).map(group => ({...group, entries: (group.entries || []).filter(entry => isLatest(catalog, {...entry, group: group.id}))}));
+  const newest = new Map();
+  for (const entry of entries(catalog)) {
+    const key = `${entry.kind}/${entry.slug}`;
+    if (!newest.has(key) || entry.date > newest.get(key).date) newest.set(key, entry);
+  }
+  return (catalog?.groups || []).map(group => ({...group, entries: (group.entries || []).filter(entry => newest.get(`${entry.kind}/${entry.slug}`)?.id === entry.id)}));
 }
 
 // Index of the same document (same path inside the dated folder) in another version, else 0.

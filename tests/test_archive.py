@@ -1,4 +1,5 @@
 import importlib.util
+import shutil
 import subprocess
 import tempfile
 import unittest
@@ -66,16 +67,25 @@ class ArchiveSnapshotTest(unittest.TestCase):
         self.assertEqual(archive.load(), before)
 
     def test_restore_puts_committed_content_back(self):
-        git = lambda *args: subprocess.run(['git', *args], cwd=self.root, check=True, capture_output=True)
+        config = ['-c', 'user.name=t', '-c', 'user.email=t@example.com', '-c', 'commit.gpgsign=false', '-c', 'core.hooksPath=/dev/null']
+        git = lambda *args: subprocess.run(['git', *config, *args], cwd=self.root, check=True, capture_output=True)
         git('init', '-q')
-        git('-c', 'user.name=t', '-c', 'user.email=t@example.com', 'add', '-A')
-        git('-c', 'user.name=t', '-c', 'user.email=t@example.com', 'commit', '-qm', 'snapshot')
+        git('add', '-A')
+        git('commit', '-qm', 'snapshot')
         archive.main(['--write'])
-        target = self.root / 'research/companies/1111-a/2026-09-05/report.md'
-        target.write_text('edited', encoding='utf-8')
+        folder = self.root / 'research/companies/1111-a/2026-09-05'
+        (folder / 'report.md').write_text('edited', encoding='utf-8')
         archive.main(['--restore'])
-        self.assertEqual(target.read_text(encoding='utf-8'), 'old')
+        self.assertEqual((folder / 'report.md').read_text(encoding='utf-8'), 'old')
+        # A deleted archive folder comes back whole and restore reports success.
+        shutil.rmtree(folder)
+        archive.main(['--restore'])
+        self.assertEqual((folder / 'report.md').read_text(encoding='utf-8'), 'old')
         self.assertEqual(archive.problems(archive.load()), [])
+
+    def test_a_folder_with_only_local_files_does_not_archive_the_current_version(self):
+        write(self.root, {'research/companies/1111-a/2026-11-01/working/raw.json': 'in progress'})
+        self.assertEqual(archive.archived_folders(), ['research/companies/1111-a/2026-09-05'])
 
 
 class RepositoryArchivesTest(unittest.TestCase):
