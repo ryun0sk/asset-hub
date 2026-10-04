@@ -83,6 +83,14 @@ class ArchiveSnapshotTest(unittest.TestCase):
         self.assertEqual((folder / 'report.md').read_text(encoding='utf-8'), 'old')
         self.assertEqual(archive.problems(archive.load()), [])
 
+    def test_crypto_targets_are_archived_like_the_other_groups(self):
+        write(self.root, {
+            'research/crypto/BTC-bitcoin/2026-09-05/report.md': 'old',
+            'research/crypto/BTC-bitcoin/2026-10-03/report.md': 'new',
+        })
+        self.assertEqual(archive.archived_folders(), ['research/companies/1111-a/2026-09-05', 'research/crypto/BTC-bitcoin/2026-09-05'])
+        self.assertEqual(archive.snapshot_files('research/crypto/BTC-bitcoin/2026-09-05'), ['report.md'])
+
     def test_a_folder_with_only_local_files_does_not_archive_the_current_version(self):
         write(self.root, {'research/companies/1111-a/2026-11-01/working/raw.json': 'in progress'})
         self.assertEqual(archive.archived_folders(), ['research/companies/1111-a/2026-09-05'])

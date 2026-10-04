@@ -32,7 +32,9 @@ python3 scripts/archive_snapshots.py --write    # 新しくアーカイブにな
 
 ## ダッシュボードアプリ
 
-上の調査を左タブから閲覧できるWebアプリです。デザインは pathosion-ops に準拠し、Cloud Run + IAP（許可したGoogleアカウントのみ）で公開します。最下部の「コスト」タブで、このシステムのGCP利用料金（BigQuery請求エクスポート由来）を確認できます。
+上の調査を左タブから閲覧できるWebアプリです。全資産の週次推移は「保有・推移」タブ1つにまとめ、チェックボックスでグラフに出す資産クラス・銘柄を選べます。デザインは pathosion-ops に準拠し、Cloud Run + IAP（許可したGoogleアカウントのみ）で公開します。最下部の「コスト」タブで、このシステムのGCP利用料金（BigQuery請求エクスポート由来）を確認できます。
+
+資産の残高は Git には入れません。週末に `/weekly-assets` スキル（[.claude/skills/weekly-assets/SKILL.md](.claude/skills/weekly-assets/SKILL.md)）の手順で `data/private/assets/`（Git 対象外）に記録し、`python3 -m backend.assets build` → `push` で非公開バケットへ反映します。仕組みとスキーマは [docs/assets.md](docs/assets.md)。
 
 | 対象 | 内容 |
 |---|---|
@@ -41,6 +43,8 @@ python3 scripts/archive_snapshots.py --write    # 新しくアーカイブにな
 | [infra/](infra/) | デプロイ設定・スクリプト |
 | [docs/design-system.md](docs/design-system.md) | デザインシステム（トークン・コンポーネント） |
 | [docs/deploy.md](docs/deploy.md) | デプロイ・コスト集計の手順 |
+| [docs/assets.md](docs/assets.md) | 資産スナップショットのスキーマ・CLI・週次運用 |
+| [.claude/skills/weekly-assets/SKILL.md](.claude/skills/weekly-assets/SKILL.md) | 週末に資産を記録する手順（Claude 用スキル） |
 | [research/catalog.json](research/catalog.json) | 左タブの一覧（全版）。調査を追加したら `python3 scripts/build_catalog.py` で再生成 |
 | [research/archive-manifest.json](research/archive-manifest.json) | アーカイブの改変検出・復元用のハッシュ記録 |
 
@@ -57,6 +61,7 @@ research/
     working/           抽出テキスト・取得補助・検証画像
   themes/<テーマ名>/<調査日>/
     index.html         閲覧用の成果物（ある場合）
+  crypto/<ティッカー-銘柄名>/<調査日>/   仮想通貨の調査（例 BTC-bitcoin。ダッシュボードでは「仮想通貨」に表示）
 migrations/            移行元・移行先・ファイルのハッシュ記録
 ```
 

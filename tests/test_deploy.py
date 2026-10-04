@@ -130,7 +130,9 @@ class StagingTest(unittest.TestCase):
                      'web/sub/x.js', 'research/catalog.json', 'research/themes/t/d/index.html',
                      'research/themes/t/d/working/raw.html', 'research/themes/t/d/qa/shot.png',
                      'research/themes/t/d/.DS_Store', 'research/themes/t/d/fetch.py', 'research/themes/t/d/a.pdf',
-                     'data/private/costs.json', 'infra/config.json', '.env', 'Dockerfile', 'requirements.txt', '.dockerignore']
+                     'data/private/costs.json', 'data/private/assets/accounts.json',
+                     'data/private/assets/snapshots/2026-10-04.json', 'data/private/assets/state.json',
+                     'infra/config.json', '.env', 'Dockerfile', 'requirements.txt', '.dockerignore']
             for name in files:
                 (root / name).parent.mkdir(parents=True, exist_ok=True)
                 (root / name).write_text('x')
@@ -140,8 +142,10 @@ class StagingTest(unittest.TestCase):
             self.assertEqual(staged, {'backend/server.py', 'web/index.html', 'web/app.js', 'research/catalog.json',
                                       'research/themes/t/d/index.html', 'research/themes/t/d/a.pdf',
                                       'Dockerfile', 'requirements.txt', '.dockerignore'})
+            self.assertFalse([p for p in staged if p.startswith('data/')])
             on_disk = {p.relative_to(target).as_posix() for p in target.rglob('*') if p.is_file()}
             self.assertEqual(on_disk, staged)
+            self.assertFalse(list(target.rglob('*assets*')))
 
     def test_real_repository_staging_excludes_working_material(self):
         from backend.paths import ROOT, research_files

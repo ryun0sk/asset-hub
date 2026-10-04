@@ -1,7 +1,8 @@
 """Build research/catalog.json for the Asset Hub dashboard.
 
-Scans research/{themes,companies}/<slug>/<YYYY-MM-DD>/ and lists the documents the
-web app can show. Every dated folder is its own entry; the web app treats the newest one of
+Scans research/{themes,companies,crypto}/<slug>/<YYYY-MM-DD>/ and lists the documents the
+web app can show. Each group carries an assetClass (stock or crypto) so the dashboard can file
+it under the right asset class; a group whose folder does not exist yet is emitted empty. Every dated folder is its own entry; the web app treats the newest one of
 each slug as current and the older ones as archives. Titles come from the root README table and each folder README;
 small overrides below keep labels stable. A folder may add views.json to list named views of one
 HTML file ({"index.html": [{"view": "price", "label": "株価の比較"}, ...]}); each view becomes its own
@@ -24,7 +25,13 @@ OUTPUT = RESEARCH / "catalog.json"
 DATE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 LINK = re.compile(r"\[([^\]]*)\]\(([^)\s]+)\)")
 
-GROUPS = (("themes", "テーマ", "theme"), ("companies", "企業", "company"))
+# (folder, label, entry kind, asset class). Crypto slugs follow <TICKER>-<name>, e.g. BTC-bitcoin.
+GROUPS = (
+    ("themes", "テーマ", "theme", "stock"),
+    ("companies", "企業", "company", "stock"),
+    ("crypto", "仮想通貨", "crypto", "crypto"),
+)
+CODE_PATTERNS = {"company": re.compile(r"^([0-9A-Z]{4})-"), "crypto": re.compile(r"^([0-9A-Z]{2,10})-")}
 # Top-level files in display order: file name -> (type, default label).
 FILES = {
     "index.html": ("html", "ダッシュボード"),
@@ -104,7 +111,7 @@ def readme_position(folder, relative):
 def build():
     titles = root_titles()
     groups = []
-    for directory, label, kind in GROUPS:
+    for directory, label, kind, asset_class in GROUPS:
         entries = []
         base = RESEARCH / directory
         for slug_dir in sorted(p for p in base.iterdir() if p.is_dir()) if base.exists() else []:
@@ -139,8 +146,8 @@ def build():
                     "items": items,
                     "folder": folder,
                 }
-                code = re.match(r"^([0-9A-Z]{4})-", slug)
-                if kind == "company" and code:
+                code = CODE_PATTERNS[kind].match(slug) if kind in CODE_PATTERNS else None
+                if code:
                     entry["code"] = code.group(1)
                 entries.append(entry)
         order = list(titles)
@@ -150,7 +157,7 @@ def build():
         entries.sort(key=lambda e: e["date"], reverse=True)
         for entry in entries:
             del entry["folder"]
-        groups.append({"id": directory, "label": label, "entries": entries})
+        groups.append({"id": directory, "label": label, "assetClass": asset_class, "entries": entries})
     return {"version": 1, "generatedAt": datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z"), "groups": groups}
 
 

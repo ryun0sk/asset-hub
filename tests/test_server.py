@@ -105,6 +105,9 @@ class ServerTest(unittest.TestCase):
             self.cloud, web_dir=self.root / 'web', research_dir=self.root / 'research')
         self.server.cost_document = Mock()
         self.server.cost_document.read.return_value = ({'snapshot': None, 'syncStatus': {'status': 'pending'}}, 1)
+        self.server.asset_document = Mock()
+        self.server.asset_document.read.return_value = (
+            {'state': {'version': 1, 'accounts': [], 'snapshots': [], 'latestDate': None}, 'pushedAt': '2026-10-04T01:00:00+00:00'}, 1)
         self.server.verify = Mock(return_value='viewer@example.com')
         self.server.audience = 'aud'
         self.server.allowed = frozenset({'viewer@example.com'})
@@ -205,6 +208,32 @@ class LocalServerTest(ServerTest):
             self.assertEqual(self.request('/api/costs')[0].status, 200)
         self.server.cost_document.read.assert_called_once()
 
+    def test_assets_payload_and_storage_failure(self):
+        response, body = self.request('/api/assets')
+        self.assertEqual(response.status, 200)
+        payload = json.loads(body)
+        self.assertEqual(set(payload), {'state', 'status'})
+        self.assertEqual(payload['status'], {'status': 'ok', 'pushedAt': '2026-10-04T01:00:00+00:00'})
+        self.assertEqual(payload['state']['version'], 1)
+        self.assertEqual(response.getheader('Cache-Control'), 'no-store')
+        self.assertEqual(response.getheader('Content-Security-Policy'), API_CSP)
+        self.assertEqual(response.getheader('Content-Type'), 'application/json; charset=utf-8')
+        self.server._asset_cache = (0.0, None)
+        self.server.asset_document.read.side_effect = RuntimeError('private balance error')
+        response, body = self.request('/api/assets')
+        self.assertEqual(response.status, 503)
+        self.assertNotIn(b'private', body)
+        self.assertNotIn(b'balance', body)
+        self.assertEqual(json.loads(body), {'error': '資産データを読み込めませんでした。'})
+        self.assertEqual(response.getheader('Content-Security-Policy'), API_CSP)
+        self.assertEqual(self.request('/api/assets', method='HEAD')[1], b'')
+
+    def test_asset_state_is_reused_within_a_minute(self):
+        for _ in range(3):
+            self.assertEqual(self.request('/api/assets')[0].status, 200)
+        self.server.asset_document.read.assert_called_once()
+        self.server.cost_document.read.assert_not_called()
+
     def test_static_files_revalidate_with_etag(self):
         path = '/research/themes/a/2026-09-05/index.html'
         response, _ = self.request(path)
@@ -242,14 +271,18 @@ class CloudServerTest(ServerTest):
 
     def test_every_route_requires_iap_assertion(self):
         self.server.verify.side_effect = PermissionError()
-        for path in ['/', '/app.js', '/api/catalog', '/api/costs', '/research/themes/a/2026-09-05/index.html', '/missing']:
+        for path in ['/', '/app.js', '/api/catalog', '/api/costs', '/api/assets', '/research/themes/a/2026-09-05/index.html',
+                     '/missing']:
             with self.subTest(path=path):
                 response, body = self.request(path, host='asset-hub.example')
                 self.assertEqual(response.status, 403)
                 self.assertNotIn(b'shell', body)
                 self.assertNotIn(b'items', body)
+                self.assertNotIn(b'pushedAt', body)
         self.assertEqual(self.request('/api/costs', method='POST', host='x')[0].status, 403)
+        self.assertEqual(self.request('/api/assets', method='POST', host='x')[0].status, 403)
         self.server.cost_document.read.assert_not_called()
+        self.server.asset_document.read.assert_not_called()
 
     def test_valid_assertion_is_checked_against_audience_and_viewers(self):
         response, _ = self.request('/api/catalog', host='asset-hub.example',

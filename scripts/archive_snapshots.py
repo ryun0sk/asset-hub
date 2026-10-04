@@ -1,6 +1,6 @@
 """Freeze archived research snapshots so they can always be verified and restored.
 
-Each target lives in research/{themes,companies}/<slug>/<YYYY-MM-DD>/. The newest dated folder
+Each target lives in research/{themes,companies,crypto}/<slug>/<YYYY-MM-DD>/. The newest dated folder
 of a target is its current version; every older folder is an archive and must not change.
 research/archive-manifest.json records the size and SHA-256 of every file in each archive
 (working/, qa/ and hidden files are local-only and excluded, as in .gitignore).
@@ -36,7 +36,7 @@ def archived_folders():
     an archive.
     """
     folders = []
-    for group in ("themes", "companies"):
+    for group in ("themes", "companies", "crypto"):
         base = RESEARCH / group
         for target in sorted(p for p in base.iterdir() if p.is_dir()) if base.exists() else []:
             dated = sorted(p for p in target.iterdir() if p.is_dir() and DATE.match(p.name))

@@ -1,0 +1,24 @@
+{
+  "_note": "テスト用のダミー値",
+  "version": 1,
+  "date": "2026-09-20",
+  "recordedAt": "2026-09-20T10:15:00+09:00",
+  "source": "screenshot",
+  "positions": [
+    {"account": "mizuho", "class": "cash", "symbol": "JPY", "name": "普通預金", "valueJpy": 1200000},
+    {"account": "rakuten-bank", "class": "cash", "symbol": "JPY", "name": "普通預金", "valueJpy": 450000},
+    {"account": "smbc", "class": "cash", "symbol": "JPY", "name": "普通預金", "valueJpy": 800000},
+    {"account": "bitflyer", "class": "crypto", "symbol": "BTC", "name": "ビットコイン", "quantity": 0.0123, "valueJpy": 190000},
+    {"account": "bitflyer", "class": "crypto", "symbol": "ETH", "name": "イーサリアム", "quantity": 0.5, "valueJpy": 230000},
+    {"account": "binance", "class": "crypto", "symbol": "SOL", "name": "ソラナ", "quantity": 10, "currency": "USD", "nativeAmount": 1380.5, "valueJpy": 205000},
+    {"account": "sbi-tokutei", "class": "stock", "market": "JP", "symbol": "285A", "name": "キオクシア", "quantity": 100, "valueJpy": 600000, "costJpy": 400000},
+    {"account": "sbi-tokutei", "class": "stock", "market": "JP", "symbol": "6857", "name": "アドバンテスト", "quantity": 100, "valueJpy": 1400000, "costJpy": 900000},
+    {"account": "sbi-tokutei", "class": "stock", "market": "US", "symbol": "AAPL", "name": "Apple", "quantity": 10, "currency": "USD", "nativeAmount": 2250.0, "valueJpy": 335000, "costJpy": 300000},
+    {"account": "sbi-tokutei", "class": "cash", "symbol": "JPY", "name": "預り金", "valueJpy": 150000},
+    {"account": "sbi-nisa", "class": "fund", "symbol": "EMAXIS-SLIM-ALL", "name": "eMAXIS Slim 全世界株式（オール・カントリー）", "quantity": 123456, "valueJpy": 960000, "costJpy": 800000},
+    {"account": "sbi-nisa", "class": "stock", "market": "JP", "symbol": "523A", "name": "セイワホールディングス", "quantity": 100, "valueJpy": 180000, "costJpy": 170000},
+    {"account": "daiwa", "class": "stock", "market": "JP", "symbol": "7203", "name": "トヨタ自動車", "quantity": 100, "valueJpy": 290000},
+    {"account": "private-equity", "class": "private", "symbol": "PRIVATE-A", "name": "A社への出資", "valueJpy": 1000000, "costJpy": 1000000}
+  ],
+  "notes": ["初回記録（ダミー）"]
+}

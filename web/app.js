@@ -1,13 +1,17 @@
 import {showCosts, initCostAlerts} from './costs.js';
+import {showAssets, leaveAssets, initAssets} from './assets.js';
 import {renderMarkdown} from './markdown.js';
 import {KIND_LABELS, TYPE_LABELS, parseRoute, routeFor, lookup, routeForPath, fileUrl, itemUrl, stats, versionsOf, latestGroups, counterpartIndex} from './catalog.js';
 
 const $ = id => document.getElementById(id);
 const esc = value => String(value ?? '').replace(/[&<>"']/g, ch => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[ch]));
 const SNAPSHOT_NOTE = 'すべて調査日時点のスナップショットです。記載の株価・予想・投資判断は各調査日の見解で、現在の判断ではありません。';
+const icon = paths => `<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false">${paths}</svg>`;
+// Research kinds shown in the sidebar.
 const ICONS = {
-  theme: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m12 3 9 5-9 5-9-5z"/><path d="m3 13 9 5 9-5"/><path d="m3 17.5 9 4.5 9-4.5"/></svg>',
-  company: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M4 21V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v17M16 9h3a1 1 0 0 1 1 1v11M2 21h20M8 7h4M8 11h4M8 15h4M9 21v-3h2v3"/></svg>',
+  theme: icon('<path d="m12 3 9 5-9 5-9-5z"/><path d="m3 13 9 5 9-5"/><path d="m3 17.5 9 4.5 9-4.5"/>'),
+  company: icon('<path d="M4 21V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v17M16 9h3a1 1 0 0 1 1 1v11M2 21h20M8 7h4M8 11h4M8 15h4M9 21v-3h2v3"/>'),
+  crypto: icon('<circle cx="12" cy="12" r="9"/><path d="M9.5 7.5h3.5a2 2 0 0 1 0 4h-3.5zM9.5 11.5h4a2 2 0 0 1 0 4h-4zM9.5 7.5v8M11 6v1.5M11 15.5V17"/>'),
 };
 // allow-same-origin is required: research pages render charts inside nested srcdoc iframes, which
 // stay blank under an opaque origin. Their CDN scripts are limited by RESEARCH_HTML_CSP instead.
@@ -31,14 +35,15 @@ async function loadCatalog() {
   changeView();
 }
 
+// Sidebar research list: one link per target (its newest snapshot) under its group label; archives are
+// reached from the version bar. The asset page is the fixed 保有・推移 link in index.html.
 function renderNav() {
-  const host = $('researchNav');
+  const host = $('classNav');
   if (!catalog) {
     host.innerHTML = `<p class="nav-label nav-status">${esc(catalogError || '調査一覧を読み込んでいます…')}</p>`;
     return;
   }
-  // One link per target (its newest snapshot); archives are reached from the version bar.
-  host.innerHTML = latestGroups(catalog).map(group => `<p class="nav-label">${esc(group.label)}</p>${group.entries.map(entry => `
+  host.innerHTML = latestGroups(catalog).filter(group => group.entries.length).map(group => `<p class="nav-label">${esc(group.label)}</p>${group.entries.map(entry => `
     <a href="${routeFor(entry.id, 0)}" class="nav-link" data-target="${esc(targetKey(entry))}"><span class="nav-icon" aria-hidden="true">${ICONS[entry.kind] || ICONS.theme}</span><span class="nav-text">${esc(entry.title)}</span></a>
     <div class="subnav" data-subnav="${esc(targetKey(entry))}" hidden></div>`).join('')}`).join('');
 }
@@ -48,6 +53,7 @@ const targetKey = entry => `${entry.kind}/${entry.slug}`;
 // Expand the viewed target in the sidebar with the documents of the version being shown.
 function syncNav(view, found) {
   const key = view === 'research' && found ? targetKey(found.entry) : '';
+  document.querySelectorAll('#mainNav [data-view]').forEach(link => link.classList.toggle('selected', link.dataset.view === view));
   document.querySelectorAll('#mainNav .nav-link[data-target]').forEach(link => link.classList.toggle('selected', link.dataset.target === key));
   document.querySelectorAll('#mainNav [data-subnav]').forEach(sub => {
     sub.hidden = sub.dataset.subnav !== key;
@@ -70,23 +76,34 @@ function setHead({eyebrow, title, meta, crumb, openUrl, topMeta, compact = false
   document.title = `${crumb || title} · Asset Hub`;
 }
 
+// Which section a route shows right now (a research route waits for the catalog).
+function parseView(route) {
+  const found = lookup(catalog, route);
+  return route.view === 'research' && (found || (!catalog && !catalogError)) ? 'research' : route.view === 'cost' ? 'cost' : route.view === 'asset' ? 'asset' : 'home';
+}
+
 function changeView() {
   const route = parseRoute(location.hash);
   const found = lookup(catalog, route);
-  const view = route.view === 'research' && (found || (!catalog && !catalogError)) ? 'research' : route.view === 'cost' ? 'cost' : 'home';
+  const view = parseView(route);
   $('homeSection').hidden = view !== 'home';
   $('researchSection').hidden = view !== 'research';
   $('costSection').hidden = view !== 'cost';
+  $('assetSection').hidden = view !== 'asset';
   $('pageActions').innerHTML = '';
-  document.querySelectorAll('#mainNav [data-view]').forEach(link => link.classList.toggle('selected', link.dataset.view === view));
   syncNav(view, found);
+  if (view !== 'asset') leaveAssets();
   if (view === 'cost') {
     setHead({eyebrow: 'COST', title: 'コスト', meta: '', crumb: 'コスト'});
     showCosts();
+  } else if (view === 'asset') {
+    setHead({eyebrow: 'ASSETS', title: '保有・推移', meta: '全資産の週次の評価額。チェックボックスでグラフに出す資産を選べます', crumb: '保有・推移'});
+    showAssets(catalog);
   } else if (view === 'research') {
     if (found) showResearch(found, route.anchor);
     else setHead({eyebrow: 'RESEARCH', title: '読み込み中', crumb: '読み込み中'});
   } else {
+    // Unknown research ids wait for the catalog.
     if (route.view !== 'home' && catalog && location.hash && location.hash !== '#home') history.replaceState(null, '', '#home');
     showHome();
   }
@@ -95,25 +112,31 @@ function changeView() {
 function showHome() {
   setHead({eyebrow: 'OVERVIEW', title: 'ホーム', meta: '企業・投資テーマの調査レポート、評価モデル、根拠資料', crumb: 'ホーム'});
   const host = $('homeSection');
-  if (!catalog) {
-    host.innerHTML = `<p class="empty" role="${catalogError ? 'alert' : 'status'}">${esc(catalogError || '調査一覧を読み込んでいます…')}</p>`;
-    return;
-  }
-  const s = stats(catalog), latest = latestGroups(catalog).flatMap(group => group.entries);
+  host.innerHTML = catalog
+    ? researchPanel(latestGroups(catalog).flatMap(group => group.entries), {title: '調査一覧', subtitle: '最新の調査を表示。過去の調査はアーカイブ欄から開けます', tiles: true})
+    : catalogStatus();
+}
+
+const catalogStatus = () => `<p class="empty" role="${catalogError ? 'alert' : 'status'}">${esc(catalogError || '調査一覧を読み込んでいます…')}</p>`;
+
+// Research table (and, with `tiles`, the catalog metric tiles) for a list of newest entries.
+function researchPanel(entries, {title = '調査一覧', subtitle = '', tiles = false} = {}) {
+  const s = stats(catalog);
   const metric = (tone, label, value, unit, note) => `<section class="metric ${tone}"><p class="metric-label">${label}</p><p class="metric-value">${esc(value)}${unit ? `<small>${unit}</small>` : ''}</p><p class="metric-note">${note}</p></section>`;
-  host.innerHTML = `<div class="metrics">
+  const metrics = tiles ? `<div class="metrics">
       ${metric('green-top', 'テーマ', s.themes, '件', '業界・サプライチェーン単位の調査')}
       ${metric('blue-top', '企業', s.companies, '社', '個別銘柄の調査')}
       ${metric('amber-top', '最新の調査日', s.latest || '—', '', '新しい調査は日付別フォルダに追加')}
       ${metric('', '資料', s.documents, '件', `最新版の資料。過去の調査 ${s.archives}版はアーカイブ`)}
-    </div>
+    </div>` : '';
+  return `${metrics}
     <p class="notice snapshot-note"><span aria-hidden="true">ⓘ</span>${SNAPSHOT_NOTE}</p>
     <section class="panel">
-      <div class="panel-heading"><h2>調査一覧<span class="count">${latest.length}件</span></h2><span class="subtle">最新の調査を表示。過去の調査はアーカイブ欄から開けます</span></div>
-      <div class="table-scroll" tabindex="0" role="region" aria-label="調査一覧。横スクロールで資料を確認">
+      <div class="panel-heading"><h2>${esc(title)}<span class="count">${entries.length}件</span></h2><span class="subtle">${esc(subtitle)}</span></div>
+      <div class="table-scroll" tabindex="0" role="region" aria-label="${esc(title)}。横スクロールで資料を確認">
         <table class="research-table"><colgroup><col class="col-title"><col class="col-kind"><col class="col-date"><col class="col-items"><col class="col-archive"></colgroup>
           <thead><tr><th scope="col">対象</th><th scope="col">区分</th><th scope="col">最新の調査日</th><th scope="col">資料</th><th scope="col">アーカイブ</th></tr></thead>
-          <tbody>${latest.map(entry => `<tr>
+          <tbody>${entries.map(entry => `<tr>
             <td><a class="entry-link" href="${routeFor(entry.id, 0)}">${esc(entry.title)}</a></td>
             <td><span class="badge ${entry.kind === 'company' ? 'medium' : 'high'}">${esc(KIND_LABELS[entry.kind] || entry.kind)}</span></td>
             <td class="numeric-cell">${esc(entry.date)}</td>
@@ -245,3 +268,4 @@ addEventListener('hashchange', () => { changeView(); window.scrollTo(0, 0); });
 changeView();
 loadCatalog();
 initCostAlerts();
+initAssets();

@@ -8,7 +8,7 @@ FOUNDATION = "tokens.css"
 # undefined token references, token definitions and chart overrides are enforced there.
 LEGACY_CSS = {"styles.css", "costs.css"}
 # JavaScript that emits chart markup must leave every visual decision to charts.css.
-CHART_JS = {"charts.js", "cost-view.js"}
+CHART_JS = {"charts.js", "cost-view.js", "asset-view.js"}
 REFERENCE = re.compile(r"var\(\s*(--[\w-]+)")
 DECLARATION = re.compile(r"(?:^|[;{])\s*([\w-]+)\s*:\s*([^;}]+)")
 LENGTH = re.compile(r"[\d.]+(?:px|rem|em)\b")

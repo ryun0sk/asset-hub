@@ -1,10 +1,11 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-04T07:34:44Z",
+  "generatedAt": "2026-10-04T09:39:51Z",
   "groups": [
     {
       "id": "themes",
       "label": "テーマ",
+      "assetClass": "stock",
       "entries": [
         {
           "id": "ai-business-quality-2026-10-04",
@@ -184,6 +185,7 @@
     {
       "id": "companies",
       "label": "企業",
+      "assetClass": "stock",
       "entries": [
         {
           "id": "285A-kioxia-2026-10-03",
@@ -331,6 +333,12 @@
           "code": "523A"
         }
       ]
+    },
+    {
+      "id": "crypto",
+      "label": "仮想通貨",
+      "assetClass": "crypto",
+      "entries": []
     }
   ]
 }

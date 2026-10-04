@@ -1,0 +1,167 @@
+/* Asset page (#a/all): one 保有・推移 view with checkbox-driven charts. Tokens only. */
+.asset-page { min-width: 0; }
+.asset-page .sync-progress {
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+  margin-bottom: var(--space-12);
+  font-size: var(--font-size-small);
+  color: var(--muted);
+}
+.asset-notice {
+  margin: var(--space-0) var(--space-0) var(--space-16);
+  padding: var(--space-12) var(--space-16);
+  background: var(--danger-bg);
+  border: var(--border-width-thin) solid var(--danger-line);
+  border-radius: var(--radius-small);
+  font-size: var(--font-size-small);
+  color: var(--danger-ink);
+}
+
+/* Toolbar: period / position selectors and the record count. */
+.asset-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-8) var(--space-16);
+  margin-bottom: var(--space-16);
+  font-size: var(--font-size-small);
+  color: var(--muted);
+}
+.asset-toolbar label { display: flex; align-items: center; gap: var(--space-8); min-width: 0; }
+.asset-toolbar select {
+  max-width: 100%;
+  padding: var(--space-6) var(--space-10);
+  background: var(--surface);
+  border: var(--border-width-thin) solid var(--border);
+  border-radius: var(--radius-small);
+  color: var(--navy);
+  font-size: var(--font-size-caption);
+}
+
+/* Chart panels: heading from .panel-heading, chart body below. */
+.asset-chart-panel { min-width: 0; }
+.asset-chart { padding: var(--space-0) var(--space-20) var(--space-20); }
+.asset-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-0) var(--space-16);
+}
+.asset-grid > .panel { min-width: 0; }
+
+/* Holdings and movers tables. */
+.asset-table { min-width: 680px; font-size: var(--font-size-caption); }
+.asset-table td { padding: var(--space-12) var(--space-14); vertical-align: middle; }
+.asset-table .numeric { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.asset-table tfoot th {
+  position: static;
+  padding: var(--space-12) var(--space-14);
+  background: var(--mist);
+  border-top: var(--border-width-thin) solid var(--border);
+  border-bottom: var(--space-0);
+  color: var(--navy);
+  font-size: var(--font-size-caption);
+  font-weight: var(--font-weight-semibold);
+}
+.asset-table .empty { padding: var(--space-24); font-size: var(--font-size-caption); }
+.asset-symbol {
+  display: inline-block;
+  margin-right: var(--space-6);
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-micro);
+  color: var(--muted);
+}
+.asset-native { display: block; font-size: var(--font-size-micro); color: var(--muted); }
+.asset-tag {
+  display: inline-block;
+  margin-left: var(--space-6);
+  padding: var(--space-1) var(--space-6);
+  border-radius: var(--radius-small);
+  background: var(--blue-mist);
+  font-size: var(--font-size-micro);
+  color: var(--muted);
+  white-space: nowrap;
+}
+.asset-movers { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.asset-movers-column { min-width: 0; }
+.asset-movers-column + .asset-movers-column { border-left: var(--border-width-thin) solid var(--border); }
+.asset-movers-column h3 {
+  margin: var(--space-0);
+  padding: var(--space-0) var(--space-20) var(--space-12);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-semibold);
+  color: var(--body);
+}
+.asset-movers-table { min-width: 420px; }
+
+/* Week-over-week colouring (also on .metric-value, which assets.css overrides by load order). */
+.delta-up { color: var(--delta-up-ink); }
+.delta-down { color: var(--delta-down-ink); }
+.delta-flat { color: var(--muted); }
+
+/* Empty state before the first snapshot or for a class without holdings. */
+.asset-empty {
+  padding: var(--space-40) var(--space-20);
+  text-align: center;
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-reading);
+  color: var(--muted);
+}
+.asset-empty small { display: block; margin-top: var(--space-8); font-size: var(--font-size-caption); }
+.asset-footnote {
+  margin: var(--space-8) var(--space-0) var(--space-16);
+  font-size: var(--font-size-caption);
+  line-height: var(--line-height-reading);
+  color: var(--muted);
+}
+.asset-research-empty { padding: var(--space-20) var(--space-24); font-size: var(--font-size-small); color: var(--muted); }
+
+/* Checkbox rows that pick which series a chart shows; the swatch follows the chart tone. */
+.asset-checks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-8) var(--space-16);
+  padding: var(--space-0) var(--space-20) var(--space-12);
+}
+.asset-check {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-6);
+  font-size: var(--font-size-caption);
+  color: var(--body);
+  cursor: pointer;
+}
+.asset-check input { margin: var(--space-0); }
+.asset-check-swatch {
+  width: var(--space-10);
+  height: var(--space-10);
+  border-radius: var(--radius-small);
+  background: currentColor;
+}
+.asset-check-swatch.cat-1 { color: var(--chart-cat-1); }
+.asset-check-swatch.cat-2 { color: var(--chart-cat-2); }
+.asset-check-swatch.cat-3 { color: var(--chart-cat-3); }
+.asset-check-swatch.cat-4 { color: var(--chart-cat-4); }
+.asset-check-swatch.cat-5 { color: var(--chart-cat-5); }
+.asset-check-swatch.cat-6 { color: var(--chart-cat-6); }
+.asset-mode { display: flex; align-items: center; gap: var(--space-12); margin: var(--space-0); padding: var(--space-0); border: var(--space-0); }
+.asset-mode legend { float: left; padding: var(--space-0); margin-right: var(--space-8); }
+.asset-mode label { display: inline-flex; align-items: center; gap: var(--space-4); cursor: pointer; }
+.asset-section-title {
+  margin: var(--space-24) var(--space-0) var(--space-12);
+  font-size: var(--font-size-section);
+  font-weight: var(--font-weight-semibold);
+  color: var(--navy);
+}
+.asset-class-panel { min-width: 0; }
+
+@media (max-width: 950px) {
+  .asset-grid, .asset-movers { grid-template-columns: 1fr; }
+  .asset-movers-column + .asset-movers-column { border-left: var(--space-0); border-top: var(--border-width-thin) solid var(--border); padding-top: var(--space-16); }
+}
+@media (max-width: 700px) {
+  .asset-chart { padding: var(--space-0) var(--space-12) var(--space-12); }
+  .asset-toolbar select { font-size: var(--font-size-large); }
+  .asset-table { min-width: 560px; }
+}
