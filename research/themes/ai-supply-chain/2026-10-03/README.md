@@ -37,7 +37,7 @@
   - 各社の現地通貨で表示し、円換算はしない。
   - 標準はClose（株式分割調整後・配当なし）。Adj Close（配当調整後）も保存している。
 - **保存期間の短縮**
-  - 前回の約17MBのindex.htmlからサイズを抑えるため、価格履歴は**2016-01-01以降**だけを保存した。結果はindex.html 約7.4MB、prices.json 約6.6MB。
+  - 前回の約17MBのindex.htmlからサイズを抑えるため、価格履歴は**2016-01-01以降**だけを保存した。結果はindex.html 約7.4MB（valuation.json追加後は約7.8MB）、prices.json 約6.6MB。
   - 2016年以降に上場した銘柄は、取得可能な最古の日から保存している。
   - 画面の「上場来」ボタンは「保存期間全体」に名前を変えた。10年より長い比較は[2026-09-05版](../2026-09-05/index.html)を使う。
 - **2026-10-01の株式分割**
@@ -60,28 +60,42 @@
   - 系列は補正していない。公式の通期GAAP EPS 74.33ドルを使った実績PER（約14.5倍）は、report.mdに独自計算として記載した。
 - **予想PER**：提供元が保存したアナリスト予想ベースのスナップショット（2026-09-17〜23が最新）。会社予想ではない。
 - 実績PER・予想PER・EPSの読み方と、欠損の扱いは前回版を踏襲する（[前回README](../2026-09-05/README.md#epsperデータの基準)）。
+- **「EPS・PER」ビューの作り直し（2026-10-04追記）**
+  - 表示は保存データから一度だけ計算した [valuation.json](valuation.json)（[derive_valuation.py](derive_valuation.py)、標準ライブラリのみ・外部通信なし）を埋め込む。表示時の取得や日次の自動更新はしない。株価・EPS・予想の値は更新していない（2026-10-02終値、2026-10-03取得のEPS、2026-10-04取得のアナリスト予想のまま）。
+  - **日次の実績PER【独自計算】**：日次終値÷その日に分かっていたTTM EPS。TTMは年次EPS（期末までの12か月）と提供元のTTMを期末日で統合し（同じ期末はTTMを優先）、**期末＋45日から既知**とみなす（提供元に公表日がないための前提。記録がある場合は公表日。キオクシア2026年6月期は2026-07-31）。期末から460日を超えたTTMは使わない。TTMが0以下の日は赤字としてPERを出さない。保存されたEPSが2022〜23年以降のため、PERの履歴もおおむね2023年以降になる。
+  - 提供元の実績・予想PERスナップショット（`trailingPeRows`・`forwardPeRows`）は表示に使わない。
+  - **通貨**：EPSの通貨が株価と異なるASML（EUR→USD）とLenovo（USD→HKD）は、fundamentals.jsonの`fx`の当日レートで株価通貨に換算してからPERを計算する。分割基準はfundamentals.jsonの補正済みの値のまま。
+  - **中央値・10〜90%点**：各社の保存期間全体（PERを計算できた日）の分布。
+  - **株価変化の分解【独自計算】**：選択期間の共通比較日（株価比較の表と同じ）の終値とその日のTTM EPSで、ln(株価の変化)＝ln(EPSの変化)＋ln(PERの変化)。棒の寄与は、株価の変化率をこの対数の比率で割り振った値（足すと株価の変化率に一致）。どちらかの日のTTMが赤字・未取得なら「分解不可」。年初来・1年・3年の値は検証用に`decompositionPresets`にも保存。
+  - **アナリスト予想【外部予想】**：[ai-business-quality 2026-10-04](../../ai-business-quality/2026-10-04/README.md)の`working/yahoo-trend-<symbol>.json`（Yahoo Finance earningsTrend、2026-10-04 05:14〜05:15 UTC取得）。43社のうち保存があるのは18社（他の4銘柄は43社外）。今期・来期の平均・幅・人数、30日の上方／下方修正件数、90日前比の変化を表示。海外株の多くは調整後（Non-GAAP）EPSで、実績のGAAP希薄化後とは基準が異なる場合がある。Micronは提供元の期末日表示が1期ずれているとみて今期＝2027年8月期・来期＝2028年8月期とした【独自】（同レポート3-1と同じ扱い）。ASMLのユーロ建て予想は2026-10-02のEURUSD（1.1257）でドル換算。`working/`はGit対象外のため、抽出値とファイルのSHA-256をvaluation.jsonに残した。
+  - **会社予想【会社予想】**：[ai-year-end-comparison 2026-10-03](../../ai-year-end-comparison/2026-10-03/README.md)の`compare.py`の`FORECAST_EPS`（分割後）。43社に含まれるのはアドバンテスト（7/29）・イビデン（8/4）・信越化学（7/24）・日立（7/29）・フジクラ（8/7）の5社（括弧は公表日）。キオクシア・東京エレクトロン・ディスコは通期予想がない旨を表示。
+  - **次の決算日**：一次資料で確認済みのものだけ（同レポート第3節、キオクシア・アドバンテスト・イビデンのstock-drivers）。それ以外は「未確認」。
+  - **Micron**：提供元TTMが2026年5月期で止まっているため、表に「TTMが1四半期遅れ」と注記（系列は補正しない）。
 
 ## ファイル・再作成
 
 | ファイル | 役割 |
 |---|---|
-| [index.html](index.html) | 閲覧用の完成版（約7.4MB、オフライン対応）。「調達の流れ」「AI時代の機能整理」「同じ工程の株価比較」を1ページに縦に並べ、上部のリンクで各セクションへ移動する（旧 `?tab=` のURLは該当セクションへスクロール）。ダッシュボードの左メニューでは `views.json` の定義により「調達の流れ」「AI時代の機能整理」「株価の比較」「EPS・PER」の4項目に分かれ、それぞれ `index.html?view=map|guide|price|fund` で該当セクションだけを表示する（`view` なしで開くと従来どおり全セクションを1ページに表示）。「株価の比較」は期間・表示・企業の選択、株価チャート、比較表、CSV、「EPS・PER」は解説カードとグラフ |
+| [index.html](index.html) | 閲覧用の完成版（約7.8MB、オフライン対応）。「調達の流れ」「AI時代の機能整理」「同じ工程の株価比較」を1ページに縦に並べ、上部のリンクで各セクションへ移動する（旧 `?tab=` のURLは該当セクションへスクロール）。ダッシュボードの左メニューでは `views.json` の定義により「調達の流れ」「AI時代の機能整理」「株価の比較」「EPS・PER」の4項目に分かれ、それぞれ `index.html?view=map|guide|price|fund` で該当セクションだけを表示する（`view` なしで開くと従来どおり全セクションを1ページに表示）。「株価の比較」は期間・表示・企業の選択、株価チャート、比較表、CSV、「EPS・PER」は①今の株価に織り込まれていること（表）②株価変化のEPS／PER分解③日次PERの推移と自社の過去比較④四半期EPSと予想・次の決算日 |
 | [report.md](report.md) | 工程別レポート・前回比・主要銘柄の株価／PER表 |
 | [dashboard.template.html](dashboard.template.html) | 画面の編集元（日付・期間プリセット・分割注記を2026-10-03版に更新） |
 | [catalog.json](catalog.json) | 17工程・43社の対応（前回と同一） |
 | [prices.json](prices.json) | 2016-01-01〜2026-10-02の終値・調整後終値・分割イベント・取得記録 |
 | [fundamentals.json](fundamentals.json) | 四半期・通期・TTM EPS、実績・予想PER、分割補正の記録 |
+| [valuation.json](valuation.json) | 「EPS・PER」ビューの派生データ（日次PER、PERの分布、TTMの既知日、アナリスト・会社予想、次の決算日、分解の検証値） |
+| [derive_valuation.py](derive_valuation.py) | valuation.jsonの作成（外部通信なし）。`--check`で保存済みファイルとの一致を確認 |
 | [fetch_prices.py](fetch_prices.py) | 価格の取得（外部通信あり）。生レスポンスは`working/prices/`に保存 |
 | [fetch_fundamentals.py](fetch_fundamentals.py) | EPS・PERの取得と分割基準の補正（外部通信あり）。生レスポンスは`working/fundamentals/`に保存 |
 | [build_dashboard.py](build_dashboard.py) | テンプレート＋JSON＋Chart.jsからindex.htmlを生成（外部通信なし） |
 | [verify_dashboard.cjs](verify_dashboard.cjs) | Playwrightでの操作・計算・表示の検証 |
 | [sources/chart.umd.min.js](sources/chart.umd.min.js) | Chart.js 4.5.1 |
 
-`working/`（生の取得レスポンス、約25MB）と`qa/`（検証画像）はGit対象外。index.htmlの再生成に必要な入力（テンプレート・catalog.json・prices.json・fundamentals.json・Chart.js）は、このフォルダに残している。
+`working/`（生の取得レスポンス、約25MB）と`qa/`（検証画像）はGit対象外。index.htmlの再生成に必要な入力（テンプレート・catalog.json・prices.json・fundamentals.json・valuation.json・Chart.js）は、このフォルダに残している。
 
 リポジトリのルートから実行する。
 
 ```sh
+python3 research/themes/ai-supply-chain/2026-10-03/derive_valuation.py   # valuation.json（--checkで一致確認）
 python3 research/themes/ai-supply-chain/2026-10-03/build_dashboard.py
 node research/themes/ai-supply-chain/2026-10-03/verify_dashboard.cjs   # Playwrightが必要
 ```
@@ -99,7 +113,7 @@ node research/themes/ai-supply-chain/2026-10-03/verify_dashboard.cjs   # Playwri
   - 直近の実績PERが、提供元の実績PERとおおむね一致すること
 - ブラウザでは外部通信を遮断し、次を確認してPASSした。
   - 全17工程の表示、共通基準日＝100、2軸表示
-  - EPS・PERの切り替え、キオクシアの分割後EPS（833.50円）と実績PER
+  - EPS・PER：キオクシアの実績PER 23.2倍（19,300÷833.50）、分解の寄与の合計＝株価の変化、赤字（SUMCO・Siltronic・Lumentum）の「算出不能」、アナリスト予想なしの「取得なし」
   - 1年・2年・3年・5年・10年・保存期間全体の各プリセット、CSV出力
   - 390px／320px幅での横はみ出しなし、JavaScriptエラーなし
 
