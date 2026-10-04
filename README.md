@@ -6,6 +6,7 @@
 
 | 対象 | 最新の調査日 | 内容（最新版） | アーカイブ（過去の調査） |
 |---|---|---|---|
+| AI関連銘柄 ビジネスモデルの強さと目標達成の条件 | 2026-10-04 | [評価レポート（22銘柄の採点・15か月で2倍の条件、推奨ではない）](research/themes/ai-business-quality/2026-10-04/report.md) · [調査範囲・前提](research/themes/ai-business-quality/2026-10-04/README.md) | — |
 | AI関連銘柄 年末までの比較材料 | 2026-10-03 | [比較レポート（日本12・海外10銘柄、推奨ではない）](research/themes/ai-year-end-comparison/2026-10-03/report.md) · [許容損失別の組み合わせ一覧](research/themes/ai-year-end-comparison/2026-10-03/screen.md) · [調査範囲・前提](research/themes/ai-year-end-comparison/2026-10-03/README.md) | — |
 | キオクシア（285A） | 2026-10-03 | [投資判断レポート](research/companies/285A-kioxia/2026-10-03/report.md) · [株価の変動要因](research/companies/285A-kioxia/2026-10-03/stock-drivers.md) · [評価モデル](research/companies/285A-kioxia/2026-10-03/valuation.mjs) · [資料・引き継ぎ](research/companies/285A-kioxia/2026-10-03/README.md) | [2026-09-05](research/companies/285A-kioxia/2026-09-05/report.md) |
 | AI関連銘柄・サプライチェーン | 2026-10-03 | [43社の株価・PER・EPS比較](research/themes/ai-supply-chain/2026-10-03/index.html) · [工程別レポート（前回からの変化・考察）](research/themes/ai-supply-chain/2026-10-03/report.md) · [調査範囲・出典方針](research/themes/ai-supply-chain/2026-10-03/README.md) | [2026-09-05](research/themes/ai-supply-chain/2026-09-05/README.md) |

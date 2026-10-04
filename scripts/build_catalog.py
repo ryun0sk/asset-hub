@@ -40,6 +40,7 @@ LABEL_OVERRIDES = {
     "ai-supply-chain": {"report.md": "工程別レポート", "README.md": "調査範囲・出典方針"},
     "photonics": {"index.html": "株価比較チャート", "report.md": "考察レポート"},
     "ai-year-end-comparison": {"report.md": "比較レポート", "README.md": "調査範囲・前提"},
+    "ai-business-quality": {"report.md": "評価レポート", "README.md": "調査範囲・前提"},
     "285A-kioxia": {"report.md": "投資判断レポート", "README.md": "資料・引き継ぎ"},
     "523A-seiwa": {"README.md": "決算資料・調査素材"},
     "6857-advantest": {"README.md": "調査の前提・資料"},

@@ -1,11 +1,30 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-04T03:35:41Z",
+  "generatedAt": "2026-10-04T05:33:00Z",
   "groups": [
     {
       "id": "themes",
       "label": "テーマ",
       "entries": [
+        {
+          "id": "ai-business-quality-2026-10-04",
+          "title": "AI関連銘柄 ビジネスモデルの強さと目標達成の条件",
+          "date": "2026-10-04",
+          "kind": "theme",
+          "slug": "ai-business-quality",
+          "items": [
+            {
+              "label": "評価レポート",
+              "path": "research/themes/ai-business-quality/2026-10-04/report.md",
+              "type": "md"
+            },
+            {
+              "label": "調査範囲・前提",
+              "path": "research/themes/ai-business-quality/2026-10-04/README.md",
+              "type": "md"
+            }
+          ]
+        },
         {
           "id": "ai-year-end-comparison-2026-10-03",
           "title": "AI関連銘柄 年末までの比較材料",
