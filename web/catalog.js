@@ -29,7 +29,8 @@ export function latestGroups(catalog) {
 // Index of the same document (same path inside the dated folder) in another version, else 0.
 export function counterpartIndex(item, to) {
   const tail = path => String(path || '').split('/').slice(4).join('/');
-  const index = (to?.items || []).findIndex(other => tail(other.path) === tail(item?.path));
+  const same = other => tail(other.path) === tail(item?.path) && (other.view || '') === (item?.view || '');
+  const index = (to?.items || []).findIndex(same);
   return index >= 0 ? index : 0;
 }
 
@@ -67,6 +68,12 @@ export function routeForPath(catalog, path, anchor = '') {
 
 // Files under research/ are served at the same path; everything else is not public.
 export const fileUrl = path => /^research\/[^?#]+$/.test(String(path || '')) && !String(path).split('/').includes('..') ? '/' + String(path).split('/').map(encodeURIComponent).join('/') : null;
+
+// URL to open a catalog item: its file, plus ?view=<name> when the item is a named view of that file.
+export const itemUrl = item => {
+  const base = fileUrl(item?.path);
+  return base && item.view ? `${base}?view=${encodeURIComponent(item.view)}` : base;
+};
 
 export function stats(catalog) {
   const all = entries(catalog);

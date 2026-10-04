@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-04T05:33:00Z",
+  "generatedAt": "2026-10-04T07:34:44Z",
   "groups": [
     {
       "id": "themes",
@@ -57,9 +57,28 @@
           "slug": "ai-supply-chain",
           "items": [
             {
-              "label": "ダッシュボード",
+              "label": "調達の流れ",
               "path": "research/themes/ai-supply-chain/2026-10-03/index.html",
-              "type": "html"
+              "type": "html",
+              "view": "map"
+            },
+            {
+              "label": "AI時代の機能整理",
+              "path": "research/themes/ai-supply-chain/2026-10-03/index.html",
+              "type": "html",
+              "view": "guide"
+            },
+            {
+              "label": "株価の比較",
+              "path": "research/themes/ai-supply-chain/2026-10-03/index.html",
+              "type": "html",
+              "view": "price"
+            },
+            {
+              "label": "EPS・PER",
+              "path": "research/themes/ai-supply-chain/2026-10-03/index.html",
+              "type": "html",
+              "view": "fund"
             },
             {
               "label": "工程別レポート",

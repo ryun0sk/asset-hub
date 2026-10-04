@@ -1,6 +1,6 @@
 import {showCosts, initCostAlerts} from './costs.js';
 import {renderMarkdown} from './markdown.js';
-import {KIND_LABELS, TYPE_LABELS, parseRoute, routeFor, lookup, routeForPath, fileUrl, stats, versionsOf, latestGroups, counterpartIndex} from './catalog.js';
+import {KIND_LABELS, TYPE_LABELS, parseRoute, routeFor, lookup, routeForPath, fileUrl, itemUrl, stats, versionsOf, latestGroups, counterpartIndex} from './catalog.js';
 
 const $ = id => document.getElementById(id);
 const esc = value => String(value ?? '').replace(/[&<>"']/g, ch => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[ch]));
@@ -146,7 +146,7 @@ function versionBar(entry, item) {
 }
 
 function showResearch({entry, item}, anchor = '') {
-  const url = fileUrl(item.path);
+  const url = itemUrl(item);
   const versions = versionsOf(catalog, entry), newest = versions[0], archived = newest && newest.id !== entry.id;
   setHead({
     title: `【${entry.title}】${item.label}`,

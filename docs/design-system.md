@@ -42,7 +42,7 @@ Asset Hub（株式投資の調査ダッシュボード）の画面は、Pathosio
 | `#r/<entryId>/<itemIndex>` | 調査 `entryId` の `items[itemIndex]`。番号省略・範囲外は先頭の資料 |
 | `#cost` | コスト |
 
-`entryId` は `research/catalog.json` の `id`（`<slug>-<調査日>`）。版ごとに別の `entryId` を持つので、アーカイブのURLは最新版が追加されても変わらない。同じ `kind` と `slug` の調査を版として束ね、調査日が最も新しいものを最新版とする（`catalog.js` の `versionsOf`・`latestGroups`）。カタログは `GET /api/catalog`、資料本体は `GET /research/<research/以下のパス>` から読む。
+`entryId` は `research/catalog.json` の `id`（`<slug>-<調査日>`）。 1つのHTMLに複数の表示がある場合は、調査フォルダの `views.json` で名前付きの表示を定義すると、カタログは表示ごとに別の項目（`view` 付き）を作り、ビューアは `?view=<名前>` を付けてそのHTMLを開く（`catalog.js` の `itemUrl`）。版ごとに別の `entryId` を持つので、アーカイブのURLは最新版が追加されても変わらない。同じ `kind` と `slug` の調査を版として束ね、調査日が最も新しいものを最新版とする（`catalog.js` の `versionsOf`・`latestGroups`）。カタログは `GET /api/catalog`、資料本体は `GET /research/<research/以下のパス>` から読む。
 
 ## Markdownレンダラー（`web/markdown.js`）
 
