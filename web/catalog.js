@@ -1,6 +1,6 @@
 // Catalog helpers and hash routing. Pure functions so tests can run them without a DOM.
-// Routes: #home (default), #cost, #r/<entryId>/<itemIndex>[/<heading id>].
-export const KIND_LABELS = Object.freeze({theme: 'テーマ', company: '企業'});
+// Routes: #home (default), #cost, #a/all (資産の保有・推移), #r/<entryId>/<itemIndex>[/<heading id>].
+export const KIND_LABELS = Object.freeze({theme: 'テーマ', company: '企業', crypto: '仮想通貨'});
 export const TYPE_LABELS = Object.freeze({html: 'HTML', md: '文書', pdf: 'PDF', code: 'コード'});
 
 export function entries(catalog) {
@@ -26,6 +26,11 @@ export function latestGroups(catalog) {
   return (catalog?.groups || []).map(group => ({...group, entries: (group.entries || []).filter(entry => newest.get(`${entry.kind}/${entry.slug}`)?.id === entry.id)}));
 }
 
+// Asset class of a group: its assetClass field, else the class its id implied before the field existed.
+const DEFAULT_GROUP_CLASS = Object.freeze({themes: 'stock', companies: 'stock', crypto: 'crypto'});
+export const groupClass = group => group?.assetClass || DEFAULT_GROUP_CLASS[group?.id] || 'stock';
+
+
 // Index of the same document (same path inside the dated folder) in another version, else 0.
 export function counterpartIndex(item, to) {
   const tail = path => String(path || '').split('/').slice(4).join('/');
@@ -37,6 +42,8 @@ export function counterpartIndex(item, to) {
 export function parseRoute(hash) {
   const value = String(hash || '').replace(/^#/, '');
   if (value === 'cost') return {view: 'cost'};
+  const asset = value.match(/^a\/([a-z]+)\/?$/);
+  if (asset) return {view: 'asset', cls: asset[1]};
   const match = value.match(/^r\/([^/]+)(?:\/(\d+)(?:\/([^/]+))?)?\/?$/);
   if (match) {
     const decode = raw => { try { return decodeURIComponent(raw); } catch { return raw; } };
@@ -82,6 +89,7 @@ export function stats(catalog) {
   return {
     themes: new Set(all.filter(e => e.kind === 'theme').map(e => e.slug)).size,
     companies: new Set(all.filter(e => e.kind === 'company').map(e => e.slug)).size,
+    crypto: new Set(all.filter(e => e.kind === 'crypto').map(e => e.slug)).size,
     latest: dates.at(-1) || null,
     documents: latest.reduce((sum, e) => sum + (e.items || []).length, 0),
     archives: all.length - latest.length,

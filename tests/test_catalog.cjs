@@ -12,11 +12,13 @@ const TYPES = new Set(['html', 'md', 'pdf', 'code']);
 test('research/catalog.json has the shared schema', () => {
   assert.equal(catalog.version, 1);
   assert.match(catalog.generatedAt, /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$/);
-  assert.deepEqual(catalog.groups.map(g => [g.id, g.label]), [['themes', 'テーマ'], ['companies', '企業']]);
+  assert.deepEqual(catalog.groups.map(g => [g.id, g.label, g.assetClass]), [['themes', 'テーマ', 'stock'], ['companies', '企業', 'stock'], ['crypto', '仮想通貨', 'crypto']]);
+  const KINDS = {themes: 'theme', companies: 'company', crypto: 'crypto'};
   const ids = new Set();
   for (const group of catalog.groups) {
+    assert.ok(Array.isArray(group.entries));
     for (const entry of group.entries) {
-      assert.equal(entry.kind, group.id === 'themes' ? 'theme' : 'company');
+      assert.equal(entry.kind, KINDS[group.id]);
       assert.match(entry.date, /^\d{4}-\d{2}-\d{2}$/);
       assert.equal(entry.id, `${entry.slug}-${entry.date}`);
       assert.ok(!ids.has(entry.id), `duplicate id ${entry.id}`);
@@ -53,6 +55,7 @@ test('titles come from the existing README names', () => {
 
 test('hash routes parse and round-trip', async () => {
   const {parseRoute, routeFor, lookup} = await helpers();
+  assert.deepEqual(parseRoute('#a/all'), {view: 'asset', cls: 'all'});
   assert.deepEqual(parseRoute(''), {view: 'home'});
   assert.deepEqual(parseRoute('#home'), {view: 'home'});
   assert.deepEqual(parseRoute('#cost'), {view: 'cost'});
@@ -60,6 +63,12 @@ test('hash routes parse and round-trip', async () => {
   assert.deepEqual(parseRoute('#r/x'), {view: 'research', entryId: 'x', index: 0, anchor: ''});
   assert.deepEqual(parseRoute(routeFor('x', 1, 'md-結論')), {view: 'research', entryId: 'x', index: 1, anchor: 'md-結論'});
   assert.deepEqual(parseRoute('#r/a/b/c'), {view: 'home'});
+  assert.deepEqual(parseRoute('#a/stock'), {view: 'asset', cls: 'stock'});
+  assert.deepEqual(parseRoute('#a/crypto/'), {view: 'asset', cls: 'crypto'});
+  assert.deepEqual(parseRoute('#a/'), {view: 'home'});
+  assert.deepEqual(parseRoute('#a'), {view: 'home'});
+  assert.deepEqual(parseRoute('#a/Stock1'), {view: 'home'});
+  assert.deepEqual(parseRoute('#a/stock/x'), {view: 'home'});
   const first = catalog.groups[0].entries[0];
   const found = lookup(catalog, parseRoute(routeFor(first.id, 1)));
   assert.equal(found.entry.id, first.id);
@@ -83,6 +92,26 @@ test('paths map to routes and safe research URLs', async () => {
   const latest = latestGroups(catalog).flatMap(g => g.entries);
   assert.equal(s.documents, latest.flatMap(e => e.items).length);
   assert.equal(s.archives, catalog.groups.flatMap(g => g.entries).length - latest.length);
+  assert.equal(s.crypto, new Set(catalog.groups[2].entries.map(e => e.slug)).size);
+});
+
+test('groups carry an asset class, with a fallback for catalogs without assetClass', async () => {
+  const {groupClass, KIND_LABELS, stats} = await helpers();
+  assert.deepEqual(catalog.groups.map(g => groupClass(g)), ['stock', 'stock', 'crypto']);
+  assert.equal(KIND_LABELS.crypto, '仮想通貨');
+  const make = (id, kind, slug, date) => ({id: `${slug}-${date}`, title: slug, date, kind, slug, items: [{label: 'README', path: `research/${id}/${slug}/${date}/README.md`, type: 'md'}]});
+  const legacy = {groups: [
+    {id: 'themes', label: 'テーマ', entries: [make('themes', 'theme', 't', '2026-10-03')]},
+    {id: 'companies', label: '企業', entries: [make('companies', 'company', '1111-a', '2026-10-03')]},
+    {id: 'crypto', label: '仮想通貨', entries: [make('crypto', 'crypto', 'BTC-bitcoin', '2026-10-03'), make('crypto', 'crypto', 'BTC-bitcoin', '2026-09-05')]},
+    {id: 'other', label: 'その他', assetClass: 'bond', entries: []},
+  ]};
+  assert.equal(groupClass(legacy.groups[0]), 'stock');
+  assert.equal(groupClass(legacy.groups[2]), 'crypto');
+  assert.equal(groupClass(legacy.groups[3]), 'bond');
+  const s = stats(legacy);
+  assert.equal(s.crypto, 1);
+  assert.equal(s.archives, 1);
 });
 
 test('versions group dated snapshots of one target; the newest is current, the rest archives', async () => {

@@ -108,6 +108,19 @@
   --chart-grid: #e6edf4;
   --chart-zero: #9aa9b8;
   --chart-scrollbar: #b7c9da;
+  /* Area fill under a series line (stacked areas rely on this staying translucent). */
+  --chart-area-opacity: 0.22;
+  /* Category colours for composition / stacked charts: fixed by series order, not by meaning.
+     Adjacent slots contrast so neighbouring segments stay distinct. */
+  --chart-cat-1: var(--blue);
+  --chart-cat-2: var(--chart-accent);
+  --chart-cat-3: var(--navy);
+  --chart-cat-4: var(--blue-light);
+  --chart-cat-5: var(--chart-target);
+  --chart-cat-6: var(--chart-negative);
+  /* Week-over-week change: up follows the primary blue, down follows the negative chart colour. */
+  --delta-up-ink: var(--blue);
+  --delta-down-ink: var(--chart-negative);
 
   --radius-control: 7px;
   --radius-marker: 2px;

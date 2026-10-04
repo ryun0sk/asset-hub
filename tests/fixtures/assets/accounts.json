@@ -1,0 +1,24 @@
+{
+  "_note": "テスト用のダミー値",
+  "version": 1,
+  "accounts": [
+    {"id": "mizuho", "institution": "みずほ銀行", "label": "みずほ銀行", "defaultClass": "cash", "currency": "JPY",
+     "readGuide": "ログイン後の口座一覧で普通預金の残高（円）を読む"},
+    {"id": "rakuten-bank", "institution": "楽天銀行", "label": "楽天銀行", "defaultClass": "cash", "currency": "JPY",
+     "readGuide": "トップ画面の普通預金残高（円）を読む"},
+    {"id": "smbc", "institution": "三井住友銀行", "label": "三井住友銀行", "defaultClass": "cash", "currency": "JPY",
+     "readGuide": "口座一覧の普通預金残高（円）を読む"},
+    {"id": "bitflyer", "institution": "bitFlyer", "label": "bitFlyer", "defaultClass": "crypto", "currency": "JPY",
+     "readGuide": "資産画面でコインごとの保有数量と円換算評価額を読む。日本円残高は cash として記録する"},
+    {"id": "binance", "institution": "Binance", "label": "Binance", "defaultClass": "crypto", "currency": "USD",
+     "readGuide": "ウォレット概要の総資産の円換算表示（無ければ USD 表示×当日レートをユーザーが読み上げ）と、コインごとの数量・USD 評価額を読む"},
+    {"id": "sbi-tokutei", "institution": "SBI証券", "label": "SBI証券 個別株", "defaultClass": "stock", "currency": "JPY",
+     "readGuide": "口座管理 > 保有証券で銘柄ごとの数量・評価額・取得金額を読む。預り金は cash として記録する。米国株は円換算評価額と USD 評価額を併記する"},
+    {"id": "sbi-nisa", "institution": "SBI証券", "label": "SBI証券 NISA", "defaultClass": "stock", "currency": "JPY",
+     "readGuide": "口座管理 > 保有証券の NISA 欄で銘柄・投資信託ごとの評価額と取得金額を読む"},
+    {"id": "daiwa", "institution": "大和証券", "label": "大和証券", "defaultClass": "stock", "currency": "JPY",
+     "readGuide": "お預り資産の一覧で銘柄ごとの数量・評価額を読む"},
+    {"id": "private-equity", "institution": "未上場株", "label": "未上場株への出資", "defaultClass": "private", "currency": "JPY",
+     "readGuide": "出資額（資本金の一部）を前回値のまま引き継ぐ。増資・減資があったときだけ更新する"}
+  ]
+}

@@ -8,7 +8,7 @@ Asset Hub の調査資料を、許可したGoogleアカウントだけが閲覧�
 |---|---|
 | Cloud Run サービス `asset-hub` | `python -m backend.server`。`web/`・`backend/`・`research/`（`working/`・`qa/`・隠しファイル・`.py`/`.cjs` を除く）をイメージに同梱。256Mi、最小0・最大1インスタンス |
 | IAP | `--iap` と `--no-allow-unauthenticated` で有効化。閲覧者は `infra/config.json` の `allowed_emails` のみ |
-| GCS `<project>-asset-state` | 費用スナップショット `costs/state.json` だけを置く非公開バケット |
+| GCS `<project>-asset-state` | 費用スナップショット `costs/state.json` と資産スナップショット `assets/state.json`（[docs/assets.md](assets.md)）だけを置く非公開バケット。ダッシュボードが読むのはこの2オブジェクトのみ |
 | GCS `<project>-asset-builds` | Cloud Build のソース置き場 |
 | Cloud Run Job `asset-cost-sync` | 課金エクスポート（BigQuery）からこのプロジェクト分だけを集計し `costs/state.json` に保存 |
 | Cloud Scheduler `asset-cost-sync` | 上記ジョブを毎日 01:00（Asia/Tokyo）に起動。`cost_reporting.schedule` で変更可 |
@@ -77,7 +77,7 @@ python3 infra/deploy.py deploy
 
 資料を追加・更新したら、カタログ生成のあとに `deploy` を再実行すると反映されます（資料はイメージに同梱）。
 
-> ローカルの Python に `requests` などが無い場合は `python3 -m venv .venv && .venv/bin/pip install -r requirements.txt` を実行し、`.venv/bin/python infra/deploy.py ...` で実行します。
+> ローカルの Python に `requests` などが無い場合は `python3 -m venv .venv && .venv/bin/pip install -r requirements.txt` を実行し、`.venv/bin/python infra/deploy.py ...` で実行します。資産スナップショットの `python3 -m backend.assets push` も `requests` を使うため、同じく `.venv/bin/python -m backend.assets push` で実行します（`validate`・`build`・`template` は `python3` のままで動きます）。
 
 ### 個人（組織なし）プロジェクトでの IAP 用 OAuth クライアント（初回のみ・手作業）
 
@@ -114,7 +114,7 @@ python3 -m backend.server --port 4330   # http://localhost:4330/
 python3 -m unittest discover -s tests
 ```
 
-ローカルでは IAP 検証を行わず、費用は `data/private/costs.json`（`ASSET_COST_LOCAL_PATH` で変更可、Git 対象外）を読みます。
+ローカルでは IAP 検証を行わず、費用は `data/private/costs.json`（`ASSET_COST_LOCAL_PATH` で変更可、Git 対象外）を、資産は `data/private/assets/state.json`（`python3 -m backend.assets build` の出力。`ASSET_ASSETS_DIR` / `ASSET_ASSETS_LOCAL_PATH` で変更可、Git 対象外）を読みます。Cloud Run では同じ内容を state バケットの `costs/state.json` と `assets/state.json` から読みます。
 
 ## 環境変数（Cloud Run に deploy.py が設定）
 
@@ -122,8 +122,11 @@ python3 -m unittest discover -s tests
 |---|---|
 | `ASSET_IAP_AUDIENCE` | IAP JWT の audience |
 | `ASSET_ALLOWED_EMAILS` | 閲覧を許可するメール（カンマ区切り） |
-| `ASSET_STATE_BUCKET` | `costs/state.json` を置くバケット |
+| `ASSET_STATE_BUCKET` | `costs/state.json`・`assets/state.json` を置くバケット（`backend.assets push` の既定の書き込み先でもある） |
 | `ASSET_PROJECT_ID` | 費用を絞り込むプロジェクトID |
 | `ASSET_COST_CURRENCY` / `ASSET_COST_PROJECT_BUDGET` | 予算表示（JPY / 500） |
 | `ASSET_COST_BILLING_TABLE` / `ASSET_COST_BILLING_LOCATION` | 費用ジョブのみ。課金エクスポートのテーブルとロケーション |
 | `ASSET_COST_LOCAL_PATH` | ローカル実行時の費用ファイル（既定 `data/private/costs.json`） |
+| `ASSET_ASSETS_DIR` | ローカル・CLI のみ。資産ソース（`accounts.json`・`snapshots/`）の置き場（既定 `data/private/assets`） |
+| `ASSET_ASSETS_LOCAL_PATH` | ローカル・CLI のみ。`build` の出力とローカルサーバーの読み取り先（既定 `<ASSET_ASSETS_DIR>/state.json`） |
+| `ASSET_ASSETS_MIRROR` | CLI のみ・任意。`build` が資産ソースと state を複製するフォルダ（例: iCloud 配下） |

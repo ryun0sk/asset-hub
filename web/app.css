@@ -1,4 +1,4 @@
-/* Asset Hub components: wordmark, research navigation, home table and research viewer.
+/* Asset Hub components: wordmark, research navigation, research table and research viewer.
  * New CSS: every size, space, colour and border width comes from tokens.css. */
 
 /* Wordmark (text brand at the bottom of the sidebar). */
@@ -35,11 +35,11 @@
 }
 
 /* Research groups in the sidebar. */
-#researchNav .nav-label {
+#classNav .nav-label {
   margin: var(--space-16) var(--space-0) var(--space-0);
   padding: var(--space-0) var(--space-12) var(--space-6);
 }
-#researchNav .nav-status { line-height: var(--line-height-control); letter-spacing: 0; }
+#classNav .nav-status { line-height: var(--line-height-control); letter-spacing: 0; }
 .nav-text { min-width: 0; overflow-wrap: anywhere; line-height: var(--line-height-heading); }
 .subnav a { overflow-wrap: anywhere; }
 
@@ -198,7 +198,7 @@
   .wordmark-text small { letter-spacing: 1px; }
 }
 @media (max-width: 700px) {
-  #researchNav { display: contents; }
+  #classNav { display: contents; }
   .sidebar-bottom .wordmark { min-height: 32px; }
   .nav-text { overflow-wrap: normal; }
   .topbar-right > span { display: none; }

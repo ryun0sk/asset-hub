@@ -3,6 +3,10 @@
 Cloud (K_SERVICE set): every request must carry a valid IAP assertion for an
 allowed email. Local: binds 127.0.0.1 and accepts only Host localhost/127.0.0.1.
 Only GET/HEAD are accepted; nothing is writable over HTTP.
+
+Besides the shell and research files it serves two prebuilt JSON documents:
+/api/costs (billing snapshot) and /api/assets (weekly asset snapshots), both read
+from the state bucket in cloud and from data/private/ locally, cached for a minute.
 """
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from urllib.parse import urlsplit
@@ -34,6 +38,7 @@ IAP_HEADER = 'X-Goog-IAP-JWT-Assertion'
 # Static files change only with a new image: browsers keep a private copy and revalidate by ETag.
 STATIC_CACHE = 'private, no-cache'
 COST_CACHE_SECONDS = 60
+ASSET_CACHE_SECONDS = 60
 
 
 def etag(file):
@@ -113,6 +118,13 @@ class Handler(BaseHTTPRequestHandler):
                 self.json_response(503, {'error': '費用データを読み込めませんでした。'}, head)
                 return
             self.json_response(200, payload, head)
+        elif path == '/api/assets':
+            try:
+                payload = self.server.assets()
+            except Exception:
+                self.json_response(503, {'error': '資産データを読み込めませんでした。'}, head)
+                return
+            self.json_response(200, payload, head)
         elif path.startswith('/research/'):
             self.serve_research(path, head)
         else:
@@ -176,6 +188,8 @@ class DashboardServer(ThreadingHTTPServer):
         self._assets = shell_assets(self.web_dir) if cloud else None
         self._cost_lock = threading.Lock()
         self._cost_cache = (0.0, None)
+        self._asset_lock = threading.Lock()
+        self._asset_cache = (0.0, None)
         return self
 
     def shell(self):
@@ -189,6 +203,16 @@ class DashboardServer(ThreadingHTTPServer):
             if payload is None or time.monotonic() - loaded >= COST_CACHE_SECONDS:
                 payload = cost_payload(self.cost_document)
                 self._cost_cache = (time.monotonic(), payload)
+            return payload
+
+    def assets(self):
+        """Snapshots are pushed once a week; reuse a GCS read for a minute across requests."""
+        from .assets import asset_payload
+        with self._asset_lock:
+            loaded, payload = self._asset_cache
+            if payload is None or time.monotonic() - loaded >= ASSET_CACHE_SECONDS:
+                payload = asset_payload(self.asset_document)
+                self._asset_cache = (time.monotonic(), payload)
             return payload
 
 
@@ -209,15 +233,18 @@ def main():
     parser.add_argument('--port', type=int, default=int(os.environ.get('PORT', '4330')))
     args = parser.parse_args()
     cloud = bool(os.environ.get('K_SERVICE'))
+    from .assets import asset_document
     from .costs import cost_document
     if cloud:
         audience, allowed, bucket = cloud_settings(os.environ)
         from .cloud import verify_iap
         document = cost_document(bucket)
     else:
+        bucket = None
         document = cost_document(None)
     server = DashboardServer(('0.0.0.0' if cloud else '127.0.0.1', args.port), Handler).configure(cloud)
     server.cost_document = document
+    server.asset_document = asset_document(bucket if cloud else None)
     if cloud:
         server.audience, server.allowed, server.verify = audience, allowed, verify_iap
     print(f'Asset Hub listening on port {args.port}; IAP={cloud}', flush=True)

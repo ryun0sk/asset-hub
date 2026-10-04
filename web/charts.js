@@ -5,7 +5,8 @@ export const UiCharts = (() => {
   const finite = value => typeof value === 'number' && Number.isFinite(value);
   const number = (value, digits = 2) => value.toLocaleString('ja-JP', {maximumFractionDigits: digits});
   const geometry = Object.freeze({height: 260, left: 72, right: 24, top: 28, bottom: 48, minWidth: 280, lineSlot: 44, barSlot: 24, axisLabelWidth: 40, labelOffset: 14, nearOffset: 7.5, labelGap: 16});
-  const tones = new Set(['primary', 'secondary', 'target', 'accent', 'negative', 'context']);
+  // Meaning tones for measured/plan series; cat-N are fixed category colours for composition charts.
+  const tones = new Set(['primary', 'secondary', 'target', 'accent', 'negative', 'context', 'cat-1', 'cat-2', 'cat-3', 'cat-4', 'cat-5', 'cat-6']);
   const units = new Set(['count', 'man', 'yen']);
   let sequence = 0;
   const mounted = new WeakMap();
@@ -33,35 +34,59 @@ export const UiCharts = (() => {
   }
 
   function normalize(options) {
-    const series = options.series.map(s => ({...s, kind: s.kind === 'bar' ? 'bar' : 'line', marker: s.marker === 'ring' ? 'ring' : 'solid', tone: tones.has(s.tone) ? s.tone : 'primary'}));
-    return {...options, unit: units.has(options.unit) ? options.unit : 'count', series, rows: options.rows.map(row => ({...row}))};
+    const series = options.series.map(s => ({...s, kind: s.kind === 'bar' ? 'bar' : s.kind === 'area' ? 'area' : 'line', marker: s.marker === 'ring' ? 'ring' : 'solid', tone: tones.has(s.tone) ? s.tone : 'primary'}));
+    const normalized = {...options, unit: units.has(options.unit) ? options.unit : 'count', series, rows: options.rows.map(row => ({...row}))};
+    // `stacked` rides along in data-chart-options so mount() re-layouts the same way.
+    if (options.stacked) normalized.stacked = true;
+    return normalized;
+  }
+
+  // Stacking treats negative values as 0 so segments never overlap; a missing value adds nothing and
+  // leaves a gap. The row total follows the same rule and is null when no series has a value.
+  function total(row, series) {
+    const values = series.map(s => row[s.key]).filter(finite);
+    return values.length ? values.reduce((sum, value) => sum + Math.max(0, value), 0) : null;
   }
 
   function layout(input, availableWidth = 0) {
-    const options = normalize(input), {rows, series} = options, format = formats(options);
+    const options = normalize(input), {rows, series, stacked} = options, format = formats(options);
     const bars = series.filter(s => s.kind === 'bar');
-    const slot = options.slot || (bars.length ? geometry.barSlot * bars.length : geometry.lineSlot);
+    // Stacked bars share one lane; side-by-side bars take one lane each.
+    const lanes = stacked ? Math.min(1, bars.length) : bars.length;
+    const slot = options.slot || (bars.length ? geometry.barSlot * lanes : geometry.lineSlot);
     const width = Math.max(geometry.minWidth, availableWidth, rows.length * slot + geometry.left + geometry.right);
     const step = (width - geometry.left - geometry.right) / Math.max(1, rows.length);
-    const scale = domain(rows.flatMap(r => series.map(s => r[s.key])), {floor: options.floor, ceiling: options.ceiling, minimumRange: options.minimumRange || (options.unit === 'man' ? 10000 : options.unit === 'count' ? 4 : 1), integer: options.unit === 'count'});
+    const extent = stacked ? rows.map(r => total(r, series)) : rows.flatMap(r => series.map(s => r[s.key]));
+    const scale = domain(extent, {floor: options.floor, ceiling: options.ceiling, minimumRange: options.minimumRange || (options.unit === 'man' ? 10000 : options.unit === 'count' ? 4 : 1), integer: options.unit === 'count'});
     const height = options.height || geometry.height;
     const x = i => geometry.left + step * (i + 0.5);
     const y = value => geometry.top + (scale.max - value) / (scale.max - scale.min) * (height - geometry.top - geometry.bottom);
-    const barWidth = Math.max(3, Math.min(22, (step - 8) / Math.max(1, bars.length)));
+    const barWidth = Math.max(3, Math.min(22, (step - 8) / Math.max(1, lanes)));
+    const bases = rows.map(() => 0);
     const plots = series.map(s => {
-      let connected = false, path = '';
+      let connected = false, path = '', area = '', run = [];
+      // An area closes each connected run back along its base, so a gap splits it into separate subpaths.
+      const close = () => {
+        if (run.length) area += `M${run.map(p => `${p.x},${p.y}`).join(' L')} L${run.slice().reverse().map(p => `${p.x},${p.y0}`).join(' L')} Z `;
+        run = [];
+      };
       const points = rows.map((row, index) => {
         const value = row[s.key];
-        if (!finite(value)) {connected = false; return null;}
-        const point = {x: x(index) + (s.kind === 'bar' ? (bars.indexOf(s) - (bars.length - 1) / 2) * (barWidth + 2) : 0), y: y(value), value, index};
+        if (!finite(value)) {connected = false; close(); return null;}
+        const base = stacked ? bases[index] : 0, top = stacked ? base + Math.max(0, value) : value;
+        if (stacked) bases[index] = top;
+        const point = {x: x(index) + (s.kind === 'bar' && !stacked ? (bars.indexOf(s) - (bars.length - 1) / 2) * (barWidth + 2) : 0), y: y(top), y0: y(base), value, index};
         path += `${connected ? 'L' : 'M'}${point.x},${point.y} `;
         connected = true;
+        if (s.kind === 'area') run.push(point);
         return point;
       });
-      return {series: s, path, points};
+      close();
+      return {series: s, path, area, points};
     });
     const labels = [];
-    if (options.labels !== 'none') {
+    // Stacked segments default to no value labels: a label on a segment reads as a cumulative value.
+    if ((options.labels || (stacked ? 'none' : 'auto')) !== 'none') {
       const placed = [];
       plots.forEach(({series: s, points}, seriesIndex) => points.forEach(point => {
         if (!point) return;
@@ -78,31 +103,40 @@ export const UiCharts = (() => {
         labels.push({x: point.x, y: labelY, text, tone: s.tone});
       }));
     }
-    return {options, format, width, height, scale, plots, labels, step, barWidth, x, y, labelEvery: Math.max(1, Math.ceil(geometry.axisLabelWidth / step))};
+    // Axis labels thin to one per `labelEvery` rows (the last row always keeps its label); an explicit option overrides the width-based rule.
+    const every = Number(options.labelEvery);
+    return {options, format, width, height, scale, plots, labels, step, barWidth, x, y, labelEvery: every >= 1 ? Math.floor(every) : Math.max(1, Math.ceil(geometry.axisLabelWidth / step))};
   }
 
   function exact(value, model) {
     return finite(value) ? model.format.exact(value) : (model.options.missingLabel || '未確認');
   }
   function description(row, model) {
-    return `${row.name || row.label} ${model.options.series.map(s => `${s.label} ${exact(row[s.key], model)}`).join('、')}`;
+    const {series, stacked} = model.options;
+    return `${row.name || row.label} ${series.map(s => `${s.label} ${exact(row[s.key], model)}`).join('、')}${stacked ? `、合計 ${exact(total(row, series), model)}` : ''}`;
   }
   function tooltip(row, model) {
-    return `<strong>${esc(row.name || row.label)}</strong>${model.options.series.map(s => `<div><span>${esc(s.label)}</span><b>${esc(exact(row[s.key], model))}</b></div>`).join('')}`;
+    const {series, stacked} = model.options;
+    return `<strong>${esc(row.name || row.label)}</strong>${series.map(s => `<div><span>${esc(s.label)}</span><b>${esc(exact(row[s.key], model))}</b></div>`).join('')}${stacked ? `<div class="ui-chart-total"><span>合計</span><b>${esc(exact(total(row, series), model))}</b></div>` : ''}`;
   }
 
   function svg(model, id) {
     const {options, format, width, height, scale, plots, labels, step, barWidth, x, y, labelEvery} = model, {rows} = options;
     const grid = scale.ticks.map(v => `<line class="ui-chart-grid${v === 0 ? ' ui-chart-zero' : ''}" x1="${geometry.left}" x2="${width - geometry.right}" y1="${y(v)}" y2="${y(v)}"/><text class="ui-chart-axis" x="${geometry.left - 10}" y="${y(v)}" text-anchor="end">${esc(format.tick(v))}</text>`).join('');
-    const marks = plots.map(({series: s, points, path}) => {
+    const marks = plots.map(({series: s, points, path, area}) => {
       const tone = `ui-chart-tone-${s.tone}${s.dashed ? ' ui-chart-dashed' : ''}`;
-      if (s.kind === 'bar') return points.filter(Boolean).map(p => `<rect class="ui-chart-bar ${tone}" x="${p.x - barWidth / 2}" y="${Math.min(p.y, y(0))}" width="${barWidth}" height="${Math.max(1, Math.abs(p.y - y(0)))}" rx="2"/>`).join('');
+      // Bars grow from their base (zero, or the stacked total below); a stacked segment with nothing to add draws nothing,
+      // and stacked segments keep square corners so they read as one column.
+      if (s.kind === 'bar') return points.filter(p => p && !(options.stacked && p.y === p.y0)).map(p => `<rect class="ui-chart-bar ${tone}" x="${p.x - barWidth / 2}" y="${Math.min(p.y, p.y0)}" width="${barWidth}" height="${Math.max(1, Math.abs(p.y - p.y0))}" rx="${options.stacked ? 0 : 2}"/>`).join('');
+      // An area is its fill under the top line; it carries no point markers so stacked bands stay readable.
+      if (s.kind === 'area') return `<path class="ui-chart-area ui-chart-tone-${s.tone}" d="${area}"/><path class="ui-chart-line ${tone}" d="${path}"/>`;
       return `<path class="ui-chart-line ${tone}" d="${path}"/>${points.filter(Boolean).map(p => `<circle class="ui-chart-point${s.marker === 'ring' ? ' ui-chart-point-ring' : ''} ui-chart-tone-${s.tone}" cx="${p.x}" cy="${p.y}"/>`).join('')}`;
     }).join('');
+    // Row labels thin to every `labelEvery`-th row plus the last; a group label (its own line below) always marks where a group starts.
     const axis = rows.map((row, i) => {
-      if (i % labelEvery && i !== rows.length - 1) return '';
+      const label = i % labelEvery && i !== rows.length - 1 ? '' : `<text class="ui-chart-axis" x="${x(i)}" y="${height - 30}" text-anchor="middle">${esc(row.label)}</text>`;
       const group = row.group && (i === 0 || rows[i - 1].group !== row.group) ? `<text class="ui-chart-axis ui-chart-group" x="${x(i)}" y="${height - 12}" text-anchor="middle">${esc(row.group)}</text>` : '';
-      return `<text class="ui-chart-axis" x="${x(i)}" y="${height - 30}" text-anchor="middle">${esc(row.label)}</text>${group}`;
+      return `${label}${group}`;
     }).join('');
     return `<svg class="ui-chart-svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" role="group" aria-label="${esc(options.title)}。左右キーで移動して値を確認できます。">
       <g aria-hidden="true">${grid}${marks}${axis}<g>${labels.map(l => `<text class="ui-chart-value ui-chart-tone-${l.tone}" x="${l.x}" y="${l.y}" text-anchor="middle">${esc(l.text)}</text>`).join('')}</g></g>

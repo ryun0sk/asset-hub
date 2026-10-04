@@ -35,12 +35,16 @@ class LocalDocument:
 
 
 class GCSDocument:
-    def __init__(self, bucket, name, writable=False):
-        import google.auth
-        from google.auth.transport.requests import AuthorizedSession
-        scope = 'read_write' if writable else 'read_only'
-        credentials, _ = google.auth.default(scopes=['https://www.googleapis.com/auth/devstorage.' + scope])
-        self.session = AuthorizedSession(credentials)
+    def __init__(self, bucket, name, writable=False, session=None):
+        """`session`: any requests-like session that already carries credentials (CLI use);
+        without it the ambient Google credentials are used (Cloud Run, jobs)."""
+        if session is None:
+            import google.auth
+            from google.auth.transport.requests import AuthorizedSession
+            scope = 'read_write' if writable else 'read_only'
+            credentials, _ = google.auth.default(scopes=['https://www.googleapis.com/auth/devstorage.' + scope])
+            session = AuthorizedSession(credentials)
+        self.session = session
         self.bucket = bucket
         self.name = name
 
