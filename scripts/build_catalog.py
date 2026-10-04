@@ -3,7 +3,9 @@
 Scans research/{themes,companies}/<slug>/<YYYY-MM-DD>/ and lists the documents the
 web app can show. Every dated folder is its own entry; the web app treats the newest one of
 each slug as current and the older ones as archives. Titles come from the root README table and each folder README;
-small overrides below keep labels stable. Run from anywhere:
+small overrides below keep labels stable. A folder may add views.json to list named views of one
+HTML file ({"index.html": [{"view": "price", "label": "株価の比較"}, ...]}); each view becomes its own
+item with a "view" field, which the web app passes to the page as ?view=<name>. Run from anywhere:
 
     python3 scripts/build_catalog.py          # write research/catalog.json
     python3 scripts/build_catalog.py --check  # exit 1 when the file is out of date
@@ -111,8 +113,14 @@ def build():
                 folder = date_dir.relative_to(ROOT).as_posix()
                 overrides = LABEL_OVERRIDES.get(slug, {})
                 items = []
+                views = json.loads((date_dir / "views.json").read_text(encoding="utf-8")) if (date_dir / "views.json").is_file() else {}
                 for name, (file_type, default) in FILES.items():
-                    if (date_dir / name).is_file():
+                    if not (date_dir / name).is_file():
+                        continue
+                    if name in views:
+                        for view in views[name]:
+                            items.append({"label": view["label"], "path": f"{folder}/{name}", "type": file_type, "view": view["view"]})
+                    else:
                         items.append({"label": overrides.get(name, default), "path": f"{folder}/{name}", "type": file_type})
                 sources = date_dir / "sources"
                 pdfs = sorted(sources.rglob("*.pdf")) if sources.is_dir() else []

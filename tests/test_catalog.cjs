@@ -107,3 +107,18 @@ test('versions group dated snapshots of one target; the newest is current, the r
   assert.equal(s.documents, 3, 'only the newest versions count');
   assert.equal(s.archives, 1);
 });
+
+test('named views of one HTML file become separate items that open with ?view=', async () => {
+  const {itemUrl, counterpartIndex} = await helpers();
+  const entry = catalog.groups.flatMap(g => g.entries).find(e => e.id === 'ai-supply-chain-2026-10-03');
+  const views = entry.items.filter(i => i.view);
+  assert.deepEqual(views.map(i => i.view), ['map', 'guide', 'price', 'fund']);
+  assert.ok(views.every(i => i.path.endsWith('/index.html') && i.type === 'html'));
+  assert.equal(itemUrl(views[2]), '/research/themes/ai-supply-chain/2026-10-03/index.html?view=price');
+  assert.equal(itemUrl({path: 'research/a/b.md'}), '/research/a/b.md');
+  // Switching versions keeps the same view when the other version has it, else the first item.
+  const older = catalog.groups.flatMap(g => g.entries).find(e => e.id === 'ai-supply-chain-2026-09-05');
+  assert.equal(counterpartIndex(views[3], older), 0, 'archive has no fund view');
+  assert.equal(counterpartIndex(views[2], entry), 2);
+  assert.equal(counterpartIndex(older.items[0], entry), 0, 'plain index.html maps to the first view');
+});

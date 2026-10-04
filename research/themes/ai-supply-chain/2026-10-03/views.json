@@ -1,0 +1,8 @@
+{
+  "index.html": [
+    {"view": "map", "label": "調達の流れ"},
+    {"view": "guide", "label": "AI時代の機能整理"},
+    {"view": "price", "label": "株価の比較"},
+    {"view": "fund", "label": "EPS・PER"}
+  ]
+}
