@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-03T10:56:15Z",
+  "generatedAt": "2026-10-04T03:35:41Z",
   "groups": [
     {
       "id": "themes",
@@ -16,6 +16,11 @@
             {
               "label": "比較レポート",
               "path": "research/themes/ai-year-end-comparison/2026-10-03/report.md",
+              "type": "md"
+            },
+            {
+              "label": "許容損失別の組み合わせ一覧",
+              "path": "research/themes/ai-year-end-comparison/2026-10-03/screen.md",
               "type": "md"
             },
             {
