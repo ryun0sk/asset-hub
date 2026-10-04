@@ -68,7 +68,7 @@ def main():
         writer.writeheader()
         writer.writerows(rows)
     print(f"wrote {OUTPUT.name}: {len(rows)} combinations")
-    write_summary(rows)
+    write_summary(rows, compare, names, {sym: results['base'][sym]['vol1y'] for sym in compare.SYMS})
     for k in (2, 3):
         subset = [r for r in rows if r["銘柄数"] == k]
         print(f"-- {k}銘柄: {len(subset)}通り, 2σ下限が−500万円より大きい損失: {sum(r['2σ下限（万円）'] < -500 for r in subset)}通り")
@@ -87,7 +87,7 @@ def median(values):
     return values[len(values) // 2] if values else None
 
 
-def write_summary(rows):
+def write_summary(rows, compare, names, compare_vol):
     lines = [
         "# 許容損失の全パターン別 組み合わせ一覧｜2026-10-03",
         "",
@@ -141,6 +141,37 @@ def write_summary(rows):
     lines += [
         "",
         "- 決算集中期間の決算が多い組み合わせほど、ボラと2σの損失は大きい傾向がある。ただし差は中央値で数十万円程度で、銘柄自体の値動きの大きさの差のほうが大きい。決算の1日に±10％前後動いた例（アドバンテスト・イビデン・キオクシア）は、ボラの数値に含まれる以上の一度の変動になり得る（レポート第3節）。",
+        "",
+        "## 銘柄ごとの、損失の水準別の組み合わせ数",
+        "",
+        "各銘柄を含む組み合わせ（2銘柄・3銘柄の合計）が、2σ下限の許容水準ごとに何通りあるか。「2σ下限が最も小さい組み合わせ」は、その銘柄を含む中で損失の目安が最も小さいもの（順位ではなく、その銘柄が入れる最も厳しい水準を示すため）。",
+        "",
+        "| 銘柄 | 年率ボラ（円建て） | −300万円まで | −400万円まで | −500万円まで | 制限なし | 2σ下限が最も小さい組み合わせ |",
+        "|---|---:|---:|---:|---:|---:|---|",
+    ]
+    for sym in compare.SYMS:
+        name = names[sym]
+        mine = [r for r in rows if sym in r["コード"].split("+")]
+        counts = [sum(r["2σ下限（万円）"] >= limit for r in mine) for limit in (-300, -400, -500)]
+        best = max(mine, key=lambda r: r["2σ下限（万円）"])
+        vol = round(compare_vol[sym] * 100)
+        lines.append(f"| {name} | {vol}% | {counts[0]} | {counts[1]} | {counts[2]} | {len(mine)} | {best['組み合わせ']}（{best['2σ下限（万円）']}万円） |")
+    kioxia = [r for r in rows if "285A.T" in r["コード"].split("+") and r["2σ下限（万円）"] >= -400]
+    lines += [
+        "",
+        "- キオクシア（年率ボラ112%）は値動きが大きく、どの組み合わせでも2σ下限が−300万円以内に収まらない。−400万円までに入るのは3銘柄の組み合わせだけ。",
+        "- Lumentumは年率ボラ97%でも−400万円までの組み合わせが多い。週次では他の銘柄とほぼ無相関に見える（決算週の大きな値動きの影響。日次では米国株と0.38〜0.56）ためで、分散効果を過大に見せている（レポート第5-2節）。割り引いて読む。",
+        "",
+        "### キオクシアを含む −400万円までの組み合わせ（全件）",
+        "",
+        "コード順で、順位ではない。キオクシアを含む全231通りは [screen.csv](screen.csv) の「組み合わせ」列を「キオクシア」で絞り込む。",
+        "",
+        "| 銘柄数 | 組み合わせ | 地域 | 年率ボラ | 2σ下限 | 1σの幅 | 週次β | 決算集中期間の決算 |",
+        "|---:|---|---|---:|---:|---|---:|---|",
+    ]
+    for r in kioxia:
+        lines.append(f"| {r['銘柄数']} | {r['組み合わせ']} | {r['地域']} | {r['年率ボラ（円建て）']}% | {r['2σ下限（万円）']}万円 | {r['1σ下限（万円）']}〜+{r['1σ上限（万円）']}万円 | {r['週次β（対日経）']} | {r['該当する決算'] or '—'} |")
+    lines += [
         "",
         "## −300万円までの組み合わせ（全件）",
         "",
