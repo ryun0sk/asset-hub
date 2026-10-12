@@ -36,6 +36,8 @@ python3 scripts/archive_snapshots.py --write    # 新しくアーカイブにな
 
 資産の残高は Git には入れません。週末に `/weekly-assets` スキル（[.claude/skills/weekly-assets/SKILL.md](.claude/skills/weekly-assets/SKILL.md)）の手順で `data/private/assets/`（Git 対象外）に記録し、`python3 -m backend.assets build` → `push` で非公開バケットへ反映します。仕組みとスキーマは [docs/assets.md](docs/assets.md)。
 
+最新の残高記録は [2026-10-12の資産スナップショット](data/private/assets/snapshots/2026-10-12.json) です。各金融機関の画面を読んだ日付で保存し、前回の記録は残しています。このファイルはGit対象外で、ローカルでのみ閲覧できます。
+
 | 対象 | 内容 |
 |---|---|
 | [web/](web/) | 画面（素のHTML/CSS/JS、ビルド不要） |
