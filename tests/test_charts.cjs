@@ -39,6 +39,15 @@ test('scales are nice, include zero and negative values, and keep counts whole',
   assert.ok(negative.min<=-20&&negative.max>=5&&negative.ticks.includes(0));
   assert.equal(charts.domain([],{minimumRange:1}).ticks.length>1,true);
 });
+test('stock lines may omit zero, while bars, areas and default charts keep their baseline',()=>{
+  const input={unit:'yen',currency:'USD',rows:[{label:'10/1',close:157.65},{label:'10/2',close:158.96}],series:[{key:'close',label:'SPCX'}]};
+  assert.equal(charts.layout(input).scale.min,0);
+  const stock=charts.layout({...input,includeZero:false});
+  assert.ok(stock.scale.min>0&&stock.scale.min<=157.65&&stock.scale.max>=158.96);
+  assert.match(charts.tooltip(input.rows[1],stock),/\$158\.96/);
+  for(const kind of ['bar','area']) assert.equal(charts.layout({...input,includeZero:false,series:[{key:'close',kind}]}).scale.min,0);
+  assert.equal(charts.layout({...input,includeZero:false,stacked:true}).scale.min,0);
+});
 test('width follows the container and grows with rows, thinning axis labels when dense',()=>{
   const many=Array.from({length:30},(_,i)=>({label:`9/${i+1}`,net:i}));
   const layout=charts.layout({unit:'yen',rows:many,series:[{key:'net',label:'差引',kind:'bar'}]},400);

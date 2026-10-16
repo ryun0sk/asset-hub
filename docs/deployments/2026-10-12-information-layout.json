@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "deployedAt": "2026-10-12T11:58:12.774943+09:00",
+  "branch": "codex/ai-eps-per-table",
+  "url": "https://asset-hub-pvgbytjsqa-an.a.run.app/#ai/overview",
+  "baselineRevision": "asset-hub-00027-k2x",
+  "baselineImage": "asia-northeast1-docker.pkg.dev/ryun0sk-asset-hub/asset-hub/app@sha256:220435740338f60162cb21d418924e49ab02d8a65ae4857a2235a71f6c3ebd7e",
+  "revision": "asset-hub-00028-hfd",
+  "image": "asia-northeast1-docker.pkg.dev/ryun0sk-asset-hub/asset-hub/app@sha256:0e97331af43c9b789ddf0918ff47e48690e27d6c91f95e1c633d45f2cca1b1e4",
+  "buildId": "f07b1a27-a744-4b61-8e87-c4d23669edf2",
+  "changedFiles": [
+    {
+      "path": "web/app.js",
+      "sha256": "4fa7a8c080c220b8d6c6e7beace88d0deff92d4ef6a68675a4dc068b83c537e7"
+    },
+    {
+      "path": "web/index.html",
+      "sha256": "36e3c0e988a1d86539fcf18642586cb37f19034380d32a1a9270e12f8dc426ff"
+    },
+    {
+      "path": "web/catalog.js",
+      "sha256": "065e41db77436ac38d600846748332aa027c8ffaa99bf8b7d4fa02e1df157433"
+    },
+    {
+      "path": "web/assets.js",
+      "sha256": "e4faa9826c2ad4ed5e8d30f42ee62cd8819138fd67ee6bd65dabae7cce442a91"
+    },
+    {
+      "path": "web/asset-view.js",
+      "sha256": "a88094b96d8aa8701bda280688cd20b6493ff5bec2f829879b6a8d8e2ac5b225"
+    },
+    {
+      "path": "web/assets.css",
+      "sha256": "22e154a16c53e9f7649770d47ddb543a125fddbc0ba4cee5121165489b6424cf"
+    },
+    {
+      "path": "web/ai-valuations.js",
+      "sha256": "080b99b426660444fa58ffb888a00a18af6da6e37e655c6f6926ba054d33c926"
+    },
+    {
+      "path": "web/workspace.js",
+      "sha256": "66f4b4efbe20014e547e502ab0f4519b134b5ebf03d1d6187bb865ec8ee5e771"
+    },
+    {
+      "path": "web/workspace.css",
+      "sha256": "949d6c1c4720908844ad6a2ab083e5b3d824699d97dd54beaac5b07973a68258"
+    },
+    {
+      "path": "web/ai-detail.js",
+      "sha256": "6429939a34195c1afbaa1bef71736a5a64e936e5f6585d9b710eb067a5709e84"
+    },
+    {
+      "path": "web/ai-detail.css",
+      "sha256": "8e20695b1c97db91c8d22e4faaf595d4c0bc53b1bf13afa6a095b178c54753bd"
+    }
+  ],
+  "allOtherRuntimeFilesPreserved": true,
+  "checks": {
+    "ready": true,
+    "imageDigestVerified": true,
+    "trafficPercent": 100,
+    "settingsPreserved": true,
+    "iapVerified": true,
+    "costJobPreserved": true,
+    "workspaceNodeTests": 73,
+    "stagedNodeTests": 32,
+    "browserVerified": true,
+    "legacyEpsPerRouteVerified": true,
+    "aiDetailPeriodControlVerified": true,
+    "assetSummaryAndHoldingsVerified": true,
+    "mobile320pxVerified": true,
+    "archivesPreserved": true
+  },
+  "screenshot": "2026-10-12-information-layout-production.jpg"
+}

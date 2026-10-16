@@ -181,8 +181,7 @@
 .doc-code {
   margin: var(--space-0);
   padding: var(--space-16);
-  overflow: auto;
-  max-height: calc(100vh - var(--viewer-offset));
+  overflow-x: auto;
   background: var(--code-bg);
   border: var(--border-width-thin) solid var(--line);
   border-radius: var(--radius-small);

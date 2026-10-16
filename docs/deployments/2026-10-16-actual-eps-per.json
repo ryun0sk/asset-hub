@@ -1,0 +1,254 @@
+{
+  "schema": 1,
+  "deployedAt": "2026-10-15T15:37:01.369432Z",
+  "builtAt": "2026-10-15T15:33:12.130860Z",
+  "verifiedAt": "2026-10-15T15:40:00.799797+00:00",
+  "baselineRevision": "asset-hub-00030-dwn",
+  "baselineImage": "asia-northeast1-docker.pkg.dev/ryun0sk-asset-hub/asset-hub/app@sha256:24066686fffa3f4fd3a39ea7a6b7093ad8601c54a35955d73645cfa364d100ba",
+  "revision": "asset-hub-00031-wc4",
+  "image": "asia-northeast1-docker.pkg.dev/ryun0sk-asset-hub/asset-hub/app@sha256:e9328bb860289636483db33566c1104ab38258ad816846c0e5767ccc2f924ecd",
+  "buildId": "2bd3a440-56ab-4872-a460-e13fbb87149e",
+  "url": "https://asset-hub-pvgbytjsqa-an.a.run.app/#ai/multiples",
+  "trafficPercent": 100,
+  "stockPriceAsOf": "2026-10-15",
+  "researchCheckedAt": "2026-10-16",
+  "scope": "4社の実績EPS・PER月次表、6画面ファイル、公開調査資料、カタログの指定5項目を既存本番イメージへ追加。その他のローカル変更は反映対象外。",
+  "changedOrDependencyFiles": [
+    {
+      "path": "research/companies/285A-kioxia/2026-10-15/README.md",
+      "sha256": "9ae40b0a79a5bb8afa1a393018dc41bf8006d57083eb28381a486af4b32850e5"
+    },
+    {
+      "path": "research/companies/285A-kioxia/2026-10-15/eps-per-history-inputs.json",
+      "sha256": "7f0ec28dad58075928bf06a26b2e19b49360e9609a6c505445e9ad655c484bc1"
+    },
+    {
+      "path": "research/companies/285A-kioxia/2026-10-15/eps-per-history.csv",
+      "sha256": "659232cc775fe15fbd9f0a3c942be77b22c27f3ff22523ec90ee1a13f2578f8d"
+    },
+    {
+      "path": "research/companies/285A-kioxia/2026-10-15/eps-per-history.json",
+      "sha256": "00b9e4026257290779982ae0081c381228f973c5c727dbcee23dcd228b16df2d"
+    },
+    {
+      "path": "research/companies/285A-kioxia/2026-10-15/eps-per-history.png",
+      "sha256": "5c951ae4841ef9b1b33c81ad56d49dc1c292557ddb9001752c365a5141aefec4"
+    },
+    {
+      "path": "research/companies/285A-kioxia/2026-10-15/eps-per-history.svg",
+      "sha256": "cd727def0c4de08999ad642c860ad39a26250bc8ac2ac6e1246261b32d3fc0a7"
+    },
+    {
+      "path": "research/companies/285A-kioxia/2026-10-15/eps-per-monthly.csv",
+      "sha256": "077bb9648f75926d6acb1412cbd22cf55cd5ada8d812a03bf40a0a801adfd4b2"
+    },
+    {
+      "path": "research/companies/285A-kioxia/2026-10-15/per-analysis.md",
+      "sha256": "47d89e258a2fe1769f193f419d17e1545ee0b38d026ce41b5c186a9a0bf2e822"
+    },
+    {
+      "path": "research/companies/285A-kioxia/2026-10-15/per-audit.json",
+      "sha256": "789ce3e5279d2f8056c38ed1b23672edbd7b1978bf3b18e5f6e183794a9007e0"
+    },
+    {
+      "path": "research/companies/285A-kioxia/2026-10-15/per-audit.mjs",
+      "sha256": "9b5de37afb465abd252b86ec0bc09d4285c7d9fe9d51add8b812c12d8fc1118e"
+    },
+    {
+      "path": "research/companies/285A-kioxia/2026-10-15/related-links.md",
+      "sha256": "6a96d4de2addaacf4da4c41abc1d7f5e5c7d8994e7a0e50273c31625b31b41d5"
+    },
+    {
+      "path": "research/companies/285A-kioxia/2026-10-15/report.md",
+      "sha256": "cabe7041a8697b245c33d0f2c181017d8f6e7040e7cfc9a1c6da6962e01b68b6"
+    },
+    {
+      "path": "research/companies/285A-kioxia/2026-10-15/valuation.json",
+      "sha256": "7e8cad47ceeb3cdfe52d8a12b4380f233423d9ff8d5e38674cc4b6002a2b7162"
+    },
+    {
+      "path": "research/companies/285A-kioxia/2026-10-15/valuation.mjs",
+      "sha256": "4609df0bcd6cda23f37f86ea5664afd1ee63f160b24b10ee2d0c156e0f1c8b2f"
+    },
+    {
+      "path": "research/companies/4062-ibiden/2026-10-16/README.md",
+      "sha256": "9d71a00ac8ce2182b8ff88959d5e01a4703a16b277399c3ed3e26d852b4951b5"
+    },
+    {
+      "path": "research/companies/4062-ibiden/2026-10-16/eps-per-history-inputs.json",
+      "sha256": "6804c529b200e05c0523a52778611ca65d9a45987b0f5b35256c113e2a5c39a6"
+    },
+    {
+      "path": "research/companies/4062-ibiden/2026-10-16/eps-per-history.csv",
+      "sha256": "a31d0bd95bc1ea0ae1e8d0e11fca04b0b1b719376c4de976e42af71e1da524b9"
+    },
+    {
+      "path": "research/companies/4062-ibiden/2026-10-16/eps-per-history.json",
+      "sha256": "aceea05ad02f90f4a7bdb4ce4f74e121e02bbd58efcca78129c1444a15599eee"
+    },
+    {
+      "path": "research/companies/4062-ibiden/2026-10-16/eps-per-monthly.csv",
+      "sha256": "3b5e2bd074d160fe0d95d561f5c7b2a8a26321b76721d487029b4afab2ca4745"
+    },
+    {
+      "path": "research/companies/4062-ibiden/2026-10-16/report.md",
+      "sha256": "959238a95def0da41091273b4633758d7dc21831ae042b83bbca28ef24a2d1bf"
+    },
+    {
+      "path": "research/companies/6146-disco/2026-10-16/README.md",
+      "sha256": "2d4c4253b0ec4d7b75e81daaed0d14bc2e78477c56ce78346b7f6d1c12f9e55e"
+    },
+    {
+      "path": "research/companies/6146-disco/2026-10-16/eps-per-history-inputs.json",
+      "sha256": "0092b146f9086695e21b108a1980bae4707f6f55cd48d19fb0f9931c6fbd9840"
+    },
+    {
+      "path": "research/companies/6146-disco/2026-10-16/eps-per-history.csv",
+      "sha256": "57446a389c184da5538556e3f9164edf2b5fcb45379c8ad8e65780d0ef61a362"
+    },
+    {
+      "path": "research/companies/6146-disco/2026-10-16/eps-per-history.json",
+      "sha256": "309beb1d6af6a6e0c7e572fd7839e98443110b863e3eadb767f10adc35dabaa0"
+    },
+    {
+      "path": "research/companies/6146-disco/2026-10-16/eps-per-monthly.csv",
+      "sha256": "f065bd79270171bcae18496749d04e7a15ee74688d80f59783e59d16632eb1fd"
+    },
+    {
+      "path": "research/companies/6146-disco/2026-10-16/report.md",
+      "sha256": "922286ccaa82760da493928bd38a1794dfb69ee3fd53ff951db51518d5b59e7f"
+    },
+    {
+      "path": "research/companies/6857-advantest/2026-10-15/README.md",
+      "sha256": "5d8145b55fb09f8f8c5d3deaf807033c3a4dad359567f24afc9634db67c63c05"
+    },
+    {
+      "path": "research/companies/6857-advantest/2026-10-15/eps-inputs-agent.json",
+      "sha256": "1da9b254e1edac51d2685e6f25a754a413a2dfd490d0f3182fa12ca897ddbe41"
+    },
+    {
+      "path": "research/companies/6857-advantest/2026-10-15/eps-per-history-inputs.json",
+      "sha256": "71fca78b8b48d2aab62a1aa88c47aed4da41062a2b70dea64bcdcaef37a1f0d8"
+    },
+    {
+      "path": "research/companies/6857-advantest/2026-10-15/eps-per-history.csv",
+      "sha256": "3551e02286e146815aaf2cf3c512595126e79cd0f5d8a57b8a1d9e0dfbacdf28"
+    },
+    {
+      "path": "research/companies/6857-advantest/2026-10-15/eps-per-history.json",
+      "sha256": "b379ea1140061194b36b7ea1ad93ad2d4a69a542cd7a832282d1617913c7e8d1"
+    },
+    {
+      "path": "research/companies/6857-advantest/2026-10-15/eps-per-monthly.csv",
+      "sha256": "79e4196db20e37cc1d90fa0463aabf959e33f2ef963ac019cea6200ff024c0d1"
+    },
+    {
+      "path": "research/companies/6857-advantest/2026-10-15/report.md",
+      "sha256": "7b6462b3678a49bfc7b275586734700fa9c2ba5a68ad139b7c79c5a961d0d5ea"
+    },
+    {
+      "path": "research/themes/ai-actual-valuation/2026-10-16/README.md",
+      "sha256": "f03e79781e1315f7f08d975d617e53b892ed3ac5ab3d8446dc44ef31e7835d55"
+    },
+    {
+      "path": "research/themes/ai-actual-valuation/2026-10-16/report.md",
+      "sha256": "3d70944d1c31432e4eab4d9f6953286a1d3507c5758655a059c1180a23b6794f"
+    },
+    {
+      "path": "research/themes/ai-actual-valuation/2026-10-16/valuation-history.csv",
+      "sha256": "802a34843b700a8bd8658c01f63949ad11e7da86ad2ba5ca0816d81023bbd416"
+    },
+    {
+      "path": "research/themes/ai-actual-valuation/2026-10-16/valuation-history.json",
+      "sha256": "3cc6ebb03287117b8e31f248e2311eaa00fa1f0f012851b5d1d6e44c847e84f8"
+    },
+    {
+      "path": "research/themes/ai-stock-selloff/2026-10-15/related-links.md",
+      "sha256": "d02498ca39531d11f5b4f3c56f71cb729cd988e19542e29ad6d72110ec9c65e0"
+    },
+    {
+      "path": "research/themes/ai-stock-selloff/2026-10-15/report.md",
+      "sha256": "54947f93089b21234edb56b2611e2ac9d1a38e4f4c3bcc15a3d7ea6d587ba756"
+    },
+    {
+      "path": "web/ai-actual-valuations.js",
+      "sha256": "c49d770cffc0bb076d0325500ba0658939eeaec360e0df9e57c3431749c06035"
+    },
+    {
+      "path": "web/ai-detail.css",
+      "sha256": "c0ba5e242248862c65ac88242e605d5d4ff2d5a42c75af394e46628a70476397"
+    },
+    {
+      "path": "web/ai-detail.js",
+      "sha256": "74863c1df08457ce385900faa9035fd87b2c545ceca8f593487aa443eda836ca"
+    },
+    {
+      "path": "web/ai-valuations.js",
+      "sha256": "2f07dd8ef84716d357bc8de9c43553bd5454b13d145096d5748a5d3243376839"
+    },
+    {
+      "path": "web/app.js",
+      "sha256": "6eb25fe8ea50c60642e62196374ffb28be40949f60e05a36fa26b326ae6fa670"
+    },
+    {
+      "path": "web/workspace.js",
+      "sha256": "676a471d9b3e33b42b270a930764a75bcfe4e12ac29c611140ecca6f233f8e83"
+    }
+  ],
+  "catalogTargetIds": [
+    "285A-kioxia-2026-10-15",
+    "6857-advantest-2026-10-15",
+    "4062-ibiden-2026-10-16",
+    "6146-disco-2026-10-16",
+    "ai-actual-valuation-2026-10-16"
+  ],
+  "sourceHistories": [
+    {
+      "path": "research/companies/285A-kioxia/2026-10-15/eps-per-history.json",
+      "sha256": "00b9e4026257290779982ae0081c381228f973c5c727dbcee23dcd228b16df2d"
+    },
+    {
+      "path": "research/companies/6857-advantest/2026-10-15/eps-per-history.json",
+      "sha256": "b379ea1140061194b36b7ea1ad93ad2d4a69a542cd7a832282d1617913c7e8d1"
+    },
+    {
+      "path": "research/companies/4062-ibiden/2026-10-16/eps-per-history.json",
+      "sha256": "aceea05ad02f90f4a7bdb4ce4f74e121e02bbd58efcca78129c1444a15599eee"
+    },
+    {
+      "path": "research/companies/6146-disco/2026-10-16/eps-per-history.json",
+      "sha256": "309beb1d6af6a6e0c7e572fd7839e98443110b863e3eadb767f10adc35dabaa0"
+    }
+  ],
+  "checks": {
+    "overlayFilesVerified": 45,
+    "unrelatedRuntimeFilesPreserved": 231,
+    "catalogNewOrUpdatedEntries": 5,
+    "companyMonthlyRows": 44,
+    "testsPassed": 24,
+    "designTokensPassed": true,
+    "archivesMatched": 6,
+    "sourceHistoryHashesPreserved": true,
+    "allOverlayHashesMatchLocal": true,
+    "noLookahead": true,
+    "ibidenAndDiscoIndependentlyAudited": true,
+    "productionFourCompanyComparisonVerified": true,
+    "productionIbidenMonthlyTableVerified": true,
+    "productionDiscoMonthlyTableVerified": true,
+    "productionIbidenDisposalGainNoteVerified": true,
+    "productionScreenshotVisuallyReviewed": true,
+    "localNarrowSafariWindowVerified": true,
+    "runtimeSettingsPreserved": true,
+    "iapVerified": true,
+    "viewers": 2,
+    "costJobPreserved": true
+  },
+  "productionBrowser": "Google Chrome / native CUA; 認証済み本番画面で比較表とイビデン・ディスコの11行を確認。画面キャプチャは会話内で確認し、ファイル保存なし。",
+  "limitations": [
+    "4社とも希薄化後EPSの独自概算。イビデンはCB詳細が非開示のため公表累計EPS差引を使用。",
+    "半年年換算は実績2四半期を2倍した参考値であり会社予想ではない。",
+    "イビデンは豊田自動織機株式売却益491.44億円（税引前）を含む。",
+    "下部グラフ・既存43社予想一覧は2026-10-03保存版を保持。",
+    "今回の本番390pxモバイル表示は未検証。"
+  ]
+}

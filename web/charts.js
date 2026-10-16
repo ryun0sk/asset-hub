@@ -21,9 +21,11 @@ export const UiCharts = (() => {
   }
 
   // Nice 1/2/5 steps. `integer` keeps steps whole (counts); `minimumRange` avoids a flat scale.
-  function domain(values, {floor = 0, ceiling = 0, minimumRange = 1, integer = false} = {}) {
+  function domain(values, {floor, ceiling, minimumRange = 1, integer = false, includeZero = true} = {}) {
     const valid = values.filter(finite);
-    const low = Math.min(0, floor, ...valid), high = Math.max(0, ceiling, ...valid);
+    const bounds = [...valid, floor, ceiling].filter(finite);
+    if (includeZero || !bounds.length) bounds.push(0);
+    const low = Math.min(...bounds), high = Math.max(...bounds);
     const rough = Math.max(high - low, minimumRange) / 4;
     const power = 10 ** Math.floor(Math.log10(rough)), fraction = rough / power;
     let step = (fraction <= 1 ? 1 : fraction <= 2 ? 2 : fraction <= 5 ? 5 : 10) * power;
@@ -57,7 +59,7 @@ export const UiCharts = (() => {
     const width = Math.max(geometry.minWidth, availableWidth, rows.length * slot + geometry.left + geometry.right);
     const step = (width - geometry.left - geometry.right) / Math.max(1, rows.length);
     const extent = stacked ? rows.map(r => total(r, series)) : rows.flatMap(r => series.map(s => r[s.key]));
-    const scale = domain(extent, {floor: options.floor, ceiling: options.ceiling, minimumRange: options.minimumRange || (options.unit === 'man' ? 10000 : options.unit === 'count' ? 4 : 1), integer: options.unit === 'count'});
+    const scale = domain(extent, {floor: options.floor, ceiling: options.ceiling, includeZero: stacked || series.some(s => s.kind !== 'line') || options.includeZero !== false, minimumRange: options.minimumRange || (options.unit === 'man' ? 10000 : options.unit === 'count' ? 4 : 1), integer: options.unit === 'count'});
     const height = options.height || geometry.height;
     const x = i => geometry.left + step * (i + 0.5);
     const y = value => geometry.top + (scale.max - value) / (scale.max - scale.min) * (height - geometry.top - geometry.bottom);

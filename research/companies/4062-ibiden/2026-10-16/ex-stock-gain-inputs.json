@@ -1,0 +1,69 @@
+{
+  "asOf": "2026-10-16",
+  "stockPriceAsOf": "2026-10-15",
+  "sourceHistory": {
+    "path": "research/companies/4062-ibiden/2026-10-16/eps-per-history.json",
+    "sha256": "aceea05ad02f90f4a7bdb4ce4f74e121e02bbd58efcca78129c1444a15599eee"
+  },
+  "effectiveDate": "2026-05-12",
+  "gain": {
+    "name": "豊田自動織機株式売却益のみ",
+    "pretaxJPYMillion": 49144,
+    "periodStart": "2026-01-01",
+    "periodEnd": "2026-03-31",
+    "sourceDate": "2026-03-24"
+  },
+  "tax": {
+    "assumedRate": 0.299,
+    "sensitivityRates": [
+      0.25,
+      0.299,
+      0.35
+    ],
+    "status": "法定実効税率を売却益へ適用する独自仮定。売却固有の実際税額は非開示。",
+    "statutoryRateSourceDate": "2025-06-19",
+    "confirmingSourceDate": "2026-06-18"
+  },
+  "denominator": {
+    "basicWeightedShares": 279243625,
+    "potentialShares": 15584000,
+    "remainingSplitFactor": 2,
+    "basis": "2026年3月期通期の希薄化分母。潜在株式は千株単位公表のため概算。"
+  },
+  "companyCrossCheck": {
+    "afterTaxPolicyStockGainsJPYMillion": 34500,
+    "sourceDate": "2026-05-12",
+    "scope": "政策投資株全体・億円単位の換算値。Toyota単独の確定税引後額ではない。"
+  },
+  "sources": [
+    {
+      "date": "2026-03-24",
+      "title": "公開買付けへの応募結果及び特別利益の計上",
+      "url": "https://www2.jpx.co.jp/disc/40620/140120260324587882.pdf"
+    },
+    {
+      "date": "2026-05-11",
+      "title": "2026年3月期決算短信",
+      "url": "https://www2.jpx.co.jp/disc/40620/140120260505517290.pdf",
+      "pages": "PDF2ページ、PDF18ページ（添付16ページ）"
+    },
+    {
+      "date": "2026-05-12",
+      "title": "2025年度通期決算説明会資料",
+      "url": "https://www.ibiden.co.jp/ir/items/kessannsetsumeiFY2025.pdf",
+      "pages": "Page#4、Page#7"
+    },
+    {
+      "date": "2025-06-19",
+      "title": "第172期有価証券報告書",
+      "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100VXHK.pdf",
+      "pages": "PDF100ページ（連結）・121ページ（単体）"
+    },
+    {
+      "date": "2026-06-18",
+      "title": "第173期有価証券報告書",
+      "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100YC4B.pdf",
+      "pages": "PDF127ページ・単体税効果会計"
+    }
+  ]
+}

@@ -1,0 +1,411 @@
+{
+  "asOf": "2026-10-15 evening JST",
+  "facts": {
+    "closeJpy": 12880,
+    "closeDate": "2026-10-15",
+    "hypotheticalPurchasePriceJpy": 12000,
+    "sharesExTreasury": 1597515021,
+    "sharesDate": "2026-08-31",
+    "ifisConsensusNetIncomeTrn": 5.64879,
+    "ifisConsensusAsOf": "2026-10-14",
+    "providerEPS": {
+      "currentFYMarch2027": 3443,
+      "followingFYMarch2028": 4834.4,
+      "oneYearAhead": 4197.8,
+      "source": "https://scouter.monex.co.jp/report/theoryDps/285A",
+      "displayedAsOf": "2026-10-15 19:20 JST"
+    },
+    "ifisConsensusRevenueTrn": 10.209959,
+    "ifisConsensusOperatingProfitTrn": 8.077118,
+    "q1IFRS": {
+      "revenueTrn": 1.767117,
+      "operatingProfitTrn": 1.270017,
+      "netIncomeTrn": 0.842165
+    },
+    "q2IFRSGuidance": {
+      "revenueTrn": 2.39,
+      "operatingProfitTrn": 1.89,
+      "pretaxProfitTrn": 1.87,
+      "netIncomeTrn": 1.27
+    },
+    "dilutedEPSPreSplit": {
+      "fyMarch2026": 1009.15,
+      "q1June2026": 1525.09,
+      "q1June2025": 33.75
+    },
+    "q1CashMillionJpy": {
+      "operatingCashFlow": 866337,
+      "purchasePPE": 51176,
+      "purchaseIntangibles": 1226,
+      "proceedsSalePPE": 1217,
+      "governmentGrants": 12026,
+      "leasePrincipal": 7929,
+      "strategicNanyaInvestment": 78220,
+      "otherInvestingInflow": 61,
+      "netInvestingCashFlow": -117318,
+      "incomeTaxExpense": 392549,
+      "incomeTaxPaid": 100533,
+      "receivablesCashOutflow": 472052
+    }
+  },
+  "derivedIndependentEPS": 3535.9855311182077,
+  "epsComparisons": [
+    {
+      "label": "TTM diluted EPS (constructed from published annual and Q1 EPS)",
+      "epsJpy": 833.4966666666666,
+      "perAt12000": 14.397178153081997,
+      "perAt12880": 15.452971217641345
+    },
+    {
+      "label": "FY March 2027 provider consensus EPS",
+      "epsJpy": 3443,
+      "perAt12000": 3.485332558814987,
+      "perAt12880": 3.740923613128086
+    },
+    {
+      "label": "FY March 2027 net income divided by latest known ex-treasury shares (independent approximation)",
+      "epsJpy": 3535.9855311182077,
+      "perAt12000": 3.3936790448928003,
+      "perAt12880": 3.642548841518272
+    },
+    {
+      "label": "FY March 2028 provider consensus EPS",
+      "epsJpy": 4834.4,
+      "perAt12000": 2.482210822439186,
+      "perAt12880": 2.664239616084726
+    }
+  ],
+  "perGapFollowup": {
+    "capturedAt": "2026-10-15 after 22:26 JST",
+    "fixedSharePriceJpy": 12880,
+    "priceBasis": "2026-10-15 Tokyo close; not a fresh night-session quote",
+    "units": "Statement amounts: million JPY. EPS: JPY after 3-for-1 split.",
+    "priorFY": {
+      "revenue": 2337628,
+      "operatingProfit": 870369,
+      "netIncome": 554490,
+      "basicEPSPreSplit": 1024.07,
+      "dilutedEPSPreSplit": 1009.15,
+      "averageSharesPreSplit": 541455417
+    },
+    "priorCumulative": [
+      {
+        "end": "2025-06-30",
+        "revenue": 342799,
+        "operatingProfit": 44899,
+        "netIncome": 18284
+      },
+      {
+        "end": "2025-09-30",
+        "revenue": 791145,
+        "operatingProfit": 130820,
+        "netIncome": 58946
+      },
+      {
+        "end": "2025-12-31",
+        "revenue": 1334776,
+        "operatingProfit": 273574,
+        "netIncome": 146756
+      },
+      {
+        "end": "2026-03-31",
+        "revenue": 2337628,
+        "operatingProfit": 870369,
+        "netIncome": 554490
+      }
+    ],
+    "priorQuarters": [
+      {
+        "end": "2025-06-30",
+        "revenue": 342799,
+        "operatingProfit": 44899,
+        "netIncome": 18284
+      },
+      {
+        "end": "2025-09-30",
+        "revenue": 448346,
+        "operatingProfit": 85921,
+        "netIncome": 40662
+      },
+      {
+        "end": "2025-12-31",
+        "revenue": 543631,
+        "operatingProfit": 142754,
+        "netIncome": 87810
+      },
+      {
+        "end": "2026-03-31",
+        "revenue": 1002852,
+        "operatingProfit": 596795,
+        "netIncome": 407734
+      }
+    ],
+    "latestQ1": {
+      "revenue": 1767117,
+      "operatingProfit": 1270017,
+      "netIncome": 842165,
+      "basicEPSPreSplit": 1539.91,
+      "dilutedEPSPreSplit": 1525.09,
+      "averageSharesPreSplit": 546890636
+    },
+    "q2Company": {
+      "revenue": 2390000,
+      "operatingProfit": 1890000,
+      "netIncome": 1270000
+    },
+    "latestIfis": {
+      "consensusDate": "2026-10-15",
+      "revenue": 10077737,
+      "operatingProfit": 7911895,
+      "pretaxProfit": 8046647,
+      "netIncome": 5557290,
+      "source": "https://kabuyoho.jp/sp/reportAnalyst?bcode=285A"
+    },
+    "statementBasedEPS": {
+      "priorAnnualBasic": 341.3566666666666,
+      "priorAnnualBasicPER": 37.731795678029826,
+      "q1AnnualizedBasic": 2053.2133333333336,
+      "q1AnnualizedBasicPER": 6.273093882109992,
+      "q1AnnualizedDiluted": 2033.4533333333331,
+      "note": "Annualization is a constant-quarter hypothetical, not company full-year guidance. Published EPS uses each period average shares; do not sum quarterly EPS as exact annual EPS."
+    },
+    "profitBridge": {
+      "priorAverageQuarterNI": 138622.5,
+      "latestQ1VsPriorAverage": 6.075240310916337,
+      "forecastVsLatestQ1Annualized": 1.6497034429120185,
+      "forecastVsPriorFY": 10.022344857436563,
+      "priorQ4ShareOfAnnualProfit": 0.7353315659434796
+    },
+    "currentH2": {
+      "revenue": 5920620,
+      "operatingProfit": 4751878,
+      "netIncome": 3445125,
+      "averageQuarterNI": 1722562.5,
+      "averageQuarterVsQ2Company": 0.3563484251968505,
+      "operatingMargin": 0.802598038718918,
+      "netMargin": 0.5818858497927581
+    },
+    "forecastDataTiming": {
+      "earlierIfisNetIncome": 5648790,
+      "latestVsEarlier": -0.016198159251804345,
+      "monexDisplayedEPS": 3443,
+      "monexDisplayedTime": "2026-10-15 19:20:27 JST",
+      "inferredCurrentEPS": 3387.229737696038,
+      "inferredCurrentPER": 3.8025173954574623,
+      "inferenceBasis": "Independent approximation: update net income only, preserve denominator implicit in earlier EPS. Not a newly published IFIS EPS.",
+      "minkabu": {
+        "date": "2026-10-15",
+        "revenue": 10130625,
+        "netIncome": 5617829,
+        "publishedEPS": 3515.58,
+        "calculatedPER": 3.6636913396935924,
+        "source": "https://minkabu.jp/stock/285A/analyst_consensus"
+      }
+    },
+    "q4ToQ1OperatingBridge": {
+      "revenueIncrease": 764265,
+      "operatingProfitIncrease": 673222,
+      "netOperatingCostsIncrease": 91043,
+      "roundedCOGSBillions": {
+        "q4": 359.9,
+        "q1": 387.1
+      },
+      "roundedDABillions": {
+        "q4": 76.4,
+        "q1": 76.1
+      },
+      "note": "Rounded COGS and D&A are published IFRS deck figures. Incremental revenue is not pure price contribution; volume, FX, mix and costs also change."
+    }
+  },
+  "providerVsIndependentEPSDifference": 0.027007124925416237,
+  "followingYearEPSGrowth": 0.4041243101945977,
+  "cashAudit": {
+    "q1CoreFCFMillion": 827178,
+    "q1AfterLeaseMillion": 819249,
+    "q1FullInvestingAndLeaseAfterOperatingMillion": 741090,
+    "q1AfterLeaseToNetIncome": 0.9727891802675248,
+    "annualizedQ1AfterLeaseTrn": 3.276996,
+    "note": "Core FCF excludes strategic Nanya investment. Cash-flow amounts are before debt principal repayment and buybacks, not ending cash or fully distributable cash. Annualized Q1 is not a forecast; tax timing, receivables and CAPEX differ across quarters."
+  },
+  "impliedSecondHalf": {
+    "h2RevenueTrn": 6.052841999999998,
+    "h2OperatingProfitTrn": 4.917101000000001,
+    "h2NetIncomeTrn": 3.5366250000000004,
+    "operatingMargin": 0.8123623580460223,
+    "netMargin": 0.5842916434957333,
+    "averageQuarterlyNetIncomeVsQ2": 0.3923720472440946
+  },
+  "mechanicalAnnualizations": [
+    {
+      "netIncomeTrn": 3.36866,
+      "perAt12000": 5.690743575190135
+    },
+    {
+      "netIncomeTrn": 5.08,
+      "perAt12000": 3.7736575299212602
+    }
+  ],
+  "peers": [
+    {
+      "name": "Kioxia",
+      "price": 12880,
+      "currency": "JPY",
+      "priceAsOf": "2026-10-15 15:30 JST",
+      "eps": 3443,
+      "period": "FY ending 2027-03-31",
+      "basis": "IFRS-related consensus",
+      "source": "https://scouter.monex.co.jp/report/theoryDps/285A",
+      "per": 3.740923613128086
+    },
+    {
+      "name": "Micron",
+      "price": 914.13,
+      "currency": "USD",
+      "priceAsOf": "2026-10-14 16:00:01 EDT",
+      "eps": 176.15,
+      "period": "FY ending 2027-09-02",
+      "basis": "adjusted/non-GAAP forecast, prior-year basis reconciled",
+      "source": "https://finance.yahoo.com/quote/MU/analysis/",
+      "per": 5.189497587283565
+    },
+    {
+      "name": "Sandisk",
+      "price": 1403.34,
+      "currency": "USD",
+      "priceAsOf": "2026-10-14 15:59 EDT (late-session, not exact close)",
+      "eps": 214.82,
+      "period": "FY ending 2027-07-02",
+      "basis": "adjusted/non-GAAP forecast, prior-year basis reconciled",
+      "source": "https://twelvedata.com/markets/542904/stock/nasdaq/sndk/analysis",
+      "per": 6.532631970952425
+    },
+    {
+      "name": "SK hynix",
+      "price": 1262000,
+      "currency": "KRW",
+      "priceAsOf": "2026-10-15 15:30 KST",
+      "eps": 355218.9,
+      "period": "FY ending 2026-12-31",
+      "basis": "adjusted/non-GAAP forecast (S&P Global)",
+      "source": "https://stockanalysis.com/quote/krx/000660/forecast/",
+      "per": 3.552738888612064
+    },
+    {
+      "name": "Samsung",
+      "price": 210000,
+      "currency": "KRW",
+      "priceAsOf": "2026-10-15 15:30 KST",
+      "eps": 47826.95,
+      "period": "FY ending 2026-12-31",
+      "basis": "adjusted/non-GAAP forecast (S&P Global)",
+      "source": "https://stockanalysis.com/quote/krx/005930/forecast/",
+      "per": 4.390829856388501
+    }
+  ],
+  "reverseEarnings": [
+    {
+      "priceJpy": 12000,
+      "assumedNormalizedPER": 8,
+      "requiredNetIncomeTrn": 2.3962725315,
+      "declineFromConsensus": 0.5757901193884
+    },
+    {
+      "priceJpy": 12000,
+      "assumedNormalizedPER": 10,
+      "requiredNetIncomeTrn": 1.9170180252000002,
+      "declineFromConsensus": 0.6606320955107199
+    },
+    {
+      "priceJpy": 12000,
+      "assumedNormalizedPER": 12,
+      "requiredNetIncomeTrn": 1.5975150210000002,
+      "declineFromConsensus": 0.7171934129255999
+    },
+    {
+      "priceJpy": 12880,
+      "assumedNormalizedPER": 8,
+      "requiredNetIncomeTrn": 2.57199918381,
+      "declineFromConsensus": 0.544681394810216
+    },
+    {
+      "priceJpy": 12880,
+      "assumedNormalizedPER": 10,
+      "requiredNetIncomeTrn": 2.057599347048,
+      "declineFromConsensus": 0.6357451158481728
+    },
+    {
+      "priceJpy": 12880,
+      "assumedNormalizedPER": 12,
+      "requiredNetIncomeTrn": 1.71466612254,
+      "declineFromConsensus": 0.6964542632068107
+    }
+  ],
+  "aspStress": [
+    {
+      "change": 0,
+      "revenueTrn": 9.56,
+      "netIncomeTrn": 5.08,
+      "perAt12000": 3.7736575299212602
+    },
+    {
+      "change": -0.3,
+      "revenueTrn": 6.692,
+      "netIncomeTrn": 3.1322139037433154,
+      "perAt12000": 6.120329211580882
+    },
+    {
+      "change": -0.4,
+      "revenueTrn": 5.736,
+      "netIncomeTrn": 2.4829518716577534,
+      "perAt12000": 7.72072164218026
+    },
+    {
+      "change": -0.5,
+      "revenueTrn": 4.78,
+      "netIncomeTrn": 1.8336898395721926,
+      "perAt12000": 10.454429008818899
+    },
+    {
+      "change": -0.6,
+      "revenueTrn": 3.8240000000000003,
+      "netIncomeTrn": 1.184427807486631,
+      "perAt12000": 16.185182525121
+    },
+    {
+      "change": -0.7,
+      "revenueTrn": 2.8680000000000008,
+      "netIncomeTrn": 0.5351657754010699,
+      "perAt12000": 35.821013101283
+    }
+  ],
+  "reverseDCF": [
+    {
+      "priceJpy": 12000,
+      "requiredLongTermAnnualEquityCFTrn": 1.7882924247591054,
+      "assumptions": "Independent scenario: first 3 years CF [5,4,3] trillion JPY; required equity return 13%; zero growth. Not a market-implied probability."
+    },
+    {
+      "priceJpy": 12880,
+      "requiredLongTermAnnualEquityCFTrn": 2.0519901025747727,
+      "assumptions": "Independent scenario: first 3 years CF [5,4,3] trillion JPY; required equity return 13%; zero growth. Not a market-implied probability."
+    }
+  ],
+  "illustrativeNormalizedCashBridgeTrn": {
+    "netIncome": 3.2,
+    "depreciation": 0.3,
+    "capex": -0.47,
+    "leasePrincipal": -0.03,
+    "workingCapitalChange": 0,
+    "equityCashFlow": 3
+  },
+  "historyExample": {
+    "company": "Micron",
+    "priceDate": "2018-09-21",
+    "priceUsd": 44.74,
+    "fy2018GaapEPSUsd": 11.51,
+    "trailingPER": 3.8870547350130322,
+    "fy2019GaapEPSUsd": 5.51,
+    "epsDecline": 0.5212858384013901,
+    "note": "Historical trailing PER; not directly comparable with current forward PER. Not a forecast of the present cycle."
+  }
+}

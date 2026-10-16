@@ -1,0 +1,423 @@
+{
+  "asOf": "2026-10-15",
+  "facts": {
+    "observedPriceJpy": 13175,
+    "observedPriceTimeJst": "2026-10-15T10:18:00+09:00",
+    "previousCloseJpy": 14690,
+    "splitRatio": 3,
+    "splitEffectiveDate": "2026-10-01",
+    "sharesAsOf": "2026-08-31",
+    "issuedSharesPreSplit": 548639034,
+    "treasurySharesPreSplit": 16134027,
+    "shareSource": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100Z1UD.pdf",
+    "q1NetIncomeTrn": 0.842165,
+    "q2CompanyGuidanceNetIncomeTrn": 1.27,
+    "companyFullYearNetIncomeGuidanceTrn": null,
+    "companyGuidancePublishedDate": "2026-07-31",
+    "ifisConsensus": {
+      "asOf": "2026-10-14",
+      "fiscalYearEnd": "2027-03",
+      "revenueTrn": 10.209959,
+      "operatingProfitTrn": 8.077118,
+      "pretaxProfitTrn": 8.216647,
+      "netIncomeTrn": 5.64879,
+      "source": "https://kabuyoho.jp/sp/reportAnalyst?bcode=285A"
+    }
+  },
+  "shares": 1597515021,
+  "assumptions": {
+    "cfDefinition": "Prospective equity cash flow after tax, interest, necessary investment, working capital and lease principal; existing debt refinanced. No additional excess cash added.",
+    "yearDefinition": "Rolling 12-month periods starting October 2026; not fiscal years.",
+    "requiredEquityReturn": 0.13,
+    "perpetualGrowth": 0,
+    "purchaseMargins": [
+      0.2,
+      0.25,
+      0.3
+    ],
+    "scenarios": [
+      {
+        "name": "weak",
+        "annualEquityCFTrn": [
+          3.5,
+          2.5,
+          1.5
+        ],
+        "terminalAnnualEquityCFTrn": 1.5
+      },
+      {
+        "name": "purchase_cautious",
+        "annualEquityCFTrn": [
+          5,
+          4,
+          3
+        ],
+        "terminalAnnualEquityCFTrn": 3
+      },
+      {
+        "name": "previous_basic",
+        "annualEquityCFTrn": [
+          5,
+          4.5,
+          3.5
+        ],
+        "terminalAnnualEquityCFTrn": 3.5
+      },
+      {
+        "name": "strong",
+        "annualEquityCFTrn": [
+          6,
+          6.5,
+          6.5
+        ],
+        "terminalAnnualEquityCFTrn": 5
+      }
+    ]
+  },
+  "marketCapExTreasuryTrn": 21.047260401675,
+  "consensusDerivedEpsJpy": 3535.9855311182077,
+  "consensusPERAtObservedPrice": 3.72597678470522,
+  "ifisImpliedSecondHalfNetIncomeTrn": 3.5366250000000004,
+  "valuations": [
+    {
+      "name": "weak",
+      "rate": 0.13,
+      "explicitPVTrn": 6.094787084594397,
+      "terminalPVTrn": 7.996732641665719,
+      "equityValueTrn": 14.091519726260117,
+      "valuePerShareJpy": 8820.899672942804,
+      "terminalWeight": 0.5674854662243054,
+      "upsideVsObservedPrice": -0.3304819982586107,
+      "marginOfSafetyAtObservedPrice": -0.4936118183514713,
+      "purchaseThresholds": [
+        {
+          "margin": 0.2,
+          "priceJpy": 7056.719738354243
+        },
+        {
+          "margin": 0.25,
+          "priceJpy": 6615.674754707103
+        },
+        {
+          "margin": 0.3,
+          "priceJpy": 6174.629771059962
+        }
+      ]
+    },
+    {
+      "name": "purchase_cautious",
+      "rate": 0.13,
+      "explicitPVTrn": 9.636515981390218,
+      "terminalPVTrn": 15.993465283331439,
+      "equityValueTrn": 25.629981264721657,
+      "valuePerShareJpy": 16043.655882921214,
+      "terminalWeight": 0.6240139279908727,
+      "upsideVsObservedPrice": 0.21773479187257783,
+      "marginOfSafetyAtObservedPrice": 0.17880312965169953,
+      "purchaseThresholds": [
+        {
+          "margin": 0.2,
+          "priceJpy": 12834.924706336971
+        },
+        {
+          "margin": 0.25,
+          "priceJpy": 12032.74191219091
+        },
+        {
+          "margin": 0.3,
+          "priceJpy": 11230.559118044848
+        }
+      ]
+    },
+    {
+      "name": "previous_basic",
+      "rate": 0.13,
+      "explicitPVTrn": 10.374614404215965,
+      "terminalPVTrn": 18.659042830553346,
+      "equityValueTrn": 29.03365723476931,
+      "valuePerShareJpy": 18174.262434537268,
+      "terminalWeight": 0.642669391584887,
+      "upsideVsObservedPrice": 0.3794506591679141,
+      "marginOfSafetyAtObservedPrice": 0.2750737452231884,
+      "purchaseThresholds": [
+        {
+          "margin": 0.2,
+          "priceJpy": 14539.409947629814
+        },
+        {
+          "margin": 0.25,
+          "priceJpy": 13630.69682590295
+        },
+        {
+          "margin": 0.3,
+          "priceJpy": 12721.983704176087
+        }
+      ]
+    },
+    {
+      "name": "strong",
+      "rate": 0.13,
+      "explicitPVTrn": 14.905014010009033,
+      "terminalPVTrn": 26.655775472219062,
+      "equityValueTrn": 41.560789482228095,
+      "valuePerShareJpy": 26015.89902811192,
+      "terminalWeight": 0.6413683619657273,
+      "upsideVsObservedPrice": 0.9746412924563126,
+      "marginOfSafetyAtObservedPrice": 0.49357890781465863,
+      "purchaseThresholds": [
+        {
+          "margin": 0.2,
+          "priceJpy": 20812.719222489537
+        },
+        {
+          "margin": 0.25,
+          "priceJpy": 19511.92427108394
+        },
+        {
+          "margin": 0.3,
+          "priceJpy": 18211.12931967834
+        }
+      ]
+    }
+  ],
+  "cautiousRateSensitivity": [
+    {
+      "name": "purchase_cautious",
+      "rate": 0.12,
+      "explicitPVTrn": 9.788401967930028,
+      "terminalPVTrn": 17.794506195335273,
+      "equityValueTrn": 27.5829081632653,
+      "valuePerShareJpy": 17266.133839542345,
+      "terminalWeight": 0.6451279933938894,
+      "upsideVsObservedPrice": 0.31052249256488373,
+      "marginOfSafetyAtObservedPrice": 0.23694556509071885,
+      "purchaseThresholds": [
+        {
+          "margin": 0.2,
+          "priceJpy": 13812.907071633876
+        },
+        {
+          "margin": 0.25,
+          "priceJpy": 12949.600379656758
+        },
+        {
+          "margin": 0.3,
+          "priceJpy": 12086.293687679641
+        }
+      ]
+    },
+    {
+      "name": "purchase_cautious",
+      "rate": 0.13,
+      "explicitPVTrn": 9.636515981390218,
+      "terminalPVTrn": 15.993465283331439,
+      "equityValueTrn": 25.629981264721657,
+      "valuePerShareJpy": 16043.655882921214,
+      "terminalWeight": 0.6240139279908727,
+      "upsideVsObservedPrice": 0.21773479187257783,
+      "marginOfSafetyAtObservedPrice": 0.17880312965169953,
+      "purchaseThresholds": [
+        {
+          "margin": 0.2,
+          "priceJpy": 12834.924706336971
+        },
+        {
+          "margin": 0.25,
+          "priceJpy": 12032.74191219091
+        },
+        {
+          "margin": 0.3,
+          "priceJpy": 11230.559118044848
+        }
+      ]
+    },
+    {
+      "name": "purchase_cautious",
+      "rate": 0.14,
+      "explicitPVTrn": 9.488749574767944,
+      "terminalPVTrn": 14.463675347186058,
+      "equityValueTrn": 23.952424921954,
+      "valuePerShareJpy": 14993.552240254021,
+      "terminalWeight": 0.6038501485471365,
+      "upsideVsObservedPrice": 0.13803053056956505,
+      "marginOfSafetyAtObservedPrice": 0.12128895215182245,
+      "purchaseThresholds": [
+        {
+          "margin": 0.2,
+          "priceJpy": 11994.841792203217
+        },
+        {
+          "margin": 0.25,
+          "priceJpy": 11245.164180190515
+        },
+        {
+          "margin": 0.3,
+          "priceJpy": 10495.486568177814
+        }
+      ]
+    }
+  ],
+  "previousPublishedModel": {
+    "name": "previous_basic",
+    "rate": 0.12,
+    "explicitPVTrn": 10.542889030612244,
+    "terminalPVTrn": 20.760257227891152,
+    "equityValueTrn": 31.303146258503396,
+    "valuePerShareJpy": 19617.88328385467,
+    "terminalWeight": 0.6632003395585738,
+    "upsideVsObservedPrice": 0.4890233991540547,
+    "marginOfSafetyAtObservedPrice": 0.32841888141709463,
+    "purchaseThresholds": [
+      {
+        "margin": 0.2,
+        "priceJpy": 15694.306627083737
+      },
+      {
+        "margin": 0.25,
+        "priceJpy": 14713.412462891003
+      },
+      {
+        "margin": 0.3,
+        "priceJpy": 13732.518298698267
+      }
+    ]
+  },
+  "previousBasicWithUpdatedShares": {
+    "name": "previous_basic",
+    "rate": 0.12,
+    "explicitPVTrn": 10.542889030612244,
+    "terminalPVTrn": 20.760257227891152,
+    "equityValueTrn": 31.303146258503396,
+    "valuePerShareJpy": 19594.899482640543,
+    "terminalWeight": 0.6632003395585738,
+    "upsideVsObservedPrice": 0.4872788981131342,
+    "marginOfSafetyAtObservedPrice": 0.3276311515824841,
+    "purchaseThresholds": [
+      {
+        "margin": 0.2,
+        "priceJpy": 15675.919586112435
+      },
+      {
+        "margin": 0.25,
+        "priceJpy": 14696.174611980408
+      },
+      {
+        "margin": 0.3,
+        "priceJpy": 13716.42963784838
+      }
+    ]
+  },
+  "firstYearCFSensitivity": [
+    {
+      "firstYearCFTrn": 3.5,
+      "name": "purchase_cautious",
+      "rate": 0.13,
+      "explicitPVTrn": 8.309082353071634,
+      "terminalPVTrn": 15.993465283331439,
+      "equityValueTrn": 24.302547636403073,
+      "valuePerShareJpy": 15212.719327790956,
+      "terminalWeight": 0.6580982999236935,
+      "upsideVsObservedPrice": 0.154665603627397,
+      "marginOfSafetyAtObservedPrice": 0.13394839435894945,
+      "purchaseThresholds": [
+        {
+          "margin": 0.2,
+          "priceJpy": 12170.175462232764
+        },
+        {
+          "margin": 0.25,
+          "priceJpy": 11409.539495843217
+        },
+        {
+          "margin": 0.3,
+          "priceJpy": 10648.903529453668
+        }
+      ]
+    },
+    {
+      "firstYearCFTrn": 4,
+      "name": "purchase_cautious",
+      "rate": 0.13,
+      "explicitPVTrn": 8.75156022917783,
+      "terminalPVTrn": 15.993465283331439,
+      "equityValueTrn": 24.74502551250927,
+      "valuePerShareJpy": 15489.698179501042,
+      "terminalWeight": 0.6463305230882189,
+      "upsideVsObservedPrice": 0.17568866637579061,
+      "marginOfSafetyAtObservedPrice": 0.14943468572966112,
+      "purchaseThresholds": [
+        {
+          "margin": 0.2,
+          "priceJpy": 12391.758543600834
+        },
+        {
+          "margin": 0.25,
+          "priceJpy": 11617.27363462578
+        },
+        {
+          "margin": 0.3,
+          "priceJpy": 10842.78872565073
+        }
+      ]
+    },
+    {
+      "firstYearCFTrn": 5,
+      "name": "purchase_cautious",
+      "rate": 0.13,
+      "explicitPVTrn": 9.636515981390218,
+      "terminalPVTrn": 15.993465283331439,
+      "equityValueTrn": 25.629981264721657,
+      "valuePerShareJpy": 16043.655882921214,
+      "terminalWeight": 0.6240139279908727,
+      "upsideVsObservedPrice": 0.21773479187257783,
+      "marginOfSafetyAtObservedPrice": 0.17880312965169953,
+      "purchaseThresholds": [
+        {
+          "margin": 0.2,
+          "priceJpy": 12834.924706336971
+        },
+        {
+          "margin": 0.25,
+          "priceJpy": 12032.74191219091
+        },
+        {
+          "margin": 0.3,
+          "priceJpy": 11230.559118044848
+        }
+      ]
+    }
+  ],
+  "earningsStress": [
+    {
+      "netIncomeTrn": 5.64879,
+      "kind": "external consensus",
+      "epsJpy": 3535.9855311182077,
+      "perAt13000": 3.6764856319672004,
+      "perAt12000": 3.3936790448928003
+    },
+    {
+      "netIncomeTrn": 2,
+      "kind": "independent hypothetical stress",
+      "epsJpy": 1251.944409729591,
+      "perAt13000": 10.3838476365,
+      "perAt12000": 9.585090125999999
+    },
+    {
+      "netIncomeTrn": 1,
+      "kind": "independent hypothetical stress",
+      "epsJpy": 625.9722048647955,
+      "perAt13000": 20.767695273,
+      "perAt12000": 19.170180251999998
+    }
+  ],
+  "roundedPurchasePolicy": {
+    "starterBandJpy": [
+      12500,
+      13000
+    ],
+    "preferredPriceJpy": 12000,
+    "conditionalAddAroundJpy": 11000,
+    "condition": "Do not add merely because price fell; recheck SSD demand, cash collection, company guidance and financing terms."
+  },
+  "weakCaseDownsideFrom12000": -0.2649250272547664
+}

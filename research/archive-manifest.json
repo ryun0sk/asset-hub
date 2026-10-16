@@ -35,6 +35,60 @@
         "sha256": "b1ef16a3eff3e4ffe39f7b5c59b91f5b892c5df951c9a1681dffcf3192891f29"
       }
     },
+    "research/companies/285A-kioxia/2026-10-03": {
+      "README.md": {
+        "bytes": 3613,
+        "sha256": "f9adb864902f076e9c2b6d59d733df084db74d99136209870de55795c6613d16"
+      },
+      "report.md": {
+        "bytes": 31308,
+        "sha256": "05432435f1fa3aca4c1ea714733593cc72a39ca1ebbf6d9ba0e34bc58e7b3e1c"
+      },
+      "sources/lawsuit-judgment-en.pdf": {
+        "bytes": 115046,
+        "sha256": "f93b165bd79d996c415614ff2a236ae37e4b7ef3c9d73a55486ed1980c50866f"
+      },
+      "stock-drivers.md": {
+        "bytes": 45679,
+        "sha256": "2bbe5e9f41ba3ddfa7207f004cf351143b9d6c2c536435abc4efa59f64edc1b4"
+      },
+      "stock_drivers.py": {
+        "bytes": 21863,
+        "sha256": "e83423cd70d6216e7f18f6ba2904b737db976b3d4a3e1cc015dab83296afa387"
+      },
+      "valuation.mjs": {
+        "bytes": 8335,
+        "sha256": "6fe85cad4f66bbb2544044cc6c1e06bd9c26fddf069039a0929da01b8f786311"
+      }
+    },
+    "research/companies/4062-ibiden/2026-10-03": {
+      "README.md": {
+        "bytes": 3971,
+        "sha256": "ad9e32c3b5c1acad1b9f8e462356bd6fb45a8d7fa6ab0d906c5c4d00f2d86af2"
+      },
+      "stock-drivers.md": {
+        "bytes": 70443,
+        "sha256": "665c894e2363ec1f586572781f6b16aa934fe08b77ebfd7fc96ee0a997555973"
+      },
+      "stock_drivers.py": {
+        "bytes": 42935,
+        "sha256": "d22797be2102aa6adf6b22338b5f2dfd4eecace53a81f163b7af275cae691969"
+      }
+    },
+    "research/companies/6857-advantest/2026-10-03": {
+      "README.md": {
+        "bytes": 3130,
+        "sha256": "cad0f42569e074bfb0193a15aa53c97f68aad416dfb2f4fc8662602e004fef20"
+      },
+      "stock-drivers.md": {
+        "bytes": 51162,
+        "sha256": "e08e84a0790d5572f35acc215f5cb322a1cf6dc32a827f89cf950f96cfab4d72"
+      },
+      "stock_drivers.py": {
+        "bytes": 27330,
+        "sha256": "928d4c5b7f84021a8be28440dcacd5f9d57d421986c23addfb96eea0276977c3"
+      }
+    },
     "research/themes/ai-supply-chain/2026-09-05": {
       "README.md": {
         "bytes": 15458,

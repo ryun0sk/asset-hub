@@ -44,7 +44,7 @@ h1{font-size:26px;font-weight:690;letter-spacing:.02em}
 h2{font-size:15px;font-weight:650}
 .count{font-size:11px;background:var(--blue-mist);color:var(--muted);padding:2px 7px;border-radius:4px;margin-left:7px}
 .subtle{font-size:10px;color:var(--muted)}
-.table-scroll{overflow:auto;max-height:70vh;scrollbar-color:#91a4b8 var(--blue-mist)}
+.table-scroll{overflow-x:auto;scrollbar-color:#91a4b8 var(--blue-mist)}
 table{width:100%;border-collapse:separate;border-spacing:0;table-layout:fixed;font-size:11px}
 th{padding:12px 14px;background:var(--mist);color:var(--muted);font-weight:550;border-bottom:1px solid var(--border);text-align:left;position:sticky;top:0;z-index:2;white-space:nowrap;font-size:10px}
 td{padding:19px 14px;border-bottom:1px solid var(--border);vertical-align:top;line-height:1.8;background:var(--surface);overflow-wrap:anywhere}
@@ -64,13 +64,13 @@ footer{display:flex;justify-content:space-between;font-size:10px;color:var(--mut
 
 @media(min-width:1600px){.workspace{padding-top:38px}.metric{min-height:135px}}
 @media(max-width:1100px){.sidebar{width:190px;padding:28px 13px}.main{margin-left:190px}.workspace{padding:25px 23px}.topbar{padding:0 23px}.metrics{gap:10px;grid-template-columns:repeat(2,minmax(0,1fr))}.metric{padding:16px}.subtle{display:none}}
-@media(max-width:700px){.sidebar{position:relative;width:100%;height:auto;padding:14px 17px;display:block}.nav-label,.sidebar-bottom,.nav-icon,.subnav,.nav-count{display:none}.sidebar nav{display:flex;gap:8px;margin-top:12px}.nav-link{font-size:11px;padding:8px;margin:0}.main{margin-left:0}.topbar{height:52px;padding:0 17px;font-size:11px}.workspace{padding:22px 16px}.page-head{align-items:flex-start;flex-direction:column;gap:12px}h1{font-size:23px}.page-head p{font-size:11px}.metrics{grid-template-columns:1fr 1fr;gap:10px}.metric{min-height:110px}.metric-label{font-size:11px}.metric-value{font-size:27px}.panel-heading{padding:17px}.table-scroll{max-height:65vh}.table-footer{padding:10px 14px;gap:12px}.notice{flex-wrap:wrap}footer{display:block}footer span{display:block;margin-bottom:5px}}
+@media(max-width:700px){.sidebar{position:relative;width:100%;height:auto;padding:14px 17px;display:block}.nav-label,.sidebar-bottom,.nav-icon,.subnav,.nav-count{display:none}.sidebar nav{display:flex;gap:8px;margin-top:12px}.nav-link{font-size:11px;padding:8px;margin:0}.main{margin-left:0}.topbar{height:52px;padding:0 17px;font-size:11px}.workspace{padding:22px 16px}.page-head{align-items:flex-start;flex-direction:column;gap:12px}h1{font-size:23px}.page-head p{font-size:11px}.metrics{grid-template-columns:1fr 1fr;gap:10px}.metric{min-height:110px}.metric-label{font-size:11px}.metric-value{font-size:27px}.panel-heading{padding:17px}.table-footer{padding:10px 14px;gap:12px}.notice{flex-wrap:wrap}footer{display:block}footer span{display:block;margin-bottom:5px}}
 @media(min-width:701px) and (max-width:950px){.sidebar{width:164px;padding:25px 10px}.main{margin-left:164px}.nav-link{font-size:11px;padding:10px 8px}.subnav{margin-left:20px}.metrics{grid-template-columns:1fr 1fr}.metric{min-height:112px}.page-head{align-items:flex-start;flex-direction:column;gap:12px}.workspace{padding:22px 18px}.topbar{padding:0 18px}.panel-heading{padding:18px}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
 
 /* Dense layout (same overrides as the reference: compact topbar, 18px title). */
-.workspace{padding:16px 20px}.topbar{height:48px;padding:0 20px}.page-head{margin-bottom:12px;flex-direction:row;align-items:center}h1{font-size:18px}.button{padding:4px 10px;font-size:10px;border-radius:4px}.panel{border-radius:5px}.table-footer{padding:5px 8px;font-size:9px}.table-scroll{max-height:calc(100vh - 190px)}
-@media(max-width:700px){.workspace{padding:12px}.page-head{flex-direction:row}.sidebar nav{flex-wrap:wrap}.table-scroll{max-height:65vh}}
+.workspace{padding:16px 20px}.topbar{height:48px;padding:0 20px}.page-head{margin-bottom:12px;flex-direction:row;align-items:center}h1{font-size:18px}.button{padding:4px 10px;font-size:10px;border-radius:4px}.panel{border-radius:5px}.table-footer{padding:5px 8px;font-size:9px}
+@media(max-width:700px){.workspace{padding:12px}.page-head{flex-direction:row}.sidebar nav{flex-wrap:wrap}}
 
 .nav-icon{flex:0 0 22px;line-height:0}.nav-icon svg{display:block;width:22px;height:22px}
 

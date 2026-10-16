@@ -1,0 +1,1067 @@
+{
+  "asOf": "2026-10-15 Tokyo close; researched 2026-10-16 JST",
+  "definition": "実績日本基準・潜在株式調整後TTMと直近6か月実績EPSの2倍年換算。独自再構成概算。2023年1対3分割後・円。決算公表翌営業日から反映し予想値は含まない。",
+  "fundamentals": {
+    "company": "ディスコ",
+    "ticker": "6146.T",
+    "currency": "JPY",
+    "splitBasis": "2023-04-01 1対3分割後。2026年株価・EPSへの追加分割調整なし",
+    "fiscalYearConvention": "companyFYは開始年。FY2025=2025-04-01～2026-03-31、FY2026=2026-04-01～2027-03-31",
+    "sources": {
+      "20250417": {
+        "url": "https://www.disco.co.jp/jp/ir/library/doc/fr/fr20250417.pdf",
+        "published": "2025-04-17",
+        "page": "PDF1-2ページ（利益・公表EPS・基本期中平均株数）。通期のEPS詳細は2025年PDF14ページ、2026年PDF13ページ",
+        "sha256": "908cfb4fb0dcf29e69b1d49719f212713e533648c5edddbed3d377a1d5a9789f"
+      },
+      "20251029": {
+        "url": "https://www.disco.co.jp/jp/ir/library/doc/fr/fr20251029.pdf",
+        "published": "2025-10-29",
+        "page": "PDF1-2ページ（利益・公表EPS・基本期中平均株数）。通期のEPS詳細は2025年PDF14ページ、2026年PDF13ページ",
+        "sha256": "4465056e4d91ede9063fe31edbf1790ca4a0e9277c11edd4ff9ce1b93024f5d5"
+      },
+      "20260121": {
+        "url": "https://www.disco.co.jp/jp/ir/library/doc/fr/fr20260121.pdf",
+        "published": "2026-01-21",
+        "page": "PDF1-2ページ（利益・公表EPS・基本期中平均株数）。通期のEPS詳細は2025年PDF14ページ、2026年PDF13ページ",
+        "sha256": "c423cd62f315e5b11738ba52d6b963fb40f30a937394d8bbb538d31a80b63779"
+      },
+      "20260422": {
+        "url": "https://www.disco.co.jp/jp/ir/library/doc/fr/fr20260422.pdf",
+        "published": "2026-04-22",
+        "page": "PDF1-2ページ（利益・公表EPS・基本期中平均株数）。通期のEPS詳細は2025年PDF14ページ、2026年PDF13ページ",
+        "sha256": "821e20306df7ba3af806fffbec15ec8f5e238efb1199634d7b8de954a012792d"
+      },
+      "20250717": {
+        "url": "https://www.disco.co.jp/jp/ir/library/doc/fr/fr20250717.pdf",
+        "published": "2025-07-17",
+        "page": "PDF1-2ページ（利益・公表EPS・基本期中平均株数）。通期のEPS詳細は2025年PDF14ページ、2026年PDF13ページ",
+        "sha256": "5e451dc805f43d4fac29e998e6a82b086bfca116fa7b4f6905f82974647b2e23"
+      },
+      "20260723": {
+        "url": "https://www.disco.co.jp/jp/ir/library/doc/fr/fr20260723.pdf",
+        "published": "2026-07-23",
+        "page": "PDF1-2ページ（利益・公表EPS・基本期中平均株数）。通期のEPS詳細は2025年PDF14ページ、2026年PDF13ページ",
+        "sha256": "5ec4d7a01ad1e6026591630ccb0a5a69e1fb7036462d9db2d5156cd11b6f9da0"
+      },
+      "semiannual2025": {
+        "url": "https://www.disco.co.jp/jp/ir/library/doc/fs/fs87h.pdf",
+        "published": "2025-10-31",
+        "page": "PDF18ページ（冊子15ページ、EPS分子調整額ゼロ・潜在株数）"
+      },
+      "calendar": {
+        "url": "https://www.disco.co.jp/jp/ir/calendar/",
+        "accessed": "2026-10-16",
+        "detail": "2026年1/21・4/22・7/23は16:00発表。次回10/22 16:00予定"
+      },
+      "split": {
+        "url": "https://www.disco.co.jp/jp/ir/stock/info.html",
+        "accessed": "2026-10-16",
+        "detail": "直近株式分割2023-04-01 1:3。2026年の株式分割は掲載なし。発行株数とYahoo価格イベントにも2026年分割なし"
+      }
+    },
+    "inputs": {
+      "FY2024": {
+        "periodStart": "2024-04-01",
+        "periodEnd": "2025-03-31",
+        "reportDate": "2025-04-17",
+        "netIncomeJPYMillion": 123891,
+        "basicEPSJPY": 1143.26,
+        "dilutedEPSJPY": 1139.05,
+        "basicWeightedShares": 108366683,
+        "dilutedNumeratorAdjustmentJPYMillion": 0,
+        "dilutedNumeratorAdjustmentAssumedJPYMillion": 0,
+        "dilutedWeightedShares": 108766954.9185725,
+        "roundedPublishedPotentialShares": 400000,
+        "source": "20250417",
+        "sharesStatus": "NI÷公表希薄化EPSから逆算した有効分母。EPSは銭単位、NIは百万円単位の丸めを含む。",
+        "numeratorStatus": "通期短信または2025-10-31半期報告書で分子調整ゼロを確認"
+      },
+      "FY2024H1": {
+        "periodStart": "2024-04-01",
+        "periodEnd": "2024-09-30",
+        "reportDate": "2024-10-17",
+        "netIncomeJPYMillion": 53443,
+        "basicEPSJPY": 493.2,
+        "dilutedEPSJPY": 491.34,
+        "basicWeightedShares": 108360050,
+        "dilutedNumeratorAdjustmentJPYMillion": 0,
+        "dilutedNumeratorAdjustmentAssumedJPYMillion": 0,
+        "dilutedWeightedShares": 108769894.57402207,
+        "roundedPublishedPotentialShares": 411000,
+        "source": "20251029",
+        "sharesStatus": "NI÷公表希薄化EPSから逆算した有効分母。EPSは銭単位、NIは百万円単位の丸めを含む。",
+        "numeratorStatus": "通期短信または2025-10-31半期報告書で分子調整ゼロを確認"
+      },
+      "FY2025H1": {
+        "periodStart": "2025-04-01",
+        "periodEnd": "2025-09-30",
+        "reportDate": "2025-10-29",
+        "netIncomeJPYMillion": 55913,
+        "basicEPSJPY": 515.7,
+        "dilutedEPSJPY": 514.07,
+        "basicWeightedShares": 108420961,
+        "dilutedNumeratorAdjustmentJPYMillion": 0,
+        "dilutedNumeratorAdjustmentAssumedJPYMillion": 0,
+        "dilutedWeightedShares": 108765343.24119282,
+        "roundedPublishedPotentialShares": 343000,
+        "source": "20251029",
+        "sharesStatus": "NI÷公表希薄化EPSから逆算した有効分母。EPSは銭単位、NIは百万円単位の丸めを含む。",
+        "numeratorStatus": "通期短信または2025-10-31半期報告書で分子調整ゼロを確認"
+      },
+      "FY2024Q3YTD": {
+        "periodStart": "2024-04-01",
+        "periodEnd": "2024-12-31",
+        "reportDate": "2025-01-23",
+        "netIncomeJPYMillion": 85252,
+        "basicEPSJPY": 786.74,
+        "dilutedEPSJPY": 783.8,
+        "basicWeightedShares": 108362219,
+        "dilutedNumeratorAdjustmentJPYMillion": null,
+        "dilutedNumeratorAdjustmentAssumedJPYMillion": 0,
+        "dilutedWeightedShares": 108767542.74049503,
+        "roundedPublishedPotentialShares": null,
+        "source": "20260121",
+        "sharesStatus": "NI÷公表希薄化EPSから逆算した有効分母。EPSは銭単位、NIは百万円単位の丸めを含む。",
+        "numeratorStatus": "四半期短信では詳細非開示。潜在株式が新株予約権であることと通期・半期のゼロ調整から、分子調整ゼロを仮定"
+      },
+      "FY2025Q3YTD": {
+        "periodStart": "2025-04-01",
+        "periodEnd": "2025-12-31",
+        "reportDate": "2026-01-21",
+        "netIncomeJPYMillion": 92639,
+        "basicEPSJPY": 854.42,
+        "dilutedEPSJPY": 851.71,
+        "basicWeightedShares": 108424165,
+        "dilutedNumeratorAdjustmentJPYMillion": null,
+        "dilutedNumeratorAdjustmentAssumedJPYMillion": 0,
+        "dilutedWeightedShares": 108768242.71172112,
+        "roundedPublishedPotentialShares": null,
+        "source": "20260121",
+        "sharesStatus": "NI÷公表希薄化EPSから逆算した有効分母。EPSは銭単位、NIは百万円単位の丸めを含む。",
+        "numeratorStatus": "四半期短信では詳細非開示。潜在株式が新株予約権であることと通期・半期のゼロ調整から、分子調整ゼロを仮定"
+      },
+      "FY2025": {
+        "periodStart": "2025-04-01",
+        "periodEnd": "2026-03-31",
+        "reportDate": "2026-04-22",
+        "netIncomeJPYMillion": 135521,
+        "basicEPSJPY": 1249.84,
+        "dilutedEPSJPY": 1245.9,
+        "basicWeightedShares": 108431323,
+        "dilutedNumeratorAdjustmentJPYMillion": 0,
+        "dilutedNumeratorAdjustmentAssumedJPYMillion": 0,
+        "dilutedWeightedShares": 108773577.33365437,
+        "roundedPublishedPotentialShares": 342000,
+        "source": "20260422",
+        "sharesStatus": "NI÷公表希薄化EPSから逆算した有効分母。EPSは銭単位、NIは百万円単位の丸めを含む。",
+        "numeratorStatus": "通期短信または2025-10-31半期報告書で分子調整ゼロを確認"
+      },
+      "FY2025Q1": {
+        "periodStart": "2025-04-01",
+        "periodEnd": "2025-06-30",
+        "reportDate": "2025-07-17",
+        "netIncomeJPYMillion": 23767,
+        "basicEPSJPY": 219.23,
+        "dilutedEPSJPY": 218.54,
+        "basicWeightedShares": 108413758,
+        "dilutedNumeratorAdjustmentJPYMillion": null,
+        "dilutedNumeratorAdjustmentAssumedJPYMillion": 0,
+        "dilutedWeightedShares": 108753546.26155396,
+        "roundedPublishedPotentialShares": null,
+        "source": "20250717",
+        "sharesStatus": "NI÷公表希薄化EPSから逆算した有効分母。EPSは銭単位、NIは百万円単位の丸めを含む。",
+        "numeratorStatus": "四半期短信では詳細非開示。潜在株式が新株予約権であることと通期・半期のゼロ調整から、分子調整ゼロを仮定"
+      },
+      "FY2026Q1": {
+        "periodStart": "2026-04-01",
+        "periodEnd": "2026-06-30",
+        "reportDate": "2026-07-23",
+        "netIncomeJPYMillion": 34221,
+        "basicEPSJPY": 315.51,
+        "dilutedEPSJPY": 314.57,
+        "basicWeightedShares": 108464968,
+        "dilutedNumeratorAdjustmentJPYMillion": null,
+        "dilutedNumeratorAdjustmentAssumedJPYMillion": 0,
+        "dilutedWeightedShares": 108786597.57764567,
+        "roundedPublishedPotentialShares": null,
+        "source": "20260723",
+        "sharesStatus": "NI÷公表希薄化EPSから逆算した有効分母。EPSは銭単位、NIは百万円単位の丸めを含む。",
+        "numeratorStatus": "四半期短信では詳細非開示。潜在株式が新株予約権であることと通期・半期のゼロ調整から、分子調整ゼロを仮定"
+      }
+    },
+    "phases": [
+      {
+        "effectiveDate": "2026-01-05",
+        "asOfReportDate": "2025-10-29",
+        "latestSourceDate": "2025-10-31",
+        "annual": "FY2024",
+        "current": "FY2025H1",
+        "prior": "FY2024H1",
+        "weight": 0.5,
+        "trailingStart": "2024-10-01",
+        "trailingEnd": "2025-09-30",
+        "halfYearStart": "2025-04-01",
+        "halfYearEnd": "2025-09-30"
+      },
+      {
+        "effectiveDate": "2026-01-22",
+        "asOfReportDate": "2026-01-21",
+        "latestSourceDate": "2026-01-21",
+        "annual": "FY2024",
+        "current": "FY2025Q3YTD",
+        "prior": "FY2024Q3YTD",
+        "weight": 0.75,
+        "trailingStart": "2025-01-01",
+        "trailingEnd": "2025-12-31",
+        "halfYearStart": "2025-07-01",
+        "halfYearEnd": "2025-12-31"
+      },
+      {
+        "effectiveDate": "2026-04-23",
+        "asOfReportDate": "2026-04-22",
+        "latestSourceDate": "2026-04-22",
+        "annual": "FY2025",
+        "current": null,
+        "prior": null,
+        "weight": 0,
+        "trailingStart": "2025-04-01",
+        "trailingEnd": "2026-03-31",
+        "halfYearStart": "2025-10-01",
+        "halfYearEnd": "2026-03-31"
+      },
+      {
+        "effectiveDate": "2026-07-24",
+        "asOfReportDate": "2026-07-23",
+        "latestSourceDate": "2026-07-23",
+        "annual": "FY2025",
+        "current": "FY2026Q1",
+        "prior": "FY2025Q1",
+        "weight": 0.25,
+        "trailingStart": "2025-07-01",
+        "trailingEnd": "2026-06-30",
+        "halfYearStart": "2026-01-01",
+        "halfYearEnd": "2026-06-30"
+      }
+    ],
+    "methodology": [
+      "親会社株主帰属純利益を使う。TTM利益=前期通期+当期累計−前年同期累計。会社予想・アナリスト予想・非GAAP調整値は含めない。",
+      "潜在株式調整後EPSの有効分母=NI÷会社公表の潜在株式調整後EPS。通期・半期の分子調整ゼロを確認、詳細非開示の四半期はゼロと仮定。",
+      "TTM平均分母=前期通期平均+(当期累計平均−前年同期累計平均)×経過四半期/4。半年は直近2四半期の利益と平均分母を再構成し、EPSを2倍。",
+      "各四半期を等期間として加重する近似。潜在株式数は株価や希薄化判定の影響で完全には加法的でない。公表EPSとNIの丸めもあるため会社公表TTMではない。",
+      "1/21・4/22・7/23は16時公表なので各当日終値には入れず、1/22・4/23・7/24から反映。2025-10-31半期詳細は2026年初時点で既知。",
+      "10/6の個別売上・出荷速報は純利益を開示せずEPSに反映しない。次回Q2決算10/22 16:00予定で10/15時点では未公表。",
+      "株価はYahoo chartのquote.close。2026年分割イベントなし。配当調整済みadjcloseは使わず二重の分割調整もしない。",
+      "10/15 quote.closeがnullのため、meta.fulldayPrice=53,180円とYahoo日本版/Traders日足終値の一致を確認し当日のみ補完。"
+    ],
+    "numeratorReview": {
+      "explicitZeroSources": [
+        "20250417",
+        "20260422",
+        "semiannual2025"
+      ],
+      "quarterNumeratorAdjustment": "四半期の分子調整は非開示。ゼロ仮定。通期・半期の潜在株式は新株予約権であり分子調整ゼロ。",
+      "basicEPSCheck": "公表基本EPS・基本期中平均株数も保存し、希薄化が概ね0.3～0.4%程度であることを確認。"
+    },
+    "latestDisclosure": {
+      "reportDate": "2026-07-23",
+      "periodEnd": "2026-06-30",
+      "nextReport": "2026-10-22 16:00 JST",
+      "asOf": "2026-10-16 JST"
+    }
+  },
+  "prices": {
+    "ticker": "6146.T",
+    "currency": "JPY",
+    "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/6146.T?period1=1767225600&period2=1792108800&interval=1d&events=splits%2Cdiv",
+    "retrieved_at_utc": "2026-10-15T15:16:59.003816+00:00",
+    "raw_sha256": "04e380e892f39243c888a3936a52a7b9f2c7e5f1ed757dd767d9f7bfb88753d1",
+    "events": {
+      "dividends": {
+        "1774828800": {
+          "amount": 376.0,
+          "date": 1774828800
+        },
+        "1790640000": {
+          "amount": 171.0,
+          "date": 1790640000
+        }
+      }
+    },
+    "daily_prices": [
+      {
+        "date": "2026-01-05",
+        "close": 51100.0
+      },
+      {
+        "date": "2026-01-06",
+        "close": 54200.0
+      },
+      {
+        "date": "2026-01-07",
+        "close": 55670.0
+      },
+      {
+        "date": "2026-01-08",
+        "close": 55590.0
+      },
+      {
+        "date": "2026-01-09",
+        "close": 55000.0
+      },
+      {
+        "date": "2026-01-13",
+        "close": 57430.0
+      },
+      {
+        "date": "2026-01-14",
+        "close": 60000.0
+      },
+      {
+        "date": "2026-01-15",
+        "close": 59100.0
+      },
+      {
+        "date": "2026-01-16",
+        "close": 60600.0
+      },
+      {
+        "date": "2026-01-19",
+        "close": 62420.0
+      },
+      {
+        "date": "2026-01-20",
+        "close": 60000.0
+      },
+      {
+        "date": "2026-01-21",
+        "close": 58570.0
+      },
+      {
+        "date": "2026-01-22",
+        "close": 68570.0
+      },
+      {
+        "date": "2026-01-23",
+        "close": 67950.0
+      },
+      {
+        "date": "2026-01-26",
+        "close": 66500.0
+      },
+      {
+        "date": "2026-01-27",
+        "close": 68930.0
+      },
+      {
+        "date": "2026-01-28",
+        "close": 70480.0
+      },
+      {
+        "date": "2026-01-29",
+        "close": 67340.0
+      },
+      {
+        "date": "2026-01-30",
+        "close": 66190.0
+      },
+      {
+        "date": "2026-02-02",
+        "close": 62300.0
+      },
+      {
+        "date": "2026-02-03",
+        "close": 66920.0
+      },
+      {
+        "date": "2026-02-04",
+        "close": 68140.0
+      },
+      {
+        "date": "2026-02-05",
+        "close": 65170.0
+      },
+      {
+        "date": "2026-02-06",
+        "close": 65800.0
+      },
+      {
+        "date": "2026-02-09",
+        "close": 72230.0
+      },
+      {
+        "date": "2026-02-10",
+        "close": 75370.0
+      },
+      {
+        "date": "2026-02-12",
+        "close": 72830.0
+      },
+      {
+        "date": "2026-02-13",
+        "close": 73060.0
+      },
+      {
+        "date": "2026-02-16",
+        "close": 72260.0
+      },
+      {
+        "date": "2026-02-17",
+        "close": 71720.0
+      },
+      {
+        "date": "2026-02-18",
+        "close": 71830.0
+      },
+      {
+        "date": "2026-02-19",
+        "close": 74070.0
+      },
+      {
+        "date": "2026-02-20",
+        "close": 74060.0
+      },
+      {
+        "date": "2026-02-24",
+        "close": 75620.0
+      },
+      {
+        "date": "2026-02-25",
+        "close": 80000.0
+      },
+      {
+        "date": "2026-02-26",
+        "close": 79070.0
+      },
+      {
+        "date": "2026-02-27",
+        "close": 75500.0
+      },
+      {
+        "date": "2026-03-02",
+        "close": 74910.0
+      },
+      {
+        "date": "2026-03-03",
+        "close": 73030.0
+      },
+      {
+        "date": "2026-03-04",
+        "close": 68960.0
+      },
+      {
+        "date": "2026-03-05",
+        "close": 71660.0
+      },
+      {
+        "date": "2026-03-06",
+        "close": 73510.0
+      },
+      {
+        "date": "2026-03-09",
+        "close": 66500.0
+      },
+      {
+        "date": "2026-03-10",
+        "close": 69790.0
+      },
+      {
+        "date": "2026-03-11",
+        "close": 72370.0
+      },
+      {
+        "date": "2026-03-12",
+        "close": 71240.0
+      },
+      {
+        "date": "2026-03-13",
+        "close": 69610.0
+      },
+      {
+        "date": "2026-03-16",
+        "close": 69920.0
+      },
+      {
+        "date": "2026-03-17",
+        "close": 67350.0
+      },
+      {
+        "date": "2026-03-18",
+        "close": 70680.0
+      },
+      {
+        "date": "2026-03-19",
+        "close": 69580.0
+      },
+      {
+        "date": "2026-03-23",
+        "close": 65300.0
+      },
+      {
+        "date": "2026-03-24",
+        "close": 65390.0
+      },
+      {
+        "date": "2026-03-25",
+        "close": 67980.0
+      },
+      {
+        "date": "2026-03-26",
+        "close": 67490.0
+      },
+      {
+        "date": "2026-03-27",
+        "close": 66530.0
+      },
+      {
+        "date": "2026-03-30",
+        "close": 64250.0
+      },
+      {
+        "date": "2026-03-31",
+        "close": 61240.0
+      },
+      {
+        "date": "2026-04-01",
+        "close": 63680.0
+      },
+      {
+        "date": "2026-04-02",
+        "close": 63570.0
+      },
+      {
+        "date": "2026-04-03",
+        "close": 65650.0
+      },
+      {
+        "date": "2026-04-06",
+        "close": 66980.0
+      },
+      {
+        "date": "2026-04-07",
+        "close": 62860.0
+      },
+      {
+        "date": "2026-04-08",
+        "close": 67450.0
+      },
+      {
+        "date": "2026-04-09",
+        "close": 64600.0
+      },
+      {
+        "date": "2026-04-10",
+        "close": 66890.0
+      },
+      {
+        "date": "2026-04-13",
+        "close": 67370.0
+      },
+      {
+        "date": "2026-04-14",
+        "close": 71630.0
+      },
+      {
+        "date": "2026-04-15",
+        "close": 70580.0
+      },
+      {
+        "date": "2026-04-16",
+        "close": 73030.0
+      },
+      {
+        "date": "2026-04-17",
+        "close": 72900.0
+      },
+      {
+        "date": "2026-04-20",
+        "close": 72950.0
+      },
+      {
+        "date": "2026-04-21",
+        "close": 74240.0
+      },
+      {
+        "date": "2026-04-22",
+        "close": 74830.0
+      },
+      {
+        "date": "2026-04-23",
+        "close": 72000.0
+      },
+      {
+        "date": "2026-04-24",
+        "close": 71700.0
+      },
+      {
+        "date": "2026-04-27",
+        "close": 76030.0
+      },
+      {
+        "date": "2026-04-28",
+        "close": 76440.0
+      },
+      {
+        "date": "2026-04-30",
+        "close": 74010.0
+      },
+      {
+        "date": "2026-05-01",
+        "close": 72250.0
+      },
+      {
+        "date": "2026-05-07",
+        "close": 76590.0
+      },
+      {
+        "date": "2026-05-08",
+        "close": 75000.0
+      },
+      {
+        "date": "2026-05-11",
+        "close": 73380.0
+      },
+      {
+        "date": "2026-05-12",
+        "close": 72800.0
+      },
+      {
+        "date": "2026-05-13",
+        "close": 72840.0
+      },
+      {
+        "date": "2026-05-14",
+        "close": 70000.0
+      },
+      {
+        "date": "2026-05-15",
+        "close": 64900.0
+      },
+      {
+        "date": "2026-05-18",
+        "close": 63500.0
+      },
+      {
+        "date": "2026-05-19",
+        "close": 61600.0
+      },
+      {
+        "date": "2026-05-20",
+        "close": 61340.0
+      },
+      {
+        "date": "2026-05-21",
+        "close": 65650.0
+      },
+      {
+        "date": "2026-05-22",
+        "close": 65860.0
+      },
+      {
+        "date": "2026-05-25",
+        "close": 69780.0
+      },
+      {
+        "date": "2026-05-26",
+        "close": 66910.0
+      },
+      {
+        "date": "2026-05-27",
+        "close": 67630.0
+      },
+      {
+        "date": "2026-05-28",
+        "close": 66350.0
+      },
+      {
+        "date": "2026-05-29",
+        "close": 65090.0
+      },
+      {
+        "date": "2026-06-01",
+        "close": 63760.0
+      },
+      {
+        "date": "2026-06-02",
+        "close": 64200.0
+      },
+      {
+        "date": "2026-06-03",
+        "close": 68710.0
+      },
+      {
+        "date": "2026-06-04",
+        "close": 72210.0
+      },
+      {
+        "date": "2026-06-05",
+        "close": 72580.0
+      },
+      {
+        "date": "2026-06-08",
+        "close": 67480.0
+      },
+      {
+        "date": "2026-06-09",
+        "close": 71520.0
+      },
+      {
+        "date": "2026-06-10",
+        "close": 70060.0
+      },
+      {
+        "date": "2026-06-11",
+        "close": 70030.0
+      },
+      {
+        "date": "2026-06-12",
+        "close": 79900.0
+      },
+      {
+        "date": "2026-06-15",
+        "close": 85250.0
+      },
+      {
+        "date": "2026-06-16",
+        "close": 81550.0
+      },
+      {
+        "date": "2026-06-17",
+        "close": 83700.0
+      },
+      {
+        "date": "2026-06-18",
+        "close": 84990.0
+      },
+      {
+        "date": "2026-06-19",
+        "close": 84900.0
+      },
+      {
+        "date": "2026-06-22",
+        "close": 88480.0
+      },
+      {
+        "date": "2026-06-23",
+        "close": 82870.0
+      },
+      {
+        "date": "2026-06-24",
+        "close": 79740.0
+      },
+      {
+        "date": "2026-06-25",
+        "close": 85970.0
+      },
+      {
+        "date": "2026-06-26",
+        "close": 78510.0
+      },
+      {
+        "date": "2026-06-29",
+        "close": 79550.0
+      },
+      {
+        "date": "2026-06-30",
+        "close": 81260.0
+      },
+      {
+        "date": "2026-07-01",
+        "close": 84520.0
+      },
+      {
+        "date": "2026-07-02",
+        "close": 76860.0
+      },
+      {
+        "date": "2026-07-03",
+        "close": 76590.0
+      },
+      {
+        "date": "2026-07-06",
+        "close": 78000.0
+      },
+      {
+        "date": "2026-07-07",
+        "close": 71900.0
+      },
+      {
+        "date": "2026-07-08",
+        "close": 68230.0
+      },
+      {
+        "date": "2026-07-09",
+        "close": 71510.0
+      },
+      {
+        "date": "2026-07-10",
+        "close": 72560.0
+      },
+      {
+        "date": "2026-07-13",
+        "close": 70870.0
+      },
+      {
+        "date": "2026-07-14",
+        "close": 71650.0
+      },
+      {
+        "date": "2026-07-15",
+        "close": 73550.0
+      },
+      {
+        "date": "2026-07-16",
+        "close": 70590.0
+      },
+      {
+        "date": "2026-07-17",
+        "close": 64780.0
+      },
+      {
+        "date": "2026-07-21",
+        "close": 66840.0
+      },
+      {
+        "date": "2026-07-22",
+        "close": 68590.0
+      },
+      {
+        "date": "2026-07-23",
+        "close": 69410.0
+      },
+      {
+        "date": "2026-07-24",
+        "close": 60890.0
+      },
+      {
+        "date": "2026-07-27",
+        "close": 62650.0
+      },
+      {
+        "date": "2026-07-28",
+        "close": 54900.0
+      },
+      {
+        "date": "2026-07-29",
+        "close": 51320.0
+      },
+      {
+        "date": "2026-07-30",
+        "close": 51870.0
+      },
+      {
+        "date": "2026-07-31",
+        "close": 58480.0
+      },
+      {
+        "date": "2026-08-03",
+        "close": 60520.0
+      },
+      {
+        "date": "2026-08-04",
+        "close": 60890.0
+      },
+      {
+        "date": "2026-08-05",
+        "close": 63740.0
+      },
+      {
+        "date": "2026-08-06",
+        "close": 61590.0
+      },
+      {
+        "date": "2026-08-07",
+        "close": 58440.0
+      },
+      {
+        "date": "2026-08-10",
+        "close": 62980.0
+      },
+      {
+        "date": "2026-08-12",
+        "close": 62960.0
+      },
+      {
+        "date": "2026-08-13",
+        "close": 65830.0
+      },
+      {
+        "date": "2026-08-14",
+        "close": 65470.0
+      },
+      {
+        "date": "2026-08-17",
+        "close": 65910.0
+      },
+      {
+        "date": "2026-08-18",
+        "close": 62350.0
+      },
+      {
+        "date": "2026-08-19",
+        "close": 59760.0
+      },
+      {
+        "date": "2026-08-20",
+        "close": 60320.0
+      },
+      {
+        "date": "2026-08-21",
+        "close": 61360.0
+      },
+      {
+        "date": "2026-08-24",
+        "close": 61420.0
+      },
+      {
+        "date": "2026-08-25",
+        "close": 60700.0
+      },
+      {
+        "date": "2026-08-26",
+        "close": 60610.0
+      },
+      {
+        "date": "2026-08-27",
+        "close": 59780.0
+      },
+      {
+        "date": "2026-08-28",
+        "close": 59350.0
+      },
+      {
+        "date": "2026-08-31",
+        "close": 58120.0
+      },
+      {
+        "date": "2026-09-01",
+        "close": 56590.0
+      },
+      {
+        "date": "2026-09-02",
+        "close": 55170.0
+      },
+      {
+        "date": "2026-09-03",
+        "close": 54040.0
+      },
+      {
+        "date": "2026-09-04",
+        "close": 54460.0
+      },
+      {
+        "date": "2026-09-07",
+        "close": 57150.0
+      },
+      {
+        "date": "2026-09-08",
+        "close": 53890.0
+      },
+      {
+        "date": "2026-09-09",
+        "close": 53590.0
+      },
+      {
+        "date": "2026-09-10",
+        "close": 53580.0
+      },
+      {
+        "date": "2026-09-11",
+        "close": 51980.0
+      },
+      {
+        "date": "2026-09-14",
+        "close": 51430.0
+      },
+      {
+        "date": "2026-09-15",
+        "close": 51400.0
+      },
+      {
+        "date": "2026-09-16",
+        "close": 51000.0
+      },
+      {
+        "date": "2026-09-17",
+        "close": 50590.0
+      },
+      {
+        "date": "2026-09-18",
+        "close": 52420.0
+      },
+      {
+        "date": "2026-09-24",
+        "close": 53320.0
+      },
+      {
+        "date": "2026-09-25",
+        "close": 54220.0
+      },
+      {
+        "date": "2026-09-28",
+        "close": 54400.0
+      },
+      {
+        "date": "2026-09-29",
+        "close": 56680.0
+      },
+      {
+        "date": "2026-09-30",
+        "close": 57450.0
+      },
+      {
+        "date": "2026-10-01",
+        "close": 60440.0
+      },
+      {
+        "date": "2026-10-02",
+        "close": 60290.0
+      },
+      {
+        "date": "2026-10-05",
+        "close": 63730.0
+      },
+      {
+        "date": "2026-10-06",
+        "close": 65500.0
+      },
+      {
+        "date": "2026-10-07",
+        "close": 61380.0
+      },
+      {
+        "date": "2026-10-08",
+        "close": 61140.0
+      },
+      {
+        "date": "2026-10-09",
+        "close": 61460.0
+      },
+      {
+        "date": "2026-10-13",
+        "close": 58580.0
+      },
+      {
+        "date": "2026-10-14",
+        "close": 58100.0
+      },
+      {
+        "date": "2026-10-15",
+        "close": 53180
+      }
+    ],
+    "corrections": [
+      {
+        "date": "2026-10-15",
+        "originalClose": null,
+        "closeJPY": 53180,
+        "reason": "quote.close null。meta.fulldayPrice・複数日足表示で一致確認",
+        "urls": [
+          "https://finance.yahoo.co.jp/quote/6146.T/history",
+          "https://www.traders.co.jp/stocks/61_6146/historical",
+          "https://jp.investing.com/equities/disco-corp-historical-data"
+        ]
+      }
+    ]
+  }
+}

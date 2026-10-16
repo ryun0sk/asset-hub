@@ -1,0 +1,26 @@
+{
+  "retrievedOn": "2026-10-12",
+  "timezone": "Asia/Tokyo",
+  "documents": [
+    {
+      "path": "sources/kimura-20260515-results.pdf",
+      "bytes": 294058,
+      "sha256": "d101399e27462833034e95e16f1407905febfbbc7c2e11d1ed733339138fd2ac",
+      "sourceUrl": "https://www2.jpx.co.jp/disc/62310/140120260515538004.pdf",
+      "publishedOn": "2026-05-15",
+      "visuallyVerifiedPdfPages": [
+        4
+      ]
+    },
+    {
+      "path": "sources/sinko-20260611-results.pdf",
+      "bytes": 4000756,
+      "sha256": "d7eeeb6db0c06acbdcc34161f706531378b2aa9a25e72433ea47759f87e19283",
+      "sourceUrl": "https://www.sinko.co.jp/ir/assets/20260611_ir_kessansetsumeikai.pdf",
+      "publishedOn": "2026-06-11",
+      "visuallyVerifiedPdfPages": [
+        8
+      ]
+    }
+  ]
+}

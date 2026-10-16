@@ -379,6 +379,26 @@ class FixtureTest(unittest.TestCase):
 
 
 class CLITest(unittest.TestCase):
+    def test_private_policy_survives_build_and_mirror_without_changing_snapshots(self):
+        policy = {'date': '2026-10-05', 'balanceDate': '2026-10-04',
+                  'title': 'テスト方針', 'markdown': '## 配分\n\n計画を記録。', 'ignored': 'extra'}
+        (self.directory / 'policy.json').write_text(json.dumps(policy))
+        before = {p.name: p.read_bytes() for p in (self.directory / 'snapshots').glob('*.json')}
+        target = Path(self.temp.name) / 'mirror-policy'
+        with patch.dict('os.environ', {'ASSET_ASSETS_MIRROR': str(target)}):
+            code, _, err = self.run_cli('build')
+        self.assertEqual((code, err), (0, ''))
+        state = asset_payload(asset_document(None))['state']
+        self.assertEqual(state['policy'], {k: v for k, v in policy.items() if k != 'ignored'})
+        self.assertEqual(json.loads((target / 'policy.json').read_text()), policy)
+        self.assertEqual(before, {p.name: p.read_bytes() for p in (self.directory / 'snapshots').glob('*.json')})
+        for key, value in [('date', 'bad'), ('balanceDate', '2026-02-30'), ('markdown', ''), ('markdown', 1), ('title', 'x' * 201)]:
+            with self.subTest(key=key, value=value):
+                (self.directory / 'policy.json').write_text(json.dumps({**policy, key: value}))
+                code, _, err = self.run_cli('validate')
+                self.assertEqual(code, 1)
+                self.assertIn('policy.json: ' + key, err)
+
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
         self.directory = Path(self.temp.name) / 'assets'

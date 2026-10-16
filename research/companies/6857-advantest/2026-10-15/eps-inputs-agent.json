@@ -1,0 +1,324 @@
+{
+  "asOf": "2026-10-15",
+  "company": "アドバンテスト",
+  "ticker": "6857.T",
+  "currency": "JPY",
+  "splitBasis": "2023-10-01の1対4分割後。2026年の価格・EPSに追加分割調整なし",
+  "fiscalYearConvention": "companyFYは開始年。FY2025=2025-04-01～2026-03-31、FY2026=2026-04-01～2027-03-31",
+  "sources": {
+    "annual2025": {
+      "url": "https://www.advantest.com/document/en/investors/ir-library/result/E_FR_FY2024_FN.pdf",
+      "published": "2025-04-25",
+      "page": "表紙・PDF15ページ(冊子13ページ、EPS詳細)"
+    },
+    "semiannual2025": {
+      "url": "https://www.advantest.com/document/en/investors/ir-library/report/IR_SecuritiesReport_84th_1H_en.pdf",
+      "published": "2025-11-13",
+      "page": "PDF26ページ(冊子23ページ、EPS詳細)"
+    },
+    "h1fy2025": {
+      "url": "https://www.advantest.com/document/en/investors/ir-library/result/E_FR_FY2025_2Q.pdf",
+      "published": "2025-10-28",
+      "page": "表紙"
+    },
+    "q3fy2025": {
+      "url": "https://www.advantest.com/document/en/investors/ir-library/result/E_FR_FY2025_3Q.pdf",
+      "published": "2026-01-28",
+      "page": "表紙に当期・前年同期EPS/NI"
+    },
+    "q1fy2025": {
+      "url": "https://www.advantest.com/document/en/investors/ir-library/result/E_FR_FY2025_1Q.pdf",
+      "published": "2025-07-29",
+      "page": "表紙"
+    },
+    "annual2026": {
+      "url": "https://www.advantest.com/document/en/investors/ir-library/result/E_FR_FY2025_FN.pdf",
+      "published": "2026-04-27",
+      "page": "表紙・PDF16ページ(冊子13ページ、EPS詳細・CB注記)"
+    },
+    "q1fy2026": {
+      "url": "https://www.advantest.com/document/en/investors/ir-library/result/E_FR_FY2026_1Q.pdf",
+      "published": "2026-07-29",
+      "page": "表紙・PDF4ページ(冊子2ページ、金融評価益)"
+    },
+    "resultIndex": {
+      "url": "https://www.advantest.com/en/investors/ir-library/result/",
+      "accessed": "2026-10-15"
+    },
+    "calendar": {
+      "url": "https://www.advantest.com/en/investors/ir-calendar/",
+      "accessed": "2026-10-15"
+    }
+  },
+  "inputs": {
+    "FY2024": {
+      "companyFY": "FY2024",
+      "periodStart": "2024-04-01",
+      "periodEnd": "2025-03-31",
+      "reportDate": "2025-04-25",
+      "netIncomeJPYMillion": 161177,
+      "basicEPSJPY": 218.67,
+      "dilutedEPSJPY": 218.01,
+      "dilutedNumeratorAdjustmentJPYMillion": 0,
+      "dilutedWeightedShares": 739310748,
+      "sharesStatus": "会社短信のPer Share Informationで明示",
+      "source": "annual2025"
+    },
+    "FY2024H1": {
+      "companyFY": "FY2024 Q2",
+      "periodStart": "2024-04-01",
+      "periodEnd": "2024-09-30",
+      "reportDate": "2024-10-30",
+      "netIncomeJPYMillion": 69343,
+      "basicEPSJPY": 93.92,
+      "dilutedEPSJPY": 93.64,
+      "dilutedNumeratorAdjustmentJPYMillion": 0,
+      "dilutedWeightedShares": 740529098,
+      "sharesStatus": "2025-11-13半期報告書の前年同期比較で明示。2026年初には公表済み",
+      "source": "semiannual2025"
+    },
+    "FY2025H1": {
+      "companyFY": "FY2025 Q2",
+      "periodStart": "2025-04-01",
+      "periodEnd": "2025-09-30",
+      "reportDate": "2025-10-28",
+      "netIncomeJPYMillion": 169813,
+      "basicEPSJPY": 232.19,
+      "dilutedEPSJPY": 231.49,
+      "dilutedNumeratorAdjustmentJPYMillion": 0,
+      "dilutedWeightedShares": 733564033,
+      "sharesStatus": "2025-11-13半期報告書に明示。2026年初には公表済み",
+      "source": "semiannual2025"
+    },
+    "FY2024Q3YTD": {
+      "companyFY": "FY2024 Q3",
+      "periodStart": "2024-04-01",
+      "periodEnd": "2024-12-31",
+      "reportDate": "2025-01-29",
+      "netIncomeJPYMillion": 121210,
+      "basicEPSJPY": 164.21,
+      "dilutedEPSJPY": 163.72,
+      "dilutedNumeratorAdjustmentJPYMillion": 0,
+      "dilutedWeightedShares": 740349376.9850965,
+      "sharesStatus": "短信は詳細分母を非開示。NI÷公表希薄化EPSで推計。CB発行前で通期分子調整ゼロを確認",
+      "source": "q3fy2025"
+    },
+    "FY2025Q3YTD": {
+      "companyFY": "FY2025 Q3",
+      "periodStart": "2025-04-01",
+      "periodEnd": "2025-12-31",
+      "reportDate": "2026-01-28",
+      "netIncomeJPYMillion": 248526,
+      "basicEPSJPY": 340.6,
+      "dilutedEPSJPY": 339.45,
+      "dilutedNumeratorAdjustmentJPYMillion": 0,
+      "dilutedWeightedShares": 732143172.7794963,
+      "sharesStatus": "短信は詳細分母を非開示。NI÷公表希薄化EPSで推計。CB発行前で通期分子調整ゼロを確認",
+      "source": "q3fy2025"
+    },
+    "FY2025": {
+      "companyFY": "FY2025",
+      "periodStart": "2025-04-01",
+      "periodEnd": "2026-03-31",
+      "reportDate": "2026-04-27",
+      "netIncomeJPYMillion": 375353,
+      "basicEPSJPY": 515.15,
+      "dilutedEPSJPY": 513.3,
+      "dilutedNumeratorAdjustmentJPYMillion": 0,
+      "dilutedWeightedShares": 731260642,
+      "sharesStatus": "会社短信のPer Share Informationで明示",
+      "source": "annual2026"
+    },
+    "FY2025Q1": {
+      "companyFY": "FY2025 Q1",
+      "periodStart": "2025-04-01",
+      "periodEnd": "2025-06-30",
+      "reportDate": "2025-07-29",
+      "netIncomeJPYMillion": 90180,
+      "basicEPSJPY": 123.14,
+      "dilutedEPSJPY": 122.8,
+      "dilutedNumeratorAdjustmentJPYMillion": 0,
+      "dilutedWeightedShares": 734364820.8469056,
+      "sharesStatus": "短信は詳細分母を非開示。NI÷公表希薄化EPSで推計。CB発行前で通期分子調整ゼロを確認",
+      "source": "q1fy2025"
+    },
+    "FY2026Q1": {
+      "companyFY": "FY2026 Q1",
+      "periodStart": "2026-04-01",
+      "periodEnd": "2026-06-30",
+      "reportDate": "2026-07-29",
+      "netIncomeJPYMillion": 174780,
+      "basicEPSJPY": 241.27,
+      "dilutedEPSJPY": 239.89,
+      "dilutedNumeratorAdjustmentJPYMillion": null,
+      "dilutedNumeratorAdjustmentAssumedJPYMillion": 0,
+      "dilutedWeightedShares": 728583934.3032223,
+      "sharesStatus": "短信はEPS詳細分子/分母を非開示。分子調整ゼロ仮定でNI÷希薄化EPSを有効分母として推計。2026-04-20発行CBの実効金利戻し等が含まれる場合、厳密な株数ではない",
+      "source": "q1fy2026"
+    }
+  },
+  "phases": [
+    {
+      "effectiveDate": "2026-01-05",
+      "asOfReportDate": "2025-10-28",
+      "annual": "FY2024",
+      "current": "FY2025H1",
+      "prior": "FY2024H1",
+      "weight": 0.5,
+      "trailingStart": "2024-10-01",
+      "trailingEnd": "2025-09-30",
+      "ttmNetIncomeJPYMillion": 261647,
+      "ttmDilutedWeightedShares": 735828215.5,
+      "ttmDilutedEPSJPY": 355.5816350725409,
+      "publishedEPSArithmeticTTMJPY": 355.86,
+      "differenceFromPublishedEPSArithmeticJPY": -0.27836492745910846,
+      "halfYearStart": "2025-04-01",
+      "halfYearEnd": "2025-09-30",
+      "halfYearNetIncomeJPYMillion": 169813,
+      "halfYearDilutedWeightedShares": 733564033,
+      "halfYearDilutedEPSJPY": 231.4903571614995,
+      "halfYearAnnualizedDilutedEPSJPY": 462.980714322999,
+      "publishedEPSArithmeticHalfYearAnnualizedJPY": 462.98,
+      "halfYearDifferenceFromPublishedEPSArithmeticJPY": 0.0007143229989878819,
+      "halfYearFormula": {
+        "netIncome": "FY2025H1.netIncome",
+        "dilutedWeightedShares": "FY2025H1.dilutedWeightedShares",
+        "publishedEPSArithmetic": "FY2025H1.dilutedEPS * 2"
+      }
+    },
+    {
+      "effectiveDate": "2026-01-29",
+      "asOfReportDate": "2026-01-28",
+      "annual": "FY2024",
+      "current": "FY2025Q3YTD",
+      "prior": "FY2024Q3YTD",
+      "weight": 0.75,
+      "trailingStart": "2025-01-01",
+      "trailingEnd": "2025-12-31",
+      "ttmNetIncomeJPYMillion": 288493,
+      "ttmDilutedWeightedShares": 733156094.8457999,
+      "ttmDilutedEPSJPY": 393.4946487223528,
+      "publishedEPSArithmeticTTMJPY": 393.74,
+      "differenceFromPublishedEPSArithmeticJPY": -0.24535127764721665,
+      "halfYearStart": "2025-07-01",
+      "halfYearEnd": "2025-12-31",
+      "halfYearNetIncomeJPYMillion": 158346,
+      "halfYearDilutedWeightedShares": 731032348.7457917,
+      "halfYearDilutedEPSJPY": 216.60600966792927,
+      "halfYearAnnualizedDilutedEPSJPY": 433.21201933585854,
+      "publishedEPSArithmeticHalfYearAnnualizedJPY": 433.29999999999995,
+      "halfYearDifferenceFromPublishedEPSArithmeticJPY": -0.08798066414141203,
+      "halfYearFormula": {
+        "netIncome": "FY2025Q3YTD.netIncome - FY2025Q1.netIncome",
+        "dilutedWeightedShares": "(3 * FY2025Q3YTD.dilutedWeightedShares - FY2025Q1.dilutedWeightedShares) / 2",
+        "publishedEPSArithmetic": "(FY2025Q3YTD.dilutedEPS - FY2025Q1.dilutedEPS) * 2"
+      }
+    },
+    {
+      "effectiveDate": "2026-04-28",
+      "asOfReportDate": "2026-04-27",
+      "annual": "FY2025",
+      "current": null,
+      "prior": null,
+      "weight": 0,
+      "trailingStart": "2025-04-01",
+      "trailingEnd": "2026-03-31",
+      "ttmNetIncomeJPYMillion": 375353,
+      "ttmDilutedWeightedShares": 731260642,
+      "ttmDilutedEPSJPY": 513.2957777864381,
+      "publishedEPSArithmeticTTMJPY": 513.3,
+      "differenceFromPublishedEPSArithmeticJPY": -0.004222213561888566,
+      "halfYearStart": "2025-10-01",
+      "halfYearEnd": "2026-03-31",
+      "halfYearNetIncomeJPYMillion": 205540,
+      "halfYearDilutedWeightedShares": 728957251,
+      "halfYearDilutedEPSJPY": 281.9644083628163,
+      "halfYearAnnualizedDilutedEPSJPY": 563.9288167256326,
+      "publishedEPSArithmeticHalfYearAnnualizedJPY": 563.6199999999999,
+      "halfYearDifferenceFromPublishedEPSArithmeticJPY": 0.3088167256327097,
+      "halfYearFormula": {
+        "netIncome": "FY2025.netIncome - FY2025H1.netIncome",
+        "dilutedWeightedShares": "2 * FY2025.dilutedWeightedShares - FY2025H1.dilutedWeightedShares",
+        "publishedEPSArithmetic": "(FY2025.dilutedEPS - FY2025H1.dilutedEPS) * 2"
+      }
+    },
+    {
+      "effectiveDate": "2026-07-30",
+      "asOfReportDate": "2026-07-29",
+      "annual": "FY2025",
+      "current": "FY2026Q1",
+      "prior": "FY2025Q1",
+      "weight": 0.25,
+      "trailingStart": "2025-07-01",
+      "trailingEnd": "2026-06-30",
+      "ttmNetIncomeJPYMillion": 459953,
+      "ttmDilutedWeightedShares": 729815420.3640792,
+      "ttmDilutedEPSJPY": 630.2319561438502,
+      "publishedEPSArithmeticTTMJPY": 630.39,
+      "differenceFromPublishedEPSArithmeticJPY": -0.15804385614978855,
+      "halfYearStart": "2026-01-01",
+      "halfYearEnd": "2026-06-30",
+      "halfYearNetIncomeJPYMillion": 301607,
+      "halfYearDilutedWeightedShares": 728598491.9823666,
+      "halfYearDilutedEPSJPY": 413.95501544257854,
+      "halfYearAnnualizedDilutedEPSJPY": 827.9100308851571,
+      "publishedEPSArithmeticHalfYearAnnualizedJPY": 827.4799999999999,
+      "halfYearDifferenceFromPublishedEPSArithmeticJPY": 0.4300308851571799,
+      "halfYearFormula": {
+        "netIncome": "FY2025.netIncome - FY2025Q3YTD.netIncome + FY2026Q1.netIncome",
+        "dilutedWeightedShares": "(4 * FY2025.dilutedWeightedShares - 3 * FY2025Q3YTD.dilutedWeightedShares + FY2026Q1.dilutedWeightedShares) / 2",
+        "publishedEPSArithmetic": "(FY2025.dilutedEPS - FY2025Q3YTD.dilutedEPS + FY2026Q1.dilutedEPS) * 2"
+      }
+    }
+  ],
+  "methodology": [
+    "実績IFRS親会社帰属純利益を使用。予想値、非GAAP調整値は混ぜない。TTM=前期通期+当期累計−前年同期累計。",
+    "TTM希薄化加重平均株数=前期通期平均株数+(当期累計平均−前年同期累計平均)×経過四半期/4。直近6か月は2四半期の合算利益と期間平均株数を再構成し、EPSを2倍。",
+    "年初は2025年11月13日半期報告書まで公表済みなので、同報告書のEPS詳細分母を利用。以後は各発表日までに公表済みの資料を使用。",
+    "四半期等分の近似。四半期累計の株数は公表希薄化EPSから逆算する箇所があるため丸め誤差を含む。希薄化株数は期間平均株価や潜在株式の希薄化判定により完全には加法的でない。",
+    "2026年4月発行CB後の新Q1は希薄化EPSの分子調整額が非開示。分子調整ゼロを置いた有効分母で独自再構成するため、会社正式TTMではない。公表EPS差分・外部TTMとの独立比較で数値影響の大きさを確認。",
+    "決算発表は引け後扱いとし翌営業日反映。1/28→1/29、4/27→4/28、7/29→7/30。6か月年換算は先の半年も同水準と仮定する参考値で、会社予想ではない。"
+  ],
+  "numeratorReview": {
+    "FY2024": "年次短信で純利益分子加算ゼロ",
+    "FY2025H1": "半期報告書で純利益分子加算ゼロ。一部株式報酬は逆希薄化のため除外",
+    "FY2025": "年次短信で純利益分子加算ゼロ",
+    "FY2026Q1": "EPS詳細非開示、CB分子加算額未確認。表ではゼロ仮定の近似。0と判明したという意味ではない",
+    "nonRecurringItems": [
+      {
+        "period": "2026-01-01～2026-03-31",
+        "pretaxJPYMillion": 17312,
+        "description": "戦略投資に関する株式コールオプション公正価値測定益。FY2025通期の金融収益に含む",
+        "source": "annual2026"
+      },
+      {
+        "period": "2026-04-01～2026-06-30",
+        "financialIncomeJPYMillion": 44680,
+        "description": "戦略投資に関する金融商品の評価益が中心の金融収益。全44680百万円を厳密な一過性益と同一視しない",
+        "source": "q1fy2026"
+      }
+    ]
+  },
+  "externalCrossCheck": {
+    "yahoo": {
+      "url": "https://sg.finance.yahoo.com/quote/6857.T/",
+      "accessed": "2026-10-15",
+      "closeJPY": 34340,
+      "ttmEPSJPY": 630.37,
+      "ttmPER": 54.48,
+      "independentEPSDifferenceJPY": -0.13804385614980674
+    },
+    "tradingView": {
+      "url": "https://www.tradingview.com/markets/stocks-japan/sectorandindustry-sector/electronic-technology/companies/",
+      "accessed": "2026-10-15",
+      "ttmDilutedEPSJPY": 630.39,
+      "note": "EPS dil TTM表示、公表希薄化EPS差分630.39と一致。株価は9月時点なので参照しない"
+    }
+  },
+  "latestActual": {
+    "releaseDate": "2026-07-29",
+    "periodEnd": "2026-06-30",
+    "nextRelease": "2026-10-28 15:30 JST",
+    "source": "calendar"
+  }
+}

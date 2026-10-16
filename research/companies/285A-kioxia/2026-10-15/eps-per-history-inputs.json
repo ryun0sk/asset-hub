@@ -1,0 +1,1133 @@
+{
+  "asOf": "2026-10-15 Tokyo close",
+  "prices": {
+    "symbol": "285A.T",
+    "provider": "Yahoo Finance chart endpoint",
+    "source": "https://query1.finance.yahoo.com/v8/finance/chart/285A.T?period1=1767052800&period2=1792108800&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+    "retrievedAt": "2026-10-15T13:38:08.372689+00:00",
+    "priceCurrency": "JPY",
+    "splitBasis": "2026-10-01効力の1対3株式分割後基準。Yahoo quote.close自体が過去分を調整済み。再度3で割らない。",
+    "events": {
+      "splits": {
+        "1790640000": {
+          "date": 1790640000,
+          "numerator": 3.0,
+          "denominator": 1.0,
+          "splitRatio": "3:1"
+        }
+      }
+    },
+    "rows": [
+      {
+        "date": "2025-12-30",
+        "close": 3478.333251953125,
+        "adjusted": 3478.333251953125
+      },
+      {
+        "date": "2026-01-05",
+        "close": 3783.333251953125,
+        "adjusted": 3783.333251953125
+      },
+      {
+        "date": "2026-01-06",
+        "close": 3866.666748046875,
+        "adjusted": 3866.666748046875
+      },
+      {
+        "date": "2026-01-07",
+        "close": 4230.0,
+        "adjusted": 4230.0
+      },
+      {
+        "date": "2026-01-08",
+        "close": 4333.33349609375,
+        "adjusted": 4333.33349609375
+      },
+      {
+        "date": "2026-01-09",
+        "close": 4230.0,
+        "adjusted": 4230.0
+      },
+      {
+        "date": "2026-01-13",
+        "close": 4561.66650390625,
+        "adjusted": 4561.66650390625
+      },
+      {
+        "date": "2026-01-14",
+        "close": 4426.66650390625,
+        "adjusted": 4426.66650390625
+      },
+      {
+        "date": "2026-01-15",
+        "close": 4543.33349609375,
+        "adjusted": 4543.33349609375
+      },
+      {
+        "date": "2026-01-16",
+        "close": 4916.66650390625,
+        "adjusted": 4916.66650390625
+      },
+      {
+        "date": "2026-01-19",
+        "close": 5070.0,
+        "adjusted": 5070.0
+      },
+      {
+        "date": "2026-01-20",
+        "close": 5068.33349609375,
+        "adjusted": 5068.33349609375
+      },
+      {
+        "date": "2026-01-21",
+        "close": 5500.0,
+        "adjusted": 5500.0
+      },
+      {
+        "date": "2026-01-22",
+        "close": 5970.0,
+        "adjusted": 5970.0
+      },
+      {
+        "date": "2026-01-23",
+        "close": 5778.33349609375,
+        "adjusted": 5778.33349609375
+      },
+      {
+        "date": "2026-01-26",
+        "close": 5816.66650390625,
+        "adjusted": 5816.66650390625
+      },
+      {
+        "date": "2026-01-27",
+        "close": 6150.0,
+        "adjusted": 6150.0
+      },
+      {
+        "date": "2026-01-28",
+        "close": 6315.0,
+        "adjusted": 6315.0
+      },
+      {
+        "date": "2026-01-29",
+        "close": 6415.0,
+        "adjusted": 6415.0
+      },
+      {
+        "date": "2026-01-30",
+        "close": 7120.0,
+        "adjusted": 7120.0
+      },
+      {
+        "date": "2026-02-02",
+        "close": 6120.0,
+        "adjusted": 6120.0
+      },
+      {
+        "date": "2026-02-03",
+        "close": 6928.33349609375,
+        "adjusted": 6928.33349609375
+      },
+      {
+        "date": "2026-02-04",
+        "close": 6966.66650390625,
+        "adjusted": 6966.66650390625
+      },
+      {
+        "date": "2026-02-05",
+        "close": 6510.0,
+        "adjusted": 6510.0
+      },
+      {
+        "date": "2026-02-06",
+        "close": 6365.0,
+        "adjusted": 6365.0
+      },
+      {
+        "date": "2026-02-09",
+        "close": 6300.0,
+        "adjusted": 6300.0
+      },
+      {
+        "date": "2026-02-10",
+        "close": 6281.66650390625,
+        "adjusted": 6281.66650390625
+      },
+      {
+        "date": "2026-02-12",
+        "close": 7058.33349609375,
+        "adjusted": 7058.33349609375
+      },
+      {
+        "date": "2026-02-13",
+        "close": 7615.0,
+        "adjusted": 7615.0
+      },
+      {
+        "date": "2026-02-16",
+        "close": 7433.33349609375,
+        "adjusted": 7433.33349609375
+      },
+      {
+        "date": "2026-02-17",
+        "close": 7456.66650390625,
+        "adjusted": 7456.66650390625
+      },
+      {
+        "date": "2026-02-18",
+        "close": 7140.0,
+        "adjusted": 7140.0
+      },
+      {
+        "date": "2026-02-19",
+        "close": 7083.33349609375,
+        "adjusted": 7083.33349609375
+      },
+      {
+        "date": "2026-02-20",
+        "close": 6853.33349609375,
+        "adjusted": 6853.33349609375
+      },
+      {
+        "date": "2026-02-24",
+        "close": 7423.33349609375,
+        "adjusted": 7423.33349609375
+      },
+      {
+        "date": "2026-02-25",
+        "close": 7155.0,
+        "adjusted": 7155.0
+      },
+      {
+        "date": "2026-02-26",
+        "close": 7080.0,
+        "adjusted": 7080.0
+      },
+      {
+        "date": "2026-02-27",
+        "close": 7070.0,
+        "adjusted": 7070.0
+      },
+      {
+        "date": "2026-03-02",
+        "close": 7171.66650390625,
+        "adjusted": 7171.66650390625
+      },
+      {
+        "date": "2026-03-03",
+        "close": 6733.33349609375,
+        "adjusted": 6733.33349609375
+      },
+      {
+        "date": "2026-03-04",
+        "close": 6415.0,
+        "adjusted": 6415.0
+      },
+      {
+        "date": "2026-03-05",
+        "close": 6766.66650390625,
+        "adjusted": 6766.66650390625
+      },
+      {
+        "date": "2026-03-06",
+        "close": 6658.33349609375,
+        "adjusted": 6658.33349609375
+      },
+      {
+        "date": "2026-03-09",
+        "close": 6010.0,
+        "adjusted": 6010.0
+      },
+      {
+        "date": "2026-03-10",
+        "close": 6523.33349609375,
+        "adjusted": 6523.33349609375
+      },
+      {
+        "date": "2026-03-11",
+        "close": 7126.66650390625,
+        "adjusted": 7126.66650390625
+      },
+      {
+        "date": "2026-03-12",
+        "close": 7081.66650390625,
+        "adjusted": 7081.66650390625
+      },
+      {
+        "date": "2026-03-13",
+        "close": 7021.66650390625,
+        "adjusted": 7021.66650390625
+      },
+      {
+        "date": "2026-03-16",
+        "close": 7538.33349609375,
+        "adjusted": 7538.33349609375
+      },
+      {
+        "date": "2026-03-17",
+        "close": 7203.33349609375,
+        "adjusted": 7203.33349609375
+      },
+      {
+        "date": "2026-03-18",
+        "close": 7796.66650390625,
+        "adjusted": 7796.66650390625
+      },
+      {
+        "date": "2026-03-19",
+        "close": 7453.33349609375,
+        "adjusted": 7453.33349609375
+      },
+      {
+        "date": "2026-03-23",
+        "close": 7155.0,
+        "adjusted": 7155.0
+      },
+      {
+        "date": "2026-03-24",
+        "close": 7033.33349609375,
+        "adjusted": 7033.33349609375
+      },
+      {
+        "date": "2026-03-25",
+        "close": 7481.66650390625,
+        "adjusted": 7481.66650390625
+      },
+      {
+        "date": "2026-03-26",
+        "close": 7055.0,
+        "adjusted": 7055.0
+      },
+      {
+        "date": "2026-03-27",
+        "close": 6756.66650390625,
+        "adjusted": 6756.66650390625
+      },
+      {
+        "date": "2026-03-30",
+        "close": 6673.33349609375,
+        "adjusted": 6673.33349609375
+      },
+      {
+        "date": "2026-03-31",
+        "close": 6360.0,
+        "adjusted": 6360.0
+      },
+      {
+        "date": "2026-04-01",
+        "close": 7266.66650390625,
+        "adjusted": 7266.66650390625
+      },
+      {
+        "date": "2026-04-02",
+        "close": 7031.66650390625,
+        "adjusted": 7031.66650390625
+      },
+      {
+        "date": "2026-04-03",
+        "close": 7283.33349609375,
+        "adjusted": 7283.33349609375
+      },
+      {
+        "date": "2026-04-06",
+        "close": 7600.0,
+        "adjusted": 7600.0
+      },
+      {
+        "date": "2026-04-07",
+        "close": 7756.66650390625,
+        "adjusted": 7756.66650390625
+      },
+      {
+        "date": "2026-04-08",
+        "close": 9200.0,
+        "adjusted": 9200.0
+      },
+      {
+        "date": "2026-04-09",
+        "close": 9233.3330078125,
+        "adjusted": 9233.3330078125
+      },
+      {
+        "date": "2026-04-10",
+        "close": 10046.6669921875,
+        "adjusted": 10046.6669921875
+      },
+      {
+        "date": "2026-04-13",
+        "close": 10423.3330078125,
+        "adjusted": 10423.3330078125
+      },
+      {
+        "date": "2026-04-14",
+        "close": 11666.6669921875,
+        "adjusted": 11666.6669921875
+      },
+      {
+        "date": "2026-04-15",
+        "close": 10803.3330078125,
+        "adjusted": 10803.3330078125
+      },
+      {
+        "date": "2026-04-16",
+        "close": 11290.0,
+        "adjusted": 11290.0
+      },
+      {
+        "date": "2026-04-17",
+        "close": 10176.6669921875,
+        "adjusted": 10176.6669921875
+      },
+      {
+        "date": "2026-04-20",
+        "close": 10170.0,
+        "adjusted": 10170.0
+      },
+      {
+        "date": "2026-04-21",
+        "close": 10913.3330078125,
+        "adjusted": 10913.3330078125
+      },
+      {
+        "date": "2026-04-22",
+        "close": 11600.0,
+        "adjusted": 11600.0
+      },
+      {
+        "date": "2026-04-23",
+        "close": 11793.3330078125,
+        "adjusted": 11793.3330078125
+      },
+      {
+        "date": "2026-04-24",
+        "close": 11526.6669921875,
+        "adjusted": 11526.6669921875
+      },
+      {
+        "date": "2026-04-27",
+        "close": 11823.3330078125,
+        "adjusted": 11823.3330078125
+      },
+      {
+        "date": "2026-04-28",
+        "close": 12106.6669921875,
+        "adjusted": 12106.6669921875
+      },
+      {
+        "date": "2026-04-30",
+        "close": 12520.0,
+        "adjusted": 12520.0
+      },
+      {
+        "date": "2026-05-01",
+        "close": 12136.6669921875,
+        "adjusted": 12136.6669921875
+      },
+      {
+        "date": "2026-05-07",
+        "close": 14470.0,
+        "adjusted": 14470.0
+      },
+      {
+        "date": "2026-05-08",
+        "close": 14830.0,
+        "adjusted": 14830.0
+      },
+      {
+        "date": "2026-05-11",
+        "close": 15313.3330078125,
+        "adjusted": 15313.3330078125
+      },
+      {
+        "date": "2026-05-12",
+        "close": 15366.6669921875,
+        "adjusted": 15366.6669921875
+      },
+      {
+        "date": "2026-05-13",
+        "close": 16833.333984375,
+        "adjusted": 16833.333984375
+      },
+      {
+        "date": "2026-05-14",
+        "close": 16153.3330078125,
+        "adjusted": 16153.3330078125
+      },
+      {
+        "date": "2026-05-15",
+        "close": 14816.6669921875,
+        "adjusted": 14816.6669921875
+      },
+      {
+        "date": "2026-05-18",
+        "close": 17150.0,
+        "adjusted": 17150.0
+      },
+      {
+        "date": "2026-05-19",
+        "close": 16590.0,
+        "adjusted": 16590.0
+      },
+      {
+        "date": "2026-05-20",
+        "close": 17096.666015625,
+        "adjusted": 17096.666015625
+      },
+      {
+        "date": "2026-05-21",
+        "close": 18446.666015625,
+        "adjusted": 18446.666015625
+      },
+      {
+        "date": "2026-05-22",
+        "close": 19133.333984375,
+        "adjusted": 19133.333984375
+      },
+      {
+        "date": "2026-05-25",
+        "close": 21816.666015625,
+        "adjusted": 21816.666015625
+      },
+      {
+        "date": "2026-05-26",
+        "close": 20820.0,
+        "adjusted": 20820.0
+      },
+      {
+        "date": "2026-05-27",
+        "close": 20183.333984375,
+        "adjusted": 20183.333984375
+      },
+      {
+        "date": "2026-05-28",
+        "close": 20426.666015625,
+        "adjusted": 20426.666015625
+      },
+      {
+        "date": "2026-05-29",
+        "close": 21950.0,
+        "adjusted": 21950.0
+      },
+      {
+        "date": "2026-06-01",
+        "close": 24166.666015625,
+        "adjusted": 24166.666015625
+      },
+      {
+        "date": "2026-06-02",
+        "close": 25846.666015625,
+        "adjusted": 25846.666015625
+      },
+      {
+        "date": "2026-06-03",
+        "close": 26026.666015625,
+        "adjusted": 26026.666015625
+      },
+      {
+        "date": "2026-06-04",
+        "close": 25640.0,
+        "adjusted": 25640.0
+      },
+      {
+        "date": "2026-06-05",
+        "close": 26046.666015625,
+        "adjusted": 26046.666015625
+      },
+      {
+        "date": "2026-06-08",
+        "close": 23960.0,
+        "adjusted": 23960.0
+      },
+      {
+        "date": "2026-06-09",
+        "close": 25483.333984375,
+        "adjusted": 25483.333984375
+      },
+      {
+        "date": "2026-06-10",
+        "close": 23500.0,
+        "adjusted": 23500.0
+      },
+      {
+        "date": "2026-06-11",
+        "close": 25146.666015625,
+        "adjusted": 25146.666015625
+      },
+      {
+        "date": "2026-06-12",
+        "close": 27066.666015625,
+        "adjusted": 27066.666015625
+      },
+      {
+        "date": "2026-06-15",
+        "close": 30303.333984375,
+        "adjusted": 30303.333984375
+      },
+      {
+        "date": "2026-06-16",
+        "close": 31573.333984375,
+        "adjusted": 31573.333984375
+      },
+      {
+        "date": "2026-06-17",
+        "close": 32000.0,
+        "adjusted": 32000.0
+      },
+      {
+        "date": "2026-06-18",
+        "close": 32300.0,
+        "adjusted": 32300.0
+      },
+      {
+        "date": "2026-06-19",
+        "close": 36200.0,
+        "adjusted": 36200.0
+      },
+      {
+        "date": "2026-06-22",
+        "close": 36233.33203125,
+        "adjusted": 36233.33203125
+      },
+      {
+        "date": "2026-06-23",
+        "close": 30763.333984375,
+        "adjusted": 30763.333984375
+      },
+      {
+        "date": "2026-06-24",
+        "close": 30833.333984375,
+        "adjusted": 30833.333984375
+      },
+      {
+        "date": "2026-06-25",
+        "close": 34616.66796875,
+        "adjusted": 34616.66796875
+      },
+      {
+        "date": "2026-06-26",
+        "close": 30726.666015625,
+        "adjusted": 30726.666015625
+      },
+      {
+        "date": "2026-06-29",
+        "close": 29483.333984375,
+        "adjusted": 29483.333984375
+      },
+      {
+        "date": "2026-06-30",
+        "close": 29893.333984375,
+        "adjusted": 29893.333984375
+      },
+      {
+        "date": "2026-07-01",
+        "close": 29376.666015625,
+        "adjusted": 29376.666015625
+      },
+      {
+        "date": "2026-07-02",
+        "close": 25420.0,
+        "adjusted": 25420.0
+      },
+      {
+        "date": "2026-07-03",
+        "close": 27766.666015625,
+        "adjusted": 27766.666015625
+      },
+      {
+        "date": "2026-07-06",
+        "close": 27196.666015625,
+        "adjusted": 27196.666015625
+      },
+      {
+        "date": "2026-07-07",
+        "close": 24133.333984375,
+        "adjusted": 24133.333984375
+      },
+      {
+        "date": "2026-07-08",
+        "close": 23956.666015625,
+        "adjusted": 23956.666015625
+      },
+      {
+        "date": "2026-07-09",
+        "close": 25953.333984375,
+        "adjusted": 25953.333984375
+      },
+      {
+        "date": "2026-07-10",
+        "close": 25666.666015625,
+        "adjusted": 25666.666015625
+      },
+      {
+        "date": "2026-07-13",
+        "close": 22366.666015625,
+        "adjusted": 22366.666015625
+      },
+      {
+        "date": "2026-07-14",
+        "close": 23033.333984375,
+        "adjusted": 23033.333984375
+      },
+      {
+        "date": "2026-07-15",
+        "close": 24366.666015625,
+        "adjusted": 24366.666015625
+      },
+      {
+        "date": "2026-07-16",
+        "close": 20703.333984375,
+        "adjusted": 20703.333984375
+      },
+      {
+        "date": "2026-07-17",
+        "close": 17370.0,
+        "adjusted": 17370.0
+      },
+      {
+        "date": "2026-07-21",
+        "close": 20353.333984375,
+        "adjusted": 20353.333984375
+      },
+      {
+        "date": "2026-07-22",
+        "close": 21423.333984375,
+        "adjusted": 21423.333984375
+      },
+      {
+        "date": "2026-07-23",
+        "close": 20626.666015625,
+        "adjusted": 20626.666015625
+      },
+      {
+        "date": "2026-07-24",
+        "close": 18670.0,
+        "adjusted": 18670.0
+      },
+      {
+        "date": "2026-07-27",
+        "close": 18183.333984375,
+        "adjusted": 18183.333984375
+      },
+      {
+        "date": "2026-07-28",
+        "close": 14850.0,
+        "adjusted": 14850.0
+      },
+      {
+        "date": "2026-07-29",
+        "close": 12793.3330078125,
+        "adjusted": 12793.3330078125
+      },
+      {
+        "date": "2026-07-30",
+        "close": 13166.6669921875,
+        "adjusted": 13166.6669921875
+      },
+      {
+        "date": "2026-07-31",
+        "close": 15500.0,
+        "adjusted": 15500.0
+      },
+      {
+        "date": "2026-08-03",
+        "close": 16386.666015625,
+        "adjusted": 16386.666015625
+      },
+      {
+        "date": "2026-08-04",
+        "close": 17363.333984375,
+        "adjusted": 17363.333984375
+      },
+      {
+        "date": "2026-08-05",
+        "close": 18100.0,
+        "adjusted": 18100.0
+      },
+      {
+        "date": "2026-08-06",
+        "close": 16246.6669921875,
+        "adjusted": 16246.6669921875
+      },
+      {
+        "date": "2026-08-07",
+        "close": 15910.0,
+        "adjusted": 15910.0
+      },
+      {
+        "date": "2026-08-10",
+        "close": 16003.3330078125,
+        "adjusted": 16003.3330078125
+      },
+      {
+        "date": "2026-08-12",
+        "close": 16623.333984375,
+        "adjusted": 16623.333984375
+      },
+      {
+        "date": "2026-08-13",
+        "close": 17266.666015625,
+        "adjusted": 17266.666015625
+      },
+      {
+        "date": "2026-08-14",
+        "close": 17913.333984375,
+        "adjusted": 17913.333984375
+      },
+      {
+        "date": "2026-08-17",
+        "close": 20613.333984375,
+        "adjusted": 20613.333984375
+      },
+      {
+        "date": "2026-08-18",
+        "close": 19050.0,
+        "adjusted": 19050.0
+      },
+      {
+        "date": "2026-08-19",
+        "close": 16650.0,
+        "adjusted": 16650.0
+      },
+      {
+        "date": "2026-08-20",
+        "close": 17650.0,
+        "adjusted": 17650.0
+      },
+      {
+        "date": "2026-08-21",
+        "close": 18106.666015625,
+        "adjusted": 18106.666015625
+      },
+      {
+        "date": "2026-08-24",
+        "close": 16976.666015625,
+        "adjusted": 16976.666015625
+      },
+      {
+        "date": "2026-08-25",
+        "close": 17086.666015625,
+        "adjusted": 17086.666015625
+      },
+      {
+        "date": "2026-08-26",
+        "close": 16666.666015625,
+        "adjusted": 16666.666015625
+      },
+      {
+        "date": "2026-08-27",
+        "close": 17500.0,
+        "adjusted": 17500.0
+      },
+      {
+        "date": "2026-08-28",
+        "close": 15966.6669921875,
+        "adjusted": 15966.6669921875
+      },
+      {
+        "date": "2026-08-31",
+        "close": 16663.333984375,
+        "adjusted": 16663.333984375
+      },
+      {
+        "date": "2026-09-01",
+        "close": 17000.0,
+        "adjusted": 17000.0
+      },
+      {
+        "date": "2026-09-02",
+        "close": 17000.0,
+        "adjusted": 17000.0
+      },
+      {
+        "date": "2026-09-03",
+        "close": 17223.333984375,
+        "adjusted": 17223.333984375
+      },
+      {
+        "date": "2026-09-04",
+        "close": 18153.333984375,
+        "adjusted": 18153.333984375
+      },
+      {
+        "date": "2026-09-07",
+        "close": 19843.333984375,
+        "adjusted": 19843.333984375
+      },
+      {
+        "date": "2026-09-08",
+        "close": 19136.666015625,
+        "adjusted": 19136.666015625
+      },
+      {
+        "date": "2026-09-09",
+        "close": 19000.0,
+        "adjusted": 19000.0
+      },
+      {
+        "date": "2026-09-10",
+        "close": 19363.333984375,
+        "adjusted": 19363.333984375
+      },
+      {
+        "date": "2026-09-11",
+        "close": 18010.0,
+        "adjusted": 18010.0
+      },
+      {
+        "date": "2026-09-14",
+        "close": 16863.333984375,
+        "adjusted": 16863.333984375
+      },
+      {
+        "date": "2026-09-15",
+        "close": 17250.0,
+        "adjusted": 17250.0
+      },
+      {
+        "date": "2026-09-16",
+        "close": 16926.666015625,
+        "adjusted": 16926.666015625
+      },
+      {
+        "date": "2026-09-17",
+        "close": 16626.666015625,
+        "adjusted": 16626.666015625
+      },
+      {
+        "date": "2026-09-18",
+        "close": 18190.0,
+        "adjusted": 18190.0
+      },
+      {
+        "date": "2026-09-24",
+        "close": 18193.333984375,
+        "adjusted": 18193.333984375
+      },
+      {
+        "date": "2026-09-25",
+        "close": 18593.333984375,
+        "adjusted": 18593.333984375
+      },
+      {
+        "date": "2026-09-28",
+        "close": 17780.0,
+        "adjusted": 17780.0
+      },
+      {
+        "date": "2026-09-29",
+        "close": 17880.0,
+        "adjusted": 17880.0
+      },
+      {
+        "date": "2026-09-30",
+        "close": 18095.0,
+        "adjusted": 18095.0
+      },
+      {
+        "date": "2026-10-01",
+        "close": 19100.0,
+        "adjusted": 19100.0
+      },
+      {
+        "date": "2026-10-02",
+        "close": 19300.0,
+        "adjusted": 19300.0
+      },
+      {
+        "date": "2026-10-05",
+        "close": 19120.0,
+        "adjusted": 19120.0
+      },
+      {
+        "date": "2026-10-06",
+        "close": 18735.0,
+        "adjusted": 18735.0
+      },
+      {
+        "date": "2026-10-07",
+        "close": 17900.0,
+        "adjusted": 17900.0
+      },
+      {
+        "date": "2026-10-08",
+        "close": 17900.0,
+        "adjusted": 17900.0
+      },
+      {
+        "date": "2026-10-09",
+        "close": 17505.0,
+        "adjusted": 17505.0
+      },
+      {
+        "date": "2026-10-13",
+        "close": 15180.0,
+        "adjusted": 15180.0
+      },
+      {
+        "date": "2026-10-14",
+        "close": 14690.0,
+        "adjusted": 14690.0
+      },
+      {
+        "date": "2026-10-15",
+        "close": 12880.0,
+        "adjusted": 12880.0
+      }
+    ]
+  },
+  "fundamentals": {
+    "preparedDate": "2026-10-15",
+    "methodology": "会社公表IFRS親会社所有者帰属純利益と希薄化分母からTTMを再構成。四半期等分weight0.5/0.75/0.25を使用。2026-10-01効力の1対3分割後EPS。会社公表の公式TTMではなく独自概算。H1とQ1の希薄化分母は公表純利益÷小数第2位EPSの逆算なので丸め誤差を含む。",
+    "numeratorReview": {
+      "conclusion": "確認したFY2025/FY2026通期とFY2025/FY2026Q3のEPS注記では分子は親会社所有者帰属純利益。希薄化による分子利益加算の行はなく、純利益÷希薄化調整後株数が公表希薄化EPSと丸め一致。希薄化要因は新株予約権と株式報酬。",
+      "preferredShares": "旧優先株はIFRS上金融負債。配当は金融費用として純利益に反映済みで、EPS算出時に再控除/利息足戻しをしない。2025-07-25取得消却済み。Q3資料本文26〜27ページに非転換型優先株式と負債認識を説明。",
+      "limit": "H1・新Q1短信はEPS計算基礎注記を省略。開示済み年次/Q3の資本構造・計算基礎との整合を確認したうえでNI/EPS逆算を用いる。未開示の希薄化算定明細までは直接検証できない。潜在株式の期間全体での希薄化判定は会社未公表のためTTMは概算。"
+    },
+    "sources": {
+      "annual": "https://www2.jpx.co.jp/disc/285A0/140120260515537803.pdf",
+      "halfYear": "https://www2.jpx.co.jp/disc/285A0/140120251113599856.pdf",
+      "thirdQuarter": "https://www2.jpx.co.jp/disc/285A0/140120260212556330.pdf",
+      "firstQuarter": "https://www2.jpx.co.jp/disc/285A0/140120260731505265.pdf",
+      "externalTTMCrossCheck": "https://stockanalysis.com/quote/tyo/285A/financials/"
+    },
+    "inputs": {
+      "FY2025": {
+        "netIncomeJPYMillion": 272315,
+        "basicEPSPreSplit": 519.96,
+        "dilutedEPSPreSplit": 515.45,
+        "basicWeightedSharesPreSplit": 523718990,
+        "dilutedWeightedSharesPreSplit": 528301950,
+        "sharesSource": "会社公表"
+      },
+      "FY2025H1": {
+        "netIncomeJPYMillion": 175980,
+        "basicEPSPreSplit": 340.06,
+        "dilutedEPSPreSplit": 335.95,
+        "basicWeightedSharesPreSplit": 517500000,
+        "sharesSource": "希薄化分母は純利益÷公表希薄化EPSで逆算",
+        "dilutedWeightedSharesPreSplit": 523827950.58788514
+      },
+      "FY2026H1": {
+        "netIncomeJPYMillion": 58946,
+        "basicEPSPreSplit": 109.26,
+        "dilutedEPSPreSplit": 108.4,
+        "basicWeightedSharesPreSplit": 539486553,
+        "sharesSource": "希薄化分母は純利益÷公表希薄化EPSで逆算",
+        "dilutedWeightedSharesPreSplit": 543782287.8228782
+      },
+      "FY2025Q3YTD": {
+        "netIncomeJPYMillion": 252048,
+        "basicEPSPreSplit": 485.94,
+        "dilutedEPSPreSplit": 481.3,
+        "basicWeightedSharesPreSplit": 518676137,
+        "dilutedWeightedSharesPreSplit": 523686630,
+        "sharesSource": "会社公表"
+      },
+      "FY2026Q3YTD": {
+        "netIncomeJPYMillion": 146756,
+        "basicEPSPreSplit": 271.67,
+        "dilutedEPSPreSplit": 267.94,
+        "basicWeightedSharesPreSplit": 540196228,
+        "dilutedWeightedSharesPreSplit": 547725550,
+        "sharesSource": "会社公表"
+      },
+      "FY2026": {
+        "netIncomeJPYMillion": 554490,
+        "basicEPSPreSplit": 1024.07,
+        "dilutedEPSPreSplit": 1009.15,
+        "basicWeightedSharesPreSplit": 541455417,
+        "dilutedWeightedSharesPreSplit": 549460906,
+        "sharesSource": "会社公表"
+      },
+      "FY2026Q1": {
+        "netIncomeJPYMillion": 18284,
+        "basicEPSPreSplit": 33.9,
+        "dilutedEPSPreSplit": 33.75,
+        "basicWeightedSharesPreSplit": 539420549,
+        "sharesSource": "希薄化分母は純利益÷公表希薄化EPSで逆算",
+        "dilutedWeightedSharesPreSplit": 541748148.1481482
+      },
+      "FY2027Q1": {
+        "netIncomeJPYMillion": 842165,
+        "basicEPSPreSplit": 1539.91,
+        "dilutedEPSPreSplit": 1525.09,
+        "basicWeightedSharesPreSplit": 546890636,
+        "sharesSource": "希薄化分母は純利益÷公表希薄化EPSで逆算",
+        "dilutedWeightedSharesPreSplit": 552206755.0111797
+      }
+    },
+    "phases": [
+      {
+        "label": "2026年年初",
+        "effectiveDate": "2026-01-05",
+        "asOfReportDate": "2025-11-13",
+        "trailingStart": "2024-10-01",
+        "trailingEnd": "2025-09-30",
+        "annual": "FY2025",
+        "current": "FY2026H1",
+        "prior": "FY2025H1",
+        "weight": 0.5,
+        "ttmNetIncomeJPYMillion": 155281,
+        "ttmDilutedWeightedSharesPreSplit": 538279118.6174965,
+        "ttmDilutedEPSPostSplit": 96.15891002101914,
+        "ttmDilutedEPSUsingRoundedPublishedEPSPostSplit": 95.9666666666667,
+        "ttmEPSRounded2Decimals": "96.16"
+      },
+      {
+        "label": "FY2026Q3発表後",
+        "effectiveDate": "2026-02-13",
+        "asOfReportDate": "2026-02-12",
+        "trailingStart": "2025-01-01",
+        "trailingEnd": "2025-12-31",
+        "annual": "FY2025",
+        "current": "FY2026Q3YTD",
+        "prior": "FY2025Q3YTD",
+        "weight": 0.75,
+        "ttmNetIncomeJPYMillion": 167023,
+        "ttmDilutedWeightedSharesPreSplit": 546331140,
+        "ttmDilutedEPSPostSplit": 101.90583925590134,
+        "ttmDilutedEPSUsingRoundedPublishedEPSPostSplit": 100.69666666666667,
+        "ttmEPSRounded2Decimals": "101.91"
+      },
+      {
+        "label": "FY2026通期発表後",
+        "effectiveDate": "2026-05-18",
+        "asOfReportDate": "2026-05-15",
+        "trailingStart": "2025-04-01",
+        "trailingEnd": "2026-03-31",
+        "annual": "FY2026",
+        "current": null,
+        "prior": null,
+        "weight": 0,
+        "ttmNetIncomeJPYMillion": 554490,
+        "ttmDilutedWeightedSharesPreSplit": 549460906,
+        "ttmDilutedEPSPostSplit": 336.38425952000307,
+        "ttmDilutedEPSUsingRoundedPublishedEPSPostSplit": 336.3833333333333,
+        "ttmEPSRounded2Decimals": "336.38"
+      },
+      {
+        "label": "FY2027Q1発表後",
+        "effectiveDate": "2026-08-03",
+        "asOfReportDate": "2026-07-31",
+        "trailingStart": "2025-07-01",
+        "trailingEnd": "2026-06-30",
+        "annual": "FY2026",
+        "current": "FY2027Q1",
+        "prior": "FY2026Q1",
+        "weight": 0.25,
+        "ttmNetIncomeJPYMillion": 1378371,
+        "ttmDilutedWeightedSharesPreSplit": 552075557.7157578,
+        "ttmDilutedEPSPostSplit": 832.2357213223275,
+        "ttmDilutedEPSUsingRoundedPublishedEPSPostSplit": 833.4966666666666,
+        "ttmEPSRounded2Decimals": "832.24"
+      }
+    ],
+    "externalCrossCheck": {
+      "stockAnalysisTTMEPSPostSplit": 832.23,
+      "reconstructedTTMEPSPostSplit": 832.2357213223275,
+      "differencePercent": 0.0006874688881053359,
+      "note": "数値上ほぼ一致。外部提供者の計算方法そのものを確認したものではない。"
+    }
+  },
+  "definition": "実績TTM・希薄化後EPSの独自再構成。会社公表の公式TTMではない。決算は発表翌営業日から反映。将来予想と四半期4倍年換算を含まない。"
+}

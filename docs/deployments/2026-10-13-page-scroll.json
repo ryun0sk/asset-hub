@@ -1,0 +1,58 @@
+{
+  "deployedAt": "2026-10-13T00:20:57.726613Z",
+  "builtAt": "2026-10-13T00:20:25.075496Z",
+  "verifiedAt": "2026-10-13T00:21:13.791934+00:00",
+  "baselineRevision": "asset-hub-00029-4h9",
+  "baselineImage": "asia-northeast1-docker.pkg.dev/ryun0sk-asset-hub/asset-hub/app@sha256:d2554a0f56b1836e74d82aeab5c1c51d2872076eff92f657f44f3b653f679282",
+  "revision": "asset-hub-00030-dwn",
+  "image": "asia-northeast1-docker.pkg.dev/ryun0sk-asset-hub/asset-hub/app@sha256:24066686fffa3f4fd3a39ea7a6b7093ad8601c54a35955d73645cfa364d100ba",
+  "buildId": "8bc58702-cfeb-4684-8510-97ce9315c65e",
+  "url": "https://asset-hub-pvgbytjsqa-an.a.run.app/#ai/valuation",
+  "trafficPercent": 100,
+  "settingsPreserved": true,
+  "iapVerified": true,
+  "costJobPreserved": true,
+  "schema": 1,
+  "branch": "codex/ai-eps-per-table",
+  "changedFiles": [
+    {
+      "path": "web/ai-valuations.css",
+      "sha256": "75ab8b546e95ef1d67271158217e1ad7a72045b651a0ca3f88e34d500db3bd12"
+    },
+    {
+      "path": "web/ai-valuations.js",
+      "sha256": "586d87235db8a42c77ec4a12987f77103d8cc44aebac71d3c721bca2a229b4fb"
+    },
+    {
+      "path": "web/styles.css",
+      "sha256": "8ad5147207fe7eb8fc90891ad822e1f9c529cf3f2df499d6a6be97122e0c51e7"
+    },
+    {
+      "path": "web/app.css",
+      "sha256": "c08a28b443e4bd5390a0b28db02f8a32b2dfb032b78da1e494b855d7147652d3"
+    }
+  ],
+  "allOtherRuntimeFilesPreserved": true,
+  "researchDataRefreshed": false,
+  "checks": {
+    "stagedValuationTestsPassed": 6,
+    "designTokensPassed": true,
+    "archivesMatched": 3,
+    "all43RowsExpanded": true,
+    "desktopTableClientAndScrollHeight": 3553,
+    "desktopWheelMovedPage1000px": true,
+    "tableVerticalScrollTop": 0,
+    "productionMobile390pxVerified": true,
+    "mobileTableHorizontalScrollVerified": true,
+    "commonTableMaxHeightNoneVerified": true,
+    "searchAndKeyboardHorizontalScrollVerified": true,
+    "settingsPreserved": true,
+    "iapVerified": true,
+    "costJobPreserved": true,
+    "trafficPercent": 100
+  },
+  "ignoredGeneratedFields": [
+    "spec.template.metadata.labels.client.knative.dev/nonce"
+  ],
+  "screenshot": "2026-10-13-page-scroll-production.jpg"
+}
