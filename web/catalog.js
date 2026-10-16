@@ -42,6 +42,9 @@ export function counterpartIndex(item, to) {
 export function parseRoute(hash) {
   const value = String(hash || '').replace(/^#/, '');
   if (value === 'cost') return {view: 'cost'};
+  if (value === 'library') return {view: 'library'};
+  const ai = value.match(/^ai\/([a-z]+)\/?$/);
+  if (ai) return {view: 'ai', section: ai[1]};
   const asset = value.match(/^a\/([a-z]+)\/?$/);
   if (asset) return {view: 'asset', cls: asset[1]};
   const match = value.match(/^r\/([^/]+)(?:\/(\d+)(?:\/([^/]+))?)?\/?$/);

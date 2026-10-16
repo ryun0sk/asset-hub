@@ -1,0 +1,5 @@
+# CSV exports use RFC 4180 CRLF records; preserve their recorded bytes.
+*.csv whitespace=cr-at-eol
+
+# Matplotlib emits trailing spaces in SVG paths. Keep this generated figure intact.
+research/companies/285A-kioxia/2026-10-15/eps-per-history.svg whitespace=-blank-at-eol

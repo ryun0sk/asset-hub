@@ -1,7 +1,10 @@
 import {showCosts, initCostAlerts} from './costs.js';
 import {showAssets, leaveAssets, initAssets} from './assets.js';
 import {renderMarkdown} from './markdown.js';
-import {KIND_LABELS, TYPE_LABELS, parseRoute, routeFor, lookup, routeForPath, fileUrl, itemUrl, stats, versionsOf, latestGroups, counterpartIndex} from './catalog.js';
+import {isAiValuationView, mountAiValuations} from './ai-valuations.js';
+import {AI_DETAIL_SECTIONS, mountAiDetail} from './ai-detail.js';
+import {ASSET_SECTIONS, AI_SECTIONS, aiEntry, aiDocument, aiSectionForResearch, renderHomeHub, renderAiHub, mountResearchLibrary} from './workspace.js';
+import {KIND_LABELS, parseRoute, routeFor, lookup, routeForPath, fileUrl, itemUrl, versionsOf, counterpartIndex} from './catalog.js';
 
 const $ = id => document.getElementById(id);
 const esc = value => String(value ?? '').replace(/[&<>"']/g, ch => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[ch]));
@@ -35,31 +38,50 @@ async function loadCatalog() {
   changeView();
 }
 
-// Sidebar research list: one link per target (its newest snapshot) under its group label; archives are
-// reached from the version bar. The asset page is the fixed 保有・推移 link in index.html.
+// Frequent workflows stay at the top; the library keeps every original document reachable.
 function renderNav() {
   const host = $('classNav');
   if (!catalog) {
     host.innerHTML = `<p class="nav-label nav-status">${esc(catalogError || '調査一覧を読み込んでいます…')}</p>`;
     return;
   }
-  host.innerHTML = latestGroups(catalog).filter(group => group.entries.length).map(group => `<p class="nav-label">${esc(group.label)}</p>${group.entries.map(entry => `
-    <a href="${routeFor(entry.id, 0)}" class="nav-link" data-target="${esc(targetKey(entry))}"><span class="nav-icon" aria-hidden="true">${ICONS[entry.kind] || ICONS.theme}</span><span class="nav-text">${esc(entry.title)}</span></a>
-    <div class="subnav" data-subnav="${esc(targetKey(entry))}" hidden></div>`).join('')}`).join('');
+  const ai = aiEntry(catalog);
+  host.innerHTML = `${ai ? `<a href="#ai/overview" class="nav-link" data-view="ai"><span class="nav-icon" aria-hidden="true">${ICONS.theme}</span><span class="nav-text">AI関連銘柄・サプライチェーン</span></a><div class="subnav" id="aiSubnav" aria-label="AI調査の表示切替" hidden>${['銘柄を比較', '事業を理解', '考察と根拠'].map(group => `<span class="nav-group-label">${group}</span>${AI_SECTIONS.filter(item => item.group === group).map(item => `<a href="#ai/${item.id}" data-ai-section="${item.id}">${esc(item.label)}</a>`).join('')}`).join('')}</div>` : ''}
+    <p class="nav-label">資料</p><a href="#library" class="nav-link" data-view="library"><span class="nav-icon" aria-hidden="true">${ICONS.company}</span><span class="nav-text">調査ライブラリ</span></a><div class="subnav" id="librarySubnav" hidden></div>`;
 }
 
-const targetKey = entry => `${entry.kind}/${entry.slug}`;
-
 // Expand the viewed target in the sidebar with the documents of the version being shown.
-function syncNav(view, found) {
-  const key = view === 'research' && found ? targetKey(found.entry) : '';
-  document.querySelectorAll('#mainNav [data-view]').forEach(link => link.classList.toggle('selected', link.dataset.view === view));
-  document.querySelectorAll('#mainNav .nav-link[data-target]').forEach(link => link.classList.toggle('selected', link.dataset.target === key));
-  document.querySelectorAll('#mainNav [data-subnav]').forEach(sub => {
-    sub.hidden = sub.dataset.subnav !== key;
-    if (sub.hidden) { sub.textContent = ''; return; }
-    sub.innerHTML = found.entry.items.map((item, index) => `<a href="${routeFor(found.entry.id, index)}"${index === found.index ? ' class="selected" aria-current="page"' : ''}>${esc(item.label)}</a>`).join('');
+function syncNav(view, found, route) {
+  const aiSection = view === 'ai' ? route.section : aiSectionForResearch(catalog, found);
+  const assetView = ASSET_SECTIONS[route.cls] ? route.cls : 'all';
+  $('assetSubnav').classList.toggle('inactive', view !== 'asset');
+  $('assetSubnav').parentElement.classList.toggle('is-active', view === 'asset');
+  document.querySelectorAll('#assetSubnav [data-asset-view]').forEach(link => {
+    const selected = view === 'asset' && link.dataset.assetView === assetView;
+    link.classList.toggle('selected', selected);
+    if (selected) link.setAttribute('aria-current', 'page');
+    else link.removeAttribute('aria-current');
   });
+  const parent = aiSection ? 'ai' : view === 'research' ? 'library' : view;
+  document.querySelectorAll('#mainNav [data-view]').forEach(link => {
+    const selected = link.dataset.view === parent;
+    link.classList.toggle('selected', selected);
+    if (selected) link.setAttribute('aria-current', 'page'); else link.removeAttribute('aria-current');
+  });
+  const aiSubnav = $('aiSubnav');
+  if (aiSubnav) {
+    aiSubnav.hidden = !aiSection;
+    aiSubnav.querySelectorAll('[data-ai-section]').forEach(link => {
+      const selected = link.dataset.aiSection === aiSection;
+      link.classList.toggle('selected', selected);
+      if (selected) link.setAttribute('aria-current', 'page'); else link.removeAttribute('aria-current');
+    });
+  }
+  const librarySubnav = $('librarySubnav');
+  if (librarySubnav) {
+    librarySubnav.hidden = view !== 'research' || Boolean(aiSection) || !found;
+    librarySubnav.innerHTML = librarySubnav.hidden ? '' : `<span class="nav-group-label">${esc(found.entry.title)}</span>${found.entry.items.map((item, index) => `<a href="${routeFor(found.entry.id, index)}"${index === found.index ? ' class="selected" aria-current="page"' : ''}>${esc(item.label)}</a>`).join('')}`;
+  }
 }
 
 // compact: research documents use a one-line heading (title + meta) so the document starts higher.
@@ -79,6 +101,8 @@ function setHead({eyebrow, title, meta, crumb, openUrl, topMeta, compact = false
 // Which section a route shows right now (a research route waits for the catalog).
 function parseView(route) {
   const found = lookup(catalog, route);
+  if (route.view === 'library') return 'library';
+  if (route.view === 'ai') return 'ai';
   return route.view === 'research' && (found || (!catalog && !catalogError)) ? 'research' : route.view === 'cost' ? 'cost' : route.view === 'asset' ? 'asset' : 'home';
 }
 
@@ -86,19 +110,26 @@ function changeView() {
   const route = parseRoute(location.hash);
   const found = lookup(catalog, route);
   const view = parseView(route);
-  $('homeSection').hidden = view !== 'home';
-  $('researchSection').hidden = view !== 'research';
+  ++renderToken;
+  $('homeSection').hidden = !['home', 'library'].includes(view);
+  $('researchSection').hidden = !['research', 'ai'].includes(view);
   $('costSection').hidden = view !== 'cost';
   $('assetSection').hidden = view !== 'asset';
   $('pageActions').innerHTML = '';
-  syncNav(view, found);
+  syncNav(view, found, route);
   if (view !== 'asset') leaveAssets();
   if (view === 'cost') {
     setHead({eyebrow: 'COST', title: 'コスト', meta: '', crumb: 'コスト'});
     showCosts();
   } else if (view === 'asset') {
-    setHead({eyebrow: 'ASSETS', title: '保有・推移', meta: '全資産の週次の評価額。チェックボックスでグラフに出す資産を選べます', crumb: '保有・推移'});
-    showAssets(catalog);
+    const section = ASSET_SECTIONS[route.cls] || ASSET_SECTIONS.all;
+    setHead({eyebrow: 'ASSETS', title: section.label, meta: section.description, crumb: `保有・推移 / ${section.label}`});
+    showAssets(catalog, route.cls);
+  } else if (view === 'ai') {
+    showAi(route.section);
+  } else if (view === 'library') {
+    setHead({eyebrow: 'LIBRARY', title: '調査ライブラリ', meta: 'テーマ・企業ごとに、レポート・元資料・過去の版を探す', crumb: '調査ライブラリ'});
+    if (catalog) mountResearchLibrary($('homeSection'), catalog); else $('homeSection').innerHTML = catalogStatus();
   } else if (view === 'research') {
     if (found) showResearch(found, route.anchor);
     else setHead({eyebrow: 'RESEARCH', title: '読み込み中', crumb: '読み込み中'});
@@ -110,49 +141,28 @@ function changeView() {
 }
 
 function showHome() {
-  setHead({eyebrow: 'OVERVIEW', title: 'ホーム', meta: '企業・投資テーマの調査レポート、評価モデル、根拠資料', crumb: 'ホーム'});
+  setHead({eyebrow: 'OVERVIEW', title: 'ホーム', meta: 'よく使う情報から、目的に合わせて確認する', crumb: 'ホーム'});
   const host = $('homeSection');
   host.innerHTML = catalog
-    ? researchPanel(latestGroups(catalog).flatMap(group => group.entries), {title: '調査一覧', subtitle: '最新の調査を表示。過去の調査はアーカイブ欄から開けます', tiles: true})
+    ? renderHomeHub(catalog)
     : catalogStatus();
 }
 
 const catalogStatus = () => `<p class="empty" role="${catalogError ? 'alert' : 'status'}">${esc(catalogError || '調査一覧を読み込んでいます…')}</p>`;
 
-// Research table (and, with `tiles`, the catalog metric tiles) for a list of newest entries.
-function researchPanel(entries, {title = '調査一覧', subtitle = '', tiles = false} = {}) {
-  const s = stats(catalog);
-  const metric = (tone, label, value, unit, note) => `<section class="metric ${tone}"><p class="metric-label">${label}</p><p class="metric-value">${esc(value)}${unit ? `<small>${unit}</small>` : ''}</p><p class="metric-note">${note}</p></section>`;
-  const metrics = tiles ? `<div class="metrics">
-      ${metric('green-top', 'テーマ', s.themes, '件', '業界・サプライチェーン単位の調査')}
-      ${metric('blue-top', '企業', s.companies, '社', '個別銘柄の調査')}
-      ${metric('amber-top', '最新の調査日', s.latest || '—', '', '新しい調査は日付別フォルダに追加')}
-      ${metric('', '資料', s.documents, '件', `最新版の資料。過去の調査 ${s.archives}版はアーカイブ`)}
-    </div>` : '';
-  return `${metrics}
-    <p class="notice snapshot-note"><span aria-hidden="true">ⓘ</span>${SNAPSHOT_NOTE}</p>
-    <section class="panel">
-      <div class="panel-heading"><h2>${esc(title)}<span class="count">${entries.length}件</span></h2><span class="subtle">${esc(subtitle)}</span></div>
-      <div class="table-scroll" tabindex="0" role="region" aria-label="${esc(title)}。横スクロールで資料を確認">
-        <table class="research-table"><colgroup><col class="col-title"><col class="col-kind"><col class="col-date"><col class="col-items"><col class="col-archive"></colgroup>
-          <thead><tr><th scope="col">対象</th><th scope="col">区分</th><th scope="col">最新の調査日</th><th scope="col">資料</th><th scope="col">アーカイブ</th></tr></thead>
-          <tbody>${entries.map(entry => `<tr>
-            <td><a class="entry-link" href="${routeFor(entry.id, 0)}">${esc(entry.title)}</a></td>
-            <td><span class="badge ${entry.kind === 'company' ? 'medium' : 'high'}">${esc(KIND_LABELS[entry.kind] || entry.kind)}</span></td>
-            <td class="numeric-cell">${esc(entry.date)}</td>
-            <td><div class="link-stack">${entry.items.map((item, index) => `<a class="channel" href="${routeFor(entry.id, index)}">${esc(item.label)}<span class="type-tag">${esc(TYPE_LABELS[item.type] || item.type)}</span></a>`).join('')}</div></td>
-            <td>${archiveLinks(entry)}</td>
-          </tr>`).join('') || '<tr><td colspan="5" class="empty">調査資料はまだありません。</td></tr>'}</tbody>
-        </table>
-      </div>
-      <div class="table-footer"><span>出典: research/catalog.json${catalog.generatedAt ? ` · 生成 ${esc(catalog.generatedAt.slice(0, 10))}` : ''}</span><span>実績・会社予想・外部予想・独自シナリオの区別は各資料を参照</span></div>
-    </section>`;
-}
-
-function archiveLinks(entry) {
-  const older = versionsOf(catalog, entry).slice(1);
-  if (!older.length) return '<span class="no-archive">—</span>';
-  return `<div class="link-stack">${older.map(version => `<a class="archive-link" href="${routeFor(version.id, 0)}">${esc(version.date)}</a>`).join('')}</div>`;
+function showAi(section = 'overview') {
+  if (!catalog) {
+    setHead({title: 'AI関連銘柄・サプライチェーン', crumb: 'AI調査'});
+    $('researchSection').innerHTML = catalogStatus();
+    return;
+  }
+  const definition = AI_SECTIONS.find(item => item.id === section);
+  if (definition?.view) {
+    const found = aiDocument(catalog, section);
+    if (found) { showResearch(found, '', {aiSection: section}); return; }
+  }
+  setHead({eyebrow: 'AI RESEARCH', title: definition?.label || 'AI関連銘柄・サプライチェーン', meta: definition?.description || '銘柄の比較 → 事業の理解 → 考察と根拠', crumb: `AI調査 / ${definition?.label || '全体像'}`});
+  $('researchSection').innerHTML = renderAiHub(catalog, section);
 }
 
 // Snapshots of the same target, newest first; the shown one is marked and the others keep the
@@ -168,33 +178,49 @@ function versionBar(entry, item) {
   return `<nav class="version-bar" aria-label="調査の版"><span class="version-label">調査の版</span>${links}</nav>`;
 }
 
-function showResearch({entry, item}, anchor = '') {
+function showResearch({entry, item, index}, anchor = '', {aiSection = ''} = {}) {
   const url = itemUrl(item);
   const versions = versionsOf(catalog, entry), newest = versions[0], archived = newest && newest.id !== entry.id;
+  const section = aiSection || aiSectionForResearch(catalog, {entry, item, index});
+  const detail = AI_DETAIL_SECTIONS[aiSection];
+  const overviewEnabled = isAiValuationView(entry, item, archived) && !detail;
+  const actualHistory = aiSection === 'multiples' && !archived;
+  const definition = AI_SECTIONS.find(candidate => candidate.id === section);
+  const label = overviewEnabled ? 'EPS・PER一覧' : aiSection ? definition?.label || item.label : item.label;
   setHead({
-    title: `【${entry.title}】${item.label}`,
-    meta: `${KIND_LABELS[entry.kind] || ''} · 調査日 ${entry.date}${archived ? ' · アーカイブ' : ''} · ${item.path}`,
+    title: label,
+    meta: actualHistory ? `${entry.title} · 実績月次 2026-10-16確認 · グラフ保存版 ${entry.date}` : `${entry.title} · 保存版 ${entry.date}${archived ? ' · アーカイブ' : ''}`,
     compact: true,
-    crumb: `${entry.title} · ${item.label}`,
-    openUrl: url,
-    topMeta: `調査日 ${entry.date}`,
+    crumb: `${entry.title} · ${label}`,
+    openUrl: aiSection || overviewEnabled ? `#ai/${section}` : url,
+    topMeta: actualHistory ? '実績月次 2026-10-16確認' : `調査日 ${entry.date}`,
   });
   if (item.type === 'pdf' && url) $('pageActions').innerHTML = `<a class="button" href="${esc(url)}" download>PDFをダウンロード</a>`;
   const host = $('researchSection');
   const versionNav = versionBar(entry, item);
   const archiveNote = archived ? `<p class="notice snapshot-note archive-note" role="note"><span aria-hidden="true">⏱</span><span class="archive-text">過去の調査（${esc(entry.date)}時点）をアーカイブとして表示しています。<a href="${routeFor(newest.id, counterpartIndex(item, newest))}">最新の調査（${esc(newest.date)}）を開く →</a></span></p>` : '';
-  const note = archiveNote || `<p class="notice snapshot-note"><span aria-hidden="true">ⓘ</span>${esc(entry.date)}時点のスナップショット（現在の株価・投資判断ではありません）</p>`;
+  const note = archiveNote || (actualHistory ? '<p class="notice snapshot-note"><span aria-hidden="true">ⓘ</span>実績月次表：2026-10-15終値まで・10-16資料確認 ／ 下部グラフ：2026-10-03保存版。各時点の固定値です。</p>' : `<p class="notice snapshot-note"><span aria-hidden="true">ⓘ</span>${esc(entry.date)}時点のスナップショット（現在の株価・投資判断ではありません）</p>`);
   const token = ++renderToken;
   const title = `${entry.title} — ${item.label}`;
   // Version bar and notice share one row so the document starts close to the heading.
-  const meta = notice => (versionNav || notice) ? `<div class="viewer-meta">${versionNav}${notice}</div>` : '';
+  const context = section ? '<div class="workspace-context"><a href="#ai/overview">← AI調査の全体像</a><a href="#ai/sources">数値の基準・出典</a></div>' : '';
+  const meta = notice => `${context}${versionNav || notice ? `<div class="viewer-meta">${versionNav}${notice}</div>` : ''}`;
   if (!url) {
     host.innerHTML = `${meta('')}<p class="empty" role="alert">この資料は表示できません。</p>`;
     return;
   }
   if (item.type === 'html') {
-    host.innerHTML = `${meta(note)}<div class="viewer"><iframe class="viewer-frame" src="${esc(url)}" title="${esc(title)}" sandbox="${SANDBOX}" referrerpolicy="no-referrer"></iframe></div>`;
-    fitFrame(host.querySelector('.viewer-frame'));
+    const overview = overviewEnabled ? '<div data-ai-valuations><p class="ai-val-error" role="status">AI銘柄のEPS・PER一覧を読み込んでいます…</p></div>' : '';
+    if (overview) {
+      host.innerHTML = `${meta(note)}${overview}`;
+      mountAiValuations(host.querySelector('[data-ai-valuations]'), item);
+      return;
+    }
+    host.innerHTML = `${meta(note)}<div class="viewer${section && !archived ? ' ai-viewer' : ''}"><iframe class="viewer-frame" src="${esc(url)}" title="${esc(title)}" sandbox="${SANDBOX}" referrerpolicy="no-referrer"></iframe></div>`;
+    const frame = host.querySelector('.viewer-frame');
+    if (detail) mountAiDetail(frame, aiSection);
+    else if (section && !archived) compactAiFrame(frame);
+    fitFrame(frame);
     return;
   }
   if (item.type === 'pdf') {
@@ -213,6 +239,17 @@ function showResearch({entry, item}, anchor = '') {
     if (token !== renderToken) return;
     host.querySelector('.doc-panel').innerHTML = '<p class="empty" role="alert">資料を読み込めませんでした。</p>';
   });
+}
+
+function compactAiFrame(frame) {
+  frame.addEventListener('load', () => {
+    const doc = frame.contentDocument;
+    if (!doc?.body) return;
+    doc.body.classList.add('workspace-frame');
+    for (const href of ['/tokens.css', '/workspace.css']) {
+      const link = doc.createElement('link'); link.rel = 'stylesheet'; link.href = href; doc.head.append(link);
+    }
+  }, {once: true});
 }
 
 // Grow an HTML document's frame to its content so the page scrolls instead of the frame

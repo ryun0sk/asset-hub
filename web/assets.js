@@ -1,12 +1,13 @@
 // Loader for the weekly asset state (same shape as costs.js): fetch /api/assets, keep the last good
-// payload, and render the single 保有・推移 page into #assetSection. Chart choices (range, stacked or
+// payload, and render the selected 保有・推移 page into #assetSection. Chart choices (range, stacked or
 // lines, unchecked classes / positions) live here and survive re-renders until the page is reloaded.
-import {assetsView} from './asset-view.js';
+import {assetsView, assetPolicyView} from './asset-view.js';
 import {UiCharts} from './charts.js';
 
 let catalogRef = null, payload = null, loading = false, error = '', loadedAt = 0, range = '52', mode = 'stack', active = false;
 const hiddenClasses = new Set(), hiddenPositions = new Set();
 const TTL = 60000;
+let subview = 'all';
 
 // `status` is always an object; `state` is null until the first snapshot is pushed.
 export const validPayload = next => Boolean(next && typeof next === 'object' && next.status && typeof next.status === 'object'
@@ -18,7 +19,9 @@ function render(focus = null) {
   const root = host();
   if (!active || !root || root.hidden) return;
   UiCharts.destroy(root);
-  root.innerHTML = assetsView(payload, catalogRef, {loading, error, range, mode, hiddenClasses, hiddenPositions});
+  root.innerHTML = (subview === 'policy'
+    ? assetPolicyView(payload, {loading, error})
+    : assetsView(payload, catalogRef, {view: subview, loading, error, range, mode, hiddenClasses, hiddenPositions}));
   UiCharts.mount(root);
   const rangeSelect = root.querySelector('#asset-range');
   if (rangeSelect) rangeSelect.onchange = () => { range = rangeSelect.value; render({select: true}); };
@@ -55,10 +58,12 @@ async function load() {
 }
 
 // `catalog` links holdings to their research entries; it may still be null while the catalog loads.
-export function showAssets(catalog) {
+export function showAssets(catalog, view = 'all') {
   active = true;
+  subview = ['summary', 'all', 'holdings', 'policy'].includes(view) ? view : 'all';
   catalogRef = catalog;
-  if (!payload || Date.now() - loadedAt > TTL) load(); else render();
+  render();
+  if (!payload || Date.now() - loadedAt > TTL) load();
 }
 export const leaveAssets = () => { active = false; };
 
@@ -67,4 +72,3 @@ export function initAssets() {
   // No polling: the state changes once a week. Re-read when the tab comes back after a while.
   document.addEventListener('visibilitychange', () => { if (!document.hidden && Date.now() - loadedAt > TTL) load(); });
 }
-

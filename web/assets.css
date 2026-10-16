@@ -1,5 +1,8 @@
-/* Asset page (#a/all): one 保有・推移 view with checkbox-driven charts. Tokens only. */
+/* Asset pages: current summary, trends, holdings and policy. Tokens only. */
 .asset-page { min-width: 0; }
+.asset-policy-body { padding: var(--space-20); max-width: none; }
+.asset-policy .panel-heading { flex-wrap: wrap; gap: var(--space-8); }
+.asset-policy .panel-heading .subtle { display: block; }
 .asset-page .sync-progress {
   display: flex;
   align-items: center;
@@ -49,6 +52,29 @@
   gap: var(--space-0) var(--space-16);
 }
 .asset-grid > .panel { min-width: 0; }
+.asset-summary .asset-grid { align-items: start; }
+.asset-composition-panel .panel-heading { flex-wrap: wrap; }
+.asset-composition-table { min-width: 0; table-layout: auto; }
+.asset-composition-table th[scope="row"] {
+  position: static;
+  padding: var(--space-12) var(--space-14);
+  background: var(--surface);
+  color: var(--body);
+  font-size: var(--font-size-caption);
+  font-weight: var(--font-weight-medium);
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+.asset-composition-table tr:last-child th[scope="row"] { border-bottom: var(--space-0); }
+.asset-composition-table tr:hover th[scope="row"] { background: var(--mist); }
+.asset-composition-dot {
+  display: inline-block;
+  width: var(--space-8);
+  height: var(--space-8);
+  margin-right: var(--space-8);
+  border-radius: var(--radius-marker);
+  background: currentColor;
+}
 
 /* Holdings and movers tables. */
 .asset-table { min-width: 680px; font-size: var(--font-size-caption); }
@@ -139,12 +165,12 @@
   border-radius: var(--radius-small);
   background: currentColor;
 }
-.asset-check-swatch.cat-1 { color: var(--chart-cat-1); }
-.asset-check-swatch.cat-2 { color: var(--chart-cat-2); }
-.asset-check-swatch.cat-3 { color: var(--chart-cat-3); }
-.asset-check-swatch.cat-4 { color: var(--chart-cat-4); }
-.asset-check-swatch.cat-5 { color: var(--chart-cat-5); }
-.asset-check-swatch.cat-6 { color: var(--chart-cat-6); }
+.asset-check-swatch.cat-1, .asset-composition-dot.cat-1 { color: var(--chart-cat-1); }
+.asset-check-swatch.cat-2, .asset-composition-dot.cat-2 { color: var(--chart-cat-2); }
+.asset-check-swatch.cat-3, .asset-composition-dot.cat-3 { color: var(--chart-cat-3); }
+.asset-check-swatch.cat-4, .asset-composition-dot.cat-4 { color: var(--chart-cat-4); }
+.asset-check-swatch.cat-5, .asset-composition-dot.cat-5 { color: var(--chart-cat-5); }
+.asset-check-swatch.cat-6, .asset-composition-dot.cat-6 { color: var(--chart-cat-6); }
 .asset-mode { display: flex; align-items: center; gap: var(--space-12); margin: var(--space-0); padding: var(--space-0); border: var(--space-0); }
 .asset-mode legend { float: left; padding: var(--space-0); margin-right: var(--space-8); }
 .asset-mode label { display: inline-flex; align-items: center; gap: var(--space-4); cursor: pointer; }
@@ -164,4 +190,11 @@
   .asset-chart { padding: var(--space-0) var(--space-12) var(--space-12); }
   .asset-toolbar select { font-size: var(--font-size-large); }
   .asset-table { min-width: 560px; }
+  .asset-composition-table { min-width: 0; }
+}
+
+/* Keep the nested asset navigation reachable on narrow screens as well. */
+@media (max-width: 700px) {
+  .asset-nav-group { flex: 0 0 100%; }
+  .asset-subnav { display: grid; }
 }

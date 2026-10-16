@@ -8,7 +8,18 @@ const ROOT = path.join(__dirname, '..');
 const web = name => pathToFileURL(path.join(ROOT, 'web', name)).href;
 const FIXTURES = path.join(__dirname, 'fixtures', 'assets');
 const readJson = file => JSON.parse(fs.readFileSync(file, 'utf8'));
-const catalog = readJson(path.join(ROOT, 'research', 'catalog.json'));
+// Research snapshots change independently of asset behavior. Keep both an older and
+// newer entry here so lookup/link assertions test selection without following live data.
+const companyEntry = (code, slug, date) => ({
+  id: `${slug}-${date}`, slug, code, kind: 'company', date, title: slug,
+  items: [{label: 'レポート', type: 'md', path: `research/companies/${slug}/${date}/report.md`}],
+});
+const catalog = {groups: [{id: 'companies', assetClass: 'stock', entries: [
+  companyEntry('285A', '285A-kioxia', '2026-09-05'),
+  companyEntry('285A', '285A-kioxia', '2026-10-03'),
+  companyEntry('4062', '4062-ibiden', '2026-10-03'),
+  companyEntry('6857', '6857-advantest', '2026-10-03'),
+]}]};
 
 // The same document backend.assets build_state produces: accounts list, snapshots by date ascending.
 function buildState() {
@@ -21,6 +32,22 @@ function buildState() {
 const state = buildState();
 const payload = {state, status: {status: 'ok', pushedAt: null}};
 const sumValues = snapshot => snapshot.positions.reduce((sum, p) => sum + p.valueJpy, 0);
+
+test('policy is a separate safe view with dated private content and an empty state', async () => {
+  const {assetPolicyView, assetsView} = await import(web('asset-view.js'));
+  const policy = {date: '2026-10-05', balanceDate: '2026-10-04', title: '<b>方針</b>',
+    markdown: '## 配分\n\n**計画**\n\n<script>alert(1)</script>\n\n[危険](javascript:alert(1))'};
+  const data = {state: {...state, policy}, status: {status: 'ok'}};
+  const html = assetPolicyView(data);
+  assert.match(html, /方針更新 2026-10-05 · 残高基準 2026-10-04/);
+  assert.match(html, /<strong>計画<\/strong>/);
+  assert.match(html, /&lt;b&gt;方針/);
+  assert.doesNotMatch(html, /<script>|href="javascript:|style=/);
+  assert.doesNotMatch(assetsView(data, catalog), /<strong>計画<\/strong>/);
+  assert.match(assetPolicyView(payload), /まだ登録されていません/);
+  assert.match(assetPolicyView(null, {loading: true}), /読み込んでいます/);
+  assert.doesNotMatch(assetPolicyView(null, {loading: true}), /まだ登録/);
+});
 
 test('class labels cover every class in the fixtures and match the backend', async () => {
   const {CLASS_ORDER, CLASS_LABELS} = await import(web('asset-model.js'));
@@ -153,12 +180,12 @@ test('week rows carry a short label, the full date and the year group; formattin
   assert.equal(deltaClass(null), 'delta-flat');
 });
 
-test('assets view renders tiles, checkbox-driven charts, movers and per-class sections', async () => {
+test('trend view keeps tiles and checkbox-driven charts without duplicating holdings or movers', async () => {
   const {assetsView, EMPTY_TEXT} = await import(web('asset-view.js'));
   const html = assetsView(payload, catalog, {range: '52', mode: 'stack'});
   assert.doesNotMatch(html, /style=/);
   assert.doesNotMatch(html, /NaN|undefined|Infinity/);
-  for (const text of ['総資産', '前週比', '記録週数', '最終記録日', '資産全体の推移', '今週の増減', '資産ごとの内訳']) assert.match(html, new RegExp(text));
+  for (const text of ['総資産', '前週比', '記録週数', '最終記録日', '資産全体の推移', '資産クラスごとの推移']) assert.match(html, new RegExp(text));
   assert.match(html, /id="asset-range"/);
   assert.match(html, /name="asset-mode" value="stack" checked/);
   for (const cls of ['stock', 'fund', 'crypto', 'cash', 'private']) assert.match(html, new RegExp(`data-toggle="c:${cls}" checked`));
@@ -167,12 +194,7 @@ test('assets view renders tiles, checkbox-driven charts, movers and per-class se
   assert.doesNotMatch(html, /id="asset-class-bond"/);
   assert.equal((html.match(/class="ui-chart"/g) || []).length, 6, 'overall chart plus one per class');
   assert.match(html, /、合計 /, 'stacked charts describe a total');
-  assert.match(html, /href="#r\/4062-ibiden-2026-10-03\/0"/, 'movers and holdings link to research');
-  assert.match(html, /href="#r\/285A-kioxia-2026-10-03\/0"/);
-  assert.doesNotMatch(html, /href="#r\/[^"]*7203/);
-  assert.match(html, /<span class="asset-tag">米国<\/span>/);
-  assert.match(html, /新規/);
-  assert.match(html, /売却・解約/);
+  assert.doesNotMatch(html, /今週の増減|取得額|評価損益|asset-table|売却・解約/);
   assert.match(html, /各サイト表示の円換算評価額を週次で手入力した記録/);
   assert.doesNotMatch(html, /data-slot/);
 
@@ -182,6 +204,49 @@ test('assets view renders tiles, checkbox-driven charts, movers and per-class se
   assert.doesNotMatch(empty, /ui-chart/);
   assert.match(assetsView(null, null, {loading: true}), /読み込んでいます/);
   assert.match(assetsView(null, null, {error: 'x<y'}), /x&lt;y/);
+});
+
+
+test('summary contains current class and account composition plus movers, while holdings keeps the detailed tables', async () => {
+  const {assetsView, assetSummaryView, assetHoldingsView, homeAssetsView} = await import(web('asset-view.js'));
+  const summary = assetSummaryView(payload, catalog);
+  const details = assetHoldingsView(payload, catalog);
+  assert.equal(summary, assetsView(payload, catalog, {view: 'summary'}));
+  assert.equal(summary, homeAssetsView(payload, catalog));
+  assert.equal(details, assetsView(payload, catalog, {view: 'holdings'}));
+  for (const html of [summary, details]) {
+    assert.doesNotMatch(html, /style=|NaN|undefined|Infinity|class="ui-chart"|data-toggle=|id="asset-range"|name="asset-mode"/);
+    assert.match(html, /総資産/);
+    assert.match(html, /最終記録日/);
+    assert.match(html, /各サイト表示の円換算評価額を週次で手入力した記録/);
+    assert.match(html, /href="#r\/4062-ibiden-2026-10-03\/0"/);
+    assert.match(html, /href="#r\/285A-kioxia-2026-10-03\/0"/);
+    assert.doesNotMatch(html, /href="#r\/[^"]*7203/);
+  }
+  for (const text of ['クラス別の構成', '口座別の構成', '構成比', '今週の増減', '新規', '売却・解約']) assert.match(summary, new RegExp(text));
+  assert.equal((summary.match(/asset-composition-table/g) || []).length, 2);
+  assert.doesNotMatch(summary, /取得額|評価損益|数量/);
+  for (const text of ['数量', '取得額', '評価損益', 'クラス内比率']) assert.match(details, new RegExp(text));
+  for (const cls of ['stock', 'fund', 'crypto', 'cash', 'private']) assert.match(details, new RegExp(`id="asset-class-${cls}"`));
+  assert.doesNotMatch(details, /id="asset-class-bond"|今週の増減|asset-composition-table/);
+  assert.equal((details.match(/<table class="asset-table"/g) || []).length, 5);
+  assert.match(details, /<span class="asset-tag">米国<\/span>/);
+});
+
+test('summary and holdings preserve empty, loading and escaped content states', async () => {
+  const {assetsView, EMPTY_TEXT} = await import(web('asset-view.js'));
+  const evil = JSON.parse(JSON.stringify(state));
+  evil.snapshots.at(-1).positions.push({account: 'daiwa', class: 'stock', symbol: '9999', name: '<img src=x>', valueJpy: 5000000});
+  evil.accounts.find(a => a.id === 'daiwa').label = '<b>大和</b>';
+  for (const view of ['summary', 'holdings']) {
+    const html = assetsView({state: evil, status: {status: 'ok'}}, catalog, {view});
+    assert.doesNotMatch(html, /<img src=x>|<b>大和<\/b>/);
+    assert.match(html, /&lt;b&gt;大和/);
+    assert.match(html, /&lt;img src=x&gt;/);
+    assert.match(assetsView({state: null, status: {status: 'not_configured'}}, catalog, {view}), new RegExp(EMPTY_TEXT.replace(/[/]/g, '\\/')));
+    assert.match(assetsView(null, catalog, {view, loading: true}), /読み込んでいます/);
+    assert.match(assetsView(null, catalog, {view, error: 'x<y'}), /x&lt;y/);
+  }
 });
 
 test('unchecked classes and positions leave the charts and line mode adds a selection total', async () => {

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "deployedAt": "2026-10-16T02:48:38.315664Z",
+  "verifiedAt": "2026-10-16T03:09:14.820393+00:00",
+  "builtAt": "2026-10-16T02:44:14.376575Z",
+  "baselineRevision": "asset-hub-00032-8v7",
+  "baselineImage": "asia-northeast1-docker.pkg.dev/ryun0sk-asset-hub/asset-hub/app@sha256:745f1d7cc6f7990baad5ea07a5d0e263428bde1a41b5a4598ff539682fcfb6d8",
+  "revision": "asset-hub-00033-tnz",
+  "image": "asia-northeast1-docker.pkg.dev/ryun0sk-asset-hub/asset-hub/app@sha256:cb2877861b5b766a0401146d243fdb0855781fc95c6fb97d9b7f3a843c58116c",
+  "buildId": "f26e718e-4e09-4578-891a-8cc75a034060",
+  "url": "https://asset-hub-pvgbytjsqa-an.a.run.app/#ai/multiples",
+  "changedFiles": [
+    {
+      "path": "web/ai-detail.js",
+      "sha256": "f84aa267f2244f623ea3654201a08a8a06f6c5ece057312ca4d46787d3acbbf5"
+    },
+    {
+      "path": "web/ai-multi-chain.js",
+      "sha256": "94500264b81911da5b589309da42474ee40b5af43621f2a40971cefd76a82117"
+    }
+  ],
+  "scope": "最新AI詳細3画面（株価変化の要因・PERの推移・EPS予想／決算）の工程を複数選択可能にする。既存イメージに画面用2ファイルだけ反映。調査データ・株価・EPS・計算基準は変更しない。",
+  "behavior": [
+    "工程ボタンを個別にON/OFFし、選んだ工程の企業を重複なく表示する。",
+    "追加工程で初めて登場する企業を選択。既存企業の手動OFFを維持する。",
+    "工程を外した際は他の選択工程に属する企業を残す。",
+    "工程ゼロでは既存グラフを消去し、工程選択を案内する。",
+    "期間・企業チェック・既存のグラフ計算と月次表連動を維持する。"
+  ],
+  "checks": {
+    "overlayFilesVerified": 2,
+    "unrelatedRuntimeFilesPreserved": 281,
+    "researchDataPreserved": true,
+    "researchCatalogPreserved": true,
+    "featureTestsPassed": 34,
+    "designTokensPassed": true,
+    "archivesMatched": 6,
+    "catalogUpToDate": true,
+    "diffCheckPassed": true,
+    "settingsPreserved": true,
+    "iapVerified": true,
+    "iapViewers": 2,
+    "costJobPreserved": true,
+    "trafficPercent": 100,
+    "localNativeSafariVerified": true,
+    "localThreeStagesVerified": true,
+    "localManualOffPreservedVerified": true,
+    "localOverlappingCompaniesDeduplicatedVerified": true,
+    "localZeroStagesAndRecoveryVerified": true,
+    "productionBrowserVerified": true,
+    "productionThreeStagesVerified": true,
+    "productionSevenSelectedCompaniesVerified": true,
+    "productionTeradyneOffPreservedVerified": true,
+    "productionPeriodSwitchVerified": true,
+    "productionConsoleErrorsOrWarnings": 0,
+    "productionScreenshotVisuallyReviewed": true
+  },
+  "testsCommand": "node --test tests/test_ai_multi_chain.cjs tests/test_ai_detail.cjs tests/test_ai_actual_valuations.cjs tests/test_ai_valuations.cjs tests/test_workspace.cjs",
+  "productionBrowser": "Google Chrome / CUA。NANDフラッシュ・半導体テスト装置・実装材料／基板／加工の3工程、7社同時比較、Teradyne手動OFF維持、3か月から年初来への切替を確認。",
+  "screenshot": "2026-10-16-multi-chain-production.jpg"
+}

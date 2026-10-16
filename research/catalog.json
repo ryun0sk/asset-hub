@@ -1,12 +1,113 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-04T09:39:51Z",
+  "generatedAt": "2026-10-15T15:27:14Z",
   "groups": [
     {
       "id": "themes",
       "label": "テーマ",
       "assetClass": "stock",
       "entries": [
+        {
+          "id": "ai-actual-valuation-2026-10-16",
+          "title": "AI関連4銘柄 実績EPS・PERの推移",
+          "date": "2026-10-16",
+          "kind": "theme",
+          "slug": "ai-actual-valuation",
+          "items": [
+            {
+              "label": "レポート",
+              "path": "research/themes/ai-actual-valuation/2026-10-16/report.md",
+              "type": "md"
+            },
+            {
+              "label": "README・資料一覧",
+              "path": "research/themes/ai-actual-valuation/2026-10-16/README.md",
+              "type": "md"
+            }
+          ]
+        },
+        {
+          "id": "ai-stock-selloff-2026-10-15",
+          "title": "キオクシア・AI関連株の急落要因",
+          "date": "2026-10-15",
+          "kind": "theme",
+          "slug": "ai-stock-selloff",
+          "items": [
+            {
+              "label": "レポート",
+              "path": "research/themes/ai-stock-selloff/2026-10-15/report.md",
+              "type": "md"
+            },
+            {
+              "label": "README・資料一覧",
+              "path": "research/themes/ai-stock-selloff/2026-10-15/README.md",
+              "type": "md"
+            },
+            {
+              "label": "関連資料・着想元",
+              "path": "research/themes/ai-stock-selloff/2026-10-15/related-links.md",
+              "type": "md"
+            }
+          ]
+        },
+        {
+          "id": "data-center-cooling-2026-10-12",
+          "title": "データセンター向け冷却装置の上場企業",
+          "date": "2026-10-12",
+          "kind": "theme",
+          "slug": "data-center-cooling",
+          "items": [
+            {
+              "label": "レポート",
+              "path": "research/themes/data-center-cooling/2026-10-12/report.md",
+              "type": "md"
+            },
+            {
+              "label": "README・資料一覧",
+              "path": "research/themes/data-center-cooling/2026-10-12/README.md",
+              "type": "md"
+            },
+            {
+              "label": "関連資料・着想元",
+              "path": "research/themes/data-center-cooling/2026-10-12/related-links.md",
+              "type": "md"
+            },
+            {
+              "label": "kimura-20260515-results.pdf",
+              "path": "research/themes/data-center-cooling/2026-10-12/sources/kimura-20260515-results.pdf",
+              "type": "pdf"
+            },
+            {
+              "label": "sinko-20260611-results.pdf",
+              "path": "research/themes/data-center-cooling/2026-10-12/sources/sinko-20260611-results.pdf",
+              "type": "pdf"
+            }
+          ]
+        },
+        {
+          "id": "market-crash-risk-2026-10-12",
+          "title": "株式市場のクラッシュ 過去のパターンと警戒指標",
+          "date": "2026-10-12",
+          "kind": "theme",
+          "slug": "market-crash-risk",
+          "items": [
+            {
+              "label": "レポート",
+              "path": "research/themes/market-crash-risk/2026-10-12/report.md",
+              "type": "md"
+            },
+            {
+              "label": "README・資料一覧",
+              "path": "research/themes/market-crash-risk/2026-10-12/README.md",
+              "type": "md"
+            },
+            {
+              "label": "関連資料・着想元",
+              "path": "research/themes/market-crash-risk/2026-10-12/related-links.md",
+              "type": "md"
+            }
+          ]
+        },
         {
           "id": "ai-business-quality-2026-10-04",
           "title": "AI関連銘柄 ビジネスモデルの強さと目標達成の条件",
@@ -187,6 +288,195 @@
       "label": "企業",
       "assetClass": "stock",
       "entries": [
+        {
+          "id": "4062-ibiden-2026-10-16",
+          "title": "イビデン（4062）",
+          "date": "2026-10-16",
+          "kind": "company",
+          "slug": "4062-ibiden",
+          "items": [
+            {
+              "label": "レポート",
+              "path": "research/companies/4062-ibiden/2026-10-16/report.md",
+              "type": "md"
+            },
+            {
+              "label": "調査の前提・資料",
+              "path": "research/companies/4062-ibiden/2026-10-16/README.md",
+              "type": "md"
+            }
+          ],
+          "code": "4062"
+        },
+        {
+          "id": "6146-disco-2026-10-16",
+          "title": "ディスコ（6146）",
+          "date": "2026-10-16",
+          "kind": "company",
+          "slug": "6146-disco",
+          "items": [
+            {
+              "label": "レポート",
+              "path": "research/companies/6146-disco/2026-10-16/report.md",
+              "type": "md"
+            },
+            {
+              "label": "README・資料一覧",
+              "path": "research/companies/6146-disco/2026-10-16/README.md",
+              "type": "md"
+            }
+          ],
+          "code": "6146"
+        },
+        {
+          "id": "285A-kioxia-2026-10-15",
+          "title": "キオクシア（285A）",
+          "date": "2026-10-15",
+          "kind": "company",
+          "slug": "285A-kioxia",
+          "items": [
+            {
+              "label": "投資判断レポート",
+              "path": "research/companies/285A-kioxia/2026-10-15/report.md",
+              "type": "md"
+            },
+            {
+              "label": "資料・引き継ぎ",
+              "path": "research/companies/285A-kioxia/2026-10-15/README.md",
+              "type": "md"
+            },
+            {
+              "label": "関連資料・着想元",
+              "path": "research/companies/285A-kioxia/2026-10-15/related-links.md",
+              "type": "md"
+            },
+            {
+              "label": "評価モデル",
+              "path": "research/companies/285A-kioxia/2026-10-15/valuation.mjs",
+              "type": "code"
+            }
+          ],
+          "code": "285A"
+        },
+        {
+          "id": "6857-advantest-2026-10-15",
+          "title": "アドバンテスト（6857）",
+          "date": "2026-10-15",
+          "kind": "company",
+          "slug": "6857-advantest",
+          "items": [
+            {
+              "label": "レポート",
+              "path": "research/companies/6857-advantest/2026-10-15/report.md",
+              "type": "md"
+            },
+            {
+              "label": "調査の前提・資料",
+              "path": "research/companies/6857-advantest/2026-10-15/README.md",
+              "type": "md"
+            }
+          ],
+          "code": "6857"
+        },
+        {
+          "id": "TSLA-tesla-2026-10-05",
+          "title": "テスラ（TSLA）",
+          "date": "2026-10-05",
+          "kind": "company",
+          "slug": "TSLA-tesla",
+          "items": [
+            {
+              "label": "投資判断レポート",
+              "path": "research/companies/TSLA-tesla/2026-10-05/report.md",
+              "type": "md"
+            },
+            {
+              "label": "調査の前提・資料",
+              "path": "research/companies/TSLA-tesla/2026-10-05/README.md",
+              "type": "md"
+            },
+            {
+              "label": "出典・確認記録",
+              "path": "research/companies/TSLA-tesla/2026-10-05/related-links.md",
+              "type": "md"
+            },
+            {
+              "label": "評価モデル",
+              "path": "research/companies/TSLA-tesla/2026-10-05/valuation.mjs",
+              "type": "code"
+            },
+            {
+              "label": "株価チャート",
+              "path": "research/companies/TSLA-tesla/2026-10-05/stock-chart.html",
+              "type": "html"
+            }
+          ],
+          "code": "TSLA"
+        },
+        {
+          "id": "SPCX-spacex-2026-10-05",
+          "title": "SpaceX（SPCX）",
+          "date": "2026-10-05",
+          "kind": "company",
+          "slug": "SPCX-spacex",
+          "items": [
+            {
+              "label": "投資判断レポート",
+              "path": "research/companies/SPCX-spacex/2026-10-05/report.md",
+              "type": "md"
+            },
+            {
+              "label": "調査の前提・資料",
+              "path": "research/companies/SPCX-spacex/2026-10-05/README.md",
+              "type": "md"
+            },
+            {
+              "label": "出典・確認記録",
+              "path": "research/companies/SPCX-spacex/2026-10-05/related-links.md",
+              "type": "md"
+            },
+            {
+              "label": "評価モデル",
+              "path": "research/companies/SPCX-spacex/2026-10-05/valuation.mjs",
+              "type": "code"
+            },
+            {
+              "label": "株価チャート",
+              "path": "research/companies/SPCX-spacex/2026-10-05/stock-chart.html",
+              "type": "html"
+            }
+          ],
+          "code": "SPCX"
+        },
+        {
+          "id": "US-starlink-2026-10-05",
+          "title": "Starlink（SpaceXの通信事業）",
+          "date": "2026-10-05",
+          "kind": "company",
+          "slug": "US-starlink",
+          "items": [
+            {
+              "label": "事業・投資判断レポート",
+              "path": "research/companies/US-starlink/2026-10-05/report.md",
+              "type": "md"
+            },
+            {
+              "label": "調査の前提・資料",
+              "path": "research/companies/US-starlink/2026-10-05/README.md",
+              "type": "md"
+            },
+            {
+              "label": "出典・確認記録",
+              "path": "research/companies/US-starlink/2026-10-05/related-links.md",
+              "type": "md"
+            },
+            {
+              "label": "SpaceX株価（参考）",
+              "path": "research/companies/US-starlink/2026-10-05/stock-chart.html",
+              "type": "html"
+            }
+          ]
+        },
         {
           "id": "285A-kioxia-2026-10-03",
           "title": "キオクシア（285A）",

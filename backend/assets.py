@@ -322,10 +322,27 @@ def load_sources(directory, today=None, skip_dates=()):
     return accounts, snapshots, warnings
 
 
+def load_policy(directory):
+    """Optional private policy, carried with state rather than shipped in the web bundle."""
+    path = Path(directory) / 'policy.json'
+    if not path.exists():
+        return None
+    data = _read_json(path, 'policy.json')
+    if not isinstance(data, dict):
+        raise ValueError('policy.json: オブジェクトではありません')
+    for key in ('date', 'balanceDate'):
+        if _iso_date(data.get(key)) is None:
+            raise ValueError(f'policy.json: {key} は YYYY-MM-DD 形式にしてください')
+    for key, limit in (('title', 200), ('markdown', 100000)):
+        if not _text(data.get(key)) or len(data[key]) > limit:
+            raise ValueError(f'policy.json: {key} は1〜{limit}文字の文字列にしてください')
+    return {key: data[key] for key in ('date', 'balanceDate', 'title', 'markdown')}
+
+
 def mirror(directory, target, state_path=None):
     """Copy the sources and the built state to another folder (for example under iCloud)."""
     directory, target = Path(directory), Path(target)
-    sources = {'accounts.json': directory / 'accounts.json',
+    sources = {'accounts.json': directory / 'accounts.json', 'policy.json': directory / 'policy.json',
                'state.json': Path(state_path) if state_path else directory / 'state.json'}
     for path in sorted((directory / 'snapshots').glob('*.json')):
         sources[f'snapshots/{path.name}'] = path
@@ -420,6 +437,9 @@ def main(argv=None):
         for warning in warnings:
             print(warning, file=sys.stderr, flush=True)
         state = build_state(accounts, snapshots, now)
+        policy = load_policy(directory)
+        if policy is not None:
+            state['policy'] = policy
         if args.command == 'validate':
             _emit({'assetsValidate': 'ok', 'snapshots': len(snapshots), 'latestDate': state['latestDate'],
                    'warnings': len(warnings)})

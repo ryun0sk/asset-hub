@@ -1,0 +1,57 @@
+{
+  "deployedAt": "2026-10-12T14:12:40.828600Z",
+  "verifiedAt": "2026-10-12T14:19:49.316348+00:00",
+  "baselineRevision": "asset-hub-00028-hfd",
+  "baselineImage": "asia-northeast1-docker.pkg.dev/ryun0sk-asset-hub/asset-hub/app@sha256:0e97331af43c9b789ddf0918ff47e48690e27d6c91f95e1c633d45f2cca1b1e4",
+  "revision": "asset-hub-00029-4h9",
+  "image": "asia-northeast1-docker.pkg.dev/ryun0sk-asset-hub/asset-hub/app@sha256:d2554a0f56b1836e74d82aeab5c1c51d2872076eff92f657f44f3b653f679282",
+  "buildId": "6431b569-b473-436f-901c-21f8d5d005ae",
+  "url": "https://asset-hub-pvgbytjsqa-an.a.run.app/#ai/overview",
+  "trafficPercent": 100,
+  "settingsPreserved": true,
+  "ignoredGeneratedFields": [
+    "spec.template.metadata.labels.client.knative.dev/nonce"
+  ],
+  "iapVerified": true,
+  "costJobPreserved": true,
+  "builtAt": "2026-10-12T14:11:15.339673Z",
+  "schema": 1,
+  "branch": "codex/ai-eps-per-table",
+  "changedFiles": [
+    {
+      "path": "web/app.js",
+      "sha256": "2e8cb5518f55c4bf2cb5c92b2d077a43576dd5fe4e676f50d142ec92524f8eac"
+    },
+    {
+      "path": "web/workspace.css",
+      "sha256": "a8b6a42b51d063da6f371953be2b1b5dbcb83748c4680fed8280e89b817a120b"
+    },
+    {
+      "path": "web/ai-detail.css",
+      "sha256": "a410351526bd8c987d1f23033028ddf6c00ff8725bebd9a1aa7c3373a5da641b"
+    }
+  ],
+  "allOtherRuntimeFilesPreserved": true,
+  "researchDataRefreshed": false,
+  "checks": {
+    "workspaceNodeTests": 18,
+    "stagedNodeTests": 18,
+    "designTokensPassed": true,
+    "archivesMatched": 3,
+    "productionDesktopVerified": true,
+    "productionMobile390pxVerified": true,
+    "stagedMobile320pxVerified": true,
+    "priceAndGuideExtraTopSpacingRemoved": true,
+    "unselectedPerBlankPanelHidden": true,
+    "reselectedPerChartRestored": true,
+    "keyboardFocusVisible": true,
+    "trafficPercent": 100,
+    "settingsPreserved": true,
+    "iapVerified": true,
+    "costJobPreserved": true
+  },
+  "screenshots": [
+    "2026-10-12-ui-cleanup-production.jpg",
+    "2026-10-12-ui-cleanup-mobile.jpg"
+  ]
+}

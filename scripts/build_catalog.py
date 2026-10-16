@@ -42,10 +42,14 @@ FILES = {
     "README.md": ("md", "README・資料一覧"),
     "related-links.md": ("md", "関連資料・着想元"),
     "valuation.mjs": ("code", "評価モデル"),
+    "stock-chart.html": ("html", "株価チャート"),
 }
 # Manual overrides, keyed by slug. Titles fall back to the root README table.
 TITLE_OVERRIDES = {}
 LABEL_OVERRIDES = {
+    "TSLA-tesla": {"report.md": "投資判断レポート", "README.md": "調査の前提・資料", "related-links.md": "出典・確認記録"},
+    "SPCX-spacex": {"report.md": "投資判断レポート", "README.md": "調査の前提・資料", "related-links.md": "出典・確認記録"},
+    "US-starlink": {"report.md": "事業・投資判断レポート", "README.md": "調査の前提・資料", "related-links.md": "出典・確認記録", "stock-chart.html": "SpaceX株価（参考）"},
     "ai-supply-chain": {"report.md": "工程別レポート", "README.md": "調査範囲・出典方針"},
     "photonics": {"index.html": "株価比較チャート", "report.md": "考察レポート"},
     "ai-year-end-comparison": {"report.md": "比較レポート", "README.md": "調査範囲・前提"},

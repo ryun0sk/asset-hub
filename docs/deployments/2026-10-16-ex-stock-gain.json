@@ -1,0 +1,114 @@
+{
+  "schema": 1,
+  "deployedAt": "2026-10-16T01:21:24.625742Z",
+  "verifiedAt": "2026-10-16T01:25:26.631932+00:00",
+  "builtAt": "2026-10-16T01:20:36.226046Z",
+  "baselineRevision": "asset-hub-00031-wc4",
+  "baselineImage": "asia-northeast1-docker.pkg.dev/ryun0sk-asset-hub/asset-hub/app@sha256:e9328bb860289636483db33566c1104ab38258ad816846c0e5767ccc2f924ecd",
+  "revision": "asset-hub-00032-8v7",
+  "image": "asia-northeast1-docker.pkg.dev/ryun0sk-asset-hub/asset-hub/app@sha256:745f1d7cc6f7990baad5ea07a5d0e263428bde1a41b5a4598ff539682fcfb6d8",
+  "buildId": "5e80b8af-b096-4ccf-bd89-4dd069812e5a",
+  "url": "https://asset-hub-pvgbytjsqa-an.a.run.app/#ai/multiples",
+  "stockPriceAsOf": "2026-10-15",
+  "changedFiles": [
+    {
+      "path": "web/ai-actual-valuations.js",
+      "sha256": "92161d37ac567ba4dc1308d2955bbfd997dc39194916814ac34d09c723cab0da"
+    },
+    {
+      "path": "research/companies/4062-ibiden/2026-10-16/README.md",
+      "sha256": "d191874af3cd17eddf90f3e2d147125b7d0017cac098e93e997bd5fe07c58732"
+    },
+    {
+      "path": "research/companies/4062-ibiden/2026-10-16/report.md",
+      "sha256": "bd24cf23a8142ef644d2c3b42452890bf38d920cb71dda60ff6e414a93e04609"
+    },
+    {
+      "path": "research/themes/ai-actual-valuation/2026-10-16/README.md",
+      "sha256": "d0663d282a98a255095728e8b5fcc19efc33b02cbfee7bbb1caabb550c1df6d0"
+    },
+    {
+      "path": "research/themes/ai-actual-valuation/2026-10-16/report.md",
+      "sha256": "674fcefdca3b1816b7af6d672f5283325d9a37192bf95a51f341871d750041e4"
+    },
+    {
+      "path": "research/themes/ai-actual-valuation/2026-10-16/valuation-history.json",
+      "sha256": "2d807ba11aac3c376ab2e1c9dc69bddbd3c94b6fba7120bd7edab8e0bfc97869"
+    },
+    {
+      "path": "research/themes/ai-actual-valuation/2026-10-16/valuation-history.csv",
+      "sha256": "aa034a94681fc80e0674c8706777971ce22cf187536639963d51efc004eea816"
+    },
+    {
+      "path": "research/companies/4062-ibiden/2026-10-16/ex-stock-gain-inputs.json",
+      "sha256": "509b2ef5e4d4c5780510b0f09f6cf2d0fed45fce54d60a97d496e7b0788a406b"
+    },
+    {
+      "path": "research/companies/4062-ibiden/2026-10-16/ex-stock-gain.json",
+      "sha256": "9e3b06916b1f114ef3f4b3bba7dc6c3e1fbd48225d056dbb152eb77aaf0a6edc"
+    },
+    {
+      "path": "research/companies/4062-ibiden/2026-10-16/ex-stock-gain-daily.csv",
+      "sha256": "df430396ec939ac72fec7e622783bc72dde7603cb7078152d5cc786c597a6a38"
+    },
+    {
+      "path": "research/companies/4062-ibiden/2026-10-16/ex-stock-gain-monthly.csv",
+      "sha256": "1d1d8e5e909676774c3218ac32f56f2817322b1c0d70ca96d10a40b0ff23f933"
+    },
+    {
+      "path": "research/companies/4062-ibiden/2026-10-16/ex-stock-gain.md",
+      "sha256": "7cc35c8538ccaa12deb4fa9b52c5f491dd77222b111d2dcb7160df9b41361f1f"
+    }
+  ],
+  "scope": "イビデンの豊田自動織機売却益491.44億円のみ除外。税率29.9%仮定の推計を、元の4社実績に追加。その他ローカル変更は非反映。",
+  "checks": {
+    "overlayFilesVerified": 12,
+    "unrelatedRuntimeFilesPreserved": 270,
+    "reportedCompanyMonthlyRows": 44,
+    "adjustedMonthlyRows": 11,
+    "researchCatalogPreserved": true,
+    "sourceHashesVerified": 5,
+    "featureTestsPassed": 28,
+    "postDocumentationRegenerationTestsPassed": 10,
+    "independentFinancialAuditPassed": true,
+    "all190DailyRowsIndependentlyRecalculated": true,
+    "reportedSourceHistoriesPreserved": true,
+    "original44MonthlyRowsPreserved": true,
+    "adjustedTradingDays": 107,
+    "firstAdjustedTradingDay": "2026-05-12",
+    "designTokensPassed": true,
+    "archivesMatched": 6,
+    "catalogUpToDate": true,
+    "settingsPreserved": true,
+    "iapVerified": true,
+    "costJobPreserved": true,
+    "trafficPercent": 100,
+    "localNativeSafariComparisonVerified": true,
+    "localNativeSafariBasisSwitchVerified": true,
+    "localNativeSafariSourceLinkVerified": true,
+    "productionBrowserVerified": true,
+    "productionComparisonFiveRowsVerified": true,
+    "productionAdjustedMonthlyTableVerified": true,
+    "productionReportedBasisRestoredVerified": true,
+    "productionSourceLinkVerified": true,
+    "productionScreenshotVisuallyReviewed": true
+  },
+  "methodology": {
+    "pretaxGainJPYMillion": 49144,
+    "assumedTaxRate": 0.299,
+    "estimatedAfterTaxGainJPYMillion": 34449.944,
+    "dilutedDenominatorShares": 589655250,
+    "ttmEPS": 57.97112604992493,
+    "ttmPER": 158.92394417292726,
+    "halfYearAnnualizedEPS": 51.73225209984985,
+    "halfYearAnnualizedPER": 178.0900623119545
+  },
+  "limitations": [
+    "売却固有の税引後額は非開示。法定実効税率29.9%を仮定する独自推計。",
+    "除外対象は豊田自動織機売却益のみ。他の売却益・減損等は残す。",
+    "元の公表累計EPS差分と同じ通期分母を使用する概算。千株単位の潜在株式数の丸めを含む。",
+    "会社の政策投資株全体・税引後換算345億円とは対象範囲と丸めが異なる。",
+    "株価・会社予想は更新せず10/15終値基準を保持。"
+  ],
+  "productionBrowser": "Google Chrome / native CUA。比較表5行、除外推計158.9/178.1、最新EPS57.97/51.73、実績へ戻した79.2/54.7・116.40/168.58と専用出典リンクを確認。画像は会話内で確認。"
+}

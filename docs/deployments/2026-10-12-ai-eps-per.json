@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "deployedAt": "2026-10-12T10:30:27.716534+09:00",
+  "branch": "codex/ai-eps-per-table",
+  "project": "ryun0sk-asset-hub",
+  "region": "asia-northeast1",
+  "service": "asset-hub",
+  "url": "https://asset-hub-pvgbytjsqa-an.a.run.app/#r/ai-supply-chain-2026-10-03/3",
+  "baselineRevision": "asset-hub-00026-sq8",
+  "baselineImage": "asia-northeast1-docker.pkg.dev/ryun0sk-asset-hub/asset-hub/app@sha256:3bb1ba31634417a04bc5e268691fb1dae3106e010a5dfedb1b4026cf5ec10080",
+  "revision": "asset-hub-00027-k2x",
+  "image": "asia-northeast1-docker.pkg.dev/ryun0sk-asset-hub/asset-hub/app@sha256:220435740338f60162cb21d418924e49ab02d8a65ae4857a2235a71f6c3ebd7e",
+  "buildId": "361c0e06-0519-4d40-a73f-2475873b9252",
+  "strategy": "immutable production base image with four frontend files copied",
+  "changedFiles": [
+    {
+      "path": "web/ai-valuations.css",
+      "action": "added",
+      "beforeSha256": null,
+      "afterSha256": "8155c043d2831323a01ead474c87ecb0d48508a259b11f9cfeed107f8cbb2739"
+    },
+    {
+      "path": "web/ai-valuations.js",
+      "action": "added",
+      "beforeSha256": null,
+      "afterSha256": "563bc9aa6d2cc2c33301a5ec651db5bec46c0f2cd80865993c02697740a0f444"
+    },
+    {
+      "path": "web/app.js",
+      "action": "modified",
+      "beforeSha256": "6b8547993f43707311c4dc965c7e82b6c13db462115a0ddc5d9503b451237810",
+      "afterSha256": "b2086b11a689f7ac4e4b6e7b55974301597e863731fbc319b8741d554d068308"
+    },
+    {
+      "path": "web/index.html",
+      "action": "modified",
+      "beforeSha256": "c1437f9c23e99dd52498cb1890f0ca7fb14ed53bff43d63596e3c53425c499c3",
+      "afterSha256": "e371b60d69df88f56f365e780b0ba7e72b3bf49346ac48a1345d5f01b899f994"
+    }
+  ],
+  "checks": {
+    "ready": true,
+    "imageDigestVerified": true,
+    "trafficPercent": 100,
+    "settingsPreserved": true,
+    "iapVerified": true,
+    "costJobPreserved": true,
+    "browserVerified": true,
+    "displayedCompanies": 43,
+    "searchVerified": true,
+    "groupFilterVerified": true,
+    "perSortVerified": true
+  },
+  "screenshot": "2026-10-12-ai-eps-per-production.jpg"
+}

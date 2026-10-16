@@ -1,0 +1,39 @@
+{
+  "checkedOn": "2026-10-12",
+  "checkTimezone": "Asia/Tokyo",
+  "method": "Manually transcribed latest observations displayed on the linked FRED series pages. Not a live feed or a crash probability model.",
+  "observations": [
+    {
+      "series": "VIXCLS",
+      "source": "Chicago Board Options Exchange via FRED",
+      "url": "https://fred.stlouisfed.org/series/VIXCLS",
+      "observationDate": "2026-10-08",
+      "pageUpdatedOn": "2026-10-09",
+      "value": 15.41,
+      "units": "Index",
+      "frequency": "Daily close"
+    },
+    {
+      "series": "BAMLH0A0HYM2",
+      "source": "ICE Data Indices via FRED",
+      "url": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
+      "observationDate": "2026-10-08",
+      "pageUpdatedOn": "2026-10-09",
+      "value": 3.15,
+      "units": "Percent option-adjusted spread",
+      "frequency": "Daily close"
+    },
+    {
+      "series": "STLFSI4",
+      "source": "Federal Reserve Bank of St. Louis via FRED",
+      "url": "https://fred.stlouisfed.org/series/STLFSI4",
+      "observationDate": "2026-10-02",
+      "pageUpdatedOn": "2026-10-07",
+      "value": -0.4681,
+      "units": "Index, long-run average zero",
+      "frequency": "Weekly ending Friday",
+      "previousObservationDate": "2026-09-25",
+      "previousValue": -0.8091
+    }
+  ]
+}
