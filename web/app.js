@@ -3,7 +3,9 @@ import {showAssets, leaveAssets, initAssets} from './assets.js';
 import {renderMarkdown} from './markdown.js';
 import {isAiValuationView, mountAiValuations} from './ai-valuations.js';
 import {AI_DETAIL_SECTIONS, mountAiDetail} from './ai-detail.js';
-import {ASSET_SECTIONS, AI_SECTIONS, aiEntry, aiDocument, aiSectionForResearch, renderHomeHub, renderAiHub, mountResearchLibrary} from './workspace.js';
+import {mountMboPanel} from './mbo-panel.js';
+import {mountForwardRanking} from './ai-forward-ranking.js';
+import {ASSET_SECTIONS, MBO_SECTIONS, AI_SECTIONS, aiEntry, aiDocument, aiSectionForResearch, renderHomeHub, renderAiHub, mountResearchLibrary, createMboPanelLifecycle} from './workspace.js';
 import {KIND_LABELS, parseRoute, routeFor, lookup, routeForPath, fileUrl, itemUrl, versionsOf, counterpartIndex} from './catalog.js';
 
 const $ = id => document.getElementById(id);
@@ -22,6 +24,9 @@ const SANDBOX = 'allow-scripts allow-same-origin allow-popups allow-popups-to-es
 
 let catalog = null, catalogError = '', renderToken = 0;
 const textCache = new Map();
+const mboPanel = createMboPanelLifecycle($('mboSection'), mountMboPanel, {
+  onError: () => { $('mboSection').textContent = 'MBO調査を読み込めませんでした。ページを再読み込みしてください。'; },
+});
 
 async function loadCatalog() {
   try {
@@ -77,6 +82,16 @@ function syncNav(view, found, route) {
       if (selected) link.setAttribute('aria-current', 'page'); else link.removeAttribute('aria-current');
     });
   }
+  const mboSubnav = $('mboSubnav');
+  if (mboSubnav) {
+    mboSubnav.hidden = view !== 'mbo';
+    const section = MBO_SECTIONS[route.section] ? route.section : 'candidates';
+    mboSubnav.querySelectorAll('[data-mbo-section]').forEach(link => {
+      const selected = view === 'mbo' && link.dataset.mboSection === section;
+      link.classList.toggle('selected', selected);
+      if (selected) link.setAttribute('aria-current', 'page'); else link.removeAttribute('aria-current');
+    });
+  }
   const librarySubnav = $('librarySubnav');
   if (librarySubnav) {
     librarySubnav.hidden = view !== 'research' || Boolean(aiSection) || !found;
@@ -103,6 +118,7 @@ function parseView(route) {
   const found = lookup(catalog, route);
   if (route.view === 'library') return 'library';
   if (route.view === 'ai') return 'ai';
+  if (route.view === 'mbo') return 'mbo';
   return route.view === 'research' && (found || (!catalog && !catalogError)) ? 'research' : route.view === 'cost' ? 'cost' : route.view === 'asset' ? 'asset' : 'home';
 }
 
@@ -115,9 +131,11 @@ function changeView() {
   $('researchSection').hidden = !['research', 'ai'].includes(view);
   $('costSection').hidden = view !== 'cost';
   $('assetSection').hidden = view !== 'asset';
+  $('mboSection').hidden = view !== 'mbo';
   $('pageActions').innerHTML = '';
   syncNav(view, found, route);
   if (view !== 'asset') leaveAssets();
+  if (view !== 'mbo') mboPanel.leave();
   if (view === 'cost') {
     setHead({eyebrow: 'COST', title: 'コスト', meta: '', crumb: 'コスト'});
     showCosts();
@@ -127,6 +145,11 @@ function changeView() {
     showAssets(catalog, route.cls);
   } else if (view === 'ai') {
     showAi(route.section);
+  } else if (view === 'mbo') {
+    const section = MBO_SECTIONS[route.section] ? route.section : 'candidates';
+    const definition = MBO_SECTIONS[section];
+    setHead({eyebrow: 'MBO RESEARCH', title: `MBO調査 · ${definition.label}`, meta: definition.description, crumb: `MBO調査 / ${definition.label}`});
+    mboPanel.show(section);
   } else if (view === 'library') {
     setHead({eyebrow: 'LIBRARY', title: '調査ライブラリ', meta: 'テーマ・企業ごとに、レポート・元資料・過去の版を探す', crumb: '調査ライブラリ'});
     if (catalog) mountResearchLibrary($('homeSection'), catalog); else $('homeSection').innerHTML = catalogStatus();
@@ -157,6 +180,11 @@ function showAi(section = 'overview') {
     return;
   }
   const definition = AI_SECTIONS.find(item => item.id === section);
+  if (section === 'forward') {
+    setHead({eyebrow: 'AI RESEARCH', title: definition.label, meta: '46社 · 株価2026-10-16終値 · 2028〜2029年の独自シナリオ', crumb: `AI調査 / ${definition.label}`, compact: true});
+    mountForwardRanking($('researchSection'));
+    return;
+  }
   if (definition?.view) {
     const found = aiDocument(catalog, section);
     if (found) { showResearch(found, '', {aiSection: section}); return; }
@@ -189,17 +217,17 @@ function showResearch({entry, item, index}, anchor = '', {aiSection = ''} = {}) 
   const label = overviewEnabled ? 'EPS・PER一覧' : aiSection ? definition?.label || item.label : item.label;
   setHead({
     title: label,
-    meta: actualHistory ? `${entry.title} · 実績月次 2026-10-16確認 · グラフ保存版 ${entry.date}` : `${entry.title} · 保存版 ${entry.date}${archived ? ' · アーカイブ' : ''}`,
+    meta: actualHistory ? `${entry.title} · 実績月次 2026-10-18確認 · グラフ保存版 ${entry.date}` : `${entry.title} · 保存版 ${entry.date}${archived ? ' · アーカイブ' : ''}`,
     compact: true,
     crumb: `${entry.title} · ${label}`,
     openUrl: aiSection || overviewEnabled ? `#ai/${section}` : url,
-    topMeta: actualHistory ? '実績月次 2026-10-16確認' : `調査日 ${entry.date}`,
+    topMeta: actualHistory ? '実績月次 2026-10-18確認' : `調査日 ${entry.date}`,
   });
   if (item.type === 'pdf' && url) $('pageActions').innerHTML = `<a class="button" href="${esc(url)}" download>PDFをダウンロード</a>`;
   const host = $('researchSection');
   const versionNav = versionBar(entry, item);
   const archiveNote = archived ? `<p class="notice snapshot-note archive-note" role="note"><span aria-hidden="true">⏱</span><span class="archive-text">過去の調査（${esc(entry.date)}時点）をアーカイブとして表示しています。<a href="${routeFor(newest.id, counterpartIndex(item, newest))}">最新の調査（${esc(newest.date)}）を開く →</a></span></p>` : '';
-  const note = archiveNote || (actualHistory ? '<p class="notice snapshot-note"><span aria-hidden="true">ⓘ</span>実績月次表：2026-10-15終値まで・10-16資料確認 ／ 下部グラフ：2026-10-03保存版。各時点の固定値です。</p>' : `<p class="notice snapshot-note"><span aria-hidden="true">ⓘ</span>${esc(entry.date)}時点のスナップショット（現在の株価・投資判断ではありません）</p>`);
+  const note = archiveNote || (actualHistory ? `<p class="notice snapshot-note"><span aria-hidden="true">ⓘ</span>実績月次表：既存4社は10/15・追加の発電3社は10/16終値まで（10/18資料確認） ／ 下部グラフ：${esc(entry.date)}保存版。各行の基準日・通貨・一時利益の注記を確認できます。</p>` : `<p class="notice snapshot-note"><span aria-hidden="true">ⓘ</span>${esc(entry.date)}時点のスナップショット（現在の株価・投資判断ではありません）</p>`);
   const token = ++renderToken;
   const title = `${entry.title} — ${item.label}`;
   // Version bar and notice share one row so the document starts close to the heading.

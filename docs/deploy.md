@@ -8,7 +8,7 @@ Asset Hub の調査資料を、許可したGoogleアカウントだけが閲覧�
 |---|---|
 | Cloud Run サービス `asset-hub` | `python -m backend.server`。`web/`・`backend/`・`research/`（`working/`・`qa/`・隠しファイル・`.py`/`.cjs` を除く）をイメージに同梱。256Mi、最小0・最大1インスタンス |
 | IAP | `--iap` と `--no-allow-unauthenticated` で有効化。閲覧者は `infra/config.json` の `allowed_emails` のみ |
-| GCS `<project>-asset-state` | 費用スナップショット `costs/state.json` と資産スナップショット `assets/state.json`（[docs/assets.md](assets.md)）だけを置く非公開バケット。ダッシュボードが読むのはこの2オブジェクトのみ |
+| GCS `<project>-asset-state` | 費用 `costs/state.json`、資産 `assets/state.json`（[docs/assets.md](assets.md)）、MBOの選別済み結果 `mbo/results.json`（[docs/mbo-weekly.md](mbo-weekly.md)）を置く非公開バケット。MBOの原本・DB・計算機能はMacに残す |
 | GCS `<project>-asset-builds` | Cloud Build のソース置き場 |
 | Cloud Run Job `asset-cost-sync` | 課金エクスポート（BigQuery）からこのプロジェクト分だけを集計し `costs/state.json` に保存 |
 | Cloud Scheduler `asset-cost-sync` | 上記ジョブを毎日 01:00（Asia/Tokyo）に起動。`cost_reporting.schedule` で変更可 |

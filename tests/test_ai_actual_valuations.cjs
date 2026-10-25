@@ -252,8 +252,8 @@ test('mounted profit-basis control and comparison buttons synchronize, while com
 });
 
 test('saved four-company research renders all 44 monthly rows without losing dates, notes or numeric precision', async () => {
-  const {ACTUAL_VALUATION_PATH, validActualValuations, renderActualValuations, renderActualCompany, actualCompanyForSelection} = await helpers();
-  const saved = JSON.parse(fs.readFileSync(path.join(__dirname, '..', ACTUAL_VALUATION_PATH), 'utf8'));
+  const {validActualValuations, renderActualValuations, renderActualCompany, actualCompanyForSelection} = await helpers();
+  const saved = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'research/themes/ai-actual-valuation/2026-10-16/valuation-history.json'), 'utf8'));
   assert.equal(validActualValuations(saved), true);
   assert.deepEqual(saved.companies.map(company => company.code), ['285A', '6857', '4062', '6146']);
   const format = (value, digits) => value.toLocaleString('ja-JP', {minimumFractionDigits: digits, maximumFractionDigits: digits});
@@ -280,9 +280,9 @@ test('saved four-company research renders all 44 monthly rows without losing dat
 });
 
 test('saved stock-gain estimate preserves all reported histories, renders 11 estimated rows and respects the release boundary', async () => {
-  const {ACTUAL_VALUATION_PATH, validActualValuations, renderActualValuations, renderActualCompany} = await helpers();
+  const {validActualValuations, renderActualValuations, renderActualCompany} = await helpers();
   const read = relative => JSON.parse(fs.readFileSync(path.join(__dirname, '..', relative), 'utf8'));
-  const saved = read(ACTUAL_VALUATION_PATH), company = saved.companies.find(item => item.code === '4062');
+  const saved = read('research/themes/ai-actual-valuation/2026-10-16/valuation-history.json'), company = saved.companies.find(item => item.code === '4062');
   const close = (actual, expected, label) => assert.ok(Math.abs(actual - expected) < 1e-9, label);
   assert.equal(validActualValuations(saved), true);
   const metrics = ['closeJPY', 'ttmDilutedEPSJPY', 'trailingPER', 'halfYearAnnualizedDilutedEPSJPY', 'halfYearAnnualizedPER'];

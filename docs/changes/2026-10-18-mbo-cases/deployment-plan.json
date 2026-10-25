@@ -1,0 +1,55 @@
+{
+  "base_revision": "asset-hub-00045-l4z",
+  "base_image": "asia-northeast1-docker.pkg.dev/ryun0sk-asset-hub/asset-hub/app@sha256:99edab09974c1070295f2d80072d308324c759f2a5d4194bc94a0b2bdeb30ee5",
+  "image_tag": "asia-northeast1-docker.pkg.dev/ryun0sk-asset-hub/asset-hub/app:mbo-cases-20261018",
+  "before": {
+    "web/mbo-app.js": "26f88d6edb4eb2df2ea155d5812142141ea82194194f45fb4da3686c6d54b89e",
+    "web/mbo-panel.js": "861e52fc5aeda46954cbe640c1342ef02619fdb442466207291bf86dac138d03",
+    "web/mbo-panel.css": "83e2cb8d013c5769beca8e0e8cd7121afa12f2150e3db2b21676a103b1a22e89"
+  },
+  "after": {
+    "web/mbo-app.js": "46dc766fd0447c9173d5992bb556bfc870a0f572a2f9636d96e2cd3b38fd42ec",
+    "web/mbo-panel.js": "109ea428a6ac78ff5380825aa052175bd9bf6ae658c19f9c488d867b6467be05",
+    "web/mbo-panel.css": "136f3603f3acd972ff72500ac3559bb2c97609220ea238ae97c2054429312e01",
+    "web/mbo-cases.js": "45fb1fca0768eb1ee7fdeac6c9504dd4872dec89282a9c0315d742210e70e61f",
+    "web/mbo-case-data.js": "f4411d663ff1f48e098df2f292350859d09d023968cf3c6405429135b74afb33"
+  },
+  "added": [
+    "web/mbo-cases.js",
+    "web/mbo-case-data.js"
+  ],
+  "shared_exact_substitutions": [
+    "web/catalog.js",
+    "web/workspace.js",
+    "web/index.html"
+  ],
+  "iap_change": false,
+  "weekly_results_change": false,
+  "canonical_case_data_sha256": "13fd68404e1fc73d16cf8f1be80eb179f4ba29e255d7484303f2473af2bf71c4",
+  "initial_deployment": {
+    "build_id": "3e55aae9-8e2f-43da-9ae7-51f635b74e78",
+    "revision": "asset-hub-00046-tcw",
+    "image_digest": "asia-northeast1-docker.pkg.dev/ryun0sk-asset-hub/asset-hub/app@sha256:d0906d6e98e1772e7fedf87af9d6089ead474ea06819d71435e4a188447eaaf3",
+    "other_files_preserved": 376
+  },
+  "final_overlay": {
+    "base_revision": "asset-hub-00046-tcw",
+    "base_image": "asia-northeast1-docker.pkg.dev/ryun0sk-asset-hub/asset-hub/app@sha256:d0906d6e98e1772e7fedf87af9d6089ead474ea06819d71435e4a188447eaaf3",
+    "after": {
+      "web/mbo-app.js": "6295d524e597e165fbb5f697711c2196d3ce3b2ad27ead88a20ae9d2fe82b3d4",
+      "web/mbo-cases.js": "ee8e6e2ce37231b6d71c3d05a8e16379a819026892646244f8afb2c8e8976013"
+    },
+    "before": {
+      "web/mbo-app.js": "46dc766fd0447c9173d5992bb556bfc870a0f572a2f9636d96e2cd3b38fd42ec",
+      "web/mbo-cases.js": "45fb1fca0768eb1ee7fdeac6c9504dd4872dec89282a9c0315d742210e70e61f"
+    },
+    "build_id": "40c330cf-a313-48fb-8846-bdc25544a8a4",
+    "revision": "asset-hub-00047-99m",
+    "image_digest": "asia-northeast1-docker.pkg.dev/ryun0sk-asset-hub/asset-hub/app@sha256:4248db86be09d6552342e227610e285208d33b30207ca9548e706133e28c2291",
+    "other_files_preserved": 382
+  },
+  "revision": "asset-hub-00047-99m",
+  "build_id": "40c330cf-a313-48fb-8846-bdc25544a8a4",
+  "image_digest": "asia-northeast1-docker.pkg.dev/ryun0sk-asset-hub/asset-hub/app@sha256:4248db86be09d6552342e227610e285208d33b30207ca9548e706133e28c2291",
+  "traffic_percent": 100
+}

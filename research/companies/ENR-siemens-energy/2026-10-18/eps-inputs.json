@@ -1,0 +1,261 @@
+{
+  "symbol": "ENR.DE",
+  "name": "Siemens Energy",
+  "currency": "EUR",
+  "code": "ENR",
+  "basis": "IFRS・親会社株主帰属利益を基礎とする会社公表の希薄化後EPS。TTMは直近4四半期の公表EPS合算、半年年換算は直近2四半期合算×2の概算。",
+  "splitBasis": "各期の会社公表普通株1株当たり（EUR）。本ファイルで追加の株式分割換算は実施していない。",
+  "notes": [
+    "調査基準日2026-10-18。年度末は9月30日。2026-06-30終了のQ3 FY2026が最新の公表済み決算であり、未公表のFY2026通期は実績に含めない。",
+    "quarterlyは全期間ともConsolidated Statements of IncomeのDiluted earnings per shareを直接採用。基本EPSや特別項目前利益の1株換算ではない。赤字期の希薄化後EPSは反希薄化効果の除外により基本EPSと同じになる場合がある。",
+    "TTMは四半期ごとに異なる加重平均株数・丸め・希薄化条件を含む公表EPSの単純合算であり、単一の共通株数で再計算した厳密な12か月EPSではない。FY2025の四半期合算1.61と公式通期1.60、FY2024の合算1.36と公式通期1.35は一致しない。annualは公式通期値を別記。",
+    "日次PERは当該取引日以前のknownFromで直近のデータを選ぶ。通常はドイツ市場開始前の会社決算会見を確認した公表日をknownFromとする。FY2025 Q4はPDF本文2025-11-13と公式HTML2025-11-14が不一致のため、publishedDateはPDF本文、knownFromは保守的に2025-11-14とした。",
+    "全社Net incomeには非支配持分が含まれる。会社予想純利益約40億EURを発行株数で単純に割った独自EPSを会社予想として登録しない。",
+    "資産売却益、インド事業の分離関連益、風力事業の品質費用等を含むIFRS実績であり、継続的な利益だけを表す指標ではない。調整EPS、会社予想EPS、外部予想EPSとは区別する。",
+    "EPSが0以下の期間はPERを算出せず欠測扱いとする。半年年換算は過去半年が続くと仮定した年率換算であり、将来の会社予想ではない。",
+    "analystは未取得のためnull。株価データは本ファイルに含めない。"
+  ],
+  "quarterly": [
+    {
+      "periodEnd": "2023-12-31",
+      "publishedDate": "2024-02-07",
+      "knownFrom": "2024-02-07",
+      "eps": 1.78,
+      "source": "https://assets.siemens-energy.com/dam/db7c8e99-29a4-4c5c-b70e-b10e00e4b8f1/2024-02-07-Earnings-Release-Q1-FY24-EN-pdf_Original%20file.pdf"
+    },
+    {
+      "periodEnd": "2024-03-31",
+      "publishedDate": "2024-05-08",
+      "knownFrom": "2024-05-08",
+      "eps": 0.08,
+      "source": "https://assets.siemens-energy.com/dam/5d37b77c-3e71-4a3c-a96b-b16a0044ecff/2024-05-08-Earnings-Release_Q2-FY-2024_EN-pdf_Original%20file.pdf"
+    },
+    {
+      "periodEnd": "2024-06-30",
+      "publishedDate": "2024-08-07",
+      "knownFrom": "2024-08-07",
+      "eps": -0.16,
+      "source": "https://assets.siemens-energy.com/dam/cef1e912-2cc9-4e90-b32a-b1c500420e11/2024-08-07-Earnings-Release-and-Financial-Results-Q3-FY-2024-pdf_Original%20file.pdf"
+    },
+    {
+      "periodEnd": "2024-09-30",
+      "publishedDate": "2024-11-13",
+      "knownFrom": "2024-11-13",
+      "eps": -0.34,
+      "source": "https://assets.siemens-energy.com/dam/ed099e7a-c429-46b9-8e57-b2260127e834/Earnings-Release-Q4_EN_final-pdf_Original%20file.pdf"
+    },
+    {
+      "periodEnd": "2024-12-31",
+      "publishedDate": "2025-02-12",
+      "knownFrom": "2025-02-12",
+      "eps": 0.23,
+      "source": "https://assets.siemens-energy.com/dam/3727d9dc-aedd-4596-8671-b282004a45ef/Earnings-Release-Q1-FY-2025-pdf_Original%20file.pdf"
+    },
+    {
+      "periodEnd": "2025-03-31",
+      "publishedDate": "2025-05-08",
+      "knownFrom": "2025-05-08",
+      "eps": 0.49,
+      "source": "https://assets.siemens-energy.com/dam/f41da104-6818-4eb5-aa0e-b2d7003f58b2/Siemens_Energy_Earnings_Release_Q2-pdf_Original%20file.pdf"
+    },
+    {
+      "periodEnd": "2025-06-30",
+      "publishedDate": "2025-08-06",
+      "knownFrom": "2025-08-06",
+      "eps": 0.7,
+      "source": "https://assets.siemens-energy.com/dam/a181bfed-4213-4a9e-8d6a-b331004a9a73/2025-08-06_ER_E_final-pdf_Original%20file.pdf"
+    },
+    {
+      "periodEnd": "2025-09-30",
+      "publishedDate": "2025-11-13",
+      "knownFrom": "2025-11-14",
+      "eps": 0.19,
+      "source": "https://assets.siemens-energy.com/dam/cefb2e68-55c7-4d86-a913-b3950053facc/Earnings-Release-Q4-FY25-pdf_Original%20file.pdf"
+    },
+    {
+      "periodEnd": "2025-12-31",
+      "publishedDate": "2026-02-11",
+      "knownFrom": "2026-02-11",
+      "eps": 0.78,
+      "source": "https://assets.siemens-energy.com/dam/eb218e11-1294-4e27-a750-b3ee0059367f/Earnings-Release-Q1-FY26-EN-pdf_Original%20file.pdf"
+    },
+    {
+      "periodEnd": "2026-03-31",
+      "publishedDate": "2026-05-12",
+      "knownFrom": "2026-05-12",
+      "eps": 0.88,
+      "source": "https://assets.siemens-energy.com/dam/d38d682a-d64f-4f9e-b4fe-b4480041e5ea/2026-05-12-Earnings_Release_Q2_FY26_EN-pdf_Original%20file.pdf"
+    },
+    {
+      "periodEnd": "2026-06-30",
+      "publishedDate": "2026-08-05",
+      "knownFrom": "2026-08-05",
+      "eps": 1.26,
+      "source": "https://assets.siemens-energy.com/dam/30018eed-275d-4e73-811e-b49d004cdc3d/2026-08-05-Earnings_Release_Q3_FY26_EN-pdf_Original%20file.pdf"
+    }
+  ],
+  "annual": [
+    {
+      "periodEnd": "2024-09-30",
+      "publishedDate": "2024-11-13",
+      "knownFrom": "2024-11-13",
+      "eps": 1.35,
+      "source": "https://assets.siemens-energy.com/dam/ed099e7a-c429-46b9-8e57-b2260127e834/Earnings-Release-Q4_EN_final-pdf_Original%20file.pdf"
+    },
+    {
+      "periodEnd": "2025-09-30",
+      "publishedDate": "2025-11-13",
+      "knownFrom": "2025-11-14",
+      "eps": 1.6,
+      "source": "https://assets.siemens-energy.com/dam/cefb2e68-55c7-4d86-a913-b3950053facc/Earnings-Release-Q4-FY25-pdf_Original%20file.pdf"
+    }
+  ],
+  "ttm": [
+    {
+      "periodEnd": "2024-09-30",
+      "publishedDate": "2024-11-13",
+      "knownFrom": "2024-11-13",
+      "eps": 1.36,
+      "source": "https://assets.siemens-energy.com/dam/ed099e7a-c429-46b9-8e57-b2260127e834/Earnings-Release-Q4_EN_final-pdf_Original%20file.pdf",
+      "profitPeriodStart": "2023-10-01",
+      "halfYearAnnualizedEps": -1.0
+    },
+    {
+      "periodEnd": "2024-12-31",
+      "publishedDate": "2025-02-12",
+      "knownFrom": "2025-02-12",
+      "eps": -0.19,
+      "source": "https://assets.siemens-energy.com/dam/3727d9dc-aedd-4596-8671-b282004a45ef/Earnings-Release-Q1-FY-2025-pdf_Original%20file.pdf",
+      "profitPeriodStart": "2024-01-01",
+      "halfYearAnnualizedEps": -0.22
+    },
+    {
+      "periodEnd": "2025-03-31",
+      "publishedDate": "2025-05-08",
+      "knownFrom": "2025-05-08",
+      "eps": 0.22,
+      "source": "https://assets.siemens-energy.com/dam/f41da104-6818-4eb5-aa0e-b2d7003f58b2/Siemens_Energy_Earnings_Release_Q2-pdf_Original%20file.pdf",
+      "profitPeriodStart": "2024-04-01",
+      "halfYearAnnualizedEps": 1.44
+    },
+    {
+      "periodEnd": "2025-06-30",
+      "publishedDate": "2025-08-06",
+      "knownFrom": "2025-08-06",
+      "eps": 1.08,
+      "source": "https://assets.siemens-energy.com/dam/a181bfed-4213-4a9e-8d6a-b331004a9a73/2025-08-06_ER_E_final-pdf_Original%20file.pdf",
+      "profitPeriodStart": "2024-07-01",
+      "halfYearAnnualizedEps": 2.38
+    },
+    {
+      "periodEnd": "2025-09-30",
+      "publishedDate": "2025-11-13",
+      "knownFrom": "2025-11-14",
+      "eps": 1.61,
+      "source": "https://assets.siemens-energy.com/dam/cefb2e68-55c7-4d86-a913-b3950053facc/Earnings-Release-Q4-FY25-pdf_Original%20file.pdf",
+      "profitPeriodStart": "2024-10-01",
+      "halfYearAnnualizedEps": 1.78
+    },
+    {
+      "periodEnd": "2025-12-31",
+      "publishedDate": "2026-02-11",
+      "knownFrom": "2026-02-11",
+      "eps": 2.16,
+      "source": "https://assets.siemens-energy.com/dam/eb218e11-1294-4e27-a750-b3ee0059367f/Earnings-Release-Q1-FY26-EN-pdf_Original%20file.pdf",
+      "profitPeriodStart": "2025-01-01",
+      "halfYearAnnualizedEps": 1.94
+    },
+    {
+      "periodEnd": "2026-03-31",
+      "publishedDate": "2026-05-12",
+      "knownFrom": "2026-05-12",
+      "eps": 2.55,
+      "source": "https://assets.siemens-energy.com/dam/d38d682a-d64f-4f9e-b4fe-b4480041e5ea/2026-05-12-Earnings_Release_Q2_FY26_EN-pdf_Original%20file.pdf",
+      "profitPeriodStart": "2025-04-01",
+      "halfYearAnnualizedEps": 3.32
+    },
+    {
+      "periodEnd": "2026-06-30",
+      "publishedDate": "2026-08-05",
+      "knownFrom": "2026-08-05",
+      "eps": 3.11,
+      "source": "https://assets.siemens-energy.com/dam/30018eed-275d-4e73-811e-b49d004cdc3d/2026-08-05-Earnings_Release_Q3_FY26_EN-pdf_Original%20file.pdf",
+      "profitPeriodStart": "2025-07-01",
+      "halfYearAnnualizedEps": 4.28
+    }
+  ],
+  "companyForecast": null,
+  "companyForecastNote": "2026-08-05公表のFY2026会社予想は全社Net income約40億EURなど。親会社株主帰属・希薄化後EPSの明示予想を確認できないため会社予想EPSはnull。",
+  "analyst": null,
+  "nextEarnings": {
+    "date": "2026-11-11",
+    "source": "https://www.siemensenergy.com/global/en/home/investor-relations.html"
+  },
+  "sources": [
+    {
+      "url": "https://assets.siemens-energy.com/dam/db7c8e99-29a4-4c5c-b70e-b10e00e4b8f1/2024-02-07-Earnings-Release-Q1-FY24-EN-pdf_Original%20file.pdf",
+      "publishedDate": "2024-02-07",
+      "title": "Siemens Energy Earnings Release Q1 FY2024 / Consolidated Statements of Income（希薄化後EPS）"
+    },
+    {
+      "url": "https://assets.siemens-energy.com/dam/5d37b77c-3e71-4a3c-a96b-b16a0044ecff/2024-05-08-Earnings-Release_Q2-FY-2024_EN-pdf_Original%20file.pdf",
+      "publishedDate": "2024-05-08",
+      "title": "Siemens Energy Earnings Release Q2 FY2024 / Consolidated Statements of Income（希薄化後EPS）"
+    },
+    {
+      "url": "https://assets.siemens-energy.com/dam/cef1e912-2cc9-4e90-b32a-b1c500420e11/2024-08-07-Earnings-Release-and-Financial-Results-Q3-FY-2024-pdf_Original%20file.pdf",
+      "publishedDate": "2024-08-07",
+      "title": "Siemens Energy Earnings Release Q3 FY2024 / Consolidated Statements of Income（希薄化後EPS）"
+    },
+    {
+      "url": "https://assets.siemens-energy.com/dam/ed099e7a-c429-46b9-8e57-b2260127e834/Earnings-Release-Q4_EN_final-pdf_Original%20file.pdf",
+      "publishedDate": "2024-11-13",
+      "title": "Siemens Energy Earnings Release Q4 FY2024 / Consolidated Statements of Income（希薄化後EPS）"
+    },
+    {
+      "url": "https://assets.siemens-energy.com/dam/3727d9dc-aedd-4596-8671-b282004a45ef/Earnings-Release-Q1-FY-2025-pdf_Original%20file.pdf",
+      "publishedDate": "2025-02-12",
+      "title": "Siemens Energy Earnings Release Q1 FY2025 / Consolidated Statements of Income（希薄化後EPS）"
+    },
+    {
+      "url": "https://assets.siemens-energy.com/dam/f41da104-6818-4eb5-aa0e-b2d7003f58b2/Siemens_Energy_Earnings_Release_Q2-pdf_Original%20file.pdf",
+      "publishedDate": "2025-05-08",
+      "title": "Siemens Energy Earnings Release Q2 FY2025 / Consolidated Statements of Income（希薄化後EPS）"
+    },
+    {
+      "url": "https://assets.siemens-energy.com/dam/a181bfed-4213-4a9e-8d6a-b331004a9a73/2025-08-06_ER_E_final-pdf_Original%20file.pdf",
+      "publishedDate": "2025-08-06",
+      "title": "Siemens Energy Earnings Release Q3 FY2025 / Consolidated Statements of Income（希薄化後EPS）"
+    },
+    {
+      "url": "https://assets.siemens-energy.com/dam/cefb2e68-55c7-4d86-a913-b3950053facc/Earnings-Release-Q4-FY25-pdf_Original%20file.pdf",
+      "publishedDate": "2025-11-13",
+      "title": "Siemens Energy Earnings Release Q4 FY2025 / Consolidated Statements of Income（希薄化後EPS）"
+    },
+    {
+      "url": "https://assets.siemens-energy.com/dam/eb218e11-1294-4e27-a750-b3ee0059367f/Earnings-Release-Q1-FY26-EN-pdf_Original%20file.pdf",
+      "publishedDate": "2026-02-11",
+      "title": "Siemens Energy Earnings Release Q1 FY2026 / Consolidated Statements of Income（希薄化後EPS）"
+    },
+    {
+      "url": "https://assets.siemens-energy.com/dam/d38d682a-d64f-4f9e-b4fe-b4480041e5ea/2026-05-12-Earnings_Release_Q2_FY26_EN-pdf_Original%20file.pdf",
+      "publishedDate": "2026-05-12",
+      "title": "Siemens Energy Earnings Release Q2 FY2026 / Consolidated Statements of Income（希薄化後EPS）"
+    },
+    {
+      "url": "https://assets.siemens-energy.com/dam/30018eed-275d-4e73-811e-b49d004cdc3d/2026-08-05-Earnings_Release_Q3_FY26_EN-pdf_Original%20file.pdf",
+      "publishedDate": "2026-08-05",
+      "title": "Siemens Energy Earnings Release Q3 FY2026 / Consolidated Statements of Income（希薄化後EPS）"
+    },
+    {
+      "url": "https://www.siemensenergy.com/global/en/home/press-releases/earnings-release-q4-fy-2025.html",
+      "publishedDate": "2025-11-14",
+      "title": "FY2025 Q4公式HTML（日付の相違確認）"
+    },
+    {
+      "url": "https://www.siemensenergy.com/global/en/home/investor-relations.html",
+      "publishedDate": null,
+      "title": "Investor Relations / Financial Calendar（2026-10-18確認、次回決算2026-11-11）"
+    }
+  ]
+}

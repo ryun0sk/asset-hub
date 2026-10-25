@@ -1,0 +1,28 @@
+{
+  "base_revision": "asset-hub-00039-mdt",
+  "base_image": "asia-northeast1-docker.pkg.dev/ryun0sk-asset-hub/asset-hub/app@sha256:ca5bd647e619319c8136d416f373e87c714707037b94c372965a1a5db211811e",
+  "image_tag": "asia-northeast1-docker.pkg.dev/ryun0sk-asset-hub/asset-hub/app:mbo-tab-20261018",
+  "files": {
+    "web/index.html": "e8ea446fb2c5736c57ecd1d0770726473f5d99a30a0681a4dfb4588108573ff1",
+    "web/app.js": "ca359ecb7fe0f5180b2bd527e5c4aca8ce42e6d4a3b98ecadf97c6646c5054c7",
+    "web/catalog.js": "32b7fc0874effb63691b0a3fa04c3cf005865fb6e07db1806c07e7e836bfdeb7",
+    "web/workspace.js": "e8ad983eb870163c4bdab778f031ccbef1f8ec4cfc0715a1aa343a747e7b03dd",
+    "web/mbo-app.js": "843c5e3db482dc21255ed9ccc808b41a39df2763bfe543f05495d938ff7b89cb",
+    "web/mbo-panel.js": "59c24008731372131f7f5a5bbbb2e641eb0b38cadbd6a8cb831fae3b5223e690",
+    "web/mbo-panel.css": "83e2cb8d013c5769beca8e0e8cd7121afa12f2150e3db2b21676a103b1a22e89",
+    "backend/server.py": "01910b63c78723150298dd9de9fd2aa0cb56404711b23e3c2439908eb532aa6f",
+    "backend/paths.py": "d3177b564c3e7e4e4180a849a5dc5462adcccc69798dc602c3d12024c334573c",
+    "backend/mbo_dashboard.py": "bb3ca48fc7465098d1d2b6fce6df57a82aa0c66f01ff448b9c43dfa09ef7949f"
+  },
+  "baseline_files": {
+    "web/index.html": "36e3c0e988a1d86539fcf18642586cb37f19034380d32a1a9270e12f8dc426ff",
+    "web/catalog.js": "065e41db77436ac38d600846748332aa027c8ffaa99bf8b7d4fa02e1df157433",
+    "backend/paths.py": "de859f4e67b6e1e89b1907f8a4310fa7146454ce32b384654f79e18463ab9615",
+    "web/app.js": "5b54d1d0c5cbcf6679541cd63016894f18b1e48cdbb03b2af919dfc8daa4842a",
+    "web/workspace.js": "aee77516efbba4e260b80390841db1d1fff357304b5fc6a2e3ffdf2c1dfe156b",
+    "backend/server.py": "3df827bf50dc854c1ac9c7150d26bc76aa9301543e022d6e57af36be8915d120"
+  },
+  "data_uploaded": false,
+  "iap_change": false,
+  "other_services_changed": false
+}

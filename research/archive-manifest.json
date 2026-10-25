@@ -89,6 +89,32 @@
         "sha256": "928d4c5b7f84021a8be28440dcacd5f9d57d421986c23addfb96eea0276977c3"
       }
     },
+    "research/themes/ai-actual-valuation/2026-10-16": {
+      "README.md": {
+        "bytes": 1937,
+        "sha256": "d0663d282a98a255095728e8b5fcc19efc33b02cbfee7bbb1caabb550c1df6d0"
+      },
+      "__pycache__/build_history.cpython-314.pyc": {
+        "bytes": 15744,
+        "sha256": "cbedc9fc7e1f710b5acc0a8eccf14a13bdcfe4df6f3730f7f113bb565543cb56"
+      },
+      "build_history.py": {
+        "bytes": 11657,
+        "sha256": "2a3086e38c12bb7dfe72834e9a1d9d1543be1fa9fc4bd45d5798d0ca15d00d21"
+      },
+      "report.md": {
+        "bytes": 9814,
+        "sha256": "674fcefdca3b1816b7af6d672f5283325d9a37192bf95a51f341871d750041e4"
+      },
+      "valuation-history.csv": {
+        "bytes": 15814,
+        "sha256": "aa034a94681fc80e0674c8706777971ce22cf187536639963d51efc004eea816"
+      },
+      "valuation-history.json": {
+        "bytes": 38599,
+        "sha256": "2d807ba11aac3c376ab2e1c9dc69bddbd3c94b6fba7120bd7edab8e0bfc97869"
+      }
+    },
     "research/themes/ai-supply-chain/2026-09-05": {
       "README.md": {
         "bytes": 15458,
@@ -637,6 +663,72 @@
       "verify_dashboard.cjs": {
         "bytes": 14708,
         "sha256": "098bc3aed389b523a6baab22aaa63b925918e4f2c5075bee3d23d080e2127d13"
+      }
+    },
+    "research/themes/ai-supply-chain/2026-10-03": {
+      "README.md": {
+        "bytes": 14131,
+        "sha256": "ac9d8a4d5005bd71b31ebb3d39620aa5c52b4f981105079124bf44277d4e8a36"
+      },
+      "build_dashboard.py": {
+        "bytes": 1378,
+        "sha256": "50c1289ec64894f06128a000bfec4f0a14fc48aaf6787b0e40baffa6a94c4939"
+      },
+      "catalog.json": {
+        "bytes": 17281,
+        "sha256": "8c5c079b54d7701d1b0d1a361a87e24fd0319fc61c3afd7b9577acdc9301d2bd"
+      },
+      "dashboard.template.html": {
+        "bytes": 92866,
+        "sha256": "13ba07dd8ad31e54f0167bd358909158f2b43a96c0f4abe14de32c89b96088bf"
+      },
+      "derive_valuation.py": {
+        "bytes": 19159,
+        "sha256": "d5ba0f4c78e271efbcefbca15a832d609ec9c5847481073ee858797c64f2362f"
+      },
+      "fetch_fundamentals.py": {
+        "bytes": 16398,
+        "sha256": "0b70393009ceb79f66d461f1ccd6aee5dad0eb6bba40684c23b31f2d65d7549a"
+      },
+      "fetch_prices.py": {
+        "bytes": 5768,
+        "sha256": "3410f94dfad8d17b4dec1b50626e42ce9cbd45f9b7563d4e35020e8466085ba6"
+      },
+      "fundamentals.json": {
+        "bytes": 433285,
+        "sha256": "bc63273d600b21dd93b7769fdb9807a95d160916989eb4ce4a5406ade5f6e5ba"
+      },
+      "index.html": {
+        "bytes": 7821305,
+        "sha256": "7eef03d24dee26ac9fd7bed803a5b3373ec626efdd5ca1e8f6ed0597ccb7bc0a"
+      },
+      "prices.json": {
+        "bytes": 6643636,
+        "sha256": "bf84a16def08544891cebaf7e0920c5b9c04f0c717c986ab0bc9065562cb7471"
+      },
+      "related-links.md": {
+        "bytes": 1038,
+        "sha256": "d50a3c4ffa2bbf7642d3b390884819c85d403b159af9d05dd43c8914dd6232ad"
+      },
+      "report.md": {
+        "bytes": 41204,
+        "sha256": "96353a99a9e8431e59fb01caf199196acadab9f07cbedc667059897810f56132"
+      },
+      "sources/chart.umd.min.js": {
+        "bytes": 208522,
+        "sha256": "48444a82d4edcb5bec0f1965faacdde18d9c17db3063d042abada2f705c9f54a"
+      },
+      "valuation.json": {
+        "bytes": 425820,
+        "sha256": "d9d9f9062b831f2f9f21870918018895208bed6df0ac2943609a67e43a80306d"
+      },
+      "verify_dashboard.cjs": {
+        "bytes": 19845,
+        "sha256": "75bcf2901f571be5f3b9e3f300f4b0c5e4e546f3021f17c936f78a75e9474870"
+      },
+      "views.json": {
+        "bytes": 228,
+        "sha256": "775bc82796eba40182326f7e4eb6f87d482d8272c10071258cc4aed28ef82265"
       }
     },
     "research/themes/photonics/2026-09-05": {

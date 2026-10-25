@@ -1,0 +1,38 @@
+{
+  "baseRevision": "asset-hub-00044-6jq",
+  "baseImage": "asia-northeast1-docker.pkg.dev/ryun0sk-asset-hub/asset-hub/app@sha256:9a39d36348230f33b27ffdd2d4ed9ecc9d255d58f693b4c6fb30e117978caed2",
+  "files": {
+    "web/ai-forward-ranking.js": "438d0c5157a9d4c61a321997efa3cf80f8f27239254ac876a964427fd311e754",
+    "research/themes/ai-valuation-ranking/2026-10-18/ranking.json": "109fd2db33482967b4f83dc5f80c57e762214b3cd03734ecd4e947cbd2096a70",
+    "research/themes/ai-valuation-ranking/2026-10-18/results.json": "6352d3e1ed0adbaebcf1cd0627b2ef9b79a4c0258c553b9cef069472393f688f",
+    "research/themes/ai-valuation-ranking/2026-10-18/results.csv": "8ddbaab9f63f77c541bcd9023a7866755574511eee8b22edb52dcb60df37427d",
+    "research/themes/ai-valuation-ranking/2026-10-18/input-manifest.json": "b31ea2b602e0c0a24637e040cab7a86058374f3f551b937305d346c7778420b1",
+    "research/themes/ai-valuation-ranking/2026-10-18/report.md": "10194579dd45d5067b25c428c66ba133478ad910e6856ebe968b57422b703379",
+    "research/themes/ai-valuation-ranking/2026-10-18/README.md": "da6764a83eebda6156a48c620a1cae051b7a61442ccbfaf43e70c835e104c29f",
+    "research/themes/ai-valuation-ranking/2026-10-18/validation.json": "f636d729ebd642b68d565a1daf4615e98fb78fd5e5ecd8ac037c175de296b01c",
+    "research/themes/ai-valuation-ranking/2026-10-18/inputs/compute.json": "15a7c2c60c416378154046f713365c44ea97657a92afae74012e0a64afead2aa",
+    "research/themes/ai-valuation-ranking/2026-10-18/inputs/compute.md": "70af3a2c481679f35c90ae589df87e6420e1e1b5c5a5163763291a0463af3b96",
+    "research/themes/ai-valuation-ranking/2026-10-18/top-five-review.md": "8ee8d2a761169a7170c611e5f1b1fc079bdac1183c2e0c6794d713d6a672749e",
+    "research/themes/ai-valuation-ranking/2026-10-18/top-five-calculations.json": "33d733c969d7cd77cdfa11393571904acb0fcfba88cdf268a5caf6d1e48be2bf",
+    "research/themes/ai-valuation-ranking/2026-10-18/revisions/initial-published/ranking.json": "6cf490898635d9ad8b3bb398b165598b6063422e71a1bc8c24f9010073a1fc5d",
+    "research/themes/ai-valuation-ranking/2026-10-18/revisions/initial-published/manifest.json": "be777221db3483c82d656255754878e6db3e00be1fbf5af23680c7b872d27514",
+    "research/themes/ai-valuation-ranking/2026-10-18/revisions/initial-published/report.md": "ec3564e75ca54519726260ad9e3f88a2aa8e0aaa27ca190f361cfa83c7edaa77",
+    "research/themes/ai-valuation-ranking/2026-10-18/revisions/initial-published/inputs/compute.json": "4a82993369854e4f40eba9ad4553025d12291dadcfaf63a21b57cd373b672905"
+  },
+  "baselineFiles": {
+    "web/ai-forward-ranking.js": "9f7a2024b2d2689dda3c43520e1454d78fc8884ac609998f985bd37afcff5d52",
+    "research/themes/ai-valuation-ranking/2026-10-18/ranking.json": "6cf490898635d9ad8b3bb398b165598b6063422e71a1bc8c24f9010073a1fc5d",
+    "research/themes/ai-valuation-ranking/2026-10-18/results.json": "f71438c24b1b6c2b12698b1760b0d7ef2d76701f6b5db8d4812e0d2dcf488257",
+    "research/themes/ai-valuation-ranking/2026-10-18/results.csv": "f909285e0dce920c902b2831f9cd4b75a1d6e6e6e6b6d67a3d986d70a24bc704",
+    "research/themes/ai-valuation-ranking/2026-10-18/input-manifest.json": "0140845854b840fe9b6e17291fe869d848176976899f2b5ac89fa1a5fd6d6f35",
+    "research/themes/ai-valuation-ranking/2026-10-18/report.md": "ec3564e75ca54519726260ad9e3f88a2aa8e0aaa27ca190f361cfa83c7edaa77",
+    "research/themes/ai-valuation-ranking/2026-10-18/README.md": "ba58c6063026a77e6c80cf90c1a5cd6545a665afbc9acb867b9afdf158344c83",
+    "research/themes/ai-valuation-ranking/2026-10-18/validation.json": "58e6b5dd153a4c9d11a7e7b3c0317ceb66a01770cc3e531f0a0d670895a72a07",
+    "research/themes/ai-valuation-ranking/2026-10-18/inputs/compute.json": "4a82993369854e4f40eba9ad4553025d12291dadcfaf63a21b57cd373b672905",
+    "research/themes/ai-valuation-ranking/2026-10-18/inputs/compute.md": "f21dea0a756ba7d98a6f5f8f97906bf69b6c8e030023587fd3c61c7426a27c03"
+  },
+  "imageTag": "asia-northeast1-docker.pkg.dev/ryun0sk-asset-hub/asset-hub/app:top-five-review-20261018",
+  "catalogChange": false,
+  "iapChange": false,
+  "otherServicesChanged": false
+}

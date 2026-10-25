@@ -1,0 +1,33 @@
+{
+  "base_revision": "asset-hub-00043-7r4",
+  "base_image": "asia-northeast1-docker.pkg.dev/ryun0sk-asset-hub/asset-hub/app@sha256:e2cec08369b7c7c2424505d84fdede0f74fabe1c617286baf52f6d4d887a9120",
+  "image_tag": "asia-northeast1-docker.pkg.dev/ryun0sk-asset-hub/asset-hub/app:mbo-evidence-final-20261018",
+  "baseline_files": {
+    "backend/mbo_dashboard.py": "ff408bc947edd1f7e7fdfcbe099439a67945a7ce60ed16bdcb83f58e95cba062",
+    "web/mbo-app.js": "fdb30951d3cca0c2b6e1e665e0e7b24cfd81b099b8672178937167293a6a50ec",
+    "web/mbo-panel.js": "861e52fc5aeda46954cbe640c1342ef02619fdb442466207291bf86dac138d03"
+  },
+  "files": {
+    "backend/mbo_dashboard.py": "ff408bc947edd1f7e7fdfcbe099439a67945a7ce60ed16bdcb83f58e95cba062",
+    "web/mbo-app.js": "26f88d6edb4eb2df2ea155d5812142141ea82194194f45fb4da3686c6d54b89e",
+    "web/mbo-panel.js": "861e52fc5aeda46954cbe640c1342ef02619fdb442466207291bf86dac138d03"
+  },
+  "private_data_in_image": false,
+  "iap_change": false,
+  "new_paid_data_contract": false,
+  "build_id": "0b65d82a-8a0b-4779-922a-7c87d4f70a17",
+  "image_digest": "asia-northeast1-docker.pkg.dev/ryun0sk-asset-hub/asset-hub/app@sha256:9a39d36348230f33b27ffdd2d4ed9ecc9d255d58f693b4c6fb30e117978caed2",
+  "previous_results_generation": "1792299183240106",
+  "revision": "asset-hub-00044-6jq",
+  "results_generation": "1792301819432788",
+  "results_bytes": 837587,
+  "results_sha256": "90766a872ccc098bb6d064faff3626ddd74d0807e00158b121c3010dcb515504",
+  "published_run_id": "run-2026-10-18-3714ada8f872",
+  "initial_deployment": {
+    "base_revision": "asset-hub-00042-kb2",
+    "base_image": "asia-northeast1-docker.pkg.dev/ryun0sk-asset-hub/asset-hub/app@sha256:d19f60f2675b1a131e943093daa0bff2f91f376fe979ad1849c0d9fcff5a6943",
+    "image_digest": "asia-northeast1-docker.pkg.dev/ryun0sk-asset-hub/asset-hub/app@sha256:e2cec08369b7c7c2424505d84fdede0f74fabe1c617286baf52f6d4d887a9120",
+    "build_id": "f1e131ad-a6b0-4ff7-bb26-62c35c7a4d67",
+    "revision": "asset-hub-00043-7r4"
+  }
+}

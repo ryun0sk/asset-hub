@@ -1,0 +1,2409 @@
+{
+  "as_of": "2026-10-18 JST",
+  "price_date": "2026-10-16",
+  "provider": "Yahoo Finance public chart API",
+  "price_basis": "Daily Close in local trading currency; split adjusted, not dividend adjusted. FX is provider daily close, not same-clock fixing.",
+  "items": [
+    {
+      "symbol": "4063.T",
+      "name": "信越化学",
+      "currency": "JPY",
+      "exchange": "Tokyo",
+      "timezone": "Asia/Tokyo",
+      "last": {
+        "date": "2026-10-16",
+        "close": 5978.0,
+        "adjusted_close": 5978.0
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 6085.0,
+          "adjusted_close": 6085.0
+        },
+        {
+          "date": "2026-10-13",
+          "close": 6072.0,
+          "adjusted_close": 6072.0
+        },
+        {
+          "date": "2026-10-14",
+          "close": 6175.0,
+          "adjusted_close": 6175.0
+        },
+        {
+          "date": "2026-10-15",
+          "close": 5963.0,
+          "adjusted_close": 5963.0
+        },
+        {
+          "date": "2026-10-16",
+          "close": 5978.0,
+          "adjusted_close": 5978.0
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/4063.T?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/4063.T/history/",
+      "retrieved_at_utc": "2026-10-18T04:55:11.175968+00:00",
+      "raw_sha256": "55f44895f2b71cdc889ca0bf0da849683d0d46dfbbf6755b9d16999ebedbacf6",
+      "events": {}
+    },
+    {
+      "symbol": "3436.T",
+      "name": "SUMCO",
+      "currency": "JPY",
+      "exchange": "Tokyo",
+      "timezone": "Asia/Tokyo",
+      "last": {
+        "date": "2026-10-16",
+        "close": 2703.0,
+        "adjusted_close": 2703.0
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 3426.0,
+          "adjusted_close": 3426.0
+        },
+        {
+          "date": "2026-10-13",
+          "close": 3130.0,
+          "adjusted_close": 3130.0
+        },
+        {
+          "date": "2026-10-14",
+          "close": 3079.0,
+          "adjusted_close": 3079.0
+        },
+        {
+          "date": "2026-10-15",
+          "close": 2652.5,
+          "adjusted_close": 2652.5
+        },
+        {
+          "date": "2026-10-16",
+          "close": 2703.0,
+          "adjusted_close": 2703.0
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/3436.T?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/3436.T/history/",
+      "retrieved_at_utc": "2026-10-18T04:55:11.175509+00:00",
+      "raw_sha256": "0cc5967751f74c299355aadc9e7a8c56b5cc2971440bd5e2c4f5a09e515e33a9",
+      "events": {}
+    },
+    {
+      "symbol": "6488.TWO",
+      "name": "GlobalWafers",
+      "currency": "TWD",
+      "exchange": "Taipei Exchange",
+      "timezone": "Asia/Taipei",
+      "last": {
+        "date": "2026-10-16",
+        "close": 902.0,
+        "adjusted_close": 902.0
+      },
+      "rows": [
+        {
+          "date": "2026-10-12",
+          "close": 1115.0,
+          "adjusted_close": 1115.0
+        },
+        {
+          "date": "2026-10-13",
+          "close": 1015.0,
+          "adjusted_close": 1015.0
+        },
+        {
+          "date": "2026-10-14",
+          "close": 1020.0,
+          "adjusted_close": 1020.0
+        },
+        {
+          "date": "2026-10-15",
+          "close": 923.0,
+          "adjusted_close": 923.0
+        },
+        {
+          "date": "2026-10-16",
+          "close": 902.0,
+          "adjusted_close": 902.0
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/6488.TWO?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/6488.TWO/history/",
+      "retrieved_at_utc": "2026-10-18T04:55:11.177610+00:00",
+      "raw_sha256": "01182efb472e1b42081e855f7bf6725c904c484ae76e7f03fd922f988c83914e",
+      "events": {}
+    },
+    {
+      "symbol": "WAF.DE",
+      "name": "Siltronic",
+      "currency": "EUR",
+      "exchange": "XETRA",
+      "timezone": "Europe/Berlin",
+      "last": {
+        "date": "2026-10-16",
+        "close": 65.90000153,
+        "adjusted_close": 65.90000153
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 79.19999695,
+          "adjusted_close": 79.19999695
+        },
+        {
+          "date": "2026-10-12",
+          "close": 75.19999695,
+          "adjusted_close": 75.19999695
+        },
+        {
+          "date": "2026-10-13",
+          "close": 73.40000153,
+          "adjusted_close": 73.40000153
+        },
+        {
+          "date": "2026-10-14",
+          "close": 71.15000153,
+          "adjusted_close": 71.15000153
+        },
+        {
+          "date": "2026-10-15",
+          "close": 65.19999695,
+          "adjusted_close": 65.19999695
+        },
+        {
+          "date": "2026-10-16",
+          "close": 65.90000153,
+          "adjusted_close": 65.90000153
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/WAF.DE?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/WAF.DE/history/",
+      "retrieved_at_utc": "2026-10-18T04:55:11.177961+00:00",
+      "raw_sha256": "a09660bf60a09a7ede39b837ae1b4b04e2c50cba7005e901b87413ddb0101a1b",
+      "events": {}
+    },
+    {
+      "symbol": "8035.T",
+      "name": "東京エレクトロン",
+      "currency": "JPY",
+      "exchange": "Tokyo",
+      "timezone": "Asia/Tokyo",
+      "last": {
+        "date": "2026-10-16",
+        "close": 10630.0,
+        "adjusted_close": 10630.0
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 12445.0,
+          "adjusted_close": 12445.0
+        },
+        {
+          "date": "2026-10-13",
+          "close": 11555.0,
+          "adjusted_close": 11555.0
+        },
+        {
+          "date": "2026-10-14",
+          "close": 11240.0,
+          "adjusted_close": 11240.0
+        },
+        {
+          "date": "2026-10-15",
+          "close": 10365.0,
+          "adjusted_close": 10365.0
+        },
+        {
+          "date": "2026-10-16",
+          "close": 10630.0,
+          "adjusted_close": 10630.0
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/8035.T?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/8035.T/history/",
+      "retrieved_at_utc": "2026-10-18T04:55:11.632825+00:00",
+      "raw_sha256": "eb466823ff0d4f881068ef4fcfc548a6d4e9ae044d1cc678560a21aa673a1391",
+      "events": {}
+    },
+    {
+      "symbol": "LRCX",
+      "name": "Lam Research",
+      "currency": "USD",
+      "exchange": "NasdaqGS",
+      "timezone": "America/New_York",
+      "last": {
+        "date": "2026-10-16",
+        "close": 263.94000244,
+        "adjusted_close": 263.94000244
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 318.83999634,
+          "adjusted_close": 318.83999634
+        },
+        {
+          "date": "2026-10-12",
+          "close": 309.55999756,
+          "adjusted_close": 309.55999756
+        },
+        {
+          "date": "2026-10-13",
+          "close": 301.10998535,
+          "adjusted_close": 301.10998535
+        },
+        {
+          "date": "2026-10-14",
+          "close": 286.92001343,
+          "adjusted_close": 286.92001343
+        },
+        {
+          "date": "2026-10-15",
+          "close": 277.45999146,
+          "adjusted_close": 277.45999146
+        },
+        {
+          "date": "2026-10-16",
+          "close": 263.94000244,
+          "adjusted_close": 263.94000244
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/LRCX?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/LRCX/history/",
+      "retrieved_at_utc": "2026-10-18T04:55:11.634045+00:00",
+      "raw_sha256": "2268f7e08de9e658f549b6aab4ab310f44d3d7c88077d1f2e016da9390c17a47",
+      "events": {}
+    },
+    {
+      "symbol": "ASML",
+      "name": "ASML",
+      "currency": "USD",
+      "exchange": "NasdaqGS",
+      "timezone": "America/New_York",
+      "last": {
+        "date": "2026-10-16",
+        "close": 1641.52001953,
+        "adjusted_close": 1641.52001953
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 1780.33996582,
+          "adjusted_close": 1780.33996582
+        },
+        {
+          "date": "2026-10-12",
+          "close": 1750.23999023,
+          "adjusted_close": 1750.23999023
+        },
+        {
+          "date": "2026-10-13",
+          "close": 1717.76000977,
+          "adjusted_close": 1717.76000977
+        },
+        {
+          "date": "2026-10-14",
+          "close": 1650.0,
+          "adjusted_close": 1650.0
+        },
+        {
+          "date": "2026-10-15",
+          "close": 1657.43994141,
+          "adjusted_close": 1657.43994141
+        },
+        {
+          "date": "2026-10-16",
+          "close": 1641.52001953,
+          "adjusted_close": 1641.52001953
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/ASML?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/ASML/history/",
+      "retrieved_at_utc": "2026-10-18T04:55:11.633900+00:00",
+      "raw_sha256": "e6df8e8e0afbfd65e924f0e73b670487765f443a0997cecef6c91ca140a768e0",
+      "events": {}
+    },
+    {
+      "symbol": "NVDA",
+      "name": "NVIDIA",
+      "currency": "USD",
+      "exchange": "NasdaqGS",
+      "timezone": "America/New_York",
+      "last": {
+        "date": "2026-10-16",
+        "close": 214.13000488,
+        "adjusted_close": 214.13000488
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 229.27999878,
+          "adjusted_close": 229.27999878
+        },
+        {
+          "date": "2026-10-12",
+          "close": 226.32000732,
+          "adjusted_close": 226.32000732
+        },
+        {
+          "date": "2026-10-13",
+          "close": 228.52000427,
+          "adjusted_close": 228.52000427
+        },
+        {
+          "date": "2026-10-14",
+          "close": 221.30000305,
+          "adjusted_close": 221.30000305
+        },
+        {
+          "date": "2026-10-15",
+          "close": 217.22999573,
+          "adjusted_close": 217.22999573
+        },
+        {
+          "date": "2026-10-16",
+          "close": 214.13000488,
+          "adjusted_close": 214.13000488
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/NVDA?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/NVDA/history/",
+      "retrieved_at_utc": "2026-10-18T04:55:11.633735+00:00",
+      "raw_sha256": "0e426627c659a8f2f3fea2d59432f47002ef6adba0f43fb9bfe491ec932de25a",
+      "events": {}
+    },
+    {
+      "symbol": "AMD",
+      "name": "AMD",
+      "currency": "USD",
+      "exchange": "NasdaqGS",
+      "timezone": "America/New_York",
+      "last": {
+        "date": "2026-10-16",
+        "close": 528.75,
+        "adjusted_close": 528.75
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 608.09997559,
+          "adjusted_close": 608.09997559
+        },
+        {
+          "date": "2026-10-12",
+          "close": 594.23999023,
+          "adjusted_close": 594.23999023
+        },
+        {
+          "date": "2026-10-13",
+          "close": 605.5300293,
+          "adjusted_close": 605.5300293
+        },
+        {
+          "date": "2026-10-14",
+          "close": 570.82000732,
+          "adjusted_close": 570.82000732
+        },
+        {
+          "date": "2026-10-15",
+          "close": 562.22998047,
+          "adjusted_close": 562.22998047
+        },
+        {
+          "date": "2026-10-16",
+          "close": 528.75,
+          "adjusted_close": 528.75
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/AMD?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/AMD/history/",
+      "retrieved_at_utc": "2026-10-18T04:55:11.960855+00:00",
+      "raw_sha256": "19b384a61c2112e269a67a81e85106ed01665c80ba72751b628f80c8fa86773d",
+      "events": {}
+    },
+    {
+      "symbol": "AVGO",
+      "name": "Broadcom",
+      "currency": "USD",
+      "exchange": "NasdaqGS",
+      "timezone": "America/New_York",
+      "last": {
+        "date": "2026-10-16",
+        "close": 328.75,
+        "adjusted_close": 328.75
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 361.54000854,
+          "adjusted_close": 361.54000854
+        },
+        {
+          "date": "2026-10-12",
+          "close": 354.73001099,
+          "adjusted_close": 354.73001099
+        },
+        {
+          "date": "2026-10-13",
+          "close": 357.30999756,
+          "adjusted_close": 357.30999756
+        },
+        {
+          "date": "2026-10-14",
+          "close": 346.25,
+          "adjusted_close": 346.25
+        },
+        {
+          "date": "2026-10-15",
+          "close": 344.32998657,
+          "adjusted_close": 344.32998657
+        },
+        {
+          "date": "2026-10-16",
+          "close": 328.75,
+          "adjusted_close": 328.75
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/AVGO?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/AVGO/history/",
+      "retrieved_at_utc": "2026-10-18T04:55:11.973867+00:00",
+      "raw_sha256": "5ffef234fe38a8eebb78de86ea80db2defe41d50522ca241885d6af6aa3616ba",
+      "events": {}
+    },
+    {
+      "symbol": "2330.TW",
+      "name": "TSMC",
+      "currency": "TWD",
+      "exchange": "Taiwan",
+      "timezone": "Asia/Taipei",
+      "last": {
+        "date": "2026-10-16",
+        "close": 2420.0,
+        "adjusted_close": 2420.0
+      },
+      "rows": [
+        {
+          "date": "2026-10-12",
+          "close": 2540.0,
+          "adjusted_close": 2540.0
+        },
+        {
+          "date": "2026-10-13",
+          "close": 2490.0,
+          "adjusted_close": 2490.0
+        },
+        {
+          "date": "2026-10-14",
+          "close": 2490.0,
+          "adjusted_close": 2490.0
+        },
+        {
+          "date": "2026-10-15",
+          "close": 2440.0,
+          "adjusted_close": 2440.0
+        },
+        {
+          "date": "2026-10-16",
+          "close": 2420.0,
+          "adjusted_close": 2420.0
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/2330.TW?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/2330.TW/history/",
+      "retrieved_at_utc": "2026-10-18T04:55:11.979789+00:00",
+      "raw_sha256": "846a3dfba06fe44a4b6f5a87bd3b3e04856f7c8c03882b4e6b876d6a713b0f55",
+      "events": {}
+    },
+    {
+      "symbol": "3711.TW",
+      "name": "ASE Technology",
+      "currency": "TWD",
+      "exchange": "Taiwan",
+      "timezone": "Asia/Taipei",
+      "last": {
+        "date": "2026-10-16",
+        "close": 671.0,
+        "adjusted_close": 671.0
+      },
+      "rows": [
+        {
+          "date": "2026-10-12",
+          "close": 762.0,
+          "adjusted_close": 762.0
+        },
+        {
+          "date": "2026-10-13",
+          "close": 740.0,
+          "adjusted_close": 740.0
+        },
+        {
+          "date": "2026-10-14",
+          "close": 747.0,
+          "adjusted_close": 747.0
+        },
+        {
+          "date": "2026-10-15",
+          "close": 673.0,
+          "adjusted_close": 673.0
+        },
+        {
+          "date": "2026-10-16",
+          "close": 671.0,
+          "adjusted_close": 671.0
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/3711.TW?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/3711.TW/history/",
+      "retrieved_at_utc": "2026-10-18T04:55:11.969573+00:00",
+      "raw_sha256": "1cf09231ba3eb772a41e1cdd5b28d78178dbe5c67ffa60ef98bfd062f1861de8",
+      "events": {}
+    },
+    {
+      "symbol": "2802.T",
+      "name": "味の素",
+      "currency": "JPY",
+      "exchange": "Tokyo",
+      "timezone": "Asia/Tokyo",
+      "last": {
+        "date": "2026-10-16",
+        "close": 5280.0,
+        "adjusted_close": 5280.0
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 5399.0,
+          "adjusted_close": 5399.0
+        },
+        {
+          "date": "2026-10-13",
+          "close": 5291.0,
+          "adjusted_close": 5291.0
+        },
+        {
+          "date": "2026-10-14",
+          "close": 5440.0,
+          "adjusted_close": 5440.0
+        },
+        {
+          "date": "2026-10-15",
+          "close": 5237.0,
+          "adjusted_close": 5237.0
+        },
+        {
+          "date": "2026-10-16",
+          "close": 5280.0,
+          "adjusted_close": 5280.0
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/2802.T?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/2802.T/history/",
+      "retrieved_at_utc": "2026-10-18T04:55:12.431617+00:00",
+      "raw_sha256": "f970ccc898b1d1f7fab9220b798d0f6b1664fa61c67dcd5f3b4013e734a5222f",
+      "events": {}
+    },
+    {
+      "symbol": "4062.T",
+      "name": "イビデン",
+      "currency": "JPY",
+      "exchange": "Tokyo",
+      "timezone": "Asia/Tokyo",
+      "last": {
+        "date": "2026-10-16",
+        "close": 9764.0,
+        "adjusted_close": 9764.0
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 11515.0,
+          "adjusted_close": 11515.0
+        },
+        {
+          "date": "2026-10-13",
+          "close": 10620.0,
+          "adjusted_close": 10620.0
+        },
+        {
+          "date": "2026-10-14",
+          "close": 10495.0,
+          "adjusted_close": 10495.0
+        },
+        {
+          "date": "2026-10-15",
+          "close": 9213.0,
+          "adjusted_close": 9213.0
+        },
+        {
+          "date": "2026-10-16",
+          "close": 9764.0,
+          "adjusted_close": 9764.0
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/4062.T?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/4062.T/history/",
+      "retrieved_at_utc": "2026-10-18T04:55:12.431484+00:00",
+      "raw_sha256": "0f3de11e671896182df23269db921378a845e4cf6bc92ded70269a26d3c43f11",
+      "events": {}
+    },
+    {
+      "symbol": "3037.TW",
+      "name": "Unimicron",
+      "currency": "TWD",
+      "exchange": "Taiwan",
+      "timezone": "Asia/Taipei",
+      "last": {
+        "date": "2026-10-16",
+        "close": 1090.0,
+        "adjusted_close": 1090.0
+      },
+      "rows": [
+        {
+          "date": "2026-10-12",
+          "close": 1255.0,
+          "adjusted_close": 1255.0
+        },
+        {
+          "date": "2026-10-13",
+          "close": 1180.0,
+          "adjusted_close": 1180.0
+        },
+        {
+          "date": "2026-10-14",
+          "close": 1185.0,
+          "adjusted_close": 1185.0
+        },
+        {
+          "date": "2026-10-15",
+          "close": 1075.0,
+          "adjusted_close": 1075.0
+        },
+        {
+          "date": "2026-10-16",
+          "close": 1090.0,
+          "adjusted_close": 1090.0
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/3037.TW?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/3037.TW/history/",
+      "retrieved_at_utc": "2026-10-18T04:55:12.411023+00:00",
+      "raw_sha256": "a6989af59a15d6a4bce71d91dd4e22960a4a2c673e361d434378555d8a22afbc",
+      "events": {}
+    },
+    {
+      "symbol": "6146.T",
+      "name": "ディスコ",
+      "currency": "JPY",
+      "exchange": "Tokyo",
+      "timezone": "Asia/Tokyo",
+      "last": {
+        "date": "2026-10-16",
+        "close": 53850.0,
+        "adjusted_close": 53850.0
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 61460.0,
+          "adjusted_close": 61460.0
+        },
+        {
+          "date": "2026-10-13",
+          "close": 58580.0,
+          "adjusted_close": 58580.0
+        },
+        {
+          "date": "2026-10-14",
+          "close": 58100.0,
+          "adjusted_close": 58100.0
+        },
+        {
+          "date": "2026-10-15",
+          "close": 53180.0,
+          "adjusted_close": 53180.0
+        },
+        {
+          "date": "2026-10-16",
+          "close": 53850.0,
+          "adjusted_close": 53850.0
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/6146.T?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/6146.T/history/",
+      "retrieved_at_utc": "2026-10-18T04:55:12.429248+00:00",
+      "raw_sha256": "958261858708124681d0f258805f00a0a682d8eff7f65776e50c87e674cfdeee",
+      "events": {}
+    },
+    {
+      "symbol": "6857.T",
+      "name": "アドバンテスト",
+      "currency": "JPY",
+      "exchange": "Tokyo",
+      "timezone": "Asia/Tokyo",
+      "last": {
+        "date": "2026-10-16",
+        "close": 34530.0,
+        "adjusted_close": 34530.0
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 41610.0,
+          "adjusted_close": 41610.0
+        },
+        {
+          "date": "2026-10-13",
+          "close": 40400.0,
+          "adjusted_close": 40400.0
+        },
+        {
+          "date": "2026-10-14",
+          "close": 40380.0,
+          "adjusted_close": 40380.0
+        },
+        {
+          "date": "2026-10-15",
+          "close": 34340.0,
+          "adjusted_close": 34340.0
+        },
+        {
+          "date": "2026-10-16",
+          "close": 34530.0,
+          "adjusted_close": 34530.0
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/6857.T?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/6857.T/history/",
+      "retrieved_at_utc": "2026-10-18T04:55:12.877414+00:00",
+      "raw_sha256": "42397eaa1db7d83c240605d260a3ca69d9ef3f4a0e064026eefaeb4d3f2e2bbd",
+      "events": {}
+    },
+    {
+      "symbol": "TER",
+      "name": "Teradyne",
+      "currency": "USD",
+      "exchange": "NasdaqGS",
+      "timezone": "America/New_York",
+      "last": {
+        "date": "2026-10-16",
+        "close": 325.0,
+        "adjusted_close": 325.0
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 402.67999268,
+          "adjusted_close": 402.67999268
+        },
+        {
+          "date": "2026-10-12",
+          "close": 383.8500061,
+          "adjusted_close": 383.8500061
+        },
+        {
+          "date": "2026-10-13",
+          "close": 380.29000854,
+          "adjusted_close": 380.29000854
+        },
+        {
+          "date": "2026-10-14",
+          "close": 359.44000244,
+          "adjusted_close": 359.44000244
+        },
+        {
+          "date": "2026-10-15",
+          "close": 343.20999146,
+          "adjusted_close": 343.20999146
+        },
+        {
+          "date": "2026-10-16",
+          "close": 325.0,
+          "adjusted_close": 325.0
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/TER?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/TER/history/",
+      "retrieved_at_utc": "2026-10-18T04:55:12.897900+00:00",
+      "raw_sha256": "7bc4c641801eca61d7d5597b9805b83859c305c1c8839e5b4c54529b1482d503",
+      "events": {}
+    },
+    {
+      "symbol": "000660.KS",
+      "name": "SK hynix",
+      "currency": "KRW",
+      "exchange": "KSE",
+      "timezone": "Asia/Seoul",
+      "last": {
+        "date": "2026-10-16",
+        "close": 1272000.0,
+        "adjusted_close": 1272000.0
+      },
+      "rows": [
+        {
+          "date": "2026-10-12",
+          "close": 1605000.0,
+          "adjusted_close": 1605000.0
+        },
+        {
+          "date": "2026-10-13",
+          "close": 1443000.0,
+          "adjusted_close": 1443000.0
+        },
+        {
+          "date": "2026-10-14",
+          "close": 1419000.0,
+          "adjusted_close": 1419000.0
+        },
+        {
+          "date": "2026-10-15",
+          "close": 1262000.0,
+          "adjusted_close": 1262000.0
+        },
+        {
+          "date": "2026-10-16",
+          "close": 1272000.0,
+          "adjusted_close": 1272000.0
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/000660.KS?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/000660.KS/history/",
+      "retrieved_at_utc": "2026-10-18T04:55:12.902337+00:00",
+      "raw_sha256": "615cfae506fcfa4ad26a1fc2c3805dd6233cacc180969f27177e4928d8d37d44",
+      "events": {}
+    },
+    {
+      "symbol": "MU",
+      "name": "Micron",
+      "currency": "USD",
+      "exchange": "NasdaqGS",
+      "timezone": "America/New_York",
+      "last": {
+        "date": "2026-10-16",
+        "close": 878.84002686,
+        "adjusted_close": 878.84002686
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 1029.0,
+          "adjusted_close": 1028.83813477
+        },
+        {
+          "date": "2026-10-12",
+          "close": 989.03997803,
+          "adjusted_close": 988.88433838
+        },
+        {
+          "date": "2026-10-13",
+          "close": 953.19000244,
+          "adjusted_close": 953.04003906
+        },
+        {
+          "date": "2026-10-14",
+          "close": 914.13000488,
+          "adjusted_close": 914.13000488
+        },
+        {
+          "date": "2026-10-15",
+          "close": 931.23999023,
+          "adjusted_close": 931.23999023
+        },
+        {
+          "date": "2026-10-16",
+          "close": 878.84002686,
+          "adjusted_close": 878.84002686
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/MU?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/MU/history/",
+      "retrieved_at_utc": "2026-10-18T04:55:12.901782+00:00",
+      "raw_sha256": "cdc40a284abfd716fca2cc25854806b3e78c2d12f59cb6d2cee7bae83ba7e67b",
+      "events": {
+        "dividends": {
+          "1791984600": {
+            "amount": 0.15,
+            "date": 1791984600
+          }
+        }
+      }
+    },
+    {
+      "symbol": "005930.KS",
+      "name": "Samsung Electronics",
+      "currency": "KRW",
+      "exchange": "KSE",
+      "timezone": "Asia/Seoul",
+      "last": {
+        "date": "2026-10-16",
+        "close": 215500.0,
+        "adjusted_close": 215500.0
+      },
+      "rows": [
+        {
+          "date": "2026-10-12",
+          "close": 250500.0,
+          "adjusted_close": 250500.0
+        },
+        {
+          "date": "2026-10-13",
+          "close": 232000.0,
+          "adjusted_close": 232000.0
+        },
+        {
+          "date": "2026-10-14",
+          "close": 232000.0,
+          "adjusted_close": 232000.0
+        },
+        {
+          "date": "2026-10-15",
+          "close": 210000.0,
+          "adjusted_close": 210000.0
+        },
+        {
+          "date": "2026-10-16",
+          "close": 215500.0,
+          "adjusted_close": 215500.0
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/005930.KS?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/005930.KS/history/",
+      "retrieved_at_utc": "2026-10-18T04:55:13.283475+00:00",
+      "raw_sha256": "a453c90424aa2bf7064fca80c3f6d7f83b2ce10b79f39421ea05ac0e6105d859",
+      "events": {}
+    },
+    {
+      "symbol": "285A.T",
+      "name": "キオクシアHD",
+      "currency": "JPY",
+      "exchange": "Tokyo",
+      "timezone": "Asia/Tokyo",
+      "last": {
+        "date": "2026-10-16",
+        "close": 13375.0,
+        "adjusted_close": 13375.0
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 17505.0,
+          "adjusted_close": 17505.0
+        },
+        {
+          "date": "2026-10-13",
+          "close": 15180.0,
+          "adjusted_close": 15180.0
+        },
+        {
+          "date": "2026-10-14",
+          "close": 14690.0,
+          "adjusted_close": 14690.0
+        },
+        {
+          "date": "2026-10-15",
+          "close": 12880.0,
+          "adjusted_close": 12880.0
+        },
+        {
+          "date": "2026-10-16",
+          "close": 13375.0,
+          "adjusted_close": 13375.0
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/285A.T?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/285A.T/history/",
+      "retrieved_at_utc": "2026-10-18T04:55:13.279952+00:00",
+      "raw_sha256": "69aac0cdb4b66ba64481a4291f81db41ca184d53f28f71f2edd9272bf8b0cd87",
+      "events": {}
+    },
+    {
+      "symbol": "SNDK",
+      "name": "Sandisk",
+      "currency": "USD",
+      "exchange": "NasdaqGS",
+      "timezone": "America/New_York",
+      "last": {
+        "date": "2026-10-16",
+        "close": 1299.30004883,
+        "adjusted_close": 1299.30004883
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 1581.81994629,
+          "adjusted_close": 1581.81994629
+        },
+        {
+          "date": "2026-10-12",
+          "close": 1487.32995605,
+          "adjusted_close": 1487.32995605
+        },
+        {
+          "date": "2026-10-13",
+          "close": 1482.32995605,
+          "adjusted_close": 1482.32995605
+        },
+        {
+          "date": "2026-10-14",
+          "close": 1403.33996582,
+          "adjusted_close": 1403.33996582
+        },
+        {
+          "date": "2026-10-15",
+          "close": 1394.82995605,
+          "adjusted_close": 1394.82995605
+        },
+        {
+          "date": "2026-10-16",
+          "close": 1299.30004883,
+          "adjusted_close": 1299.30004883
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/SNDK?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/SNDK/history/",
+      "retrieved_at_utc": "2026-10-18T04:55:13.279589+00:00",
+      "raw_sha256": "b514d5052e7e6eb59da93d2546852d672011e14de0857e7e2047dcb3eaa821c5",
+      "events": {}
+    },
+    {
+      "symbol": "6702.T",
+      "name": "富士通",
+      "currency": "JPY",
+      "exchange": "Tokyo",
+      "timezone": "Asia/Tokyo",
+      "last": {
+        "date": "2026-10-16",
+        "close": 4423.0,
+        "adjusted_close": 4423.0
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 4250.0,
+          "adjusted_close": 4250.0
+        },
+        {
+          "date": "2026-10-13",
+          "close": 4216.0,
+          "adjusted_close": 4216.0
+        },
+        {
+          "date": "2026-10-14",
+          "close": 4270.0,
+          "adjusted_close": 4270.0
+        },
+        {
+          "date": "2026-10-15",
+          "close": 4285.0,
+          "adjusted_close": 4285.0
+        },
+        {
+          "date": "2026-10-16",
+          "close": 4423.0,
+          "adjusted_close": 4423.0
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/6702.T?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/6702.T/history/",
+      "retrieved_at_utc": "2026-10-18T04:55:13.282976+00:00",
+      "raw_sha256": "4f4447bcdadcf5b9e862b6395516dca45baa6e838ed92f89e1ffcb4071951f5a",
+      "events": {}
+    },
+    {
+      "symbol": "6701.T",
+      "name": "NEC",
+      "currency": "JPY",
+      "exchange": "Tokyo",
+      "timezone": "Asia/Tokyo",
+      "last": {
+        "date": "2026-10-16",
+        "close": 5390.0,
+        "adjusted_close": 5390.0
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 5233.0,
+          "adjusted_close": 5233.0
+        },
+        {
+          "date": "2026-10-13",
+          "close": 5160.0,
+          "adjusted_close": 5160.0
+        },
+        {
+          "date": "2026-10-14",
+          "close": 5184.0,
+          "adjusted_close": 5184.0
+        },
+        {
+          "date": "2026-10-15",
+          "close": 5240.0,
+          "adjusted_close": 5240.0
+        },
+        {
+          "date": "2026-10-16",
+          "close": 5390.0,
+          "adjusted_close": 5390.0
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/6701.T?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/6701.T/history/",
+      "retrieved_at_utc": "2026-10-18T04:55:13.723884+00:00",
+      "raw_sha256": "da86359068bae0867923a5e44b75ea2d5f69f8313ae1fa50fdd5a5bf429f1bfe",
+      "events": {}
+    },
+    {
+      "symbol": "DELL",
+      "name": "Dell Technologies",
+      "currency": "USD",
+      "exchange": "NYSE",
+      "timezone": "America/New_York",
+      "last": {
+        "date": "2026-10-16",
+        "close": 451.70999146,
+        "adjusted_close": 451.70999146
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 586.05999756,
+          "adjusted_close": 586.05999756
+        },
+        {
+          "date": "2026-10-12",
+          "close": 576.76000977,
+          "adjusted_close": 576.76000977
+        },
+        {
+          "date": "2026-10-13",
+          "close": 572.4699707,
+          "adjusted_close": 572.4699707
+        },
+        {
+          "date": "2026-10-14",
+          "close": 507.92999268,
+          "adjusted_close": 507.92999268
+        },
+        {
+          "date": "2026-10-15",
+          "close": 473.39001465,
+          "adjusted_close": 473.39001465
+        },
+        {
+          "date": "2026-10-16",
+          "close": 451.70999146,
+          "adjusted_close": 451.70999146
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/DELL?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/DELL/history/",
+      "retrieved_at_utc": "2026-10-18T04:55:13.669799+00:00",
+      "raw_sha256": "818ec7eaa298b8897dd70caa091bd28c5fc38333ddf0bfc5cc2f9ff0b3a3474d",
+      "events": {}
+    },
+    {
+      "symbol": "HPE",
+      "name": "Hewlett Packard Enterprise",
+      "currency": "USD",
+      "exchange": "NYSE",
+      "timezone": "America/New_York",
+      "last": {
+        "date": "2026-10-16",
+        "close": 55.13000107,
+        "adjusted_close": 55.13000107
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 73.45999908,
+          "adjusted_close": 73.45999908
+        },
+        {
+          "date": "2026-10-12",
+          "close": 70.33000183,
+          "adjusted_close": 70.33000183
+        },
+        {
+          "date": "2026-10-13",
+          "close": 68.80999756,
+          "adjusted_close": 68.80999756
+        },
+        {
+          "date": "2026-10-14",
+          "close": 63.11000061,
+          "adjusted_close": 63.11000061
+        },
+        {
+          "date": "2026-10-15",
+          "close": 58.63000107,
+          "adjusted_close": 58.63000107
+        },
+        {
+          "date": "2026-10-16",
+          "close": 55.13000107,
+          "adjusted_close": 55.13000107
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/HPE?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/HPE/history/",
+      "retrieved_at_utc": "2026-10-18T04:55:13.669569+00:00",
+      "raw_sha256": "6ca03f5aa1963340eefb68b1ff8bdd78485e8f4e64a1c4736dae072274e5d11f",
+      "events": {}
+    },
+    {
+      "symbol": "SMCI",
+      "name": "Super Micro Computer",
+      "currency": "USD",
+      "exchange": "NasdaqGS",
+      "timezone": "America/New_York",
+      "last": {
+        "date": "2026-10-16",
+        "close": 31.62999916,
+        "adjusted_close": 31.62999916
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 41.86000061,
+          "adjusted_close": 41.86000061
+        },
+        {
+          "date": "2026-10-12",
+          "close": 39.97999954,
+          "adjusted_close": 39.97999954
+        },
+        {
+          "date": "2026-10-13",
+          "close": 39.06999969,
+          "adjusted_close": 39.06999969
+        },
+        {
+          "date": "2026-10-14",
+          "close": 35.77999878,
+          "adjusted_close": 35.77999878
+        },
+        {
+          "date": "2026-10-15",
+          "close": 35.09000015,
+          "adjusted_close": 35.09000015
+        },
+        {
+          "date": "2026-10-16",
+          "close": 31.62999916,
+          "adjusted_close": 31.62999916
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/SMCI?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/SMCI/history/",
+      "retrieved_at_utc": "2026-10-18T04:55:13.688700+00:00",
+      "raw_sha256": "8290d0f768a629edbc711d13a3d13fd94080289225ee8c1a3b784ccca5030dfa",
+      "events": {}
+    },
+    {
+      "symbol": "0992.HK",
+      "name": "Lenovo Group",
+      "currency": "HKD",
+      "exchange": "HKSE",
+      "timezone": "Asia/Hong_Kong",
+      "last": {
+        "date": "2026-10-16",
+        "close": 28.05999947,
+        "adjusted_close": 28.05999947
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 32.84000015,
+          "adjusted_close": 32.84000015
+        },
+        {
+          "date": "2026-10-12",
+          "close": 32.34000015,
+          "adjusted_close": 32.34000015
+        },
+        {
+          "date": "2026-10-13",
+          "close": 31.10000038,
+          "adjusted_close": 31.10000038
+        },
+        {
+          "date": "2026-10-14",
+          "close": 30.39999962,
+          "adjusted_close": 30.39999962
+        },
+        {
+          "date": "2026-10-15",
+          "close": 25.97999954,
+          "adjusted_close": 25.97999954
+        },
+        {
+          "date": "2026-10-16",
+          "close": 28.05999947,
+          "adjusted_close": 28.05999947
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/0992.HK?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/0992.HK/history/",
+      "retrieved_at_utc": "2026-10-18T04:55:14.103742+00:00",
+      "raw_sha256": "3fe1a4bfa598bb732ab51a3ae319a4422fd9b665e1047024e64d044e4ca7e284",
+      "events": {}
+    },
+    {
+      "symbol": "2382.TW",
+      "name": "Quanta Computer",
+      "currency": "TWD",
+      "exchange": "Taiwan",
+      "timezone": "Asia/Taipei",
+      "last": {
+        "date": "2026-10-16",
+        "close": 322.0,
+        "adjusted_close": 322.0
+      },
+      "rows": [
+        {
+          "date": "2026-10-12",
+          "close": 322.0,
+          "adjusted_close": 322.0
+        },
+        {
+          "date": "2026-10-13",
+          "close": 323.0,
+          "adjusted_close": 323.0
+        },
+        {
+          "date": "2026-10-14",
+          "close": 323.0,
+          "adjusted_close": 323.0
+        },
+        {
+          "date": "2026-10-15",
+          "close": 316.5,
+          "adjusted_close": 316.5
+        },
+        {
+          "date": "2026-10-16",
+          "close": 322.0,
+          "adjusted_close": 322.0
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/2382.TW?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/2382.TW/history/",
+      "retrieved_at_utc": "2026-10-18T04:55:14.102821+00:00",
+      "raw_sha256": "44e30b60177c061e09c42c5e5df148e447152889ae85ee18b8ebf48c8e3921a9",
+      "events": {}
+    },
+    {
+      "symbol": "6669.TW",
+      "name": "Wiwynn",
+      "currency": "TWD",
+      "exchange": "Taiwan",
+      "timezone": "Asia/Taipei",
+      "last": {
+        "date": "2026-10-16",
+        "close": 1845.0,
+        "adjusted_close": 1845.0
+      },
+      "rows": [
+        {
+          "date": "2026-10-12",
+          "close": 2275.0,
+          "adjusted_close": 2275.0
+        },
+        {
+          "date": "2026-10-13",
+          "close": 2195.0,
+          "adjusted_close": 2195.0
+        },
+        {
+          "date": "2026-10-14",
+          "close": 2115.0,
+          "adjusted_close": 2115.0
+        },
+        {
+          "date": "2026-10-15",
+          "close": 1905.0,
+          "adjusted_close": 1905.0
+        },
+        {
+          "date": "2026-10-16",
+          "close": 1845.0,
+          "adjusted_close": 1845.0
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/6669.TW?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/6669.TW/history/",
+      "retrieved_at_utc": "2026-10-18T04:55:14.103165+00:00",
+      "raw_sha256": "1fcb06fea8de07706d95274eb6b5efb795c724ad0f20281129d6b63ad6282ad9",
+      "events": {}
+    },
+    {
+      "symbol": "2317.TW",
+      "name": "Hon Hai Precision",
+      "currency": "TWD",
+      "exchange": "Taiwan",
+      "timezone": "Asia/Taipei",
+      "last": {
+        "date": "2026-10-16",
+        "close": 244.0,
+        "adjusted_close": 244.0
+      },
+      "rows": [
+        {
+          "date": "2026-10-12",
+          "close": 244.5,
+          "adjusted_close": 244.5
+        },
+        {
+          "date": "2026-10-13",
+          "close": 240.0,
+          "adjusted_close": 240.0
+        },
+        {
+          "date": "2026-10-14",
+          "close": 243.0,
+          "adjusted_close": 243.0
+        },
+        {
+          "date": "2026-10-15",
+          "close": 239.5,
+          "adjusted_close": 239.5
+        },
+        {
+          "date": "2026-10-16",
+          "close": 244.0,
+          "adjusted_close": 244.0
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/2317.TW?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/2317.TW/history/",
+      "retrieved_at_utc": "2026-10-18T04:55:14.103027+00:00",
+      "raw_sha256": "2772143b4d004b5dff31d7c8749a6d7e73bbecaed5beb318277e80114eb11cf5",
+      "events": {}
+    },
+    {
+      "symbol": "ANET",
+      "name": "Arista Networks",
+      "currency": "USD",
+      "exchange": "NYSE",
+      "timezone": "America/New_York",
+      "last": {
+        "date": "2026-10-16",
+        "close": 176.97999573,
+        "adjusted_close": 176.97999573
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 216.74000549,
+          "adjusted_close": 216.74000549
+        },
+        {
+          "date": "2026-10-12",
+          "close": 210.88000488,
+          "adjusted_close": 210.88000488
+        },
+        {
+          "date": "2026-10-13",
+          "close": 204.52000427,
+          "adjusted_close": 204.52000427
+        },
+        {
+          "date": "2026-10-14",
+          "close": 195.41999817,
+          "adjusted_close": 195.41999817
+        },
+        {
+          "date": "2026-10-15",
+          "close": 185.58000183,
+          "adjusted_close": 185.58000183
+        },
+        {
+          "date": "2026-10-16",
+          "close": 176.97999573,
+          "adjusted_close": 176.97999573
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/ANET?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/ANET/history/",
+      "retrieved_at_utc": "2026-10-18T04:55:14.619917+00:00",
+      "raw_sha256": "e801ee1bd56a66a2d51af5a2235e9b2987771a3372197a4c256a1661e0b19111",
+      "events": {}
+    },
+    {
+      "symbol": "5803.T",
+      "name": "フジクラ",
+      "currency": "JPY",
+      "exchange": "Tokyo",
+      "timezone": "Asia/Tokyo",
+      "last": {
+        "date": "2026-10-16",
+        "close": 4503.0,
+        "adjusted_close": 4503.0
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 5413.0,
+          "adjusted_close": 5413.0
+        },
+        {
+          "date": "2026-10-13",
+          "close": 5070.0,
+          "adjusted_close": 5070.0
+        },
+        {
+          "date": "2026-10-14",
+          "close": 5200.0,
+          "adjusted_close": 5200.0
+        },
+        {
+          "date": "2026-10-15",
+          "close": 4540.0,
+          "adjusted_close": 4540.0
+        },
+        {
+          "date": "2026-10-16",
+          "close": 4503.0,
+          "adjusted_close": 4503.0
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/5803.T?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/5803.T/history/",
+      "retrieved_at_utc": "2026-10-18T04:55:14.719113+00:00",
+      "raw_sha256": "2ba8d7e11827b12c88414de9afc3434dccb92721ff31b2a132830f741c40f99d",
+      "events": {}
+    },
+    {
+      "symbol": "COHR",
+      "name": "Coherent",
+      "currency": "USD",
+      "exchange": "NYSE",
+      "timezone": "America/New_York",
+      "last": {
+        "date": "2026-10-16",
+        "close": 232.8999939,
+        "adjusted_close": 232.8999939
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 312.61999512,
+          "adjusted_close": 312.61999512
+        },
+        {
+          "date": "2026-10-12",
+          "close": 288.01998901,
+          "adjusted_close": 288.01998901
+        },
+        {
+          "date": "2026-10-13",
+          "close": 289.98001099,
+          "adjusted_close": 289.98001099
+        },
+        {
+          "date": "2026-10-14",
+          "close": 263.32000732,
+          "adjusted_close": 263.32000732
+        },
+        {
+          "date": "2026-10-15",
+          "close": 250.6000061,
+          "adjusted_close": 250.6000061
+        },
+        {
+          "date": "2026-10-16",
+          "close": 232.8999939,
+          "adjusted_close": 232.8999939
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/COHR?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/COHR/history/",
+      "retrieved_at_utc": "2026-10-18T04:55:14.620935+00:00",
+      "raw_sha256": "45932a5dad370c20d39a2fd305ea0dc7a4603ac90d5a08a35ca76553b14425de",
+      "events": {}
+    },
+    {
+      "symbol": "LITE",
+      "name": "Lumentum",
+      "currency": "USD",
+      "exchange": "NasdaqGS",
+      "timezone": "America/New_York",
+      "last": {
+        "date": "2026-10-16",
+        "close": 824.13000488,
+        "adjusted_close": 824.13000488
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 1103.35498047,
+          "adjusted_close": 1103.35498047
+        },
+        {
+          "date": "2026-10-12",
+          "close": 995.40997314,
+          "adjusted_close": 995.40997314
+        },
+        {
+          "date": "2026-10-13",
+          "close": 987.98999023,
+          "adjusted_close": 987.98999023
+        },
+        {
+          "date": "2026-10-14",
+          "close": 896.33001709,
+          "adjusted_close": 896.33001709
+        },
+        {
+          "date": "2026-10-15",
+          "close": 869.53997803,
+          "adjusted_close": 869.53997803
+        },
+        {
+          "date": "2026-10-16",
+          "close": 824.13000488,
+          "adjusted_close": 824.13000488
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/LITE?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/LITE/history/",
+      "retrieved_at_utc": "2026-10-18T04:55:14.617642+00:00",
+      "raw_sha256": "3ccfe1e54f146d985956027421b41c3a1e8daf2d1ba4101370974e4aa8330baa",
+      "events": {}
+    },
+    {
+      "symbol": "6501.T",
+      "name": "日立製作所",
+      "currency": "JPY",
+      "exchange": "Tokyo",
+      "timezone": "Asia/Tokyo",
+      "last": {
+        "date": "2026-10-16",
+        "close": 5770.0,
+        "adjusted_close": 5770.0
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 5669.0,
+          "adjusted_close": 5669.0
+        },
+        {
+          "date": "2026-10-13",
+          "close": 5764.0,
+          "adjusted_close": 5764.0
+        },
+        {
+          "date": "2026-10-14",
+          "close": 5809.0,
+          "adjusted_close": 5809.0
+        },
+        {
+          "date": "2026-10-15",
+          "close": 5595.0,
+          "adjusted_close": 5595.0
+        },
+        {
+          "date": "2026-10-16",
+          "close": 5770.0,
+          "adjusted_close": 5770.0
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/6501.T?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/6501.T/history/",
+      "retrieved_at_utc": "2026-10-18T04:55:14.943871+00:00",
+      "raw_sha256": "5eea05acddd267f3187a94b7db7c0d754293d0e77e31d8a58198c210edb17334",
+      "events": {}
+    },
+    {
+      "symbol": "ETN",
+      "name": "Eaton",
+      "currency": "USD",
+      "exchange": "NYSE",
+      "timezone": "America/New_York",
+      "last": {
+        "date": "2026-10-16",
+        "close": 391.25,
+        "adjusted_close": 391.25
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 429.6499939,
+          "adjusted_close": 429.6499939
+        },
+        {
+          "date": "2026-10-12",
+          "close": 426.69000244,
+          "adjusted_close": 426.69000244
+        },
+        {
+          "date": "2026-10-13",
+          "close": 428.30999756,
+          "adjusted_close": 428.30999756
+        },
+        {
+          "date": "2026-10-14",
+          "close": 408.8500061,
+          "adjusted_close": 408.8500061
+        },
+        {
+          "date": "2026-10-15",
+          "close": 402.48001099,
+          "adjusted_close": 402.48001099
+        },
+        {
+          "date": "2026-10-16",
+          "close": 391.25,
+          "adjusted_close": 391.25
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/ETN?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/ETN/history/",
+      "retrieved_at_utc": "2026-10-18T04:55:14.943408+00:00",
+      "raw_sha256": "2e82cd86215cdabaacf17dbe9eceb122ad34793618fd2788516aaebdbdb46ccd",
+      "events": {}
+    },
+    {
+      "symbol": "VRT",
+      "name": "Vertiv",
+      "currency": "USD",
+      "exchange": "NYSE",
+      "timezone": "America/New_York",
+      "last": {
+        "date": "2026-10-16",
+        "close": 206.41999817,
+        "adjusted_close": 206.41999817
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 242.77999878,
+          "adjusted_close": 242.77999878
+        },
+        {
+          "date": "2026-10-12",
+          "close": 239.36000061,
+          "adjusted_close": 239.36000061
+        },
+        {
+          "date": "2026-10-13",
+          "close": 237.28999329,
+          "adjusted_close": 237.28999329
+        },
+        {
+          "date": "2026-10-14",
+          "close": 222.83000183,
+          "adjusted_close": 222.83000183
+        },
+        {
+          "date": "2026-10-15",
+          "close": 214.75,
+          "adjusted_close": 214.75
+        },
+        {
+          "date": "2026-10-16",
+          "close": 206.41999817,
+          "adjusted_close": 206.41999817
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/VRT?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/VRT/history/",
+      "retrieved_at_utc": "2026-10-18T04:55:14.926367+00:00",
+      "raw_sha256": "f061148372744b850f727c0e784ffa03222dd8ecf62724c787c9100d862f39df",
+      "events": {}
+    },
+    {
+      "symbol": "6367.T",
+      "name": "ダイキン工業",
+      "currency": "JPY",
+      "exchange": "Tokyo",
+      "timezone": "Asia/Tokyo",
+      "last": {
+        "date": "2026-10-16",
+        "close": 21345.0,
+        "adjusted_close": 21345.0
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 21170.0,
+          "adjusted_close": 21170.0
+        },
+        {
+          "date": "2026-10-13",
+          "close": 21495.0,
+          "adjusted_close": 21495.0
+        },
+        {
+          "date": "2026-10-14",
+          "close": 21575.0,
+          "adjusted_close": 21575.0
+        },
+        {
+          "date": "2026-10-15",
+          "close": 21310.0,
+          "adjusted_close": 21310.0
+        },
+        {
+          "date": "2026-10-16",
+          "close": 21345.0,
+          "adjusted_close": 21345.0
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/6367.T?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/6367.T/history/",
+      "retrieved_at_utc": "2026-10-18T04:55:15.074087+00:00",
+      "raw_sha256": "3f4d309e657d13a95fe9e5194b955af0ce8838b76c4f711b4bc12c0dd0a83644",
+      "events": {}
+    },
+    {
+      "symbol": "AMZN",
+      "name": "Amazon",
+      "currency": "USD",
+      "exchange": "NasdaqGS",
+      "timezone": "America/New_York",
+      "last": {
+        "date": "2026-10-16",
+        "close": 250.0,
+        "adjusted_close": 250.0
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 262.42999268,
+          "adjusted_close": 262.42999268
+        },
+        {
+          "date": "2026-10-12",
+          "close": 259.52999878,
+          "adjusted_close": 259.52999878
+        },
+        {
+          "date": "2026-10-13",
+          "close": 258.57998657,
+          "adjusted_close": 258.57998657
+        },
+        {
+          "date": "2026-10-14",
+          "close": 254.08000183,
+          "adjusted_close": 254.08000183
+        },
+        {
+          "date": "2026-10-15",
+          "close": 254.75999451,
+          "adjusted_close": 254.75999451
+        },
+        {
+          "date": "2026-10-16",
+          "close": 250.0,
+          "adjusted_close": 250.0
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/AMZN?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/AMZN/history/",
+      "retrieved_at_utc": "2026-10-18T04:55:15.363973+00:00",
+      "raw_sha256": "de7ae0f1c2f444dc2ca21ca1ee857c4b353608a2c6085e9a8e7e488bdb33bd2e",
+      "events": {}
+    },
+    {
+      "symbol": "GOOGL",
+      "name": "Alphabet",
+      "currency": "USD",
+      "exchange": "NasdaqGS",
+      "timezone": "America/New_York",
+      "last": {
+        "date": "2026-10-16",
+        "close": 340.58999634,
+        "adjusted_close": 340.58999634
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 351.66000366,
+          "adjusted_close": 351.66000366
+        },
+        {
+          "date": "2026-10-12",
+          "close": 352.72000122,
+          "adjusted_close": 352.72000122
+        },
+        {
+          "date": "2026-10-13",
+          "close": 353.77999878,
+          "adjusted_close": 353.77999878
+        },
+        {
+          "date": "2026-10-14",
+          "close": 347.64001465,
+          "adjusted_close": 347.64001465
+        },
+        {
+          "date": "2026-10-15",
+          "close": 349.22000122,
+          "adjusted_close": 349.22000122
+        },
+        {
+          "date": "2026-10-16",
+          "close": 340.58999634,
+          "adjusted_close": 340.58999634
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/GOOGL?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/GOOGL/history/",
+      "retrieved_at_utc": "2026-10-18T04:55:15.463928+00:00",
+      "raw_sha256": "115b3a2cea4c65678359cdc8ea507d2428238c3d6d8d634c5a0a861a80e074e3",
+      "events": {}
+    },
+    {
+      "symbol": "AAPL",
+      "name": "Apple",
+      "currency": "USD",
+      "exchange": "NasdaqGS",
+      "timezone": "America/New_York",
+      "last": {
+        "date": "2026-10-16",
+        "close": 343.45999146,
+        "adjusted_close": 343.45999146
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 336.64001465,
+          "adjusted_close": 336.64001465
+        },
+        {
+          "date": "2026-10-12",
+          "close": 340.97000122,
+          "adjusted_close": 340.97000122
+        },
+        {
+          "date": "2026-10-13",
+          "close": 341.26998901,
+          "adjusted_close": 341.26998901
+        },
+        {
+          "date": "2026-10-14",
+          "close": 342.95999146,
+          "adjusted_close": 342.95999146
+        },
+        {
+          "date": "2026-10-15",
+          "close": 342.0,
+          "adjusted_close": 342.0
+        },
+        {
+          "date": "2026-10-16",
+          "close": 343.45999146,
+          "adjusted_close": 343.45999146
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/AAPL?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/AAPL/history/",
+      "retrieved_at_utc": "2026-10-18T04:55:15.363646+00:00",
+      "raw_sha256": "ab9268f3a7650fcb461752932cfe07a03741ccaccab14a9dbb202b3e9b7515a7",
+      "events": {}
+    },
+    {
+      "symbol": "7011.T",
+      "name": "三菱重工",
+      "currency": "JPY",
+      "exchange": "Tokyo",
+      "timezone": "Asia/Tokyo",
+      "last": {
+        "date": "2026-10-16",
+        "close": 3796.0,
+        "adjusted_close": 3796.0
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 3669.0,
+          "adjusted_close": 3669.0
+        },
+        {
+          "date": "2026-10-13",
+          "close": 3721.0,
+          "adjusted_close": 3721.0
+        },
+        {
+          "date": "2026-10-14",
+          "close": 3727.0,
+          "adjusted_close": 3727.0
+        },
+        {
+          "date": "2026-10-15",
+          "close": 3601.0,
+          "adjusted_close": 3601.0
+        },
+        {
+          "date": "2026-10-16",
+          "close": 3796.0,
+          "adjusted_close": 3796.0
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/7011.T?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/7011.T/history/",
+      "retrieved_at_utc": "2026-10-18T04:55:15.532952+00:00",
+      "raw_sha256": "f1bd706e550a3a6591d1540e594a46992518547732b0daa5d0820f740d30d34c",
+      "events": {}
+    },
+    {
+      "symbol": "GEV",
+      "name": "GE Vernova",
+      "currency": "USD",
+      "exchange": "NYSE",
+      "timezone": "America/New_York",
+      "last": {
+        "date": "2026-10-16",
+        "close": 921.20001221,
+        "adjusted_close": 921.20001221
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 1004.72998047,
+          "adjusted_close": 1004.72998047
+        },
+        {
+          "date": "2026-10-12",
+          "close": 996.79998779,
+          "adjusted_close": 996.79998779
+        },
+        {
+          "date": "2026-10-13",
+          "close": 1004.03997803,
+          "adjusted_close": 1004.03997803
+        },
+        {
+          "date": "2026-10-14",
+          "close": 941.7800293,
+          "adjusted_close": 941.7800293
+        },
+        {
+          "date": "2026-10-15",
+          "close": 926.44000244,
+          "adjusted_close": 926.44000244
+        },
+        {
+          "date": "2026-10-16",
+          "close": 921.20001221,
+          "adjusted_close": 921.20001221
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/GEV?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/GEV/history/",
+      "retrieved_at_utc": "2026-10-18T04:55:15.632534+00:00",
+      "raw_sha256": "541b8b3dd2135fb0aff63da106e6347e28c44490a6d708d0bbcd69413551e834",
+      "events": {}
+    },
+    {
+      "symbol": "ENR.DE",
+      "name": "Siemens Energy",
+      "currency": "EUR",
+      "exchange": "XETRA",
+      "timezone": "Europe/Berlin",
+      "last": {
+        "date": "2026-10-16",
+        "close": 134.97999573,
+        "adjusted_close": 134.97999573
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 145.36000061,
+          "adjusted_close": 145.36000061
+        },
+        {
+          "date": "2026-10-12",
+          "close": 146.77999878,
+          "adjusted_close": 146.77999878
+        },
+        {
+          "date": "2026-10-13",
+          "close": 143.05999756,
+          "adjusted_close": 143.05999756
+        },
+        {
+          "date": "2026-10-14",
+          "close": 135.27999878,
+          "adjusted_close": 135.27999878
+        },
+        {
+          "date": "2026-10-15",
+          "close": 132.36000061,
+          "adjusted_close": 132.36000061
+        },
+        {
+          "date": "2026-10-16",
+          "close": 134.97999573,
+          "adjusted_close": 134.97999573
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/ENR.DE?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/ENR.DE/history/",
+      "retrieved_at_utc": "2026-10-18T04:55:15.636275+00:00",
+      "raw_sha256": "db6383e5bdf21f647d71ba80ec44c19263bd0afe11e4d65672005e422cbed8be",
+      "events": {}
+    },
+    {
+      "symbol": "TWD=X",
+      "name": "USD/TWD",
+      "currency": "TWD",
+      "exchange": "CCY",
+      "timezone": "Europe/London",
+      "last": {
+        "date": "2026-10-16",
+        "close": 32.4280014,
+        "adjusted_close": 32.4280014
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 31.92539978,
+          "adjusted_close": 31.92539978
+        },
+        {
+          "date": "2026-10-12",
+          "close": 31.91609955,
+          "adjusted_close": 31.91609955
+        },
+        {
+          "date": "2026-10-13",
+          "close": 31.92779922,
+          "adjusted_close": 31.92779922
+        },
+        {
+          "date": "2026-10-14",
+          "close": 32.10499954,
+          "adjusted_close": 32.10499954
+        },
+        {
+          "date": "2026-10-15",
+          "close": 32.18989944,
+          "adjusted_close": 32.18989944
+        },
+        {
+          "date": "2026-10-16",
+          "close": 32.32690048,
+          "adjusted_close": 32.32690048
+        },
+        {
+          "date": "2026-10-16",
+          "close": 32.4280014,
+          "adjusted_close": 32.4280014
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/TWD%3DX/history/",
+      "retrieved_at_utc": "2026-10-18T04:55:15.982690+00:00",
+      "raw_sha256": "fd4130afd11623c2acc73aa3b2eea40daf7cb139c3926f0f8944a9658689d654",
+      "events": {}
+    },
+    {
+      "symbol": "EURUSD=X",
+      "name": "EUR/USD",
+      "currency": "USD",
+      "exchange": "CCY",
+      "timezone": "Europe/London",
+      "last": {
+        "date": "2026-10-16",
+        "close": 1.12131512,
+        "adjusted_close": 1.12131512
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 1.12130249,
+          "adjusted_close": 1.12130249
+        },
+        {
+          "date": "2026-10-12",
+          "close": 1.12047327,
+          "adjusted_close": 1.12047327
+        },
+        {
+          "date": "2026-10-13",
+          "close": 1.11602163,
+          "adjusted_close": 1.11602163
+        },
+        {
+          "date": "2026-10-14",
+          "close": 1.12044823,
+          "adjusted_close": 1.12044823
+        },
+        {
+          "date": "2026-10-15",
+          "close": 1.11950743,
+          "adjusted_close": 1.11950743
+        },
+        {
+          "date": "2026-10-16",
+          "close": 1.12131512,
+          "adjusted_close": 1.12131512
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/EURUSD%3DX?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/EURUSD%3DX/history/",
+      "retrieved_at_utc": "2026-10-18T04:55:16.293735+00:00",
+      "raw_sha256": "686cac17c1fab5a1e46f5fae612455c55f482f7097492c257bc91af0c223ec09",
+      "events": {}
+    },
+    {
+      "symbol": "JPY=X",
+      "name": "USD/JPY",
+      "currency": "JPY",
+      "exchange": "CCY",
+      "timezone": "Europe/London",
+      "last": {
+        "date": "2026-10-16",
+        "close": 157.98699951,
+        "adjusted_close": 157.98699951
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 158.06300354,
+          "adjusted_close": 158.06300354
+        },
+        {
+          "date": "2026-10-12",
+          "close": 158.20300293,
+          "adjusted_close": 158.20300293
+        },
+        {
+          "date": "2026-10-13",
+          "close": 158.52000427,
+          "adjusted_close": 158.52000427
+        },
+        {
+          "date": "2026-10-14",
+          "close": 158.32200623,
+          "adjusted_close": 158.32200623
+        },
+        {
+          "date": "2026-10-15",
+          "close": 157.95700073,
+          "adjusted_close": 157.95700073
+        },
+        {
+          "date": "2026-10-16",
+          "close": 158.14300537,
+          "adjusted_close": 158.14300537
+        },
+        {
+          "date": "2026-10-16",
+          "close": 157.98699951,
+          "adjusted_close": 157.98699951
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/JPY%3DX?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/JPY%3DX/history/",
+      "retrieved_at_utc": "2026-10-18T04:55:16.447473+00:00",
+      "raw_sha256": "22885c93398fbdd9b2c491e874e3e1e32ec5c44332676b77918f0a746254814b",
+      "events": {}
+    },
+    {
+      "symbol": "KRW=X",
+      "name": "USD/KRW",
+      "currency": "KRW",
+      "exchange": "CCY",
+      "timezone": "Europe/London",
+      "last": {
+        "date": "2026-10-16",
+        "close": 1340.94995117,
+        "adjusted_close": 1340.94995117
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 1342.98999023,
+          "adjusted_close": 1342.98999023
+        },
+        {
+          "date": "2026-10-12",
+          "close": 1340.83996582,
+          "adjusted_close": 1340.83996582
+        },
+        {
+          "date": "2026-10-13",
+          "close": 1334.13000488,
+          "adjusted_close": 1334.13000488
+        },
+        {
+          "date": "2026-10-14",
+          "close": 1340.31005859,
+          "adjusted_close": 1340.31005859
+        },
+        {
+          "date": "2026-10-15",
+          "close": 1339.34997559,
+          "adjusted_close": 1339.34997559
+        },
+        {
+          "date": "2026-10-16",
+          "close": 1340.94995117,
+          "adjusted_close": 1340.94995117
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/KRW%3DX?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/KRW%3DX/history/",
+      "retrieved_at_utc": "2026-10-18T04:55:16.448261+00:00",
+      "raw_sha256": "eb7eb9c049c98161e950c9620d242ba520f5d01c7800cded2489c43eb0ee2915",
+      "events": {}
+    },
+    {
+      "symbol": "HKD=X",
+      "name": "USD/HKD",
+      "currency": "HKD",
+      "exchange": "CCY",
+      "timezone": "Europe/London",
+      "last": {
+        "date": "2026-10-16",
+        "close": 7.84719992,
+        "adjusted_close": 7.84719992
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 7.84743977,
+          "adjusted_close": 7.84743977
+        },
+        {
+          "date": "2026-10-12",
+          "close": 7.84724998,
+          "adjusted_close": 7.84724998
+        },
+        {
+          "date": "2026-10-13",
+          "close": 7.84740019,
+          "adjusted_close": 7.84740019
+        },
+        {
+          "date": "2026-10-14",
+          "close": 7.84840012,
+          "adjusted_close": 7.84840012
+        },
+        {
+          "date": "2026-10-15",
+          "close": 7.84769011,
+          "adjusted_close": 7.84769011
+        },
+        {
+          "date": "2026-10-16",
+          "close": 7.84719992,
+          "adjusted_close": 7.84719992
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/HKD%3DX?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/HKD%3DX/history/",
+      "retrieved_at_utc": "2026-10-18T04:55:16.668273+00:00",
+      "raw_sha256": "55a7a095cdf90815b660f1411d7677dacdc79133ad32cc6e4430191a2b72d625",
+      "events": {}
+    }
+  ]
+}

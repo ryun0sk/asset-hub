@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-18",
+  "scope": "EPSの推移タブをPERの隣へ追加",
+  "route": "#ai/eps",
+  "unitTests": {
+    "command": "node --test tests/*.cjs",
+    "passed": 109
+  },
+  "designTokens": "passed",
+  "catalog": "unchanged and valid",
+  "archives": 8,
+  "browser": {
+    "localDirectRoute": true,
+    "nativeGenerationCharts": 3,
+    "indexedGenerationCharts": 1,
+    "periodChange": true,
+    "companyOff": true,
+    "emptyAndRecovery": true,
+    "zeroAndNegativeValues": "model tests",
+    "smallViewportRequested": 375,
+    "smallViewportObserved": 416,
+    "documentHorizontalOverflow": false,
+    "consoleErrors": 0,
+    "initialHeightLocal": {
+      "frame": 1472,
+      "body": 1124,
+      "frameContainsBody": true
+    },
+    "productionInitialHeight": {
+      "frame": 1538,
+      "body": 1131,
+      "frameContainsBody": true
+    },
+    "productionSwitching": [
+      "EPS",
+      "PER",
+      "EPS予想・決算",
+      "EPS",
+      "PER",
+      "EPS"
+    ],
+    "legendMatchesCompanyControls": true
+  },
+  "data": {
+    "pricesRefetched": false,
+    "epsRefetched": false,
+    "researchFilesModified": false,
+    "source": "research/themes/ai-supply-chain/2026-10-18/valuation.json",
+    "maxAgeDays": 460,
+    "negativeEpsPreserved": true,
+    "noLookahead": true,
+    "nativeCurrencyGrouping": true,
+    "indexRequiresPositiveStart": true
+  },
+  "screenshots": [
+    "production-eps-trend.jpg"
+  ],
+  "review": {
+    "independentModelAndIntegrationReview": true,
+    "steppedBeforeDrawingVerified": true,
+    "expiryEdgePointsVerified": true,
+    "renderBeforeStylesheet": true
+  },
+  "deployment": {
+    "initialRevision": "asset-hub-00037-vdg",
+    "initialBuildId": "958092a1-5ef3-4bf0-b25a-623258419de2",
+    "initialImage": "asia-northeast1-docker.pkg.dev/ryun0sk-asset-hub/asset-hub/app@sha256:e7687e71b1c4d238f5350cb4e3315fb55337a20a2e89809c8d36ff3fad290190",
+    "iap": true,
+    "viewers": 2,
+    "revision": "asset-hub-00039-mdt",
+    "image": "asia-northeast1-docker.pkg.dev/ryun0sk-asset-hub/asset-hub/app@sha256:ca5bd647e619319c8136d416f373e87c714707037b94c372965a1a5db211811e",
+    "buildId": "d70a8774-a37a-4007-bc01-b80159b69774",
+    "trafficPercent": 100,
+    "runtimeFilesOverlaid": 5,
+    "unrelatedRuntimeFilesPreserved": 327,
+    "researchDataPreserved": true,
+    "url": "https://asset-hub-pvgbytjsqa-an.a.run.app/#ai/eps",
+    "heightFixRevision": "asset-hub-00038-jgc",
+    "heightFixBuildId": "095756a5-95dc-43bb-b28c-395f568622c5",
+    "productionVerified": true
+  }
+}

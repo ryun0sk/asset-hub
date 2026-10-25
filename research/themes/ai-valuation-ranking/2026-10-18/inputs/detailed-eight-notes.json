@@ -1,0 +1,50 @@
+{
+  "285A.T": {
+    "method": "全用途NANDのbit数量・ASP・金額シェアとcost/bit・固定費から利益を推計。その他低収益取引は売上と同額費用。",
+    "risks": ["基準2029営業利益率56.7%も高採算。ASP・cost/bit・投資後CFの変化が大きい。", "終点EPS法は途中の高利益から残る現金・株主還元を十分評価しない。自社株買いを株数と現金で二重評価しない。"],
+    "key_condition": "NAND価格・cost/bitと、投資後の現金回収。低PERだけでは判断しない。",
+    "url": "https://www2.jpx.co.jp/disc/285A0/140120260731505265.pdf", "date": "2026-07-31"
+  },
+  "NVDA": {
+    "method": "共通AI投資から電子機器等の対象プールを切り出し、完成システム等の売上捕捉係数・その他事業・SBC/償却・税・株数を通じEPSへ。",
+    "risks": ["売上捕捉係数は観測済みのGPU市場シェアではない。基準2029は2026校正より取り分が増える。", "購入契約・出資・条件付き保証、顧客回収、ASIC競争、粗利率。"],
+    "key_condition": "取り分固定でも2029EPS約12.52ドル。価格の余裕は約2%まで縮む。",
+    "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/", "date": "2026-08-26"
+  },
+  "AVGO": {
+    "method": "AI ASIC/通信の対象プール内の取り分と非AI半導体・ソフト売上を積算。SBC・取得無形資産償却を残す。",
+    "risks": ["基準2029AI売上は2026校正の4倍以上。取り分固定ならEPS約13.74ドルまで低下し割安判定は逆転。", "顧客集中・内製・設計変更、信用支援、取得無形資産償却と株数増。"],
+    "key_condition": "ASIC・通信の大幅な売上獲得拡大。基準の低PERはこの強い条件を含む。",
+    "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial", "date": "2026-09-02"
+  },
+  "2330.TW": {
+    "method": "電子機器対象プールの製造・実装原価含有率×TSMCの取り分＋その他売上。供給上限・営業率・税・普通株数からEPSへ。",
+    "risks": ["上流原価含有率が2026校正8.5%から2029基準14%へ上昇する独自仮定。", "海外工場費用、capex負担、地政学。普通株と米国ADRの価格差にも注意。"],
+    "key_condition": "先端製造・実装の付加価値増と供給能力。今回は台湾普通株で比較。",
+    "url": "https://pr.tsmc.com/english/news/3346", "date": "2026-10-15"
+  },
+  "ASML": {
+    "method": "EUV需要と供給上限の小さい方、DUV市場×シェア、検査・既存機売上を積算。SBC/R&D込み費用・税・株数へ。",
+    "risks": ["基準2029売上704億EURは旧2030会社シナリオの上限600億EURを上回る独自上方想定。", "増産・検収、輸出規制、High-NA採算、顧客投資の遅延。"],
+    "key_condition": "能力増の実現と装置検収。基準売上は保守的な下限ではない。",
+    "url": "https://investor.asml.com/static-files/40c56a6b-1460-4f69-9340-6a869560d24b", "date": "2026-10-14"
+  },
+  "6857.T": {
+    "method": "SoC・メモリテスタ市場をAI投資とテスト複雑化へ接続し、シェア・他事業・全社営業率・税・株数からEPSへ。",
+    "risks": ["評価益・棚卸戻入れを恒久化しない。市場成長とテスト複雑化が同時に進む前提。", "供給増・競争・顧客投資循環。高い将来PER維持を基準価格が必要とする。"],
+    "key_condition": "テスト複雑化・シェアと供給増が利益へ届くか。",
+    "url": "https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_260729_slide.pdf", "date": "2026-07-29"
+  },
+  "VRT": {
+    "method": "共通AI投資×電源/冷却対象配分×取り分＋残余事業。全社営業率はSBC・償却込み。",
+    "risks": ["AI専用売上・シェアは独立観測値でなく売上に合わせた校正。", "顧客納期・運転資金、液冷競争、供給増、希薄化。"],
+    "key_condition": "高い需要を採算・回収に変え、EPS成長が高評価に追いつくか。",
+    "url": "https://investors.vertiv.com/news/news-details/2026/Vertiv-Reports-Strong-Second-Quarter-2026-with-Diluted-EPS-Growth-of-53-Adjusted-Diluted-EPS-Growth-of-60-Raises-Full-Year-2026-Guidance-Across-All-Key-Metrics/default.aspx", "date": "2026-07-29"
+  },
+  "ANET": {
+    "method": "共通AI投資×通信対象配分×取り分＋残余事業。全社営業率・金融収益・税・株数を通じEPSへ。",
+    "risks": ["AI対象売上・シェアは独立実測でなく校正値。非AIとの区分も推定。", "顧客集中・NVIDIA/ASIC通信競争、SBC・希薄化、評価倍率。"],
+    "key_condition": "現在株価は基準以上の利益成長か高いPER維持を要求する。",
+    "url": "https://investors.arista.com/Communications/Press-Releases-and-Events/Press-Release-Detail/2026/Arista-Networks-Inc--Reports-Second-Quarter-2026-Financial-Results/default.aspx", "date": "2026-08-04"
+  }
+}

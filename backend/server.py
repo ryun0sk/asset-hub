@@ -9,13 +9,14 @@ Besides the shell and research files it serves two prebuilt JSON documents:
 from the state bucket in cloud and from data/private/ locally, cached for a minute.
 """
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
-from urllib.parse import urlsplit
+from urllib.parse import parse_qsl, urlsplit
 import argparse
 import json
 import os
 import shutil
 import threading
 import time
+import uuid
 from pathlib import Path
 
 from .paths import ROOT, resolve_research, shell_assets
@@ -72,7 +73,9 @@ class Handler(BaseHTTPRequestHandler):
         """Stream a static file (research pages reach ~17MB) and answer revalidations with 304."""
         tag = etag(file)
         if tag in [value.strip() for value in self.headers.get('If-None-Match', '').split(',')]:
-            self.send_headers(304, None, csp, 0, STATIC_CACHE, {'ETag': tag})
+            # A 304 has no body, but Content-Length describes the cached 200
+            # representation (RFC 9110 section 8.6), not a zero-byte document.
+            self.send_headers(304, None, csp, file.stat().st_size, STATIC_CACHE, {'ETag': tag})
             return
         self.send_headers(200, mime, csp, file.stat().st_size, STATIC_CACHE, {'ETag': tag})
         if not head:
@@ -109,7 +112,9 @@ class Handler(BaseHTTPRequestHandler):
         if not self.authorized(head):
             return
         path = urlsplit(self.path).path
-        if path == '/api/catalog':
+        if path.startswith('/api/mbo/'):
+            self.serve_mbo(path, head)
+        elif path == '/api/catalog':
             self.serve_catalog(head)
         elif path == '/api/costs':
             try:
@@ -134,6 +139,38 @@ class Handler(BaseHTTPRequestHandler):
                 return
             file, mime = asset
             self.send_file(file, mime, SHELL_CSP, head)
+
+    def serve_mbo(self, path, head):
+        """Same-origin, read-only results in the existing IAP-protected shell."""
+        request_id = uuid.uuid4().hex
+        def reject(status, code, message):
+            self.json_response(status, {'error': {'code': code, 'message': message, 'retryable': status == 503},
+                                        'request_id': request_id}, head)
+        origins = self.headers.get_all('Origin', [])
+        sites = self.headers.get_all('Sec-Fetch-Site', [])
+        host = self.headers.get('Host', '')
+        scheme = 'https' if self.server.cloud else 'http'
+        if (len(self.headers.get_all('Host', [])) != 1 or len(origins) > 1
+                or (origins and origins[0] != f'{scheme}://{host}')
+                or len(sites) > 1 or (sites and sites[0] not in {'same-origin', 'none'})):
+            reject(403, 'forbidden', 'この接続元からは利用できません。')
+            return
+        try:
+            pairs = parse_qsl(urlsplit(self.path).query, keep_blank_values=True, errors='strict', max_num_fields=12)
+            if len({key for key, _ in pairs}) != len(pairs):
+                raise ValueError()
+            reader = getattr(self.server, 'mbo_dashboard', None)
+            if reader is None:
+                raise RuntimeError()
+            payload = reader.response(path, dict(pairs))
+        except FileNotFoundError:
+            reject(404, 'not_found', '指定した保存結果がありません。')
+        except (ValueError, UnicodeError):
+            reject(400, 'invalid_request', '取得条件を確認してください。')
+        except Exception:
+            reject(503, 'unavailable', 'MBOの保存結果を読み込めませんでした。')
+        else:
+            self.json_response(200, payload, head)
 
     def serve_catalog(self, head):
         catalog = self.server.research_dir / 'catalog.json'
@@ -230,8 +267,18 @@ def cloud_settings(environ):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--port', type=int, default=int(os.environ.get('PORT', '4330')))
+    parser.add_argument('--mode', choices=['dashboard', 'mbo-local'], default='dashboard')
+    parser.add_argument('--port', type=int)
+    parser.add_argument('--mbo-data-dir', type=Path, default=ROOT / 'data/private/mbo')
     args = parser.parse_args()
+    if args.mode == 'mbo-local':
+        if 'K_SERVICE' in os.environ:
+            parser.error('mbo-local is available only on this Mac, not in Cloud Run')
+        from .mbo.http import serve
+        serve(port=args.port if args.port is not None else 4331, data_dir=args.mbo_data_dir)
+        return
+    if args.port is None:
+        args.port = int(os.environ.get('PORT', '4330'))
     cloud = bool(os.environ.get('K_SERVICE'))
     from .assets import asset_document
     from .costs import cost_document
@@ -245,6 +292,12 @@ def main():
     server = DashboardServer(('0.0.0.0' if cloud else '127.0.0.1', args.port), Handler).configure(cloud)
     server.cost_document = document
     server.asset_document = asset_document(bucket if cloud else None)
+    from .mbo_dashboard import MboDashboard
+    if cloud:
+        from .storage import GCSDocument
+        server.mbo_dashboard = MboDashboard(document=GCSDocument(bucket, 'mbo/results.json'))
+    else:
+        server.mbo_dashboard = MboDashboard(data_dir=args.mbo_data_dir)
     if cloud:
         server.audience, server.allowed, server.verify = audience, allowed, verify_iap
     print(f'Asset Hub listening on port {args.port}; IAP={cloud}', flush=True)

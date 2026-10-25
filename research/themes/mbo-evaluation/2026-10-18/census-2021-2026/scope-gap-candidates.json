@@ -1,0 +1,98 @@
+[
+  {
+    "code": "5617",
+    "name": "ウィル・ドゥ",
+    "classification": "mbo_participation_unconfirmed",
+    "reason": "SIVAへの全株式譲渡は一次開示で確認したが、対象経営者の買付側への直接・間接出資、再出資・共同取得合意の有無は確認できない。第三者への売却をMBOへ自動分類せず採用保留。",
+    "sources": [
+      {
+        "title": "TOKYO PRO Marketにおける当社株式の上場廃止申請に関するお知らせ",
+        "url": "https://ir-public-contents.willdo.co.jp/others/20260729-001.pdf",
+        "public_at": "2026-07-29",
+        "locator": "pp1–2：全株式譲渡の相手方・目的、上場廃止日程"
+      }
+    ]
+  },
+  {
+    "code": "136A",
+    "name": "三興商事",
+    "classification": "mbo_participation_unconfirmed",
+    "reason": "佐渡島が設立するSPCへの全株式譲渡は一次開示で確認したが、対象経営者の買付側出資・共同取得合意の有無は未解消。SPCの存在だけではMBO認定しない。",
+    "sources": [
+      {
+        "title": "TOKYO PRO Marketにおける当社株式の上場廃止申請に関するお知らせ",
+        "url": "https://www.daiwair.co.jp/td_download.cgi?c=136A&i=3231558",
+        "public_at": "2026-06-02",
+        "locator": "p1：上場廃止の理由、佐渡島設立SPCへの全株式譲渡"
+      }
+    ]
+  },
+  {
+    "code": "2977",
+    "name": "Livenup Group",
+    "classification": "mbo_participation_unconfirmed",
+    "reason": "3/11の自主申請と5/28のグッドコムアセット80%取得は確認したが、対象経営者やグリットパートナーズの最終所有・共同出資合意を完全には確認していない。残余持分だけでMBOとしない。",
+    "sources": [
+      {
+        "title": "臨時株主総会招集・上場廃止申請・定款一部変更に関するお知らせ",
+        "url": "https://www2.jpx.co.jp/disc/29770/140120250311591561.pdf",
+        "public_at": "2025-03-11",
+        "locator": "pp1–2 §1–2：上場廃止申請の目的と日程"
+      },
+      {
+        "title": "株式会社Livenup Groupの株式取得（子会社化）及び第三者割当による自己株式の処分に関するお知らせ",
+        "url": "https://www.fse.or.jp/files/lis_tkj/25052834753.pdf",
+        "public_at": "2025-05-28",
+        "locator": "pp1–3：80%取得、対象代表者・大株主・取得相手先"
+      }
+    ]
+  },
+  {
+    "code": "5529",
+    "name": "No.1都市開発",
+    "classification": "mbo_participation_unconfirmed",
+    "reason": "SPCの買収側51%/49%は確認し、49%はMFD保有で対象売却社長の再出資とは確認できない。LBOとMBOを区別し、対象経営者の間接参加合意が未解消のため採用保留。",
+    "sources": [
+      {
+        "title": "TOKYO PRO Marketにおける当社株式の上場廃止申請に関するお知らせ",
+        "url": "https://www2.jpx.co.jp/disc/55290/140120241227545575.pdf",
+        "public_at": "2024-12-27",
+        "locator": "pp1–2：上場廃止申請の理由と日程"
+      },
+      {
+        "title": "No.1都市開発株式会社株式の取得及び子会社の異動に関するお知らせ",
+        "url": "https://www2.jpx.co.jp/disc/21340/140120250217577296.pdf",
+        "public_at": "2025-02-17",
+        "locator": "pp1–3：KM・MFDの出資構造と対象株式売主"
+      }
+    ]
+  },
+  {
+    "code": "5526",
+    "name": "LUMBER ONE",
+    "classification": "mbo_participation_unconfirmed",
+    "reason": "ヤマエホールディングスの全株式取得と対象社長等が売主であることは確認したが、買付側再出資・共同取得合意の有無は未解消。対象社長からの売却だけではMBOと認定しない。",
+    "sources": [
+      {
+        "title": "株式会社LUMBER ONEの株式の取得（子会社化）に関するお知らせ",
+        "url": "https://www2.jpx.co.jp/disc/71300/140120230718523115.pdf",
+        "public_at": "2023-07-18",
+        "locator": "pp1–2：取得理由、対象代表・大株主、取得相手先"
+      }
+    ]
+  },
+  {
+    "code": "2371",
+    "name": "カカクコム（Bain/LINEヤフー対抗案）",
+    "classification": "mbo_participation_unconfirmed",
+    "reason": "会社公表の対抗TOB開始予定は確認。経営陣出資・MBO該当/非該当の明文は本資料で確認できず、主MBO台帳には未算入。EQT案の非MBO認定を別の対抗案へ転用しない。",
+    "sources": [
+      {
+        "title": "カカクコム 対抗公開買付け開始予定に関する会社公表資料",
+        "url": "https://finance-frontend-pc-dist.west.edge.storage-yahoo.jp/disclosure/20260730/20260730502663.pdf",
+        "public_at": "2026-07-30",
+        "locator": "PDF p1-2（開始予定・買付者構造）"
+      }
+    ]
+  }
+]

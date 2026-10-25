@@ -1,0 +1,2961 @@
+{
+  "as_of_jst": "2026-10-18",
+  "year_basis": "CY2028/CY2029 full-year-equivalent; not exit run rates; March-FY issuer guidance is calibration only",
+  "money_units": "bn of specified currency; shares m; EPS in unit currency per ordinary share",
+  "status": "ALL 2028/2029 values are independent scenario assumptions/calculations, NOT issuer/consensus forecasts",
+  "fx_constants": {
+    "usdjpy": 157.98699951,
+    "eurusd": 1.12131512,
+    "basis": "2026-10-16 observed FX supplied by parent; held constant for comparison, not future forecasts"
+  },
+  "macro_ai_spend_usd_bn": {
+    "2028": {
+      "bear": 1000,
+      "base": 1400,
+      "bull": 1900
+    },
+    "2029": {
+      "bear": 950,
+      "base": 1700,
+      "bull": 2500
+    }
+  },
+  "sources": {
+    "kio_q1": {
+      "date": "2026-07-31",
+      "type": "issuer_actual_and_H1_guidance",
+      "url": "https://www2.jpx.co.jp/disc/285A0/140120260731505265.pdf"
+    },
+    "nand_q2": {
+      "date": "2026-08-18",
+      "type": "external_research_actual_estimate",
+      "url": "https://www.trendforce.com/presscenter/news/20260818-13186.html"
+    },
+    "kio_strategy": {
+      "date": "2026-06-02",
+      "type": "issuer_strategy_with_external_TechInsights_forecasts",
+      "url": "https://www.kioxia-holdings.com/content/dam/kioxia-hd/en-jp/ir/library/event/asset/Kioxia-Investor-Day-2026-en.pdf"
+    },
+    "kio_shares_aug": {
+      "date": "2026-08-31",
+      "type": "issuer_EDINET_share_count",
+      "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100Z1UD.pdf"
+    },
+    "adv_q1": {
+      "date": "2026-07-29",
+      "type": "issuer_actual_and_guidance",
+      "url": "https://www.advantest.com/document/en/investors/ir-library/result/E_FR_FY2026_1Q.pdf"
+    },
+    "adv_tam": {
+      "date": "2026-07-29",
+      "type": "issuer_market_estimate_and_guidance",
+      "url": "https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_260729_slide.pdf"
+    },
+    "adv_share": {
+      "date": "2026-04-27",
+      "type": "issuer_CY2025_market_share_estimate",
+      "url": "https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_260427_slide.pdf"
+    },
+    "adv_qa": {
+      "date": "2026-07-29",
+      "type": "issuer_explanations_and_capacity",
+      "url": "https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_260729_QA.pdf"
+    },
+    "asml_q3": {
+      "date": "2026-10-14",
+      "type": "issuer_actual_and_guidance",
+      "url": "https://investor.asml.com/news-releases/news-release-details/asml-reports-eu11.7-billion-total-net-sales-and-eu5.0-billion-net-income-q3-2026"
+    },
+    "asml_q3_fin": {
+      "date": "2026-10-14",
+      "type": "issuer_US_GAAP_financial_statements",
+      "url": "https://investor.asml.com/static-files/d310262b-d037-485d-83b5-92c93cc462f0"
+    },
+    "asml_q3_call": {
+      "date": "2026-10-14",
+      "type": "issuer_prepared_remarks_and_capacity",
+      "url": "https://investor.asml.com/static-files/40c56a6b-1460-4f69-9340-6a869560d24b"
+    },
+    "asml_2025": {
+      "date": "2026-01-28",
+      "type": "issuer_actual_by_technology",
+      "url": "https://www.sec.gov/Archives/edgar/data/937966/000162828026003701/a2026_01x28xpresentation.htm"
+    },
+    "asml_2030": {
+      "date": "2024-11-14",
+      "type": "old_issuer_scenarios_not_current_forecast",
+      "url": "https://www.sec.gov/Archives/edgar/data/937966/000093796624000026/exhibit997.htm"
+    },
+    "asml_share_form": {
+      "date": "2026-10-18_access",
+      "type": "issuer_share_information",
+      "url": "https://investor.asml.com/share-information"
+    }
+  },
+  "companies": {
+    "285A": {
+      "facts": {
+        "period": "2026-04-01/2026-06-30",
+        "revenue_jpy_bn": 1767.117,
+        "cogs_jpy_bn": 387.051,
+        "sg_and_a_jpy_bn": 71.727,
+        "operating_profit_jpy_bn": 1270.017,
+        "litigation_expense_jpy_bn_rounded": 36.6,
+        "sbc_expense_jpy_bn_rounded": 19.4,
+        "financial_income_jpy_bn": 17.17,
+        "financial_expense_jpy_bn": 52.801,
+        "pretax_jpy_bn": 1234.72,
+        "tax_jpy_bn": 392.549,
+        "parent_profit_jpy_bn": 842.165,
+        "diluted_eps_pre_split_jpy": 1525.09,
+        "split_multiplier": 3,
+        "average_usdjpy_rounded": 160,
+        "other_revenue_jpy_bn_rounded": 66.7,
+        "h1_company_revenue_jpy_bn": 4157.117,
+        "h1_company_operating_profit_jpy_bn": 3160.017,
+        "h1_company_parent_profit_jpy_bn": 2112.165,
+        "source_ids": [
+          "kio_q1"
+        ],
+        "implied_diluted_shares_m_post_split": 1656.620265033539,
+        "diluted_shares_m_buyback_adjusted_approx": 1608.218184033539,
+        "q2_company_guidance_derived": {
+          "published": "2026-07-31",
+          "status": "issuer_guidance_NOT_actual",
+          "revenue_jpy_bn": 2390.0,
+          "operating_profit_jpy_bn": 1889.9999999999998,
+          "parent_profit_jpy_bn": 1270.0,
+          "operating_margin": 0.7907949790794978,
+          "q2_profit_times4_jpy_bn_reference_NOT_annual_guidance": 5080.0,
+          "q2_profit_times4_div_q1_diluted_shares_reference_eps": 3066.4842796047487
+        }
+      },
+      "anchor": {
+        "q2_2026_kioxia_nand_revenue_usd_bn": 10.72,
+        "q2_2026_kioxia_value_share": 0.136,
+        "top5_revenue_usd_bn": 68.87,
+        "all_market_q2_usd_bn_derived": 78.82352941176471,
+        "annualized_q2_tam_usd_bn": 315.29411764705884,
+        "basis": "Q2 revenue level x4; calibration only, NOT a FY2026 forecast",
+        "source_ids": [
+          "nand_q2"
+        ],
+        "annualized_other_revenue_jpy_bn": 266.8,
+        "annualized_branded_revenue_jpy_bn": 6801.668,
+        "annualized_normal_op_jpy_bn": 5226.468,
+        "annualized_normal_brand_cost_jpy_bn": 1575.1999999999998,
+        "economic_fixed_cost_jpy_bn_assumed": 520,
+        "economic_production_cost_jpy_bn_residual": 1055.1999999999998
+      },
+      "assumptions": {
+        "bear": {
+          "market_bit_cagr": 0.12,
+          "asp_index": {
+            "2028": 0.28,
+            "2029": 0.22
+          },
+          "revenue_share": {
+            "2028": 0.125,
+            "2029": 0.123
+          },
+          "mix_price_premium_index": {
+            "2028": 1.0,
+            "2029": 1.0
+          },
+          "cost_per_bit_annual_decline": 0.05,
+          "fixed_cost_cagr": 0.08,
+          "utilization_cost_penalty": {
+            "2028": 1.1,
+            "2029": 1.15
+          },
+          "net_finance_jpy_bn": {
+            "2028": -80,
+            "2029": -80
+          },
+          "tax_rate": 0.32
+        },
+        "base": {
+          "market_bit_cagr": 0.22,
+          "asp_index": {
+            "2028": 0.45,
+            "2029": 0.4
+          },
+          "revenue_share": {
+            "2028": 0.15,
+            "2029": 0.153
+          },
+          "mix_price_premium_index": {
+            "2028": 1.04,
+            "2029": 1.06
+          },
+          "cost_per_bit_annual_decline": 0.1,
+          "fixed_cost_cagr": 0.1,
+          "utilization_cost_penalty": {
+            "2028": 1.0,
+            "2029": 1.0
+          },
+          "net_finance_jpy_bn": {
+            "2028": -50,
+            "2029": -45
+          },
+          "tax_rate": 0.32
+        },
+        "bull": {
+          "market_bit_cagr": 0.3,
+          "asp_index": {
+            "2028": 0.7,
+            "2029": 0.6
+          },
+          "revenue_share": {
+            "2028": 0.16,
+            "2029": 0.165
+          },
+          "mix_price_premium_index": {
+            "2028": 1.07,
+            "2029": 1.1
+          },
+          "cost_per_bit_annual_decline": 0.12,
+          "fixed_cost_cagr": 0.14,
+          "utilization_cost_penalty": {
+            "2028": 0.98,
+            "2029": 0.98
+          },
+          "net_finance_jpy_bn": {
+            "2028": -20,
+            "2029": -10
+          },
+          "tax_rate": 0.32
+        }
+      },
+      "results": [
+        {
+          "year": 2028,
+          "scenario": "bear",
+          "macro_ai_spend_usd_bn": 1000,
+          "industry_bit_index_vs_annualized_q2_2026": 1.2544000000000002,
+          "industry_asp_index_vs_q2_2026": 0.28,
+          "nand_tam_usd_bn": 110.74138352941179,
+          "kioxia_value_share": 0.125,
+          "mix_price_premium_index": 1.0,
+          "kioxia_physical_bit_index": 1.1529411764705884,
+          "brand_revenue_jpy_bn": 2186.962363174738,
+          "other_pass_through_revenue_jpy_bn": 290.58294118033905,
+          "company_revenue_jpy_bn": 2477.545304355077,
+          "production_cost_jpy_bn": 1207.7632988235296,
+          "fixed_ifrs_cost_including_sbc_and_rd_jpy_bn": 606.528,
+          "total_operating_cost_jpy_bn": 2104.8742400038686,
+          "operating_profit_jpy_bn": 372.6710643512083,
+          "operating_margin": 0.15041947515394366,
+          "net_finance_jpy_bn": -80,
+          "pretax_profit_jpy_bn": 292.6710643512083,
+          "tax_jpy_bn": 93.65474059238666,
+          "parent_profit_jpy_bn": 199.01632375882167,
+          "diluted_shares_m": 1630,
+          "eps_jpy": 122.09590414651636,
+          "case": "weak",
+          "ticker": "285A",
+          "currency": "JPY",
+          "money_unit": "billion",
+          "diluted_shares_unit": "million",
+          "diluted_shares": 1630000000.0,
+          "revenue": 2477545304355.077,
+          "normal_operating_margin": 0.15041947515394366,
+          "normal_operating_profit": 372671064351.2083,
+          "normal_net_interest": -80000000000.0,
+          "normal_tax_rate": 0.32,
+          "normal_tax": 93654740592.38666,
+          "normal_parent_profit": 199016323758.82166,
+          "eps": 122.09590414651636,
+          "source_kind": "independent_scenario",
+          "components": [
+            {
+              "name": "branded_NAND_including_own_SSD",
+              "market_size": 110741383529.41179,
+              "market_currency": "USD",
+              "money_share": 0.125,
+              "fx_to_local": 157.98699951,
+              "local_revenue": 2186962363174.738
+            },
+            {
+              "name": "JV_pass_through_and_other_no_profit",
+              "market_size": null,
+              "money_share": null,
+              "local_revenue": 290582941180.33905,
+              "note": "direct calibrated revenue; same amount cost; not extra branded TAM"
+            }
+          ],
+          "normal_operating_cost": 2104874240003.8687
+        },
+        {
+          "year": 2028,
+          "scenario": "base",
+          "macro_ai_spend_usd_bn": 1400,
+          "industry_bit_index_vs_annualized_q2_2026": 1.4884,
+          "industry_asp_index_vs_q2_2026": 0.45,
+          "nand_tam_usd_bn": 211.17769411764706,
+          "kioxia_value_share": 0.15,
+          "mix_price_premium_index": 1.04,
+          "kioxia_physical_bit_index": 1.57847850678733,
+          "brand_revenue_jpy_bn": 5004.4995385631455,
+          "other_pass_through_revenue_jpy_bn": 350.8560978124899,
+          "company_revenue_jpy_bn": 5355.355636375635,
+          "production_cost_jpy_bn": 1349.144521493212,
+          "fixed_ifrs_cost_including_sbc_and_rd_jpy_bn": 629.2,
+          "total_operating_cost_jpy_bn": 2329.2006193057023,
+          "operating_profit_jpy_bn": 3026.155017069933,
+          "operating_margin": 0.5650707856851045,
+          "net_finance_jpy_bn": -50,
+          "pretax_profit_jpy_bn": 2976.155017069933,
+          "tax_jpy_bn": 952.3696054623786,
+          "parent_profit_jpy_bn": 2023.7854116075544,
+          "diluted_shares_m": 1630,
+          "eps_jpy": 1241.5861420905242,
+          "case": "base",
+          "ticker": "285A",
+          "currency": "JPY",
+          "money_unit": "billion",
+          "diluted_shares_unit": "million",
+          "diluted_shares": 1630000000.0,
+          "revenue": 5355355636375.635,
+          "normal_operating_margin": 0.5650707856851045,
+          "normal_operating_profit": 3026155017069.933,
+          "normal_net_interest": -50000000000.0,
+          "normal_tax_rate": 0.32,
+          "normal_tax": 952369605462.3785,
+          "normal_parent_profit": 2023785411607.5544,
+          "eps": 1241.5861420905242,
+          "source_kind": "independent_scenario",
+          "components": [
+            {
+              "name": "branded_NAND_including_own_SSD",
+              "market_size": 211177694117.64706,
+              "market_currency": "USD",
+              "money_share": 0.15,
+              "fx_to_local": 157.98699951,
+              "local_revenue": 5004499538563.1455
+            },
+            {
+              "name": "JV_pass_through_and_other_no_profit",
+              "market_size": null,
+              "money_share": null,
+              "local_revenue": 350856097812.4899,
+              "note": "direct calibrated revenue; same amount cost; not extra branded TAM"
+            }
+          ],
+          "normal_operating_cost": 2329200619305.702
+        },
+        {
+          "year": 2028,
+          "scenario": "bull",
+          "macro_ai_spend_usd_bn": 1900,
+          "industry_bit_index_vs_annualized_q2_2026": 1.6900000000000002,
+          "industry_asp_index_vs_q2_2026": 0.7,
+          "nand_tam_usd_bn": 372.9929411764706,
+          "kioxia_value_share": 0.16,
+          "mix_price_premium_index": 1.07,
+          "kioxia_physical_bit_index": 1.858163826278175,
+          "brand_revenue_jpy_bn": 9428.485698380884,
+          "other_pass_through_revenue_jpy_bn": 386.93340573435745,
+          "company_revenue_jpy_bn": 9815.41910411524,
+          "production_cost_jpy_bn": 1488.024917708631,
+          "fixed_ifrs_cost_including_sbc_and_rd_jpy_bn": 675.7920000000001,
+          "total_operating_cost_jpy_bn": 2550.7503234429887,
+          "operating_profit_jpy_bn": 7264.668780672252,
+          "operating_margin": 0.7401282312669101,
+          "net_finance_jpy_bn": -20,
+          "pretax_profit_jpy_bn": 7244.668780672252,
+          "tax_jpy_bn": 2318.2940098151207,
+          "parent_profit_jpy_bn": 4926.374770857132,
+          "diluted_shares_m": 1630,
+          "eps_jpy": 3022.3158103417986,
+          "case": "strong",
+          "ticker": "285A",
+          "currency": "JPY",
+          "money_unit": "billion",
+          "diluted_shares_unit": "million",
+          "diluted_shares": 1630000000.0,
+          "revenue": 9815419104115.24,
+          "normal_operating_margin": 0.7401282312669101,
+          "normal_operating_profit": 7264668780672.252,
+          "normal_net_interest": -20000000000.0,
+          "normal_tax_rate": 0.32,
+          "normal_tax": 2318294009815.1206,
+          "normal_parent_profit": 4926374770857.132,
+          "eps": 3022.3158103417986,
+          "source_kind": "independent_scenario",
+          "components": [
+            {
+              "name": "branded_NAND_including_own_SSD",
+              "market_size": 372992941176.4706,
+              "market_currency": "USD",
+              "money_share": 0.16,
+              "fx_to_local": 157.98699951,
+              "local_revenue": 9428485698380.885
+            },
+            {
+              "name": "JV_pass_through_and_other_no_profit",
+              "market_size": null,
+              "money_share": null,
+              "local_revenue": 386933405734.3574,
+              "note": "direct calibrated revenue; same amount cost; not extra branded TAM"
+            }
+          ],
+          "normal_operating_cost": 2550750323442.989
+        },
+        {
+          "year": 2029,
+          "scenario": "bear",
+          "macro_ai_spend_usd_bn": 950,
+          "industry_bit_index_vs_annualized_q2_2026": 1.4049280000000004,
+          "industry_asp_index_vs_q2_2026": 0.22,
+          "nand_tam_usd_bn": 97.4524175058824,
+          "kioxia_value_share": 0.123,
+          "mix_price_premium_index": 1.0,
+          "kioxia_physical_bit_index": 1.270633411764706,
+          "brand_revenue_jpy_bn": 1893.7344495202692,
+          "other_pass_through_revenue_jpy_bn": 308.03352651650164,
+          "company_revenue_jpy_bn": 2201.767976036771,
+          "production_cost_jpy_bn": 1321.9764233467479,
+          "fixed_ifrs_cost_including_sbc_and_rd_jpy_bn": 655.05024,
+          "total_operating_cost_jpy_bn": 2285.0601898632494,
+          "operating_profit_jpy_bn": -83.29221382647847,
+          "operating_margin": -0.03782969628634813,
+          "net_finance_jpy_bn": -80,
+          "pretax_profit_jpy_bn": -163.29221382647847,
+          "tax_jpy_bn": 0.0,
+          "parent_profit_jpy_bn": -163.29221382647847,
+          "diluted_shares_m": 1640,
+          "eps_jpy": -99.5684230649259,
+          "case": "weak",
+          "ticker": "285A",
+          "currency": "JPY",
+          "money_unit": "billion",
+          "diluted_shares_unit": "million",
+          "diluted_shares": 1640000000.0,
+          "revenue": 2201767976036.771,
+          "normal_operating_margin": -0.03782969628634813,
+          "normal_operating_profit": -83292213826.47847,
+          "normal_net_interest": -80000000000.0,
+          "normal_tax_rate": 0.32,
+          "normal_tax": 0.0,
+          "normal_parent_profit": -163292213826.4785,
+          "eps": -99.5684230649259,
+          "source_kind": "independent_scenario",
+          "components": [
+            {
+              "name": "branded_NAND_including_own_SSD",
+              "market_size": 97452417505.8824,
+              "market_currency": "USD",
+              "money_share": 0.123,
+              "fx_to_local": 157.98699951,
+              "local_revenue": 1893734449520.2693
+            },
+            {
+              "name": "JV_pass_through_and_other_no_profit",
+              "market_size": null,
+              "money_share": null,
+              "local_revenue": 308033526516.50165,
+              "note": "direct calibrated revenue; same amount cost; not extra branded TAM"
+            }
+          ],
+          "normal_operating_cost": 2285060189863.2495
+        },
+        {
+          "year": 2029,
+          "scenario": "base",
+          "macro_ai_spend_usd_bn": 1700,
+          "industry_bit_index_vs_annualized_q2_2026": 1.815848,
+          "industry_asp_index_vs_q2_2026": 0.4,
+          "nand_tam_usd_bn": 229.01047717647057,
+          "kioxia_value_share": 0.153,
+          "mix_price_premium_index": 1.06,
+          "kioxia_physical_bit_index": 1.9271971698113204,
+          "brand_revenue_jpy_bn": 5535.64375625598,
+          "other_pass_through_revenue_jpy_bn": 395.49547119280504,
+          "company_revenue_jpy_bn": 5931.139227448785,
+          "production_cost_jpy_bn": 1482.478692663396,
+          "fixed_ifrs_cost_including_sbc_and_rd_jpy_bn": 692.1200000000002,
+          "total_operating_cost_jpy_bn": 2570.0941638562012,
+          "operating_profit_jpy_bn": 3361.045063592584,
+          "operating_margin": 0.5666778227086571,
+          "net_finance_jpy_bn": -45,
+          "pretax_profit_jpy_bn": 3316.045063592584,
+          "tax_jpy_bn": 1061.134420349627,
+          "parent_profit_jpy_bn": 2254.910643242957,
+          "diluted_shares_m": 1640,
+          "eps_jpy": 1374.9455141725348,
+          "case": "base",
+          "ticker": "285A",
+          "currency": "JPY",
+          "money_unit": "billion",
+          "diluted_shares_unit": "million",
+          "diluted_shares": 1640000000.0,
+          "revenue": 5931139227448.785,
+          "normal_operating_margin": 0.5666778227086571,
+          "normal_operating_profit": 3361045063592.584,
+          "normal_net_interest": -45000000000.0,
+          "normal_tax_rate": 0.32,
+          "normal_tax": 1061134420349.627,
+          "normal_parent_profit": 2254910643242.957,
+          "eps": 1374.9455141725348,
+          "source_kind": "independent_scenario",
+          "components": [
+            {
+              "name": "branded_NAND_including_own_SSD",
+              "market_size": 229010477176.47058,
+              "market_currency": "USD",
+              "money_share": 0.153,
+              "fx_to_local": 157.98699951,
+              "local_revenue": 5535643756255.98
+            },
+            {
+              "name": "JV_pass_through_and_other_no_profit",
+              "market_size": null,
+              "money_share": null,
+              "local_revenue": 395495471192.80505,
+              "note": "direct calibrated revenue; same amount cost; not extra branded TAM"
+            }
+          ],
+          "normal_operating_cost": 2570094163856.201
+        },
+        {
+          "year": 2029,
+          "scenario": "bull",
+          "macro_ai_spend_usd_bn": 2500,
+          "industry_bit_index_vs_annualized_q2_2026": 2.197,
+          "industry_asp_index_vs_q2_2026": 0.6,
+          "nand_tam_usd_bn": 415.620705882353,
+          "kioxia_value_share": 0.165,
+          "mix_price_premium_index": 1.1,
+          "kioxia_physical_bit_index": 2.423161764705882,
+          "brand_revenue_jpy_bn": 10834.340262335892,
+          "other_pass_through_revenue_jpy_bn": 453.7485704719583,
+          "company_revenue_jpy_bn": 11288.08883280785,
+          "production_cost_jpy_bn": 1707.6201949394817,
+          "fixed_ifrs_cost_including_sbc_and_rd_jpy_bn": 770.4028800000002,
+          "total_operating_cost_jpy_bn": 2931.77164541144,
+          "operating_profit_jpy_bn": 8356.317187396411,
+          "operating_margin": 0.7402774119839932,
+          "net_finance_jpy_bn": -10,
+          "pretax_profit_jpy_bn": 8346.317187396411,
+          "tax_jpy_bn": 2670.8214999668517,
+          "parent_profit_jpy_bn": 5675.495687429559,
+          "diluted_shares_m": 1640,
+          "eps_jpy": 3460.6681020911947,
+          "case": "strong",
+          "ticker": "285A",
+          "currency": "JPY",
+          "money_unit": "billion",
+          "diluted_shares_unit": "million",
+          "diluted_shares": 1640000000.0,
+          "revenue": 11288088832807.852,
+          "normal_operating_margin": 0.7402774119839932,
+          "normal_operating_profit": 8356317187396.411,
+          "normal_net_interest": -10000000000.0,
+          "normal_tax_rate": 0.32,
+          "normal_tax": 2670821499966.8516,
+          "normal_parent_profit": 5675495687429.56,
+          "eps": 3460.6681020911947,
+          "source_kind": "independent_scenario",
+          "components": [
+            {
+              "name": "branded_NAND_including_own_SSD",
+              "market_size": 415620705882.35297,
+              "market_currency": "USD",
+              "money_share": 0.165,
+              "fx_to_local": 157.98699951,
+              "local_revenue": 10834340262335.893
+            },
+            {
+              "name": "JV_pass_through_and_other_no_profit",
+              "market_size": null,
+              "money_share": null,
+              "local_revenue": 453748570471.9583,
+              "note": "direct calibrated revenue; same amount cost; not extra branded TAM"
+            }
+          ],
+          "normal_operating_cost": 2931771645411.4404
+        }
+      ],
+      "future_diluted_shares_m": {
+        "2028": 1630,
+        "2029": 1640
+      },
+      "key_caveats": [
+        "Branded NAND supplier revenue already contains finished SSD value; do not add enterprise SSD TAM a second time.",
+        "Others includes JV-to-Sandisk turnover; independently modeled at zero margin, NOT additional branded share.",
+        "Market TAM annualizes Q2 2026 and is not CY2026 revenue forecast; index prices normalize steeply.",
+        "R&D, depreciation and SBC remain expenses. Only exceptional litigation removed at baseline. Economic fixed/production split is an independent calibration, not disclosed cost classification.",
+        "Tax shield on loss set to zero; no speculative financial/OCI gain.",
+        "Mix premium used only to infer physical bit share for cost, not to multiply revenue twice."
+      ],
+      "sensitivities": [
+        {
+          "year": 2028,
+          "base_eps_jpy": 1241.5861420905242,
+          "tests": [
+            {
+              "driver": "consolidated_operating_margin_change_pp",
+              "change": -10.0,
+              "eps_jpy": 1018.1725327202523,
+              "normal_parent_profit_jpy_bn": 1659.6212283340112
+            },
+            {
+              "driver": "consolidated_operating_margin_change_pp",
+              "change": 10.0,
+              "eps_jpy": 1464.999751460796,
+              "normal_parent_profit_jpy_bn": 2387.9495948810973
+            },
+            {
+              "driver": "annual_cost_per_bit_decline",
+              "value": 0.05,
+              "eps_jpy": 1177.3119692495618,
+              "normal_parent_profit_jpy_bn": 1919.0185098767856
+            },
+            {
+              "driver": "annual_cost_per_bit_decline",
+              "value": 0.0,
+              "eps_jpy": 1109.5635167955743,
+              "normal_parent_profit_jpy_bn": 1808.588532376786
+            },
+            {
+              "driver": "industry_ASP_multiplier_vs_base",
+              "value": 0.9,
+              "eps_jpy": 1032.8094742240862,
+              "normal_parent_profit_jpy_bn": 1683.4794429852604
+            },
+            {
+              "driver": "industry_ASP_multiplier_vs_base",
+              "value": 1.1,
+              "eps_jpy": 1450.3628099569623,
+              "normal_parent_profit_jpy_bn": 2364.0913802298483
+            },
+            {
+              "driver": "USDJPY_constant_with_JPY_cost_fixed",
+              "value": 150,
+              "eps_jpy": 1136.0395370457763,
+              "normal_parent_profit_jpy_bn": 1851.7444453846153
+            }
+          ]
+        },
+        {
+          "year": 2029,
+          "base_eps_jpy": 1374.9455141725348,
+          "tests": [
+            {
+              "driver": "consolidated_operating_margin_change_pp",
+              "change": -10.0,
+              "eps_jpy": 1129.0202291319754,
+              "normal_parent_profit_jpy_bn": 1851.5931757764397
+            },
+            {
+              "driver": "consolidated_operating_margin_change_pp",
+              "change": 10.0,
+              "eps_jpy": 1620.8707992130942,
+              "normal_parent_profit_jpy_bn": 2658.2281107094745
+            },
+            {
+              "driver": "annual_cost_per_bit_decline",
+              "value": 0.05,
+              "eps_jpy": 1266.7008610593068,
+              "normal_parent_profit_jpy_bn": 2077.389412137263
+            },
+            {
+              "driver": "annual_cost_per_bit_decline",
+              "value": 0.0,
+              "eps_jpy": 1146.4407352538603,
+              "normal_parent_profit_jpy_bn": 1880.162805816331
+            },
+            {
+              "driver": "industry_ASP_multiplier_vs_base",
+              "value": 0.9,
+              "eps_jpy": 1145.4188218399697,
+              "normal_parent_profit_jpy_bn": 1878.4868678175503
+            },
+            {
+              "driver": "industry_ASP_multiplier_vs_base",
+              "value": 1.1,
+              "eps_jpy": 1604.4722065051,
+              "normal_parent_profit_jpy_bn": 2631.3344186683644
+            },
+            {
+              "driver": "USDJPY_constant_with_JPY_cost_fixed",
+              "value": 150,
+              "eps_jpy": 1258.908777929811,
+              "normal_parent_profit_jpy_bn": 2064.6103958048902
+            }
+          ]
+        }
+      ]
+    },
+    "6857": {
+      "facts": {
+        "period": "2026-04-01/2026-06-30",
+        "revenue_jpy_bn": 367.473,
+        "op_jpy_bn": 189.99,
+        "financial_income_jpy_bn": 44.68,
+        "financial_valuation_gain_jpy_bn": 41.075,
+        "financial_expense_jpy_bn": 0.588,
+        "sbc_jpy_bn": 1.351,
+        "parent_profit_jpy_bn": 174.78,
+        "diluted_eps_jpy": 239.89,
+        "implied_diluted_shares_m": 728.5839343032223,
+        "fy_2026_ending_2027_03_company_revenue_jpy_bn": 1714,
+        "fy_company_op_jpy_bn": 846,
+        "fy_company_net_income_jpy_bn": 660,
+        "fy_soc_revenue_jpy_bn": 1243.5,
+        "fy_memory_revenue_jpy_bn": 227,
+        "fy_other_systems_jpy_bn": 104.5,
+        "fy_services_and_others_jpy_bn": 139,
+        "fy_average_usdjpy": 152,
+        "cy2026_company_soc_tam_usd_bn_range": [
+          10.5,
+          11.5
+        ],
+        "cy2026_company_memory_tam_usd_bn_range": [
+          2.5,
+          3.0
+        ],
+        "cy2025_company_soc_share": 0.66,
+        "cy2025_company_memory_share": 0.61,
+        "source_ids": [
+          "adv_q1",
+          "adv_tam",
+          "adv_share"
+        ]
+      },
+      "assumptions": {
+        "bear": {
+          "capex_elasticity": 0.75,
+          "soc_ai_weight": 0.75,
+          "memory_ai_weight": 0.6,
+          "soc_complexity_cagr": 0.03,
+          "memory_complexity_cagr": 0.02,
+          "non_ai_cagr": 0,
+          "cycle_multiplier": {
+            "2028": 0.92,
+            "2029": 0.85
+          },
+          "soc_share": {
+            "2028": 0.65,
+            "2029": 0.63
+          },
+          "memory_share": {
+            "2028": 0.52,
+            "2029": 0.5
+          },
+          "other_revenue_jpy_bn": {
+            "2028": 250,
+            "2029": 245
+          },
+          "ifrs_op_margin": {
+            "2028": 0.35,
+            "2029": 0.32
+          },
+          "tax_rate": 0.3
+        },
+        "base": {
+          "capex_elasticity": 0.8,
+          "soc_ai_weight": 0.75,
+          "memory_ai_weight": 0.6,
+          "soc_complexity_cagr": 0.1,
+          "memory_complexity_cagr": 0.07,
+          "non_ai_cagr": 0.03,
+          "cycle_multiplier": {
+            "2028": 1.0,
+            "2029": 1.0
+          },
+          "soc_share": {
+            "2028": 0.73,
+            "2029": 0.72
+          },
+          "memory_share": {
+            "2028": 0.58,
+            "2029": 0.58
+          },
+          "other_revenue_jpy_bn": {
+            "2028": 315,
+            "2029": 355
+          },
+          "ifrs_op_margin": {
+            "2028": 0.47,
+            "2029": 0.48
+          },
+          "tax_rate": 0.28
+        },
+        "bull": {
+          "capex_elasticity": 0.9,
+          "soc_ai_weight": 0.75,
+          "memory_ai_weight": 0.6,
+          "soc_complexity_cagr": 0.15,
+          "memory_complexity_cagr": 0.1,
+          "non_ai_cagr": 0.05,
+          "cycle_multiplier": {
+            "2028": 1.02,
+            "2029": 1.03
+          },
+          "soc_share": {
+            "2028": 0.77,
+            "2029": 0.78
+          },
+          "memory_share": {
+            "2028": 0.63,
+            "2029": 0.65
+          },
+          "other_revenue_jpy_bn": {
+            "2028": 390,
+            "2029": 470
+          },
+          "ifrs_op_margin": {
+            "2028": 0.51,
+            "2029": 0.52
+          },
+          "tax_rate": 0.27
+        }
+      },
+      "results": [
+        {
+          "year": 2028,
+          "scenario": "bear",
+          "macro_ai_spend_usd_bn": 1000,
+          "soc_tam_usd_bn": 10.582231,
+          "memory_tam_usd_bn": 2.5913272000000003,
+          "soc_share": 0.65,
+          "memory_share": 0.52,
+          "soc_revenue_jpy_bn": 1086.7057004776095,
+          "memory_revenue_jpy_bn": 212.88592471985788,
+          "other_systems_services_revenue_jpy_bn": 250,
+          "company_revenue_jpy_bn": 1549.5916251974675,
+          "ifrs_op_margin_including_sbc": 0.35,
+          "operating_profit_jpy_bn": 542.3570688191136,
+          "normal_net_finance_jpy_bn": 0.0,
+          "pretax_profit_jpy_bn": 542.3570688191136,
+          "tax_jpy_bn": 162.70712064573408,
+          "parent_profit_jpy_bn": 379.64994817337947,
+          "diluted_shares_m": 740,
+          "eps_jpy": 513.0404705045669,
+          "case": "weak",
+          "ticker": "6857",
+          "currency": "JPY",
+          "money_unit": "billion",
+          "diluted_shares_unit": "million",
+          "diluted_shares": 740000000.0,
+          "revenue": 1549591625197.4675,
+          "normal_operating_margin": 0.35,
+          "normal_operating_profit": 542357068819.1136,
+          "normal_net_interest": 0.0,
+          "normal_tax_rate": 0.3,
+          "normal_tax": 162707120645.73407,
+          "normal_parent_profit": 379649948173.37946,
+          "eps": 513.0404705045669,
+          "source_kind": "independent_scenario",
+          "components": [
+            {
+              "name": "SoC_testers",
+              "market_size": 10582231000.0,
+              "market_currency": "USD",
+              "money_share": 0.65,
+              "fx_to_local": 157.98699951,
+              "local_revenue": 1086705700477.6095
+            },
+            {
+              "name": "memory_testers",
+              "market_size": 2591327200.0000005,
+              "market_currency": "USD",
+              "money_share": 0.52,
+              "fx_to_local": 157.98699951,
+              "local_revenue": 212885924719.85788
+            },
+            {
+              "name": "other_systems_and_services",
+              "market_size": null,
+              "money_share": null,
+              "local_revenue": 250000000000.0,
+              "note": "independent direct ancillary revenue"
+            }
+          ]
+        },
+        {
+          "year": 2028,
+          "scenario": "base",
+          "macro_ai_spend_usd_bn": 1400,
+          "soc_tam_usd_bn": 15.983447729112946,
+          "memory_tam_usd_bn": 3.6395903599275052,
+          "soc_share": 0.73,
+          "memory_share": 0.58,
+          "soc_revenue_jpy_bn": 1843.3791724396588,
+          "memory_revenue_jpy_bn": 333.50461703807116,
+          "other_systems_services_revenue_jpy_bn": 315,
+          "company_revenue_jpy_bn": 2491.88378947773,
+          "ifrs_op_margin_including_sbc": 0.47,
+          "operating_profit_jpy_bn": 1171.1853810545329,
+          "normal_net_finance_jpy_bn": 0.0,
+          "pretax_profit_jpy_bn": 1171.1853810545329,
+          "tax_jpy_bn": 327.9319066952692,
+          "parent_profit_jpy_bn": 843.2534743592637,
+          "diluted_shares_m": 740,
+          "eps_jpy": 1139.531722107113,
+          "case": "base",
+          "ticker": "6857",
+          "currency": "JPY",
+          "money_unit": "billion",
+          "diluted_shares_unit": "million",
+          "diluted_shares": 740000000.0,
+          "revenue": 2491883789477.73,
+          "normal_operating_margin": 0.4699999999999999,
+          "normal_operating_profit": 1171185381054.533,
+          "normal_net_interest": 0.0,
+          "normal_tax_rate": 0.28,
+          "normal_tax": 327931906695.2692,
+          "normal_parent_profit": 843253474359.2637,
+          "eps": 1139.531722107113,
+          "source_kind": "independent_scenario",
+          "components": [
+            {
+              "name": "SoC_testers",
+              "market_size": 15983447729.112946,
+              "market_currency": "USD",
+              "money_share": 0.73,
+              "fx_to_local": 157.98699951,
+              "local_revenue": 1843379172439.6587
+            },
+            {
+              "name": "memory_testers",
+              "market_size": 3639590359.927505,
+              "market_currency": "USD",
+              "money_share": 0.58,
+              "fx_to_local": 157.98699951,
+              "local_revenue": 333504617038.07117
+            },
+            {
+              "name": "other_systems_and_services",
+              "market_size": null,
+              "money_share": null,
+              "local_revenue": 315000000000.0,
+              "note": "independent direct ancillary revenue"
+            }
+          ]
+        },
+        {
+          "year": 2028,
+          "scenario": "bull",
+          "macro_ai_spend_usd_bn": 1900,
+          "soc_tam_usd_bn": 22.922755764362044,
+          "memory_tam_usd_bn": 4.8656771134031125,
+          "soc_share": 0.77,
+          "memory_share": 0.63,
+          "soc_revenue_jpy_bn": 2788.5530008583296,
+          "memory_revenue_jpy_bn": 484.28964847055255,
+          "other_systems_services_revenue_jpy_bn": 390,
+          "company_revenue_jpy_bn": 3662.842649328882,
+          "ifrs_op_margin_including_sbc": 0.51,
+          "operating_profit_jpy_bn": 1868.0497511577298,
+          "normal_net_finance_jpy_bn": 0.0,
+          "pretax_profit_jpy_bn": 1868.0497511577298,
+          "tax_jpy_bn": 504.3734328125871,
+          "parent_profit_jpy_bn": 1363.6763183451426,
+          "diluted_shares_m": 740,
+          "eps_jpy": 1842.805835601544,
+          "case": "strong",
+          "ticker": "6857",
+          "currency": "JPY",
+          "money_unit": "billion",
+          "diluted_shares_unit": "million",
+          "diluted_shares": 740000000.0,
+          "revenue": 3662842649328.8823,
+          "normal_operating_margin": 0.51,
+          "normal_operating_profit": 1868049751157.7297,
+          "normal_net_interest": 0.0,
+          "normal_tax_rate": 0.27,
+          "normal_tax": 504373432812.5871,
+          "normal_parent_profit": 1363676318345.1426,
+          "eps": 1842.805835601544,
+          "source_kind": "independent_scenario",
+          "components": [
+            {
+              "name": "SoC_testers",
+              "market_size": 22922755764.362045,
+              "market_currency": "USD",
+              "money_share": 0.77,
+              "fx_to_local": 157.98699951,
+              "local_revenue": 2788553000858.3296
+            },
+            {
+              "name": "memory_testers",
+              "market_size": 4865677113.403112,
+              "market_currency": "USD",
+              "money_share": 0.63,
+              "fx_to_local": 157.98699951,
+              "local_revenue": 484289648470.55255
+            },
+            {
+              "name": "other_systems_and_services",
+              "market_size": null,
+              "money_share": null,
+              "local_revenue": 390000000000.0,
+              "note": "independent direct ancillary revenue"
+            }
+          ]
+        },
+        {
+          "year": 2029,
+          "scenario": "bear",
+          "macro_ai_spend_usd_bn": 950,
+          "soc_tam_usd_bn": 9.711060574096406,
+          "memory_tam_usd_bn": 2.3671750024874836,
+          "soc_share": 0.63,
+          "memory_share": 0.5,
+          "soc_revenue_jpy_bn": 966.55943296165,
+          "memory_revenue_jpy_bn": 186.99143797903716,
+          "other_systems_services_revenue_jpy_bn": 245,
+          "company_revenue_jpy_bn": 1398.5508709406872,
+          "ifrs_op_margin_including_sbc": 0.32,
+          "operating_profit_jpy_bn": 447.5362787010199,
+          "normal_net_finance_jpy_bn": 0.0,
+          "pretax_profit_jpy_bn": 447.5362787010199,
+          "tax_jpy_bn": 134.26088361030597,
+          "parent_profit_jpy_bn": 313.2753950907139,
+          "diluted_shares_m": 745,
+          "eps_jpy": 420.5038860278039,
+          "case": "weak",
+          "ticker": "6857",
+          "currency": "JPY",
+          "money_unit": "billion",
+          "diluted_shares_unit": "million",
+          "diluted_shares": 745000000.0,
+          "revenue": 1398550870940.6873,
+          "normal_operating_margin": 0.32,
+          "normal_operating_profit": 447536278701.0199,
+          "normal_net_interest": 0.0,
+          "normal_tax_rate": 0.3,
+          "normal_tax": 134260883610.30597,
+          "normal_parent_profit": 313275395090.7139,
+          "eps": 420.5038860278039,
+          "source_kind": "independent_scenario",
+          "components": [
+            {
+              "name": "SoC_testers",
+              "market_size": 9711060574.096405,
+              "market_currency": "USD",
+              "money_share": 0.63,
+              "fx_to_local": 157.98699951,
+              "local_revenue": 966559432961.65
+            },
+            {
+              "name": "memory_testers",
+              "market_size": 2367175002.4874835,
+              "market_currency": "USD",
+              "money_share": 0.5,
+              "fx_to_local": 157.98699951,
+              "local_revenue": 186991437979.03717
+            },
+            {
+              "name": "other_systems_and_services",
+              "market_size": null,
+              "money_share": null,
+              "local_revenue": 245000000000.0,
+              "note": "independent direct ancillary revenue"
+            }
+          ]
+        },
+        {
+          "year": 2029,
+          "scenario": "base",
+          "macro_ai_spend_usd_bn": 1700,
+          "soc_tam_usd_bn": 19.79269698709712,
+          "memory_tam_usd_bn": 4.292255387294765,
+          "soc_share": 0.72,
+          "memory_share": 0.58,
+          "soc_revenue_jpy_bn": 2251.4319426255056,
+          "memory_revenue_jpy_bn": 393.3099188662131,
+          "other_systems_services_revenue_jpy_bn": 355,
+          "company_revenue_jpy_bn": 2999.7418614917187,
+          "ifrs_op_margin_including_sbc": 0.48,
+          "operating_profit_jpy_bn": 1439.8760935160249,
+          "normal_net_finance_jpy_bn": 0.0,
+          "pretax_profit_jpy_bn": 1439.8760935160249,
+          "tax_jpy_bn": 403.165306184487,
+          "parent_profit_jpy_bn": 1036.7107873315379,
+          "diluted_shares_m": 745,
+          "eps_jpy": 1391.558103800722,
+          "case": "base",
+          "ticker": "6857",
+          "currency": "JPY",
+          "money_unit": "billion",
+          "diluted_shares_unit": "million",
+          "diluted_shares": 745000000.0,
+          "revenue": 2999741861491.7188,
+          "normal_operating_margin": 0.48,
+          "normal_operating_profit": 1439876093516.025,
+          "normal_net_interest": 0.0,
+          "normal_tax_rate": 0.28,
+          "normal_tax": 403165306184.487,
+          "normal_parent_profit": 1036710787331.5378,
+          "eps": 1391.558103800722,
+          "source_kind": "independent_scenario",
+          "components": [
+            {
+              "name": "SoC_testers",
+              "market_size": 19792696987.09712,
+              "market_currency": "USD",
+              "money_share": 0.72,
+              "fx_to_local": 157.98699951,
+              "local_revenue": 2251431942625.5054
+            },
+            {
+              "name": "memory_testers",
+              "market_size": 4292255387.294765,
+              "market_currency": "USD",
+              "money_share": 0.58,
+              "fx_to_local": 157.98699951,
+              "local_revenue": 393309918866.2131
+            },
+            {
+              "name": "other_systems_and_services",
+              "market_size": null,
+              "money_share": null,
+              "local_revenue": 355000000000.0,
+              "note": "independent direct ancillary revenue"
+            }
+          ]
+        },
+        {
+          "year": 2029,
+          "scenario": "bull",
+          "macro_ai_spend_usd_bn": 2500,
+          "soc_tam_usd_bn": 32.75919158672699,
+          "memory_tam_usd_bn": 6.471536022476275,
+          "soc_share": 0.78,
+          "memory_share": 0.65,
+          "soc_revenue_jpy_bn": 4036.9105804249825,
+          "memory_revenue_jpy_bn": 664.5720629677393,
+          "other_systems_services_revenue_jpy_bn": 470,
+          "company_revenue_jpy_bn": 5171.482643392722,
+          "ifrs_op_margin_including_sbc": 0.52,
+          "operating_profit_jpy_bn": 2689.1709745642156,
+          "normal_net_finance_jpy_bn": 0.0,
+          "pretax_profit_jpy_bn": 2689.1709745642156,
+          "tax_jpy_bn": 726.0761631323383,
+          "parent_profit_jpy_bn": 1963.0948114318774,
+          "diluted_shares_m": 745,
+          "eps_jpy": 2635.0265925260096,
+          "case": "strong",
+          "ticker": "6857",
+          "currency": "JPY",
+          "money_unit": "billion",
+          "diluted_shares_unit": "million",
+          "diluted_shares": 745000000.0,
+          "revenue": 5171482643392.722,
+          "normal_operating_margin": 0.52,
+          "normal_operating_profit": 2689170974564.216,
+          "normal_net_interest": 0.0,
+          "normal_tax_rate": 0.27,
+          "normal_tax": 726076163132.3383,
+          "normal_parent_profit": 1963094811431.8774,
+          "eps": 2635.0265925260096,
+          "source_kind": "independent_scenario",
+          "components": [
+            {
+              "name": "SoC_testers",
+              "market_size": 32759191586.726994,
+              "market_currency": "USD",
+              "money_share": 0.78,
+              "fx_to_local": 157.98699951,
+              "local_revenue": 4036910580424.9824
+            },
+            {
+              "name": "memory_testers",
+              "market_size": 6471536022.4762745,
+              "market_currency": "USD",
+              "money_share": 0.65,
+              "fx_to_local": 157.98699951,
+              "local_revenue": 664572062967.7393
+            },
+            {
+              "name": "other_systems_and_services",
+              "market_size": null,
+              "money_share": null,
+              "local_revenue": 470000000000.0,
+              "note": "independent direct ancillary revenue"
+            }
+          ]
+        }
+      ],
+      "key_caveats": [
+        "CY TAM and March fiscal guidance differ; FY2026 SoC implied share is not a CY2026 fact.",
+        "Future shares 740/745m include conservative potential dilution, no unannounced buyback credit.",
+        "IFRS margins include SBC, normal inventory expenses and cost inflation; Q1 inventory reversal and financial valuation gain not extended.",
+        "AI capex weights, elasticity, complexity increments and future shares are independent assumptions."
+      ],
+      "calibration_2026_normal_earnings_independent": {
+        "operating_profit_jpy_bn": 846,
+        "normal_net_finance_jpy_bn": 0,
+        "tax_rate": 0.28,
+        "diluted_shares_m": 728.5839343032223,
+        "eps_jpy": 836.0327085478888,
+        "note": "March fiscal guidance for operating profit but own tax/share normalization, not CY actual and not official normal EPS"
+      }
+    },
+    "ASML": {
+      "facts": {
+        "q3_period_end": "2026-09-27",
+        "q3_revenue_eur_bn": 11.662,
+        "q3_operating_profit_eur_bn": 5.1728,
+        "q3_parent_profit_eur_bn": 4.9604,
+        "q3_equity_investment_gain_eur_bn": 0.5097,
+        "q3_diluted_shares_m": 383.5,
+        "q3_diluted_eps_eur": 12.93,
+        "fy2026_company_revenue_eur_bn_range": [
+          44,
+          45
+        ],
+        "fy2026_company_gross_margin": 0.56,
+        "fy2026_company_tax_rate": 0.17,
+        "fy2025_euv_revenue_eur_bn": 11.6,
+        "fy2025_duv_revenue_eur_bn": 12.0,
+        "fy2025_metrology_inspection_revenue_eur_bn": 0.825,
+        "fy2025_service_revenue_eur_bn": 8.2,
+        "q1_q3_2026_service_revenue_eur_bn": 8.538,
+        "q4_2026_company_service_revenue_eur_bn": 3.7,
+        "2024_day_2030_revenue_opportunity_eur_bn": [
+          44,
+          60
+        ],
+        "2024_day_2030_gross_margin": [
+          0.56,
+          0.6
+        ],
+        "source_ids": [
+          "asml_q3",
+          "asml_q3_fin",
+          "asml_q3_call",
+          "asml_2025",
+          "asml_2030"
+        ]
+      },
+      "anchor": {
+        "euv_tam_eur_bn_2026_calibration": 16.82,
+        "duv_company_revenue_eur_bn_2026_calibration": 14.399999999999999,
+        "duv_market_share_assumed_2026": 0.84,
+        "metrology_company_revenue_eur_bn_2026_calibration": 0.9899999999999999,
+        "service_revenue_eur_bn_2026_calibration": 12.238,
+        "note": "EUV +45% is minimum/approx issuer wording. 45% & nonEUV+20% for product split are calibration assumptions, not exact segment guidance.",
+        "duv_tam_eur_bn_2026_calibration": 17.142857142857142,
+        "sum_company_revenue_eur_bn_2026_calibration": 44.448
+      },
+      "assumptions": {
+        "bear": {
+          "ai_capex_elasticity": 0.7,
+          "euv_ai_weight": 0.75,
+          "duv_ai_weight": 0.4,
+          "euv_exposure_intensity_cagr": 0.03,
+          "duv_intensity_cagr": 0.0,
+          "non_ai_cagr": 0,
+          "cycle_multiplier": {
+            "2028": 0.85,
+            "2029": 0.8
+          },
+          "duv_share": {
+            "2028": 0.8,
+            "2029": 0.78
+          },
+          "service_cagr": 0.08,
+          "metrology_cagr": 0.05,
+          "gross_margin": {
+            "2028": 0.52,
+            "2029": 0.51
+          },
+          "us_gaap_opex_eur_bn": {
+            "2028": 7.4,
+            "2029": 7.6
+          },
+          "tax_rate": 0.18
+        },
+        "base": {
+          "ai_capex_elasticity": 0.85,
+          "euv_ai_weight": 0.75,
+          "duv_ai_weight": 0.4,
+          "euv_exposure_intensity_cagr": 0.08,
+          "duv_intensity_cagr": 0.03,
+          "non_ai_cagr": 0.03,
+          "cycle_multiplier": {
+            "2028": 1.0,
+            "2029": 1.0
+          },
+          "duv_share": {
+            "2028": 0.84,
+            "2029": 0.84
+          },
+          "service_cagr": 0.17,
+          "metrology_cagr": 0.25,
+          "gross_margin": {
+            "2028": 0.575,
+            "2029": 0.58
+          },
+          "us_gaap_opex_eur_bn": {
+            "2028": 8.0,
+            "2029": 8.7
+          },
+          "tax_rate": 0.17
+        },
+        "bull": {
+          "ai_capex_elasticity": 0.9,
+          "euv_ai_weight": 0.75,
+          "duv_ai_weight": 0.4,
+          "euv_exposure_intensity_cagr": 0.12,
+          "duv_intensity_cagr": 0.05,
+          "non_ai_cagr": 0.05,
+          "cycle_multiplier": {
+            "2028": 1.03,
+            "2029": 1.05
+          },
+          "duv_share": {
+            "2028": 0.88,
+            "2029": 0.88
+          },
+          "service_cagr": 0.24,
+          "metrology_cagr": 0.35,
+          "gross_margin": {
+            "2028": 0.59,
+            "2029": 0.6
+          },
+          "us_gaap_opex_eur_bn": {
+            "2028": 9.3,
+            "2029": 10.3
+          },
+          "tax_rate": 0.17
+        }
+      },
+      "results": [
+        {
+          "year": 2028,
+          "scenario": "bear",
+          "macro_ai_spend_usd_bn": 1000,
+          "euv_market_demand_eur_bn": 14.950015475,
+          "euv_delivery_capacity_eur_bn": 30.15693122,
+          "euv_delivered_tam_eur_bn": 14.950015475,
+          "euv_money_share_of_delivered_market": 1.0,
+          "euv_company_revenue_eur_bn": 14.950015475,
+          "duv_tam_eur_bn": 14.571428571428571,
+          "duv_value_share": 0.8,
+          "duv_company_revenue_eur_bn": 11.657142857142858,
+          "metrology_and_inspection_revenue_eur_bn": 1.091475,
+          "service_and_upgrades_revenue_eur_bn": 14.2744032,
+          "company_revenue_eur_bn": 41.973036532142864,
+          "gross_margin": 0.52,
+          "us_gaap_opex_including_sbc_eur_bn": 7.4,
+          "operating_profit_eur_bn": 14.42597899671429,
+          "normal_net_finance_eur_bn": 0.2,
+          "pretax_profit_eur_bn": 14.62597899671429,
+          "tax_eur_bn": 2.632676219408572,
+          "parent_profit_eur_bn": 11.993302777305718,
+          "diluted_shares_m": 385,
+          "eps_eur": 31.151435785209657,
+          "eps_usd_at_fixed_eurusd": 34.93057595566466,
+          "case": "weak",
+          "ticker": "ASML",
+          "currency": "EUR",
+          "money_unit": "billion",
+          "diluted_shares_unit": "million",
+          "diluted_shares": 385000000.0,
+          "revenue": 41973036532.14286,
+          "normal_operating_margin": 0.34369633909300096,
+          "normal_operating_profit": 14425978996.71429,
+          "normal_net_interest": 200000000.0,
+          "normal_tax_rate": 0.18,
+          "normal_tax": 2632676219.408572,
+          "normal_parent_profit": 11993302777.305717,
+          "eps": 31.151435785209657,
+          "source_kind": "independent_scenario",
+          "components": [
+            {
+              "name": "EUV_delivered_market",
+              "market_size": 14950015475.0,
+              "market_currency": "EUR",
+              "money_share": 1.0,
+              "fx_to_local": 1.0,
+              "local_revenue": 14950015475.0
+            },
+            {
+              "name": "DUV_delivered_market",
+              "market_size": 14571428571.428572,
+              "market_currency": "EUR",
+              "money_share": 0.8,
+              "fx_to_local": 1.0,
+              "local_revenue": 11657142857.142859
+            },
+            {
+              "name": "metrology_and_inspection",
+              "market_size": null,
+              "money_share": null,
+              "local_revenue": 1091475000.0,
+              "note": "direct revenue via base growth; no claim of global TAM share"
+            },
+            {
+              "name": "service_and_upgrades",
+              "market_size": null,
+              "money_share": null,
+              "local_revenue": 14274403200.0,
+              "note": "installed-base growth model; no additional lithography TAM share"
+            }
+          ],
+          "normal_opex": 7400000000.0
+        },
+        {
+          "year": 2028,
+          "scenario": "base",
+          "macro_ai_spend_usd_bn": 1400,
+          "euv_market_demand_eur_bn": 24.046987357494416,
+          "euv_delivery_capacity_eur_bn": 30.15693122,
+          "euv_delivered_tam_eur_bn": 24.046987357494416,
+          "euv_money_share_of_delivered_market": 1.0,
+          "euv_company_revenue_eur_bn": 24.046987357494416,
+          "duv_tam_eur_bn": 20.59548318438773,
+          "duv_value_share": 0.84,
+          "duv_company_revenue_eur_bn": 17.300205874885695,
+          "metrology_and_inspection_revenue_eur_bn": 1.5468749999999998,
+          "service_and_upgrades_revenue_eur_bn": 16.752598199999998,
+          "company_revenue_eur_bn": 59.6466664323801,
+          "gross_margin": 0.575,
+          "us_gaap_opex_including_sbc_eur_bn": 8.0,
+          "operating_profit_eur_bn": 26.296833198618558,
+          "normal_net_finance_eur_bn": 0.2,
+          "pretax_profit_eur_bn": 26.496833198618557,
+          "tax_eur_bn": 4.504461643765155,
+          "parent_profit_eur_bn": 21.992371554853403,
+          "diluted_shares_m": 385,
+          "eps_eur": 57.12304299961922,
+          "eps_usd_at_fixed_eurusd": 64.05293181588318,
+          "case": "base",
+          "ticker": "ASML",
+          "currency": "EUR",
+          "money_unit": "billion",
+          "diluted_shares_unit": "million",
+          "diluted_shares": 385000000.0,
+          "revenue": 59646666432.380104,
+          "normal_operating_margin": 0.44087682969559755,
+          "normal_operating_profit": 26296833198.618557,
+          "normal_net_interest": 200000000.0,
+          "normal_tax_rate": 0.17,
+          "normal_tax": 4504461643.765155,
+          "normal_parent_profit": 21992371554.8534,
+          "eps": 57.12304299961922,
+          "source_kind": "independent_scenario",
+          "components": [
+            {
+              "name": "EUV_delivered_market",
+              "market_size": 24046987357.494415,
+              "market_currency": "EUR",
+              "money_share": 1.0,
+              "fx_to_local": 1.0,
+              "local_revenue": 24046987357.494415
+            },
+            {
+              "name": "DUV_delivered_market",
+              "market_size": 20595483184.38773,
+              "market_currency": "EUR",
+              "money_share": 0.84,
+              "fx_to_local": 1.0,
+              "local_revenue": 17300205874.885696
+            },
+            {
+              "name": "metrology_and_inspection",
+              "market_size": null,
+              "money_share": null,
+              "local_revenue": 1546874999.9999998,
+              "note": "direct revenue via base growth; no claim of global TAM share"
+            },
+            {
+              "name": "service_and_upgrades",
+              "market_size": null,
+              "money_share": null,
+              "local_revenue": 16752598199.999998,
+              "note": "installed-base growth model; no additional lithography TAM share"
+            }
+          ],
+          "normal_opex": 8000000000.0
+        },
+        {
+          "year": 2028,
+          "scenario": "bull",
+          "macro_ai_spend_usd_bn": 1900,
+          "euv_market_demand_eur_bn": 33.81791170816806,
+          "euv_delivery_capacity_eur_bn": 30.15693122,
+          "euv_delivered_tam_eur_bn": 30.15693122,
+          "euv_money_share_of_delivered_market": 1.0,
+          "euv_company_revenue_eur_bn": 30.15693122,
+          "duv_tam_eur_bn": 25.555336396854962,
+          "duv_value_share": 0.88,
+          "duv_company_revenue_eur_bn": 22.488696029232365,
+          "metrology_and_inspection_revenue_eur_bn": 1.804275,
+          "service_and_upgrades_revenue_eur_bn": 18.817148800000002,
+          "company_revenue_eur_bn": 73.26705104923236,
+          "gross_margin": 0.59,
+          "us_gaap_opex_including_sbc_eur_bn": 9.3,
+          "operating_profit_eur_bn": 33.92756011904709,
+          "normal_net_finance_eur_bn": 0.2,
+          "pretax_profit_eur_bn": 34.12756011904709,
+          "tax_eur_bn": 5.801685220238006,
+          "parent_profit_eur_bn": 28.325874898809083,
+          "diluted_shares_m": 385,
+          "eps_eur": 73.57370103586776,
+          "eps_usd_at_fixed_eurusd": 82.49930340587818,
+          "case": "strong",
+          "ticker": "ASML",
+          "currency": "EUR",
+          "money_unit": "billion",
+          "diluted_shares_unit": "million",
+          "diluted_shares": 385000000.0,
+          "revenue": 73267051049.23236,
+          "normal_operating_margin": 0.46306708995629153,
+          "normal_operating_profit": 33927560119.047085,
+          "normal_net_interest": 200000000.0,
+          "normal_tax_rate": 0.17,
+          "normal_tax": 5801685220.238006,
+          "normal_parent_profit": 28325874898.809082,
+          "eps": 73.57370103586776,
+          "source_kind": "independent_scenario",
+          "components": [
+            {
+              "name": "EUV_delivered_market",
+              "market_size": 30156931220.0,
+              "market_currency": "EUR",
+              "money_share": 1.0,
+              "fx_to_local": 1.0,
+              "local_revenue": 30156931220.0
+            },
+            {
+              "name": "DUV_delivered_market",
+              "market_size": 25555336396.85496,
+              "market_currency": "EUR",
+              "money_share": 0.88,
+              "fx_to_local": 1.0,
+              "local_revenue": 22488696029.232365
+            },
+            {
+              "name": "metrology_and_inspection",
+              "market_size": null,
+              "money_share": null,
+              "local_revenue": 1804275000.0,
+              "note": "direct revenue via base growth; no claim of global TAM share"
+            },
+            {
+              "name": "service_and_upgrades",
+              "market_size": null,
+              "money_share": null,
+              "local_revenue": 18817148800.0,
+              "note": "installed-base growth model; no additional lithography TAM share"
+            }
+          ],
+          "normal_opex": 9300000000.0
+        },
+        {
+          "year": 2029,
+          "scenario": "bear",
+          "macro_ai_spend_usd_bn": 950,
+          "euv_market_demand_eur_bn": 14.002868469770142,
+          "euv_delivery_capacity_eur_bn": 35.72088503009,
+          "euv_delivered_tam_eur_bn": 14.002868469770142,
+          "euv_money_share_of_delivered_market": 1.0,
+          "euv_company_revenue_eur_bn": 14.002868469770142,
+          "duv_tam_eur_bn": 13.520813586582207,
+          "duv_value_share": 0.78,
+          "duv_company_revenue_eur_bn": 10.546234597534122,
+          "metrology_and_inspection_revenue_eur_bn": 1.14604875,
+          "service_and_upgrades_revenue_eur_bn": 15.416355456000002,
+          "company_revenue_eur_bn": 41.11150727330426,
+          "gross_margin": 0.51,
+          "us_gaap_opex_including_sbc_eur_bn": 7.6,
+          "operating_profit_eur_bn": 13.366868709385175,
+          "normal_net_finance_eur_bn": 0.2,
+          "pretax_profit_eur_bn": 13.566868709385174,
+          "tax_eur_bn": 2.4420363676893313,
+          "parent_profit_eur_bn": 11.124832341695843,
+          "diluted_shares_m": 386,
+          "eps_eur": 28.820809175377832,
+          "eps_usd_at_fixed_eurusd": 32.31720909898589,
+          "case": "weak",
+          "ticker": "ASML",
+          "currency": "EUR",
+          "money_unit": "billion",
+          "diluted_shares_unit": "million",
+          "diluted_shares": 386000000.0,
+          "revenue": 41111507273.30426,
+          "normal_operating_margin": 0.3251369165456248,
+          "normal_operating_profit": 13366868709.385176,
+          "normal_net_interest": 200000000.0,
+          "normal_tax_rate": 0.18,
+          "normal_tax": 2442036367.6893315,
+          "normal_parent_profit": 11124832341.695843,
+          "eps": 28.820809175377832,
+          "source_kind": "independent_scenario",
+          "components": [
+            {
+              "name": "EUV_delivered_market",
+              "market_size": 14002868469.770142,
+              "market_currency": "EUR",
+              "money_share": 1.0,
+              "fx_to_local": 1.0,
+              "local_revenue": 14002868469.770142
+            },
+            {
+              "name": "DUV_delivered_market",
+              "market_size": 13520813586.582207,
+              "market_currency": "EUR",
+              "money_share": 0.78,
+              "fx_to_local": 1.0,
+              "local_revenue": 10546234597.534122
+            },
+            {
+              "name": "metrology_and_inspection",
+              "market_size": null,
+              "money_share": null,
+              "local_revenue": 1146048750.0,
+              "note": "direct revenue via base growth; no claim of global TAM share"
+            },
+            {
+              "name": "service_and_upgrades",
+              "market_size": null,
+              "money_share": null,
+              "local_revenue": 15416355456.000002,
+              "note": "installed-base growth model; no additional lithography TAM share"
+            }
+          ],
+          "normal_opex": 7600000000.0
+        },
+        {
+          "year": 2029,
+          "scenario": "base",
+          "macro_ai_spend_usd_bn": 1700,
+          "euv_market_demand_eur_bn": 29.54316801913935,
+          "euv_delivery_capacity_eur_bn": 35.72088503009,
+          "euv_delivered_tam_eur_bn": 29.54316801913935,
+          "euv_money_share_of_delivered_market": 1.0,
+          "euv_company_revenue_eur_bn": 29.54316801913935,
+          "duv_tam_eur_bn": 23.00297494682525,
+          "duv_value_share": 0.84,
+          "duv_company_revenue_eur_bn": 19.32249895533321,
+          "metrology_and_inspection_revenue_eur_bn": 1.9335937499999998,
+          "service_and_upgrades_revenue_eur_bn": 19.600539893999997,
+          "company_revenue_eur_bn": 70.39980061847255,
+          "gross_margin": 0.58,
+          "us_gaap_opex_including_sbc_eur_bn": 8.7,
+          "operating_profit_eur_bn": 32.131884358714075,
+          "normal_net_finance_eur_bn": 0.2,
+          "pretax_profit_eur_bn": 32.33188435871408,
+          "tax_eur_bn": 5.496420340981394,
+          "parent_profit_eur_bn": 26.835464017732683,
+          "diluted_shares_m": 386,
+          "eps_eur": 69.5219275070795,
+          "eps_usd_at_fixed_eurusd": 77.95598848523214,
+          "case": "base",
+          "ticker": "ASML",
+          "currency": "EUR",
+          "money_unit": "billion",
+          "diluted_shares_unit": "million",
+          "diluted_shares": 386000000.0,
+          "revenue": 70399800618.47255,
+          "normal_operating_margin": 0.45642010455187043,
+          "normal_operating_profit": 32131884358.714073,
+          "normal_net_interest": 200000000.0,
+          "normal_tax_rate": 0.17,
+          "normal_tax": 5496420340.981394,
+          "normal_parent_profit": 26835464017.73268,
+          "eps": 69.5219275070795,
+          "source_kind": "independent_scenario",
+          "components": [
+            {
+              "name": "EUV_delivered_market",
+              "market_size": 29543168019.13935,
+              "market_currency": "EUR",
+              "money_share": 1.0,
+              "fx_to_local": 1.0,
+              "local_revenue": 29543168019.13935
+            },
+            {
+              "name": "DUV_delivered_market",
+              "market_size": 23002974946.825253,
+              "market_currency": "EUR",
+              "money_share": 0.84,
+              "fx_to_local": 1.0,
+              "local_revenue": 19322498955.33321
+            },
+            {
+              "name": "metrology_and_inspection",
+              "market_size": null,
+              "money_share": null,
+              "local_revenue": 1933593749.9999998,
+              "note": "direct revenue via base growth; no claim of global TAM share"
+            },
+            {
+              "name": "service_and_upgrades",
+              "market_size": null,
+              "money_share": null,
+              "local_revenue": 19600539893.999996,
+              "note": "installed-base growth model; no additional lithography TAM share"
+            }
+          ],
+          "normal_opex": 8700000000.0
+        },
+        {
+          "year": 2029,
+          "scenario": "bull",
+          "macro_ai_spend_usd_bn": 2500,
+          "euv_market_demand_eur_bn": 47.56109969876792,
+          "euv_delivery_capacity_eur_bn": 35.72088503009,
+          "euv_delivered_tam_eur_bn": 35.72088503009,
+          "euv_money_share_of_delivered_market": 1.0,
+          "euv_company_revenue_eur_bn": 35.72088503009,
+          "duv_tam_eur_bn": 31.515164082090703,
+          "duv_value_share": 0.88,
+          "duv_company_revenue_eur_bn": 27.733344392239818,
+          "metrology_and_inspection_revenue_eur_bn": 2.43577125,
+          "service_and_upgrades_revenue_eur_bn": 23.333264511999996,
+          "company_revenue_eur_bn": 89.22326518432982,
+          "gross_margin": 0.6,
+          "us_gaap_opex_including_sbc_eur_bn": 10.3,
+          "operating_profit_eur_bn": 43.233959110597894,
+          "normal_net_finance_eur_bn": 0.2,
+          "pretax_profit_eur_bn": 43.4339591105979,
+          "tax_eur_bn": 7.383773048801643,
+          "parent_profit_eur_bn": 36.05018606179625,
+          "diluted_shares_m": 386,
+          "eps_eur": 93.39426440879858,
+          "eps_usd_at_fixed_eurusd": 104.7244008028637,
+          "case": "strong",
+          "ticker": "ASML",
+          "currency": "EUR",
+          "money_unit": "billion",
+          "diluted_shares_unit": "million",
+          "diluted_shares": 386000000.0,
+          "revenue": 89223265184.32982,
+          "normal_operating_margin": 0.48455925728877075,
+          "normal_operating_profit": 43233959110.59789,
+          "normal_net_interest": 200000000.0,
+          "normal_tax_rate": 0.17,
+          "normal_tax": 7383773048.801643,
+          "normal_parent_profit": 36050186061.79626,
+          "eps": 93.39426440879858,
+          "source_kind": "independent_scenario",
+          "components": [
+            {
+              "name": "EUV_delivered_market",
+              "market_size": 35720885030.090004,
+              "market_currency": "EUR",
+              "money_share": 1.0,
+              "fx_to_local": 1.0,
+              "local_revenue": 35720885030.090004
+            },
+            {
+              "name": "DUV_delivered_market",
+              "market_size": 31515164082.090702,
+              "market_currency": "EUR",
+              "money_share": 0.88,
+              "fx_to_local": 1.0,
+              "local_revenue": 27733344392.23982
+            },
+            {
+              "name": "metrology_and_inspection",
+              "market_size": null,
+              "money_share": null,
+              "local_revenue": 2435771250.0,
+              "note": "direct revenue via base growth; no claim of global TAM share"
+            },
+            {
+              "name": "service_and_upgrades",
+              "market_size": null,
+              "money_share": null,
+              "local_revenue": 23333264511.999996,
+              "note": "installed-base growth model; no additional lithography TAM share"
+            }
+          ],
+          "normal_opex": 10300000000.0
+        }
+      ],
+      "key_caveats": [
+        "NASDAQ registered ordinary share corresponds to one ordinary share, not a multi-share ADR; compare EUR EPS converted to USD.",
+        "EUV share100%/DUV blended84% are scenario settings. Old 2030 model used EUV100%, immersion90%, dry65%.",
+        "Capacity +30% is unit capacity, not revenue/profit forecast. 2029 +15% and 3% mix uplift are independent.",
+        "High-NA is embedded in EUV TAM and capacity; do not add separate High-NA TAM. TSMC2030 mask program excluded from2028/29 incremental volume.",
+        "Old 2030 revenue44-60bn scenario is not a ceiling or a guarantee; latest2026 already44-45bn. Above60bn projections are independent uprevisions.",
+        "Mistral fair-value gain and other extraordinary gains set zero; IFRS/USGAAP operating expenses retain SBC and R&D."
+      ],
+      "calibration_2026_normal_earnings_independent": {
+        "revenue_eur_bn": 44.448,
+        "gross_margin": 0.56,
+        "normal_opex_eur_bn": 6.194,
+        "normal_net_finance_eur_bn": 0.2,
+        "tax_rate": 0.17,
+        "diluted_shares_m": 385,
+        "eps_eur": 40.73872831168831,
+        "note": "Own normalization/calibration, not issuer full-year EPS guidance; Mistral gains excluded"
+      }
+    }
+  },
+  "rows": [
+    {
+      "year": 2028,
+      "scenario": "bear",
+      "macro_ai_spend_usd_bn": 1000,
+      "industry_bit_index_vs_annualized_q2_2026": 1.2544000000000002,
+      "industry_asp_index_vs_q2_2026": 0.28,
+      "nand_tam_usd_bn": 110.74138352941179,
+      "kioxia_value_share": 0.125,
+      "mix_price_premium_index": 1.0,
+      "kioxia_physical_bit_index": 1.1529411764705884,
+      "brand_revenue_jpy_bn": 2186.962363174738,
+      "other_pass_through_revenue_jpy_bn": 290.58294118033905,
+      "company_revenue_jpy_bn": 2477.545304355077,
+      "production_cost_jpy_bn": 1207.7632988235296,
+      "fixed_ifrs_cost_including_sbc_and_rd_jpy_bn": 606.528,
+      "total_operating_cost_jpy_bn": 2104.8742400038686,
+      "operating_profit_jpy_bn": 372.6710643512083,
+      "operating_margin": 0.15041947515394366,
+      "net_finance_jpy_bn": -80,
+      "pretax_profit_jpy_bn": 292.6710643512083,
+      "tax_jpy_bn": 93.65474059238666,
+      "parent_profit_jpy_bn": 199.01632375882167,
+      "diluted_shares_m": 1630,
+      "eps_jpy": 122.09590414651636,
+      "case": "weak",
+      "ticker": "285A",
+      "currency": "JPY",
+      "money_unit": "billion",
+      "diluted_shares_unit": "million",
+      "diluted_shares": 1630000000.0,
+      "revenue": 2477545304355.077,
+      "normal_operating_margin": 0.15041947515394366,
+      "normal_operating_profit": 372671064351.2083,
+      "normal_net_interest": -80000000000.0,
+      "normal_tax_rate": 0.32,
+      "normal_tax": 93654740592.38666,
+      "normal_parent_profit": 199016323758.82166,
+      "eps": 122.09590414651636,
+      "source_kind": "independent_scenario",
+      "components": [
+        {
+          "name": "branded_NAND_including_own_SSD",
+          "market_size": 110741383529.41179,
+          "market_currency": "USD",
+          "money_share": 0.125,
+          "fx_to_local": 157.98699951,
+          "local_revenue": 2186962363174.738
+        },
+        {
+          "name": "JV_pass_through_and_other_no_profit",
+          "market_size": null,
+          "money_share": null,
+          "local_revenue": 290582941180.33905,
+          "note": "direct calibrated revenue; same amount cost; not extra branded TAM"
+        }
+      ],
+      "normal_operating_cost": 2104874240003.8687
+    },
+    {
+      "year": 2028,
+      "scenario": "base",
+      "macro_ai_spend_usd_bn": 1400,
+      "industry_bit_index_vs_annualized_q2_2026": 1.4884,
+      "industry_asp_index_vs_q2_2026": 0.45,
+      "nand_tam_usd_bn": 211.17769411764706,
+      "kioxia_value_share": 0.15,
+      "mix_price_premium_index": 1.04,
+      "kioxia_physical_bit_index": 1.57847850678733,
+      "brand_revenue_jpy_bn": 5004.4995385631455,
+      "other_pass_through_revenue_jpy_bn": 350.8560978124899,
+      "company_revenue_jpy_bn": 5355.355636375635,
+      "production_cost_jpy_bn": 1349.144521493212,
+      "fixed_ifrs_cost_including_sbc_and_rd_jpy_bn": 629.2,
+      "total_operating_cost_jpy_bn": 2329.2006193057023,
+      "operating_profit_jpy_bn": 3026.155017069933,
+      "operating_margin": 0.5650707856851045,
+      "net_finance_jpy_bn": -50,
+      "pretax_profit_jpy_bn": 2976.155017069933,
+      "tax_jpy_bn": 952.3696054623786,
+      "parent_profit_jpy_bn": 2023.7854116075544,
+      "diluted_shares_m": 1630,
+      "eps_jpy": 1241.5861420905242,
+      "case": "base",
+      "ticker": "285A",
+      "currency": "JPY",
+      "money_unit": "billion",
+      "diluted_shares_unit": "million",
+      "diluted_shares": 1630000000.0,
+      "revenue": 5355355636375.635,
+      "normal_operating_margin": 0.5650707856851045,
+      "normal_operating_profit": 3026155017069.933,
+      "normal_net_interest": -50000000000.0,
+      "normal_tax_rate": 0.32,
+      "normal_tax": 952369605462.3785,
+      "normal_parent_profit": 2023785411607.5544,
+      "eps": 1241.5861420905242,
+      "source_kind": "independent_scenario",
+      "components": [
+        {
+          "name": "branded_NAND_including_own_SSD",
+          "market_size": 211177694117.64706,
+          "market_currency": "USD",
+          "money_share": 0.15,
+          "fx_to_local": 157.98699951,
+          "local_revenue": 5004499538563.1455
+        },
+        {
+          "name": "JV_pass_through_and_other_no_profit",
+          "market_size": null,
+          "money_share": null,
+          "local_revenue": 350856097812.4899,
+          "note": "direct calibrated revenue; same amount cost; not extra branded TAM"
+        }
+      ],
+      "normal_operating_cost": 2329200619305.702
+    },
+    {
+      "year": 2028,
+      "scenario": "bull",
+      "macro_ai_spend_usd_bn": 1900,
+      "industry_bit_index_vs_annualized_q2_2026": 1.6900000000000002,
+      "industry_asp_index_vs_q2_2026": 0.7,
+      "nand_tam_usd_bn": 372.9929411764706,
+      "kioxia_value_share": 0.16,
+      "mix_price_premium_index": 1.07,
+      "kioxia_physical_bit_index": 1.858163826278175,
+      "brand_revenue_jpy_bn": 9428.485698380884,
+      "other_pass_through_revenue_jpy_bn": 386.93340573435745,
+      "company_revenue_jpy_bn": 9815.41910411524,
+      "production_cost_jpy_bn": 1488.024917708631,
+      "fixed_ifrs_cost_including_sbc_and_rd_jpy_bn": 675.7920000000001,
+      "total_operating_cost_jpy_bn": 2550.7503234429887,
+      "operating_profit_jpy_bn": 7264.668780672252,
+      "operating_margin": 0.7401282312669101,
+      "net_finance_jpy_bn": -20,
+      "pretax_profit_jpy_bn": 7244.668780672252,
+      "tax_jpy_bn": 2318.2940098151207,
+      "parent_profit_jpy_bn": 4926.374770857132,
+      "diluted_shares_m": 1630,
+      "eps_jpy": 3022.3158103417986,
+      "case": "strong",
+      "ticker": "285A",
+      "currency": "JPY",
+      "money_unit": "billion",
+      "diluted_shares_unit": "million",
+      "diluted_shares": 1630000000.0,
+      "revenue": 9815419104115.24,
+      "normal_operating_margin": 0.7401282312669101,
+      "normal_operating_profit": 7264668780672.252,
+      "normal_net_interest": -20000000000.0,
+      "normal_tax_rate": 0.32,
+      "normal_tax": 2318294009815.1206,
+      "normal_parent_profit": 4926374770857.132,
+      "eps": 3022.3158103417986,
+      "source_kind": "independent_scenario",
+      "components": [
+        {
+          "name": "branded_NAND_including_own_SSD",
+          "market_size": 372992941176.4706,
+          "market_currency": "USD",
+          "money_share": 0.16,
+          "fx_to_local": 157.98699951,
+          "local_revenue": 9428485698380.885
+        },
+        {
+          "name": "JV_pass_through_and_other_no_profit",
+          "market_size": null,
+          "money_share": null,
+          "local_revenue": 386933405734.3574,
+          "note": "direct calibrated revenue; same amount cost; not extra branded TAM"
+        }
+      ],
+      "normal_operating_cost": 2550750323442.989
+    },
+    {
+      "year": 2029,
+      "scenario": "bear",
+      "macro_ai_spend_usd_bn": 950,
+      "industry_bit_index_vs_annualized_q2_2026": 1.4049280000000004,
+      "industry_asp_index_vs_q2_2026": 0.22,
+      "nand_tam_usd_bn": 97.4524175058824,
+      "kioxia_value_share": 0.123,
+      "mix_price_premium_index": 1.0,
+      "kioxia_physical_bit_index": 1.270633411764706,
+      "brand_revenue_jpy_bn": 1893.7344495202692,
+      "other_pass_through_revenue_jpy_bn": 308.03352651650164,
+      "company_revenue_jpy_bn": 2201.767976036771,
+      "production_cost_jpy_bn": 1321.9764233467479,
+      "fixed_ifrs_cost_including_sbc_and_rd_jpy_bn": 655.05024,
+      "total_operating_cost_jpy_bn": 2285.0601898632494,
+      "operating_profit_jpy_bn": -83.29221382647847,
+      "operating_margin": -0.03782969628634813,
+      "net_finance_jpy_bn": -80,
+      "pretax_profit_jpy_bn": -163.29221382647847,
+      "tax_jpy_bn": 0.0,
+      "parent_profit_jpy_bn": -163.29221382647847,
+      "diluted_shares_m": 1640,
+      "eps_jpy": -99.5684230649259,
+      "case": "weak",
+      "ticker": "285A",
+      "currency": "JPY",
+      "money_unit": "billion",
+      "diluted_shares_unit": "million",
+      "diluted_shares": 1640000000.0,
+      "revenue": 2201767976036.771,
+      "normal_operating_margin": -0.03782969628634813,
+      "normal_operating_profit": -83292213826.47847,
+      "normal_net_interest": -80000000000.0,
+      "normal_tax_rate": 0.32,
+      "normal_tax": 0.0,
+      "normal_parent_profit": -163292213826.4785,
+      "eps": -99.5684230649259,
+      "source_kind": "independent_scenario",
+      "components": [
+        {
+          "name": "branded_NAND_including_own_SSD",
+          "market_size": 97452417505.8824,
+          "market_currency": "USD",
+          "money_share": 0.123,
+          "fx_to_local": 157.98699951,
+          "local_revenue": 1893734449520.2693
+        },
+        {
+          "name": "JV_pass_through_and_other_no_profit",
+          "market_size": null,
+          "money_share": null,
+          "local_revenue": 308033526516.50165,
+          "note": "direct calibrated revenue; same amount cost; not extra branded TAM"
+        }
+      ],
+      "normal_operating_cost": 2285060189863.2495
+    },
+    {
+      "year": 2029,
+      "scenario": "base",
+      "macro_ai_spend_usd_bn": 1700,
+      "industry_bit_index_vs_annualized_q2_2026": 1.815848,
+      "industry_asp_index_vs_q2_2026": 0.4,
+      "nand_tam_usd_bn": 229.01047717647057,
+      "kioxia_value_share": 0.153,
+      "mix_price_premium_index": 1.06,
+      "kioxia_physical_bit_index": 1.9271971698113204,
+      "brand_revenue_jpy_bn": 5535.64375625598,
+      "other_pass_through_revenue_jpy_bn": 395.49547119280504,
+      "company_revenue_jpy_bn": 5931.139227448785,
+      "production_cost_jpy_bn": 1482.478692663396,
+      "fixed_ifrs_cost_including_sbc_and_rd_jpy_bn": 692.1200000000002,
+      "total_operating_cost_jpy_bn": 2570.0941638562012,
+      "operating_profit_jpy_bn": 3361.045063592584,
+      "operating_margin": 0.5666778227086571,
+      "net_finance_jpy_bn": -45,
+      "pretax_profit_jpy_bn": 3316.045063592584,
+      "tax_jpy_bn": 1061.134420349627,
+      "parent_profit_jpy_bn": 2254.910643242957,
+      "diluted_shares_m": 1640,
+      "eps_jpy": 1374.9455141725348,
+      "case": "base",
+      "ticker": "285A",
+      "currency": "JPY",
+      "money_unit": "billion",
+      "diluted_shares_unit": "million",
+      "diluted_shares": 1640000000.0,
+      "revenue": 5931139227448.785,
+      "normal_operating_margin": 0.5666778227086571,
+      "normal_operating_profit": 3361045063592.584,
+      "normal_net_interest": -45000000000.0,
+      "normal_tax_rate": 0.32,
+      "normal_tax": 1061134420349.627,
+      "normal_parent_profit": 2254910643242.957,
+      "eps": 1374.9455141725348,
+      "source_kind": "independent_scenario",
+      "components": [
+        {
+          "name": "branded_NAND_including_own_SSD",
+          "market_size": 229010477176.47058,
+          "market_currency": "USD",
+          "money_share": 0.153,
+          "fx_to_local": 157.98699951,
+          "local_revenue": 5535643756255.98
+        },
+        {
+          "name": "JV_pass_through_and_other_no_profit",
+          "market_size": null,
+          "money_share": null,
+          "local_revenue": 395495471192.80505,
+          "note": "direct calibrated revenue; same amount cost; not extra branded TAM"
+        }
+      ],
+      "normal_operating_cost": 2570094163856.201
+    },
+    {
+      "year": 2029,
+      "scenario": "bull",
+      "macro_ai_spend_usd_bn": 2500,
+      "industry_bit_index_vs_annualized_q2_2026": 2.197,
+      "industry_asp_index_vs_q2_2026": 0.6,
+      "nand_tam_usd_bn": 415.620705882353,
+      "kioxia_value_share": 0.165,
+      "mix_price_premium_index": 1.1,
+      "kioxia_physical_bit_index": 2.423161764705882,
+      "brand_revenue_jpy_bn": 10834.340262335892,
+      "other_pass_through_revenue_jpy_bn": 453.7485704719583,
+      "company_revenue_jpy_bn": 11288.08883280785,
+      "production_cost_jpy_bn": 1707.6201949394817,
+      "fixed_ifrs_cost_including_sbc_and_rd_jpy_bn": 770.4028800000002,
+      "total_operating_cost_jpy_bn": 2931.77164541144,
+      "operating_profit_jpy_bn": 8356.317187396411,
+      "operating_margin": 0.7402774119839932,
+      "net_finance_jpy_bn": -10,
+      "pretax_profit_jpy_bn": 8346.317187396411,
+      "tax_jpy_bn": 2670.8214999668517,
+      "parent_profit_jpy_bn": 5675.495687429559,
+      "diluted_shares_m": 1640,
+      "eps_jpy": 3460.6681020911947,
+      "case": "strong",
+      "ticker": "285A",
+      "currency": "JPY",
+      "money_unit": "billion",
+      "diluted_shares_unit": "million",
+      "diluted_shares": 1640000000.0,
+      "revenue": 11288088832807.852,
+      "normal_operating_margin": 0.7402774119839932,
+      "normal_operating_profit": 8356317187396.411,
+      "normal_net_interest": -10000000000.0,
+      "normal_tax_rate": 0.32,
+      "normal_tax": 2670821499966.8516,
+      "normal_parent_profit": 5675495687429.56,
+      "eps": 3460.6681020911947,
+      "source_kind": "independent_scenario",
+      "components": [
+        {
+          "name": "branded_NAND_including_own_SSD",
+          "market_size": 415620705882.35297,
+          "market_currency": "USD",
+          "money_share": 0.165,
+          "fx_to_local": 157.98699951,
+          "local_revenue": 10834340262335.893
+        },
+        {
+          "name": "JV_pass_through_and_other_no_profit",
+          "market_size": null,
+          "money_share": null,
+          "local_revenue": 453748570471.9583,
+          "note": "direct calibrated revenue; same amount cost; not extra branded TAM"
+        }
+      ],
+      "normal_operating_cost": 2931771645411.4404
+    },
+    {
+      "year": 2028,
+      "scenario": "bear",
+      "macro_ai_spend_usd_bn": 1000,
+      "soc_tam_usd_bn": 10.582231,
+      "memory_tam_usd_bn": 2.5913272000000003,
+      "soc_share": 0.65,
+      "memory_share": 0.52,
+      "soc_revenue_jpy_bn": 1086.7057004776095,
+      "memory_revenue_jpy_bn": 212.88592471985788,
+      "other_systems_services_revenue_jpy_bn": 250,
+      "company_revenue_jpy_bn": 1549.5916251974675,
+      "ifrs_op_margin_including_sbc": 0.35,
+      "operating_profit_jpy_bn": 542.3570688191136,
+      "normal_net_finance_jpy_bn": 0.0,
+      "pretax_profit_jpy_bn": 542.3570688191136,
+      "tax_jpy_bn": 162.70712064573408,
+      "parent_profit_jpy_bn": 379.64994817337947,
+      "diluted_shares_m": 740,
+      "eps_jpy": 513.0404705045669,
+      "case": "weak",
+      "ticker": "6857",
+      "currency": "JPY",
+      "money_unit": "billion",
+      "diluted_shares_unit": "million",
+      "diluted_shares": 740000000.0,
+      "revenue": 1549591625197.4675,
+      "normal_operating_margin": 0.35,
+      "normal_operating_profit": 542357068819.1136,
+      "normal_net_interest": 0.0,
+      "normal_tax_rate": 0.3,
+      "normal_tax": 162707120645.73407,
+      "normal_parent_profit": 379649948173.37946,
+      "eps": 513.0404705045669,
+      "source_kind": "independent_scenario",
+      "components": [
+        {
+          "name": "SoC_testers",
+          "market_size": 10582231000.0,
+          "market_currency": "USD",
+          "money_share": 0.65,
+          "fx_to_local": 157.98699951,
+          "local_revenue": 1086705700477.6095
+        },
+        {
+          "name": "memory_testers",
+          "market_size": 2591327200.0000005,
+          "market_currency": "USD",
+          "money_share": 0.52,
+          "fx_to_local": 157.98699951,
+          "local_revenue": 212885924719.85788
+        },
+        {
+          "name": "other_systems_and_services",
+          "market_size": null,
+          "money_share": null,
+          "local_revenue": 250000000000.0,
+          "note": "independent direct ancillary revenue"
+        }
+      ]
+    },
+    {
+      "year": 2028,
+      "scenario": "base",
+      "macro_ai_spend_usd_bn": 1400,
+      "soc_tam_usd_bn": 15.983447729112946,
+      "memory_tam_usd_bn": 3.6395903599275052,
+      "soc_share": 0.73,
+      "memory_share": 0.58,
+      "soc_revenue_jpy_bn": 1843.3791724396588,
+      "memory_revenue_jpy_bn": 333.50461703807116,
+      "other_systems_services_revenue_jpy_bn": 315,
+      "company_revenue_jpy_bn": 2491.88378947773,
+      "ifrs_op_margin_including_sbc": 0.47,
+      "operating_profit_jpy_bn": 1171.1853810545329,
+      "normal_net_finance_jpy_bn": 0.0,
+      "pretax_profit_jpy_bn": 1171.1853810545329,
+      "tax_jpy_bn": 327.9319066952692,
+      "parent_profit_jpy_bn": 843.2534743592637,
+      "diluted_shares_m": 740,
+      "eps_jpy": 1139.531722107113,
+      "case": "base",
+      "ticker": "6857",
+      "currency": "JPY",
+      "money_unit": "billion",
+      "diluted_shares_unit": "million",
+      "diluted_shares": 740000000.0,
+      "revenue": 2491883789477.73,
+      "normal_operating_margin": 0.4699999999999999,
+      "normal_operating_profit": 1171185381054.533,
+      "normal_net_interest": 0.0,
+      "normal_tax_rate": 0.28,
+      "normal_tax": 327931906695.2692,
+      "normal_parent_profit": 843253474359.2637,
+      "eps": 1139.531722107113,
+      "source_kind": "independent_scenario",
+      "components": [
+        {
+          "name": "SoC_testers",
+          "market_size": 15983447729.112946,
+          "market_currency": "USD",
+          "money_share": 0.73,
+          "fx_to_local": 157.98699951,
+          "local_revenue": 1843379172439.6587
+        },
+        {
+          "name": "memory_testers",
+          "market_size": 3639590359.927505,
+          "market_currency": "USD",
+          "money_share": 0.58,
+          "fx_to_local": 157.98699951,
+          "local_revenue": 333504617038.07117
+        },
+        {
+          "name": "other_systems_and_services",
+          "market_size": null,
+          "money_share": null,
+          "local_revenue": 315000000000.0,
+          "note": "independent direct ancillary revenue"
+        }
+      ]
+    },
+    {
+      "year": 2028,
+      "scenario": "bull",
+      "macro_ai_spend_usd_bn": 1900,
+      "soc_tam_usd_bn": 22.922755764362044,
+      "memory_tam_usd_bn": 4.8656771134031125,
+      "soc_share": 0.77,
+      "memory_share": 0.63,
+      "soc_revenue_jpy_bn": 2788.5530008583296,
+      "memory_revenue_jpy_bn": 484.28964847055255,
+      "other_systems_services_revenue_jpy_bn": 390,
+      "company_revenue_jpy_bn": 3662.842649328882,
+      "ifrs_op_margin_including_sbc": 0.51,
+      "operating_profit_jpy_bn": 1868.0497511577298,
+      "normal_net_finance_jpy_bn": 0.0,
+      "pretax_profit_jpy_bn": 1868.0497511577298,
+      "tax_jpy_bn": 504.3734328125871,
+      "parent_profit_jpy_bn": 1363.6763183451426,
+      "diluted_shares_m": 740,
+      "eps_jpy": 1842.805835601544,
+      "case": "strong",
+      "ticker": "6857",
+      "currency": "JPY",
+      "money_unit": "billion",
+      "diluted_shares_unit": "million",
+      "diluted_shares": 740000000.0,
+      "revenue": 3662842649328.8823,
+      "normal_operating_margin": 0.51,
+      "normal_operating_profit": 1868049751157.7297,
+      "normal_net_interest": 0.0,
+      "normal_tax_rate": 0.27,
+      "normal_tax": 504373432812.5871,
+      "normal_parent_profit": 1363676318345.1426,
+      "eps": 1842.805835601544,
+      "source_kind": "independent_scenario",
+      "components": [
+        {
+          "name": "SoC_testers",
+          "market_size": 22922755764.362045,
+          "market_currency": "USD",
+          "money_share": 0.77,
+          "fx_to_local": 157.98699951,
+          "local_revenue": 2788553000858.3296
+        },
+        {
+          "name": "memory_testers",
+          "market_size": 4865677113.403112,
+          "market_currency": "USD",
+          "money_share": 0.63,
+          "fx_to_local": 157.98699951,
+          "local_revenue": 484289648470.55255
+        },
+        {
+          "name": "other_systems_and_services",
+          "market_size": null,
+          "money_share": null,
+          "local_revenue": 390000000000.0,
+          "note": "independent direct ancillary revenue"
+        }
+      ]
+    },
+    {
+      "year": 2029,
+      "scenario": "bear",
+      "macro_ai_spend_usd_bn": 950,
+      "soc_tam_usd_bn": 9.711060574096406,
+      "memory_tam_usd_bn": 2.3671750024874836,
+      "soc_share": 0.63,
+      "memory_share": 0.5,
+      "soc_revenue_jpy_bn": 966.55943296165,
+      "memory_revenue_jpy_bn": 186.99143797903716,
+      "other_systems_services_revenue_jpy_bn": 245,
+      "company_revenue_jpy_bn": 1398.5508709406872,
+      "ifrs_op_margin_including_sbc": 0.32,
+      "operating_profit_jpy_bn": 447.5362787010199,
+      "normal_net_finance_jpy_bn": 0.0,
+      "pretax_profit_jpy_bn": 447.5362787010199,
+      "tax_jpy_bn": 134.26088361030597,
+      "parent_profit_jpy_bn": 313.2753950907139,
+      "diluted_shares_m": 745,
+      "eps_jpy": 420.5038860278039,
+      "case": "weak",
+      "ticker": "6857",
+      "currency": "JPY",
+      "money_unit": "billion",
+      "diluted_shares_unit": "million",
+      "diluted_shares": 745000000.0,
+      "revenue": 1398550870940.6873,
+      "normal_operating_margin": 0.32,
+      "normal_operating_profit": 447536278701.0199,
+      "normal_net_interest": 0.0,
+      "normal_tax_rate": 0.3,
+      "normal_tax": 134260883610.30597,
+      "normal_parent_profit": 313275395090.7139,
+      "eps": 420.5038860278039,
+      "source_kind": "independent_scenario",
+      "components": [
+        {
+          "name": "SoC_testers",
+          "market_size": 9711060574.096405,
+          "market_currency": "USD",
+          "money_share": 0.63,
+          "fx_to_local": 157.98699951,
+          "local_revenue": 966559432961.65
+        },
+        {
+          "name": "memory_testers",
+          "market_size": 2367175002.4874835,
+          "market_currency": "USD",
+          "money_share": 0.5,
+          "fx_to_local": 157.98699951,
+          "local_revenue": 186991437979.03717
+        },
+        {
+          "name": "other_systems_and_services",
+          "market_size": null,
+          "money_share": null,
+          "local_revenue": 245000000000.0,
+          "note": "independent direct ancillary revenue"
+        }
+      ]
+    },
+    {
+      "year": 2029,
+      "scenario": "base",
+      "macro_ai_spend_usd_bn": 1700,
+      "soc_tam_usd_bn": 19.79269698709712,
+      "memory_tam_usd_bn": 4.292255387294765,
+      "soc_share": 0.72,
+      "memory_share": 0.58,
+      "soc_revenue_jpy_bn": 2251.4319426255056,
+      "memory_revenue_jpy_bn": 393.3099188662131,
+      "other_systems_services_revenue_jpy_bn": 355,
+      "company_revenue_jpy_bn": 2999.7418614917187,
+      "ifrs_op_margin_including_sbc": 0.48,
+      "operating_profit_jpy_bn": 1439.8760935160249,
+      "normal_net_finance_jpy_bn": 0.0,
+      "pretax_profit_jpy_bn": 1439.8760935160249,
+      "tax_jpy_bn": 403.165306184487,
+      "parent_profit_jpy_bn": 1036.7107873315379,
+      "diluted_shares_m": 745,
+      "eps_jpy": 1391.558103800722,
+      "case": "base",
+      "ticker": "6857",
+      "currency": "JPY",
+      "money_unit": "billion",
+      "diluted_shares_unit": "million",
+      "diluted_shares": 745000000.0,
+      "revenue": 2999741861491.7188,
+      "normal_operating_margin": 0.48,
+      "normal_operating_profit": 1439876093516.025,
+      "normal_net_interest": 0.0,
+      "normal_tax_rate": 0.28,
+      "normal_tax": 403165306184.487,
+      "normal_parent_profit": 1036710787331.5378,
+      "eps": 1391.558103800722,
+      "source_kind": "independent_scenario",
+      "components": [
+        {
+          "name": "SoC_testers",
+          "market_size": 19792696987.09712,
+          "market_currency": "USD",
+          "money_share": 0.72,
+          "fx_to_local": 157.98699951,
+          "local_revenue": 2251431942625.5054
+        },
+        {
+          "name": "memory_testers",
+          "market_size": 4292255387.294765,
+          "market_currency": "USD",
+          "money_share": 0.58,
+          "fx_to_local": 157.98699951,
+          "local_revenue": 393309918866.2131
+        },
+        {
+          "name": "other_systems_and_services",
+          "market_size": null,
+          "money_share": null,
+          "local_revenue": 355000000000.0,
+          "note": "independent direct ancillary revenue"
+        }
+      ]
+    },
+    {
+      "year": 2029,
+      "scenario": "bull",
+      "macro_ai_spend_usd_bn": 2500,
+      "soc_tam_usd_bn": 32.75919158672699,
+      "memory_tam_usd_bn": 6.471536022476275,
+      "soc_share": 0.78,
+      "memory_share": 0.65,
+      "soc_revenue_jpy_bn": 4036.9105804249825,
+      "memory_revenue_jpy_bn": 664.5720629677393,
+      "other_systems_services_revenue_jpy_bn": 470,
+      "company_revenue_jpy_bn": 5171.482643392722,
+      "ifrs_op_margin_including_sbc": 0.52,
+      "operating_profit_jpy_bn": 2689.1709745642156,
+      "normal_net_finance_jpy_bn": 0.0,
+      "pretax_profit_jpy_bn": 2689.1709745642156,
+      "tax_jpy_bn": 726.0761631323383,
+      "parent_profit_jpy_bn": 1963.0948114318774,
+      "diluted_shares_m": 745,
+      "eps_jpy": 2635.0265925260096,
+      "case": "strong",
+      "ticker": "6857",
+      "currency": "JPY",
+      "money_unit": "billion",
+      "diluted_shares_unit": "million",
+      "diluted_shares": 745000000.0,
+      "revenue": 5171482643392.722,
+      "normal_operating_margin": 0.52,
+      "normal_operating_profit": 2689170974564.216,
+      "normal_net_interest": 0.0,
+      "normal_tax_rate": 0.27,
+      "normal_tax": 726076163132.3383,
+      "normal_parent_profit": 1963094811431.8774,
+      "eps": 2635.0265925260096,
+      "source_kind": "independent_scenario",
+      "components": [
+        {
+          "name": "SoC_testers",
+          "market_size": 32759191586.726994,
+          "market_currency": "USD",
+          "money_share": 0.78,
+          "fx_to_local": 157.98699951,
+          "local_revenue": 4036910580424.9824
+        },
+        {
+          "name": "memory_testers",
+          "market_size": 6471536022.4762745,
+          "market_currency": "USD",
+          "money_share": 0.65,
+          "fx_to_local": 157.98699951,
+          "local_revenue": 664572062967.7393
+        },
+        {
+          "name": "other_systems_and_services",
+          "market_size": null,
+          "money_share": null,
+          "local_revenue": 470000000000.0,
+          "note": "independent direct ancillary revenue"
+        }
+      ]
+    },
+    {
+      "year": 2028,
+      "scenario": "bear",
+      "macro_ai_spend_usd_bn": 1000,
+      "euv_market_demand_eur_bn": 14.950015475,
+      "euv_delivery_capacity_eur_bn": 30.15693122,
+      "euv_delivered_tam_eur_bn": 14.950015475,
+      "euv_money_share_of_delivered_market": 1.0,
+      "euv_company_revenue_eur_bn": 14.950015475,
+      "duv_tam_eur_bn": 14.571428571428571,
+      "duv_value_share": 0.8,
+      "duv_company_revenue_eur_bn": 11.657142857142858,
+      "metrology_and_inspection_revenue_eur_bn": 1.091475,
+      "service_and_upgrades_revenue_eur_bn": 14.2744032,
+      "company_revenue_eur_bn": 41.973036532142864,
+      "gross_margin": 0.52,
+      "us_gaap_opex_including_sbc_eur_bn": 7.4,
+      "operating_profit_eur_bn": 14.42597899671429,
+      "normal_net_finance_eur_bn": 0.2,
+      "pretax_profit_eur_bn": 14.62597899671429,
+      "tax_eur_bn": 2.632676219408572,
+      "parent_profit_eur_bn": 11.993302777305718,
+      "diluted_shares_m": 385,
+      "eps_eur": 31.151435785209657,
+      "eps_usd_at_fixed_eurusd": 34.93057595566466,
+      "case": "weak",
+      "ticker": "ASML",
+      "currency": "EUR",
+      "money_unit": "billion",
+      "diluted_shares_unit": "million",
+      "diluted_shares": 385000000.0,
+      "revenue": 41973036532.14286,
+      "normal_operating_margin": 0.34369633909300096,
+      "normal_operating_profit": 14425978996.71429,
+      "normal_net_interest": 200000000.0,
+      "normal_tax_rate": 0.18,
+      "normal_tax": 2632676219.408572,
+      "normal_parent_profit": 11993302777.305717,
+      "eps": 31.151435785209657,
+      "source_kind": "independent_scenario",
+      "components": [
+        {
+          "name": "EUV_delivered_market",
+          "market_size": 14950015475.0,
+          "market_currency": "EUR",
+          "money_share": 1.0,
+          "fx_to_local": 1.0,
+          "local_revenue": 14950015475.0
+        },
+        {
+          "name": "DUV_delivered_market",
+          "market_size": 14571428571.428572,
+          "market_currency": "EUR",
+          "money_share": 0.8,
+          "fx_to_local": 1.0,
+          "local_revenue": 11657142857.142859
+        },
+        {
+          "name": "metrology_and_inspection",
+          "market_size": null,
+          "money_share": null,
+          "local_revenue": 1091475000.0,
+          "note": "direct revenue via base growth; no claim of global TAM share"
+        },
+        {
+          "name": "service_and_upgrades",
+          "market_size": null,
+          "money_share": null,
+          "local_revenue": 14274403200.0,
+          "note": "installed-base growth model; no additional lithography TAM share"
+        }
+      ],
+      "normal_opex": 7400000000.0
+    },
+    {
+      "year": 2028,
+      "scenario": "base",
+      "macro_ai_spend_usd_bn": 1400,
+      "euv_market_demand_eur_bn": 24.046987357494416,
+      "euv_delivery_capacity_eur_bn": 30.15693122,
+      "euv_delivered_tam_eur_bn": 24.046987357494416,
+      "euv_money_share_of_delivered_market": 1.0,
+      "euv_company_revenue_eur_bn": 24.046987357494416,
+      "duv_tam_eur_bn": 20.59548318438773,
+      "duv_value_share": 0.84,
+      "duv_company_revenue_eur_bn": 17.300205874885695,
+      "metrology_and_inspection_revenue_eur_bn": 1.5468749999999998,
+      "service_and_upgrades_revenue_eur_bn": 16.752598199999998,
+      "company_revenue_eur_bn": 59.6466664323801,
+      "gross_margin": 0.575,
+      "us_gaap_opex_including_sbc_eur_bn": 8.0,
+      "operating_profit_eur_bn": 26.296833198618558,
+      "normal_net_finance_eur_bn": 0.2,
+      "pretax_profit_eur_bn": 26.496833198618557,
+      "tax_eur_bn": 4.504461643765155,
+      "parent_profit_eur_bn": 21.992371554853403,
+      "diluted_shares_m": 385,
+      "eps_eur": 57.12304299961922,
+      "eps_usd_at_fixed_eurusd": 64.05293181588318,
+      "case": "base",
+      "ticker": "ASML",
+      "currency": "EUR",
+      "money_unit": "billion",
+      "diluted_shares_unit": "million",
+      "diluted_shares": 385000000.0,
+      "revenue": 59646666432.380104,
+      "normal_operating_margin": 0.44087682969559755,
+      "normal_operating_profit": 26296833198.618557,
+      "normal_net_interest": 200000000.0,
+      "normal_tax_rate": 0.17,
+      "normal_tax": 4504461643.765155,
+      "normal_parent_profit": 21992371554.8534,
+      "eps": 57.12304299961922,
+      "source_kind": "independent_scenario",
+      "components": [
+        {
+          "name": "EUV_delivered_market",
+          "market_size": 24046987357.494415,
+          "market_currency": "EUR",
+          "money_share": 1.0,
+          "fx_to_local": 1.0,
+          "local_revenue": 24046987357.494415
+        },
+        {
+          "name": "DUV_delivered_market",
+          "market_size": 20595483184.38773,
+          "market_currency": "EUR",
+          "money_share": 0.84,
+          "fx_to_local": 1.0,
+          "local_revenue": 17300205874.885696
+        },
+        {
+          "name": "metrology_and_inspection",
+          "market_size": null,
+          "money_share": null,
+          "local_revenue": 1546874999.9999998,
+          "note": "direct revenue via base growth; no claim of global TAM share"
+        },
+        {
+          "name": "service_and_upgrades",
+          "market_size": null,
+          "money_share": null,
+          "local_revenue": 16752598199.999998,
+          "note": "installed-base growth model; no additional lithography TAM share"
+        }
+      ],
+      "normal_opex": 8000000000.0
+    },
+    {
+      "year": 2028,
+      "scenario": "bull",
+      "macro_ai_spend_usd_bn": 1900,
+      "euv_market_demand_eur_bn": 33.81791170816806,
+      "euv_delivery_capacity_eur_bn": 30.15693122,
+      "euv_delivered_tam_eur_bn": 30.15693122,
+      "euv_money_share_of_delivered_market": 1.0,
+      "euv_company_revenue_eur_bn": 30.15693122,
+      "duv_tam_eur_bn": 25.555336396854962,
+      "duv_value_share": 0.88,
+      "duv_company_revenue_eur_bn": 22.488696029232365,
+      "metrology_and_inspection_revenue_eur_bn": 1.804275,
+      "service_and_upgrades_revenue_eur_bn": 18.817148800000002,
+      "company_revenue_eur_bn": 73.26705104923236,
+      "gross_margin": 0.59,
+      "us_gaap_opex_including_sbc_eur_bn": 9.3,
+      "operating_profit_eur_bn": 33.92756011904709,
+      "normal_net_finance_eur_bn": 0.2,
+      "pretax_profit_eur_bn": 34.12756011904709,
+      "tax_eur_bn": 5.801685220238006,
+      "parent_profit_eur_bn": 28.325874898809083,
+      "diluted_shares_m": 385,
+      "eps_eur": 73.57370103586776,
+      "eps_usd_at_fixed_eurusd": 82.49930340587818,
+      "case": "strong",
+      "ticker": "ASML",
+      "currency": "EUR",
+      "money_unit": "billion",
+      "diluted_shares_unit": "million",
+      "diluted_shares": 385000000.0,
+      "revenue": 73267051049.23236,
+      "normal_operating_margin": 0.46306708995629153,
+      "normal_operating_profit": 33927560119.047085,
+      "normal_net_interest": 200000000.0,
+      "normal_tax_rate": 0.17,
+      "normal_tax": 5801685220.238006,
+      "normal_parent_profit": 28325874898.809082,
+      "eps": 73.57370103586776,
+      "source_kind": "independent_scenario",
+      "components": [
+        {
+          "name": "EUV_delivered_market",
+          "market_size": 30156931220.0,
+          "market_currency": "EUR",
+          "money_share": 1.0,
+          "fx_to_local": 1.0,
+          "local_revenue": 30156931220.0
+        },
+        {
+          "name": "DUV_delivered_market",
+          "market_size": 25555336396.85496,
+          "market_currency": "EUR",
+          "money_share": 0.88,
+          "fx_to_local": 1.0,
+          "local_revenue": 22488696029.232365
+        },
+        {
+          "name": "metrology_and_inspection",
+          "market_size": null,
+          "money_share": null,
+          "local_revenue": 1804275000.0,
+          "note": "direct revenue via base growth; no claim of global TAM share"
+        },
+        {
+          "name": "service_and_upgrades",
+          "market_size": null,
+          "money_share": null,
+          "local_revenue": 18817148800.0,
+          "note": "installed-base growth model; no additional lithography TAM share"
+        }
+      ],
+      "normal_opex": 9300000000.0
+    },
+    {
+      "year": 2029,
+      "scenario": "bear",
+      "macro_ai_spend_usd_bn": 950,
+      "euv_market_demand_eur_bn": 14.002868469770142,
+      "euv_delivery_capacity_eur_bn": 35.72088503009,
+      "euv_delivered_tam_eur_bn": 14.002868469770142,
+      "euv_money_share_of_delivered_market": 1.0,
+      "euv_company_revenue_eur_bn": 14.002868469770142,
+      "duv_tam_eur_bn": 13.520813586582207,
+      "duv_value_share": 0.78,
+      "duv_company_revenue_eur_bn": 10.546234597534122,
+      "metrology_and_inspection_revenue_eur_bn": 1.14604875,
+      "service_and_upgrades_revenue_eur_bn": 15.416355456000002,
+      "company_revenue_eur_bn": 41.11150727330426,
+      "gross_margin": 0.51,
+      "us_gaap_opex_including_sbc_eur_bn": 7.6,
+      "operating_profit_eur_bn": 13.366868709385175,
+      "normal_net_finance_eur_bn": 0.2,
+      "pretax_profit_eur_bn": 13.566868709385174,
+      "tax_eur_bn": 2.4420363676893313,
+      "parent_profit_eur_bn": 11.124832341695843,
+      "diluted_shares_m": 386,
+      "eps_eur": 28.820809175377832,
+      "eps_usd_at_fixed_eurusd": 32.31720909898589,
+      "case": "weak",
+      "ticker": "ASML",
+      "currency": "EUR",
+      "money_unit": "billion",
+      "diluted_shares_unit": "million",
+      "diluted_shares": 386000000.0,
+      "revenue": 41111507273.30426,
+      "normal_operating_margin": 0.3251369165456248,
+      "normal_operating_profit": 13366868709.385176,
+      "normal_net_interest": 200000000.0,
+      "normal_tax_rate": 0.18,
+      "normal_tax": 2442036367.6893315,
+      "normal_parent_profit": 11124832341.695843,
+      "eps": 28.820809175377832,
+      "source_kind": "independent_scenario",
+      "components": [
+        {
+          "name": "EUV_delivered_market",
+          "market_size": 14002868469.770142,
+          "market_currency": "EUR",
+          "money_share": 1.0,
+          "fx_to_local": 1.0,
+          "local_revenue": 14002868469.770142
+        },
+        {
+          "name": "DUV_delivered_market",
+          "market_size": 13520813586.582207,
+          "market_currency": "EUR",
+          "money_share": 0.78,
+          "fx_to_local": 1.0,
+          "local_revenue": 10546234597.534122
+        },
+        {
+          "name": "metrology_and_inspection",
+          "market_size": null,
+          "money_share": null,
+          "local_revenue": 1146048750.0,
+          "note": "direct revenue via base growth; no claim of global TAM share"
+        },
+        {
+          "name": "service_and_upgrades",
+          "market_size": null,
+          "money_share": null,
+          "local_revenue": 15416355456.000002,
+          "note": "installed-base growth model; no additional lithography TAM share"
+        }
+      ],
+      "normal_opex": 7600000000.0
+    },
+    {
+      "year": 2029,
+      "scenario": "base",
+      "macro_ai_spend_usd_bn": 1700,
+      "euv_market_demand_eur_bn": 29.54316801913935,
+      "euv_delivery_capacity_eur_bn": 35.72088503009,
+      "euv_delivered_tam_eur_bn": 29.54316801913935,
+      "euv_money_share_of_delivered_market": 1.0,
+      "euv_company_revenue_eur_bn": 29.54316801913935,
+      "duv_tam_eur_bn": 23.00297494682525,
+      "duv_value_share": 0.84,
+      "duv_company_revenue_eur_bn": 19.32249895533321,
+      "metrology_and_inspection_revenue_eur_bn": 1.9335937499999998,
+      "service_and_upgrades_revenue_eur_bn": 19.600539893999997,
+      "company_revenue_eur_bn": 70.39980061847255,
+      "gross_margin": 0.58,
+      "us_gaap_opex_including_sbc_eur_bn": 8.7,
+      "operating_profit_eur_bn": 32.131884358714075,
+      "normal_net_finance_eur_bn": 0.2,
+      "pretax_profit_eur_bn": 32.33188435871408,
+      "tax_eur_bn": 5.496420340981394,
+      "parent_profit_eur_bn": 26.835464017732683,
+      "diluted_shares_m": 386,
+      "eps_eur": 69.5219275070795,
+      "eps_usd_at_fixed_eurusd": 77.95598848523214,
+      "case": "base",
+      "ticker": "ASML",
+      "currency": "EUR",
+      "money_unit": "billion",
+      "diluted_shares_unit": "million",
+      "diluted_shares": 386000000.0,
+      "revenue": 70399800618.47255,
+      "normal_operating_margin": 0.45642010455187043,
+      "normal_operating_profit": 32131884358.714073,
+      "normal_net_interest": 200000000.0,
+      "normal_tax_rate": 0.17,
+      "normal_tax": 5496420340.981394,
+      "normal_parent_profit": 26835464017.73268,
+      "eps": 69.5219275070795,
+      "source_kind": "independent_scenario",
+      "components": [
+        {
+          "name": "EUV_delivered_market",
+          "market_size": 29543168019.13935,
+          "market_currency": "EUR",
+          "money_share": 1.0,
+          "fx_to_local": 1.0,
+          "local_revenue": 29543168019.13935
+        },
+        {
+          "name": "DUV_delivered_market",
+          "market_size": 23002974946.825253,
+          "market_currency": "EUR",
+          "money_share": 0.84,
+          "fx_to_local": 1.0,
+          "local_revenue": 19322498955.33321
+        },
+        {
+          "name": "metrology_and_inspection",
+          "market_size": null,
+          "money_share": null,
+          "local_revenue": 1933593749.9999998,
+          "note": "direct revenue via base growth; no claim of global TAM share"
+        },
+        {
+          "name": "service_and_upgrades",
+          "market_size": null,
+          "money_share": null,
+          "local_revenue": 19600539893.999996,
+          "note": "installed-base growth model; no additional lithography TAM share"
+        }
+      ],
+      "normal_opex": 8700000000.0
+    },
+    {
+      "year": 2029,
+      "scenario": "bull",
+      "macro_ai_spend_usd_bn": 2500,
+      "euv_market_demand_eur_bn": 47.56109969876792,
+      "euv_delivery_capacity_eur_bn": 35.72088503009,
+      "euv_delivered_tam_eur_bn": 35.72088503009,
+      "euv_money_share_of_delivered_market": 1.0,
+      "euv_company_revenue_eur_bn": 35.72088503009,
+      "duv_tam_eur_bn": 31.515164082090703,
+      "duv_value_share": 0.88,
+      "duv_company_revenue_eur_bn": 27.733344392239818,
+      "metrology_and_inspection_revenue_eur_bn": 2.43577125,
+      "service_and_upgrades_revenue_eur_bn": 23.333264511999996,
+      "company_revenue_eur_bn": 89.22326518432982,
+      "gross_margin": 0.6,
+      "us_gaap_opex_including_sbc_eur_bn": 10.3,
+      "operating_profit_eur_bn": 43.233959110597894,
+      "normal_net_finance_eur_bn": 0.2,
+      "pretax_profit_eur_bn": 43.4339591105979,
+      "tax_eur_bn": 7.383773048801643,
+      "parent_profit_eur_bn": 36.05018606179625,
+      "diluted_shares_m": 386,
+      "eps_eur": 93.39426440879858,
+      "eps_usd_at_fixed_eurusd": 104.7244008028637,
+      "case": "strong",
+      "ticker": "ASML",
+      "currency": "EUR",
+      "money_unit": "billion",
+      "diluted_shares_unit": "million",
+      "diluted_shares": 386000000.0,
+      "revenue": 89223265184.32982,
+      "normal_operating_margin": 0.48455925728877075,
+      "normal_operating_profit": 43233959110.59789,
+      "normal_net_interest": 200000000.0,
+      "normal_tax_rate": 0.17,
+      "normal_tax": 7383773048.801643,
+      "normal_parent_profit": 36050186061.79626,
+      "eps": 93.39426440879858,
+      "source_kind": "independent_scenario",
+      "components": [
+        {
+          "name": "EUV_delivered_market",
+          "market_size": 35720885030.090004,
+          "market_currency": "EUR",
+          "money_share": 1.0,
+          "fx_to_local": 1.0,
+          "local_revenue": 35720885030.090004
+        },
+        {
+          "name": "DUV_delivered_market",
+          "market_size": 31515164082.090702,
+          "market_currency": "EUR",
+          "money_share": 0.88,
+          "fx_to_local": 1.0,
+          "local_revenue": 27733344392.23982
+        },
+        {
+          "name": "metrology_and_inspection",
+          "market_size": null,
+          "money_share": null,
+          "local_revenue": 2435771250.0,
+          "note": "direct revenue via base growth; no claim of global TAM share"
+        },
+        {
+          "name": "service_and_upgrades",
+          "market_size": null,
+          "money_share": null,
+          "local_revenue": 23333264511.999996,
+          "note": "installed-base growth model; no additional lithography TAM share"
+        }
+      ],
+      "normal_opex": 10300000000.0
+    }
+  ],
+  "formulas": {
+    "general": "revenue=sum(component_revenue); normal_op=revenue*normal_operating_margin OR revenue*gross_margin-normal_opex; pretax=normal_op+normal_net_interest; tax=max(pretax,0)*normal_tax_rate; parent=pretax-tax; EPS=parent/diluted_shares",
+    "kioxia": "TAM=(10.72/0.136*4)*bit_index*ASP_index; brandedJPY=TAM*value_share*USDJPY; local_bit_index=bit_index*(value_share/0.136)/mix_price_premium_index; production_cost=1055.2*local_bit_index*(1-cost_decline)^n*utilization_penalty; fixed_cost=520*(1+fixed_cost_CAGR)^n; other_revenue=266.8*local_bit_index^0.6; other_cost=other_revenue; total_op=brandedJPY-production_cost-fixed_cost",
+    "advantest": "AI_multiplier=(macro_AI_capex/1000)^elasticity; nonAI=(1+nonAI_CAGR)^n; TAM=base_TAM*(AI_weight*AI_multiplier*(1+complexity_CAGR)^n+(1-AI_weight)*nonAI)*cycle; base_SoC_TAM=11bnUSD, base_memory_TAM=2.75bnUSD; each revenue=TAM*share*USDJPY; add ancillary revenue",
+    "asml": "EUV_demand=16.82*(0.75*(macro/1000)^elasticity*(1+EUV_intensity)^n+0.25*(1+nonAI)^n)*cycle; EUV_capacity=16.82*1.3^min(n,2)*1.15^max(n-2,0)*1.03^n; delivered_EUV_TAM=min(demand,capacity); DUV_TAM=(14.4/0.84)*(0.4*(macro/1000)^elasticity*(1+DUV_intensity)^n+0.6*(1+nonAI)^n)*cycle; DUV_rev=DUV_TAM*share; add service=12.238*(1+service_CAGR)^n and metro=0.99*(1+metro_CAGR)^n; n=year-2026"
+  }
+}

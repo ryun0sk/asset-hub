@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-18",
+  "route": "#mbo/candidates",
+  "python_tests": {
+    "total": 207,
+    "skipped": 8,
+    "success": true
+  },
+  "javascript_tests": {
+    "total": 128,
+    "success": true
+  },
+  "design_tokens": "passed",
+  "archives_unchanged": 8,
+  "browser": {
+    "production_chrome": true,
+    "tabs": [
+      "candidates",
+      "events",
+      "history"
+    ],
+    "empty_data": true,
+    "ai_eps_roundtrip": true,
+    "asset_summary_roundtrip": true,
+    "console_errors": 0,
+    "local_demo_detail": true,
+    "local_filter_retained_between_mbo_tabs": true
+  },
+  "deployment": {
+    "build_id": "48e9ae2a-eb63-4b46-b7b3-d1f317fad111",
+    "revision": "asset-hub-00040-rsr",
+    "previous_revision": "asset-hub-00039-mdt",
+    "image": "asia-northeast1-docker.pkg.dev/ryun0sk-asset-hub/asset-hub/app@sha256:8956506086900d34d1069e43f001c9d54a9e0faec09f4d379a8234e4af3b0e63",
+    "url": "https://asset-hub-pvgbytjsqa-an.a.run.app/#mbo/candidates",
+    "traffic_percent": 100,
+    "overlay_files": 10,
+    "unrelated_files_preserved": 326,
+    "research_data_uploaded": false,
+    "private_data_uploaded": false,
+    "iap": true,
+    "viewers": 2,
+    "env_unchanged": true,
+    "runtime_and_scaling_unchanged": true
+  },
+  "screenshots": [
+    "production-mbo.png",
+    "local-demo.png"
+  ]
+}

@@ -87,6 +87,14 @@ class PathAllowlistTest(unittest.TestCase):
         assets = shell_assets(self.root / 'web')
         self.assertEqual(set(assets), {'/', '/index.html', '/app.js', '/styles.css'})
 
+    def test_root_alias_does_not_serve_a_symlinked_index(self):
+        index = self.root / 'web' / 'index.html'
+        index.unlink()
+        index.symlink_to(self.root / 'secret.txt')
+        assets = shell_assets(self.root / 'web')
+        self.assertNotIn('/', assets)
+        self.assertNotIn('/index.html', assets)
+
     def test_image_staging_list_matches_served_files(self):
         staged = set(research_files(self.research))
         self.assertIn('themes/a/2026-09-05/report.md', staged)
@@ -236,11 +244,15 @@ class LocalServerTest(ServerTest):
 
     def test_static_files_revalidate_with_etag(self):
         path = '/research/themes/a/2026-09-05/index.html'
-        response, _ = self.request(path)
+        response, original = self.request(path)
         tag = response.getheader('ETag')
+        original_length = response.getheader('Content-Length')
         response, body = self.request(path, headers={'If-None-Match': tag})
         self.assertEqual((response.status, body), (304, b''))
         self.assertEqual(response.getheader('ETag'), tag)
+        self.assertEqual(int(original_length), len(original))
+        self.assertEqual(response.getheader('Content-Length'), original_length)
+        self.assertEqual(response.getheader('Content-Security-Policy'), RESEARCH_HTML_CSP)
         (self.root / 'research/themes/a/2026-09-05/index.html').write_text('<script>changed</script>')
         response, body = self.request(path, headers={'If-None-Match': tag})
         self.assertEqual((response.status, body), (200, b'<script>changed</script>'))

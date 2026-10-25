@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-18 JST",
+  "status": "production_verified",
+  "tests": {
+    "javascript": 43,
+    "http_auth_and_static_assets": 26,
+    "total": 69
+  },
+  "case_count": 8,
+  "primary_source_count": 31,
+  "canonical_source_unchanged": true,
+  "case_load_independent_of_weekly_api": true,
+  "retry_after_load_failure_tested": true,
+  "separate_transaction_classifications": [
+    "initial_mbo_succeeded",
+    "initial_failed_retry_succeeded",
+    "initial_failed_different_buyer",
+    "family_proposal_funding_lapse_before_formal_tob"
+  ],
+  "delisting_planned_vs_completed_separate": true,
+  "shared_shell_hashes_match_local_tests": true,
+  "initial_overlay_unrelated_files_preserved": 376,
+  "archive_check": {
+    "snapshots": 8,
+    "result": "match"
+  },
+  "catalog_build": "unchanged",
+  "iap_enabled": true,
+  "viewers": 2,
+  "weekly_results_changed": false,
+  "commit_or_push": false,
+  "revision": "asset-hub-00047-99m",
+  "build_id": "40c330cf-a313-48fb-8846-bdc25544a8a4",
+  "image_digest": "asia-northeast1-docker.pkg.dev/ryun0sk-asset-hub/asset-hub/app@sha256:4248db86be09d6552342e227610e285208d33b30207ca9548e706133e28c2291",
+  "traffic_percent": 100,
+  "final_overlay_unrelated_files_preserved": 382,
+  "production_checks": [
+    "direct cases route and eight rows",
+    "Japanese normalized code search",
+    "result classification filter",
+    "case detail and source quotes",
+    "Snow first official acknowledgment vs formal MBO date",
+    "Artvivant retry vs planned delisting",
+    "Seven family proposal before formal TOB",
+    "nineteen weekly candidates unchanged and round-trip state retained",
+    "case section hides weekly run controls"
+  ],
+  "browser_console_errors_or_warnings": 0,
+  "screenshots": {
+    "production-cases.png": "92f7c772e9bc7c64d4abe4e4cb1204c43b4925815a199efd3766a1e3330bb69a",
+    "production-case-detail.png": "398a2c68bfcdbd59d3c2ee0edccb3426b37a8697f9ea2296103ac54a8638c6e6"
+  }
+}

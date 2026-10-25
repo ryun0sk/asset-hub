@@ -1,0 +1,233 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-10-18",
+  "prepared_at": "2026-10-18T15:30:06+09:00",
+  "sources": {
+    "inforich-report-ack": {
+      "source_id": "inforich-report-ack",
+      "title": "INFORICH 本日付の一部報道について",
+      "url": "https://www2.jpx.co.jp/disc/93380/140120260213562261.pdf",
+      "public_at": "2026-02-13",
+      "issuer": "INFORICH",
+      "source_type": "primary_company_or_buyer_or_exchange",
+      "locator": "PDF p1 全文",
+      "short_quote": "本日公表を予定しております",
+      "accessed_at": "2026-10-18"
+    },
+    "inforich-start": {
+      "source_id": "inforich-start",
+      "title": "INFORICH ＭＢＯの実施及び応募の推奨に関するお知らせ",
+      "url": "https://www2.jpx.co.jp/disc/93380/140120260213562350.pdf",
+      "public_at": "2026-02-13",
+      "issuer": "INFORICH",
+      "source_type": "primary_company_or_buyer_or_exchange",
+      "locator": "PDF p1-6, p10-15, p20-22, p33-36（PDF通算ページと本文ページは一致）",
+      "short_quote": "数年単位で多額の先行投資",
+      "accessed_at": "2026-10-18"
+    },
+    "inforich-family-agreements": {
+      "source_id": "inforich-family-agreements",
+      "title": "INFORICH （変更）「ＭＢＯの実施及び応募の推奨に関するお知らせ」の一部変更",
+      "url": "https://www2.jpx.co.jp/disc/93380/140120260303574504.pdf",
+      "public_at": "2026-03-03",
+      "issuer": "INFORICH",
+      "source_type": "primary_company_or_buyer_or_exchange",
+      "locator": "PDF p1, p3-5",
+      "short_quote": "本公開買付けの成立可能性を高めるため",
+      "accessed_at": "2026-10-18"
+    },
+    "inforich-result": {
+      "source_id": "inforich-result",
+      "title": "INFORICH BCJ-102による公開買付けの結果並びに親会社及び主要株主である筆頭株主の異動",
+      "url": "https://www2.jpx.co.jp/disc/93380/140120260401596626.pdf",
+      "public_at": "2026-04-01",
+      "issuer": "INFORICH／BCJ-102（添付結果開示）",
+      "source_type": "primary_company_or_buyer_or_exchange",
+      "locator": "PDF通算 p1-4, p6-7（添付買付者開示 p2-3）",
+      "short_quote": "本公開買付けは成立しております",
+      "accessed_at": "2026-10-18"
+    },
+    "inforich-delisting-completed": {
+      "source_id": "inforich-delisting-completed",
+      "title": "INFORICH IRトップ 上場廃止完了の案内",
+      "url": "https://inforich.net/ir/",
+      "public_at": null,
+      "issuer": "INFORICH",
+      "source_type": "primary_company_or_buyer_or_exchange",
+      "locator": "IRトップ冒頭・上場廃止案内",
+      "short_quote": "上場を廃止いたしました",
+      "accessed_at": "2026-10-18",
+      "source_date_note": "ページの掲載・更新日は未確認。2026-06-16は明記された上場廃止の実績日であり、文書公表日として代入しない。"
+    }
+  },
+  "case": {
+    "case_id": "inforich-2026",
+    "code": "9338",
+    "name": "INFORICH（インフォリッチ）",
+    "first_official_disclosure_date": "2026-02-13",
+    "first_formal_mbo_announcement_date": "2026-02-13",
+    "first_official_disclosure_kind": "reported_acknowledged_pre_formal",
+    "first_date_source_ids": [
+      "inforich-report-ack",
+      "inforich-start"
+    ],
+    "first_disclosure_sequence_note": "同日、会社は日経の非公開化報道を受け検討中・同日公表予定と確認し、その後に具体的MBOを正式公表。日付が同じでも二つの段階を区別する。報道の最初の掲載時刻は独立確認していない。",
+    "transaction_class": "formal_mbo_tob_succeeded_and_delisted",
+    "actors": "Bain Capital傘下のBCJ-101／その完全子会社BCJ-102、創業者・Group CEO秋山広宣（資産管理会社経由の再出資・経営継続を予定）",
+    "factor_ids": [
+      "management_alignment",
+      "ownership_path",
+      "transformation",
+      "listing_tradeoff",
+      "funding_capacity",
+      "operating_uncertainty",
+      "listing_benefits"
+    ],
+    "public_motives": [
+      {
+        "text": "国内設置網・海外市場を拡大し、広告等のプラットフォーム事業へ進化する。先行投資に加え、Bainの人材・海外網・M&A支援を活用するとの説明。",
+        "source_ids": [
+          "inforich-start"
+        ],
+        "locator": "PDF p10-12, p20-21",
+        "evidence_kind": "public_statement",
+        "availability_phase": "at_announcement"
+      },
+      {
+        "text": "投資の効果発現までの収益悪化・計画未達を許容し、短期業績への期待に過度に左右されず改革する。非公開化による資金調達・信用面の不利益は限定的と会社は判断。",
+        "source_ids": [
+          "inforich-start"
+        ],
+        "locator": "PDF p21-22",
+        "evidence_kind": "issuer_assessment",
+        "availability_phase": "at_announcement"
+      }
+    ],
+    "observed_obstacles": [
+      {
+        "text": "特別委員会との価格交渉で初期提案3500円から4560円へ上昇。これは正式公表資料が遡って説明した交渉で、公開後のTOB価格引上げではない。",
+        "source_ids": [
+          "inforich-start"
+        ],
+        "locator": "PDF p13-15",
+        "evidence_kind": "documented_process",
+        "availability_phase": "at_announcement"
+      },
+      {
+        "text": "秋山氏株式には担保・貸株があり、94万株は担保解除困難として不応募、61万3900株は貸株返還時に応募する条件だった。単純な全株応募ではない。",
+        "source_ids": [
+          "inforich-start"
+        ],
+        "locator": "PDF p4-5",
+        "evidence_kind": "documented_process",
+        "availability_phase": "at_announcement"
+      },
+      {
+        "text": "多額の投資の回収遅れや事業計画未達は公表時点の事業リスク。確認資料に具体的な競合TOB・公開後の株主反対運動は見当たらないが、網羅的な不存在確認ではない。",
+        "source_ids": [
+          "inforich-start"
+        ],
+        "locator": "PDF p21",
+        "evidence_kind": "issuer_assessment",
+        "availability_phase": "at_announcement"
+      }
+    ],
+    "observed_enabling_conditions": [
+      {
+        "text": "秋山氏は23万株応募、94万株不応募と株式併合への賛成を合意。資産管理会社経由で買収親会社の議決権5%取得・経営継続を予定。再出資完了は別途未確認。",
+        "source_ids": [
+          "inforich-start"
+        ],
+        "locator": "PDF p3-6, p33-36",
+        "evidence_kind": "documented_agreement",
+        "availability_phase": "at_announcement"
+      },
+      {
+        "text": "公表時の決済資金計画は親会社出資172億円を上限、銀行融資は三井住友183億円・SBI新生53億円・あおぞら28億円が各上限。融資条件は別途協議と記載され、借入コミット・最終実行額の確認とはしない。",
+        "source_ids": [
+          "inforich-start"
+        ],
+        "locator": "PDF p6",
+        "evidence_kind": "announced_funding_plan",
+        "availability_phase": "at_announcement"
+      },
+      {
+        "text": "3月3日、配偶者2万5000株・母2万9000株の応募契約を追加。正式公表後に確認された合意である。",
+        "source_ids": [
+          "inforich-family-agreements"
+        ],
+        "locator": "PDF p1, p3-5",
+        "evidence_kind": "documented_agreement",
+        "availability_phase": "after_announcement"
+      },
+      {
+        "text": "応募902万7914株（新株予約権の株式換算36万9030株を含む）が下限604万2900株を上回りTOB成立。株式のみの買付数は865万8884株。",
+        "source_ids": [
+          "inforich-result"
+        ],
+        "locator": "PDF通算 p1-2, p7／添付 p3",
+        "evidence_kind": "observed_outcome",
+        "availability_phase": "after_announcement"
+      }
+    ],
+    "outcome": {
+      "mbo_tob_status": "succeeded",
+      "mbo_tob_result_date": "2026-04-01",
+      "delisting_status": "completed",
+      "actual_delisting_date": "2026-06-16",
+      "summary": "2月13日に検討確認と正式MBO公表。2月16日〜3月31日のTOBは成立し、6月16日に上場廃止済み。",
+      "source_ids": [
+        "inforich-report-ack",
+        "inforich-start",
+        "inforich-result",
+        "inforich-delisting-completed"
+      ],
+      "last_verified_event_or_plan_date": "2026-06-16",
+      "reviewed_as_of": "2026-10-18",
+      "source_date_note": "最後に確認した出来事は上場廃止実績。IRトップの掲載日は不詳。4月1日結果資料での決済開始4月7日・その後の上場廃止は当時予定であり、6月16日の完了はIRトップの過去形記述で確認。"
+    },
+    "price_terms": {
+      "currency": "JPY",
+      "announced_common_share_price": 4560,
+      "result_common_share_price": 4560,
+      "announced_price_source_id": "inforich-start",
+      "result_price_source_id": "inforich-result",
+      "locators": "公表PDF p2, p22／結果PDF通算 p6（添付 p2）",
+      "reference_share_price": {
+        "value": 2044,
+        "price_at": "2026-02-12",
+        "premium_percent": 123.09,
+        "source_id": "inforich-start",
+        "locator": "PDF p22"
+      },
+      "price_change_note": "確認した正式公表・3月3日変更・結果資料では普通株買付価格は4560円。公表前の提案3500→4560円と公開後の価格変更は区別。初版新株予約権価格等の訂正を含むため、全条件が不変とは扱わない。"
+    },
+    "preannouncement_independent_evidence": {
+      "status": "unconfirmed_before_first_public_signal",
+      "independent_source_verified": false,
+      "used_as_predictive_evidence": false,
+      "before_first_public_signal": {
+        "status": "unconfirmed",
+        "source_ids": [],
+        "used_as_predictive_evidence": false
+      },
+      "before_formal_mbo_announcement": {
+        "status": "official_acknowledgement_after_press_report",
+        "source_ids": [
+          "inforich-report-ack"
+        ],
+        "used_as_predictive_evidence": false
+      },
+      "reason": "正式MBO前の公式検討確認は見つかったが、日経報道後の同日開示。初報前の独立資料でMBOを予見できたことは未確認。公表資料が遡って説明する2025年の提携検討・内部交渉は、初報前に可視だった根拠へ置き換えない。",
+      "independent_source_verified_boundary": "before_first_public_signal",
+      "official_pre_formal_source_verified": true
+    },
+    "classification_cautions": [
+      "着想源の参考事例として掲載する。配点調整・的中率や予測精度の評価に使わない。",
+      "成長投資・海外展開の動機を低PBR・余剰現金型の説明へ一律に置き換えない。",
+      "資金・再出資は公表時の計画と合意を示した。借入コミット、融資実行額、5%再出資の完了は本資料群では未確認。"
+    ],
+    "research_role_note": "着想源の参考事例。配点調整・的中率評価には使用しない。",
+    "factor_mapping_note": "factor_idsは論点を参照するタグ。因果要因・効果方向・重み・発生確率の推定ではない。funding_capacityも公表された資金計画を示し、融資実行を保証するタグではない。"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "as_of": "2026-10-18",
+  "python_tests": 135,
+  "javascript_tests": 23,
+  "case_companies": 8,
+  "primary_sources": 31,
+  "workflow_counts": {
+    "awaiting": 13,
+    "deferred": 0,
+    "monitor": 0,
+    "research": 6
+  },
+  "old_run_immutable": true,
+  "prices_and_dcf_unchanged": true,
+  "probability_calibration_completed": false,
+  "all_listed_companies_screened": false,
+  "case_source_and_time_cutoff_audit": "passed",
+  "astra_review_fixes": [
+    "cross-date opposing evidence preserved",
+    "monitor depends on current evidence record IDs",
+    "earliest event history retained",
+    "JST normalization for post-event evidence"
+  ],
+  "production_checks": {
+    "new_run_and_19_candidates_visible": true,
+    "old_run_with_legacy_score_visible": true,
+    "four_axes_and_12_missing_questions_visible": true,
+    "tenryu_dcf_matches_saved_values": true,
+    "catalog_recovers_on_full_reload": true,
+    "iap_enabled": true,
+    "authorized_viewers": 2,
+    "unrelated_image_files_unchanged": 373,
+    "final_wording_distinguishes_financial_completeness": true,
+    "events_and_history_navigation": true,
+    "visible_error_banner": false,
+    "browser_warning_error_logs": 0,
+    "revision": "asset-hub-00044-6jq"
+  },
+  "notes": [
+    "HTTP tests initially required localhost socket sandbox permission; same 26 tests then passed.",
+    "First post-deploy fetch failed transiently; reload verified catalog and MBO data healthy.",
+    "No new paid data service or external model API; existing cloud viewer maintained."
+  ]
+}

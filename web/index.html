@@ -5,7 +5,7 @@
   <meta name="description" content="全資産の週次推移と、企業・投資テーマの調査レポート、評価モデル、根拠資料をまとめた投資ダッシュボード">
   <title>Asset Hub</title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/tokens.css"><link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/charts.css"><link rel="stylesheet" href="/costs.css"><link rel="stylesheet" href="/assets.css"><link rel="stylesheet" href="/app.css"><link rel="stylesheet" href="/doc.css"><link rel="stylesheet" href="/ai-valuations.css"><link rel="stylesheet" href="/workspace.css"><script type="module" src="/app.js"></script>
+  <link rel="stylesheet" href="/tokens.css"><link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/charts.css"><link rel="stylesheet" href="/costs.css"><link rel="stylesheet" href="/assets.css"><link rel="stylesheet" href="/app.css"><link rel="stylesheet" href="/doc.css"><link rel="stylesheet" href="/ai-valuations.css"><link rel="stylesheet" href="/workspace.css"><link rel="stylesheet" href="/mbo-panel.css"><link rel="stylesheet" href="/ai-forward-ranking.css"><script type="module" src="/app.js"></script>
 </head>
 <body>
   <aside class="sidebar">
@@ -18,6 +18,15 @@
           <a href="#a/all" data-asset-view="all">資産推移</a>
           <a href="#a/holdings" data-asset-view="holdings">保有一覧</a>
           <a href="#a/policy" data-asset-view="policy">全体方針</a>
+        </div>
+      </div>
+      <div class="mbo-nav-group">
+        <a href="#mbo/candidates" data-view="mbo" class="nav-link"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false"><circle cx="10" cy="10" r="6"/><path d="m15 15 6 6M7 11l2-3 2 2 2-3"/></svg></span><span class="nav-text">MBO調査</span></a>
+        <div class="subnav" id="mboSubnav" role="group" aria-label="MBO調査の表示切替" hidden>
+          <a href="#mbo/candidates" data-mbo-section="candidates">候補</a>
+          <a href="#mbo/events" data-mbo-section="events">公表案件</a>
+          <a href="#mbo/cases" data-mbo-section="cases">過去事例</a>
+          <a href="#mbo/history" data-mbo-section="history">週次履歴</a>
         </div>
       </div>
       <div id="classNav"><p class="nav-label nav-status">調査一覧を読み込んでいます…</p></div>
@@ -33,6 +42,7 @@
       <section id="researchSection" hidden aria-label="調査資料"></section>
       <section id="assetSection" hidden aria-label="資産の推移"></section>
       <section id="costSection" hidden aria-label="システムの維持費"></section>
+      <section id="mboSection" hidden aria-label="MBO調査"></section>
     </div>
   </main>
 </body></html>

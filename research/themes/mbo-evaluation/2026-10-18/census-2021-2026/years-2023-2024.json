@@ -1,0 +1,3085 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-10-18",
+  "prepared_at": "2026-10-18T18:27:50+09:00",
+  "scope": {
+    "announcement_years": [
+      2023,
+      2024
+    ],
+    "unit": "first_formal_mbo_announcement_episode",
+    "markets": "日本の上場市場を対象。東証を主に照合し、名証単独上場テスクを追加。福証・札証・TOKYO PRO Marketの全除外照合は未完了。",
+    "status": "primary_documents_reviewed_census_reconciliation_pending",
+    "census_completeness": "not_claimed",
+    "announcement_definition": "具体的MBOの正式予告も含む初回公表。TOB開始年とは別。",
+    "non_tob_management_led_transactions": "included_as_separate_transaction_type",
+    "interpretation": "34件の明示的TOB型MBOと2件のMBOに準ずるTOBなし非公開化を分離。東証の広義合計35件（2023年17・2024年18）はJPX件数と数値一致するが集計定義の一致・全件捕捉の証明ではない。",
+    "tse_episode_count": 35,
+    "non_tse_episode_count": 1
+  },
+  "episodes": [
+    {
+      "episode_id": "6067-2023-mbo-01",
+      "code": "6067",
+      "name": "インパクトホールディングス",
+      "announcement_date": "2023-01-26",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2023-06-29",
+      "motives": [
+        {
+          "category": "sponsor_resources",
+          "text": "ベインキャピタルと双日の支援を得て、販促・マーケティング事業の成長戦略と事業構造改革を、機動的な共同経営体制で実行する。",
+          "source_id": "6067-2023-source-0",
+          "locator": "PDF p14",
+          "availability_phase": "at_announcement",
+          "evidence_kind": "issuer_or_buyer_statement"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "6067-2023-source-0",
+          "title": "MBOの実施及び応募の推奨に関するお知らせ（公開買付け開始資料を含む）",
+          "url": "https://www2.jpx.co.jp/disc/60670/140120230126594190.pdf",
+          "public_at": "2023-01-26",
+          "issuer": "インパクトホールディングス株式会社・株式会社BCJ-70",
+          "locator": "PDF p1／動機: PDF p14",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "6067-2023-source-1",
+          "title": "公開買付けの結果並びに親会社及び主要株主の異動に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/60670/140120230310528989.pdf",
+          "public_at": "2023-03-11",
+          "issuer": "インパクトホールディングス株式会社・株式会社BCJ-70",
+          "locator": "PDF p1-2",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "jpx-delisted-2023",
+          "title": "JPX 2023年上場廃止銘柄一覧",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-03.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "コード6067・インパクトホールディングスの行：2023-06-29",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_table_row",
+          "date_note": "一覧に個別掲載日なし。上場廃止実績日と公表日を区別する。"
+        }
+      ],
+      "verification": {
+        "announcement": "verified",
+        "motive": "verified",
+        "outcome": "verified"
+      },
+      "cautions": [
+        "動機は会社・買収者の公表説明。初報前に独立資料で予見できた根拠とは扱わない。",
+        "obstaclesが空でも障害がなかったとは意味しない。網羅的な紛争・価格変更調査は未実施。"
+      ],
+      "announcement_source_id": "6067-2023-source-0",
+      "announcement_locator": "PDF p1",
+      "result_kind": "tob_result_notice",
+      "result_source_id": "6067-2023-source-1",
+      "result_date": "2023-03-11",
+      "result_locator": "PDF p1-2",
+      "transaction_type": "formal_mbo_tob",
+      "is_tse": true,
+      "listing_exchange": "東京証券取引所",
+      "listing_market": "グロース",
+      "market_source_id": "jpx-delisted-2023",
+      "market_locator": "コード6067・インパクトホールディングスの行：2023-06-29",
+      "transaction_classification": "formal_mbo_tob",
+      "transaction_label": "MBO（TOB型）",
+      "delisting_source_id": "jpx-delisted-2023",
+      "delisting_locator": "コード6067・インパクトホールディングスの行：2023-06-29"
+    },
+    {
+      "episode_id": "6924-2023-mbo-01",
+      "code": "6924",
+      "name": "岩崎電気",
+      "announcement_date": "2023-02-06",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2023-06-09",
+      "motives": [
+        {
+          "category": "sponsor_resources",
+          "text": "照明サービスのデジタル対応、光・環境事業の海外展開、事業構造・調達改革を、カーライルのM&A知見と海外網で加速する。",
+          "source_id": "6924-2023-source-1",
+          "locator": "PDF p10-11",
+          "availability_phase": "at_announcement",
+          "evidence_kind": "issuer_or_buyer_statement"
+        }
+      ],
+      "obstacles": [
+        {
+          "category": "price_disagreement",
+          "text": "会社側は提案価格が株式価値・株主利益を十分反映しないとして再考を依頼。4135円案から4460円へ引上げ後に応諾した。",
+          "source_id": "6924-2023-source-1",
+          "locator": "PDF p12",
+          "availability_phase": "at_announcement_retrospective_negotiation",
+          "evidence_kind": "issuer_or_buyer_statement"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "6924-2023-source-1",
+          "title": "MBOの実施及び応募の推奨に関するお知らせ",
+          "url": "https://www.iwasaki.co.jp/documents/jp/corporate/ir/report/filing/20230206_03.pdf",
+          "public_at": "2023-02-06",
+          "issuer": "岩崎電気株式会社",
+          "locator": "PDF p1／動機: PDF p10-11",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "6924-2023-source-2",
+          "title": "コスモホールディングス株式会社による当社株式に対する公開買付けの結果並びに親会社及び主要株主である筆頭株主の異動に関するお知らせ",
+          "url": "https://www.iwasaki.co.jp/documents/jp/corporate/ir/report/filing/20230323.pdf",
+          "public_at": "2023-03-23",
+          "issuer": "岩崎電気株式会社",
+          "locator": "PDF p1-2",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "jpx-delisted-2023",
+          "title": "JPX 2023年上場廃止銘柄一覧",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-03.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "コード6924・岩崎電気の行：2023-06-09",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_table_row",
+          "date_note": "一覧に個別掲載日なし。上場廃止実績日と公表日を区別する。"
+        }
+      ],
+      "verification": {
+        "announcement": "verified",
+        "motive": "verified",
+        "outcome": "verified"
+      },
+      "cautions": [
+        "動機は会社・買収者の公表説明。初報前に独立資料で予見できた根拠とは扱わない。",
+        "obstaclesが空でも障害がなかったとは意味しない。網羅的な紛争・価格変更調査は未実施。"
+      ],
+      "announcement_source_id": "6924-2023-source-1",
+      "announcement_locator": "PDF p1",
+      "result_kind": "tob_result_notice",
+      "result_source_id": "6924-2023-source-2",
+      "result_date": "2023-03-23",
+      "result_locator": "PDF p1-2",
+      "transaction_type": "formal_mbo_tob",
+      "is_tse": true,
+      "listing_exchange": "東京証券取引所",
+      "listing_market": "プライム",
+      "market_source_id": "jpx-delisted-2023",
+      "market_locator": "コード6924・岩崎電気の行：2023-06-09",
+      "transaction_classification": "formal_mbo_tob",
+      "transaction_label": "MBO（TOB型）",
+      "delisting_source_id": "jpx-delisted-2023",
+      "delisting_locator": "コード6924・岩崎電気の行：2023-06-09"
+    },
+    {
+      "episode_id": "5999-2023-mbo-01",
+      "code": "5999",
+      "name": "イハラサイエンス",
+      "announcement_date": "2023-02-08",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2023-06-12",
+      "motives": [
+        {
+          "category": "growth_investment",
+          "text": "配管製品の受注変動に対応する自働化・外部生産体制、独自製品開発を進め、長期的に配管メーカーとしての基盤を強化する。",
+          "source_id": "5999-2023-source-1",
+          "locator": "PDF p7-8",
+          "availability_phase": "at_announcement",
+          "evidence_kind": "issuer_or_buyer_statement"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "5999-2023-source-1",
+          "title": "エン・アイ・ム株式会社によるMBOの実施及び応募の推奨に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/59990/140120230208503744.pdf",
+          "public_at": "2023-02-08",
+          "issuer": "イハラサイエンス株式会社",
+          "locator": "PDF p1／動機: PDF p7-8",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "5999-2023-source-2",
+          "title": "エン・アイ・ム株式会社による当社株券等に対する公開買付けの結果並びに親会社及び主要株主である筆頭株主の異動に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/59990/140120230325536303.pdf",
+          "public_at": "2023-03-25",
+          "issuer": "イハラサイエンス株式会社",
+          "locator": "PDF p1-2",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "jpx-delisted-2023",
+          "title": "JPX 2023年上場廃止銘柄一覧",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-03.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "コード5999・イハラサイエンスの行：2023-06-12",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_table_row",
+          "date_note": "一覧に個別掲載日なし。上場廃止実績日と公表日を区別する。"
+        }
+      ],
+      "verification": {
+        "announcement": "verified",
+        "motive": "verified",
+        "outcome": "verified"
+      },
+      "cautions": [
+        "動機は会社・買収者の公表説明。初報前に独立資料で予見できた根拠とは扱わない。",
+        "obstaclesが空でも障害がなかったとは意味しない。網羅的な紛争・価格変更調査は未実施。"
+      ],
+      "announcement_source_id": "5999-2023-source-1",
+      "announcement_locator": "PDF p1",
+      "result_kind": "tob_result_notice",
+      "result_source_id": "5999-2023-source-2",
+      "result_date": "2023-03-25",
+      "result_locator": "PDF p1-2",
+      "transaction_type": "formal_mbo_tob",
+      "is_tse": true,
+      "listing_exchange": "東京証券取引所",
+      "listing_market": "スタンダード",
+      "market_source_id": "jpx-delisted-2023",
+      "market_locator": "コード5999・イハラサイエンスの行：2023-06-12",
+      "transaction_classification": "formal_mbo_tob",
+      "transaction_label": "MBO（TOB型）",
+      "delisting_source_id": "jpx-delisted-2023",
+      "delisting_locator": "コード5999・イハラサイエンスの行：2023-06-12"
+    },
+    {
+      "episode_id": "6172-2023-mbo-01",
+      "code": "6172",
+      "name": "メタップス",
+      "announcement_date": "2023-02-13",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2023-06-29",
+      "motives": [
+        {
+          "category": "growth_investment",
+          "text": "コア事業を育成しサービス・プロダクト開発へ中長期投資する。事業ごとの資本・業務提携も進め、短期の収益悪化による株価影響を避ける。",
+          "source_id": "6172-2023-source-1",
+          "locator": "PDF p9",
+          "availability_phase": "at_announcement",
+          "evidence_kind": "issuer_or_buyer_statement"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "6172-2023-source-1",
+          "title": "MBOの実施及び応募の推奨に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/61720/140120230213509074.pdf",
+          "public_at": "2023-02-13",
+          "issuer": "株式会社メタップス",
+          "locator": "PDF p1／動機: PDF p9",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "jpx-delisted-2023",
+          "title": "JPX 2023年上場廃止銘柄一覧",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-03.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "コード6172・メタップスの行：2023-06-29",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_table_row",
+          "date_note": "一覧に個別掲載日なし。上場廃止実績日と公表日を区別する。"
+        }
+      ],
+      "verification": {
+        "announcement": "verified",
+        "motive": "verified",
+        "outcome": "verified"
+      },
+      "cautions": [
+        "動機は会社・買収者の公表説明。初報前に独立資料で予見できた根拠とは扱わない。",
+        "obstaclesが空でも障害がなかったとは意味しない。網羅的な紛争・価格変更調査は未実施。"
+      ],
+      "announcement_source_id": "6172-2023-source-1",
+      "announcement_locator": "PDF p1",
+      "result_kind": "delisting_observed",
+      "result_source_id": "jpx-delisted-2023",
+      "result_date": "2023-06-29",
+      "result_locator": "上場廃止一覧のコード6172の行",
+      "transaction_type": "formal_mbo_tob",
+      "is_tse": true,
+      "listing_exchange": "東京証券取引所",
+      "listing_market": "グロース",
+      "market_source_id": "jpx-delisted-2023",
+      "market_locator": "コード6172・メタップスの行：2023-06-29",
+      "transaction_classification": "formal_mbo_tob",
+      "transaction_label": "MBO（TOB型）",
+      "delisting_source_id": "jpx-delisted-2023",
+      "delisting_locator": "コード6172・メタップスの行：2023-06-29"
+    },
+    {
+      "episode_id": "7618-2023-mbo-01",
+      "code": "7618",
+      "name": "ピーシーデポコーポレーション",
+      "announcement_date": "2023-05-15",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2023-10-27",
+      "motives": [
+        {
+          "category": "long_term_governance",
+          "text": "生活・社会のデジタル化に対応する事業を、所有と経営を一致させた体制で抜本的・機動的に推進し、上場維持コストも削減する。",
+          "source_id": "7618-2023-source-1",
+          "locator": "PDF p11-12",
+          "availability_phase": "at_announcement",
+          "evidence_kind": "issuer_or_buyer_statement"
+        }
+      ],
+      "obstacles": [
+        {
+          "category": "price_disagreement",
+          "text": "450円、460円等の提案に対し、会社・特別委員会は本源的価値やプレミアムが不十分として再検討を要請。最終480円へ合意した。",
+          "source_id": "7618-2023-source-1",
+          "locator": "PDF p10",
+          "availability_phase": "at_announcement_retrospective_negotiation",
+          "evidence_kind": "issuer_or_buyer_statement"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "7618-2023-source-1",
+          "title": "MBOの実施及び応募の推奨に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/76180/140120230515572377.pdf",
+          "public_at": "2023-05-15",
+          "issuer": "株式会社ピーシーデポコーポレーション",
+          "locator": "PDF p1／動機: PDF p11-12",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "7618-2023-source-2",
+          "title": "TNI株式会社による当社株式に対する公開買付けの結果並びに親会社、親会社以外の支配株主及び主要株主である筆頭株主の異動に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/76180/140120230710519926.pdf",
+          "public_at": "2023-07-11",
+          "issuer": "株式会社ピーシーデポコーポレーション・TNI株式会社",
+          "locator": "PDF p1-2",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "jpx-delisted-2023",
+          "title": "JPX 2023年上場廃止銘柄一覧",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-03.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "コード7618・ピーシーデポコーポレーションの行：2023-10-27",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_table_row",
+          "date_note": "一覧に個別掲載日なし。上場廃止実績日と公表日を区別する。"
+        }
+      ],
+      "verification": {
+        "announcement": "verified",
+        "motive": "verified",
+        "outcome": "verified"
+      },
+      "cautions": [
+        "動機は会社・買収者の公表説明。初報前に独立資料で予見できた根拠とは扱わない。",
+        "obstaclesが空でも障害がなかったとは意味しない。網羅的な紛争・価格変更調査は未実施。"
+      ],
+      "announcement_source_id": "7618-2023-source-1",
+      "announcement_locator": "PDF p1",
+      "result_kind": "tob_result_notice",
+      "result_source_id": "7618-2023-source-2",
+      "result_date": "2023-07-11",
+      "result_locator": "PDF p1-2",
+      "transaction_type": "formal_mbo_tob",
+      "is_tse": true,
+      "listing_exchange": "東京証券取引所",
+      "listing_market": "プライム",
+      "market_source_id": "jpx-delisted-2023",
+      "market_locator": "コード7618・ピーシーデポコーポレーションの行：2023-10-27",
+      "transaction_classification": "formal_mbo_tob",
+      "transaction_label": "MBO（TOB型）",
+      "delisting_source_id": "jpx-delisted-2023",
+      "delisting_locator": "コード7618・ピーシーデポコーポレーションの行：2023-10-27"
+    },
+    {
+      "episode_id": "4355-2023-mbo-01",
+      "code": "4355",
+      "name": "ロングライフホールディング",
+      "announcement_date": "2023-06-14",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2023-10-25",
+      "motives": [
+        {
+          "category": "restructuring",
+          "text": "リゾート等の多角化事業による損失・投資負担を精査し、ホーム介護・在宅介護へ経営資源を集中して財務・事業を立て直す。",
+          "source_id": "4355-2023-source-0",
+          "locator": "PDF p9-10",
+          "availability_phase": "at_announcement",
+          "evidence_kind": "issuer_or_buyer_statement"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "4355-2023-source-0",
+          "title": "MBOの実施及び応募の推奨に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/43550/140120230614503577.pdf",
+          "public_at": "2023-06-14",
+          "issuer": "ロングライフホールディング株式会社",
+          "locator": "PDF p1／動機: PDF p9-10",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "4355-2023-source-1",
+          "title": "NPMI-LLH株式会社による当社株式に対する公開買付けの結果並びに親会社、主要株主である筆頭株主及び主要株主の異動に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/43550/140120230728529021.pdf",
+          "public_at": "2023-07-28",
+          "issuer": "ロングライフホールディング株式会社・NPMI-LLH株式会社",
+          "locator": "PDF p1-2",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "jpx-delisted-2023",
+          "title": "JPX 2023年上場廃止銘柄一覧",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-03.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "コード4355・ロングライフホールディングの行：2023-10-25",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_table_row",
+          "date_note": "一覧に個別掲載日なし。上場廃止実績日と公表日を区別する。"
+        }
+      ],
+      "verification": {
+        "announcement": "verified",
+        "motive": "verified",
+        "outcome": "verified"
+      },
+      "cautions": [
+        "動機は会社・買収者の公表説明。初報前に独立資料で予見できた根拠とは扱わない。",
+        "obstaclesが空でも障害がなかったとは意味しない。網羅的な紛争・価格変更調査は未実施。"
+      ],
+      "announcement_source_id": "4355-2023-source-0",
+      "announcement_locator": "PDF p1",
+      "result_kind": "tob_result_notice",
+      "result_source_id": "4355-2023-source-1",
+      "result_date": "2023-07-28",
+      "result_locator": "PDF p1-2",
+      "transaction_type": "formal_mbo_tob",
+      "is_tse": true,
+      "listing_exchange": "東京証券取引所",
+      "listing_market": "スタンダード",
+      "market_source_id": "jpx-delisted-2023",
+      "market_locator": "コード4355・ロングライフホールディングの行：2023-10-25",
+      "transaction_classification": "formal_mbo_tob",
+      "transaction_label": "MBO（TOB型）",
+      "delisting_source_id": "jpx-delisted-2023",
+      "delisting_locator": "コード4355・ロングライフホールディングの行：2023-10-25"
+    },
+    {
+      "episode_id": "4621-2023-mbo-01",
+      "code": "4621",
+      "name": "ロックペイント",
+      "announcement_date": "2023-08-08",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2023-12-13",
+      "motives": [
+        {
+          "category": "growth_investment",
+          "text": "環境配慮型塗料・高付加価値製品への転換、老朽設備改修、IT・DXへの先行投資を、短期収益への影響を許容して実施する。",
+          "source_id": "4621-2023-source-1",
+          "locator": "PDF p8-10",
+          "availability_phase": "at_announcement",
+          "evidence_kind": "issuer_or_buyer_statement"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "4621-2023-source-1",
+          "title": "MBOの実施及び応募の推奨に関するお知らせ",
+          "url": "https://ssl4.eir-parts.net/doc/4621/tdnet/2323028/00.pdf",
+          "public_at": "2023-08-08",
+          "issuer": "ロックペイント株式会社",
+          "locator": "PDF p1／動機: PDF p8-10",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "4621-2023-source-2",
+          "title": "辻商事株式会社による当社株式に対する公開買付けの結果並びに親会社、その他の関係会社及び主要株主の異動に関するお知らせ",
+          "url": "https://ssl4.eir-parts.net/doc/4621/tdnet/2338880/00.pdf",
+          "public_at": "2023-09-22",
+          "issuer": "ロックペイント株式会社・辻商事株式会社",
+          "locator": "PDF p1-2",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "jpx-delisted-2023",
+          "title": "JPX 2023年上場廃止銘柄一覧",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-03.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "コード4621・ロックペイントの行：2023-12-13",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_table_row",
+          "date_note": "一覧に個別掲載日なし。上場廃止実績日と公表日を区別する。"
+        }
+      ],
+      "verification": {
+        "announcement": "verified",
+        "motive": "verified",
+        "outcome": "verified"
+      },
+      "cautions": [
+        "動機は会社・買収者の公表説明。初報前に独立資料で予見できた根拠とは扱わない。",
+        "obstaclesが空でも障害がなかったとは意味しない。網羅的な紛争・価格変更調査は未実施。"
+      ],
+      "announcement_source_id": "4621-2023-source-1",
+      "announcement_locator": "PDF p1",
+      "result_kind": "tob_result_notice",
+      "result_source_id": "4621-2023-source-2",
+      "result_date": "2023-09-22",
+      "result_locator": "PDF p1-2",
+      "transaction_type": "formal_mbo_tob",
+      "is_tse": true,
+      "listing_exchange": "東京証券取引所",
+      "listing_market": "スタンダード",
+      "market_source_id": "jpx-delisted-2023",
+      "market_locator": "コード4621・ロックペイントの行：2023-12-13",
+      "transaction_classification": "formal_mbo_tob",
+      "transaction_label": "MBO（TOB型）",
+      "delisting_source_id": "jpx-delisted-2023",
+      "delisting_locator": "コード4621・ロックペイントの行：2023-12-13"
+    },
+    {
+      "episode_id": "3677-2023-mbo-01",
+      "code": "3677",
+      "name": "システム情報",
+      "announcement_date": "2023-09-27",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2024-02-07",
+      "motives": [
+        {
+          "category": "growth_investment",
+          "text": "受託開発の競争激化に対応し、エンドユーザー直接受注、クラウド・AI・セキュリティ提案、採用・人材育成を拡充する。",
+          "source_id": "3677-2023-source-0",
+          "locator": "PDF p11-12",
+          "availability_phase": "at_announcement",
+          "evidence_kind": "issuer_or_buyer_statement"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "3677-2023-source-0",
+          "title": "MBOの実施及び応募の推奨に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/36770/140120230927559035.pdf",
+          "public_at": "2023-09-27",
+          "issuer": "株式会社システム情報",
+          "locator": "PDF p1／動機: PDF p11-12",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "3677-2023-source-1",
+          "title": "株式会社BCJ-76による当社株式に対する公開買付けの結果並びに親会社及び主要株主である筆頭株主の異動に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/36770/140120231110586720.pdf",
+          "public_at": "2023-11-11",
+          "issuer": "株式会社システム情報",
+          "locator": "PDF p1-2",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "jpx-delisted-2024",
+          "title": "JPX 2024年上場廃止銘柄一覧",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-02.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "コード3677・システム情報の行：2024-02-07",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_table_row",
+          "date_note": "一覧に個別掲載日なし。上場廃止実績日と公表日を区別する。"
+        }
+      ],
+      "verification": {
+        "announcement": "verified",
+        "motive": "verified",
+        "outcome": "verified"
+      },
+      "cautions": [
+        "動機は会社・買収者の公表説明。初報前に独立資料で予見できた根拠とは扱わない。",
+        "obstaclesが空でも障害がなかったとは意味しない。網羅的な紛争・価格変更調査は未実施。"
+      ],
+      "announcement_source_id": "3677-2023-source-0",
+      "announcement_locator": "PDF p1",
+      "result_kind": "tob_result_notice",
+      "result_source_id": "3677-2023-source-1",
+      "result_date": "2023-11-11",
+      "result_locator": "PDF p1-2",
+      "transaction_type": "formal_mbo_tob",
+      "is_tse": true,
+      "listing_exchange": "東京証券取引所",
+      "listing_market": "プライム",
+      "market_source_id": "jpx-delisted-2024",
+      "market_locator": "コード3677・システム情報の行：2024-02-07",
+      "transaction_classification": "formal_mbo_tob",
+      "transaction_label": "MBO（TOB型）",
+      "delisting_source_id": "jpx-delisted-2024",
+      "delisting_locator": "コード3677・システム情報の行：2024-02-07"
+    },
+    {
+      "episode_id": "4987-2023-mbo-01",
+      "code": "4987",
+      "name": "寺岡製作所",
+      "announcement_date": "2023-10-30",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2024-03-11",
+      "motives": [
+        {
+          "category": "restructuring",
+          "text": "伊藤忠商事との提携解消を踏まえ、小口需要への柔軟な対応、製品構成・製造ライン最適化、低採算製品の見直しと原価低減を進める。",
+          "source_id": "4987-2023-source-1",
+          "locator": "PDF p8-9",
+          "availability_phase": "at_announcement",
+          "evidence_kind": "issuer_or_buyer_statement"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "4987-2023-source-1",
+          "title": "MBOの実施及び応募の推奨に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/49870/140120231030574721.pdf",
+          "public_at": "2023-10-30",
+          "issuer": "株式会社寺岡製作所",
+          "locator": "PDF p1／動機: PDF p8-9",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "4987-2023-source-2",
+          "title": "株式会社KMMによる当社株式に対する公開買付けの結果並びに親会社、主要株主である筆頭株主及びその他の関係会社並びに主要株主の異動に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/49870/140120231213502597.pdf",
+          "public_at": "2023-12-14",
+          "issuer": "株式会社寺岡製作所・株式会社KMM",
+          "locator": "PDF p1-2",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "jpx-delisted-2024",
+          "title": "JPX 2024年上場廃止銘柄一覧",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-02.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "コード4987・寺岡製作所の行：2024-03-11",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_table_row",
+          "date_note": "一覧に個別掲載日なし。上場廃止実績日と公表日を区別する。"
+        }
+      ],
+      "verification": {
+        "announcement": "verified",
+        "motive": "verified",
+        "outcome": "verified"
+      },
+      "cautions": [
+        "動機は会社・買収者の公表説明。初報前に独立資料で予見できた根拠とは扱わない。",
+        "obstaclesが空でも障害がなかったとは意味しない。網羅的な紛争・価格変更調査は未実施。"
+      ],
+      "announcement_source_id": "4987-2023-source-1",
+      "announcement_locator": "PDF p1",
+      "result_kind": "tob_result_notice",
+      "result_source_id": "4987-2023-source-2",
+      "result_date": "2023-12-14",
+      "result_locator": "PDF p1-2",
+      "transaction_type": "formal_mbo_tob",
+      "is_tse": true,
+      "listing_exchange": "東京証券取引所",
+      "listing_market": "スタンダード",
+      "market_source_id": "jpx-delisted-2024",
+      "market_locator": "コード4987・寺岡製作所の行：2024-03-11",
+      "transaction_classification": "formal_mbo_tob",
+      "transaction_label": "MBO（TOB型）",
+      "delisting_source_id": "jpx-delisted-2024",
+      "delisting_locator": "コード4987・寺岡製作所の行：2024-03-11"
+    },
+    {
+      "episode_id": "2309-2023-mbo-01",
+      "code": "2309",
+      "name": "シミックホールディングス",
+      "announcement_date": "2023-11-07",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2024-03-28",
+      "motives": [
+        {
+          "category": "growth_investment",
+          "text": "海外パートナーとの大胆な提携によるアジア・米国CRO拡大と、専門人材の評価・報酬制度の改革を、一時的な収益悪化に躊躇せず実行する。",
+          "source_id": "2309-2023-source-0",
+          "locator": "PDF p7-8",
+          "availability_phase": "at_announcement",
+          "evidence_kind": "issuer_or_buyer_statement"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "2309-2023-source-0",
+          "title": "MBOの実施及び応募の推奨に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/23090/140120231107580857.pdf",
+          "public_at": "2023-11-07",
+          "issuer": "シミックホールディングス株式会社",
+          "locator": "PDF p1／動機: PDF p7-8",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "2309-2023-source-1",
+          "title": "株式会社北杜マネージメントによる当社株式に対する公開買付けの結果並びに親会社及び主要株主である筆頭株主の異動に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/23090/140120240105511571.pdf",
+          "public_at": "2024-01-05",
+          "issuer": "シミックホールディングス株式会社・株式会社北杜マネージメント",
+          "locator": "PDF p1-2",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "jpx-delisted-2024",
+          "title": "JPX 2024年上場廃止銘柄一覧",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-02.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "コード2309・シミックホールディングスの行：2024-03-28",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_table_row",
+          "date_note": "一覧に個別掲載日なし。上場廃止実績日と公表日を区別する。"
+        }
+      ],
+      "verification": {
+        "announcement": "verified",
+        "motive": "verified",
+        "outcome": "verified"
+      },
+      "cautions": [
+        "動機は会社・買収者の公表説明。初報前に独立資料で予見できた根拠とは扱わない。",
+        "obstaclesが空でも障害がなかったとは意味しない。網羅的な紛争・価格変更調査は未実施。"
+      ],
+      "announcement_source_id": "2309-2023-source-0",
+      "announcement_locator": "PDF p1",
+      "result_kind": "tob_result_notice",
+      "result_source_id": "2309-2023-source-1",
+      "result_date": "2024-01-05",
+      "result_locator": "PDF p1-2",
+      "transaction_type": "formal_mbo_tob",
+      "is_tse": true,
+      "listing_exchange": "東京証券取引所",
+      "listing_market": "プライム",
+      "market_source_id": "jpx-delisted-2024",
+      "market_locator": "コード2309・シミックホールディングスの行：2024-03-28",
+      "transaction_classification": "formal_mbo_tob",
+      "transaction_label": "MBO（TOB型）",
+      "delisting_source_id": "jpx-delisted-2024",
+      "delisting_locator": "コード2309・シミックホールディングスの行：2024-03-28"
+    },
+    {
+      "episode_id": "4837-2023-mbo-01",
+      "code": "4837",
+      "name": "シダックス",
+      "announcement_date": "2023-11-10",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2024-03-18",
+      "motives": [
+        {
+          "category": "restructuring",
+          "text": "オイシックスとの営業情報・ノウハウ・顧客基盤・人材の相互活用には上場会社としての独立性の制約があり、非公開化でシナジー実現を進める。",
+          "source_id": "4837-2023-source-1",
+          "locator": "意見表明報告書 PDF p10",
+          "availability_phase": "after_announcement",
+          "evidence_kind": "issuer_or_buyer_statement"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "4837-2023-source-0",
+          "title": "志太ホールディングス株式会社によるシダックス株式会社株式（証券コード：4837）に対する公開買付けの開始に関するお知らせ",
+          "url": "https://www.shidax.co.jp/dcms_media/other/%E5%BF%97%E5%A4%AA%E3%83%9B%E3%83%BC%E3%83%AB%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%82%B9%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%81%AB%E3%82%88%E3%82%8B%E3%82%B7%E3%83%80%E3%83%83%E3%82%AF%E3%82%B9%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E6%A0%AA%E5%BC%8F%EF%BC%88%E8%A8%BC%E5%88%B8%E3%82%B3%E3%83%BC%E3%83%89%EF%BC%9A4837%EF%BC%89%E3%81%AB%E5%AF%BE%E3%81%99%E3%82%8B%E5%85%AC%E9%96%8B%E8%B2%B7%E4%BB%98%E3%81%91%E3%81%AE%E9%96%8B%E5%A7%8B%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B.pdf",
+          "public_at": "2023-11-10",
+          "issuer": "志太ホールディングス株式会社・シダックス株式会社",
+          "locator": "PDF p1／動機はmotives[].locator",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "4837-2023-source-1",
+          "title": "意見表明報告書",
+          "url": "https://www.shidax.co.jp/dcms_media/other/%E6%84%8F%E8%A6%8B%E8%A1%A8%E6%98%8E%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+          "public_at": "2023-11-13",
+          "issuer": "シダックス株式会社",
+          "locator": "PDF p1／動機: 意見表明報告書 PDF p10",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "4837-2023-source-2",
+          "title": "シダックス株式会社株式（証券コード：4837）に対する公開買付けの結果に関するお知らせ",
+          "url": "https://www.shidax.co.jp/dcms_media/other/%E3%82%B7%E3%83%80%E3%83%83%E3%82%AF%E3%82%B9%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E6%A0%AA%E5%BC%8F%EF%BC%88%E8%A8%BC%E5%88%B8%E3%82%B3%E3%83%BC%E3%83%89%EF%BC%9A4837%EF%BC%89%E3%81%AB%E5%AF%BE%E3%81%99%E3%82%8B%E5%85%AC%E9%96%8B%E8%B2%B7%E4%BB%98%E3%81%91%E3%81%AE%E7%B5%90%E6%9E%9C%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B.pdf",
+          "public_at": "2023-12-26",
+          "issuer": "志太ホールディングス株式会社",
+          "locator": "買付者結果公表PDF p2（応募数と下限を確認）",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "jpx-delisted-2024",
+          "title": "JPX 2024年上場廃止銘柄一覧",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-02.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "コード4837・シダックスの行：2024-03-18",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_table_row",
+          "date_note": "一覧に個別掲載日なし。上場廃止実績日と公表日を区別する。"
+        }
+      ],
+      "verification": {
+        "announcement": "verified",
+        "motive": "verified",
+        "outcome": "verified"
+      },
+      "cautions": [
+        "動機は会社・買収者の公表説明。初報前に独立資料で予見できた根拠とは扱わない。",
+        "obstaclesが空でも障害がなかったとは意味しない。網羅的な紛争・価格変更調査は未実施。",
+        "初回正式公表11月10日と意見表明報告書の提出11月13日は別日。固有動機の本文確認は会社サイト掲載の11月13日提出原本による。"
+      ],
+      "announcement_source_id": "4837-2023-source-0",
+      "announcement_locator": "PDF p1",
+      "result_kind": "tob_result_notice",
+      "result_source_id": "4837-2023-source-2",
+      "result_date": "2023-12-26",
+      "result_locator": "買付者結果公表PDF p2（応募数と下限を確認）",
+      "transaction_type": "formal_mbo_tob",
+      "is_tse": true,
+      "listing_exchange": "東京証券取引所",
+      "listing_market": "スタンダード",
+      "market_source_id": "jpx-delisted-2024",
+      "market_locator": "コード4837・シダックスの行：2024-03-18",
+      "transaction_classification": "formal_mbo_tob",
+      "transaction_label": "MBO（TOB型）",
+      "delisting_source_id": "jpx-delisted-2024",
+      "delisting_locator": "コード4837・シダックスの行：2024-03-18"
+    },
+    {
+      "episode_id": "8854-2023-mbo-01",
+      "code": "8854",
+      "name": "日住サービス",
+      "announcement_date": "2023-11-10",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2024-03-07",
+      "motives": [
+        {
+          "category": "growth_investment",
+          "text": "介護と不動産を組み合わせた新分野、遊休不動産活用、海外不動産事業等の施策を、短期的な利益・CF悪化を許容して推進する。",
+          "source_id": "8854-2023-source-1",
+          "locator": "PDF p8-9",
+          "availability_phase": "at_announcement",
+          "evidence_kind": "issuer_or_buyer_statement"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "8854-2023-source-1",
+          "title": "MBOの実施及び応募の推奨に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/88540/140120231109584212.pdf",
+          "public_at": "2023-11-10",
+          "issuer": "株式会社日住サービス",
+          "locator": "PDF p1／動機: PDF p8-9",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "8854-2023-source-2",
+          "title": "株式会社K.I.Tによる当社株式等に対する公開買付けの結果並びに親会社、主要株主である筆頭株主及び主要株主の異動に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/88540/140120231225508825.pdf",
+          "public_at": "2023-12-26",
+          "issuer": "株式会社日住サービス・株式会社K.I.T",
+          "locator": "PDF p1-2",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "jpx-delisted-2024",
+          "title": "JPX 2024年上場廃止銘柄一覧",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-02.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "コード8854・日住サービスの行：2024-03-07",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_table_row",
+          "date_note": "一覧に個別掲載日なし。上場廃止実績日と公表日を区別する。"
+        }
+      ],
+      "verification": {
+        "announcement": "verified",
+        "motive": "verified",
+        "outcome": "verified"
+      },
+      "cautions": [
+        "動機は会社・買収者の公表説明。初報前に独立資料で予見できた根拠とは扱わない。",
+        "obstaclesが空でも障害がなかったとは意味しない。網羅的な紛争・価格変更調査は未実施。"
+      ],
+      "announcement_source_id": "8854-2023-source-1",
+      "announcement_locator": "PDF p1",
+      "result_kind": "tob_result_notice",
+      "result_source_id": "8854-2023-source-2",
+      "result_date": "2023-12-26",
+      "result_locator": "PDF p1-2",
+      "transaction_type": "formal_mbo_tob",
+      "is_tse": true,
+      "listing_exchange": "東京証券取引所",
+      "listing_market": "スタンダード",
+      "market_source_id": "jpx-delisted-2024",
+      "market_locator": "コード8854・日住サービスの行：2024-03-07",
+      "transaction_classification": "formal_mbo_tob",
+      "transaction_label": "MBO（TOB型）",
+      "delisting_source_id": "jpx-delisted-2024",
+      "delisting_locator": "コード8854・日住サービスの行：2024-03-07"
+    },
+    {
+      "episode_id": "9783-2023-mbo-01",
+      "code": "9783",
+      "name": "ベネッセホールディングス",
+      "announcement_date": "2023-11-10",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2024-05-17",
+      "motives": [
+        {
+          "category": "growth_investment",
+          "text": "少子化・教育市場変化に対応し、教育・介護・新領域の変革と成長投資を、EQTの支援で短期業績に過度に左右されず進める。",
+          "source_id": "9783-2023-source-1",
+          "locator": "PDF p19-20",
+          "availability_phase": "at_announcement",
+          "evidence_kind": "issuer_or_buyer_statement"
+        }
+      ],
+      "obstacles": [
+        {
+          "category": "approval",
+          "text": "開始は日本・中国の競争法及び日本の外為法等のクリアランス取得等を前提とし、公表時点のTOB開始予定日は確定していなかった。",
+          "source_id": "9783-2023-source-1",
+          "locator": "PDF p1-2",
+          "availability_phase": "at_announcement",
+          "evidence_kind": "documented_condition"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "9783-2023-source-1",
+          "title": "MBOの実施の一環としてのブルーム1株式会社による当社株券等に対する公開買付けの開始予定に関する意見表明のお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/97830/140120231110585298.pdf",
+          "public_at": "2023-11-10",
+          "issuer": "株式会社ベネッセホールディングス",
+          "locator": "PDF p1／動機: PDF p19-20",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "9783-2023-source-2",
+          "title": "ブルーム1株式会社による当社株券等に対する公開買付けの結果並びに親会社及び主要株主である筆頭株主の異動に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/97830/140120240304547392.pdf",
+          "public_at": "2024-03-05",
+          "issuer": "株式会社ベネッセホールディングス",
+          "locator": "PDF p1-2",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "jpx-delisted-2024",
+          "title": "JPX 2024年上場廃止銘柄一覧",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-02.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "コード9783・ベネッセホールディングスの行：2024-05-17",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_table_row",
+          "date_note": "一覧に個別掲載日なし。上場廃止実績日と公表日を区別する。"
+        }
+      ],
+      "verification": {
+        "announcement": "verified",
+        "motive": "verified",
+        "outcome": "verified"
+      },
+      "cautions": [
+        "動機は会社・買収者の公表説明。初報前に独立資料で予見できた根拠とは扱わない。",
+        "obstaclesが空でも障害がなかったとは意味しない。網羅的な紛争・価格変更調査は未実施。",
+        "正式MBO予告は2023年、TOB開始・成立・上場廃止は2024年。開始時の再意見表明を別のMBO episodeに数えない。"
+      ],
+      "announcement_source_id": "9783-2023-source-1",
+      "announcement_locator": "PDF p1",
+      "result_kind": "tob_result_notice",
+      "result_source_id": "9783-2023-source-2",
+      "result_date": "2024-03-05",
+      "result_locator": "PDF p1-2",
+      "transaction_type": "formal_mbo_tob",
+      "is_tse": true,
+      "listing_exchange": "東京証券取引所",
+      "listing_market": "プライム",
+      "market_source_id": "jpx-delisted-2024",
+      "market_locator": "コード9783・ベネッセホールディングスの行：2024-05-17",
+      "transaction_classification": "formal_mbo_tob",
+      "transaction_label": "MBO（TOB型）",
+      "delisting_source_id": "jpx-delisted-2024",
+      "delisting_locator": "コード9783・ベネッセホールディングスの行：2024-05-17"
+    },
+    {
+      "episode_id": "2453-2023-mbo-01",
+      "code": "2453",
+      "name": "ジャパンベストレスキューシステム",
+      "announcement_date": "2023-11-13",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2024-03-25",
+      "motives": [
+        {
+          "category": "growth_investment",
+          "text": "会員事業の提携・市場浸透、M&A・新事業開発を進め、コンタクトセンターの技術活用と施工パートナーの開拓・教育を強化する。",
+          "source_id": "2453-2023-official-start",
+          "locator": "PDF p8-10",
+          "availability_phase": "at_announcement",
+          "evidence_kind": "issuer_or_buyer_statement"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "2453-2023-source-1",
+          "title": "MBKP Vega株式会社及びMBKP Altair株式会社による当社株券等に対する公開買付けの結果並びに主要株主、主要株主である筆頭株主及びその他の関係会社の異動に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/24530/140120231227509697.pdf",
+          "public_at": "2023-12-27",
+          "issuer": "ジャパンベストレスキューシステム株式会社",
+          "locator": "PDF p1-2",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "2453-2023-official-start",
+          "title": "ジャパンベストレスキューシステム MBOの実施及び応募の推奨",
+          "url": "https://www2.jpx.co.jp/disc/24530/140120231113587757.pdf",
+          "public_at": "2023-11-13",
+          "issuer": "ジャパンベストレスキューシステム",
+          "locator": "PDF p1／動機: PDF p8-10",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "jpx-delisted-2024",
+          "title": "JPX 2024年上場廃止銘柄一覧",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-02.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "コード2453・ジャパンベストレスキューシステムの行：2024-03-25",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_table_row",
+          "date_note": "一覧に個別掲載日なし。上場廃止実績日と公表日を区別する。"
+        }
+      ],
+      "verification": {
+        "announcement": "verified",
+        "motive": "verified",
+        "outcome": "verified"
+      },
+      "cautions": [
+        "動機は会社・買収者の公表説明。初報前に独立資料で予見できた根拠とは扱わない。",
+        "obstaclesが空でも障害がなかったとは意味しない。網羅的な紛争・価格変更調査は未実施。"
+      ],
+      "announcement_source_id": "2453-2023-official-start",
+      "announcement_locator": "PDF p1",
+      "result_kind": "tob_result_notice",
+      "result_source_id": "2453-2023-source-1",
+      "result_date": "2023-12-27",
+      "result_locator": "PDF p1-2",
+      "transaction_type": "formal_mbo_tob",
+      "is_tse": true,
+      "listing_exchange": "東京証券取引所",
+      "listing_market": "プライム",
+      "market_source_id": "jpx-delisted-2024",
+      "market_locator": "コード2453・ジャパンベストレスキューシステムの行：2024-03-25",
+      "transaction_classification": "formal_mbo_tob",
+      "transaction_label": "MBO（TOB型）",
+      "delisting_source_id": "jpx-delisted-2024",
+      "delisting_locator": "コード2453・ジャパンベストレスキューシステムの行：2024-03-25"
+    },
+    {
+      "episode_id": "5212-2023-mbo-01",
+      "code": "5212",
+      "name": "不二硝子",
+      "announcement_date": "2023-11-14",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2024-03-19",
+      "motives": [
+        {
+          "category": "other",
+          "text": "事業構造改革の短期CF悪化による株価影響を避けるとともに、上場維持基準への抵触で少数株主が売却機会を失うリスクに対応する。",
+          "source_id": "5212-2023-source-0",
+          "locator": "PDF p7",
+          "availability_phase": "at_announcement",
+          "evidence_kind": "issuer_or_buyer_statement"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "5212-2023-source-0",
+          "title": "MBOの実施及び応募の推奨に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/52120/140120231107580537.pdf",
+          "public_at": "2023-11-14",
+          "issuer": "不二硝子株式会社",
+          "locator": "PDF p1／動機: PDF p7",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "jpx-delisted-2024",
+          "title": "JPX 2024年上場廃止銘柄一覧",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-02.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "コード5212・不二硝子の行：2024-03-19",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_table_row",
+          "date_note": "一覧に個別掲載日なし。上場廃止実績日と公表日を区別する。"
+        }
+      ],
+      "verification": {
+        "announcement": "verified",
+        "motive": "verified",
+        "outcome": "verified"
+      },
+      "cautions": [
+        "動機は会社・買収者の公表説明。初報前に独立資料で予見できた根拠とは扱わない。",
+        "obstaclesが空でも障害がなかったとは意味しない。網羅的な紛争・価格変更調査は未実施。"
+      ],
+      "announcement_source_id": "5212-2023-source-0",
+      "announcement_locator": "PDF p1",
+      "result_kind": "delisting_observed",
+      "result_source_id": "jpx-delisted-2024",
+      "result_date": "2024-03-19",
+      "result_locator": "上場廃止一覧のコード5212の行",
+      "transaction_type": "formal_mbo_tob",
+      "is_tse": true,
+      "listing_exchange": "東京証券取引所",
+      "listing_market": "スタンダード",
+      "market_source_id": "jpx-delisted-2024",
+      "market_locator": "コード5212・不二硝子の行：2024-03-19",
+      "transaction_classification": "formal_mbo_tob",
+      "transaction_label": "MBO（TOB型）",
+      "delisting_source_id": "jpx-delisted-2024",
+      "delisting_locator": "コード5212・不二硝子の行：2024-03-19"
+    },
+    {
+      "episode_id": "4581-2023-mbo-01",
+      "code": "4581",
+      "name": "大正製薬ホールディングス",
+      "announcement_date": "2023-11-24",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2024-04-09",
+      "motives": [
+        {
+          "category": "restructuring",
+          "text": "営業体制・EC、生産設備、海外OTC、新薬開発、人事制度の改革を、短期業績の悪化リスクを許容しつつ中長期で進める。",
+          "source_id": "4581-2023-source-0",
+          "locator": "PDF p8-13",
+          "availability_phase": "at_announcement",
+          "evidence_kind": "issuer_or_buyer_statement"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "4581-2023-source-0",
+          "title": "MBOの実施及び応募の推奨に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/45810/140120231124594319.pdf",
+          "public_at": "2023-11-24",
+          "issuer": "大正製薬ホールディングス株式会社",
+          "locator": "PDF p1／動機: PDF p8-13",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "4581-2023-source-1",
+          "title": "大手門株式会社による当社株券等に対する公開買付けの結果並びに親会社、主要株主である筆頭株主及びその他の関係会社の異動に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/45810/140120240116515579.pdf",
+          "public_at": "2024-01-16",
+          "issuer": "大正製薬ホールディングス株式会社",
+          "locator": "PDF p1-2",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "jpx-delisted-2024",
+          "title": "JPX 2024年上場廃止銘柄一覧",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-02.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "コード4581・大正製薬ホールディングスの行：2024-04-09",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_table_row",
+          "date_note": "一覧に個別掲載日なし。上場廃止実績日と公表日を区別する。"
+        }
+      ],
+      "verification": {
+        "announcement": "verified",
+        "motive": "verified",
+        "outcome": "verified"
+      },
+      "cautions": [
+        "動機は会社・買収者の公表説明。初報前に独立資料で予見できた根拠とは扱わない。",
+        "obstaclesが空でも障害がなかったとは意味しない。網羅的な紛争・価格変更調査は未実施。"
+      ],
+      "announcement_source_id": "4581-2023-source-0",
+      "announcement_locator": "PDF p1",
+      "result_kind": "tob_result_notice",
+      "result_source_id": "4581-2023-source-1",
+      "result_date": "2024-01-16",
+      "result_locator": "PDF p1-2",
+      "transaction_type": "formal_mbo_tob",
+      "is_tse": true,
+      "listing_exchange": "東京証券取引所",
+      "listing_market": "スタンダード",
+      "market_source_id": "jpx-delisted-2024",
+      "market_locator": "コード4581・大正製薬ホールディングスの行：2024-04-09",
+      "transaction_classification": "formal_mbo_tob",
+      "transaction_label": "MBO（TOB型）",
+      "delisting_source_id": "jpx-delisted-2024",
+      "delisting_locator": "コード4581・大正製薬ホールディングスの行：2024-04-09"
+    },
+    {
+      "episode_id": "2427-2023-mbo-01",
+      "code": "2427",
+      "name": "アウトソーシング",
+      "announcement_date": "2023-12-08",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2024-06-06",
+      "motives": [
+        {
+          "category": "sponsor_resources",
+          "text": "ベインの支援を活用し、国内外子会社を含む経営課題とガバナンス・管理体制強化に、短期収益改善圧力に左右されず取り組む。",
+          "source_id": "2427-2023-official-initial",
+          "locator": "初回公表PDF p17-19",
+          "availability_phase": "at_announcement",
+          "evidence_kind": "issuer_or_buyer_statement"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "2427-2023-source-1",
+          "title": "BCJ-78株式会社による当社株券等に対する公開買付けの結果並びに親会社及び主要株主である筆頭株主の異動に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/24270/140120240328561807.pdf",
+          "public_at": "2024-03-28",
+          "issuer": "株式会社アウトソーシング",
+          "locator": "PDF p1-2",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "2427-2023-official-initial",
+          "title": "アウトソーシング MBOの実施予定に関する賛同の意見表明及び応募の推奨",
+          "url": "https://www2.jpx.co.jp/disc/24270/140120231207500443.pdf",
+          "public_at": "2023-12-08",
+          "issuer": "アウトソーシング",
+          "locator": "PDF p1／動機: 初回公表PDF p17-19",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "jpx-delisted-2024",
+          "title": "JPX 2024年上場廃止銘柄一覧",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-02.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "コード2427・アウトソーシングの行：2024-06-06",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_table_row",
+          "date_note": "一覧に個別掲載日なし。上場廃止実績日と公表日を区別する。"
+        }
+      ],
+      "verification": {
+        "announcement": "verified",
+        "motive": "verified",
+        "outcome": "verified"
+      },
+      "cautions": [
+        "動機は会社・買収者の公表説明。初報前に独立資料で予見できた根拠とは扱わない。",
+        "obstaclesが空でも障害がなかったとは意味しない。網羅的な紛争・価格変更調査は未実施。",
+        "正式MBO予告は2023年、TOB開始・成立・上場廃止は2024年。開始時の再意見表明を別のMBO episodeに数えない。"
+      ],
+      "announcement_source_id": "2427-2023-official-initial",
+      "announcement_locator": "PDF p1",
+      "result_kind": "tob_result_notice",
+      "result_source_id": "2427-2023-source-1",
+      "result_date": "2024-03-28",
+      "result_locator": "PDF p1-2",
+      "transaction_type": "formal_mbo_tob",
+      "is_tse": true,
+      "listing_exchange": "東京証券取引所",
+      "listing_market": "プライム",
+      "market_source_id": "jpx-delisted-2024",
+      "market_locator": "コード2427・アウトソーシングの行：2024-06-06",
+      "transaction_classification": "formal_mbo_tob",
+      "transaction_label": "MBO（TOB型）",
+      "delisting_source_id": "jpx-delisted-2024",
+      "delisting_locator": "コード2427・アウトソーシングの行：2024-06-06"
+    },
+    {
+      "episode_id": "9977-2024-mbo-01",
+      "code": "9977",
+      "name": "アオキスーパー",
+      "announcement_date": "2024-01-05",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2024-05-02",
+      "motives": [
+        {
+          "category": "growth_investment",
+          "text": "キャッシュレス・発注システム、店舗改装、物流・配送網、教育・人員配置に先行投資し、スーパーマーケットの競争力を立て直す。",
+          "source_id": "9977-2024-source-1",
+          "locator": "PDF p8-10",
+          "availability_phase": "at_announcement",
+          "evidence_kind": "issuer_or_buyer_statement"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "9977-2024-source-1",
+          "title": "MBOの実施及び応募の推奨に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/99770/140120240105511311.pdf",
+          "public_at": "2024-01-05",
+          "issuer": "株式会社アオキスーパー",
+          "locator": "PDF p1／動機: PDF p8-10",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "9977-2024-source-2",
+          "title": "株式会社青木商店による当社株式等に対する公開買付けの結果並びにその他の関係会社及び主要株主である筆頭株主の異動に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/99770/140120240221540427.pdf",
+          "public_at": "2024-02-21",
+          "issuer": "株式会社アオキスーパー・株式会社青木商店",
+          "locator": "PDF p1-2",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "jpx-delisted-2024",
+          "title": "JPX 2024年上場廃止銘柄一覧",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-02.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "コード9977・アオキスーパーの行：2024-05-02",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_table_row",
+          "date_note": "一覧に個別掲載日なし。上場廃止実績日と公表日を区別する。"
+        }
+      ],
+      "verification": {
+        "announcement": "verified",
+        "motive": "verified",
+        "outcome": "verified"
+      },
+      "cautions": [
+        "動機は会社・買収者の公表説明。初報前に独立資料で予見できた根拠とは扱わない。",
+        "obstaclesが空でも障害がなかったとは意味しない。網羅的な紛争・価格変更調査は未実施。"
+      ],
+      "announcement_source_id": "9977-2024-source-1",
+      "announcement_locator": "PDF p1",
+      "result_kind": "tob_result_notice",
+      "result_source_id": "9977-2024-source-2",
+      "result_date": "2024-02-21",
+      "result_locator": "PDF p1-2",
+      "transaction_type": "formal_mbo_tob",
+      "is_tse": true,
+      "listing_exchange": "東京証券取引所",
+      "listing_market": "スタンダード",
+      "market_source_id": "jpx-delisted-2024",
+      "market_locator": "コード9977・アオキスーパーの行：2024-05-02",
+      "transaction_classification": "formal_mbo_tob",
+      "transaction_label": "MBO（TOB型）",
+      "delisting_source_id": "jpx-delisted-2024",
+      "delisting_locator": "コード9977・アオキスーパーの行：2024-05-02"
+    },
+    {
+      "episode_id": "4489-2024-mbo-01",
+      "code": "4489",
+      "name": "ペイロール",
+      "announcement_date": "2024-01-24",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2024-06-10",
+      "motives": [
+        {
+          "category": "sponsor_resources",
+          "text": "給与計算サービスの成長に向け、TAのテクノロジー関連投資経験・国内ネットワークを取り込み、経営の自由度と意思決定速度を確保する。",
+          "source_id": "4489-2024-source-0",
+          "locator": "PDF p16",
+          "availability_phase": "at_announcement",
+          "evidence_kind": "issuer_or_buyer_statement"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "4489-2024-source-0",
+          "title": "MBOの実施及び応募の推奨に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/44890/140120240124518479.pdf",
+          "public_at": "2024-01-24",
+          "issuer": "株式会社ペイロール",
+          "locator": "PDF p1／動機: PDF p16",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "4489-2024-source-1",
+          "title": "株式会社TAアソシエイツジャパン1号による当社株券等に対する公開買付けの結果並びに親会社及び主要株主である筆頭株主の異動に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/44890/140120240312552227.pdf",
+          "public_at": "2024-03-12",
+          "issuer": "株式会社ペイロール",
+          "locator": "PDF p1-2",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "jpx-delisted-2024",
+          "title": "JPX 2024年上場廃止銘柄一覧",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-02.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "コード4489・ペイロールの行：2024-06-10",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_table_row",
+          "date_note": "一覧に個別掲載日なし。上場廃止実績日と公表日を区別する。"
+        }
+      ],
+      "verification": {
+        "announcement": "verified",
+        "motive": "verified",
+        "outcome": "verified"
+      },
+      "cautions": [
+        "動機は会社・買収者の公表説明。初報前に独立資料で予見できた根拠とは扱わない。",
+        "obstaclesが空でも障害がなかったとは意味しない。網羅的な紛争・価格変更調査は未実施。"
+      ],
+      "announcement_source_id": "4489-2024-source-0",
+      "announcement_locator": "PDF p1",
+      "result_kind": "tob_result_notice",
+      "result_source_id": "4489-2024-source-1",
+      "result_date": "2024-03-12",
+      "result_locator": "PDF p1-2",
+      "transaction_type": "formal_mbo_tob",
+      "is_tse": true,
+      "listing_exchange": "東京証券取引所",
+      "listing_market": "グロース",
+      "market_source_id": "jpx-delisted-2024",
+      "market_locator": "コード4489・ペイロールの行：2024-06-10",
+      "transaction_classification": "formal_mbo_tob",
+      "transaction_label": "MBO（TOB型）",
+      "delisting_source_id": "jpx-delisted-2024",
+      "delisting_locator": "コード4489・ペイロールの行：2024-06-10"
+    },
+    {
+      "episode_id": "7338-2024-mbo-01",
+      "code": "7338",
+      "name": "インヴァスト",
+      "announcement_date": "2024-01-31",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2024-04-25",
+      "motives": [
+        {
+          "category": "growth_investment",
+          "text": "国内FXの競争激化に対応し、海外拠点・ライセンス・人材・システム・M&Aへ先行投資する。上場維持コストも削減する。",
+          "source_id": "7338-2024-official-start",
+          "locator": "PDF p4-7",
+          "availability_phase": "at_announcement",
+          "evidence_kind": "issuer_or_buyer_statement"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "7338-2024-official-start",
+          "title": "インヴァスト 株式併合、単元株式数の定めの廃止及び定款の一部変更、並びに臨時株主総会招集",
+          "url": "https://www.inv.inc/media/2024/01/PressRelease_20240131_1.1.pdf",
+          "public_at": "2024-01-31",
+          "issuer": "インヴァスト",
+          "locator": "PDF p1／動機: PDF p4-7",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "jpx-delisted-2024",
+          "title": "JPX 2024年上場廃止銘柄一覧",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-02.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "コード7338・インヴァストの行：2024-04-25",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_table_row",
+          "date_note": "一覧に個別掲載日なし。上場廃止実績日と公表日を区別する。"
+        },
+        {
+          "source_id": "jpx-faq-mbo-definition",
+          "title": "JPX用語集 MBO",
+          "url": "https://faq.jpx.co.jp/disclo/tse/web/knowledge6885.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "定義・上場規程第441条第1項第1号参照",
+          "accessed_at": "2026-10-18"
+        },
+        {
+          "source_id": "jpx-faq-mbo-equivalent",
+          "title": "JPX MBO等に係る遵守事項・TOBなし株式併合の扱い",
+          "url": "https://faq.jpx.co.jp/disclo/tse/web/knowledge8686.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "MBOには該当しないものの、役員等を残すTOBなしスクイーズアウトにも準ずる手続きを期待する旨の段落",
+          "accessed_at": "2026-10-18"
+        }
+      ],
+      "verification": {
+        "announcement": "verified",
+        "motive": "verified",
+        "outcome": "verified"
+      },
+      "cautions": [
+        "動機は会社・買収者の公表説明。初報前に独立資料で予見できた根拠とは扱わない。",
+        "obstaclesが空でも障害がなかったとは意味しない。網羅的な紛争・価格変更調査は未実施。",
+        "TOBを前置しない株式併合型。原本タイトルにMBOはなく、経営者側に株主を限定する構造に基づく広義の経営陣非公開化として別類型表示。TOB件数とは分ける。",
+        "JPX用語集のMBOはTOB型。TOBなし役員残存型スクイーズアウトはMBOに準ずる行為として別に説明される。JPX図のMBO件数に当該取引が算入されているかは未確認。"
+      ],
+      "announcement_source_id": "7338-2024-official-start",
+      "announcement_locator": "PDF p1",
+      "result_kind": "delisting_observed",
+      "result_source_id": "jpx-delisted-2024",
+      "result_date": "2024-04-25",
+      "result_locator": "上場廃止一覧のコード7338の行",
+      "transaction_type": "management_led_share_consolidation_without_tob",
+      "is_tse": true,
+      "listing_exchange": "東京証券取引所",
+      "listing_market": "スタンダード",
+      "market_source_id": "jpx-delisted-2024",
+      "market_locator": "コード7338・インヴァストの行：2024-04-25",
+      "transaction_classification": "mbo_equivalent_share_consolidation",
+      "transaction_label": "MBOに準ずる非TOB非公開化",
+      "jpx_mbo_count_inclusion_status": "unconfirmed",
+      "delisting_source_id": "jpx-delisted-2024",
+      "delisting_locator": "コード7338・インヴァストの行：2024-04-25"
+    },
+    {
+      "episode_id": "6556-2024-mbo-01",
+      "code": "6556",
+      "name": "ウェルビー",
+      "announcement_date": "2024-02-08",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2024-06-11",
+      "motives": [
+        {
+          "category": "growth_investment",
+          "text": "ポラリスの支援で積極的な拠点展開、成長戦略立案、DX・ESGを進める。先行投資による短期利益・CF悪化を株式市場の評価から切り離す。",
+          "source_id": "6556-2024-source-1",
+          "locator": "PDF p9-10",
+          "availability_phase": "at_announcement",
+          "evidence_kind": "issuer_or_buyer_statement"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "6556-2024-source-1",
+          "title": "MBOの実施及び応募の推奨に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/65560/140120240208529529.pdf",
+          "public_at": "2024-02-08",
+          "issuer": "ウェルビー株式会社",
+          "locator": "PDF p1／動機: PDF p9-10",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "6556-2024-source-2",
+          "title": "PTCJ-5ホールディングス株式会社による当社株券等に対する公開買付けの結果並びに親会社及び主要株主である筆頭株主の異動に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/65560/140120240327560950.pdf",
+          "public_at": "2024-03-27",
+          "issuer": "ウェルビー株式会社",
+          "locator": "PDF p1-2",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "jpx-delisted-2024",
+          "title": "JPX 2024年上場廃止銘柄一覧",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-02.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "コード6556・ウェルビーの行：2024-06-11",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_table_row",
+          "date_note": "一覧に個別掲載日なし。上場廃止実績日と公表日を区別する。"
+        }
+      ],
+      "verification": {
+        "announcement": "verified",
+        "motive": "verified",
+        "outcome": "verified"
+      },
+      "cautions": [
+        "動機は会社・買収者の公表説明。初報前に独立資料で予見できた根拠とは扱わない。",
+        "obstaclesが空でも障害がなかったとは意味しない。網羅的な紛争・価格変更調査は未実施。"
+      ],
+      "announcement_source_id": "6556-2024-source-1",
+      "announcement_locator": "PDF p1",
+      "result_kind": "tob_result_notice",
+      "result_source_id": "6556-2024-source-2",
+      "result_date": "2024-03-27",
+      "result_locator": "PDF p1-2",
+      "transaction_type": "formal_mbo_tob",
+      "is_tse": true,
+      "listing_exchange": "東京証券取引所",
+      "listing_market": "プライム",
+      "market_source_id": "jpx-delisted-2024",
+      "market_locator": "コード6556・ウェルビーの行：2024-06-11",
+      "transaction_classification": "formal_mbo_tob",
+      "transaction_label": "MBO（TOB型）",
+      "delisting_source_id": "jpx-delisted-2024",
+      "delisting_locator": "コード6556・ウェルビーの行：2024-06-11"
+    },
+    {
+      "episode_id": "6789-2024-mbo-01",
+      "code": "6789",
+      "name": "ローランド ディー．ジー．",
+      "announcement_date": "2024-02-09",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2024-09-03",
+      "motives": [
+        {
+          "category": "long_term_governance",
+          "text": "タイヨウとの中長期の企業価値向上に向けたパートナーシップに経営陣が参加する。経営陣の出資・経営継続を組み合わせるMBO。",
+          "source_id": "6789-2024-source-0",
+          "locator": "初回買付者公表PDF p2-3",
+          "availability_phase": "at_announcement",
+          "evidence_kind": "issuer_or_buyer_statement"
+        }
+      ],
+      "obstacles": [
+        {
+          "category": "competing_bid",
+          "text": "ブラザー工業による競合TOB開始予告が出た後、XYZは成立確度向上を理由に買付価格を5035円から5370円へ改定。競合側へ移行せずXYZ側MBOが成立した。",
+          "source_id": "roland-price-change",
+          "related_source_ids": [
+            "roland-competing",
+            "6789-2024-source-2"
+          ],
+          "locator": "価格変更PDF p2／IR一覧2024-03-13,2024-04-26／結果PDF p1",
+          "availability_phase": "after_announcement",
+          "evidence_kind": "documented_process"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "6789-2024-source-0",
+          "title": "MBOの実施の一環としてのXYZ株式会社による当社株券等に対する公開買付けの開始に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/67890/140120240209532626.pdf",
+          "public_at": "2024-02-09",
+          "issuer": "XYZ株式会社・ローランド ディー．ジー．株式会社",
+          "locator": "PDF p1／動機: 初回買付者公表PDF p2-3",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "6789-2024-source-2",
+          "title": "XYZ株式会社による当社株券等に対する公開買付けの結果並びに親会社及び主要株主である筆頭株主の異動に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/67890/140120240515597279.pdf",
+          "public_at": "2024-05-16",
+          "issuer": "ローランド ディー．ジー．株式会社",
+          "locator": "PDF p1-2",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "jpx-delisted-2024",
+          "title": "JPX 2024年上場廃止銘柄一覧",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-02.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "コード6789・ローランド ディー．ジー．の行：2024-09-03",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_table_row",
+          "date_note": "一覧に個別掲載日なし。上場廃止実績日と公表日を区別する。"
+        },
+        {
+          "source_id": "roland-competing",
+          "title": "ローランドDG MBOとブラザー提案の見解",
+          "url": "https://corporate.rolanddg.com/ja/investors/ir-news.html",
+          "public_at": "2024-04-26",
+          "issuer": "ローランドDG",
+          "source_type": "primary_company_or_buyer_or_exchange",
+          "locator": "IR一覧 2024/3/13, 4/26項目。競合開始予告の存在確認用",
+          "short_quote": null,
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "roland-price-change",
+          "title": "ローランドDG 買付価格変更",
+          "url": "https://corporate.rolanddg.com/ja/investors/ir-news/rdg20240426_tender_offer_jp/main/0/link/rdg20240426_tender_offer_jp.pdf",
+          "public_at": "2024-04-26",
+          "issuer": "XYZ",
+          "source_type": "primary_company_or_buyer_or_exchange",
+          "locator": "PDF p2",
+          "short_quote": "成立の確度を高めるため",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        }
+      ],
+      "verification": {
+        "announcement": "verified",
+        "motive": "verified",
+        "outcome": "verified"
+      },
+      "cautions": [
+        "動機は会社・買収者の公表説明。初報前に独立資料で予見できた根拠とは扱わない。",
+        "obstaclesが空でも障害がなかったとは意味しない。網羅的な紛争・価格変更調査は未実施。",
+        "競合TOBの開始予告と実際の開始を区別。競合提案の存在だけで元MBOが不成立と分類しない。"
+      ],
+      "announcement_source_id": "6789-2024-source-0",
+      "announcement_locator": "PDF p1",
+      "result_kind": "tob_result_notice",
+      "result_source_id": "6789-2024-source-2",
+      "result_date": "2024-05-16",
+      "result_locator": "PDF p1-2",
+      "transaction_type": "formal_mbo_tob",
+      "is_tse": true,
+      "listing_exchange": "東京証券取引所",
+      "listing_market": "プライム",
+      "market_source_id": "jpx-delisted-2024",
+      "market_locator": "コード6789・ローランド ディー．ジー．の行：2024-09-03",
+      "transaction_classification": "formal_mbo_tob",
+      "transaction_label": "MBO（TOB型）",
+      "delisting_source_id": "jpx-delisted-2024",
+      "delisting_locator": "コード6789・ローランド ディー．ジー．の行：2024-09-03"
+    },
+    {
+      "episode_id": "7816-2024-mbo-01",
+      "code": "7816",
+      "name": "スノーピーク",
+      "announcement_date": "2024-02-20",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2024-07-09",
+      "motives": [
+        {
+          "category": "growth_investment",
+          "text": "海外展開・顧客接点拡大等に取り組むため、ベインの経営資源を活用し、需要変動下で短期業績に縛られず中長期の改革を進める。",
+          "source_id": "7816-2024-source-0",
+          "locator": "PDF p10-11, p16",
+          "availability_phase": "at_announcement",
+          "evidence_kind": "issuer_or_buyer_statement"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "7816-2024-source-0",
+          "title": "MBOの実施及びBCJ-80株式会社による当社株券等に対する公開買付けに関する賛同の意見表明及び応募推奨のお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/78160/140120240220540135.pdf",
+          "public_at": "2024-02-20",
+          "issuer": "株式会社スノーピーク",
+          "locator": "PDF p1／動機: PDF p10-11, p16",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "7816-2024-source-1",
+          "title": "BCJ-80株式会社による当社株券等に対する公開買付けの結果並びに主要株主及び主要株主である筆頭株主の異動に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/78160/140120240412570240.pdf",
+          "public_at": "2024-04-13",
+          "issuer": "株式会社スノーピーク",
+          "locator": "PDF p1-2",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "jpx-delisted-2024",
+          "title": "JPX 2024年上場廃止銘柄一覧",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-02.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "コード7816・スノーピークの行：2024-07-09",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_table_row",
+          "date_note": "一覧に個別掲載日なし。上場廃止実績日と公表日を区別する。"
+        },
+        {
+          "source_id": "snow-consideration-acknowledgment",
+          "title": "スノーピーク 報道後の非公開化検討確認",
+          "url": "https://ir.snowpeak.co.jp/news/files/140120240216538923.pdf",
+          "public_at": "2024-02-16",
+          "issuer": "スノーピーク",
+          "source_type": "primary_company_or_buyer_or_exchange",
+          "locator": "PDF p1",
+          "short_quote": "非公開化を検討しているのは事実",
+          "accessed_at": "2026-10-18"
+        }
+      ],
+      "verification": {
+        "announcement": "verified",
+        "motive": "verified",
+        "outcome": "verified"
+      },
+      "cautions": [
+        "動機は会社・買収者の公表説明。初報前に独立資料で予見できた根拠とは扱わない。",
+        "obstaclesが空でも障害がなかったとは意味しない。網羅的な紛争・価格変更調査は未実施。",
+        "2024-02-16に報道を受けた公式検討確認あり。具体的正式MBO公表は2月20日であり、検討確認を初報前の独立予測証拠にしない。"
+      ],
+      "announcement_source_id": "7816-2024-source-0",
+      "announcement_locator": "PDF p1",
+      "result_kind": "tob_result_notice",
+      "result_source_id": "7816-2024-source-1",
+      "result_date": "2024-04-13",
+      "result_locator": "PDF p1-2",
+      "transaction_type": "formal_mbo_tob",
+      "first_official_disclosure_date": "2024-02-16",
+      "first_official_disclosure_kind": "reported_acknowledged_consideration_not_decided",
+      "is_tse": true,
+      "listing_exchange": "東京証券取引所",
+      "listing_market": "プライム",
+      "market_source_id": "jpx-delisted-2024",
+      "market_locator": "コード7816・スノーピークの行：2024-07-09",
+      "transaction_classification": "formal_mbo_tob",
+      "transaction_label": "MBO（TOB型）",
+      "delisting_source_id": "jpx-delisted-2024",
+      "delisting_locator": "コード7816・スノーピークの行：2024-07-09"
+    },
+    {
+      "episode_id": "4781-2024-mbo-01",
+      "code": "4781",
+      "name": "日本ハウズイング",
+      "announcement_date": "2024-05-09",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2024-09-02",
+      "motives": [
+        {
+          "category": "restructuring",
+          "text": "海外事業の収益性低下への対応、国内外のDX・追加買収等を推進するため、創業家とゴールドマン・サックスの安定的な経営体制・経営資源を組み合わせる。流通株式比率14.35%が上場維持基準25%に未達である点も説明。",
+          "source_id": "4781-2024-official-start",
+          "locator": "PDF p13-14",
+          "availability_phase": "at_announcement",
+          "evidence_kind": "issuer_or_buyer_statement"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "4781-2024-official-start",
+          "title": "日本ハウズイング MBOの実施予定及び応募の推奨",
+          "url": "https://www2.jpx.co.jp/disc/47810/140120240509587025.pdf",
+          "public_at": "2024-05-09",
+          "issuer": "日本ハウズイング",
+          "locator": "PDF p1／動機: PDF p13-14",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "jpx-delisted-2024",
+          "title": "JPX 2024年上場廃止銘柄一覧",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-02.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "コード4781・日本ハウズイングの行：2024-09-02",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_table_row",
+          "date_note": "一覧に個別掲載日なし。上場廃止実績日と公表日を区別する。"
+        }
+      ],
+      "verification": {
+        "announcement": "verified",
+        "motive": "verified",
+        "outcome": "verified"
+      },
+      "cautions": [
+        "動機は会社・買収者の公表説明。初報前に独立資料で予見できた根拠とは扱わない。",
+        "obstaclesが空でも障害がなかったとは意味しない。網羅的な紛争・価格変更調査は未実施。"
+      ],
+      "announcement_source_id": "4781-2024-official-start",
+      "announcement_locator": "PDF p1",
+      "result_kind": "delisting_observed",
+      "result_source_id": "jpx-delisted-2024",
+      "result_date": "2024-09-02",
+      "result_locator": "上場廃止一覧のコード4781の行",
+      "transaction_type": "formal_mbo_tob",
+      "is_tse": true,
+      "listing_exchange": "東京証券取引所",
+      "listing_market": "スタンダード",
+      "market_source_id": "jpx-delisted-2024",
+      "market_locator": "コード4781・日本ハウズイングの行：2024-09-02",
+      "transaction_classification": "formal_mbo_tob",
+      "transaction_label": "MBO（TOB型）",
+      "delisting_source_id": "jpx-delisted-2024",
+      "delisting_locator": "コード4781・日本ハウズイングの行：2024-09-02"
+    },
+    {
+      "episode_id": "4349-2024-mbo-01",
+      "code": "4349",
+      "name": "テスク",
+      "announcement_date": "2024-05-13",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2024-07-19",
+      "motives": [
+        {
+          "category": "growth_investment",
+          "text": "流通業向けパッケージ・クラウド製品の開発、新技術採用、利用料モデル、人材育成・確保へ投資し、顧客のDX需要へ迅速に対応する。",
+          "source_id": "4349-2024-official-start",
+          "locator": "PDF p3",
+          "availability_phase": "at_announcement",
+          "evidence_kind": "issuer_or_buyer_statement"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "4349-2024-official-start",
+          "title": "テスク 株式併合並びに単元株式数の定めの廃止及び定款の一部変更",
+          "url": "https://www.kktisc.co.jp/wp-content/uploads/66637d300873d487615f34663f1e9f44.pdf",
+          "public_at": "2024-05-13",
+          "issuer": "テスク",
+          "locator": "PDF p1／動機: PDF p3",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "4349-delisting-notice",
+          "title": "テスク 当社株式の上場廃止に関するお知らせ",
+          "url": "https://www.kktisc.co.jp/wp-content/uploads/63469aa286431ff62d36a03855145331.pdf",
+          "public_at": "2024-07-18",
+          "issuer": "テスク",
+          "locator": "PDF p1（7月19日は当時の予定日）",
+          "accessed_at": "2026-10-18"
+        },
+        {
+          "source_id": "4349-company-history",
+          "title": "テスク 会社概要・沿革",
+          "url": "https://www.kktisc.co.jp/company/outline/",
+          "public_at": null,
+          "issuer": "テスク",
+          "locator": "沿革2024年7月・非公開化と上場廃止の完了記述",
+          "accessed_at": "2026-10-18",
+          "date_note": "ページ掲載日不詳。会社沿革は2024年7月の上場廃止実施を記載。正確な日は名証年次相場表で別途照合。"
+        },
+        {
+          "source_id": "4349-nse-2024-annual",
+          "title": "名古屋証券取引所 2024年 株式・投信相場表（4000～6999）",
+          "url": "https://www.nse.or.jp/market/statistics/table/files/soba_kabu-2_y2024.pdf",
+          "public_at": null,
+          "issuer": "名古屋証券取引所",
+          "locator": "PDF p1・43490 テスク行「上場廃止 Removal (2024/07/19)」",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_historical_table_row",
+          "date_note": "年次相場表の掲載日不詳。2024年の実績として上場廃止日を記載。"
+        },
+        {
+          "source_id": "jpx-faq-mbo-definition",
+          "title": "JPX用語集 MBO",
+          "url": "https://faq.jpx.co.jp/disclo/tse/web/knowledge6885.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "定義・上場規程第441条第1項第1号参照",
+          "accessed_at": "2026-10-18"
+        },
+        {
+          "source_id": "jpx-faq-mbo-equivalent",
+          "title": "JPX MBO等に係る遵守事項・TOBなし株式併合の扱い",
+          "url": "https://faq.jpx.co.jp/disclo/tse/web/knowledge8686.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "MBOには該当しないものの、役員等を残すTOBなしスクイーズアウトにも準ずる手続きを期待する旨の段落",
+          "accessed_at": "2026-10-18"
+        }
+      ],
+      "verification": {
+        "announcement": "verified",
+        "motive": "verified",
+        "outcome": "verified"
+      },
+      "cautions": [
+        "動機は会社・買収者の公表説明。初報前に独立資料で予見できた根拠とは扱わない。",
+        "obstaclesが空でも障害がなかったとは意味しない。網羅的な紛争・価格変更調査は未実施。",
+        "TOBを前置しない株式併合型。原本タイトルにMBOはなく、経営者側に株主を限定する構造に基づく広義の経営陣非公開化として別類型表示。TOB件数とは分ける。",
+        "JPX用語集のMBOはTOB型。TOBなし役員残存型スクイーズアウトはMBOに準ずる行為として別に説明される。JPX図のMBO件数に当該取引が算入されているかは未確認。"
+      ],
+      "announcement_source_id": "4349-2024-official-start",
+      "announcement_locator": "PDF p1",
+      "transaction_type": "management_led_share_consolidation_without_tob",
+      "result_kind": "delisting_observed",
+      "result_source_id": "4349-nse-2024-annual",
+      "result_date": "2024-07-19",
+      "result_locator": "PDF p1・43490 テスク行、Removal (2024/07/19)",
+      "is_tse": false,
+      "listing_exchange": "名古屋証券取引所",
+      "listing_market": "メイン",
+      "market_source_id": "4349-2024-official-start",
+      "market_locator": "PDF p1・コード4349 名証メイン",
+      "transaction_classification": "mbo_equivalent_share_consolidation",
+      "transaction_label": "MBOに準ずる非TOB非公開化",
+      "jpx_mbo_count_inclusion_status": "unconfirmed",
+      "delisting_source_id": "4349-nse-2024-annual",
+      "delisting_locator": "PDF p1・43490 テスク行「上場廃止 Removal (2024/07/19)」"
+    },
+    {
+      "episode_id": "9078-2024-mbo-01",
+      "code": "9078",
+      "name": "エスライングループ本社",
+      "announcement_date": "2024-05-15",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2024-09-17",
+      "motives": [
+        {
+          "category": "restructuring",
+          "text": "物流の2024年問題に対応し、自社配送地域・中継基地を見直し、関東倉庫網、DX、省人化を強化して収益性・輸送力を改善する。",
+          "source_id": "9078-2024-official-start",
+          "locator": "PDF p8-10",
+          "availability_phase": "at_announcement",
+          "evidence_kind": "issuer_or_buyer_statement"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "9078-2024-source-2",
+          "title": "トモエ株式会社による当社株式に対する公開買付けの結果並びに親会社、主要株主である筆頭株主及び主要株主の異動に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/90780/140120240627539666.pdf",
+          "public_at": "2024-06-27",
+          "issuer": "株式会社エスライングループ本社",
+          "locator": "PDF p1-2",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "9078-2024-official-start",
+          "title": "エスライングループ本社 MBOの実施及び応募の推奨",
+          "url": "https://sline.co.jp/wp-content/uploads/2024/05/20240515_01.pdf",
+          "public_at": "2024-05-15",
+          "issuer": "エスライングループ本社",
+          "locator": "PDF p1／動機: PDF p8-10",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "jpx-delisted-2024",
+          "title": "JPX 2024年上場廃止銘柄一覧",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-02.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "コード9078・エスライングループ本社の行：2024-09-17",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_table_row",
+          "date_note": "一覧に個別掲載日なし。上場廃止実績日と公表日を区別する。"
+        }
+      ],
+      "verification": {
+        "announcement": "verified",
+        "motive": "verified",
+        "outcome": "verified"
+      },
+      "cautions": [
+        "動機は会社・買収者の公表説明。初報前に独立資料で予見できた根拠とは扱わない。",
+        "obstaclesが空でも障害がなかったとは意味しない。網羅的な紛争・価格変更調査は未実施。"
+      ],
+      "announcement_source_id": "9078-2024-official-start",
+      "announcement_locator": "PDF p1",
+      "result_kind": "tob_result_notice",
+      "result_source_id": "9078-2024-source-2",
+      "result_date": "2024-06-27",
+      "result_locator": "PDF p1-2",
+      "transaction_type": "formal_mbo_tob",
+      "is_tse": true,
+      "listing_exchange": "東京証券取引所",
+      "listing_market": "スタンダード",
+      "market_source_id": "jpx-delisted-2024",
+      "market_locator": "コード9078・エスライングループ本社の行：2024-09-17",
+      "transaction_classification": "formal_mbo_tob",
+      "transaction_label": "MBO（TOB型）",
+      "delisting_source_id": "jpx-delisted-2024",
+      "delisting_locator": "コード9078・エスライングループ本社の行：2024-09-17"
+    },
+    {
+      "episode_id": "2899-2024-mbo-01",
+      "code": "2899",
+      "name": "永谷園ホールディングス",
+      "announcement_date": "2024-06-03",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2024-09-27",
+      "motives": [
+        {
+          "category": "sponsor_resources",
+          "text": "丸の内キャピタルの経営資源を活用し、国内市場の成長限界に対応して、製造加工技術を生かす海外展開・現地需要向け商品開発を拡大する。",
+          "source_id": "2899-2024-official-start",
+          "locator": "PDF p12",
+          "availability_phase": "at_announcement",
+          "evidence_kind": "issuer_or_buyer_statement"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "2899-2024-official-start",
+          "title": "永谷園ホールディングス MBOの実施及び応募の推奨",
+          "url": "https://www.nagatanien-hd.co.jp/assets/pdf/ir/stock_complimentary/notice_20240603.pdf",
+          "public_at": "2024-06-03",
+          "issuer": "永谷園ホールディングス",
+          "locator": "PDF p1／動機: PDF p12",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "jpx-delisted-2024",
+          "title": "JPX 2024年上場廃止銘柄一覧",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-02.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "コード2899・永谷園ホールディングスの行：2024-09-27",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_table_row",
+          "date_note": "一覧に個別掲載日なし。上場廃止実績日と公表日を区別する。"
+        }
+      ],
+      "verification": {
+        "announcement": "verified",
+        "motive": "verified",
+        "outcome": "verified"
+      },
+      "cautions": [
+        "動機は会社・買収者の公表説明。初報前に独立資料で予見できた根拠とは扱わない。",
+        "obstaclesが空でも障害がなかったとは意味しない。網羅的な紛争・価格変更調査は未実施。"
+      ],
+      "announcement_source_id": "2899-2024-official-start",
+      "announcement_locator": "PDF p1",
+      "result_kind": "delisting_observed",
+      "result_source_id": "jpx-delisted-2024",
+      "result_date": "2024-09-27",
+      "result_locator": "上場廃止一覧のコード2899の行",
+      "transaction_type": "formal_mbo_tob",
+      "is_tse": true,
+      "listing_exchange": "東京証券取引所",
+      "listing_market": "プライム",
+      "market_source_id": "jpx-delisted-2024",
+      "market_locator": "コード2899・永谷園ホールディングスの行：2024-09-27",
+      "transaction_classification": "formal_mbo_tob",
+      "transaction_label": "MBO（TOB型）",
+      "delisting_source_id": "jpx-delisted-2024",
+      "delisting_locator": "コード2899・永谷園ホールディングスの行：2024-09-27"
+    },
+    {
+      "episode_id": "8889-2024-mbo-01",
+      "code": "8889",
+      "name": "APAMAN",
+      "announcement_date": "2024-08-02",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2024-10-30",
+      "motives": [
+        {
+          "category": "restructuring",
+          "text": "独立系の立場を維持しつつ事業の選択と集中を行い、アパマンショップFC運営とAPAMAN DXに投資する。子会社再編・譲渡も組み合わせる。",
+          "source_id": "8889-2024-official-start",
+          "locator": "PDF p16-18",
+          "availability_phase": "at_announcement",
+          "evidence_kind": "issuer_or_buyer_statement"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "8889-2024-official-start",
+          "title": "APAMAN MBOの実施及び応募の推奨並びに子会社再編",
+          "url": "https://apamanshop-hd.co.jp/ir/pdf/ir/2024/08/irnews1313_20240802.pdf",
+          "public_at": "2024-08-02",
+          "issuer": "APAMAN",
+          "locator": "PDF p1／動機: PDF p16-18",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "jpx-delisted-2024",
+          "title": "JPX 2024年上場廃止銘柄一覧",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-02.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "コード8889・APAMANの行：2024-10-30",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_table_row",
+          "date_note": "一覧に個別掲載日なし。上場廃止実績日と公表日を区別する。"
+        }
+      ],
+      "verification": {
+        "announcement": "verified",
+        "motive": "verified",
+        "outcome": "verified"
+      },
+      "cautions": [
+        "動機は会社・買収者の公表説明。初報前に独立資料で予見できた根拠とは扱わない。",
+        "obstaclesが空でも障害がなかったとは意味しない。網羅的な紛争・価格変更調査は未実施。"
+      ],
+      "announcement_source_id": "8889-2024-official-start",
+      "announcement_locator": "PDF p1",
+      "result_kind": "delisting_observed",
+      "result_source_id": "jpx-delisted-2024",
+      "result_date": "2024-10-30",
+      "result_locator": "上場廃止一覧のコード8889の行",
+      "transaction_type": "formal_mbo_tob",
+      "is_tse": true,
+      "listing_exchange": "東京証券取引所",
+      "listing_market": "スタンダード",
+      "market_source_id": "jpx-delisted-2024",
+      "market_locator": "コード8889・APAMANの行：2024-10-30",
+      "transaction_classification": "formal_mbo_tob",
+      "transaction_label": "MBO（TOB型）",
+      "delisting_source_id": "jpx-delisted-2024",
+      "delisting_locator": "コード8889・APAMANの行：2024-10-30"
+    },
+    {
+      "episode_id": "6362-2024-mbo-01",
+      "code": "6362",
+      "name": "石井鐵工所",
+      "announcement_date": "2024-08-08",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2024-12-24",
+      "motives": [
+        {
+          "category": "growth_investment",
+          "text": "新エネルギー市場向けの技術力・人材、老朽プラント対応、大型プロジェクト管理、組織再編に継続投資し、短期CF悪化を許容する。",
+          "source_id": "6362-2024-official-initial",
+          "locator": "初回公表PDF p5-6",
+          "availability_phase": "at_announcement",
+          "evidence_kind": "issuer_or_buyer_statement"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "6362-2024-source-2",
+          "title": "株式会社可成屋による当社株式に対する公開買付けの結果並びに親会社及び主要株主である筆頭株主の異動に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/63620/140120240925588380.pdf",
+          "public_at": "2024-09-25",
+          "issuer": "株式会社石井鐵工所",
+          "locator": "PDF p1-2",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "6362-2024-official-initial",
+          "title": "石井鐵工所 MBOの実施及び応募の推奨",
+          "url": "https://www.ishii-iiw.co.jp/corporate/wp-content/uploads/2025/06/b3cda022d1e388cf7b0ce44b1c0cb2b5.pdf",
+          "public_at": "2024-08-08",
+          "issuer": "石井鐵工所",
+          "locator": "PDF p1／動機: 初回公表PDF p5-6",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "jpx-delisted-2024",
+          "title": "JPX 2024年上場廃止銘柄一覧",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-02.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "コード6362・石井鐵工所の行：2024-12-24",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_table_row",
+          "date_note": "一覧に個別掲載日なし。上場廃止実績日と公表日を区別する。"
+        }
+      ],
+      "verification": {
+        "announcement": "verified",
+        "motive": "verified",
+        "outcome": "verified"
+      },
+      "cautions": [
+        "動機は会社・買収者の公表説明。初報前に独立資料で予見できた根拠とは扱わない。",
+        "obstaclesが空でも障害がなかったとは意味しない。網羅的な紛争・価格変更調査は未実施。"
+      ],
+      "announcement_source_id": "6362-2024-official-initial",
+      "announcement_locator": "PDF p1",
+      "result_kind": "tob_result_notice",
+      "result_source_id": "6362-2024-source-2",
+      "result_date": "2024-09-25",
+      "result_locator": "PDF p1-2",
+      "transaction_type": "formal_mbo_tob",
+      "is_tse": true,
+      "listing_exchange": "東京証券取引所",
+      "listing_market": "スタンダード",
+      "market_source_id": "jpx-delisted-2024",
+      "market_locator": "コード6362・石井鐵工所の行：2024-12-24",
+      "transaction_classification": "formal_mbo_tob",
+      "transaction_label": "MBO（TOB型）",
+      "delisting_source_id": "jpx-delisted-2024",
+      "delisting_locator": "コード6362・石井鐵工所の行：2024-12-24"
+    },
+    {
+      "episode_id": "9058-2024-mbo-01",
+      "code": "9058",
+      "name": "トランコム",
+      "announcement_date": "2024-09-17",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2025-01-15",
+      "motives": [
+        {
+          "category": "long_term_governance",
+          "text": "物流業界の課題へ初期・継続投資で対応する一方、独自の物流情報サービスと企業文化を維持するため、創業家・現経営陣が参加する非公開化を選ぶ。",
+          "source_id": "9058-2024-source-1",
+          "locator": "PDF p10",
+          "availability_phase": "at_announcement",
+          "evidence_kind": "issuer_or_buyer_statement"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "9058-2024-source-1",
+          "title": "ＭＢＯの実施及び応募の推奨に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/90580/140120240917585630.pdf",
+          "public_at": "2024-09-17",
+          "issuer": "トランコム株式会社",
+          "locator": "PDF p1／動機: PDF p10",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "jpx-delisted-2025",
+          "title": "JPX 2025年上場廃止銘柄一覧",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-01.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "コード9058・トランコムの行：2025-01-15",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_table_row",
+          "date_note": "一覧に個別掲載日なし。上場廃止実績日と公表日を区別する。"
+        }
+      ],
+      "verification": {
+        "announcement": "verified",
+        "motive": "verified",
+        "outcome": "verified"
+      },
+      "cautions": [
+        "動機は会社・買収者の公表説明。初報前に独立資料で予見できた根拠とは扱わない。",
+        "obstaclesが空でも障害がなかったとは意味しない。網羅的な紛争・価格変更調査は未実施。"
+      ],
+      "announcement_source_id": "9058-2024-source-1",
+      "announcement_locator": "PDF p1",
+      "result_kind": "delisting_observed",
+      "result_source_id": "jpx-delisted-2025",
+      "result_date": "2025-01-15",
+      "result_locator": "上場廃止一覧のコード9058の行",
+      "transaction_type": "formal_mbo_tob",
+      "is_tse": true,
+      "listing_exchange": "東京証券取引所",
+      "listing_market": "プライム",
+      "market_source_id": "jpx-delisted-2025",
+      "market_locator": "コード9058・トランコムの行：2025-01-15",
+      "transaction_classification": "formal_mbo_tob",
+      "transaction_label": "MBO（TOB型）",
+      "delisting_source_id": "jpx-delisted-2025",
+      "delisting_locator": "コード9058・トランコムの行：2025-01-15"
+    },
+    {
+      "episode_id": "6640-2024-mbo-01",
+      "code": "6640",
+      "name": "I-PEX",
+      "announcement_date": "2024-11-07",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2025-03-10",
+      "motives": [
+        {
+          "category": "growth_investment",
+          "text": "コネクタ技術を生かす生成AI・データセンター、EV・ADAS等の成長分野への注力を、中長期視点で迅速に進める。",
+          "source_id": "6640-2024-official-start",
+          "locator": "PDF p8",
+          "availability_phase": "at_announcement",
+          "evidence_kind": "issuer_or_buyer_statement"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "6640-2024-source-1",
+          "title": "株式会社UDONによる当社株式に対する公開買付けの結果に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/66400/140120241120526772.pdf",
+          "public_at": "2024-12-20",
+          "issuer": "I-PEX株式会社・株式会社UDON",
+          "locator": "PDF p1-2",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "6640-2024-official-start",
+          "title": "I-PEX MBOの実施及び応募の推奨",
+          "url": "https://www2.jpx.co.jp/disc/66400/140120241106513290.pdf",
+          "public_at": "2024-11-07",
+          "issuer": "I-PEX",
+          "locator": "PDF p1／動機: PDF p8",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "jpx-delisted-2025",
+          "title": "JPX 2025年上場廃止銘柄一覧",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-01.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "コード6640・I-PEXの行：2025-03-10",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_table_row",
+          "date_note": "一覧に個別掲載日なし。上場廃止実績日と公表日を区別する。"
+        }
+      ],
+      "verification": {
+        "announcement": "verified",
+        "motive": "verified",
+        "outcome": "verified"
+      },
+      "cautions": [
+        "動機は会社・買収者の公表説明。初報前に独立資料で予見できた根拠とは扱わない。",
+        "obstaclesが空でも障害がなかったとは意味しない。網羅的な紛争・価格変更調査は未実施。"
+      ],
+      "announcement_source_id": "6640-2024-official-start",
+      "announcement_locator": "PDF p1",
+      "result_kind": "tob_result_notice",
+      "result_source_id": "6640-2024-source-1",
+      "result_date": "2024-12-20",
+      "result_locator": "PDF p1-2",
+      "transaction_type": "formal_mbo_tob",
+      "is_tse": true,
+      "listing_exchange": "東京証券取引所",
+      "listing_market": "プライム",
+      "market_source_id": "jpx-delisted-2025",
+      "market_locator": "コード6640・I-PEXの行：2025-03-10",
+      "transaction_classification": "formal_mbo_tob",
+      "transaction_label": "MBO（TOB型）",
+      "delisting_source_id": "jpx-delisted-2025",
+      "delisting_locator": "コード6640・I-PEXの行：2025-03-10"
+    },
+    {
+      "episode_id": "5610-2024-mbo-01",
+      "code": "5610",
+      "name": "大和重工",
+      "announcement_date": "2024-11-11",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2025-03-11",
+      "motives": [
+        {
+          "category": "growth_investment",
+          "text": "鋳物定盤・ホーロー浴槽等の販路・デジタル営業を強化し、生産管理のDX、鋳造設備等の更新、新製品開発へ投資する。",
+          "source_id": "5610-2024-official-start",
+          "locator": "PDF p5-6（文字抽出が乱れるためページ画像で確認）",
+          "availability_phase": "at_announcement",
+          "evidence_kind": "issuer_or_buyer_statement"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "5610-2024-official-start",
+          "title": "大和重工 MBOの実施及び応募の推奨",
+          "url": "https://www.daiwajuko.co.jp/wordpress/wp-content/uploads/2024/11/b75cc27caf7451954882a07cade8f07f.pdf",
+          "public_at": "2024-11-11",
+          "issuer": "大和重工",
+          "locator": "PDF p1／動機: PDF p5-6（文字抽出が乱れるためページ画像で確認）",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "jpx-delisted-2025",
+          "title": "JPX 2025年上場廃止銘柄一覧",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-01.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "コード5610・大和重工の行：2025-03-11",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_table_row",
+          "date_note": "一覧に個別掲載日なし。上場廃止実績日と公表日を区別する。"
+        }
+      ],
+      "verification": {
+        "announcement": "verified",
+        "motive": "verified",
+        "outcome": "verified"
+      },
+      "cautions": [
+        "動機は会社・買収者の公表説明。初報前に独立資料で予見できた根拠とは扱わない。",
+        "obstaclesが空でも障害がなかったとは意味しない。網羅的な紛争・価格変更調査は未実施。",
+        "公式PDFの文字抽出が乱れる。動機p5-6はレンダリング画像で確認。"
+      ],
+      "announcement_source_id": "5610-2024-official-start",
+      "announcement_locator": "PDF p1",
+      "result_kind": "delisting_observed",
+      "result_source_id": "jpx-delisted-2025",
+      "result_date": "2025-03-11",
+      "result_locator": "上場廃止一覧のコード5610の行",
+      "transaction_type": "formal_mbo_tob",
+      "is_tse": true,
+      "listing_exchange": "東京証券取引所",
+      "listing_market": "スタンダード",
+      "market_source_id": "jpx-delisted-2025",
+      "market_locator": "コード5610・大和重工の行：2025-03-11",
+      "transaction_classification": "formal_mbo_tob",
+      "transaction_label": "MBO（TOB型）",
+      "delisting_source_id": "jpx-delisted-2025",
+      "delisting_locator": "コード5610・大和重工の行：2025-03-11"
+    },
+    {
+      "episode_id": "9260-2024-mbo-01",
+      "code": "9260",
+      "name": "西本Wismettacホールディングス",
+      "announcement_date": "2024-11-11",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2025-04-23",
+      "motives": [
+        {
+          "category": "growth_investment",
+          "text": "WMS・PSIの導入、SOP再構築、DX・AIによる業務効率化、人材の採用・育成と配置の改革を進める。",
+          "source_id": "9260-2024-official-start",
+          "locator": "PDF p6-8",
+          "availability_phase": "at_announcement",
+          "evidence_kind": "issuer_or_buyer_statement"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "9260-2024-official-start",
+          "title": "西本Wismettacホールディングス MBOの実施及び応募の推奨",
+          "url": "https://data.swcms.net/file/wismettac/ja/news/auto_20241111518379/pdfFile.pdf",
+          "public_at": "2024-11-11",
+          "issuer": "西本Wismettacホールディングス",
+          "locator": "PDF p1／動機: PDF p6-8",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "jpx-delisted-2025",
+          "title": "JPX 2025年上場廃止銘柄一覧",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-01.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "コード9260・西本Wismettacホールディングスの行：2025-04-23",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_table_row",
+          "date_note": "一覧に個別掲載日なし。上場廃止実績日と公表日を区別する。"
+        }
+      ],
+      "verification": {
+        "announcement": "verified",
+        "motive": "verified",
+        "outcome": "verified"
+      },
+      "cautions": [
+        "動機は会社・買収者の公表説明。初報前に独立資料で予見できた根拠とは扱わない。",
+        "obstaclesが空でも障害がなかったとは意味しない。網羅的な紛争・価格変更調査は未実施。"
+      ],
+      "announcement_source_id": "9260-2024-official-start",
+      "announcement_locator": "PDF p1",
+      "result_kind": "delisting_observed",
+      "result_source_id": "jpx-delisted-2025",
+      "result_date": "2025-04-23",
+      "result_locator": "上場廃止一覧のコード9260の行",
+      "transaction_type": "formal_mbo_tob",
+      "is_tse": true,
+      "listing_exchange": "東京証券取引所",
+      "listing_market": "プライム",
+      "market_source_id": "jpx-delisted-2025",
+      "market_locator": "コード9260・西本Wismettacホールディングスの行：2025-04-23",
+      "transaction_classification": "formal_mbo_tob",
+      "transaction_label": "MBO（TOB型）",
+      "delisting_source_id": "jpx-delisted-2025",
+      "delisting_locator": "コード9260・西本Wismettacホールディングスの行：2025-04-23"
+    },
+    {
+      "episode_id": "5935-2024-mbo-01",
+      "code": "5935",
+      "name": "元旦ビューティ工業",
+      "announcement_date": "2024-11-13",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2025-03-21",
+      "motives": [
+        {
+          "category": "growth_investment",
+          "text": "住宅向け屋根製品・改修事業の育成、新製品・工法の研究開発、海外展開を強化し、投資回収までの期間と短期CF悪化を許容する。",
+          "source_id": "5935-2024-official-start",
+          "locator": "PDF p5",
+          "availability_phase": "at_announcement",
+          "evidence_kind": "issuer_or_buyer_statement"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "5935-2024-official-start",
+          "title": "元旦ビューティ工業 MBOの実施及び応募の推奨",
+          "url": "https://www2.jpx.co.jp/disc/59350/140120241113522023.pdf",
+          "public_at": "2024-11-13",
+          "issuer": "元旦ビューティ工業",
+          "locator": "PDF p1／動機: PDF p5",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "jpx-delisted-2025",
+          "title": "JPX 2025年上場廃止銘柄一覧",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-01.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "コード5935・元旦ビューティ工業の行：2025-03-21",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_table_row",
+          "date_note": "一覧に個別掲載日なし。上場廃止実績日と公表日を区別する。"
+        }
+      ],
+      "verification": {
+        "announcement": "verified",
+        "motive": "verified",
+        "outcome": "verified"
+      },
+      "cautions": [
+        "動機は会社・買収者の公表説明。初報前に独立資料で予見できた根拠とは扱わない。",
+        "obstaclesが空でも障害がなかったとは意味しない。網羅的な紛争・価格変更調査は未実施。"
+      ],
+      "announcement_source_id": "5935-2024-official-start",
+      "announcement_locator": "PDF p1",
+      "result_kind": "delisting_observed",
+      "result_source_id": "jpx-delisted-2025",
+      "result_date": "2025-03-21",
+      "result_locator": "上場廃止一覧のコード5935の行",
+      "transaction_type": "formal_mbo_tob",
+      "is_tse": true,
+      "listing_exchange": "東京証券取引所",
+      "listing_market": "スタンダード",
+      "market_source_id": "jpx-delisted-2025",
+      "market_locator": "コード5935・元旦ビューティ工業の行：2025-03-21",
+      "transaction_classification": "formal_mbo_tob",
+      "transaction_label": "MBO（TOB型）",
+      "delisting_source_id": "jpx-delisted-2025",
+      "delisting_locator": "コード5935・元旦ビューティ工業の行：2025-03-21"
+    },
+    {
+      "episode_id": "4295-2024-mbo-01",
+      "code": "4295",
+      "name": "フェイス",
+      "announcement_date": "2024-11-14",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2025-01-30",
+      "motives": [
+        {
+          "category": "restructuring",
+          "text": "従来のCD・楽曲流通ビジネスを見直し、コンテンツとプラットフォームを生かす組織最適化・低コスト化・意思決定迅速化を進める。",
+          "source_id": "4295-2024-official-start",
+          "locator": "PDF p4-6",
+          "availability_phase": "at_announcement",
+          "evidence_kind": "issuer_or_buyer_statement"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "4295-2024-official-start",
+          "title": "フェイス MBOの実施及び応募の推奨",
+          "url": "https://www2.jpx.co.jp/disc/42950/140120241113522675.pdf",
+          "public_at": "2024-11-14",
+          "issuer": "フェイス",
+          "locator": "PDF p1／動機: PDF p4-6",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "jpx-delisted-2025",
+          "title": "JPX 2025年上場廃止銘柄一覧",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-01.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "コード4295・フェイスの行：2025-01-30",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_table_row",
+          "date_note": "一覧に個別掲載日なし。上場廃止実績日と公表日を区別する。"
+        }
+      ],
+      "verification": {
+        "announcement": "verified",
+        "motive": "verified",
+        "outcome": "verified"
+      },
+      "cautions": [
+        "動機は会社・買収者の公表説明。初報前に独立資料で予見できた根拠とは扱わない。",
+        "obstaclesが空でも障害がなかったとは意味しない。網羅的な紛争・価格変更調査は未実施。"
+      ],
+      "announcement_source_id": "4295-2024-official-start",
+      "announcement_locator": "PDF p1",
+      "result_kind": "delisting_observed",
+      "result_source_id": "jpx-delisted-2025",
+      "result_date": "2025-01-30",
+      "result_locator": "上場廃止一覧のコード4295の行",
+      "transaction_type": "formal_mbo_tob",
+      "is_tse": true,
+      "listing_exchange": "東京証券取引所",
+      "listing_market": "スタンダード",
+      "market_source_id": "jpx-delisted-2025",
+      "market_locator": "コード4295・フェイスの行：2025-01-30",
+      "transaction_classification": "formal_mbo_tob",
+      "transaction_label": "MBO（TOB型）",
+      "delisting_source_id": "jpx-delisted-2025",
+      "delisting_locator": "コード4295・フェイスの行：2025-01-30"
+    },
+    {
+      "episode_id": "9522-2024-mbo-01",
+      "code": "9522",
+      "name": "リニューアブル・ジャパン",
+      "announcement_date": "2024-11-14",
+      "announcement_date_status": "verified",
+      "announcement_source_id": "9522-2024-official-start",
+      "announcement_locator": "PDF p1, p3（MBO該当・経営継続・再出資を明記）",
+      "outcome_status": "succeeded",
+      "delisting_date": "2025-03-19",
+      "result_source_id": "9522-2025-official-result",
+      "result_date": "2025-01-09",
+      "result_locator": "PDF p4（添付本文p3）・応募13941198株が下限4400700株以上",
+      "result_kind": "tob_result_notice",
+      "transaction_type": "formal_mbo_tob",
+      "transaction_classification": "formal_mbo_tob",
+      "transaction_label": "MBO（TOB型）",
+      "is_tse": true,
+      "listing_exchange": "東京証券取引所",
+      "listing_market": "グロース",
+      "market_source_id": "9522-2024-official-start",
+      "market_locator": "PDF p1・コード9522 東京証券取引所グロース市場",
+      "motives": [
+        {
+          "category": "sponsor_resources",
+          "text": "Non-FIT電源拡大や競争激化へ対応するため、国内O&M人材の確保・育成、国内外プロジェクトの資金調達力を強化し、東急不動産との経営資源・営業情報・顧客基盤の共有と迅速な意思決定を進める。",
+          "source_id": "9522-2024-official-start",
+          "locator": "PDF p11（本文p11）・人材不足と高齢化、単独資金調達の限界、外部パートナーの知見・資金調達力",
+          "availability_phase": "at_announcement",
+          "evidence_kind": "issuer_or_buyer_statement"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "9522-2024-official-start",
+          "title": "リニューアブル・ジャパン株式会社（証券コード9522）に対する公開買付けの開始に関するお知らせ",
+          "url": "https://www.tokyu-land.co.jp/news/uploads/df4d06d66411ccbe62f92738adf44de3347b8633.pdf",
+          "public_at": "2024-11-14",
+          "issuer": "東急不動産株式会社・東急不動産ホールディングス株式会社",
+          "locator": "PDF p1・p3（MBO該当）・p11（固有動機）",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "9522-2025-official-result",
+          "title": "リニューアブル・ジャパン株式会社に対する公開買付けの結果に関するお知らせ",
+          "url": "https://www.tokyu-land.co.jp/news/uploads/(final)T-dnet.pdf",
+          "public_at": "2025-01-09",
+          "issuer": "東急不動産株式会社・東急不動産ホールディングス株式会社",
+          "locator": "PDF p1（公表日）・p4（成立と応募株数）",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "jpx-delisted-2025",
+          "title": "JPX 2025年上場廃止銘柄一覧",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-01.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "コード9522の行、2025-03-19、理由MBO（公開買付け・株式併合）",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_table_row"
+        }
+      ],
+      "verification": {
+        "announcement": "verified",
+        "motive": "verified",
+        "outcome": "verified"
+      },
+      "cautions": [
+        "買付者は事業会社の東急不動産だが、社長眞邉氏の15%再出資と経営継続により原本がMBOと明記する。通常の事業会社TOBと混同しない。",
+        "発見用一覧のbidderNameはMBO、isMboはfalseだった。単一の分類フラグを完全な名簿とみなさず、原本で補完した。",
+        "動機は会社・買収者の公表説明。初報前の独立資料による予測根拠ではない。",
+        "obstacles空配列は障害なしを意味せず、紛争・価格変更の全履歴は未調査。"
+      ],
+      "delisting_source_id": "jpx-delisted-2025",
+      "delisting_locator": "コード9522の行、2025-03-19、理由MBO（公開買付け・株式併合）"
+    }
+  ],
+  "exclusions": [
+    {
+      "episode_id": "8894-2023-mbo-01",
+      "code": "8894",
+      "name": "REVOLUTION",
+      "announcement_date": "2023-08-25",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": null,
+      "motives": [
+        {
+          "category": "other",
+          "text": "大株主のまとまった株式処分を引き受け、上場維持と流通株式比率を保ちながら経営陣が支配権を取得する。非公開化MBOではない。",
+          "source_id": "8894-2023-source-0",
+          "locator": "PDF p5-6, p9-10"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "8894-2023-source-0",
+          "title": "合同会社FO1による当社株式に対する公開買付けに関する意見表明のお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/88940/140120230825546747.pdf",
+          "public_at": "2023-08-25",
+          "issuer": "株式会社REVOLUTION",
+          "locator": "PDF p1／動機: PDF p5-6, p9-10",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "8894-2023-source-2",
+          "title": "合同会社FO1による当社株式に対する公開買付けの結果並びに親会社及び主要株主である筆頭株主の異動に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/88940/140120230925558060.pdf",
+          "public_at": "2023-09-26",
+          "issuer": "株式会社REVOLUTION・合同会社FO1",
+          "locator": "PDF p1-2",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        }
+      ],
+      "verification": {
+        "announcement": "verified",
+        "motive": "verified",
+        "outcome": "verified"
+      },
+      "cautions": [
+        "動機は会社・買収者の公表説明。初報前に独立資料で予見できた根拠とは扱わない。",
+        "obstaclesが空でも障害がなかったとは意味しない。網羅的な紛争・価格変更調査は未実施。"
+      ],
+      "announcement_source_id": "8894-2023-source-0",
+      "announcement_locator": "PDF p1",
+      "transaction_type": "mbo_listing_maintained",
+      "result_source_id": "8894-2023-source-2",
+      "result_date": "2023-09-26",
+      "result_locator": "PDF p1",
+      "result_kind": "tob_result_notice_listing_maintained",
+      "exclusion_reason": "MBOである旨は原本p6に明記、上場維持を原本p5,p9-10に明記。非公開化MBO本表から除き別枠表示。",
+      "is_tse": true,
+      "listing_exchange": "東京証券取引所",
+      "listing_market": "スタンダード",
+      "market_source_id": "8894-2023-source-0",
+      "market_locator": "公式公表原本p1/冒頭の上場市場記載"
+    },
+    {
+      "episode_id": "4636-2023-bcj74-not-mbo",
+      "code": "4636",
+      "name": "T&K TOKA",
+      "announcement_date": "2023-08-17",
+      "announcement_date_status": "verified_by_later_official_reference",
+      "outcome_status": "succeeded",
+      "delisting_date": "2024-04-25",
+      "motives": [],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "4636-official-not-mbo",
+          "title": "T&K TOKA BCJ-74公開買付けに関する賛同・応募推奨",
+          "url": "https://www.toka-global.com/ir/detail/files/2024012202.pdf",
+          "public_at": "2024-01-22",
+          "issuer": "T&K TOKA",
+          "locator": "PDF p1（2023年8月17日予告参照）、p31（MBO非該当を明記）",
+          "accessed_at": "2026-10-18"
+        },
+        {
+          "source_id": "jpx-delisted-2024",
+          "title": "JPX 2024年上場廃止銘柄一覧",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-02.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "コード4636・T&K TOKAの行：2024-04-25",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_table_row",
+          "date_note": "一覧に個別掲載日なし。上場廃止実績日。"
+        }
+      ],
+      "verification": {
+        "announcement": "verified",
+        "motive": "not_applicable",
+        "outcome": "verified_delisting"
+      },
+      "exclusion_reason": "原本p31に経営陣の直接・間接出資予定がなく、本取引はMBOに該当しないと明記。第三者によるMBO分類より原本を優先。",
+      "cautions": [
+        "2022年のRSMによるMBO検討提案・撤回と、2023年公表BCJ-74取引は別。後者をMBO失敗や再試行にしない。"
+      ],
+      "announcement_source_id": "4636-official-not-mbo",
+      "announcement_locator": "PDF p1（2023年8月17日付開始予定公表を参照）、p31（MBO非該当）",
+      "result_kind": "delisting_observed",
+      "result_source_id": "jpx-delisted-2024",
+      "result_date": "2024-04-25",
+      "result_locator": "JPX 2024年上場廃止一覧・コード4636の行",
+      "is_tse": true,
+      "listing_exchange": "東京証券取引所",
+      "listing_market": "スタンダード",
+      "market_source_id": "4636-official-not-mbo",
+      "market_locator": "公式公表原本p1/冒頭の上場市場記載"
+    },
+    {
+      "episode_id": "6881-2023-controlling-shareholder-tob",
+      "code": "6881",
+      "name": "キョウデン",
+      "announcement_date": "2023-08-09",
+      "announcement_date_status": "verified",
+      "announcement_source_id": "6881-official-start",
+      "announcement_locator": "PDF p1-2",
+      "outcome_status": "succeeded",
+      "delisting_date": "2023-10-26",
+      "result_kind": "delisting_observed",
+      "result_source_id": "jpx-delisted-2023",
+      "result_date": "2023-10-26",
+      "result_locator": "JPX2023年上場廃止一覧・6881行",
+      "is_tse": true,
+      "listing_exchange": "東京証券取引所",
+      "listing_market": "スタンダード",
+      "transaction_classification": "controlling_shareholder_tob_not_confirmed_mbo",
+      "motives": [],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "6881-official-start",
+          "title": "クラフトによるキョウデン株式の公開買付けに関する賛同・応募推奨",
+          "url": "https://www.kyoden.co.jp/content/wp-content/uploads/2023/08/ir_20230809_02.pdf",
+          "public_at": "2023-08-09",
+          "issuer": "キョウデン",
+          "locator": "PDF p1（創業者支配・人的関係該当なし）、p2（橋本氏/クラフトの所有）、p28（支配株主との取引等）",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_relevant_pages"
+        },
+        {
+          "source_id": "jpx-delisted-2023",
+          "title": "JPX 2023年上場廃止銘柄一覧",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-03.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "6881・キョウデン行、2023-10-26",
+          "accessed_at": "2026-10-18",
+          "verification_status": "read_table_row"
+        }
+      ],
+      "verification": {
+        "announcement": "verified",
+        "motive": "not_applicable",
+        "outcome": "verified",
+        "mbo_classification": "controlling_shareholder_transaction_confirmed_mbo_not_confirmed"
+      },
+      "exclusion_reason": "原本p1に創業者・支配株主橋本浩氏の100%会社クラフトによる買収、人的関係は該当なし。p28は支配株主取引と明記する。現役経営陣による共同出資・利益共通化の合意やMBO該当説明は確認できないためMBO主表へ採用せず、支配株主TOBとして保存。",
+      "cautions": [
+        "原本に「MBOに該当しない」という明文まではない。単に創業者買収であることをMBOの根拠にしないという分類判断。役員の再出資・利益共通化を示す追加原本が見つかれば再検討する。"
+      ]
+    }
+  ],
+  "coverage_notes": [
+    "各社の正式公表原本及び固有動機の該当本文を確認。理由は公表者の説明として採用し、事前予測証拠にはしない。",
+    "結果資料を読めた案件はTOB結果公表日、その他は取引所の上場廃止実績日で最終結果を確認。result_kindで分ける。",
+    "JPXの2023年17件・2024年18件は基準件数。初回正式予告年、TOB開始年、東証以外、TOBなし株式併合、上場維持型の定義差を単純な合計一致で解消したとは扱わない。",
+    "ベネッセ/アウトソーシングの正式予告は2023年で、2024年のTOB開始を重複episodeにしない。",
+    "名証テスクを追加。インヴァストとテスクはTOBなしの経営陣主導非公開化として別類型表示し、TOB型との集計を分ける。",
+    "REVOLUTIONは明示的MBOだが上場維持、T&K TOKAは公式にMBO非該当。exclusionsに一次根拠付きで保存。",
+    "本担当年では正式公表後不成立・撤回のMBOは現在の確認名簿に見つかっていない。存在しないとの完全な証明ではなく、rootの横断点検へ引き継ぐ。",
+    "福証・札証・TOKYO PRO Marketを含む全非公開化の個別照合は未完了。日本市場全件の網羅完了は本ファイル単独では主張しない。",
+    "発見補助一覧はTOBレーダー。本文事実は会社/買収者/取引所原本に置き換え、二次分析を理由として採用していない。",
+    "JPX図の「開示件数」と正式な初回予告年への名寄せを完全照合できていない。2023/2024合計35件の一致だけで全件捕捉と判断しない。",
+    "リニューアブル・ジャパン（9522）を原本の明示的MBO分類により追加。発見用一覧のisMbo=falseだけに依存すると取りこぼすため、買付者名・本文を追加照合した。",
+    "最終担当名簿36件：2023年17・2024年19。市場別は東証35件（17/18）・名証1件（2024年テスク）。類型別はTOB34件（17/17）・MBO準拠非TOB2件（2024年インヴァスト/テスク）。",
+    "JPX定義FAQはMBOをTOBとして定義し、役員残存のTOBなし株式併合をMBOに準ずる行為と区別する。インヴァストをJPXの2024年18件に含むかは未確認。広義の東証件数一致を定義一致や全件網羅の証明にはしない。",
+    "キョウデンは創業者支配会社の買収として原本確認。MBOに該当しないとの明文ではないが、原本は人的関係なし・支配株主取引と記載し、現役経営陣の再出資/利益共通化は未確認のため主表から除外。"
+  ],
+  "candidate_checks": [
+    {
+      "code": "6042",
+      "name": "ニッキ",
+      "status": "no_formal_2023_2024_mbo_verified",
+      "source_url": "https://www.nikkinet.co.jp/ir/",
+      "locator": "IRカレンダー2024・株価売買高/株式分布2026年3月期",
+      "note": "2024年MBOの正式公表を確認できず、後年も上場株式情報を公表。不存在の完全証明ではないためepisodeを作らない。"
+    },
+    {
+      "code": "3205",
+      "name": "ダイドーリミテッド",
+      "status": "no_formal_2023_2024_mbo_verified",
+      "source_url": "https://www.daidoh-limited.com/ir/ir_top.html",
+      "locator": "2026年10月の現行IR入口",
+      "note": "正式MBO原本未確認。取締役選任を巡る株主提案・経営改革をMBOに置換しない。"
+    },
+    {
+      "code": "9873",
+      "name": "日本KFCホールディングス",
+      "status": "ordinary_sponsor_acquisition_not_confirmed_mbo",
+      "source_url": "https://www.mitsubishicorp.com/jp/ja/news/release/2024/0000053875.html",
+      "locator": "2024-05-20 三菱商事による売却・カーライルファンド100%子会社化の説明",
+      "note": "売主公式がカーライルファンド100%子会社化と説明。経営陣再出資等によるMBO該当を確認できず主表へ入れない。"
+    },
+    {
+      "code": "3480",
+      "name": "ジェイ・エス・ビー",
+      "status": "delisting_2026_formal_announcement_year_not_verified_here",
+      "source_url": "https://www.jpx.co.jp/listing/stocks/delisted/",
+      "locator": "3480・2026-09-02の上場廃止行",
+      "note": "上場廃止実績は2026年。2023–24初回正式公表原本は未確認であり、この担当年へ推測で入れない。"
+    }
+  ]
+}

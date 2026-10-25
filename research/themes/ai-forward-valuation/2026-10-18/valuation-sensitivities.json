@@ -1,0 +1,208 @@
+{
+  "type": "one-variable sensitivities, not alternative measured forecasts",
+  "frozen_capture_2029": {
+    "NVDA": {
+      "symbol": "NVDA",
+      "year": 2029,
+      "case": "base",
+      "financial_currency": "USD",
+      "quote_currency": "USD",
+      "revenue_bn": 639.5846153846154,
+      "operating_income_bn": 365.5024615384616,
+      "normal_net_income_bn": 300.53201846153854,
+      "diluted_shares_bn": 24.0,
+      "ordinary_shares_per_quoted_unit": 1,
+      "eps_financial_currency": 12.522167435897439,
+      "eps_quote_currency": 12.522167435897439,
+      "operating_margin": 0.5714685011906767,
+      "net_finance_income_bn": 1,
+      "tax_rate": 0.18,
+      "source_input": "inputs/compute.json",
+      "price": 214.13000488,
+      "terminal_pe": 25,
+      "discount_years": 3.2087611225188226,
+      "forward_scenario_pe": 17.100075204724632,
+      "terminal_price": 313.05418589743596,
+      "conditional_entry_price": 217.61590691923354,
+      "entry_price_gap_pct": 1.6279372156120964,
+      "required_terminal_pe_for_12pct": 24.599535014629318,
+      "annualized_price_return": 0.12565067433000832,
+      "same_pe25_entry_price": 217.61590691923354,
+      "pe_only_sensitivity": {
+        "0.75": 163.21193018942515,
+        "1.0": 217.61590691923354,
+        "1.25": 272.0198836490419
+      },
+      "return_only_sensitivity": {
+        "0.08": 244.55168977508018,
+        "0.12": 217.61590691923354,
+        "0.16": 194.44161755996157
+      }
+    },
+    "AVGO": {
+      "symbol": "AVGO",
+      "year": 2029,
+      "case": "base",
+      "financial_currency": "USD",
+      "quote_currency": "USD",
+      "revenue_bn": 166.0830769230769,
+      "operating_income_bn": 87.98501282051282,
+      "normal_net_income_bn": 70.09771051282051,
+      "diluted_shares_bn": 5.1,
+      "ordinary_shares_per_quoted_unit": 1,
+      "eps_financial_currency": 13.744649120160886,
+      "eps_quote_currency": 13.744649120160886,
+      "operating_margin": 0.5297650696901768,
+      "net_finance_income_bn": -2.5,
+      "tax_rate": 0.18,
+      "source_input": "inputs/compute.json",
+      "price": 328.75,
+      "terminal_pe": 25,
+      "discount_years": 3.2087611225188226,
+      "forward_scenario_pe": 23.918398871149346,
+      "terminal_price": 343.61622800402216,
+      "conditional_entry_price": 238.8607482595998,
+      "entry_price_gap_pct": -27.34273817198485,
+      "required_terminal_pe_for_12pct": 34.408122974929555,
+      "annualized_price_return": 0.013878891180748809,
+      "same_pe25_entry_price": 238.8607482595998,
+      "pe_only_sensitivity": {
+        "0.75": 179.14556119469987,
+        "1.0": 238.8607482595998,
+        "1.25": 298.57593532449977
+      },
+      "return_only_sensitivity": {
+        "0.08": 268.4261478619989,
+        "0.12": 238.8607482595998,
+        "0.16": 213.4240594848467
+      }
+    },
+    "TSM": {
+      "symbol": "TSM",
+      "year": 2029,
+      "case": "base",
+      "financial_currency": "USD",
+      "quote_currency": "USD",
+      "revenue_bn": 238.232,
+      "operating_income_bn": 131.0276,
+      "normal_net_income_bn": 110.522632,
+      "diluted_shares_bn": 26.0,
+      "ordinary_shares_per_quoted_unit": 5,
+      "eps_financial_currency": 4.250870461538462,
+      "eps_quote_currency": 21.254352307692308,
+      "operating_margin": 0.55,
+      "net_finance_income_bn": 4,
+      "tax_rate": 0.18,
+      "source_input": "inputs/compute.json",
+      "price": 412.60998535,
+      "terminal_pe": 22,
+      "discount_years": 3.2087611225188226,
+      "forward_scenario_pe": 19.412964430850685,
+      "terminal_price": 467.5957507692308,
+      "conditional_entry_price": 325.0436440692214,
+      "entry_price_gap_pct": -21.222545355149293,
+      "required_terminal_pe_for_12pct": 27.92677181457783,
+      "annualized_price_return": 0.03975741096558627,
+      "same_pe25_entry_price": 369.36777735138793,
+      "pe_only_sensitivity": {
+        "0.75": 243.78273305191607,
+        "1.0": 325.0436440692214,
+        "1.25": 406.3045550865268
+      },
+      "return_only_sensitivity": {
+        "0.08": 365.2764797073401,
+        "0.12": 325.0436440692214,
+        "0.16": 290.4291916209083
+      }
+    }
+  },
+  "required_2029_base": {
+    "VRT": {
+      "required_eps_at_assumed_terminal_pe_for_12pct": 11.87792664514052,
+      "base_eps": 9.335909514427861,
+      "required_eps_change_from_base": 0.2722838226724653,
+      "required_terminal_pe_with_base_eps": 31.807095566811633
+    },
+    "ANET": {
+      "required_eps_at_assumed_terminal_pe_for_12pct": 9.092745311114617,
+      "base_eps": 5.136871603053435,
+      "required_eps_change_from_base": 0.7700939431131102,
+      "required_terminal_pe_with_base_eps": 49.562630407167084
+    },
+    "285A.T": {
+      "required_eps_at_assumed_terminal_pe_for_12pct": 1603.3983129781866,
+      "base_eps": 1374.945514172535,
+      "required_eps_change_from_base": 0.16615407407117377,
+      "required_terminal_pe_with_base_eps": 13.993848888854087
+    },
+    "6857.T": {
+      "required_eps_at_assumed_terminal_pe_for_12pct": 1774.0564084529813,
+      "base_eps": 1391.558103800722,
+      "required_eps_change_from_base": 0.27487052362927056,
+      "required_terminal_pe_with_base_eps": 35.69637466161958
+    },
+    "ASML": {
+      "required_eps_at_assumed_terminal_pe_for_12pct": 84.3367828048381,
+      "base_eps": 77.95598848523213,
+      "required_eps_change_from_base": 0.08185123995720667,
+      "required_terminal_pe_with_base_eps": 30.291834718801784
+    },
+    "NVDA": {
+      "required_eps_at_assumed_terminal_pe_for_12pct": 12.321579851936404,
+      "base_eps": 14.73827,
+      "required_eps_change_from_base": -0.16397380072855194,
+      "required_terminal_pe_with_base_eps": 20.9006549817862,
+      "coefficient_name": "effective_vendor_capture",
+      "base_coefficient": 0.65,
+      "required_coefficient_all_else_fixed": 0.5451429160082556
+    },
+    "AVGO": {
+      "required_eps_at_assumed_terminal_pe_for_12pct": 18.91710308695012,
+      "base_eps": 28.51978758169935,
+      "required_eps_change_from_base": -0.33670252512368304,
+      "required_terminal_pe_with_base_eps": 16.582436871907923,
+      "coefficient_name": "effective_vendor_capture",
+      "base_coefficient": 0.23,
+      "required_coefficient_all_else_fixed": 0.13851100900581909
+    },
+    "TSM": {
+      "required_eps_at_assumed_terminal_pe_for_12pct": 26.980247589253125,
+      "base_eps": 25.925324615384618,
+      "required_eps_change_from_base": 0.04069082989389039,
+      "required_terminal_pe_with_base_eps": 22.89519825766559,
+      "coefficient_name": "upstream_content_fraction",
+      "base_coefficient": 0.14,
+      "required_coefficient_all_else_fixed": 0.1524215601679371
+    }
+  },
+  "kioxia_unvalued_assets_or_payout_threshold": {
+    "status": "required incremental shareholder VALUE, NOT a forecast of cash or a claim that baseline cash is unvalued",
+    "present_value_per_share_jpy": 1905.6750648253674,
+    "target_date_value_per_share_jpy": 2741.43358566782,
+    "target_date_total_value_jpy_bn": 4495.951080495224,
+    "caution": "Equity PE may already reflect cash/debt; earnings contain net financing income. Do not automatically add all cash. Only net additional value after deducting embedded after-tax interest capitalization is a valid sensitivity.",
+    "cash_equivalent_if_incremental_cash_interest_already_in_eps": [
+      {
+        "assumed_cash_yield": 0,
+        "tax_rate": 0.32,
+        "cash_value_factor_after_deducting_capitalized_interest": 1.0,
+        "required_target_date_cash_per_share_jpy": 2741.43358566782,
+        "required_target_date_cash_jpy_bn": 4495.951080495224
+      },
+      {
+        "assumed_cash_yield": 0.02,
+        "tax_rate": 0.32,
+        "cash_value_factor_after_deducting_capitalized_interest": 0.8368,
+        "required_target_date_cash_per_share_jpy": 3276.091761075311,
+        "required_target_date_cash_jpy_bn": 5372.7904881635095
+      },
+      {
+        "assumed_cash_yield": 0.04,
+        "tax_rate": 0.32,
+        "cash_value_factor_after_deducting_capitalized_interest": 0.6736,
+        "required_target_date_cash_per_share_jpy": 4069.8242067515143,
+        "required_target_date_cash_jpy_bn": 6674.511699072483
+      }
+    ]
+  }
+}

@@ -1,0 +1,3139 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-10-18",
+  "scope": {
+    "announcement_from": "2021-01-01",
+    "announcement_to": "2022-12-31",
+    "geography": "日本上場普通株の非公開化MBO。東証に加え名証単独上場を含む。",
+    "status": "primary_verified_ledger_reconciled",
+    "method": [
+      "無料公開TOB年次名簿は発見の補助のみ",
+      "正式MBO該当性・公表日・結果は一次資料で確認する",
+      "再試行を別episode、同一スキームの段階的TOBは重複計数しない"
+    ],
+    "unit": "初回正式公表の年に1 episode。同一社の不成立後の再提案は別、予定済み段階TOBは同一。",
+    "not_a_predictive_backtest": true
+  },
+  "episodes": [
+    {
+      "episode_id": "2021-1050",
+      "code": "7903",
+      "name": "名古屋木材",
+      "announcement_date": "2021-02-05",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2021-06-08",
+      "motives": [
+        {
+          "category": "growth_investment",
+          "text": "非住宅の木質化需要を取り込む物流拠点・提携/M&A、リフォーム・外国人向け注文住宅、圧縮木材開発へ投資するため、短期利益・CFへの悪影響を許容できる非公開経営を選ぶと買付者が説明。",
+          "source_id": "2021-1050-0",
+          "locator": "PDF pp5–6",
+          "quote": "短期的な株式市場からの評価にとらわれず",
+          "availability_phase": "formal_announcement_or_later",
+          "evidence_type": "party_stated_rationale"
+        },
+        {
+          "category": "listing_cost",
+          "text": "株式による資金調達需要が当面乏しい一方、監査・開示・株主総会等の上場維持費が増加しているとの買付者の判断。",
+          "source_id": "2021-1050-0",
+          "locator": "PDF p6",
+          "availability_phase": "formal_announcement_or_later",
+          "evidence_type": "party_stated_rationale"
+        },
+        {
+          "category": "succession",
+          "text": "金融機関は経営者の年齢と法定相続人の経営経験のなさに伴う将来の資本関係の不安定さを懸念し、他の出資者の参加を要請。顧問の少数出資を組み込んだと説明。承継が主動機だったとまでは認定しない。",
+          "source_id": "2021-1050-0",
+          "locator": "PDF p6",
+          "availability_phase": "formal_announcement_or_later",
+          "evidence_type": "party_stated_rationale"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "2021-1050-0",
+          "title": "名古屋木材株式会社株券に対する公開買付届出書",
+          "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100KOH6.pdf",
+          "public_at": "2021-02-08",
+          "issuer": "株式会社Nホールディングス",
+          "locator": "PDF p3（2/5付MBO公表・取締役会決議の記載）；PDF pp5–6；PDF p6",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "tender_offer_statement",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "tender_offer_statement"
+        },
+        {
+          "source_id": "2021-1050-1",
+          "title": "名古屋木材株式会社株式に対する公開買付報告書",
+          "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100L0QI.pdf",
+          "public_at": "2021-03-24",
+          "issuer": "株式会社Nホールディングス",
+          "locator": "PDF p2 公開買付けの成否・結果公告日",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "result_notice",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "result_notice"
+        },
+        {
+          "source_id": "nse-nagoya-delisting",
+          "title": "名古屋木材 上場廃止・整理銘柄指定",
+          "url": "https://www.nse.or.jp/listing/files/202105077903s.pdf",
+          "public_at": "2021-05-07",
+          "issuer": "名古屋証券取引所",
+          "locator": "PDF p1 上場廃止日",
+          "accessed_at": "2026-10-18",
+          "docType": "exchange_delisting_notice",
+          "official": true,
+          "read_status": "relevant_excerpt_read"
+        }
+      ],
+      "verification": {
+        "announcement": "verified_primary",
+        "mbo_classification": "verified_primary",
+        "motive": "verified_primary_public_rationale",
+        "outcome": "verified_primary",
+        "obstacles": "documented_items_only",
+        "delisting": "verified_exchange"
+      },
+      "cautions": [
+        "動機は公表時の当事者説明であり、真の内心・動機の因果効果を検証したものではない。",
+        "MBO公表後の資料で確認した理由・結果を、公表前の独立した予測シグナルとみなさない。",
+        "障害欄が空でも障害なしを意味しない。個別交渉・反対株主・訴訟等の全履歴は網羅していない。"
+      ],
+      "discovery": {
+        "year": 2021,
+        "start_date": "2021-02-08",
+        "url": "https://tobradar.com/tob/deals/2021-1050/",
+        "secondary_mbo_flag": true
+      },
+      "announcement_source_id": "2021-1050-0",
+      "announcement_locator": "PDF p3（2/5付MBO公表・取締役会決議の記載）",
+      "mbo_type": "management_buyout_going_private",
+      "transaction_method": "tender_offer_then_cashout",
+      "market_scope": "NSE_only",
+      "outcome_definition": "当該MBO取引の公開買付け成立。成立と非公開化完了日は別項目。",
+      "result_source_id": "2021-1050-1",
+      "result_locator": "PDF p2 公開買付けの成否・結果公告日",
+      "result_date": "2021-03-24",
+      "delisting_source_id": "nse-nagoya-delisting",
+      "delisting_locator": "PDF p1 上場廃止日",
+      "is_tse": false,
+      "market": "名証単独"
+    },
+    {
+      "episode_id": "2021-1053",
+      "code": "4649",
+      "name": "大成",
+      "announcement_date": "2021-02-08",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2021-06-15",
+      "motives": [
+        {
+          "category": "growth_investment",
+          "text": "ビル管理の人手不足・低価格競争への対応として、先端システム、東南アジア展開、不動産投資へ先行投資する。短期の利益・CF悪化を避ける保守的経営から転換するため、所有と経営を一致させると買付者・対象会社が説明。",
+          "source_id": "2021-1053-0",
+          "locator": "PDF pp7,9–10",
+          "quote": "所有と経営を一致させ",
+          "availability_phase": "formal_announcement_or_later",
+          "evidence_type": "party_stated_rationale"
+        },
+        {
+          "category": "listing_cost",
+          "text": "上場維持コスト削減と、株式による大規模調達の必要性の低下を非公開化の利点と説明。信用・採用への影響は限定的との会社判断であり、独立検証した事実ではない。",
+          "source_id": "2021-1053-0",
+          "locator": "PDF p10",
+          "availability_phase": "formal_announcement_or_later",
+          "evidence_type": "party_stated_rationale"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "2021-1053-0",
+          "title": "大成株式会社株券に対する公開買付届出書",
+          "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100KP4T.pdf",
+          "public_at": "2021-02-09",
+          "issuer": "株式会社アイ・ケイ・ケイ",
+          "locator": "PDF p3（2/8付MBO公表・取締役会決議）；PDF pp7,9–10；PDF p10",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "tender_offer_statement",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "tender_offer_statement"
+        },
+        {
+          "source_id": "2021-1053-1",
+          "title": "株式会社アイ・ケイ・ケイによる大成株式会社株式に対する公開買付けの結果に関するお知らせ",
+          "url": "https://www.nse.or.jp/listing/search/files/140120210325483979.pdf",
+          "public_at": "2021-03-25",
+          "issuer": "大成株式会社・株式会社アイ・ケイ・ケイ",
+          "locator": "PDF p5 公開買付けの成否・結果公告日",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "result_notice",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "result_notice"
+        },
+        {
+          "source_id": "nse-taisei-delisting",
+          "title": "大成 上場廃止・整理銘柄指定",
+          "url": "https://www.nse.or.jp/listing/files/202105134649s.pdf",
+          "public_at": "2021-05-13",
+          "issuer": "名古屋証券取引所",
+          "locator": "PDF p1 上場廃止日",
+          "accessed_at": "2026-10-18",
+          "docType": "exchange_delisting_notice",
+          "official": true,
+          "read_status": "relevant_excerpt_read"
+        }
+      ],
+      "verification": {
+        "announcement": "verified_primary",
+        "mbo_classification": "verified_primary",
+        "motive": "verified_primary_public_rationale",
+        "outcome": "verified_primary",
+        "obstacles": "documented_items_only",
+        "delisting": "verified_exchange"
+      },
+      "cautions": [
+        "動機は公表時の当事者説明であり、真の内心・動機の因果効果を検証したものではない。",
+        "MBO公表後の資料で確認した理由・結果を、公表前の独立した予測シグナルとみなさない。",
+        "障害欄が空でも障害なしを意味しない。個別交渉・反対株主・訴訟等の全履歴は網羅していない。"
+      ],
+      "discovery": {
+        "year": 2021,
+        "start_date": "2021-02-09",
+        "url": "https://tobradar.com/tob/deals/2021-1053/",
+        "secondary_mbo_flag": true
+      },
+      "announcement_source_id": "2021-1053-0",
+      "announcement_locator": "PDF p3（2/8付MBO公表・取締役会決議）",
+      "mbo_type": "management_buyout_going_private",
+      "transaction_method": "tender_offer_then_cashout",
+      "market_scope": "NSE_only",
+      "outcome_definition": "当該MBO取引の公開買付け成立。成立と非公開化完了日は別項目。",
+      "result_source_id": "2021-1053-1",
+      "result_locator": "PDF p5 公開買付けの成否・結果公告日",
+      "result_date": "2021-03-25",
+      "delisting_source_id": "nse-taisei-delisting",
+      "delisting_locator": "PDF p1 上場廃止日",
+      "is_tse": false,
+      "market": "名証単独"
+    },
+    {
+      "episode_id": "2021-1052",
+      "code": "4734",
+      "name": "ビーイング",
+      "announcement_date": "2021-02-08",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2021-06-07",
+      "motives": [
+        {
+          "category": "restructuring",
+          "text": "土木積算依存から建設総合分野へ多角化し、主力ソフトをクラウド課金へ移行する。開発費増加と初年度売上縮小により数年赤字・CF悪化の可能性があり、短期収益に縛られず移行を加速する必要があるとの創業経営者の説明。",
+          "source_id": "2021-1052-0",
+          "locator": "PDF pp7–8",
+          "quote": "クラウド・サービスへの移行を加速させる",
+          "availability_phase": "formal_announcement_or_later",
+          "evidence_type": "party_stated_rationale"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "2021-1052-0",
+          "title": "株式会社ビーイング株券に対する公開買付届出書",
+          "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100KP4W.pdf",
+          "public_at": "2021-02-09",
+          "issuer": "有限会社トゥルース",
+          "locator": "PDF pp2–3（2/8付MBO公表・取締役会決議）；PDF pp7–8",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "tender_offer_statement",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "tender_offer_statement"
+        },
+        {
+          "source_id": "2021-1052-1",
+          "title": "株式会社ビーイング株式に対する公開買付報告書",
+          "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100L19E.pdf",
+          "public_at": "2021-03-25",
+          "issuer": "有限会社トゥルース",
+          "locator": "PDF p2 公開買付けの成否・結果公告日",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "result_notice",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "result_notice"
+        },
+        {
+          "source_id": "jpx-delisting-4734",
+          "title": "東京証券取引所 上場廃止銘柄一覧 2021年",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-05.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "上場廃止一覧 4734 ビーイング の行",
+          "accessed_at": "2026-10-18",
+          "docType": "exchange_delisting_roster",
+          "official": true,
+          "read_status": "roster_row_matched"
+        }
+      ],
+      "verification": {
+        "announcement": "verified_primary",
+        "mbo_classification": "verified_primary",
+        "motive": "verified_primary_public_rationale",
+        "outcome": "verified_primary",
+        "obstacles": "documented_items_only",
+        "delisting": "verified_exchange"
+      },
+      "cautions": [
+        "動機は公表時の当事者説明であり、真の内心・動機の因果効果を検証したものではない。",
+        "MBO公表後の資料で確認した理由・結果を、公表前の独立した予測シグナルとみなさない。",
+        "障害欄が空でも障害なしを意味しない。個別交渉・反対株主・訴訟等の全履歴は網羅していない。"
+      ],
+      "discovery": {
+        "year": 2021,
+        "start_date": "2021-02-09",
+        "url": "https://tobradar.com/tob/deals/2021-1052/",
+        "secondary_mbo_flag": true
+      },
+      "announcement_source_id": "2021-1052-0",
+      "announcement_locator": "PDF pp2–3（2/8付MBO公表・取締役会決議）",
+      "mbo_type": "management_buyout_going_private",
+      "transaction_method": "tender_offer_then_cashout",
+      "market_scope": "TSE",
+      "outcome_definition": "当該MBO取引の公開買付け成立。成立と非公開化完了日は別項目。",
+      "result_source_id": "2021-1052-1",
+      "result_locator": "PDF p2 公開買付けの成否・結果公告日",
+      "result_date": "2021-03-25",
+      "delisting_source_id": "jpx-delisting-4734",
+      "delisting_locator": "上場廃止一覧 4734 ビーイング の行",
+      "is_tse": true,
+      "market": "東証"
+    },
+    {
+      "episode_id": "2021-1056",
+      "code": "3408",
+      "name": "サカイオーベックス",
+      "announcement_date": "2021-02-09",
+      "announcement_date_status": "verified",
+      "outcome_status": "failed",
+      "delisting_date": null,
+      "motives": [
+        {
+          "category": "sponsor_resources",
+          "text": "買付者はNAVFから財務政策・ガバナンス改善、事業戦略/M&Aの専門家紹介等の経営資源を受け、中長期の企業価値向上を図ると説明。具体的な事業施策全体の確認は追加の背景節に残る。",
+          "source_id": "2021-1056-0",
+          "locator": "PDF p5",
+          "availability_phase": "formal_announcement_or_later",
+          "evidence_type": "party_stated_rationale"
+        },
+        {
+          "category": "restructuring",
+          "text": "海外販路・生産調達拠点等への投資による事業構造改革を短期利益に縛られず実行するという当初の方針。再公表資料は、初回2021/2/9時点の具体策以外に新しい検討案件はないと説明している。",
+          "source_id": "2021-1127-0",
+          "locator": "PDF p12（初回についての後続説明）",
+          "availability_phase": "after_announcement",
+          "evidence_type": "party_stated_rationale"
+        }
+      ],
+      "obstacles": [
+        {
+          "category": "tender_shortfall",
+          "text": "応募3,939,239株が下限4,127,800株に届かず、全量を買い付けない結果となった。不応募者全員の動機までこの結果資料で説明できるわけではない。",
+          "source_id": "2021-1056-2",
+          "locator": "PDF p2 公開買付けの成否・結果公告日",
+          "evidence_role": "observed_failure_mechanism"
+        },
+        {
+          "category": "market_price_above_offer",
+          "text": "東証の事後整理では、市場株価がTOB価格を上回り、2,850円から3,000円に引き上げても下限未達。価格差の存在は確認できるが、全不応募株主の意思を特定するものではない。",
+          "source_id": "jpx-failed-mbo-20240521",
+          "locator": "PDF p6 最近のMBOの不成立事例",
+          "evidence_role": "post_event_exchange_synthesis"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "2021-1056-0",
+          "title": "サカイ繊維株式会社による当社株券等に対する公開買付けに関する意見表明報告書",
+          "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100KPWM.pdf",
+          "public_at": "2021-02-09",
+          "issuer": "サカイオーベックス株式会社",
+          "locator": "PDF p2（2/9取締役会決議・MBO該当性）、p1提出日；PDF p5",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "target_opinion",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "target_opinion"
+        },
+        {
+          "source_id": "2021-1056-2",
+          "title": "サカイオーベックス株式会社株券等に対する公開買付報告書",
+          "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100L0X0.pdf",
+          "public_at": "2021-03-25",
+          "issuer": "サカイ繊維株式会社",
+          "locator": "PDF p2 公開買付けの成否・結果公告日",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "result_notice",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "result_notice"
+        },
+        {
+          "source_id": "2021-1127-0",
+          "title": "ＭＢＯの実施及び応募の推奨に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/34080/140120210727471860.pdf",
+          "public_at": "2021-07-27",
+          "issuer": "サカイオーベックス",
+          "locator": "PDF p12（初回についての後続説明）",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "target_opinion",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "target_opinion"
+        },
+        {
+          "source_id": "jpx-failed-mbo-20240521",
+          "title": "企業行動規範の見直し（前回会議の補足資料）",
+          "url": "https://www.jpx.co.jp/equities/follow-up/nlsgeu000006gevo-att/mklp770000007bd2.pdf",
+          "public_at": "2024-05-21",
+          "issuer": "東京証券取引所 上場部",
+          "locator": "PDF p6 最近のMBOの不成立事例",
+          "accessed_at": "2026-10-18",
+          "docType": "primary_exchange_synthesis",
+          "official": true,
+          "read_status": "relevant_excerpt_read"
+        }
+      ],
+      "verification": {
+        "announcement": "verified_primary",
+        "mbo_classification": "verified_primary",
+        "motive": "verified_primary_public_rationale",
+        "outcome": "verified_primary",
+        "obstacles": "documented_items_only",
+        "delisting": "not_applicable_failed_episode"
+      },
+      "cautions": [
+        "動機は公表時の当事者説明であり、真の内心・動機の因果効果を検証したものではない。",
+        "MBO公表後の資料で確認した理由・結果を、公表前の独立した予測シグナルとみなさない。",
+        "正式公表は2/9。二次名簿の2/10はTOB開始側の日付。"
+      ],
+      "discovery": {
+        "year": 2021,
+        "start_date": "2021-02-09",
+        "url": "https://tobradar.com/tob/deals/2021-1056/",
+        "secondary_mbo_flag": true
+      },
+      "announcement_source_id": "2021-1056-0",
+      "announcement_locator": "PDF p2（2/9取締役会決議・MBO該当性）、p1提出日",
+      "mbo_type": "management_buyout_going_private",
+      "transaction_method": "tender_offer_then_cashout",
+      "market_scope": "TSE",
+      "outcome_definition": "当該公開買付けの下限未達により全量不買付け。後続取引とは別episode。",
+      "result_source_id": "2021-1056-2",
+      "result_locator": "PDF p2 公開買付けの成否・結果公告日",
+      "result_date": "2021-03-25",
+      "followup_note": "初回不成立後、2021/7/27公表の別episode（2021-1127）が成立。初回と再試行を混ぜない。",
+      "is_tse": true,
+      "market": "東証"
+    },
+    {
+      "episode_id": "2021-1093",
+      "code": "3689",
+      "name": "イグニス",
+      "announcement_date": "2021-03-05",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2021-06-30",
+      "motives": [
+        {
+          "category": "long_term_governance",
+          "text": "複数事業での大胆な先行投資は短期損益悪化や株主の理解の相違を伴うため、事業を分離して運営を簡素化し、経営陣とBainが出資する新体制で機動的に成長投資を行うと説明。",
+          "source_id": "2021-1093-0",
+          "locator": "PDF p11",
+          "quote": "外部の経営資源をも活用した安定的な新しい経営体制",
+          "availability_phase": "formal_announcement_or_later",
+          "evidence_type": "party_stated_rationale"
+        },
+        {
+          "category": "sponsor_resources",
+          "text": "Bainの関連分野への投資経験、実務経験者による戦略作成・現場支援をパートナー選定の理由として説明。",
+          "source_id": "2021-1093-0",
+          "locator": "PDF p11",
+          "availability_phase": "formal_announcement_or_later",
+          "evidence_type": "party_stated_rationale"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "2021-1093-0",
+          "title": "株式会社i3による当社株券等に対する公開買付けに関する意見表明報告書",
+          "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100KXEJ.pdf",
+          "public_at": "2021-03-08",
+          "issuer": "株式会社イグニス",
+          "locator": "PDF pp3–4（3/5取締役会決議・MBO該当性）；PDF p11",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "target_opinion",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "target_opinion"
+        },
+        {
+          "source_id": "2021-1093-2",
+          "title": "株式会社i3による当社株券等に対する公開買付けの結果並びに親会社及び主要株主である筆頭株主の異動に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/36890/140120210419496126.pdf",
+          "public_at": "2021-04-20",
+          "issuer": "株式会社イグニス",
+          "locator": "PDF p1–2 TOB結果・買付数（5/12訂正も参照）",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "result_notice",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "result_notice"
+        },
+        {
+          "source_id": "2021-1093-3",
+          "title": "公開買付けの結果並びに親会社及び主要株主である筆頭株主の異動に関するお知らせの一部訂正について",
+          "url": "https://www2.jpx.co.jp/disc/36890/140120210506406656.pdf",
+          "public_at": "2021-05-12",
+          "issuer": "株式会社イグニス",
+          "locator": "PDF p1 親会社該当性の訂正理由",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "result_notice",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "result_notice"
+        },
+        {
+          "source_id": "jpx-delisting-3689",
+          "title": "東京証券取引所 上場廃止銘柄一覧 2021年",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-05.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "上場廃止一覧 3689 イグニス の行",
+          "accessed_at": "2026-10-18",
+          "docType": "exchange_delisting_roster",
+          "official": true,
+          "read_status": "roster_row_matched"
+        }
+      ],
+      "verification": {
+        "announcement": "verified_primary",
+        "mbo_classification": "verified_primary",
+        "motive": "verified_primary_public_rationale",
+        "outcome": "verified_primary",
+        "obstacles": "documented_items_only",
+        "delisting": "verified_exchange"
+      },
+      "cautions": [
+        "動機は公表時の当事者説明であり、真の内心・動機の因果効果を検証したものではない。",
+        "MBO公表後の資料で確認した理由・結果を、公表前の独立した予測シグナルとみなさない。",
+        "障害欄が空でも障害なしを意味しない。個別交渉・反対株主・訴訟等の全履歴は網羅していない。",
+        "5/12訂正は買付者の親会社該当性等に関する訂正で、成立結果の取消ではない。"
+      ],
+      "discovery": {
+        "year": 2021,
+        "start_date": "2021-03-08",
+        "url": "https://tobradar.com/tob/deals/2021-1093/",
+        "secondary_mbo_flag": true
+      },
+      "announcement_source_id": "2021-1093-0",
+      "announcement_locator": "PDF pp3–4（3/5取締役会決議・MBO該当性）",
+      "mbo_type": "management_buyout_going_private",
+      "transaction_method": "tender_offer_then_cashout",
+      "market_scope": "TSE",
+      "outcome_definition": "当該MBO取引の公開買付け成立。成立と非公開化完了日は別項目。",
+      "result_source_id": "2021-1093-2",
+      "result_locator": "PDF p1–2 TOB結果・買付数（5/12訂正も参照）",
+      "result_date": "2021-04-20",
+      "delisting_source_id": "jpx-delisting-3689",
+      "delisting_locator": "上場廃止一覧 3689 イグニス の行",
+      "is_tse": true,
+      "market": "東証"
+    },
+    {
+      "episode_id": "2021-1094",
+      "code": "7946",
+      "name": "光陽社",
+      "announcement_date": "2021-03-08",
+      "announcement_date_status": "verified",
+      "outcome_status": "failed",
+      "delisting_date": null,
+      "motives": [
+        {
+          "category": "restructuring",
+          "text": "厳しい事業環境で再び上場廃止基準へ抵触するおそれを残し、短期的な財務負担を伴っても事業再構成を迅速に進める体制を作ると会社・買付者が説明。猶予指定は公表時点で解除済みだったことも明記。",
+          "source_id": "2021-1094-0",
+          "locator": "PDF p3",
+          "quote": "新たな事業基盤を構築するため",
+          "availability_phase": "formal_announcement_or_later",
+          "evidence_type": "party_stated_rationale"
+        }
+      ],
+      "obstacles": [
+        {
+          "category": "tender_shortfall",
+          "text": "応募306,758株が下限477,412株に届かず、全量を買い付けない結果となった。不応募者全員の動機までこの結果資料で説明できるわけではない。",
+          "source_id": "2021-1094-1",
+          "locator": "PDF p2 公開買付けの成否・結果公告日",
+          "evidence_role": "observed_failure_mechanism"
+        },
+        {
+          "category": "price_disagreement",
+          "text": "東証の事後整理では、サイブリッジが算定方法と価格を問題視して見直しを要求。1,060円へ増額し応募契約を結んだ後も、全体の応募は下限に届かなかった。",
+          "source_id": "jpx-failed-mbo-20240521",
+          "locator": "PDF p6 最近のMBOの不成立事例",
+          "evidence_role": "post_event_exchange_synthesis"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "2021-1094-0",
+          "title": "株式会社KKによる当社株券に対する公開買付けに関する意見表明報告書",
+          "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100KXMO.pdf",
+          "public_at": "2021-03-09",
+          "issuer": "株式会社光陽社",
+          "locator": "PDF pp2–4（3/8決議・MBO公表）；PDF p3",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "target_opinion",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "target_opinion"
+        },
+        {
+          "source_id": "2021-1094-1",
+          "title": "株式会社光陽社株券に対する公開買付けに係る公開買付報告書",
+          "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100LIM8.pdf",
+          "public_at": "2021-06-14",
+          "issuer": "株式会社KK",
+          "locator": "PDF p2 公開買付けの成否・結果公告日",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "result_notice",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "result_notice"
+        },
+        {
+          "source_id": "jpx-failed-mbo-20240521",
+          "title": "企業行動規範の見直し（前回会議の補足資料）",
+          "url": "https://www.jpx.co.jp/equities/follow-up/nlsgeu000006gevo-att/mklp770000007bd2.pdf",
+          "public_at": "2024-05-21",
+          "issuer": "東京証券取引所 上場部",
+          "locator": "PDF p6 最近のMBOの不成立事例",
+          "accessed_at": "2026-10-18",
+          "docType": "primary_exchange_synthesis",
+          "official": true,
+          "read_status": "relevant_excerpt_read"
+        }
+      ],
+      "verification": {
+        "announcement": "verified_primary",
+        "mbo_classification": "verified_primary",
+        "motive": "verified_primary_public_rationale",
+        "outcome": "verified_primary",
+        "obstacles": "documented_items_only",
+        "delisting": "not_applicable_failed_episode"
+      },
+      "cautions": [
+        "動機は公表時の当事者説明であり、真の内心・動機の因果効果を検証したものではない。",
+        "MBO公表後の資料で確認した理由・結果を、公表前の独立した予測シグナルとみなさない。"
+      ],
+      "discovery": {
+        "year": 2021,
+        "start_date": "2021-03-09",
+        "url": "https://tobradar.com/tob/deals/2021-1094/",
+        "secondary_mbo_flag": true
+      },
+      "announcement_source_id": "2021-1094-0",
+      "announcement_locator": "PDF pp2–4（3/8決議・MBO公表）",
+      "mbo_type": "management_buyout_going_private",
+      "transaction_method": "tender_offer_then_cashout",
+      "market_scope": "TSE",
+      "outcome_definition": "当該公開買付けの下限未達により全量不買付け。後続取引とは別episode。",
+      "result_source_id": "2021-1094-1",
+      "result_locator": "PDF p2 公開買付けの成否・結果公告日",
+      "result_date": "2021-06-12",
+      "is_tse": true,
+      "market": "東証"
+    },
+    {
+      "episode_id": "2021-1095",
+      "code": "4669",
+      "name": "ニッパンレンタル",
+      "announcement_date": "2021-03-11",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2021-07-28",
+      "motives": [
+        {
+          "category": "restructuring",
+          "text": "建設需要縮小と競争激化に備え、高収益店舗への統廃合、インフラ維持更新向け機械・ICT機械への投資を進める。赤字回避を優先して施策を限定する上場経営から転換する必要があると経営者が説明。",
+          "source_id": "2021-1095-0",
+          "locator": "PDF pp5–6",
+          "quote": "短期的な収益や株価動向にとらわれることなく",
+          "availability_phase": "formal_announcement_or_later",
+          "evidence_type": "party_stated_rationale"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "2021-1095-0",
+          "title": "株式会社赤城による当社株券等に対する公開買付けに関する意見表明報告書",
+          "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100KYCF.pdf",
+          "public_at": "2021-03-12",
+          "issuer": "株式会社ニッパンレンタル",
+          "locator": "PDF p2（3/11決議・MBO該当性）；PDF pp5–6",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "target_opinion",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "target_opinion"
+        },
+        {
+          "source_id": "2021-1095-1",
+          "title": "株式会社ニッパンレンタル株券等に対する公開買付けに係る公開買付報告書",
+          "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100L7ZC.pdf",
+          "public_at": "2021-04-23",
+          "issuer": "株式会社赤城",
+          "locator": "PDF p3 公開買付けの成否・結果公告日",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "result_notice",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "result_notice"
+        },
+        {
+          "source_id": "jpx-delisting-4669",
+          "title": "東京証券取引所 上場廃止銘柄一覧 2021年",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-05.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "上場廃止一覧 4669 ニッパンレンタル の行",
+          "accessed_at": "2026-10-18",
+          "docType": "exchange_delisting_roster",
+          "official": true,
+          "read_status": "roster_row_matched"
+        }
+      ],
+      "verification": {
+        "announcement": "verified_primary",
+        "mbo_classification": "verified_primary",
+        "motive": "verified_primary_public_rationale",
+        "outcome": "verified_primary",
+        "obstacles": "documented_items_only",
+        "delisting": "verified_exchange"
+      },
+      "cautions": [
+        "動機は公表時の当事者説明であり、真の内心・動機の因果効果を検証したものではない。",
+        "MBO公表後の資料で確認した理由・結果を、公表前の独立した予測シグナルとみなさない。",
+        "障害欄が空でも障害なしを意味しない。個別交渉・反対株主・訴訟等の全履歴は網羅していない。"
+      ],
+      "discovery": {
+        "year": 2021,
+        "start_date": "2021-03-12",
+        "url": "https://tobradar.com/tob/deals/2021-1095/",
+        "secondary_mbo_flag": true
+      },
+      "announcement_source_id": "2021-1095-0",
+      "announcement_locator": "PDF p2（3/11決議・MBO該当性）",
+      "mbo_type": "management_buyout_going_private",
+      "transaction_method": "tender_offer_then_cashout",
+      "market_scope": "TSE",
+      "outcome_definition": "当該MBO取引の公開買付け成立。成立と非公開化完了日は別項目。",
+      "result_source_id": "2021-1095-1",
+      "result_locator": "PDF p3 公開買付けの成否・結果公告日",
+      "result_date": "2021-04-23",
+      "delisting_source_id": "jpx-delisting-4669",
+      "delisting_locator": "上場廃止一覧 4669 ニッパンレンタル の行",
+      "is_tse": true,
+      "market": "東証"
+    },
+    {
+      "episode_id": "2021-1103",
+      "code": "8298",
+      "name": "ファミリー",
+      "announcement_date": "2021-05-11",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2021-07-29",
+      "motives": [
+        {
+          "category": "growth_investment",
+          "text": "自動車の電動化やメーカー再編に対応する店舗・設備、車両事業を補完する不動産・太陽光等への多角化、DX投資を進める。短期利益・還元要求の下では機動的な多角化が難しいとの専務取締役の説明。",
+          "source_id": "2021-1103-0",
+          "locator": "PDF pp6–8",
+          "quote": "中長期的視野に立った経営戦略",
+          "availability_phase": "formal_announcement_or_later",
+          "evidence_type": "party_stated_rationale"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "2021-1103-0",
+          "title": "ＭＢＯの実施及び応募の推奨に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/82980/140120210506406146.pdf",
+          "public_at": "2021-05-11",
+          "issuer": "ファミリー",
+          "locator": "PDF p1（公表日・MBO実施／応募推奨の表題と決議）；PDF pp6–8",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "target_opinion",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "target_opinion"
+        },
+        {
+          "source_id": "2021-1103-1",
+          "title": "株式会社ＴＳホールディングスによる当社株券等に対する公開買付けの結果並びに親会社等の異動に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/82980/140120210622453409.pdf",
+          "public_at": "2021-06-23",
+          "issuer": "ファミリー・ＴＳホールディングス",
+          "locator": "PDF p6 公開買付けの成否・結果公告日",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "result_notice",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "result_notice"
+        },
+        {
+          "source_id": "jpx-delisting-8298",
+          "title": "東京証券取引所 上場廃止銘柄一覧 2021年",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-05.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "上場廃止一覧 8298 ファミリー の行",
+          "accessed_at": "2026-10-18",
+          "docType": "exchange_delisting_roster",
+          "official": true,
+          "read_status": "roster_row_matched"
+        }
+      ],
+      "verification": {
+        "announcement": "verified_primary",
+        "mbo_classification": "verified_primary",
+        "motive": "verified_primary_public_rationale",
+        "outcome": "verified_primary",
+        "obstacles": "documented_items_only",
+        "delisting": "verified_exchange"
+      },
+      "cautions": [
+        "動機は公表時の当事者説明であり、真の内心・動機の因果効果を検証したものではない。",
+        "MBO公表後の資料で確認した理由・結果を、公表前の独立した予測シグナルとみなさない。",
+        "障害欄が空でも障害なしを意味しない。個別交渉・反対株主・訴訟等の全履歴は網羅していない。"
+      ],
+      "discovery": {
+        "year": 2021,
+        "start_date": "2021-05-12",
+        "url": "https://tobradar.com/tob/deals/2021-1103/",
+        "secondary_mbo_flag": true
+      },
+      "announcement_source_id": "2021-1103-0",
+      "announcement_locator": "PDF p1（公表日・MBO実施／応募推奨の表題と決議）",
+      "mbo_type": "management_buyout_going_private",
+      "transaction_method": "tender_offer_then_cashout",
+      "market_scope": "TSE",
+      "outcome_definition": "当該MBO取引の公開買付け成立。成立と非公開化完了日は別項目。",
+      "result_source_id": "2021-1103-1",
+      "result_locator": "PDF p6 公開買付けの成否・結果公告日",
+      "result_date": "2021-06-23",
+      "delisting_source_id": "jpx-delisting-8298",
+      "delisting_locator": "上場廃止一覧 8298 ファミリー の行",
+      "is_tse": true,
+      "market": "東証"
+    },
+    {
+      "episode_id": "2021-1106",
+      "code": "3975",
+      "name": "AOI TYO Holdings",
+      "announcement_date": "2021-05-14",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2021-09-28",
+      "motives": [
+        {
+          "category": "sponsor_resources",
+          "text": "コロナ禍で広告媒体・コンテンツの変化が加速し、事業セグメント再構築、VR/AR、デジタル動画、人材獲得への投資を中計より前倒しする。上場企業としての短期利益・還元との両立が難しく、Carlyleの人材ネットワーク・業界知見を使う非公開化を選ぶと説明。",
+          "source_id": "2021-1106-0",
+          "locator": "PDF p8（本文p7）",
+          "quote": "改革のスピードを上げる",
+          "availability_phase": "formal_announcement_or_later",
+          "evidence_type": "party_stated_rationale"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "2021-1106-0",
+          "title": "ＭＢＯの実施及び応募の推奨に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/39750/140120210514419569.pdf",
+          "public_at": "2021-05-14",
+          "issuer": "ＡＯＩ ＴＹＯ Ｈｏｌｄｉｎｇｓ",
+          "locator": "PDF p1（公表日・MBO実施／応募推奨の表題と決議）；PDF p8（本文p7）",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "target_opinion",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "target_opinion"
+        },
+        {
+          "source_id": "2021-1106-1",
+          "title": "株式会社スタジオ・クルーズによる当社株券等に対する公開買付けの結果に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/39750/140120210704461837.pdf",
+          "public_at": "2021-07-06",
+          "issuer": "ＡＯＩ ＴＹＯ Ｈｏｌｄｉｎｇｓ・スタジオ・クルーズ",
+          "locator": "PDF p7 公開買付けの成否・結果公告日",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "result_notice",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "result_notice"
+        },
+        {
+          "source_id": "jpx-delisting-3975",
+          "title": "東京証券取引所 上場廃止銘柄一覧 2021年",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-05.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "上場廃止一覧 3975 ＡＯＩ ＴＹＯ Ｈｏｌｄｉｎｇｓ の行",
+          "accessed_at": "2026-10-18",
+          "docType": "exchange_delisting_roster",
+          "official": true,
+          "read_status": "roster_row_matched"
+        }
+      ],
+      "verification": {
+        "announcement": "verified_primary",
+        "mbo_classification": "verified_primary",
+        "motive": "verified_primary_public_rationale",
+        "outcome": "verified_primary",
+        "obstacles": "documented_items_only",
+        "delisting": "verified_exchange"
+      },
+      "cautions": [
+        "動機は公表時の当事者説明であり、真の内心・動機の因果効果を検証したものではない。",
+        "MBO公表後の資料で確認した理由・結果を、公表前の独立した予測シグナルとみなさない。",
+        "障害欄が空でも障害なしを意味しない。個別交渉・反対株主・訴訟等の全履歴は網羅していない。"
+      ],
+      "discovery": {
+        "year": 2021,
+        "start_date": "2021-05-17",
+        "url": "https://tobradar.com/tob/deals/2021-1106/",
+        "secondary_mbo_flag": true
+      },
+      "announcement_source_id": "2021-1106-0",
+      "announcement_locator": "PDF p1（公表日・MBO実施／応募推奨の表題と決議）",
+      "mbo_type": "management_buyout_going_private",
+      "transaction_method": "tender_offer_then_cashout",
+      "market_scope": "TSE",
+      "outcome_definition": "当該MBO取引の公開買付け成立。成立と非公開化完了日は別項目。",
+      "result_source_id": "2021-1106-1",
+      "result_locator": "PDF p7 公開買付けの成否・結果公告日",
+      "result_date": "2021-07-06",
+      "delisting_source_id": "jpx-delisting-3975",
+      "delisting_locator": "上場廃止一覧 3975 ＡＯＩ ＴＹＯ Ｈｏｌｄｉｎｇｓ の行",
+      "is_tse": true,
+      "market": "東証"
+    },
+    {
+      "episode_id": "2021-1108",
+      "code": "4282",
+      "name": "EPSホールディングス",
+      "announcement_date": "2021-05-27",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2021-09-17",
+      "motives": [
+        {
+          "category": "growth_investment",
+          "text": "治験プロセスの電子化・バーチャル化、データ利活用、IT企業へのM&A、管理体制刷新へ投資する。株価や短期利益を意識する上場経営では大胆な投資の継続が難しいと創業経営者が説明。",
+          "source_id": "2021-1108-0",
+          "locator": "PDF p17",
+          "quote": "積極的かつ大胆な投資",
+          "availability_phase": "formal_announcement_or_later",
+          "evidence_type": "party_stated_rationale"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "2021-1108-0",
+          "title": "ＭＢＯの実施及び応募の推奨に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/42820/140120210527431527.pdf",
+          "public_at": "2021-05-27",
+          "issuer": "ＥＰＳホールディングス",
+          "locator": "PDF p1（公表日・MBO実施／応募推奨の表題と決議）；PDF p17",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "target_opinion",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "target_opinion"
+        },
+        {
+          "source_id": "2021-1108-1",
+          "title": "株式会社新鷹による当社株券等に対する公開買付けの結果に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/42820/140120210707463229.pdf",
+          "public_at": "2021-07-09",
+          "issuer": "ＥＰＳホールディングス・新鷹",
+          "locator": "PDF p6 公開買付けの成否・結果公告日",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "result_notice",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "result_notice"
+        },
+        {
+          "source_id": "jpx-delisting-4282",
+          "title": "東京証券取引所 上場廃止銘柄一覧 2021年",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-05.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "上場廃止一覧 4282 ＥＰＳホールディングス の行",
+          "accessed_at": "2026-10-18",
+          "docType": "exchange_delisting_roster",
+          "official": true,
+          "read_status": "roster_row_matched"
+        }
+      ],
+      "verification": {
+        "announcement": "verified_primary",
+        "mbo_classification": "verified_primary",
+        "motive": "verified_primary_public_rationale",
+        "outcome": "verified_primary",
+        "obstacles": "documented_items_only",
+        "delisting": "verified_exchange"
+      },
+      "cautions": [
+        "動機は公表時の当事者説明であり、真の内心・動機の因果効果を検証したものではない。",
+        "MBO公表後の資料で確認した理由・結果を、公表前の独立した予測シグナルとみなさない。",
+        "障害欄が空でも障害なしを意味しない。個別交渉・反対株主・訴訟等の全履歴は網羅していない。"
+      ],
+      "discovery": {
+        "year": 2021,
+        "start_date": "2021-05-28",
+        "url": "https://tobradar.com/tob/deals/2021-1108/",
+        "secondary_mbo_flag": true
+      },
+      "announcement_source_id": "2021-1108-0",
+      "announcement_locator": "PDF p1（公表日・MBO実施／応募推奨の表題と決議）",
+      "mbo_type": "management_buyout_going_private",
+      "transaction_method": "tender_offer_then_cashout",
+      "market_scope": "TSE",
+      "outcome_definition": "当該MBO取引の公開買付け成立。成立と非公開化完了日は別項目。",
+      "result_source_id": "2021-1108-1",
+      "result_locator": "PDF p6 公開買付けの成否・結果公告日",
+      "result_date": "2021-07-09",
+      "delisting_source_id": "jpx-delisting-4282",
+      "delisting_locator": "上場廃止一覧 4282 ＥＰＳホールディングス の行",
+      "is_tse": true,
+      "market": "東証"
+    },
+    {
+      "episode_id": "2021-1126",
+      "code": "7959",
+      "name": "オリバー",
+      "announcement_date": "2021-06-22",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2021-09-14",
+      "motives": [
+        {
+          "category": "restructuring",
+          "text": "業務用家具メーカーから設計・施工・調達・保守まで提供するデジタルインテリア事業者へ転換する。M&A、IT・人材・新素材投資の短期損失リスクを非公開体制で負担し、Integralの人材ネットワークと経営支援を活用すると説明。",
+          "source_id": "2021-1126-0",
+          "locator": "PDF pp8–9",
+          "quote": "デジタルインテリアソリューションプロバイダー",
+          "availability_phase": "formal_announcement_or_later",
+          "evidence_type": "party_stated_rationale"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "2021-1126-0",
+          "title": "ＭＢＯの実施及び応募の推奨に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/79590/140120210616449988.pdf",
+          "public_at": "2021-06-22",
+          "issuer": "オリバー",
+          "locator": "PDF p1（公表日・MBO実施／応募推奨の表題と決議）；PDF pp8–9",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "target_opinion",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "target_opinion"
+        },
+        {
+          "source_id": "2021-1126-1",
+          "title": "株式会社ＮＥＸＴ－Ｏによる当社株券等に対する公開買付けの結果に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/79590/140120210816486983.pdf",
+          "public_at": "2021-08-18",
+          "issuer": "オリバー・ＮＥＸＴ－Ｏ",
+          "locator": "PDF p5 公開買付けの成否・結果公告日",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "result_notice",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "result_notice"
+        },
+        {
+          "source_id": "jpx-delisting-7959",
+          "title": "東京証券取引所 上場廃止銘柄一覧 2021年",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-05.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "上場廃止一覧 7959 オリバー の行",
+          "accessed_at": "2026-10-18",
+          "docType": "exchange_delisting_roster",
+          "official": true,
+          "read_status": "roster_row_matched"
+        }
+      ],
+      "verification": {
+        "announcement": "verified_primary",
+        "mbo_classification": "verified_primary",
+        "motive": "verified_primary_public_rationale",
+        "outcome": "verified_primary",
+        "obstacles": "documented_items_only",
+        "delisting": "verified_exchange"
+      },
+      "cautions": [
+        "動機は公表時の当事者説明であり、真の内心・動機の因果効果を検証したものではない。",
+        "MBO公表後の資料で確認した理由・結果を、公表前の独立した予測シグナルとみなさない。",
+        "障害欄が空でも障害なしを意味しない。個別交渉・反対株主・訴訟等の全履歴は網羅していない。"
+      ],
+      "discovery": {
+        "year": 2021,
+        "start_date": "2021-06-23",
+        "url": "https://tobradar.com/tob/deals/2021-1126/",
+        "secondary_mbo_flag": true
+      },
+      "announcement_source_id": "2021-1126-0",
+      "announcement_locator": "PDF p1（公表日・MBO実施／応募推奨の表題と決議）",
+      "mbo_type": "management_buyout_going_private",
+      "transaction_method": "tender_offer_then_cashout",
+      "market_scope": "TSE",
+      "outcome_definition": "当該MBO取引の公開買付け成立。成立と非公開化完了日は別項目。",
+      "result_source_id": "2021-1126-1",
+      "result_locator": "PDF p5 公開買付けの成否・結果公告日",
+      "result_date": "2021-08-18",
+      "delisting_source_id": "jpx-delisting-7959",
+      "delisting_locator": "上場廃止一覧 7959 オリバー の行",
+      "is_tse": true,
+      "market": "東証"
+    },
+    {
+      "episode_id": "2021-1127",
+      "code": "3408",
+      "name": "サカイオーベックス",
+      "announcement_date": "2021-07-27",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2021-12-10",
+      "motives": [
+        {
+          "category": "restructuring",
+          "text": "成熟した染色加工・繊維販売事業の海外販路拡大、海外生産・調達拠点、新たな設備への投資など事業構造改革を進める。短期利益や株価への悪影響回避を優先する上場経営には限界があると社長が説明。再公表時に前回の具体策以外の新案件はないと明記。",
+          "source_id": "2021-1127-0",
+          "locator": "PDF p12",
+          "quote": "事業構造の抜本的な改革",
+          "availability_phase": "formal_announcement_or_later",
+          "evidence_type": "party_stated_rationale"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "2021-1127-0",
+          "title": "ＭＢＯの実施及び応募の推奨に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/34080/140120210727471860.pdf",
+          "public_at": "2021-07-27",
+          "issuer": "サカイオーベックス",
+          "locator": "PDF p1（公表日・MBO実施／応募推奨の表題と決議）；PDF p12",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "target_opinion",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "target_opinion"
+        },
+        {
+          "source_id": "2021-1127-1",
+          "title": "サカイ繊維株式会社による当社株券等に対する公開買付けの結果に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/34080/140120210908495478.pdf",
+          "public_at": "2021-09-09",
+          "issuer": "サカイオーベックス・サカイ繊維",
+          "locator": "PDF p6 公開買付けの成否・結果公告日",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "result_notice",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "result_notice"
+        },
+        {
+          "source_id": "jpx-delisting-3408",
+          "title": "東京証券取引所 上場廃止銘柄一覧 2021年",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-05.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "上場廃止一覧 3408 サカイオーベックス の行",
+          "accessed_at": "2026-10-18",
+          "docType": "exchange_delisting_roster",
+          "official": true,
+          "read_status": "roster_row_matched"
+        }
+      ],
+      "verification": {
+        "announcement": "verified_primary",
+        "mbo_classification": "verified_primary",
+        "motive": "verified_primary_public_rationale",
+        "outcome": "verified_primary",
+        "obstacles": "documented_items_only",
+        "delisting": "verified_exchange"
+      },
+      "cautions": [
+        "動機は公表時の当事者説明であり、真の内心・動機の因果効果を検証したものではない。",
+        "MBO公表後の資料で確認した理由・結果を、公表前の独立した予測シグナルとみなさない。",
+        "障害欄が空でも障害なしを意味しない。個別交渉・反対株主・訴訟等の全履歴は網羅していない。"
+      ],
+      "discovery": {
+        "year": 2021,
+        "start_date": "2021-07-28",
+        "url": "https://tobradar.com/tob/deals/2021-1127/",
+        "secondary_mbo_flag": true
+      },
+      "announcement_source_id": "2021-1127-0",
+      "announcement_locator": "PDF p1（公表日・MBO実施／応募推奨の表題と決議）",
+      "mbo_type": "management_buyout_going_private",
+      "transaction_method": "tender_offer_then_cashout",
+      "market_scope": "TSE",
+      "outcome_definition": "当該MBO取引の公開買付け成立。成立と非公開化完了日は別項目。",
+      "result_source_id": "2021-1127-1",
+      "result_locator": "PDF p6 公開買付けの成否・結果公告日",
+      "result_date": "2021-09-09",
+      "followup_note": "2021/2/9初回公表・3/25不成立後の再試行。初回と別episode。",
+      "delisting_source_id": "jpx-delisting-3408",
+      "delisting_locator": "上場廃止一覧 3408 サカイオーベックス の行",
+      "is_tse": true,
+      "market": "東証"
+    },
+    {
+      "episode_id": "2021-1129",
+      "code": "7855",
+      "name": "カーディナル",
+      "announcement_date": "2021-08-05",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2022-01-13",
+      "motives": [
+        {
+          "category": "restructuring",
+          "text": "プラスチックカードの自社一貫生産と販売代理店網を生かし、EC販売・Webプラットフォーム・デジタル基盤への投資を進める。短期利益悪化を避ける保守的戦略から、迅速に再構成できる経営体制へ転換すると社長が説明。",
+          "source_id": "2021-1129-0",
+          "locator": "PDF p12",
+          "quote": "ＥＣ売上の拡大とＷｅｂ上の取組の強化",
+          "availability_phase": "formal_announcement_or_later",
+          "evidence_type": "party_stated_rationale"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "2021-1129-0",
+          "title": "ＭＢＯの実施及び応募の推奨に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/78550/140120210805479939.pdf",
+          "public_at": "2021-08-05",
+          "issuer": "カーディナル",
+          "locator": "PDF p1（公表日・MBO実施／応募推奨の表題と決議）；PDF p12",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "target_opinion",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "target_opinion"
+        },
+        {
+          "source_id": "2021-1129-2",
+          "title": "カーディナル株式会社株式に対する公開買付報告書",
+          "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100MMVU.pdf",
+          "public_at": "2021-10-20",
+          "issuer": "山田マーケティング",
+          "locator": "PDF p2 公開買付けの成否・結果公告日",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "result_notice",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "result_notice"
+        },
+        {
+          "source_id": "jpx-delisting-7855",
+          "title": "東京証券取引所 上場廃止銘柄一覧 2022年",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-04.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "上場廃止一覧 7855 カーディナル の行",
+          "accessed_at": "2026-10-18",
+          "docType": "exchange_delisting_roster",
+          "official": true,
+          "read_status": "roster_row_matched"
+        }
+      ],
+      "verification": {
+        "announcement": "verified_primary",
+        "mbo_classification": "verified_primary",
+        "motive": "verified_primary_public_rationale",
+        "outcome": "verified_primary",
+        "obstacles": "documented_items_only",
+        "delisting": "verified_exchange"
+      },
+      "cautions": [
+        "動機は公表時の当事者説明であり、真の内心・動機の因果効果を検証したものではない。",
+        "MBO公表後の資料で確認した理由・結果を、公表前の独立した予測シグナルとみなさない。",
+        "障害欄が空でも障害なしを意味しない。個別交渉・反対株主・訴訟等の全履歴は網羅していない。"
+      ],
+      "discovery": {
+        "year": 2021,
+        "start_date": "2021-08-06",
+        "url": "https://tobradar.com/tob/deals/2021-1129/",
+        "secondary_mbo_flag": true
+      },
+      "announcement_source_id": "2021-1129-0",
+      "announcement_locator": "PDF p1（公表日・MBO実施／応募推奨の表題と決議）",
+      "mbo_type": "management_buyout_going_private",
+      "transaction_method": "tender_offer_then_cashout",
+      "market_scope": "TSE",
+      "outcome_definition": "当該MBO取引の公開買付け成立。成立と非公開化完了日は別項目。",
+      "result_source_id": "2021-1129-2",
+      "result_locator": "PDF p2 公開買付けの成否・結果公告日",
+      "result_date": "2021-10-20",
+      "delisting_source_id": "jpx-delisting-7855",
+      "delisting_locator": "上場廃止一覧 7855 カーディナル の行",
+      "is_tse": true,
+      "market": "東証"
+    },
+    {
+      "episode_id": "2021-1130",
+      "code": "9909",
+      "name": "愛光電気",
+      "announcement_date": "2021-08-06",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2021-12-03",
+      "motives": [
+        {
+          "category": "growth_investment",
+          "text": "電設資材卸のDX、AI・データ分析、新規サービス、M&Aによる多角化へ先行投資する。短期収益悪化・のれん償却等が株価を毀損するリスクを避けるため非公開化すると社長が説明。",
+          "source_id": "2021-1130-0",
+          "locator": "PDF p9",
+          "quote": "ＤＸを活用した電設卸業務の効率化",
+          "availability_phase": "formal_announcement_or_later",
+          "evidence_type": "party_stated_rationale"
+        },
+        {
+          "category": "listing_cost",
+          "text": "開示・監査等の上場維持費増加と、既に得た業界内信用を踏まえ、上場を維持する必要性が相対的に低下したとの社長の判断。",
+          "source_id": "2021-1130-0",
+          "locator": "PDF p9",
+          "availability_phase": "formal_announcement_or_later",
+          "evidence_type": "party_stated_rationale"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "2021-1130-0",
+          "title": "ＭＢＯの実施及び応募の推奨に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/99090/140120210806481637.pdf",
+          "public_at": "2021-08-06",
+          "issuer": "愛光電気",
+          "locator": "PDF p1（公表日・MBO実施／応募推奨の表題と決議）；PDF p9",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "target_opinion",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "target_opinion"
+        },
+        {
+          "source_id": "2021-1130-1",
+          "title": "ＡＫコーポレーション株式会社による当社株式に対する公開買付けの結果に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/99090/140120210929403777.pdf",
+          "public_at": "2021-09-29",
+          "issuer": "愛光電気・ＡＫコーポレーション",
+          "locator": "PDF p6 公開買付けの成否・結果公告日",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "result_notice",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "result_notice"
+        },
+        {
+          "source_id": "jpx-delisting-9909",
+          "title": "東京証券取引所 上場廃止銘柄一覧 2021年",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-05.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "上場廃止一覧 9909 愛光電気 の行",
+          "accessed_at": "2026-10-18",
+          "docType": "exchange_delisting_roster",
+          "official": true,
+          "read_status": "roster_row_matched"
+        }
+      ],
+      "verification": {
+        "announcement": "verified_primary",
+        "mbo_classification": "verified_primary",
+        "motive": "verified_primary_public_rationale",
+        "outcome": "verified_primary",
+        "obstacles": "documented_items_only",
+        "delisting": "verified_exchange"
+      },
+      "cautions": [
+        "動機は公表時の当事者説明であり、真の内心・動機の因果効果を検証したものではない。",
+        "MBO公表後の資料で確認した理由・結果を、公表前の独立した予測シグナルとみなさない。",
+        "障害欄が空でも障害なしを意味しない。個別交渉・反対株主・訴訟等の全履歴は網羅していない。"
+      ],
+      "discovery": {
+        "year": 2021,
+        "start_date": "2021-08-10",
+        "url": "https://tobradar.com/tob/deals/2021-1130/",
+        "secondary_mbo_flag": true
+      },
+      "announcement_source_id": "2021-1130-0",
+      "announcement_locator": "PDF p1（公表日・MBO実施／応募推奨の表題と決議）",
+      "mbo_type": "management_buyout_going_private",
+      "transaction_method": "tender_offer_then_cashout",
+      "market_scope": "TSE",
+      "outcome_definition": "当該MBO取引の公開買付け成立。成立と非公開化完了日は別項目。",
+      "result_source_id": "2021-1130-1",
+      "result_locator": "PDF p6 公開買付けの成否・結果公告日",
+      "result_date": "2021-09-29",
+      "delisting_source_id": "jpx-delisting-9909",
+      "delisting_locator": "上場廃止一覧 9909 愛光電気 の行",
+      "is_tse": true,
+      "market": "東証"
+    },
+    {
+      "episode_id": "2021-1131",
+      "code": "3376",
+      "name": "オンリー",
+      "announcement_date": "2021-08-18",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2022-01-18",
+      "motives": [
+        {
+          "category": "growth_investment",
+          "text": "Webマーケティング・ECと実店舗を融合する製造販売体制、発注・在庫最適化のシステム投資を推進する。短期業績の悪化・株価下落を避けつつ中長期戦略を実行するため非公開化すると創業者が説明。",
+          "source_id": "2021-1131-1",
+          "locator": "PDF p5",
+          "quote": "リアル店舗とデジタル技術の融合",
+          "availability_phase": "formal_announcement_or_later",
+          "evidence_type": "party_stated_rationale"
+        },
+        {
+          "category": "succession",
+          "text": "将来の相続による株式分散を防ぎ、経営の安定性を維持するため買付会社を設立する方針も説明。単なる創業家支配・年齢からの推定ではない。",
+          "source_id": "2021-1131-1",
+          "locator": "PDF p5末尾",
+          "availability_phase": "formal_announcement_or_later",
+          "evidence_type": "party_stated_rationale"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "2021-1131-0",
+          "title": "株式会社紳士服中西による株式会社オンリー株式に対する公開買付けの開始に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/33760/140120210818487670.pdf",
+          "public_at": "2021-08-18",
+          "issuer": "オンリー・紳士服中西",
+          "locator": "PDF p1（公表日・MBO実施／応募推奨の表題と決議）",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "tender_offer_announcement",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "tender_offer_announcement"
+        },
+        {
+          "source_id": "2021-1131-1",
+          "title": "株式会社オンリー株式に対する公開買付届出書",
+          "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100MBA4.pdf",
+          "public_at": "2021-08-19",
+          "issuer": "株式会社紳士服中西",
+          "locator": "PDF p5；PDF p5末尾",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "tender_offer_statement",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "tender_offer_statement"
+        },
+        {
+          "source_id": "2021-1131-2",
+          "title": "株式会社紳士服中西による当社株式に対する公開買付けの結果に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/33760/140120211016412345.pdf",
+          "public_at": "2021-10-16",
+          "issuer": "オンリー・紳士服中西",
+          "locator": "PDF p6 公開買付けの成否・結果公告日",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "result_notice",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "result_notice"
+        },
+        {
+          "source_id": "jpx-delisting-3376",
+          "title": "東京証券取引所 上場廃止銘柄一覧 2022年",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-04.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "上場廃止一覧 3376 オンリー の行",
+          "accessed_at": "2026-10-18",
+          "docType": "exchange_delisting_roster",
+          "official": true,
+          "read_status": "roster_row_matched"
+        }
+      ],
+      "verification": {
+        "announcement": "verified_primary",
+        "mbo_classification": "verified_primary",
+        "motive": "verified_primary_public_rationale",
+        "outcome": "verified_primary",
+        "obstacles": "documented_items_only",
+        "delisting": "verified_exchange"
+      },
+      "cautions": [
+        "動機は公表時の当事者説明であり、真の内心・動機の因果効果を検証したものではない。",
+        "MBO公表後の資料で確認した理由・結果を、公表前の独立した予測シグナルとみなさない。",
+        "障害欄が空でも障害なしを意味しない。個別交渉・反対株主・訴訟等の全履歴は網羅していない。"
+      ],
+      "discovery": {
+        "year": 2021,
+        "start_date": "2021-08-19",
+        "url": "https://tobradar.com/tob/deals/2021-1131/",
+        "secondary_mbo_flag": true
+      },
+      "announcement_source_id": "2021-1131-0",
+      "announcement_locator": "PDF p1（公表日・MBO実施／応募推奨の表題と決議）",
+      "mbo_type": "management_buyout_going_private",
+      "transaction_method": "tender_offer_then_cashout",
+      "market_scope": "TSE",
+      "outcome_definition": "当該MBO取引の公開買付け成立。成立と非公開化完了日は別項目。",
+      "result_source_id": "2021-1131-2",
+      "result_locator": "PDF p6 公開買付けの成否・結果公告日",
+      "result_date": "2021-10-16",
+      "delisting_source_id": "jpx-delisting-3376",
+      "delisting_locator": "上場廃止一覧 3376 オンリー の行",
+      "is_tse": true,
+      "market": "東証"
+    },
+    {
+      "episode_id": "2021-1134",
+      "code": "3919",
+      "name": "パイプドHD",
+      "announcement_date": "2021-09-30",
+      "announcement_date_status": "verified",
+      "outcome_status": "failed",
+      "delisting_date": null,
+      "motives": [
+        {
+          "category": "sponsor_resources",
+          "text": "スパイラルの営業・認知拡大、カスタマーサクセス、機能追加とプラットフォーム化へ投資する。短期損益悪化を許容し、APの外部経営資源を使う少数株主体制が最善と社長が説明。",
+          "source_id": "2021-1134-0",
+          "locator": "PDF p10",
+          "quote": "外部の経営資源をも活用",
+          "availability_phase": "formal_announcement_or_later",
+          "evidence_type": "party_stated_rationale"
+        }
+      ],
+      "obstacles": [
+        {
+          "category": "tender_shortfall",
+          "text": "応募312,732株が下限1,830,400株に届かず、全量を買い付けない結果となった。不応募者全員の動機までこの結果資料で説明できるわけではない。",
+          "source_id": "2021-1134-1",
+          "locator": "PDF p3 公開買付けの成否・結果公告日",
+          "evidence_role": "observed_failure_mechanism"
+        },
+        {
+          "category": "other",
+          "text": "東証は後の再TOBが同額2,800円で成立したことも示している。応募構造や条件の変化と価格を分けて検討する必要がある。",
+          "source_id": "jpx-failed-mbo-20240521",
+          "locator": "PDF p6 最近のMBOの不成立事例",
+          "evidence_role": "post_event_exchange_synthesis"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "2021-1134-0",
+          "title": "ＭＢＯの実施及び応募の推奨に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/39190/140120210929404383.pdf",
+          "public_at": "2021-09-30",
+          "issuer": "パイプドＨＤ",
+          "locator": "PDF p1（公表日・MBO実施／応募推奨の表題と決議）；PDF p10",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "target_opinion",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "target_opinion"
+        },
+        {
+          "source_id": "2021-1134-1",
+          "title": "株式会社ミライサイテキグループによるパイプドHD株式会社の株券等に対する公開買付けの結果に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/39190/140120211116436678.pdf",
+          "public_at": "2021-11-16",
+          "issuer": "パイプドＨＤ・ミライサイテキグループ",
+          "locator": "PDF p3 公開買付けの成否・結果公告日",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "result_notice",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "result_notice"
+        },
+        {
+          "source_id": "jpx-failed-mbo-20240521",
+          "title": "企業行動規範の見直し（前回会議の補足資料）",
+          "url": "https://www.jpx.co.jp/equities/follow-up/nlsgeu000006gevo-att/mklp770000007bd2.pdf",
+          "public_at": "2024-05-21",
+          "issuer": "東京証券取引所 上場部",
+          "locator": "PDF p6 最近のMBOの不成立事例",
+          "accessed_at": "2026-10-18",
+          "docType": "primary_exchange_synthesis",
+          "official": true,
+          "read_status": "relevant_excerpt_read"
+        }
+      ],
+      "verification": {
+        "announcement": "verified_primary",
+        "mbo_classification": "verified_primary",
+        "motive": "verified_primary_public_rationale",
+        "outcome": "verified_primary",
+        "obstacles": "documented_items_only",
+        "delisting": "not_applicable_failed_episode"
+      },
+      "cautions": [
+        "動機は公表時の当事者説明であり、真の内心・動機の因果効果を検証したものではない。",
+        "MBO公表後の資料で確認した理由・結果を、公表前の独立した予測シグナルとみなさない。"
+      ],
+      "discovery": {
+        "year": 2021,
+        "start_date": "2021-10-01",
+        "url": "https://tobradar.com/tob/deals/2021-1134/",
+        "secondary_mbo_flag": true
+      },
+      "announcement_source_id": "2021-1134-0",
+      "announcement_locator": "PDF p1（公表日・MBO実施／応募推奨の表題と決議）",
+      "mbo_type": "management_buyout_going_private",
+      "transaction_method": "tender_offer_then_cashout",
+      "market_scope": "TSE",
+      "outcome_definition": "当該公開買付けの下限未達により全量不買付け。後続取引とは別episode。",
+      "result_source_id": "2021-1134-1",
+      "result_locator": "PDF p3 公開買付けの成否・結果公告日",
+      "result_date": "2021-11-16",
+      "followup_note": "2022/6/28再公表の別episode（2022-1204）が同じ2,800円で成立。初回不成立を単純な価格不足だけで説明しない。",
+      "is_tse": true,
+      "market": "東証"
+    },
+    {
+      "episode_id": "2021-1139",
+      "code": "3001",
+      "name": "片倉工業",
+      "announcement_date": "2021-11-08",
+      "announcement_date_status": "verified",
+      "outcome_status": "failed",
+      "delisting_date": null,
+      "motives": [
+        {
+          "category": "restructuring",
+          "text": "コクーンシティ再開発、医薬品・繊維等の施策、新事業/M&Aは除却・開発費や先行投資による長期の収益低下を伴う。株主構成を簡素化して機動的・統一的に実行すると経営陣が説明。上場維持費と人員の有効活用も挙げた。",
+          "source_id": "2021-1139-0",
+          "locator": "PDF p11",
+          "quote": "株主構成を簡素化する",
+          "availability_phase": "formal_announcement_or_later",
+          "evidence_type": "party_stated_rationale"
+        }
+      ],
+      "obstacles": [
+        {
+          "category": "tender_shortfall",
+          "text": "応募19,679,198株が下限22,146,000株に届かず、全量を買い付けない結果となった。不応募者全員の動機までこの結果資料で説明できるわけではない。",
+          "source_id": "2021-1139-1",
+          "locator": "PDF p2 公開買付けの成否・結果公告日",
+          "evidence_role": "observed_failure_mechanism"
+        },
+        {
+          "category": "price_disagreement",
+          "text": "東証の事後整理では、鹿児島東インド会社が保有不動産の時価を踏まえると価格が低いとの意見を示し、TOBは下限未達。会社の理由と株主の価格評価を区別する。",
+          "source_id": "jpx-failed-mbo-20240521",
+          "locator": "PDF p6 最近のMBOの不成立事例",
+          "evidence_role": "post_event_exchange_synthesis"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "2021-1139-0",
+          "title": "ＭＢＯの実施及び応募の推奨に関するお知らせ",
+          "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100MRCJ.pdf",
+          "public_at": "2021-11-09",
+          "issuer": "片倉工業株式会社",
+          "locator": "PDF pp2–3（11/8決議・MBO該当性）；PDF p11",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "target_opinion",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "target_opinion"
+        },
+        {
+          "source_id": "2021-1139-1",
+          "title": "片倉工業株式会社株式に対する公開買付報告書",
+          "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100N7IL.pdf",
+          "public_at": "2022-01-12",
+          "issuer": "株式会社かたくら",
+          "locator": "PDF p2 公開買付けの成否・結果公告日",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "result_notice",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "result_notice"
+        },
+        {
+          "source_id": "jpx-failed-mbo-20240521",
+          "title": "企業行動規範の見直し（前回会議の補足資料）",
+          "url": "https://www.jpx.co.jp/equities/follow-up/nlsgeu000006gevo-att/mklp770000007bd2.pdf",
+          "public_at": "2024-05-21",
+          "issuer": "東京証券取引所 上場部",
+          "locator": "PDF p6 最近のMBOの不成立事例",
+          "accessed_at": "2026-10-18",
+          "docType": "primary_exchange_synthesis",
+          "official": true,
+          "read_status": "relevant_excerpt_read"
+        }
+      ],
+      "verification": {
+        "announcement": "verified_primary",
+        "mbo_classification": "verified_primary",
+        "motive": "verified_primary_public_rationale",
+        "outcome": "verified_primary",
+        "obstacles": "documented_items_only",
+        "delisting": "not_applicable_failed_episode"
+      },
+      "cautions": [
+        "動機は公表時の当事者説明であり、真の内心・動機の因果効果を検証したものではない。",
+        "MBO公表後の資料で確認した理由・結果を、公表前の独立した予測シグナルとみなさない。"
+      ],
+      "discovery": {
+        "year": 2021,
+        "start_date": "2021-11-09",
+        "url": "https://tobradar.com/tob/deals/2021-1139/",
+        "secondary_mbo_flag": true
+      },
+      "announcement_source_id": "2021-1139-0",
+      "announcement_locator": "PDF pp2–3（11/8決議・MBO該当性）",
+      "mbo_type": "management_buyout_going_private",
+      "transaction_method": "tender_offer_then_cashout",
+      "market_scope": "TSE",
+      "outcome_definition": "当該公開買付けの下限未達により全量不買付け。後続取引とは別episode。",
+      "result_source_id": "2021-1139-1",
+      "result_locator": "PDF p2 公開買付けの成否・結果公告日",
+      "result_date": "2022-01-12",
+      "is_tse": true,
+      "market": "東証"
+    },
+    {
+      "episode_id": "2021-1141",
+      "code": "7597",
+      "name": "東京貴宝",
+      "announcement_date": "2021-11-09",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2022-03-29",
+      "motives": [
+        {
+          "category": "growth_investment",
+          "text": "国内宝飾市場の成長制約に対応し、新規事業投資、収益源分散、東アジア展開を進める。短期収益悪化の株主影響と、新市場区分対応を含む上場維持費の増加を非公開化の背景として社長が説明。",
+          "source_id": "2021-1141-0",
+          "locator": "PDF p7",
+          "quote": "事業ポートフォリオを分散",
+          "availability_phase": "formal_announcement_or_later",
+          "evidence_type": "party_stated_rationale"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "2021-1141-0",
+          "title": "ＭＢＯの実施及び応募の推奨に関するお知らせ",
+          "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100MSB8.pdf",
+          "public_at": "2021-11-10",
+          "issuer": "東京貴宝株式会社",
+          "locator": "PDF p2（11/9決議・MBO該当性）；PDF p7",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "target_opinion",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "target_opinion"
+        },
+        {
+          "source_id": "2021-1141-2",
+          "title": "東京貴宝株式会社株式に対する公開買付報告書",
+          "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100N4EB.pdf",
+          "public_at": "2021-12-23",
+          "issuer": "株式会社おがの",
+          "locator": "PDF p2 公開買付けの成否・結果公告日",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "result_notice",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "result_notice"
+        },
+        {
+          "source_id": "jpx-delisting-7597",
+          "title": "東京証券取引所 上場廃止銘柄一覧 2022年",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-04.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "上場廃止一覧 7597 東京貴宝 の行",
+          "accessed_at": "2026-10-18",
+          "docType": "exchange_delisting_roster",
+          "official": true,
+          "read_status": "roster_row_matched"
+        }
+      ],
+      "verification": {
+        "announcement": "verified_primary",
+        "mbo_classification": "verified_primary",
+        "motive": "verified_primary_public_rationale",
+        "outcome": "verified_primary",
+        "obstacles": "documented_items_only",
+        "delisting": "verified_exchange"
+      },
+      "cautions": [
+        "動機は公表時の当事者説明であり、真の内心・動機の因果効果を検証したものではない。",
+        "MBO公表後の資料で確認した理由・結果を、公表前の独立した予測シグナルとみなさない。",
+        "障害欄が空でも障害なしを意味しない。個別交渉・反対株主・訴訟等の全履歴は網羅していない。"
+      ],
+      "discovery": {
+        "year": 2021,
+        "start_date": "2021-11-10",
+        "url": "https://tobradar.com/tob/deals/2021-1141/",
+        "secondary_mbo_flag": true
+      },
+      "announcement_source_id": "2021-1141-0",
+      "announcement_locator": "PDF p2（11/9決議・MBO該当性）",
+      "mbo_type": "management_buyout_going_private",
+      "transaction_method": "tender_offer_then_cashout",
+      "market_scope": "TSE",
+      "outcome_definition": "当該MBO取引の公開買付け成立。成立と非公開化完了日は別項目。",
+      "result_source_id": "2021-1141-2",
+      "result_locator": "PDF p2 公開買付けの成否・結果公告日",
+      "result_date": "2021-12-23",
+      "delisting_source_id": "jpx-delisting-7597",
+      "delisting_locator": "上場廃止一覧 7597 東京貴宝 の行",
+      "is_tse": true,
+      "market": "東証"
+    },
+    {
+      "episode_id": "2021-1154",
+      "code": "9695",
+      "name": "鴨川グランドホテル",
+      "announcement_date": "2021-12-10",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2022-03-11",
+      "motives": [
+        {
+          "category": "restructuring",
+          "text": "債務超過下の経営改善について、上場維持の子会社化より非公開化してNSSKと社長が一体で改善する案が有効と金融機関が評価した、と買付者が説明。既存債務の期限延長、新規融資、優先株償還条件変更の協議を伴う。",
+          "source_id": "2021-1154-0",
+          "locator": "PDF p13",
+          "quote": "中長期的な視点での当社の経営改善",
+          "availability_phase": "formal_announcement_or_later",
+          "evidence_type": "party_stated_rationale"
+        }
+      ],
+      "obstacles": [
+        {
+          "category": "funding",
+          "text": "債務超過からの再建には、既存借入の期限延長、新規融資、優先株償還条件変更等について金融機関との調整が必要と説明。資金調達失敗を意味せず、本件は二段階TOBが成立。",
+          "source_id": "2021-1154-0",
+          "locator": "PDF p13",
+          "evidence_role": "disclosed_execution_condition"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "2021-1154-0",
+          "title": "株式会社ＮＳＳＫ－Ｖによる当社株券に対する第一回公開買付けに関する賛同及び応募推奨のお知らせ",
+          "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100N1UH.pdf",
+          "public_at": "2021-12-13",
+          "issuer": "株式会社鴨川グランドホテル",
+          "locator": "PDF pp2–4（12/10両TOB決議・MBO該当性）；PDF p13",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "target_opinion",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "target_opinion"
+        },
+        {
+          "source_id": "2021-1154-1",
+          "title": "株式会社鴨川グランドホテル株式に対する第一回公開買付報告書",
+          "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100N8LH.pdf",
+          "public_at": "2022-01-17",
+          "issuer": "株式会社ＮＳＳＫ－Ｖ",
+          "locator": "PDF p2 第1回TOB成否・結果公告日",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "result_notice",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "result_notice"
+        },
+        {
+          "source_id": "2022-1162-0",
+          "title": "ＭＢＯの実施及び意見表明（第二回）に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/96950/140120220121570976.pdf",
+          "public_at": "2022-01-21",
+          "issuer": "株式会社鴨川グランドホテル",
+          "locator": "PDF p1–2（12/10既公表の二段階TOBへの言及）",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "target_opinion",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "target_opinion"
+        },
+        {
+          "source_id": "2022-1162-1",
+          "title": "支配株主である株式会社NSSK-Vによる当社株式等及び当社新株予約権に対する公開買付け（第二回）の結果に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/96950/140120220222593745.pdf",
+          "public_at": "2022-02-22",
+          "issuer": "株式会社鴨川グランドホテル・株式会社NSSK-V",
+          "locator": "PDF p5 公開買付けの成否・結果公告日",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "result_notice",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "result_notice"
+        },
+        {
+          "source_id": "jpx-delisting-9695",
+          "title": "東京証券取引所 上場廃止銘柄一覧 2022年",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-04.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "上場廃止一覧 9695 鴨川グランドホテル の行",
+          "accessed_at": "2026-10-18",
+          "docType": "exchange_delisting_roster",
+          "official": true,
+          "read_status": "roster_row_matched"
+        }
+      ],
+      "verification": {
+        "announcement": "verified_primary",
+        "mbo_classification": "verified_primary",
+        "motive": "verified_primary_public_rationale",
+        "outcome": "verified_primary",
+        "obstacles": "documented_items_only",
+        "delisting": "verified_exchange"
+      },
+      "cautions": [
+        "動機は公表時の当事者説明であり、真の内心・動機の因果効果を検証したものではない。",
+        "MBO公表後の資料で確認した理由・結果を、公表前の独立した予測シグナルとみなさない。"
+      ],
+      "discovery": {
+        "year": 2021,
+        "start_date": "2021-12-13",
+        "url": "https://tobradar.com/tob/deals/2021-1154/",
+        "secondary_mbo_flag": true
+      },
+      "announcement_source_id": "2021-1154-0",
+      "announcement_locator": "PDF pp2–4（12/10両TOB決議・MBO該当性）",
+      "mbo_type": "management_buyout_going_private",
+      "transaction_method": "planned_two_tender_stages_then_cashout",
+      "market_scope": "TSE",
+      "outcome_definition": "当該MBO取引の公開買付け成立。成立と非公開化完了日は別項目。",
+      "followup_note": "2021/12/10から二段階TOBを予定。第1回は2022/1/15に成立を公表（報告書提出1/17）、第2回は2/22に結果公表。2022/1/21の第2回通知を新規MBOとして二重計数しない。",
+      "result_source_id": "2022-1162-1",
+      "result_locator": "PDF p5 公開買付けの成否・結果公告日",
+      "result_date": "2022-02-22",
+      "delisting_source_id": "jpx-delisting-9695",
+      "delisting_locator": "上場廃止一覧 9695 鴨川グランドホテル の行",
+      "is_tse": true,
+      "market": "東証"
+    },
+    {
+      "episode_id": "2022-1166",
+      "code": "4962",
+      "name": "互応化学工業",
+      "announcement_date": "2022-02-04",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2022-04-26",
+      "motives": [
+        {
+          "category": "sponsor_resources",
+          "text": "水溶性ポリエステル樹脂・化粧品用樹脂を伸ばし、川上・川下展開、新製品、研究開発・生産最適化、設備・M&Aへ投資する。MCPの人材・知見と自社の配合技術・顧客対応力を組み合わせ、短期の利益・CF悪化を許容できる非公開経営にするとの説明。",
+          "source_id": "2022-1166-0",
+          "locator": "PDF p7",
+          "quote": "中長期的な視点",
+          "availability_phase": "formal_announcement_or_later",
+          "evidence_type": "party_stated_rationale"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "2022-1166-0",
+          "title": "意見表明報告書",
+          "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100ND86.pdf",
+          "public_at": "2022-02-07",
+          "issuer": "互応化学工業株式会社",
+          "locator": "PDF p3（2/4決議・MBO該当性）；PDF p7",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "target_opinion",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "target_opinion"
+        },
+        {
+          "source_id": "2022-1166-1",
+          "title": "公開買付報告書",
+          "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100NQ74.pdf",
+          "public_at": "2022-03-24",
+          "issuer": "ＧＣホールディングス株式会社",
+          "locator": "PDF p3 公開買付けの成否・結果公告日",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "result_notice",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "result_notice"
+        },
+        {
+          "source_id": "jpx-delisting-4962",
+          "title": "東京証券取引所 上場廃止銘柄一覧 2022年",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-04.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "上場廃止一覧 4962 互応化学工業 の行",
+          "accessed_at": "2026-10-18",
+          "docType": "exchange_delisting_roster",
+          "official": true,
+          "read_status": "roster_row_matched"
+        }
+      ],
+      "verification": {
+        "announcement": "verified_primary",
+        "mbo_classification": "verified_primary",
+        "motive": "verified_primary_public_rationale",
+        "outcome": "verified_primary",
+        "obstacles": "documented_items_only",
+        "delisting": "verified_exchange"
+      },
+      "cautions": [
+        "動機は公表時の当事者説明であり、真の内心・動機の因果効果を検証したものではない。",
+        "MBO公表後の資料で確認した理由・結果を、公表前の独立した予測シグナルとみなさない。",
+        "障害欄が空でも障害なしを意味しない。個別交渉・反対株主・訴訟等の全履歴は網羅していない。"
+      ],
+      "discovery": {
+        "year": 2022,
+        "start_date": "2022-02-07",
+        "url": "https://tobradar.com/tob/deals/2022-1166/",
+        "secondary_mbo_flag": true
+      },
+      "announcement_source_id": "2022-1166-0",
+      "announcement_locator": "PDF p3（2/4決議・MBO該当性）",
+      "mbo_type": "management_buyout_going_private",
+      "transaction_method": "tender_offer_then_cashout",
+      "market_scope": "TSE",
+      "outcome_definition": "当該MBO取引の公開買付け成立。成立と非公開化完了日は別項目。",
+      "result_source_id": "2022-1166-1",
+      "result_locator": "PDF p3 公開買付けの成否・結果公告日",
+      "result_date": "2022-03-24",
+      "delisting_source_id": "jpx-delisting-4962",
+      "delisting_locator": "上場廃止一覧 4962 互応化学工業 の行",
+      "is_tse": true,
+      "market": "東証"
+    },
+    {
+      "episode_id": "2022-1167",
+      "code": "8293",
+      "name": "ATグループ",
+      "announcement_date": "2022-02-04",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2022-06-14",
+      "motives": [
+        {
+          "category": "restructuring",
+          "text": "トヨタ全車種併売後の販売体制を再構築し、販売店の統廃合、レクサス・中古車への資源配分、カーシェア、デジタル販売・DXを進める。閉店費用や一時的な売上減少を過度に避けず実行し、短期株価に縛られない経営を目指すとの説明。",
+          "source_id": "2022-1167-0",
+          "locator": "PDF pp6–8",
+          "availability_phase": "formal_announcement_or_later",
+          "evidence_type": "party_stated_rationale"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "2022-1167-0",
+          "title": "意見表明報告書",
+          "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100ND7N.pdf",
+          "public_at": "2022-02-07",
+          "issuer": "株式会社ＡＴグループ",
+          "locator": "PDF pp2–3（2/4決議・MBO該当性）；PDF pp6–8",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "target_opinion",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "target_opinion"
+        },
+        {
+          "source_id": "2022-1167-1",
+          "title": "公開買付報告書",
+          "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100NQ3X.pdf",
+          "public_at": "2022-03-24",
+          "issuer": "株式会社日の出",
+          "locator": "PDF p2 公開買付けの成否・結果公告日",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "result_notice",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "result_notice"
+        },
+        {
+          "source_id": "nse-at-delisting",
+          "title": "ＡＴグループ 上場廃止・整理銘柄指定",
+          "url": "https://www.nse.or.jp/listing/files/202205128293s.pdf",
+          "public_at": "2022-05-12",
+          "issuer": "名古屋証券取引所",
+          "locator": "PDF p1 上場廃止日",
+          "accessed_at": "2026-10-18",
+          "docType": "exchange_delisting_notice",
+          "official": true,
+          "read_status": "relevant_excerpt_read"
+        }
+      ],
+      "verification": {
+        "announcement": "verified_primary",
+        "mbo_classification": "verified_primary",
+        "motive": "verified_primary_public_rationale",
+        "outcome": "verified_primary",
+        "obstacles": "documented_items_only",
+        "delisting": "verified_exchange"
+      },
+      "cautions": [
+        "動機は公表時の当事者説明であり、真の内心・動機の因果効果を検証したものではない。",
+        "MBO公表後の資料で確認した理由・結果を、公表前の独立した予測シグナルとみなさない。",
+        "障害欄が空でも障害なしを意味しない。個別交渉・反対株主・訴訟等の全履歴は網羅していない。"
+      ],
+      "discovery": {
+        "year": 2022,
+        "start_date": "2022-02-07",
+        "url": "https://tobradar.com/tob/deals/2022-1167/",
+        "secondary_mbo_flag": true
+      },
+      "announcement_source_id": "2022-1167-0",
+      "announcement_locator": "PDF pp2–3（2/4決議・MBO該当性）",
+      "mbo_type": "management_buyout_going_private",
+      "transaction_method": "tender_offer_then_cashout",
+      "market_scope": "NSE_only",
+      "outcome_definition": "当該MBO取引の公開買付け成立。成立と非公開化完了日は別項目。",
+      "result_source_id": "2022-1167-1",
+      "result_locator": "PDF p2 公開買付けの成否・結果公告日",
+      "result_date": "2022-03-24",
+      "delisting_source_id": "nse-at-delisting",
+      "delisting_locator": "PDF p1 上場廃止日",
+      "is_tse": false,
+      "market": "名証単独"
+    },
+    {
+      "episode_id": "2022-1168",
+      "code": "2406",
+      "name": "アルテ サロン ホールディングス",
+      "announcement_date": "2022-02-07",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2022-06-07",
+      "motives": [
+        {
+          "category": "growth_investment",
+          "text": "美容商材メーカーや店舗施工業者等のM&Aを通じ、サロン運営に加えて周辺サービスを提供する事業部制へ変える。先行投資とのれん償却が短期利益を押し下げる可能性があり、その影響を株主に及ぼさず改革を進めるため非公開化すると説明。",
+          "source_id": "2022-1168-0",
+          "locator": "PDF p10",
+          "availability_phase": "formal_announcement_or_later",
+          "evidence_type": "party_stated_rationale"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "2022-1168-0",
+          "title": "ＭＢＯの実施及び応募の推奨に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/24060/140120220207582158.pdf",
+          "public_at": "2022-02-07",
+          "issuer": "株式会社アルテ サロン ホールディングス",
+          "locator": "PDF p1（公表日・MBO実施／応募推奨の表題と決議）；PDF p10",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "target_opinion",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "target_opinion"
+        },
+        {
+          "source_id": "2022-1168-1",
+          "title": "公開買付報告書",
+          "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100NQPI.pdf",
+          "public_at": "2022-03-25",
+          "issuer": "株式会社ジェネシス",
+          "locator": "PDF p2 公開買付けの成否・結果公告日",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "result_notice",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "result_notice"
+        },
+        {
+          "source_id": "jpx-delisting-2406",
+          "title": "東京証券取引所 上場廃止銘柄一覧 2022年",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-04.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "上場廃止一覧 2406 アルテ サロン ホールディングス の行",
+          "accessed_at": "2026-10-18",
+          "docType": "exchange_delisting_roster",
+          "official": true,
+          "read_status": "roster_row_matched"
+        }
+      ],
+      "verification": {
+        "announcement": "verified_primary",
+        "mbo_classification": "verified_primary",
+        "motive": "verified_primary_public_rationale",
+        "outcome": "verified_primary",
+        "obstacles": "documented_items_only",
+        "delisting": "verified_exchange"
+      },
+      "cautions": [
+        "動機は公表時の当事者説明であり、真の内心・動機の因果効果を検証したものではない。",
+        "MBO公表後の資料で確認した理由・結果を、公表前の独立した予測シグナルとみなさない。",
+        "障害欄が空でも障害なしを意味しない。個別交渉・反対株主・訴訟等の全履歴は網羅していない。"
+      ],
+      "discovery": {
+        "year": 2022,
+        "start_date": "2022-02-08",
+        "url": "https://tobradar.com/tob/deals/2022-1168/",
+        "secondary_mbo_flag": true
+      },
+      "announcement_source_id": "2022-1168-0",
+      "announcement_locator": "PDF p1（公表日・MBO実施／応募推奨の表題と決議）",
+      "mbo_type": "management_buyout_going_private",
+      "transaction_method": "tender_offer_then_cashout",
+      "market_scope": "TSE",
+      "outcome_definition": "当該MBO取引の公開買付け成立。成立と非公開化完了日は別項目。",
+      "result_source_id": "2022-1168-1",
+      "result_locator": "PDF p2 公開買付けの成否・結果公告日",
+      "result_date": "2022-03-25",
+      "delisting_source_id": "jpx-delisting-2406",
+      "delisting_locator": "上場廃止一覧 2406 アルテ サロン ホールディングス の行",
+      "is_tse": true,
+      "market": "東証"
+    },
+    {
+      "episode_id": "2022-1171",
+      "code": "6916",
+      "name": "アイ・オー・データ機器",
+      "announcement_date": "2022-02-09",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2022-06-16",
+      "motives": [
+        {
+          "category": "restructuring",
+          "text": "パソコン周辺機器の供給から、特定の利用場面・ニーズに合わせたソリューション型商品へ転換する。販売チャネル整備や新分野育成に時間と投資が必要であり、短期の利益・還元要求との制約を緩和するため非公開化すると創業者・会社が説明。",
+          "source_id": "2022-1171-0",
+          "locator": "PDF pp6–7",
+          "quote": "ソリューション型商品",
+          "availability_phase": "formal_announcement_or_later",
+          "evidence_type": "party_stated_rationale"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "2022-1171-0",
+          "title": "ＭＢＯの実施及び応募の推奨に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/69160/140120220209584319.pdf",
+          "public_at": "2022-02-09",
+          "issuer": "株式会社アイ・オー・データ機器",
+          "locator": "PDF p1（公表日・MBO実施／応募推奨の表題と決議）；PDF pp6–7",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "target_opinion",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "target_opinion"
+        },
+        {
+          "source_id": "2022-1171-1",
+          "title": "株式会社ＡＨＣによる当社株式に対する公開買付けの結果並びに親会社及び主要株主である筆頭株主の異動に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/69160/140120220328511611.pdf",
+          "public_at": "2022-03-29",
+          "issuer": "株式会社アイ・オー・データ機器",
+          "locator": "PDF p5 公開買付けの成否・結果公告日",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "result_notice",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "result_notice"
+        },
+        {
+          "source_id": "jpx-delisting-6916",
+          "title": "東京証券取引所 上場廃止銘柄一覧 2022年",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-04.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "上場廃止一覧 6916 アイ・オー・データ機器 の行",
+          "accessed_at": "2026-10-18",
+          "docType": "exchange_delisting_roster",
+          "official": true,
+          "read_status": "roster_row_matched"
+        }
+      ],
+      "verification": {
+        "announcement": "verified_primary",
+        "mbo_classification": "verified_primary",
+        "motive": "verified_primary_public_rationale",
+        "outcome": "verified_primary",
+        "obstacles": "documented_items_only",
+        "delisting": "verified_exchange"
+      },
+      "cautions": [
+        "動機は公表時の当事者説明であり、真の内心・動機の因果効果を検証したものではない。",
+        "MBO公表後の資料で確認した理由・結果を、公表前の独立した予測シグナルとみなさない。",
+        "障害欄が空でも障害なしを意味しない。個別交渉・反対株主・訴訟等の全履歴は網羅していない。"
+      ],
+      "discovery": {
+        "year": 2022,
+        "start_date": "2022-02-10",
+        "url": "https://tobradar.com/tob/deals/2022-1171/",
+        "secondary_mbo_flag": true
+      },
+      "announcement_source_id": "2022-1171-0",
+      "announcement_locator": "PDF p1（公表日・MBO実施／応募推奨の表題と決議）",
+      "mbo_type": "management_buyout_going_private",
+      "transaction_method": "tender_offer_then_cashout",
+      "market_scope": "TSE",
+      "outcome_definition": "当該MBO取引の公開買付け成立。成立と非公開化完了日は別項目。",
+      "result_source_id": "2022-1171-1",
+      "result_locator": "PDF p5 公開買付けの成否・結果公告日",
+      "result_date": "2022-03-29",
+      "delisting_source_id": "jpx-delisting-6916",
+      "delisting_locator": "上場廃止一覧 6916 アイ・オー・データ機器 の行",
+      "is_tse": true,
+      "market": "東証"
+    },
+    {
+      "episode_id": "2022-1192",
+      "code": "2178",
+      "name": "トライステージ",
+      "announcement_date": "2022-04-12",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2022-08-22",
+      "motives": [
+        {
+          "category": "sponsor_resources",
+          "text": "テレビとWebを横断するダイレクトマーケティング支援を拡充し、顧客深耕、Web、DM事業の再建、新サービス・M&Aを進める。自社の経営資源だけでは十分でなく、Bainの人材・経験・知見を使い、短期の利益・CF低下を許容する体制を選ぶとの説明。",
+          "source_id": "2022-1192-0",
+          "locator": "PDF p12",
+          "availability_phase": "formal_announcement_or_later",
+          "evidence_type": "party_stated_rationale"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "2022-1192-0",
+          "title": "ＭＢＯの実施及び応募の推奨に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/21780/140120220412520513.pdf",
+          "public_at": "2022-04-12",
+          "issuer": "株式会社トライステージ",
+          "locator": "PDF p1（公表日・MBO実施／応募推奨の表題と決議）；PDF p12",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "target_opinion",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "target_opinion"
+        },
+        {
+          "source_id": "2022-1192-1",
+          "title": "公開買付報告書",
+          "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100O8BP.pdf",
+          "public_at": "2022-06-13",
+          "issuer": "株式会社BCJ-60",
+          "locator": "PDF p2 公開買付けの成否・結果公告日",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "result_notice",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "result_notice"
+        },
+        {
+          "source_id": "jpx-delisting-2178",
+          "title": "東京証券取引所 上場廃止銘柄一覧 2022年",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-04.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "上場廃止一覧 2178 トライステージ の行",
+          "accessed_at": "2026-10-18",
+          "docType": "exchange_delisting_roster",
+          "official": true,
+          "read_status": "roster_row_matched"
+        }
+      ],
+      "verification": {
+        "announcement": "verified_primary",
+        "mbo_classification": "verified_primary",
+        "motive": "verified_primary_public_rationale",
+        "outcome": "verified_primary",
+        "obstacles": "documented_items_only",
+        "delisting": "verified_exchange"
+      },
+      "cautions": [
+        "動機は公表時の当事者説明であり、真の内心・動機の因果効果を検証したものではない。",
+        "MBO公表後の資料で確認した理由・結果を、公表前の独立した予測シグナルとみなさない。",
+        "障害欄が空でも障害なしを意味しない。個別交渉・反対株主・訴訟等の全履歴は網羅していない。"
+      ],
+      "discovery": {
+        "year": 2022,
+        "start_date": "2022-04-13",
+        "url": "https://tobradar.com/tob/deals/2022-1192/",
+        "secondary_mbo_flag": true
+      },
+      "announcement_source_id": "2022-1192-0",
+      "announcement_locator": "PDF p1（公表日・MBO実施／応募推奨の表題と決議）",
+      "mbo_type": "management_buyout_going_private",
+      "transaction_method": "tender_offer_then_cashout",
+      "market_scope": "TSE",
+      "outcome_definition": "当該MBO取引の公開買付け成立。成立と非公開化完了日は別項目。",
+      "result_source_id": "2022-1192-1",
+      "result_locator": "PDF p2 公開買付けの成否・結果公告日",
+      "result_date": "2022-06-11",
+      "delisting_source_id": "jpx-delisting-2178",
+      "delisting_locator": "上場廃止一覧 2178 トライステージ の行",
+      "is_tse": true,
+      "market": "東証"
+    },
+    {
+      "episode_id": "2022-1194",
+      "code": "7945",
+      "name": "コマニー",
+      "announcement_date": "2022-05-10",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2022-07-28",
+      "motives": [
+        {
+          "category": "restructuring",
+          "text": "パーティションの製造販売から「間づくり」へ広げ、オフィス・工場・学校・医療等の空間需要に合わせ人員配置・採用育成・設備へ投資する。短期利益悪化の可能性に加え、長年の資金調達実績と既得の信用に対し上場維持費が負担になっていると説明。",
+          "source_id": "2022-1194-0",
+          "locator": "PDF p9",
+          "quote": "間づくり",
+          "availability_phase": "formal_announcement_or_later",
+          "evidence_type": "party_stated_rationale"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "2022-1194-0",
+          "title": "意見表明報告書",
+          "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100O0OP.pdf",
+          "public_at": "2022-05-11",
+          "issuer": "コマニー株式会社",
+          "locator": "PDF p2（5/10決議・MBO該当性）；PDF p9",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "target_opinion",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "target_opinion"
+        },
+        {
+          "source_id": "2022-1194-1",
+          "title": "株式会社コマツコーサンによる当社株式に対する公開買付けの結果及び親会社の異動に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/79450/140120220620583017.pdf",
+          "public_at": "2022-06-22",
+          "issuer": "コマニー株式会社",
+          "locator": "PDF p6 公開買付けの成否・結果公告日",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "result_notice",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "result_notice"
+        },
+        {
+          "source_id": "jpx-delisting-7945",
+          "title": "東京証券取引所 上場廃止銘柄一覧 2022年",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-04.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "上場廃止一覧 7945 コマニー の行",
+          "accessed_at": "2026-10-18",
+          "docType": "exchange_delisting_roster",
+          "official": true,
+          "read_status": "roster_row_matched"
+        }
+      ],
+      "verification": {
+        "announcement": "verified_primary",
+        "mbo_classification": "verified_primary",
+        "motive": "verified_primary_public_rationale",
+        "outcome": "verified_primary",
+        "obstacles": "documented_items_only",
+        "delisting": "verified_exchange"
+      },
+      "cautions": [
+        "動機は公表時の当事者説明であり、真の内心・動機の因果効果を検証したものではない。",
+        "MBO公表後の資料で確認した理由・結果を、公表前の独立した予測シグナルとみなさない。",
+        "障害欄が空でも障害なしを意味しない。個別交渉・反対株主・訴訟等の全履歴は網羅していない。"
+      ],
+      "discovery": {
+        "year": 2022,
+        "start_date": "2022-05-11",
+        "url": "https://tobradar.com/tob/deals/2022-1194/",
+        "secondary_mbo_flag": true
+      },
+      "announcement_source_id": "2022-1194-0",
+      "announcement_locator": "PDF p2（5/10決議・MBO該当性）",
+      "mbo_type": "management_buyout_going_private",
+      "transaction_method": "tender_offer_then_cashout",
+      "market_scope": "TSE",
+      "outcome_definition": "当該MBO取引の公開買付け成立。成立と非公開化完了日は別項目。",
+      "result_source_id": "2022-1194-1",
+      "result_locator": "PDF p6 公開買付けの成否・結果公告日",
+      "result_date": "2022-06-22",
+      "delisting_source_id": "jpx-delisting-7945",
+      "delisting_locator": "上場廃止一覧 7945 コマニー の行",
+      "is_tse": true,
+      "market": "東証"
+    },
+    {
+      "episode_id": "2022-1204",
+      "code": "3919",
+      "name": "パイプドHD",
+      "announcement_date": "2022-06-28",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2022-10-31",
+      "motives": [
+        {
+          "category": "growth_investment",
+          "text": "スパイラルをWebシステム開発から、IT人材不足を解消するローコード・プラットフォームへ発展させる。外部開発者も利用する仕組みを強化し、人数増加に比例しない売上拡大を狙う。前回からの投資方針とAPの経営資源活用を継続するとの説明。",
+          "source_id": "2022-1204-0",
+          "locator": "PDF pp14,29",
+          "quote": "ローコード・プラットフォーム運営会社",
+          "availability_phase": "formal_announcement_or_later",
+          "evidence_type": "party_stated_rationale"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "2022-1204-0",
+          "title": "ＭＢＯの実施及び応募の推奨に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/39190/140120220627589103.pdf",
+          "public_at": "2022-06-28",
+          "issuer": "パイプドHD",
+          "locator": "PDF p1（公表日・MBO実施／応募推奨の表題と決議）；PDF pp14,29",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "target_opinion",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "target_opinion"
+        },
+        {
+          "source_id": "2022-1204-1",
+          "title": "株式会社ミライサイテキグループによる当社株式に対する公開買付けの結果並びに親会社及び主要株主である筆頭株主の異動に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/39190/140120220810517163.pdf",
+          "public_at": "2022-08-10",
+          "issuer": "パイプドHD",
+          "locator": "PDF p7 公開買付けの成否・結果公告日",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "result_notice",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "result_notice"
+        },
+        {
+          "source_id": "jpx-delisting-3919",
+          "title": "東京証券取引所 上場廃止銘柄一覧 2022年",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-04.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "上場廃止一覧 3919 パイプドＨＤ の行",
+          "accessed_at": "2026-10-18",
+          "docType": "exchange_delisting_roster",
+          "official": true,
+          "read_status": "roster_row_matched"
+        }
+      ],
+      "verification": {
+        "announcement": "verified_primary",
+        "mbo_classification": "verified_primary",
+        "motive": "verified_primary_public_rationale",
+        "outcome": "verified_primary",
+        "obstacles": "documented_items_only",
+        "delisting": "verified_exchange"
+      },
+      "cautions": [
+        "動機は公表時の当事者説明であり、真の内心・動機の因果効果を検証したものではない。",
+        "MBO公表後の資料で確認した理由・結果を、公表前の独立した予測シグナルとみなさない。",
+        "障害欄が空でも障害なしを意味しない。個別交渉・反対株主・訴訟等の全履歴は網羅していない。"
+      ],
+      "discovery": {
+        "year": 2022,
+        "start_date": "2022-06-29",
+        "url": "https://tobradar.com/tob/deals/2022-1204/",
+        "secondary_mbo_flag": true
+      },
+      "announcement_source_id": "2022-1204-0",
+      "announcement_locator": "PDF p1（公表日・MBO実施／応募推奨の表題と決議）",
+      "mbo_type": "management_buyout_going_private",
+      "transaction_method": "tender_offer_then_cashout",
+      "market_scope": "TSE",
+      "outcome_definition": "当該MBO取引の公開買付け成立。成立と非公開化完了日は別項目。",
+      "result_source_id": "2022-1204-1",
+      "result_locator": "PDF p7 公開買付けの成否・結果公告日",
+      "result_date": "2022-08-10",
+      "followup_note": "2021年初回不成立後の再試行。今回も2,800円。株主間・応募合意や買付下限の構造は初回と異なる。",
+      "delisting_source_id": "jpx-delisting-3919",
+      "delisting_locator": "上場廃止一覧 3919 パイプドＨＤ の行",
+      "is_tse": true,
+      "market": "東証"
+    },
+    {
+      "episode_id": "2022-1209",
+      "code": "8909",
+      "name": "シノケングループ",
+      "announcement_date": "2022-08-10",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2022-12-22",
+      "motives": [
+        {
+          "category": "restructuring",
+          "text": "不動産販売中心のフロー型から、不動産サービス・ストック収益への移行を進める。DX・IoT、プラットフォーム、ライフケアM&A、海外・REIT等に人材と資金を投じる必要があり、Integralの支援を受けて事業構成を転換すると説明。",
+          "source_id": "2022-1209-0",
+          "locator": "PDF pp8–9",
+          "availability_phase": "formal_announcement_or_later",
+          "evidence_type": "party_stated_rationale"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "2022-1209-0",
+          "title": "ＭＢＯの実施及び応募の推奨に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/89090/140120220810518240.pdf",
+          "public_at": "2022-08-10",
+          "issuer": "シノケングループ",
+          "locator": "PDF p1（公表日・MBO実施／応募推奨の表題と決議）；PDF pp8–9",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "target_opinion",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "target_opinion"
+        },
+        {
+          "source_id": "2022-1209-1",
+          "title": "ＳＫライフサポート株式会社による当社株券等に対する公開買付けの結果並びに親会社及び主要株主である筆頭株主の異動に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/89090/140120220927536569.pdf",
+          "public_at": "2022-09-27",
+          "issuer": "シノケングループ",
+          "locator": "PDF p6 公開買付けの成否・結果公告日",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "result_notice",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "result_notice"
+        },
+        {
+          "source_id": "jpx-delisting-8909",
+          "title": "東京証券取引所 上場廃止銘柄一覧 2022年",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-04.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "上場廃止一覧 8909 シノケングループ の行",
+          "accessed_at": "2026-10-18",
+          "docType": "exchange_delisting_roster",
+          "official": true,
+          "read_status": "roster_row_matched"
+        }
+      ],
+      "verification": {
+        "announcement": "verified_primary",
+        "mbo_classification": "verified_primary",
+        "motive": "verified_primary_public_rationale",
+        "outcome": "verified_primary",
+        "obstacles": "documented_items_only",
+        "delisting": "verified_exchange"
+      },
+      "cautions": [
+        "動機は公表時の当事者説明であり、真の内心・動機の因果効果を検証したものではない。",
+        "MBO公表後の資料で確認した理由・結果を、公表前の独立した予測シグナルとみなさない。",
+        "障害欄が空でも障害なしを意味しない。個別交渉・反対株主・訴訟等の全履歴は網羅していない。"
+      ],
+      "discovery": {
+        "year": 2022,
+        "start_date": "2022-08-12",
+        "url": "https://tobradar.com/tob/deals/2022-1209/",
+        "secondary_mbo_flag": true
+      },
+      "announcement_source_id": "2022-1209-0",
+      "announcement_locator": "PDF p1（公表日・MBO実施／応募推奨の表題と決議）",
+      "mbo_type": "management_buyout_going_private",
+      "transaction_method": "tender_offer_then_cashout",
+      "market_scope": "TSE",
+      "outcome_definition": "当該MBO取引の公開買付け成立。成立と非公開化完了日は別項目。",
+      "result_source_id": "2022-1209-1",
+      "result_locator": "PDF p6 公開買付けの成否・結果公告日",
+      "result_date": "2022-09-27",
+      "delisting_source_id": "jpx-delisting-8909",
+      "delisting_locator": "上場廃止一覧 8909 シノケングループ の行",
+      "is_tse": true,
+      "market": "東証"
+    },
+    {
+      "episode_id": "2022-1213",
+      "code": "4653",
+      "name": "ダイオーズ",
+      "announcement_date": "2022-09-01",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2023-01-20",
+      "motives": [
+        {
+          "category": "restructuring",
+          "text": "米国子会社の固定資産会計・内部統制の不備を背景に、海外を含むガバナンスと管理体制を急ぎ立て直す。Integralの人材・ネットワーク・i-Engineの支援で、経営人材、IT、米国の地域集中戦略等を強化し、短期の業績影響を許容するとの説明。",
+          "source_id": "2022-1213-0",
+          "locator": "PDF pp12,14",
+          "availability_phase": "formal_announcement_or_later",
+          "evidence_type": "party_stated_rationale"
+        },
+        {
+          "category": "succession",
+          "text": "経営陣は将来の事業承継の方法として非公開化を検討し、2022年5月からIntegralと協議したとも説明。内部管理・事業改革と併存する論点であり、創業家持分だけからの推定ではない。",
+          "source_id": "2022-1213-0",
+          "locator": "PDF p14",
+          "availability_phase": "formal_announcement_or_later",
+          "evidence_type": "party_stated_rationale"
+        }
+      ],
+      "obstacles": [
+        {
+          "category": "approval",
+          "text": "四半期報告書の提出期限を満たせない場合の上場廃止・TOB撤回可能性と、その場合の再TOB方針を公表時点で説明。実際の不成立を示すものではなく、本件TOBは後に成立した。",
+          "source_id": "2022-1213-0",
+          "locator": "PDF p3",
+          "evidence_role": "disclosed_conditional_risk"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "2022-1213-0",
+          "title": "MBOの実施及び応募の推奨に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/46530/140120220901527541.pdf",
+          "public_at": "2022-09-01",
+          "issuer": "株式会社ダイオーズ",
+          "locator": "PDF p1（公表日・MBO実施／応募推奨の表題と決議）；PDF pp12,14；PDF p14；PDF p3",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "target_opinion",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "target_opinion"
+        },
+        {
+          "source_id": "2022-1213-1",
+          "title": "株式会社ボイジャーによる当社株式に対する公開買付けの結果並びに親会社、親会社以外の支配株主及び主要株主である筆頭株主の異動に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/46530/140120221018546222.pdf",
+          "public_at": "2022-10-19",
+          "issuer": "株式会社ダイオーズ",
+          "locator": "PDF p7 公開買付けの成否・結果公告日",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "result_notice",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "result_notice"
+        },
+        {
+          "source_id": "jpx-delisting-4653",
+          "title": "東京証券取引所 上場廃止銘柄一覧 2023年",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-03.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "上場廃止一覧 4653 ダイオーズ の行",
+          "accessed_at": "2026-10-18",
+          "docType": "exchange_delisting_roster",
+          "official": true,
+          "read_status": "roster_row_matched"
+        }
+      ],
+      "verification": {
+        "announcement": "verified_primary",
+        "mbo_classification": "verified_primary",
+        "motive": "verified_primary_public_rationale",
+        "outcome": "verified_primary",
+        "obstacles": "documented_items_only",
+        "delisting": "verified_exchange"
+      },
+      "cautions": [
+        "動機は公表時の当事者説明であり、真の内心・動機の因果効果を検証したものではない。",
+        "MBO公表後の資料で確認した理由・結果を、公表前の独立した予測シグナルとみなさない。"
+      ],
+      "discovery": {
+        "year": 2022,
+        "start_date": "2022-09-02",
+        "url": "https://tobradar.com/tob/deals/2022-1213/",
+        "secondary_mbo_flag": true
+      },
+      "announcement_source_id": "2022-1213-0",
+      "announcement_locator": "PDF p1（公表日・MBO実施／応募推奨の表題と決議）",
+      "mbo_type": "management_buyout_going_private",
+      "transaction_method": "tender_offer_then_cashout",
+      "market_scope": "TSE",
+      "outcome_definition": "当該MBO取引の公開買付け成立。成立と非公開化完了日は別項目。",
+      "result_source_id": "2022-1213-1",
+      "result_locator": "PDF p7 公開買付けの成否・結果公告日",
+      "result_date": "2022-10-19",
+      "delisting_source_id": "jpx-delisting-4653",
+      "delisting_locator": "上場廃止一覧 4653 ダイオーズ の行",
+      "is_tse": true,
+      "market": "東証"
+    },
+    {
+      "episode_id": "2022-1214",
+      "code": "9964",
+      "name": "アイ・テック",
+      "announcement_date": "2022-09-07",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2023-01-25",
+      "motives": [
+        {
+          "category": "growth_investment",
+          "text": "鉄鋼流通に加え、生産ラインの新設とM&Aで加工・製造機能や専門知見を取り込む。設備投資・買収による短期利益やCFの悪化を株主に負担させず進めるため非公開化する。流通株式比率がスタンダード基準未達であることも別の背景として説明。",
+          "source_id": "2022-1214-0",
+          "locator": "PDF p7",
+          "availability_phase": "formal_announcement_or_later",
+          "evidence_type": "party_stated_rationale"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "2022-1214-0",
+          "title": "MBOの実施及び応募の推奨に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/99640/140120220906529332.pdf",
+          "public_at": "2022-09-07",
+          "issuer": "株式会社アイ・テック",
+          "locator": "PDF p1（公表日・MBO実施／応募推奨の表題と決議）；PDF p7",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "target_opinion",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "target_opinion"
+        },
+        {
+          "source_id": "2022-1214-1",
+          "title": "株式会社OEホールディングスによる当社株式に対する公開買付けの結果並びに親会社及びその他の関係会社の異動に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/99640/140120221025548604.pdf",
+          "public_at": "2022-10-25",
+          "issuer": "株式会社アイ・テック",
+          "locator": "PDF p5 公開買付けの成否・結果公告日",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "result_notice",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "result_notice"
+        },
+        {
+          "source_id": "jpx-delisting-9964",
+          "title": "東京証券取引所 上場廃止銘柄一覧 2023年",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-03.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "上場廃止一覧 9964 アイ・テック の行",
+          "accessed_at": "2026-10-18",
+          "docType": "exchange_delisting_roster",
+          "official": true,
+          "read_status": "roster_row_matched"
+        }
+      ],
+      "verification": {
+        "announcement": "verified_primary",
+        "mbo_classification": "verified_primary",
+        "motive": "verified_primary_public_rationale",
+        "outcome": "verified_primary",
+        "obstacles": "documented_items_only",
+        "delisting": "verified_exchange"
+      },
+      "cautions": [
+        "動機は公表時の当事者説明であり、真の内心・動機の因果効果を検証したものではない。",
+        "MBO公表後の資料で確認した理由・結果を、公表前の独立した予測シグナルとみなさない。",
+        "障害欄が空でも障害なしを意味しない。個別交渉・反対株主・訴訟等の全履歴は網羅していない。"
+      ],
+      "discovery": {
+        "year": 2022,
+        "start_date": "2022-09-08",
+        "url": "https://tobradar.com/tob/deals/2022-1214/",
+        "secondary_mbo_flag": true
+      },
+      "announcement_source_id": "2022-1214-0",
+      "announcement_locator": "PDF p1（公表日・MBO実施／応募推奨の表題と決議）",
+      "mbo_type": "management_buyout_going_private",
+      "transaction_method": "tender_offer_then_cashout",
+      "market_scope": "TSE",
+      "outcome_definition": "当該MBO取引の公開買付け成立。成立と非公開化完了日は別項目。",
+      "result_source_id": "2022-1214-1",
+      "result_locator": "PDF p5 公開買付けの成否・結果公告日",
+      "result_date": "2022-10-25",
+      "delisting_source_id": "jpx-delisting-9964",
+      "delisting_locator": "上場廃止一覧 9964 アイ・テック の行",
+      "is_tse": true,
+      "market": "東証"
+    },
+    {
+      "episode_id": "2022-1222",
+      "code": "9945",
+      "name": "プレナス",
+      "announcement_date": "2022-10-14",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2023-02-24",
+      "motives": [
+        {
+          "category": "restructuring",
+          "text": "出店・新業態の試行、運営・販促、FC制度改革と加盟店の投資、工場の増設による供給網効率化を進める。短期の利益・CFと株主還元への影響を懸念せず、加盟店・従業員・顧客も含めた配分を柔軟にするため非公開化すると説明。",
+          "source_id": "2022-1222-0",
+          "locator": "PDF pp9–10",
+          "availability_phase": "formal_announcement_or_later",
+          "evidence_type": "party_stated_rationale"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "2022-1222-0",
+          "title": "MBOの実施及び応募の推奨に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/99450/140120221014544853.pdf",
+          "public_at": "2022-10-14",
+          "issuer": "株式会社プレナス",
+          "locator": "PDF p1（公表日・MBO実施／応募推奨の表題と決議）；PDF pp9–10",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "target_opinion",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "target_opinion"
+        },
+        {
+          "source_id": "2022-1222-1",
+          "title": "合同会社塩井興産による当社株式等に対する公開買付けの結果及び親会社の異動に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/99450/140120221130572674.pdf",
+          "public_at": "2022-11-30",
+          "issuer": "株式会社プレナス",
+          "locator": "PDF p7 公開買付けの成否・結果公告日",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "result_notice",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "result_notice"
+        },
+        {
+          "source_id": "jpx-delisting-9945",
+          "title": "東京証券取引所 上場廃止銘柄一覧 2023年",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-03.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "上場廃止一覧 9945 プレナス の行",
+          "accessed_at": "2026-10-18",
+          "docType": "exchange_delisting_roster",
+          "official": true,
+          "read_status": "roster_row_matched"
+        }
+      ],
+      "verification": {
+        "announcement": "verified_primary",
+        "mbo_classification": "verified_primary",
+        "motive": "verified_primary_public_rationale",
+        "outcome": "verified_primary",
+        "obstacles": "documented_items_only",
+        "delisting": "verified_exchange"
+      },
+      "cautions": [
+        "動機は公表時の当事者説明であり、真の内心・動機の因果効果を検証したものではない。",
+        "MBO公表後の資料で確認した理由・結果を、公表前の独立した予測シグナルとみなさない。",
+        "障害欄が空でも障害なしを意味しない。個別交渉・反対株主・訴訟等の全履歴は網羅していない。"
+      ],
+      "discovery": {
+        "year": 2022,
+        "start_date": "2022-10-17",
+        "url": "https://tobradar.com/tob/deals/2022-1222/",
+        "secondary_mbo_flag": true
+      },
+      "announcement_source_id": "2022-1222-0",
+      "announcement_locator": "PDF p1（公表日・MBO実施／応募推奨の表題と決議）",
+      "mbo_type": "management_buyout_going_private",
+      "transaction_method": "tender_offer_then_cashout",
+      "market_scope": "TSE",
+      "outcome_definition": "当該MBO取引の公開買付け成立。成立と非公開化完了日は別項目。",
+      "result_source_id": "2022-1222-1",
+      "result_locator": "PDF p7 公開買付けの成否・結果公告日",
+      "result_date": "2022-11-30",
+      "delisting_source_id": "jpx-delisting-9945",
+      "delisting_locator": "上場廃止一覧 9945 プレナス の行",
+      "is_tse": true,
+      "market": "東証"
+    },
+    {
+      "episode_id": "2022-1227",
+      "code": "6303",
+      "name": "ササクラ",
+      "announcement_date": "2022-11-10",
+      "announcement_date_status": "verified",
+      "outcome_status": "succeeded",
+      "delisting_date": "2023-02-07",
+      "motives": [
+        {
+          "category": "restructuring",
+          "text": "受注から現金回収までのCCC短縮、システムと組織の効率化、販売チャネル拡充、研究開発に集中的に投資する。短期損益に縛られない所有・経営一体の体制を目指し、長年株式調達をしておらず上場の必要性が低下したとも説明。",
+          "source_id": "2022-1227-0",
+          "locator": "PDF p7",
+          "availability_phase": "formal_announcement_or_later",
+          "evidence_type": "party_stated_rationale"
+        }
+      ],
+      "obstacles": [],
+      "sources": [
+        {
+          "source_id": "2022-1227-0",
+          "title": "MBOの実施及び応募の推奨のお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/63030/140120221110562833.pdf",
+          "public_at": "2022-11-10",
+          "issuer": "株式会社ササクラ",
+          "locator": "PDF p1（公表日・MBO実施／応募推奨の表題と決議）；PDF p7",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "target_opinion",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "target_opinion"
+        },
+        {
+          "source_id": "2022-1227-1",
+          "title": "株式会社笹興による当社株式に係る株式売渡請求を行うことの決定、当該株式売渡請求に係る承認及び当社株式の上場廃止に関するお知らせ",
+          "url": "https://www2.jpx.co.jp/disc/63030/140120230110586763.pdf",
+          "public_at": "2023-01-10",
+          "issuer": "株式会社ササクラ",
+          "locator": "PDF p1（12/27結果公表・1/4決済後97.23%保有の確認）",
+          "accessed_at": "2026-10-18",
+          "discovery_document_type": "result_notice",
+          "read_status": "relevant_excerpt_read",
+          "official": true,
+          "docType": "result_notice"
+        },
+        {
+          "source_id": "jpx-delisting-6303",
+          "title": "東京証券取引所 上場廃止銘柄一覧 2023年",
+          "url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-03.html",
+          "public_at": null,
+          "issuer": "東京証券取引所",
+          "locator": "上場廃止一覧 6303 ササクラ の行",
+          "accessed_at": "2026-10-18",
+          "docType": "exchange_delisting_roster",
+          "official": true,
+          "read_status": "roster_row_matched"
+        }
+      ],
+      "verification": {
+        "announcement": "verified_primary",
+        "mbo_classification": "verified_primary",
+        "motive": "verified_primary_public_rationale",
+        "outcome": "verified_primary_later_confirmation",
+        "obstacles": "documented_items_only",
+        "delisting": "verified_exchange"
+      },
+      "cautions": [
+        "動機は公表時の当事者説明であり、真の内心・動機の因果効果を検証したものではない。",
+        "MBO公表後の資料で確認した理由・結果を、公表前の独立した予測シグナルとみなさない。",
+        "障害欄が空でも障害なしを意味しない。個別交渉・反対株主・訴訟等の全履歴は網羅していない。",
+        "結果原本そのものではなく、1/10の会社開示による12/27結果公表・決済後の後続確認を使用。"
+      ],
+      "discovery": {
+        "year": 2022,
+        "start_date": "2022-11-11",
+        "url": "https://tobradar.com/tob/deals/2022-1227/",
+        "secondary_mbo_flag": true
+      },
+      "announcement_source_id": "2022-1227-0",
+      "announcement_locator": "PDF p1（公表日・MBO実施／応募推奨の表題と決議）",
+      "mbo_type": "management_buyout_going_private",
+      "transaction_method": "tender_offer_then_cashout",
+      "market_scope": "TSE",
+      "outcome_definition": "当該MBO取引の公開買付け成立。成立と非公開化完了日は別項目。",
+      "result_source_id": "2022-1227-1",
+      "result_locator": "PDF p1（12/27結果公表・1/4決済後97.23%保有の確認）",
+      "result_date": "2022-12-27",
+      "delisting_source_id": "jpx-delisting-6303",
+      "delisting_locator": "上場廃止一覧 6303 ササクラ の行",
+      "is_tse": true,
+      "market": "東証"
+    }
+  ],
+  "exclusions": [
+    {
+      "code": "9695",
+      "name": "鴨川グランドホテル",
+      "discovery_episode_id": "2022-1162",
+      "date": "2022-01-21",
+      "classification": "same_transaction_second_stage",
+      "linked_episode_id": "2021-1154",
+      "reason": "2021/12/10から予定済みの第2回TOB。新規MBOの件数には含めず、結果資料は2021 episodeへ統合。",
+      "source_url": "https://www2.jpx.co.jp/disc/96950/140120220121570976.pdf",
+      "locator": "PDF p1–2"
+    },
+    {
+      "code": "3751",
+      "name": "日本アジアグループ",
+      "date": "2021",
+      "classification": "not_new_management_buyout",
+      "reason": "2020年に初回MBO公表した案件の不成立と、後続の別買付者による取引を2021年新規MBOへ誤算入しない。期間外初回MBOは親台帳の補助事例で扱う。",
+      "verification": "parent_cross_case_review"
+    }
+  ],
+  "coverage": {
+    "episodes": 31,
+    "distinct_companies": 29,
+    "by_formal_announcement_year": {
+      "2021": 19,
+      "2022": 12
+    },
+    "by_outcome": {
+      "succeeded": 27,
+      "failed": 4
+    },
+    "announcement_verified": 31,
+    "motive_verified": 31,
+    "outcome_verified": 31,
+    "source_count": 73
+  },
+  "coverage_notes": [
+    "発見用無料TOB名簿（2021・2022各年）にMBOフラグのある32行から開始し、一次本文で該当性・公表日・動機・結果を確認。鴨川の第2回TOBを同一取引へ統合した31 episode。",
+    "内訳は2021年19 episode、2022年12 episode（29社）。東証は17/11、名証単独は名古屋木材・大成の2件/ATグループの1件。東証公表集計17/11と照合。",
+    "東証・名証の上場廃止／整理・監理履歴も照合。2021–22の本台帳にはTOBなし非公開化MBOを追加発見していない。件数整合は網羅性の補助確認であり、全開示を全文機械探索した保証ではない。",
+    "上場廃止一覧だけでは不成立を拾えないため、2021年のサカイ初回・光陽社・パイプド初回・片倉を一次結果と東証の不成立事例表で確認。2022年の不成立追加は東証集計の2021–23比較では示されていない。",
+    "公表日と公開買付開始日・EDINET提出日を分離。結果公告日も提出日と異なる光陽社6/12（提出6/14）、トライステージ6/11（提出6/13）、鴨川第1回1/15（提出1/17）に注意。",
+    "公表理由の抽出が目的。非MBO企業との比較、頻度の推定、重み最適化、予測精度の検証は行っていない。一般的な定型文の出現を独立した予測因子として扱わない。",
+    "株価・決算・予想の更新は行わず、取得済みの歴史資料を2026/10/18に確認した保存版。",
+    "障害欄は一次資料で実際に確認したもののみ。不成立の形式的原因（応募下限未達）と、価格等の背景論点を区別。空欄を障害なしと解釈しない。"
+  ]
+}

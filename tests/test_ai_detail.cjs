@@ -52,10 +52,11 @@ function fixture() {
   const hint = new Element('span');
   hint.textContent = '需要側から、設備・部品・製造・材料へ';
   const events = new Element('document');
+  const findId = (element, id) => element.id === id ? element : element.children.map(child => findId(child, id)).find(Boolean);
   const doc = {
     body: new Element('body'), head, readyState: 'complete',
     createElement: tag => new Element(tag),
-    getElementById: id => ids.get(id) || panel.children.find(element => element.id === id),
+    getElementById: id => ids.get(id) || findId(panel, id) || findId(head, id),
     querySelectorAll: () => repeated,
     querySelector: selector => selector === '.chain-picker-head span' ? hint : head.children.find(element => 'aiDetailStyle' in element.dataset) || null,
     addEventListener: (...args) => events.addEventListener(...args),
@@ -64,13 +65,13 @@ function fixture() {
   return {doc, ids, picker, controls, repeated, hint, events};
 }
 
-test('detail routes select distinct existing valuation panels with their original controls', async () => {
+test('detail routes select existing panels or a dedicated EPS trend without replacing controls', async () => {
   const {AI_DETAIL_SECTIONS, applyAiDetail} = await helpers();
   const {doc, ids, picker, controls, repeated} = fixture();
   const onchange = controls.onchange, values = structuredClone(controls.value);
-  assert.deepEqual(Object.values(AI_DETAIL_SECTIONS).map(section => section.blockId), ['val-decomp', 'val-pe', 'val-eps']);
+  assert.deepEqual(Object.values(AI_DETAIL_SECTIONS).map(section => section.blockId), ['val-decomp', 'val-pe', 'ai-eps-trend', 'val-eps']);
   for (const [key, metadata] of Object.entries(AI_DETAIL_SECTIONS)) {
-    assert.match(source, new RegExp(`id="${metadata.blockId}"`));
+    if (key !== 'eps') assert.match(source, new RegExp(`id="${metadata.blockId}"`));
     assert.equal(applyAiDetail(doc, key), true);
     assert.equal(doc.body.dataset.aiDetail, key);
     assert.equal(ids.get('panel-chart').hidden, false);
@@ -88,6 +89,33 @@ test('detail routes select distinct existing valuation panels with their origina
   assert.match(source, /class="fund-controls"/);
   assert.match(source, /id="fund-choices"/);
   assert.match(source, /id="fund-presets"/);
+});
+
+test('EPS trend has one nested host and stays separate from PER history and earnings forecasts', async () => {
+  const {applyAiDetail} = await helpers();
+  const {doc, ids, controls} = fixture();
+  const history = new Element('section');
+  history.id = 'ai-actual-history';
+  ids.get('panel-chart').append(history);
+  const originalControls = controls.onchange, originalValues = structuredClone(controls.value);
+  assert.equal(applyAiDetail(doc, 'eps'), true);
+  const trend = doc.getElementById('ai-eps-trend'), fund = ids.get('subpanel-fund');
+  assert.equal(fund.children.at(-1), trend, 'new trend belongs to the existing fundamental panel');
+  assert.equal(trend.attributes['aria-label'], '直近12か月の実績EPSの推移');
+  assert.equal(trend.hidden, false);
+  assert.equal(history.hidden, true, 'PER-only supplement stays hidden in EPS');
+  assert.ok(['val-now', 'val-decomp', 'val-pe', 'val-eps'].every(id => ids.get(id).hidden));
+  for (const section of ['earnings', 'multiples', 'eps', 'drivers', 'eps']) {
+    applyAiDetail(doc, section);
+    assert.equal(trend.hidden, section !== 'eps');
+    assert.equal(history.hidden, section !== 'multiples');
+    assert.equal(ids.get('val-eps').hidden, section !== 'earnings');
+    assert.equal(ids.get('val-pe').hidden, section !== 'multiples');
+    assert.equal(doc.getElementById('ai-eps-trend'), trend, 'returning to EPS reuses its host');
+  }
+  assert.equal(fund.children.filter(element => element.id === 'ai-eps-trend').length, 1);
+  assert.equal(controls.onchange, originalControls);
+  assert.deepEqual(controls.value, originalValues);
 });
 
 test('unknown routes and incompatible source documents keep the original presentation', async () => {
@@ -133,6 +161,43 @@ test('iframe remounts replace listeners and load one self-hosted stylesheet', as
   assert.equal(stylesheet.listeners.get('load').size, 0);
   assert.equal(script.listeners.get('load').size, 0);
   assert.equal(doc.head.children.length, 1, 'cleanup removes only its script');
+});
+
+test('EPS mounts before stylesheet readiness and later style loads only resize the active route', async () => {
+  const {mountAiDetail} = await helpers();
+  const {doc, ids} = fixture();
+  const frame = new Element('iframe');
+  frame.contentDocument = doc;
+  frame.contentWindow = {
+    requestAnimationFrame: fn => { fn(); return 1; }, cancelAnimationFrame: () => {},
+    Event: class { constructor(type) { this.type = type; } }, dispatchEvent: () => {},
+  };
+  const oldCleanup = mountAiDetail(frame, 'eps');
+  const trend = doc.getElementById('ai-eps-trend');
+  const stylesheet = doc.head.children.find(element => element.tag === 'link');
+  // The fixture deliberately has no saved valuation JSON. Even this error view
+  // must mount synchronously, before iframe sizing probes and stylesheet load.
+  assert.match(trend.innerHTML, /role="alert"/);
+  assert.equal(trend.hidden, false);
+  assert.equal(stylesheet.sheet, undefined, 'content already exists before CSS readiness');
+  let content = trend.innerHTML, writes = 0;
+  Object.defineProperty(trend, 'innerHTML', {
+    get: () => content,
+    set: value => { content = value; writes++; },
+  });
+  stylesheet.fire('load');
+  assert.equal(writes, 0, 'CSS load does not remount EPS content');
+  const cleanup = mountAiDetail(frame, 'earnings');
+  stylesheet.fire('load');
+  assert.equal(writes, 0, 'an old stylesheet load cannot remount the disposed EPS route');
+  assert.match(trend.innerHTML, /role="alert"/);
+  assert.equal(trend.hidden, true);
+  assert.equal(ids.get('val-eps').hidden, false);
+  assert.equal(doc.body.dataset.aiDetail, 'earnings');
+  oldCleanup();
+  assert.equal(frame.listeners.get('load').size, 1);
+  cleanup();
+  assert.equal(frame.listeners.get('load').size, 0);
 });
 
 test('multi-chain script readiness owns its hint, resize and cleanup without evaluating source strings', async () => {
