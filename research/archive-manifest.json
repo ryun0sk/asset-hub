@@ -94,10 +94,6 @@
         "bytes": 1937,
         "sha256": "d0663d282a98a255095728e8b5fcc19efc33b02cbfee7bbb1caabb550c1df6d0"
       },
-      "__pycache__/build_history.cpython-314.pyc": {
-        "bytes": 15744,
-        "sha256": "cbedc9fc7e1f710b5acc0a8eccf14a13bdcfe4df6f3730f7f113bb565543cb56"
-      },
       "build_history.py": {
         "bytes": 11657,
         "sha256": "2a3086e38c12bb7dfe72834e9a1d9d1543be1fa9fc4bd45d5798d0ca15d00d21"
