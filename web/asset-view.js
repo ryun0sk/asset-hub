@@ -57,7 +57,7 @@ function seriesChart({title, entries, values, rows}) {
   const data = rows.map((row, index) => ({...row, ...Object.fromEntries(entries.map(entry => [entry.id, values[entry.key]?.[index] ?? null])), total: entries.reduce((sum, entry) => sum + (values[entry.key]?.[index] ?? 0), 0)}));
   const series = entries.map(entry => ({key: entry.id, label: entry.label, kind: 'line', tone: entry.tone}));
   series.push({key: 'total', label: '選択項目の合計', kind: 'line', tone: 'primary', dashed: true, marker: 'ring'});
-  return UiCharts.render({title, unit: 'man', labels: 'all', labelSize: 'compact', rows: data, series});
+  return UiCharts.render({title, unit: 'man', height: 442, labels: 'all', labelSize: 'compact', rows: data, series});
 }
 
 function moversPanel(state, catalog, summary) {
