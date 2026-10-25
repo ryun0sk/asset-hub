@@ -1,0 +1,2674 @@
+{
+  "as_of": "2026-10-18",
+  "baseline_run_id": "run-2026-10-18-2f4170da4bf7",
+  "baseline_snapshot_unchanged": true,
+  "companies": [
+    {
+      "assessment": {
+        "axes": [
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "management_alignment",
+                "label": "経営陣の関与・実質所有関係",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "ownership_path",
+                "label": "株式取得・再出資の経路",
+                "state": "unknown"
+              }
+            ],
+            "id": "ownership",
+            "label": "所有・経営構造",
+            "note": "0/2論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "transformation",
+                "label": "事業転換・長期投資の必要性",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "succession",
+                "label": "公表された承継・経営体制の検討",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "listing_tradeoff",
+                "label": "非公開化の利点に関する公表説明",
+                "state": "unknown"
+              }
+            ],
+            "id": "motive",
+            "label": "非公開化を考える動機",
+            "note": "0/3論点を確認。背景論点の確認はMBO検討意思の確認とは別。未確認を否定しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "funding_capacity",
+                "label": "買収規模に対する資金・返済余力",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "funding_commitment",
+                "label": "資金提供・再出資の公表された合意",
+                "state": "unknown"
+              }
+            ],
+            "id": "execution",
+            "label": "買収の実行可能性",
+            "note": "0/2論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "shareholder_resistance",
+                "label": "主要株主との条件不一致・反対",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "funding_gap",
+                "label": "資金調達の不足・不成立",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "operating_uncertainty",
+                "label": "投資負担・事業範囲・資金創出の不確実性",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "listing_benefits",
+                "label": "会社が重視する上場継続の利点",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "competing_policy",
+                "label": "競合する資本政策・契約制約",
+                "state": "unknown"
+              }
+            ],
+            "id": "obstacles",
+            "label": "障害・上場継続の利点",
+            "note": "0/5論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          }
+        ],
+        "cautions": [
+          "過去の選択事例を用いた論点整理。予測精度・発生確率・配点の有効性は未検証。",
+          "単年CF、現金余剰、保有比率20%による旧4点は、MBO有力度の順位に使用しない。",
+          "公表後の説明・分析者の仮説・独自資金試算を、事前に確認できた会社の意向に置き換えない。"
+        ],
+        "financial_context": [
+          "確認できた経営陣・創業家持分 7.66%。実質所有の全体像・応募合意とは別。",
+          "営業CF−設備投資 2,914,450,000円（単年）。継続的な返済余力・MBO動機を保証しない。"
+        ],
+        "information": {
+          "coverage_label": "論点の確認件数。MBO確率・適性の点数ではない。",
+          "hypothesis_count": 0,
+          "unresolved_count": 12,
+          "verified_count": 0
+        },
+        "validation_status": "hypothesis_not_calibrated",
+        "version": "mbo-evidence-1",
+        "workflow": {
+          "basis_record_ids": [],
+          "label": "詳細調査中",
+          "next_review_at": "2026-10-25",
+          "reason": "買収後の事業範囲と借入内訳、実質所有関係を確認。旧単体CFからMBO余力を断定しない。",
+          "reviewer": "Codex（保存原本照合・Astra設計レビュー）",
+          "state": "research",
+          "watch_trigger": "買収後の決算・借入内訳・資本政策"
+        }
+      },
+      "code": "6459",
+      "name": "だいわ"
+    },
+    {
+      "assessment": {
+        "axes": [
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "management_alignment",
+                "label": "経営陣の関与・実質所有関係",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "ownership_path",
+                "label": "株式取得・再出資の経路",
+                "state": "unknown"
+              }
+            ],
+            "id": "ownership",
+            "label": "所有・経営構造",
+            "note": "0/2論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "transformation",
+                "label": "事業転換・長期投資の必要性",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "succession",
+                "label": "公表された承継・経営体制の検討",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "listing_tradeoff",
+                "label": "非公開化の利点に関する公表説明",
+                "state": "unknown"
+              }
+            ],
+            "id": "motive",
+            "label": "非公開化を考える動機",
+            "note": "0/3論点を確認。背景論点の確認はMBO検討意思の確認とは別。未確認を否定しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "funding_capacity",
+                "label": "買収規模に対する資金・返済余力",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "funding_commitment",
+                "label": "資金提供・再出資の公表された合意",
+                "state": "unknown"
+              }
+            ],
+            "id": "execution",
+            "label": "買収の実行可能性",
+            "note": "0/2論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "shareholder_resistance",
+                "label": "主要株主との条件不一致・反対",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "funding_gap",
+                "label": "資金調達の不足・不成立",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "operating_uncertainty",
+                "label": "投資負担・事業範囲・資金創出の不確実性",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "listing_benefits",
+                "label": "会社が重視する上場継続の利点",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "competing_policy",
+                "label": "競合する資本政策・契約制約",
+                "state": "unknown"
+              }
+            ],
+            "id": "obstacles",
+            "label": "障害・上場継続の利点",
+            "note": "0/5論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          }
+        ],
+        "cautions": [
+          "過去の選択事例を用いた論点整理。予測精度・発生確率・配点の有効性は未検証。",
+          "単年CF、現金余剰、保有比率20%による旧4点は、MBO有力度の順位に使用しない。",
+          "公表後の説明・分析者の仮説・独自資金試算を、事前に確認できた会社の意向に置き換えない。"
+        ],
+        "financial_context": [
+          "営業CF−設備投資 -188,000,000円（単年）。継続的な返済余力・MBO動機を保証しない。",
+          "今回の独自LBO条件では成立価格を算出できない。他の調達方法の不存在を意味しない。"
+        ],
+        "information": {
+          "coverage_label": "論点の確認件数。MBO確率・適性の点数ではない。",
+          "hypothesis_count": 0,
+          "unresolved_count": 12,
+          "verified_count": 0
+        },
+        "validation_status": "hypothesis_not_calibrated",
+        "version": "mbo-evidence-1",
+        "workflow": {
+          "basis_record_ids": [],
+          "label": "詳細調査中",
+          "next_review_at": "2026-10-25",
+          "reason": "在庫と営業CFの変化、設備投資・経営陣の所有関係を確認。単年の負のCFでMBO不能とは判断しない。",
+          "reviewer": "Codex（保存原本照合・Astra設計レビュー）",
+          "state": "research",
+          "watch_trigger": "在庫・CF・所有関係の更新"
+        }
+      },
+      "code": "7937",
+      "name": "ツツミ"
+    },
+    {
+      "assessment": {
+        "axes": [
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "management_alignment",
+                "label": "経営陣の関与・実質所有関係",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "ownership_path",
+                "label": "株式取得・再出資の経路",
+                "state": "unknown"
+              }
+            ],
+            "id": "ownership",
+            "label": "所有・経営構造",
+            "note": "0/2論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "transformation",
+                "label": "事業転換・長期投資の必要性",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "succession",
+                "label": "公表された承継・経営体制の検討",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "listing_tradeoff",
+                "label": "非公開化の利点に関する公表説明",
+                "state": "unknown"
+              }
+            ],
+            "id": "motive",
+            "label": "非公開化を考える動機",
+            "note": "0/3論点を確認。背景論点の確認はMBO検討意思の確認とは別。未確認を否定しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "funding_capacity",
+                "label": "買収規模に対する資金・返済余力",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "funding_commitment",
+                "label": "資金提供・再出資の公表された合意",
+                "state": "unknown"
+              }
+            ],
+            "id": "execution",
+            "label": "買収の実行可能性",
+            "note": "0/2論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "shareholder_resistance",
+                "label": "主要株主との条件不一致・反対",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "funding_gap",
+                "label": "資金調達の不足・不成立",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "operating_uncertainty",
+                "label": "投資負担・事業範囲・資金創出の不確実性",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "listing_benefits",
+                "label": "会社が重視する上場継続の利点",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "competing_policy",
+                "label": "競合する資本政策・契約制約",
+                "state": "unknown"
+              }
+            ],
+            "id": "obstacles",
+            "label": "障害・上場継続の利点",
+            "note": "0/5論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          }
+        ],
+        "cautions": [
+          "過去の選択事例を用いた論点整理。予測精度・発生確率・配点の有効性は未検証。",
+          "単年CF、現金余剰、保有比率20%による旧4点は、MBO有力度の順位に使用しない。",
+          "公表後の説明・分析者の仮説・独自資金試算を、事前に確認できた会社の意向に置き換えない。"
+        ],
+        "financial_context": [
+          "確認できた経営陣・創業家持分 9.29%。実質所有の全体像・応募合意とは別。",
+          "営業CF−設備投資 9,196,000,000円（単年）。継続的な返済余力・MBO動機を保証しない。"
+        ],
+        "information": {
+          "coverage_label": "論点の確認件数。MBO確率・適性の点数ではない。",
+          "hypothesis_count": 0,
+          "unresolved_count": 12,
+          "verified_count": 0
+        },
+        "validation_status": "hypothesis_not_calibrated",
+        "version": "mbo-evidence-1",
+        "workflow": {
+          "basis_record_ids": [],
+          "label": "詳細調査中",
+          "next_review_at": "2026-10-25",
+          "reason": "同一BS日の非支配持分、投資必要額と実質所有を確認。現金の多さだけではMBO意向不明。",
+          "reviewer": "Codex（保存原本照合・Astra設計レビュー）",
+          "state": "research",
+          "watch_trigger": "財務内訳・大株主・投資方針"
+        }
+      },
+      "code": "4628",
+      "name": "エスケー化研"
+    },
+    {
+      "assessment": {
+        "axes": [
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "management_alignment",
+                "label": "経営陣の関与・実質所有関係",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "ownership_path",
+                "label": "株式取得・再出資の経路",
+                "state": "unknown"
+              }
+            ],
+            "id": "ownership",
+            "label": "所有・経営構造",
+            "note": "0/2論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "transformation",
+                "label": "事業転換・長期投資の必要性",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "succession",
+                "label": "公表された承継・経営体制の検討",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "listing_tradeoff",
+                "label": "非公開化の利点に関する公表説明",
+                "state": "unknown"
+              }
+            ],
+            "id": "motive",
+            "label": "非公開化を考える動機",
+            "note": "0/3論点を確認。背景論点の確認はMBO検討意思の確認とは別。未確認を否定しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "funding_capacity",
+                "label": "買収規模に対する資金・返済余力",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "funding_commitment",
+                "label": "資金提供・再出資の公表された合意",
+                "state": "unknown"
+              }
+            ],
+            "id": "execution",
+            "label": "買収の実行可能性",
+            "note": "0/2論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "shareholder_resistance",
+                "label": "主要株主との条件不一致・反対",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "funding_gap",
+                "label": "資金調達の不足・不成立",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "operating_uncertainty",
+                "label": "投資負担・事業範囲・資金創出の不確実性",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "listing_benefits",
+                "label": "会社が重視する上場継続の利点",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "competing_policy",
+                "label": "競合する資本政策・契約制約",
+                "state": "unknown"
+              }
+            ],
+            "id": "obstacles",
+            "label": "障害・上場継続の利点",
+            "note": "0/5論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          }
+        ],
+        "cautions": [
+          "過去の選択事例を用いた論点整理。予測精度・発生確率・配点の有効性は未検証。",
+          "単年CF、現金余剰、保有比率20%による旧4点は、MBO有力度の順位に使用しない。",
+          "公表後の説明・分析者の仮説・独自資金試算を、事前に確認できた会社の意向に置き換えない。"
+        ],
+        "financial_context": [],
+        "information": {
+          "coverage_label": "論点の確認件数。MBO確率・適性の点数ではない。",
+          "hypothesis_count": 0,
+          "unresolved_count": 12,
+          "verified_count": 0
+        },
+        "validation_status": "hypothesis_not_calibrated",
+        "version": "mbo-evidence-1",
+        "workflow": {
+          "label": "公表済イベント研究",
+          "next_review_at": null,
+          "reason": "公表済み・報道済み案件を未発見候補の評価から分離。",
+          "reviewer": null,
+          "state": "event",
+          "watch_trigger": null
+        }
+      },
+      "code": "7523",
+      "name": "アールビバン"
+    },
+    {
+      "assessment": {
+        "axes": [
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "management_alignment",
+                "label": "経営陣の関与・実質所有関係",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "ownership_path",
+                "label": "株式取得・再出資の経路",
+                "state": "unknown"
+              }
+            ],
+            "id": "ownership",
+            "label": "所有・経営構造",
+            "note": "0/2論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "transformation",
+                "label": "事業転換・長期投資の必要性",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "succession",
+                "label": "公表された承継・経営体制の検討",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "listing_tradeoff",
+                "label": "非公開化の利点に関する公表説明",
+                "state": "unknown"
+              }
+            ],
+            "id": "motive",
+            "label": "非公開化を考える動機",
+            "note": "0/3論点を確認。背景論点の確認はMBO検討意思の確認とは別。未確認を否定しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "funding_capacity",
+                "label": "買収規模に対する資金・返済余力",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "funding_commitment",
+                "label": "資金提供・再出資の公表された合意",
+                "state": "unknown"
+              }
+            ],
+            "id": "execution",
+            "label": "買収の実行可能性",
+            "note": "0/2論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "shareholder_resistance",
+                "label": "主要株主との条件不一致・反対",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "funding_gap",
+                "label": "資金調達の不足・不成立",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "operating_uncertainty",
+                "label": "投資負担・事業範囲・資金創出の不確実性",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "listing_benefits",
+                "label": "会社が重視する上場継続の利点",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "competing_policy",
+                "label": "競合する資本政策・契約制約",
+                "state": "unknown"
+              }
+            ],
+            "id": "obstacles",
+            "label": "障害・上場継続の利点",
+            "note": "0/5論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          }
+        ],
+        "cautions": [
+          "過去の選択事例を用いた論点整理。予測精度・発生確率・配点の有効性は未検証。",
+          "単年CF、現金余剰、保有比率20%による旧4点は、MBO有力度の順位に使用しない。",
+          "公表後の説明・分析者の仮説・独自資金試算を、事前に確認できた会社の意向に置き換えない。"
+        ],
+        "financial_context": [],
+        "information": {
+          "coverage_label": "論点の確認件数。MBO確率・適性の点数ではない。",
+          "hypothesis_count": 0,
+          "unresolved_count": 12,
+          "verified_count": 0
+        },
+        "validation_status": "hypothesis_not_calibrated",
+        "version": "mbo-evidence-1",
+        "workflow": {
+          "basis_record_ids": [],
+          "label": "調査待ち",
+          "next_review_at": "2026-10-25",
+          "reason": "財務・所有構造・動機・実行可能性の一次資料が未充足。旧優先度0は不適格ではなく未調査。",
+          "reviewer": "Codex（保存原本照合・Astra設計レビュー）",
+          "state": "awaiting",
+          "watch_trigger": "通期財務・大株主・事業方針の一次取得"
+        }
+      },
+      "code": "7516",
+      "name": "コーナン商事"
+    },
+    {
+      "assessment": {
+        "axes": [
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "management_alignment",
+                "label": "経営陣の関与・実質所有関係",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "ownership_path",
+                "label": "株式取得・再出資の経路",
+                "state": "unknown"
+              }
+            ],
+            "id": "ownership",
+            "label": "所有・経営構造",
+            "note": "0/2論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "transformation",
+                "label": "事業転換・長期投資の必要性",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "succession",
+                "label": "公表された承継・経営体制の検討",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "listing_tradeoff",
+                "label": "非公開化の利点に関する公表説明",
+                "state": "unknown"
+              }
+            ],
+            "id": "motive",
+            "label": "非公開化を考える動機",
+            "note": "0/3論点を確認。背景論点の確認はMBO検討意思の確認とは別。未確認を否定しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "funding_capacity",
+                "label": "買収規模に対する資金・返済余力",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "funding_commitment",
+                "label": "資金提供・再出資の公表された合意",
+                "state": "unknown"
+              }
+            ],
+            "id": "execution",
+            "label": "買収の実行可能性",
+            "note": "0/2論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "shareholder_resistance",
+                "label": "主要株主との条件不一致・反対",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "funding_gap",
+                "label": "資金調達の不足・不成立",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "operating_uncertainty",
+                "label": "投資負担・事業範囲・資金創出の不確実性",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "listing_benefits",
+                "label": "会社が重視する上場継続の利点",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "competing_policy",
+                "label": "競合する資本政策・契約制約",
+                "state": "unknown"
+              }
+            ],
+            "id": "obstacles",
+            "label": "障害・上場継続の利点",
+            "note": "0/5論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          }
+        ],
+        "cautions": [
+          "過去の選択事例を用いた論点整理。予測精度・発生確率・配点の有効性は未検証。",
+          "単年CF、現金余剰、保有比率20%による旧4点は、MBO有力度の順位に使用しない。",
+          "公表後の説明・分析者の仮説・独自資金試算を、事前に確認できた会社の意向に置き換えない。"
+        ],
+        "financial_context": [],
+        "information": {
+          "coverage_label": "論点の確認件数。MBO確率・適性の点数ではない。",
+          "hypothesis_count": 0,
+          "unresolved_count": 12,
+          "verified_count": 0
+        },
+        "validation_status": "hypothesis_not_calibrated",
+        "version": "mbo-evidence-1",
+        "workflow": {
+          "basis_record_ids": [],
+          "label": "調査待ち",
+          "next_review_at": "2026-10-25",
+          "reason": "財務・所有構造・動機・実行可能性の一次資料が未充足。旧優先度0は不適格ではなく未調査。",
+          "reviewer": "Codex（保存原本照合・Astra設計レビュー）",
+          "state": "awaiting",
+          "watch_trigger": "通期財務・大株主・事業方針の一次取得"
+        }
+      },
+      "code": "9885",
+      "name": "シャルレ"
+    },
+    {
+      "assessment": {
+        "axes": [
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "management_alignment",
+                "label": "経営陣の関与・実質所有関係",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "ownership_path",
+                "label": "株式取得・再出資の経路",
+                "state": "unknown"
+              }
+            ],
+            "id": "ownership",
+            "label": "所有・経営構造",
+            "note": "0/2論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "transformation",
+                "label": "事業転換・長期投資の必要性",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "succession",
+                "label": "公表された承継・経営体制の検討",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "listing_tradeoff",
+                "label": "非公開化の利点に関する公表説明",
+                "state": "unknown"
+              }
+            ],
+            "id": "motive",
+            "label": "非公開化を考える動機",
+            "note": "0/3論点を確認。背景論点の確認はMBO検討意思の確認とは別。未確認を否定しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "funding_capacity",
+                "label": "買収規模に対する資金・返済余力",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "funding_commitment",
+                "label": "資金提供・再出資の公表された合意",
+                "state": "unknown"
+              }
+            ],
+            "id": "execution",
+            "label": "買収の実行可能性",
+            "note": "0/2論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "shareholder_resistance",
+                "label": "主要株主との条件不一致・反対",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "funding_gap",
+                "label": "資金調達の不足・不成立",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "operating_uncertainty",
+                "label": "投資負担・事業範囲・資金創出の不確実性",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "listing_benefits",
+                "label": "会社が重視する上場継続の利点",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "competing_policy",
+                "label": "競合する資本政策・契約制約",
+                "state": "unknown"
+              }
+            ],
+            "id": "obstacles",
+            "label": "障害・上場継続の利点",
+            "note": "0/5論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          }
+        ],
+        "cautions": [
+          "過去の選択事例を用いた論点整理。予測精度・発生確率・配点の有効性は未検証。",
+          "単年CF、現金余剰、保有比率20%による旧4点は、MBO有力度の順位に使用しない。",
+          "公表後の説明・分析者の仮説・独自資金試算を、事前に確認できた会社の意向に置き換えない。"
+        ],
+        "financial_context": [],
+        "information": {
+          "coverage_label": "論点の確認件数。MBO確率・適性の点数ではない。",
+          "hypothesis_count": 0,
+          "unresolved_count": 12,
+          "verified_count": 0
+        },
+        "validation_status": "hypothesis_not_calibrated",
+        "version": "mbo-evidence-1",
+        "workflow": {
+          "basis_record_ids": [],
+          "label": "調査待ち",
+          "next_review_at": "2026-10-25",
+          "reason": "財務・所有構造・動機・実行可能性の一次資料が未充足。旧優先度0は不適格ではなく未調査。",
+          "reviewer": "Codex（保存原本照合・Astra設計レビュー）",
+          "state": "awaiting",
+          "watch_trigger": "通期財務・大株主・事業方針の一次取得"
+        }
+      },
+      "code": "7877",
+      "name": "永大化工"
+    },
+    {
+      "assessment": {
+        "axes": [
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "management_alignment",
+                "label": "経営陣の関与・実質所有関係",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "ownership_path",
+                "label": "株式取得・再出資の経路",
+                "state": "unknown"
+              }
+            ],
+            "id": "ownership",
+            "label": "所有・経営構造",
+            "note": "0/2論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "transformation",
+                "label": "事業転換・長期投資の必要性",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "succession",
+                "label": "公表された承継・経営体制の検討",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "listing_tradeoff",
+                "label": "非公開化の利点に関する公表説明",
+                "state": "unknown"
+              }
+            ],
+            "id": "motive",
+            "label": "非公開化を考える動機",
+            "note": "0/3論点を確認。背景論点の確認はMBO検討意思の確認とは別。未確認を否定しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "funding_capacity",
+                "label": "買収規模に対する資金・返済余力",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "funding_commitment",
+                "label": "資金提供・再出資の公表された合意",
+                "state": "unknown"
+              }
+            ],
+            "id": "execution",
+            "label": "買収の実行可能性",
+            "note": "0/2論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "shareholder_resistance",
+                "label": "主要株主との条件不一致・反対",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "funding_gap",
+                "label": "資金調達の不足・不成立",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "operating_uncertainty",
+                "label": "投資負担・事業範囲・資金創出の不確実性",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "listing_benefits",
+                "label": "会社が重視する上場継続の利点",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "competing_policy",
+                "label": "競合する資本政策・契約制約",
+                "state": "unknown"
+              }
+            ],
+            "id": "obstacles",
+            "label": "障害・上場継続の利点",
+            "note": "0/5論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          }
+        ],
+        "cautions": [
+          "過去の選択事例を用いた論点整理。予測精度・発生確率・配点の有効性は未検証。",
+          "単年CF、現金余剰、保有比率20%による旧4点は、MBO有力度の順位に使用しない。",
+          "公表後の説明・分析者の仮説・独自資金試算を、事前に確認できた会社の意向に置き換えない。"
+        ],
+        "financial_context": [],
+        "information": {
+          "coverage_label": "論点の確認件数。MBO確率・適性の点数ではない。",
+          "hypothesis_count": 0,
+          "unresolved_count": 12,
+          "verified_count": 0
+        },
+        "validation_status": "hypothesis_not_calibrated",
+        "version": "mbo-evidence-1",
+        "workflow": {
+          "basis_record_ids": [],
+          "label": "調査待ち",
+          "next_review_at": "2026-10-25",
+          "reason": "財務・所有構造・動機・実行可能性の一次資料が未充足。旧優先度0は不適格ではなく未調査。",
+          "reviewer": "Codex（保存原本照合・Astra設計レビュー）",
+          "state": "awaiting",
+          "watch_trigger": "通期財務・大株主・事業方針の一次取得"
+        }
+      },
+      "code": "8119",
+      "name": "三栄コーポレーション"
+    },
+    {
+      "assessment": {
+        "axes": [
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "management_alignment",
+                "label": "経営陣の関与・実質所有関係",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "ownership_path",
+                "label": "株式取得・再出資の経路",
+                "state": "unknown"
+              }
+            ],
+            "id": "ownership",
+            "label": "所有・経営構造",
+            "note": "0/2論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "transformation",
+                "label": "事業転換・長期投資の必要性",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "succession",
+                "label": "公表された承継・経営体制の検討",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "listing_tradeoff",
+                "label": "非公開化の利点に関する公表説明",
+                "state": "unknown"
+              }
+            ],
+            "id": "motive",
+            "label": "非公開化を考える動機",
+            "note": "0/3論点を確認。背景論点の確認はMBO検討意思の確認とは別。未確認を否定しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "funding_capacity",
+                "label": "買収規模に対する資金・返済余力",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "funding_commitment",
+                "label": "資金提供・再出資の公表された合意",
+                "state": "unknown"
+              }
+            ],
+            "id": "execution",
+            "label": "買収の実行可能性",
+            "note": "0/2論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "shareholder_resistance",
+                "label": "主要株主との条件不一致・反対",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "funding_gap",
+                "label": "資金調達の不足・不成立",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "operating_uncertainty",
+                "label": "投資負担・事業範囲・資金創出の不確実性",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "listing_benefits",
+                "label": "会社が重視する上場継続の利点",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "competing_policy",
+                "label": "競合する資本政策・契約制約",
+                "state": "unknown"
+              }
+            ],
+            "id": "obstacles",
+            "label": "障害・上場継続の利点",
+            "note": "0/5論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          }
+        ],
+        "cautions": [
+          "過去の選択事例を用いた論点整理。予測精度・発生確率・配点の有効性は未検証。",
+          "単年CF、現金余剰、保有比率20%による旧4点は、MBO有力度の順位に使用しない。",
+          "公表後の説明・分析者の仮説・独自資金試算を、事前に確認できた会社の意向に置き換えない。"
+        ],
+        "financial_context": [
+          "確認できた経営陣・創業家持分 9.45%。実質所有の全体像・応募合意とは別。",
+          "営業CF−設備投資 3,774,805,000円（単年）。継続的な返済余力・MBO動機を保証しない。",
+          "独自LBO条件で価格を試算可能。融資承認・スポンサーの参加意思は未確認。"
+        ],
+        "information": {
+          "coverage_label": "論点の確認件数。MBO確率・適性の点数ではない。",
+          "hypothesis_count": 0,
+          "unresolved_count": 12,
+          "verified_count": 0
+        },
+        "validation_status": "hypothesis_not_calibrated",
+        "version": "mbo-evidence-1",
+        "workflow": {
+          "basis_record_ids": [],
+          "label": "詳細調査中",
+          "next_review_at": "2026-10-25",
+          "reason": "株数・信託、設備投資と海外展開、実質所有を確認。LBO試算の成立は金融機関の合意とは別。",
+          "reviewer": "Codex（保存原本照合・Astra設計レビュー）",
+          "state": "research",
+          "watch_trigger": "設備投資・中間決算・大株主"
+        }
+      },
+      "code": "5982",
+      "name": "マルゼン"
+    },
+    {
+      "assessment": {
+        "axes": [
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "management_alignment",
+                "label": "経営陣の関与・実質所有関係",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "ownership_path",
+                "label": "株式取得・再出資の経路",
+                "state": "unknown"
+              }
+            ],
+            "id": "ownership",
+            "label": "所有・経営構造",
+            "note": "0/2論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "transformation",
+                "label": "事業転換・長期投資の必要性",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "succession",
+                "label": "公表された承継・経営体制の検討",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "listing_tradeoff",
+                "label": "非公開化の利点に関する公表説明",
+                "state": "unknown"
+              }
+            ],
+            "id": "motive",
+            "label": "非公開化を考える動機",
+            "note": "0/3論点を確認。背景論点の確認はMBO検討意思の確認とは別。未確認を否定しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "funding_capacity",
+                "label": "買収規模に対する資金・返済余力",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "funding_commitment",
+                "label": "資金提供・再出資の公表された合意",
+                "state": "unknown"
+              }
+            ],
+            "id": "execution",
+            "label": "買収の実行可能性",
+            "note": "0/2論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "shareholder_resistance",
+                "label": "主要株主との条件不一致・反対",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "funding_gap",
+                "label": "資金調達の不足・不成立",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "operating_uncertainty",
+                "label": "投資負担・事業範囲・資金創出の不確実性",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "listing_benefits",
+                "label": "会社が重視する上場継続の利点",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "competing_policy",
+                "label": "競合する資本政策・契約制約",
+                "state": "unknown"
+              }
+            ],
+            "id": "obstacles",
+            "label": "障害・上場継続の利点",
+            "note": "0/5論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          }
+        ],
+        "cautions": [
+          "過去の選択事例を用いた論点整理。予測精度・発生確率・配点の有効性は未検証。",
+          "単年CF、現金余剰、保有比率20%による旧4点は、MBO有力度の順位に使用しない。",
+          "公表後の説明・分析者の仮説・独自資金試算を、事前に確認できた会社の意向に置き換えない。"
+        ],
+        "financial_context": [],
+        "information": {
+          "coverage_label": "論点の確認件数。MBO確率・適性の点数ではない。",
+          "hypothesis_count": 0,
+          "unresolved_count": 12,
+          "verified_count": 0
+        },
+        "validation_status": "hypothesis_not_calibrated",
+        "version": "mbo-evidence-1",
+        "workflow": {
+          "basis_record_ids": [],
+          "label": "調査待ち",
+          "next_review_at": "2026-10-25",
+          "reason": "財務・所有構造・動機・実行可能性の一次資料が未充足。旧優先度0は不適格ではなく未調査。",
+          "reviewer": "Codex（保存原本照合・Astra設計レビュー）",
+          "state": "awaiting",
+          "watch_trigger": "通期財務・大株主・事業方針の一次取得"
+        }
+      },
+      "code": "6490",
+      "name": "PILLAR"
+    },
+    {
+      "assessment": {
+        "axes": [
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "management_alignment",
+                "label": "経営陣の関与・実質所有関係",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "ownership_path",
+                "label": "株式取得・再出資の経路",
+                "state": "unknown"
+              }
+            ],
+            "id": "ownership",
+            "label": "所有・経営構造",
+            "note": "0/2論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "transformation",
+                "label": "事業転換・長期投資の必要性",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "succession",
+                "label": "公表された承継・経営体制の検討",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "listing_tradeoff",
+                "label": "非公開化の利点に関する公表説明",
+                "state": "unknown"
+              }
+            ],
+            "id": "motive",
+            "label": "非公開化を考える動機",
+            "note": "0/3論点を確認。背景論点の確認はMBO検討意思の確認とは別。未確認を否定しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "funding_capacity",
+                "label": "買収規模に対する資金・返済余力",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "funding_commitment",
+                "label": "資金提供・再出資の公表された合意",
+                "state": "unknown"
+              }
+            ],
+            "id": "execution",
+            "label": "買収の実行可能性",
+            "note": "0/2論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "shareholder_resistance",
+                "label": "主要株主との条件不一致・反対",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "funding_gap",
+                "label": "資金調達の不足・不成立",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "operating_uncertainty",
+                "label": "投資負担・事業範囲・資金創出の不確実性",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "listing_benefits",
+                "label": "会社が重視する上場継続の利点",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "competing_policy",
+                "label": "競合する資本政策・契約制約",
+                "state": "unknown"
+              }
+            ],
+            "id": "obstacles",
+            "label": "障害・上場継続の利点",
+            "note": "0/5論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          }
+        ],
+        "cautions": [
+          "過去の選択事例を用いた論点整理。予測精度・発生確率・配点の有効性は未検証。",
+          "単年CF、現金余剰、保有比率20%による旧4点は、MBO有力度の順位に使用しない。",
+          "公表後の説明・分析者の仮説・独自資金試算を、事前に確認できた会社の意向に置き換えない。"
+        ],
+        "financial_context": [],
+        "information": {
+          "coverage_label": "論点の確認件数。MBO確率・適性の点数ではない。",
+          "hypothesis_count": 0,
+          "unresolved_count": 12,
+          "verified_count": 0
+        },
+        "validation_status": "hypothesis_not_calibrated",
+        "version": "mbo-evidence-1",
+        "workflow": {
+          "basis_record_ids": [],
+          "label": "調査待ち",
+          "next_review_at": "2026-10-25",
+          "reason": "財務・所有構造・動機・実行可能性の一次資料が未充足。旧優先度0は不適格ではなく未調査。",
+          "reviewer": "Codex（保存原本照合・Astra設計レビュー）",
+          "state": "awaiting",
+          "watch_trigger": "通期財務・大株主・事業方針の一次取得"
+        }
+      },
+      "code": "7840",
+      "name": "フランスベッドホールディングス"
+    },
+    {
+      "assessment": {
+        "axes": [
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "management_alignment",
+                "label": "経営陣の関与・実質所有関係",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "ownership_path",
+                "label": "株式取得・再出資の経路",
+                "state": "unknown"
+              }
+            ],
+            "id": "ownership",
+            "label": "所有・経営構造",
+            "note": "0/2論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "transformation",
+                "label": "事業転換・長期投資の必要性",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "succession",
+                "label": "公表された承継・経営体制の検討",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "listing_tradeoff",
+                "label": "非公開化の利点に関する公表説明",
+                "state": "unknown"
+              }
+            ],
+            "id": "motive",
+            "label": "非公開化を考える動機",
+            "note": "0/3論点を確認。背景論点の確認はMBO検討意思の確認とは別。未確認を否定しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "funding_capacity",
+                "label": "買収規模に対する資金・返済余力",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "funding_commitment",
+                "label": "資金提供・再出資の公表された合意",
+                "state": "unknown"
+              }
+            ],
+            "id": "execution",
+            "label": "買収の実行可能性",
+            "note": "0/2論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "shareholder_resistance",
+                "label": "主要株主との条件不一致・反対",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "funding_gap",
+                "label": "資金調達の不足・不成立",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "operating_uncertainty",
+                "label": "投資負担・事業範囲・資金創出の不確実性",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "listing_benefits",
+                "label": "会社が重視する上場継続の利点",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "competing_policy",
+                "label": "競合する資本政策・契約制約",
+                "state": "unknown"
+              }
+            ],
+            "id": "obstacles",
+            "label": "障害・上場継続の利点",
+            "note": "0/5論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          }
+        ],
+        "cautions": [
+          "過去の選択事例を用いた論点整理。予測精度・発生確率・配点の有効性は未検証。",
+          "単年CF、現金余剰、保有比率20%による旧4点は、MBO有力度の順位に使用しない。",
+          "公表後の説明・分析者の仮説・独自資金試算を、事前に確認できた会社の意向に置き換えない。"
+        ],
+        "financial_context": [],
+        "information": {
+          "coverage_label": "論点の確認件数。MBO確率・適性の点数ではない。",
+          "hypothesis_count": 0,
+          "unresolved_count": 12,
+          "verified_count": 0
+        },
+        "validation_status": "hypothesis_not_calibrated",
+        "version": "mbo-evidence-1",
+        "workflow": {
+          "basis_record_ids": [],
+          "label": "調査待ち",
+          "next_review_at": "2026-10-25",
+          "reason": "財務・所有構造・動機・実行可能性の一次資料が未充足。旧優先度0は不適格ではなく未調査。",
+          "reviewer": "Codex（保存原本照合・Astra設計レビュー）",
+          "state": "awaiting",
+          "watch_trigger": "通期財務・大株主・事業方針の一次取得"
+        }
+      },
+      "code": "8125",
+      "name": "ワキタ"
+    },
+    {
+      "assessment": {
+        "axes": [
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "management_alignment",
+                "label": "経営陣の関与・実質所有関係",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "ownership_path",
+                "label": "株式取得・再出資の経路",
+                "state": "unknown"
+              }
+            ],
+            "id": "ownership",
+            "label": "所有・経営構造",
+            "note": "0/2論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "transformation",
+                "label": "事業転換・長期投資の必要性",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "succession",
+                "label": "公表された承継・経営体制の検討",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "listing_tradeoff",
+                "label": "非公開化の利点に関する公表説明",
+                "state": "unknown"
+              }
+            ],
+            "id": "motive",
+            "label": "非公開化を考える動機",
+            "note": "0/3論点を確認。背景論点の確認はMBO検討意思の確認とは別。未確認を否定しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "funding_capacity",
+                "label": "買収規模に対する資金・返済余力",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "funding_commitment",
+                "label": "資金提供・再出資の公表された合意",
+                "state": "unknown"
+              }
+            ],
+            "id": "execution",
+            "label": "買収の実行可能性",
+            "note": "0/2論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "shareholder_resistance",
+                "label": "主要株主との条件不一致・反対",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "funding_gap",
+                "label": "資金調達の不足・不成立",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "operating_uncertainty",
+                "label": "投資負担・事業範囲・資金創出の不確実性",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "listing_benefits",
+                "label": "会社が重視する上場継続の利点",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "competing_policy",
+                "label": "競合する資本政策・契約制約",
+                "state": "unknown"
+              }
+            ],
+            "id": "obstacles",
+            "label": "障害・上場継続の利点",
+            "note": "0/5論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          }
+        ],
+        "cautions": [
+          "過去の選択事例を用いた論点整理。予測精度・発生確率・配点の有効性は未検証。",
+          "単年CF、現金余剰、保有比率20%による旧4点は、MBO有力度の順位に使用しない。",
+          "公表後の説明・分析者の仮説・独自資金試算を、事前に確認できた会社の意向に置き換えない。"
+        ],
+        "financial_context": [],
+        "information": {
+          "coverage_label": "論点の確認件数。MBO確率・適性の点数ではない。",
+          "hypothesis_count": 0,
+          "unresolved_count": 12,
+          "verified_count": 0
+        },
+        "validation_status": "hypothesis_not_calibrated",
+        "version": "mbo-evidence-1",
+        "workflow": {
+          "basis_record_ids": [],
+          "label": "調査待ち",
+          "next_review_at": "2026-10-25",
+          "reason": "財務・所有構造・動機・実行可能性の一次資料が未充足。旧優先度0は不適格ではなく未調査。",
+          "reviewer": "Codex（保存原本照合・Astra設計レビュー）",
+          "state": "awaiting",
+          "watch_trigger": "通期財務・大株主・事業方針の一次取得"
+        }
+      },
+      "code": "9902",
+      "name": "日伝"
+    },
+    {
+      "assessment": {
+        "axes": [
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "management_alignment",
+                "label": "経営陣の関与・実質所有関係",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "ownership_path",
+                "label": "株式取得・再出資の経路",
+                "state": "unknown"
+              }
+            ],
+            "id": "ownership",
+            "label": "所有・経営構造",
+            "note": "0/2論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "transformation",
+                "label": "事業転換・長期投資の必要性",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "succession",
+                "label": "公表された承継・経営体制の検討",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "listing_tradeoff",
+                "label": "非公開化の利点に関する公表説明",
+                "state": "unknown"
+              }
+            ],
+            "id": "motive",
+            "label": "非公開化を考える動機",
+            "note": "0/3論点を確認。背景論点の確認はMBO検討意思の確認とは別。未確認を否定しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "funding_capacity",
+                "label": "買収規模に対する資金・返済余力",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "funding_commitment",
+                "label": "資金提供・再出資の公表された合意",
+                "state": "unknown"
+              }
+            ],
+            "id": "execution",
+            "label": "買収の実行可能性",
+            "note": "0/2論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "shareholder_resistance",
+                "label": "主要株主との条件不一致・反対",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "funding_gap",
+                "label": "資金調達の不足・不成立",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "operating_uncertainty",
+                "label": "投資負担・事業範囲・資金創出の不確実性",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "listing_benefits",
+                "label": "会社が重視する上場継続の利点",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "competing_policy",
+                "label": "競合する資本政策・契約制約",
+                "state": "unknown"
+              }
+            ],
+            "id": "obstacles",
+            "label": "障害・上場継続の利点",
+            "note": "0/5論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          }
+        ],
+        "cautions": [
+          "過去の選択事例を用いた論点整理。予測精度・発生確率・配点の有効性は未検証。",
+          "単年CF、現金余剰、保有比率20%による旧4点は、MBO有力度の順位に使用しない。",
+          "公表後の説明・分析者の仮説・独自資金試算を、事前に確認できた会社の意向に置き換えない。"
+        ],
+        "financial_context": [],
+        "information": {
+          "coverage_label": "論点の確認件数。MBO確率・適性の点数ではない。",
+          "hypothesis_count": 0,
+          "unresolved_count": 12,
+          "verified_count": 0
+        },
+        "validation_status": "hypothesis_not_calibrated",
+        "version": "mbo-evidence-1",
+        "workflow": {
+          "basis_record_ids": [],
+          "label": "調査待ち",
+          "next_review_at": "2026-10-25",
+          "reason": "財務・所有構造・動機・実行可能性の一次資料が未充足。旧優先度0は不適格ではなく未調査。",
+          "reviewer": "Codex（保存原本照合・Astra設計レビュー）",
+          "state": "awaiting",
+          "watch_trigger": "通期財務・大株主・事業方針の一次取得"
+        }
+      },
+      "code": "7442",
+      "name": "中山福"
+    },
+    {
+      "assessment": {
+        "axes": [
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "management_alignment",
+                "label": "経営陣の関与・実質所有関係",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "ownership_path",
+                "label": "株式取得・再出資の経路",
+                "state": "unknown"
+              }
+            ],
+            "id": "ownership",
+            "label": "所有・経営構造",
+            "note": "0/2論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "transformation",
+                "label": "事業転換・長期投資の必要性",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "succession",
+                "label": "公表された承継・経営体制の検討",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "listing_tradeoff",
+                "label": "非公開化の利点に関する公表説明",
+                "state": "unknown"
+              }
+            ],
+            "id": "motive",
+            "label": "非公開化を考える動機",
+            "note": "0/3論点を確認。背景論点の確認はMBO検討意思の確認とは別。未確認を否定しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "funding_capacity",
+                "label": "買収規模に対する資金・返済余力",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "funding_commitment",
+                "label": "資金提供・再出資の公表された合意",
+                "state": "unknown"
+              }
+            ],
+            "id": "execution",
+            "label": "買収の実行可能性",
+            "note": "0/2論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "shareholder_resistance",
+                "label": "主要株主との条件不一致・反対",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "funding_gap",
+                "label": "資金調達の不足・不成立",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "operating_uncertainty",
+                "label": "投資負担・事業範囲・資金創出の不確実性",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "listing_benefits",
+                "label": "会社が重視する上場継続の利点",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "competing_policy",
+                "label": "競合する資本政策・契約制約",
+                "state": "unknown"
+              }
+            ],
+            "id": "obstacles",
+            "label": "障害・上場継続の利点",
+            "note": "0/5論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          }
+        ],
+        "cautions": [
+          "過去の選択事例を用いた論点整理。予測精度・発生確率・配点の有効性は未検証。",
+          "単年CF、現金余剰、保有比率20%による旧4点は、MBO有力度の順位に使用しない。",
+          "公表後の説明・分析者の仮説・独自資金試算を、事前に確認できた会社の意向に置き換えない。"
+        ],
+        "financial_context": [],
+        "information": {
+          "coverage_label": "論点の確認件数。MBO確率・適性の点数ではない。",
+          "hypothesis_count": 0,
+          "unresolved_count": 12,
+          "verified_count": 0
+        },
+        "validation_status": "hypothesis_not_calibrated",
+        "version": "mbo-evidence-1",
+        "workflow": {
+          "basis_record_ids": [],
+          "label": "調査待ち",
+          "next_review_at": "2026-10-25",
+          "reason": "財務・所有構造・動機・実行可能性の一次資料が未充足。旧優先度0は不適格ではなく未調査。",
+          "reviewer": "Codex（保存原本照合・Astra設計レビュー）",
+          "state": "awaiting",
+          "watch_trigger": "通期財務・大株主・事業方針の一次取得"
+        }
+      },
+      "code": "8147",
+      "name": "トミタ"
+    },
+    {
+      "assessment": {
+        "axes": [
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "management_alignment",
+                "label": "経営陣の関与・実質所有関係",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "ownership_path",
+                "label": "株式取得・再出資の経路",
+                "state": "unknown"
+              }
+            ],
+            "id": "ownership",
+            "label": "所有・経営構造",
+            "note": "0/2論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "transformation",
+                "label": "事業転換・長期投資の必要性",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "succession",
+                "label": "公表された承継・経営体制の検討",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "listing_tradeoff",
+                "label": "非公開化の利点に関する公表説明",
+                "state": "unknown"
+              }
+            ],
+            "id": "motive",
+            "label": "非公開化を考える動機",
+            "note": "0/3論点を確認。背景論点の確認はMBO検討意思の確認とは別。未確認を否定しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "funding_capacity",
+                "label": "買収規模に対する資金・返済余力",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "funding_commitment",
+                "label": "資金提供・再出資の公表された合意",
+                "state": "unknown"
+              }
+            ],
+            "id": "execution",
+            "label": "買収の実行可能性",
+            "note": "0/2論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "shareholder_resistance",
+                "label": "主要株主との条件不一致・反対",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "funding_gap",
+                "label": "資金調達の不足・不成立",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "operating_uncertainty",
+                "label": "投資負担・事業範囲・資金創出の不確実性",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "listing_benefits",
+                "label": "会社が重視する上場継続の利点",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "competing_policy",
+                "label": "競合する資本政策・契約制約",
+                "state": "unknown"
+              }
+            ],
+            "id": "obstacles",
+            "label": "障害・上場継続の利点",
+            "note": "0/5論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          }
+        ],
+        "cautions": [
+          "過去の選択事例を用いた論点整理。予測精度・発生確率・配点の有効性は未検証。",
+          "単年CF、現金余剰、保有比率20%による旧4点は、MBO有力度の順位に使用しない。",
+          "公表後の説明・分析者の仮説・独自資金試算を、事前に確認できた会社の意向に置き換えない。"
+        ],
+        "financial_context": [],
+        "information": {
+          "coverage_label": "論点の確認件数。MBO確率・適性の点数ではない。",
+          "hypothesis_count": 0,
+          "unresolved_count": 12,
+          "verified_count": 0
+        },
+        "validation_status": "hypothesis_not_calibrated",
+        "version": "mbo-evidence-1",
+        "workflow": {
+          "basis_record_ids": [],
+          "label": "調査待ち",
+          "next_review_at": "2026-10-25",
+          "reason": "財務・所有構造・動機・実行可能性の一次資料が未充足。旧優先度0は不適格ではなく未調査。",
+          "reviewer": "Codex（保存原本照合・Astra設計レビュー）",
+          "state": "awaiting",
+          "watch_trigger": "通期財務・大株主・事業方針の一次取得"
+        }
+      },
+      "code": "7908",
+      "name": "きもと"
+    },
+    {
+      "assessment": {
+        "axes": [
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "management_alignment",
+                "label": "経営陣の関与・実質所有関係",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "ownership_path",
+                "label": "株式取得・再出資の経路",
+                "state": "unknown"
+              }
+            ],
+            "id": "ownership",
+            "label": "所有・経営構造",
+            "note": "0/2論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "transformation",
+                "label": "事業転換・長期投資の必要性",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "succession",
+                "label": "公表された承継・経営体制の検討",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "listing_tradeoff",
+                "label": "非公開化の利点に関する公表説明",
+                "state": "unknown"
+              }
+            ],
+            "id": "motive",
+            "label": "非公開化を考える動機",
+            "note": "0/3論点を確認。背景論点の確認はMBO検討意思の確認とは別。未確認を否定しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "funding_capacity",
+                "label": "買収規模に対する資金・返済余力",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "funding_commitment",
+                "label": "資金提供・再出資の公表された合意",
+                "state": "unknown"
+              }
+            ],
+            "id": "execution",
+            "label": "買収の実行可能性",
+            "note": "0/2論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "shareholder_resistance",
+                "label": "主要株主との条件不一致・反対",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "funding_gap",
+                "label": "資金調達の不足・不成立",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "operating_uncertainty",
+                "label": "投資負担・事業範囲・資金創出の不確実性",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "listing_benefits",
+                "label": "会社が重視する上場継続の利点",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "competing_policy",
+                "label": "競合する資本政策・契約制約",
+                "state": "unknown"
+              }
+            ],
+            "id": "obstacles",
+            "label": "障害・上場継続の利点",
+            "note": "0/5論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          }
+        ],
+        "cautions": [
+          "過去の選択事例を用いた論点整理。予測精度・発生確率・配点の有効性は未検証。",
+          "単年CF、現金余剰、保有比率20%による旧4点は、MBO有力度の順位に使用しない。",
+          "公表後の説明・分析者の仮説・独自資金試算を、事前に確認できた会社の意向に置き換えない。"
+        ],
+        "financial_context": [],
+        "information": {
+          "coverage_label": "論点の確認件数。MBO確率・適性の点数ではない。",
+          "hypothesis_count": 0,
+          "unresolved_count": 12,
+          "verified_count": 0
+        },
+        "validation_status": "hypothesis_not_calibrated",
+        "version": "mbo-evidence-1",
+        "workflow": {
+          "basis_record_ids": [],
+          "label": "調査待ち",
+          "next_review_at": "2026-10-25",
+          "reason": "財務・所有構造・動機・実行可能性の一次資料が未充足。旧優先度0は不適格ではなく未調査。",
+          "reviewer": "Codex（保存原本照合・Astra設計レビュー）",
+          "state": "awaiting",
+          "watch_trigger": "通期財務・大株主・事業方針の一次取得"
+        }
+      },
+      "code": "7976",
+      "name": "三菱鉛筆"
+    },
+    {
+      "assessment": {
+        "axes": [
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "management_alignment",
+                "label": "経営陣の関与・実質所有関係",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "ownership_path",
+                "label": "株式取得・再出資の経路",
+                "state": "unknown"
+              }
+            ],
+            "id": "ownership",
+            "label": "所有・経営構造",
+            "note": "0/2論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "transformation",
+                "label": "事業転換・長期投資の必要性",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "succession",
+                "label": "公表された承継・経営体制の検討",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "listing_tradeoff",
+                "label": "非公開化の利点に関する公表説明",
+                "state": "unknown"
+              }
+            ],
+            "id": "motive",
+            "label": "非公開化を考える動機",
+            "note": "0/3論点を確認。背景論点の確認はMBO検討意思の確認とは別。未確認を否定しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "funding_capacity",
+                "label": "買収規模に対する資金・返済余力",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "funding_commitment",
+                "label": "資金提供・再出資の公表された合意",
+                "state": "unknown"
+              }
+            ],
+            "id": "execution",
+            "label": "買収の実行可能性",
+            "note": "0/2論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "shareholder_resistance",
+                "label": "主要株主との条件不一致・反対",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "funding_gap",
+                "label": "資金調達の不足・不成立",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "operating_uncertainty",
+                "label": "投資負担・事業範囲・資金創出の不確実性",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "listing_benefits",
+                "label": "会社が重視する上場継続の利点",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "competing_policy",
+                "label": "競合する資本政策・契約制約",
+                "state": "unknown"
+              }
+            ],
+            "id": "obstacles",
+            "label": "障害・上場継続の利点",
+            "note": "0/5論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          }
+        ],
+        "cautions": [
+          "過去の選択事例を用いた論点整理。予測精度・発生確率・配点の有効性は未検証。",
+          "単年CF、現金余剰、保有比率20%による旧4点は、MBO有力度の順位に使用しない。",
+          "公表後の説明・分析者の仮説・独自資金試算を、事前に確認できた会社の意向に置き換えない。"
+        ],
+        "financial_context": [],
+        "information": {
+          "coverage_label": "論点の確認件数。MBO確率・適性の点数ではない。",
+          "hypothesis_count": 0,
+          "unresolved_count": 12,
+          "verified_count": 0
+        },
+        "validation_status": "hypothesis_not_calibrated",
+        "version": "mbo-evidence-1",
+        "workflow": {
+          "basis_record_ids": [],
+          "label": "調査待ち",
+          "next_review_at": "2026-10-25",
+          "reason": "財務・所有構造・動機・実行可能性の一次資料が未充足。旧優先度0は不適格ではなく未調査。",
+          "reviewer": "Codex（保存原本照合・Astra設計レビュー）",
+          "state": "awaiting",
+          "watch_trigger": "通期財務・大株主・事業方針の一次取得"
+        }
+      },
+      "code": "575A",
+      "name": "前澤ホールディングス"
+    },
+    {
+      "assessment": {
+        "axes": [
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "management_alignment",
+                "label": "経営陣の関与・実質所有関係",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "ownership_path",
+                "label": "株式取得・再出資の経路",
+                "state": "unknown"
+              }
+            ],
+            "id": "ownership",
+            "label": "所有・経営構造",
+            "note": "0/2論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "transformation",
+                "label": "事業転換・長期投資の必要性",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "succession",
+                "label": "公表された承継・経営体制の検討",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "listing_tradeoff",
+                "label": "非公開化の利点に関する公表説明",
+                "state": "unknown"
+              }
+            ],
+            "id": "motive",
+            "label": "非公開化を考える動機",
+            "note": "0/3論点を確認。背景論点の確認はMBO検討意思の確認とは別。未確認を否定しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "funding_capacity",
+                "label": "買収規模に対する資金・返済余力",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "funding_commitment",
+                "label": "資金提供・再出資の公表された合意",
+                "state": "unknown"
+              }
+            ],
+            "id": "execution",
+            "label": "買収の実行可能性",
+            "note": "0/2論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "shareholder_resistance",
+                "label": "主要株主との条件不一致・反対",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "funding_gap",
+                "label": "資金調達の不足・不成立",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "operating_uncertainty",
+                "label": "投資負担・事業範囲・資金創出の不確実性",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "listing_benefits",
+                "label": "会社が重視する上場継続の利点",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "competing_policy",
+                "label": "競合する資本政策・契約制約",
+                "state": "unknown"
+              }
+            ],
+            "id": "obstacles",
+            "label": "障害・上場継続の利点",
+            "note": "0/5論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          }
+        ],
+        "cautions": [
+          "過去の選択事例を用いた論点整理。予測精度・発生確率・配点の有効性は未検証。",
+          "単年CF、現金余剰、保有比率20%による旧4点は、MBO有力度の順位に使用しない。",
+          "公表後の説明・分析者の仮説・独自資金試算を、事前に確認できた会社の意向に置き換えない。"
+        ],
+        "financial_context": [
+          "確認できた経営陣・創業家持分 0.31%。実質所有の全体像・応募合意とは別。",
+          "営業CF−設備投資 1,641,740,000円（単年）。継続的な返済余力・MBO動機を保証しない。",
+          "独自LBO条件で価格を試算可能。融資承認・スポンサーの参加意思は未確認。"
+        ],
+        "information": {
+          "coverage_label": "論点の確認件数。MBO確率・適性の点数ではない。",
+          "hypothesis_count": 0,
+          "unresolved_count": 12,
+          "verified_count": 0
+        },
+        "validation_status": "hypothesis_not_calibrated",
+        "version": "mbo-evidence-1",
+        "workflow": {
+          "basis_record_ids": [],
+          "label": "詳細調査中",
+          "next_review_at": "2026-10-25",
+          "reason": "金融資産の回収可能性・本社建替え投資額・所有関係を確認。資産感応度は非公開化意向の証拠ではない。",
+          "reviewer": "Codex（保存原本照合・Astra設計レビュー）",
+          "state": "research",
+          "watch_trigger": "建替え予算・有価証券・資本政策"
+        }
+      },
+      "code": "5945",
+      "name": "天龍製鋸"
+    },
+    {
+      "assessment": {
+        "axes": [
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "management_alignment",
+                "label": "経営陣の関与・実質所有関係",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "ownership_path",
+                "label": "株式取得・再出資の経路",
+                "state": "unknown"
+              }
+            ],
+            "id": "ownership",
+            "label": "所有・経営構造",
+            "note": "0/2論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "transformation",
+                "label": "事業転換・長期投資の必要性",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "succession",
+                "label": "公表された承継・経営体制の検討",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "listing_tradeoff",
+                "label": "非公開化の利点に関する公表説明",
+                "state": "unknown"
+              }
+            ],
+            "id": "motive",
+            "label": "非公開化を考える動機",
+            "note": "0/3論点を確認。背景論点の確認はMBO検討意思の確認とは別。未確認を否定しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "funding_capacity",
+                "label": "買収規模に対する資金・返済余力",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "funding_commitment",
+                "label": "資金提供・再出資の公表された合意",
+                "state": "unknown"
+              }
+            ],
+            "id": "execution",
+            "label": "買収の実行可能性",
+            "note": "0/2論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          },
+          {
+            "evidence": [],
+            "factors": [
+              {
+                "factor_id": "shareholder_resistance",
+                "label": "主要株主との条件不一致・反対",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "funding_gap",
+                "label": "資金調達の不足・不成立",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "operating_uncertainty",
+                "label": "投資負担・事業範囲・資金創出の不確実性",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "listing_benefits",
+                "label": "会社が重視する上場継続の利点",
+                "state": "unknown"
+              },
+              {
+                "factor_id": "competing_policy",
+                "label": "競合する資本政策・契約制約",
+                "state": "unknown"
+              }
+            ],
+            "id": "obstacles",
+            "label": "障害・上場継続の利点",
+            "note": "0/5論点を確認。未確認は否定ではなく、全論点の確認完了も意味しない。",
+            "state": "unknown"
+          }
+        ],
+        "cautions": [
+          "過去の選択事例を用いた論点整理。予測精度・発生確率・配点の有効性は未検証。",
+          "単年CF、現金余剰、保有比率20%による旧4点は、MBO有力度の順位に使用しない。",
+          "公表後の説明・分析者の仮説・独自資金試算を、事前に確認できた会社の意向に置き換えない。"
+        ],
+        "financial_context": [
+          "確認できた経営陣・創業家持分 7.20%。実質所有の全体像・応募合意とは別。",
+          "営業CF−設備投資 2,333,718,000円（単年）。継続的な返済余力・MBO動機を保証しない。"
+        ],
+        "information": {
+          "coverage_label": "論点の確認件数。MBO確率・適性の点数ではない。",
+          "hypothesis_count": 0,
+          "unresolved_count": 12,
+          "verified_count": 0
+        },
+        "validation_status": "hypothesis_not_calibrated",
+        "version": "mbo-evidence-1",
+        "workflow": {
+          "basis_record_ids": [],
+          "label": "詳細調査中",
+          "next_review_at": "2026-10-25",
+          "reason": "子会社売却後の利益・CF・株数を確認。売却益や旧連結利益をMBO適性へ転用しない。",
+          "reviewer": "Codex（保存原本照合・Astra設計レビュー）",
+          "state": "research",
+          "watch_trigger": "事業売却後の決算・株式数・資本政策"
+        }
+      },
+      "code": "7927",
+      "name": "ムトー精工"
+    }
+  ],
+  "dcf_and_prices_unchanged": true,
+  "decisions": [
+    {
+      "code": "6459",
+      "reason": "買収後の事業範囲と借入内訳、実質所有関係を確認。旧単体CFからMBO余力を断定しない。",
+      "state": "research"
+    },
+    {
+      "code": "7937",
+      "reason": "在庫と営業CFの変化、設備投資・経営陣の所有関係を確認。単年の負のCFでMBO不能とは判断しない。",
+      "state": "research"
+    },
+    {
+      "code": "4628",
+      "reason": "同一BS日の非支配持分、投資必要額と実質所有を確認。現金の多さだけではMBO意向不明。",
+      "state": "research"
+    },
+    {
+      "code": "7516",
+      "reason": "財務・所有構造・動機・実行可能性の一次資料が未充足。旧優先度0は不適格ではなく未調査。",
+      "state": "awaiting"
+    },
+    {
+      "code": "9885",
+      "reason": "財務・所有構造・動機・実行可能性の一次資料が未充足。旧優先度0は不適格ではなく未調査。",
+      "state": "awaiting"
+    },
+    {
+      "code": "7877",
+      "reason": "財務・所有構造・動機・実行可能性の一次資料が未充足。旧優先度0は不適格ではなく未調査。",
+      "state": "awaiting"
+    },
+    {
+      "code": "8119",
+      "reason": "財務・所有構造・動機・実行可能性の一次資料が未充足。旧優先度0は不適格ではなく未調査。",
+      "state": "awaiting"
+    },
+    {
+      "code": "5982",
+      "reason": "株数・信託、設備投資と海外展開、実質所有を確認。LBO試算の成立は金融機関の合意とは別。",
+      "state": "research"
+    },
+    {
+      "code": "6490",
+      "reason": "財務・所有構造・動機・実行可能性の一次資料が未充足。旧優先度0は不適格ではなく未調査。",
+      "state": "awaiting"
+    },
+    {
+      "code": "7840",
+      "reason": "財務・所有構造・動機・実行可能性の一次資料が未充足。旧優先度0は不適格ではなく未調査。",
+      "state": "awaiting"
+    },
+    {
+      "code": "8125",
+      "reason": "財務・所有構造・動機・実行可能性の一次資料が未充足。旧優先度0は不適格ではなく未調査。",
+      "state": "awaiting"
+    },
+    {
+      "code": "9902",
+      "reason": "財務・所有構造・動機・実行可能性の一次資料が未充足。旧優先度0は不適格ではなく未調査。",
+      "state": "awaiting"
+    },
+    {
+      "code": "7442",
+      "reason": "財務・所有構造・動機・実行可能性の一次資料が未充足。旧優先度0は不適格ではなく未調査。",
+      "state": "awaiting"
+    },
+    {
+      "code": "8147",
+      "reason": "財務・所有構造・動機・実行可能性の一次資料が未充足。旧優先度0は不適格ではなく未調査。",
+      "state": "awaiting"
+    },
+    {
+      "code": "7908",
+      "reason": "財務・所有構造・動機・実行可能性の一次資料が未充足。旧優先度0は不適格ではなく未調査。",
+      "state": "awaiting"
+    },
+    {
+      "code": "7976",
+      "reason": "財務・所有構造・動機・実行可能性の一次資料が未充足。旧優先度0は不適格ではなく未調査。",
+      "state": "awaiting"
+    },
+    {
+      "code": "575A",
+      "reason": "財務・所有構造・動機・実行可能性の一次資料が未充足。旧優先度0は不適格ではなく未調査。",
+      "state": "awaiting"
+    },
+    {
+      "code": "5945",
+      "reason": "金融資産の回収可能性・本社建替え投資額・所有関係を確認。資産感応度は非公開化意向の証拠ではない。",
+      "state": "research"
+    },
+    {
+      "code": "7927",
+      "reason": "子会社売却後の利益・CF・株数を確認。売却益や旧連結利益をMBO適性へ転用しない。",
+      "state": "research"
+    }
+  ],
+  "financial_data_updated": false,
+  "mbo_probability_calibrated": false,
+  "rule_version": "mbo-local-3-evidence-axes",
+  "run_id": "run-2026-10-18-3714ada8f872",
+  "workflow_counts": {
+    "awaiting": 13,
+    "deferred": 0,
+    "monitor": 0,
+    "research": 6
+  }
+}

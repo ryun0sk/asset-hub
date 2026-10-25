@@ -126,11 +126,12 @@ class StagingTest(unittest.TestCase):
     def test_only_allowlisted_files_are_uploaded(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory) / 'repo'
-            files = ['backend/server.py', 'backend/notes.txt', 'web/index.html', 'web/app.js', 'web/.env',
+            files = ['backend/server.py', 'backend/notes.txt', 'backend/mbo/core.py',
+                     'web/index.html', 'web/app.js', 'web/mbo.html', 'web/mbo.css', 'web/.env',
                      'web/sub/x.js', 'research/catalog.json', 'research/themes/t/d/index.html',
                      'research/themes/t/d/working/raw.html', 'research/themes/t/d/qa/shot.png',
                      'research/themes/t/d/.DS_Store', 'research/themes/t/d/fetch.py', 'research/themes/t/d/a.pdf',
-                     'data/private/costs.json', 'data/private/assets/accounts.json',
+                     'data/private/costs.json', 'data/private/mbo/mbo.sqlite', 'data/private/assets/accounts.json',
                      'data/private/assets/snapshots/2026-10-04.json', 'data/private/assets/state.json',
                      'infra/config.json', '.env', 'Dockerfile', 'requirements.txt', '.dockerignore']
             for name in files:

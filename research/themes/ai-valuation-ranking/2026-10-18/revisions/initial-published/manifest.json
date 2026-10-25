@@ -1,0 +1,17 @@
+{
+  "status": "initial published version before Taiwan CB review",
+  "date": "2026-10-18",
+  "files": {
+    "ranking.json": "6cf490898635d9ad8b3bb398b165598b6063422e71a1bc8c24f9010073a1fc5d",
+    "results.json": "f71438c24b1b6c2b12698b1760b0d7ef2d76701f6b5db8d4812e0d2dcf488257",
+    "results.csv": "f909285e0dce920c902b2831f9cd4b75a1d6e6e6e6b6d67a3d986d70a24bc704",
+    "report.md": "ec3564e75ca54519726260ad9e3f88a2aa8e0aaa27ca190f361cfa83c7edaa77",
+    "report-template.md": "f29f2d8b62cd02d42328616be420022f37e6d009af039adf3ec182d7d94b8bb6",
+    "input-manifest.json": "0140845854b840fe9b6e17291fe869d848176976899f2b5ac89fa1a5fd6d6f35",
+    "validation.json": "58e6b5dd153a4c9d11a7e7b3c0317ceb66a01770cc3e531f0a0d670895a72a07",
+    "build_model.py": "c25ce35d73559958f812abe99514815d0bc6331a5179df868fbc77e0d98c838d",
+    "inputs/compute.py": "768d16fb5ac2734d080b905e89f7171a7aee3a6f642b7d6696f4cef65b5c15da",
+    "inputs/compute.json": "4a82993369854e4f40eba9ad4553025d12291dadcfaf63a21b57cd373b672905",
+    "inputs/compute.md": "f21dea0a756ba7d98a6f5f8f97906bf69b6c8e030023587fd3c61c7426a27c03"
+  }
+}

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-15T15:27:14Z",
+  "generatedAt": "2026-10-18T05:35:20Z",
   "groups": [
     {
       "id": "themes",
@@ -8,8 +8,208 @@
       "assetClass": "stock",
       "entries": [
         {
+          "id": "ai-valuation-ranking-2026-10-18",
+          "title": "AI関連46社 将来利益と割安度ランキング",
+          "date": "2026-10-18",
+          "kind": "theme",
+          "slug": "ai-valuation-ranking",
+          "items": [
+            {
+              "label": "レポート",
+              "path": "research/themes/ai-valuation-ranking/2026-10-18/report.md",
+              "type": "md"
+            },
+            {
+              "label": "README・資料一覧",
+              "path": "research/themes/ai-valuation-ranking/2026-10-18/README.md",
+              "type": "md"
+            }
+          ]
+        },
+        {
+          "id": "ai-forward-valuation-2026-10-18",
+          "title": "AI関連8社 2028〜29年の利益・EPSと割安度",
+          "date": "2026-10-18",
+          "kind": "theme",
+          "slug": "ai-forward-valuation",
+          "items": [
+            {
+              "label": "レポート",
+              "path": "research/themes/ai-forward-valuation/2026-10-18/report.md",
+              "type": "md"
+            },
+            {
+              "label": "README・資料一覧",
+              "path": "research/themes/ai-forward-valuation/2026-10-18/README.md",
+              "type": "md"
+            }
+          ]
+        },
+        {
+          "id": "ai-growth-outlook-2026-10-18",
+          "title": "AI関連銘柄 今後2〜3年の利益成長",
+          "date": "2026-10-18",
+          "kind": "theme",
+          "slug": "ai-growth-outlook",
+          "items": [
+            {
+              "label": "レポート",
+              "path": "research/themes/ai-growth-outlook/2026-10-18/report.md",
+              "type": "md"
+            },
+            {
+              "label": "README・資料一覧",
+              "path": "research/themes/ai-growth-outlook/2026-10-18/README.md",
+              "type": "md"
+            }
+          ]
+        },
+        {
+          "id": "memory-per-cycle-2026-10-18",
+          "title": "メモリ株の低PERとキオクシアのPER上昇",
+          "date": "2026-10-18",
+          "kind": "theme",
+          "slug": "memory-per-cycle",
+          "items": [
+            {
+              "label": "レポート",
+              "path": "research/themes/memory-per-cycle/2026-10-18/report.md",
+              "type": "md"
+            },
+            {
+              "label": "README・資料一覧",
+              "path": "research/themes/memory-per-cycle/2026-10-18/README.md",
+              "type": "md"
+            }
+          ]
+        },
+        {
+          "id": "mbo-candidates-2026-10-18",
+          "title": "MBO候補の初回実企業調査",
+          "date": "2026-10-18",
+          "kind": "theme",
+          "slug": "mbo-candidates",
+          "items": [
+            {
+              "label": "レポート",
+              "path": "research/themes/mbo-candidates/2026-10-18/report.md",
+              "type": "md"
+            },
+            {
+              "label": "README・資料一覧",
+              "path": "research/themes/mbo-candidates/2026-10-18/README.md",
+              "type": "md"
+            }
+          ]
+        },
+        {
+          "id": "mbo-evaluation-2026-10-18",
+          "title": "MBO候補の評価方法・過去事例",
+          "date": "2026-10-18",
+          "kind": "theme",
+          "slug": "mbo-evaluation",
+          "items": [
+            {
+              "label": "レポート",
+              "path": "research/themes/mbo-evaluation/2026-10-18/report.md",
+              "type": "md"
+            },
+            {
+              "label": "README・資料一覧",
+              "path": "research/themes/mbo-evaluation/2026-10-18/README.md",
+              "type": "md"
+            }
+          ]
+        },
+        {
+          "id": "mbo-research-system-2026-10-18",
+          "title": "MBO候補と割安度を調べるシステム",
+          "date": "2026-10-18",
+          "kind": "theme",
+          "slug": "mbo-research-system",
+          "items": [
+            {
+              "label": "レポート",
+              "path": "research/themes/mbo-research-system/2026-10-18/report.md",
+              "type": "md"
+            },
+            {
+              "label": "README・資料一覧",
+              "path": "research/themes/mbo-research-system/2026-10-18/README.md",
+              "type": "md"
+            },
+            {
+              "label": "関連資料・着想元",
+              "path": "research/themes/mbo-research-system/2026-10-18/related-links.md",
+              "type": "md"
+            }
+          ]
+        },
+        {
+          "id": "ai-actual-valuation-2026-10-18",
+          "title": "AI関連7銘柄 実績EPS・PERの推移",
+          "date": "2026-10-18",
+          "kind": "theme",
+          "slug": "ai-actual-valuation",
+          "items": [
+            {
+              "label": "レポート",
+              "path": "research/themes/ai-actual-valuation/2026-10-18/report.md",
+              "type": "md"
+            },
+            {
+              "label": "README・資料一覧",
+              "path": "research/themes/ai-actual-valuation/2026-10-18/README.md",
+              "type": "md"
+            }
+          ]
+        },
+        {
+          "id": "ai-supply-chain-2026-10-18",
+          "title": "AI関連銘柄・サプライチェーン",
+          "date": "2026-10-18",
+          "kind": "theme",
+          "slug": "ai-supply-chain",
+          "items": [
+            {
+              "label": "調達の流れ",
+              "path": "research/themes/ai-supply-chain/2026-10-18/index.html",
+              "type": "html",
+              "view": "map"
+            },
+            {
+              "label": "AI時代の機能整理",
+              "path": "research/themes/ai-supply-chain/2026-10-18/index.html",
+              "type": "html",
+              "view": "guide"
+            },
+            {
+              "label": "株価の比較",
+              "path": "research/themes/ai-supply-chain/2026-10-18/index.html",
+              "type": "html",
+              "view": "price"
+            },
+            {
+              "label": "EPS・PER",
+              "path": "research/themes/ai-supply-chain/2026-10-18/index.html",
+              "type": "html",
+              "view": "fund"
+            },
+            {
+              "label": "工程別レポート",
+              "path": "research/themes/ai-supply-chain/2026-10-18/report.md",
+              "type": "md"
+            },
+            {
+              "label": "調査範囲・出典方針",
+              "path": "research/themes/ai-supply-chain/2026-10-18/README.md",
+              "type": "md"
+            }
+          ]
+        },
+        {
           "id": "ai-actual-valuation-2026-10-16",
-          "title": "AI関連4銘柄 実績EPS・PERの推移",
+          "title": "AI関連7銘柄 実績EPS・PERの推移",
           "date": "2026-10-16",
           "kind": "theme",
           "slug": "ai-actual-valuation",
@@ -288,6 +488,119 @@
       "label": "企業",
       "assetClass": "stock",
       "entries": [
+        {
+          "id": "7011-mitsubishi-heavy-industries-2026-10-18",
+          "title": "三菱重工（7011）",
+          "date": "2026-10-18",
+          "kind": "company",
+          "slug": "7011-mitsubishi-heavy-industries",
+          "items": [
+            {
+              "label": "レポート",
+              "path": "research/companies/7011-mitsubishi-heavy-industries/2026-10-18/report.md",
+              "type": "md"
+            },
+            {
+              "label": "README・資料一覧",
+              "path": "research/companies/7011-mitsubishi-heavy-industries/2026-10-18/README.md",
+              "type": "md"
+            },
+            {
+              "label": "fy20233q-kessan-tansin.pdf",
+              "path": "research/companies/7011-mitsubishi-heavy-industries/2026-10-18/sources/fy20233q-kessan-tansin.pdf",
+              "type": "pdf"
+            },
+            {
+              "label": "fy20234q-kessan-tansin.pdf",
+              "path": "research/companies/7011-mitsubishi-heavy-industries/2026-10-18/sources/fy20234q-kessan-tansin.pdf",
+              "type": "pdf"
+            },
+            {
+              "label": "fy20241q-kessan-tansin.pdf",
+              "path": "research/companies/7011-mitsubishi-heavy-industries/2026-10-18/sources/fy20241q-kessan-tansin.pdf",
+              "type": "pdf"
+            },
+            {
+              "label": "fy20242q-kessan-tansin.pdf",
+              "path": "research/companies/7011-mitsubishi-heavy-industries/2026-10-18/sources/fy20242q-kessan-tansin.pdf",
+              "type": "pdf"
+            },
+            {
+              "label": "fy20243q-kessan-tansin.pdf",
+              "path": "research/companies/7011-mitsubishi-heavy-industries/2026-10-18/sources/fy20243q-kessan-tansin.pdf",
+              "type": "pdf"
+            },
+            {
+              "label": "fy20244q-kessan-tansin.pdf",
+              "path": "research/companies/7011-mitsubishi-heavy-industries/2026-10-18/sources/fy20244q-kessan-tansin.pdf",
+              "type": "pdf"
+            },
+            {
+              "label": "fy20251q-kessan-tansin.pdf",
+              "path": "research/companies/7011-mitsubishi-heavy-industries/2026-10-18/sources/fy20251q-kessan-tansin.pdf",
+              "type": "pdf"
+            },
+            {
+              "label": "fy20252q-kessan-tansin.pdf",
+              "path": "research/companies/7011-mitsubishi-heavy-industries/2026-10-18/sources/fy20252q-kessan-tansin.pdf",
+              "type": "pdf"
+            },
+            {
+              "label": "fy20253q-kessan-tansin.pdf",
+              "path": "research/companies/7011-mitsubishi-heavy-industries/2026-10-18/sources/fy20253q-kessan-tansin.pdf",
+              "type": "pdf"
+            },
+            {
+              "label": "fy20254q-kessan-tansin.pdf",
+              "path": "research/companies/7011-mitsubishi-heavy-industries/2026-10-18/sources/fy20254q-kessan-tansin.pdf",
+              "type": "pdf"
+            },
+            {
+              "label": "fy20261q-kessan-tansin.pdf",
+              "path": "research/companies/7011-mitsubishi-heavy-industries/2026-10-18/sources/fy20261q-kessan-tansin.pdf",
+              "type": "pdf"
+            }
+          ],
+          "code": "7011"
+        },
+        {
+          "id": "GEV-ge-vernova-2026-10-18",
+          "title": "GE Vernova（GEV）",
+          "date": "2026-10-18",
+          "kind": "company",
+          "slug": "GEV-ge-vernova",
+          "items": [
+            {
+              "label": "レポート",
+              "path": "research/companies/GEV-ge-vernova/2026-10-18/report.md",
+              "type": "md"
+            },
+            {
+              "label": "README・資料一覧",
+              "path": "research/companies/GEV-ge-vernova/2026-10-18/README.md",
+              "type": "md"
+            }
+          ]
+        },
+        {
+          "id": "ENR-siemens-energy-2026-10-18",
+          "title": "Siemens Energy（ENR）",
+          "date": "2026-10-18",
+          "kind": "company",
+          "slug": "ENR-siemens-energy",
+          "items": [
+            {
+              "label": "レポート",
+              "path": "research/companies/ENR-siemens-energy/2026-10-18/report.md",
+              "type": "md"
+            },
+            {
+              "label": "README・資料一覧",
+              "path": "research/companies/ENR-siemens-energy/2026-10-18/README.md",
+              "type": "md"
+            }
+          ]
+        },
         {
           "id": "4062-ibiden-2026-10-16",
           "title": "イビデン（4062）",

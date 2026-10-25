@@ -1,0 +1,79 @@
+{
+  "as_of": "2026-10-18",
+  "type": "independent_hypothetical_sensitivity",
+  "warning": "No company price targets, growth forecasts, probabilities or current market prices.",
+  "formula": "share price factor = EPS factor * exit PER / entry PER; excludes dividends and FX",
+  "stock_cases": [
+    {
+      "assumptions": {
+        "years": 3,
+        "annual_eps_growth": 0.2,
+        "entry_pe": 40,
+        "exit_pe": 25
+      },
+      "eps_factor": 1.728,
+      "share_price_return_ex_dividends_fx": 0.08
+    },
+    {
+      "assumptions": {
+        "years": 3,
+        "annual_eps_growth": 0.2,
+        "entry_pe": 50,
+        "exit_pe": 25
+      },
+      "eps_factor": 1.728,
+      "share_price_return_ex_dividends_fx": -0.136
+    },
+    {
+      "assumptions": {
+        "years": 3,
+        "annual_eps_growth": 0.25,
+        "entry_pe": 40,
+        "exit_pe": 25
+      },
+      "eps_factor": 1.953125,
+      "share_price_return_ex_dividends_fx": 0.220703
+    }
+  ],
+  "commodity_example": {
+    "type": "arbitrary_units_not_kioxia_forecast",
+    "before": {
+      "volume": 100,
+      "asp": 100,
+      "unit_production_cost": 60,
+      "revenue": 10000,
+      "gross_profit": 4000
+    },
+    "after": {
+      "volume": 120,
+      "asp": 80,
+      "unit_production_cost": 55,
+      "revenue": 9600,
+      "gross_profit": 3000
+    },
+    "volume_growth": 0.19999999999999996,
+    "gross_profit_growth": -0.25
+  },
+  "arista_gaap_operating_profit_growth_q2_2026": {
+    "type": "calculation_from_company_actuals",
+    "unit": "USD million",
+    "current": 1378.0,
+    "prior": 986.2,
+    "growth": 0.397282,
+    "source": "https://investors.arista.com/Communications/Press-Releases-and-Events/Press-Release-Detail/2026/Arista-Networks-Inc--Reports-Second-Quarter-2026-Financial-Results/default.aspx",
+    "published": "2026-08-04"
+  },
+  "asml_q3_2026": {
+    "type": "calculation_from_company_actuals",
+    "unit": "EUR billion",
+    "revenue_current": 11.662,
+    "revenue_prior": 7.516,
+    "revenue_growth": 0.551623,
+    "operating_profit_current": 5.173,
+    "operating_profit_prior": 2.468,
+    "operating_profit_growth": 1.096029,
+    "operating_margin": 0.443577,
+    "source": "https://investor.asml.com/static-files/d310262b-d037-485d-83b5-92c93cc462f0",
+    "published": "2026-10-14"
+  }
+}

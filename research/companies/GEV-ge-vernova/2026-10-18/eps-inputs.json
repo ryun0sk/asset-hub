@@ -1,0 +1,306 @@
+{
+  "symbol": "GEV",
+  "name": "GE Vernova",
+  "currency": "USD",
+  "code": "GEV",
+  "asOf": "2026-10-18",
+  "basis": "US GAAPのGE Vernova帰属・希薄化後実績EPS。一時利益を含む。TTMは公表四半期EPSの単純合算による概算",
+  "splitBasis": "2024-04-02のGEからの独立後GEV普通株1株基準。2024Q1の分母は独立時発行274百万株を仮定。株価・EPSはGE Aerospace株や旧GE株と連結しない",
+  "notes": [
+    "公表EPSとNYSE市場の現地日付を保存。公式日程で全対象決算は寄り前公表と確認し、knownFromは発表当日。各営業日終値に、その日までにknownFromが到来したデータだけを利用する。",
+    "TTMと半年年換算は会社が公表した独立した指標ではなく、公表四半期EPSの合算による概算。自社株買い・株式報酬・希薄化判定・期間平均株数・丸めにより通期/半期の公式EPSと一致しない。",
+    "2024年の四半期合算は5.56ドル、公式通期は5.58ドル。2025年の四半期合算は17.80ドル、公式通期は17.69ドル。2026上期の四半期合算は19.91ドル、公式上期は19.96ドル。公式年次EPSはannual配列に別保存し、合算値で上書きしない。",
+    "2026Q1にはProlec GE既保有持分の再評価益3,992百万ドル（税前）が発生。Q1 EPS17.44ドルと、これを含む2026Q2時点TTMに影響する。Q2単独に再評価益全額が発生したという意味ではない。",
+    "2025Q4は米国の繰延税金資産に対する評価性引当の解除等による約2.9十億ドルの税便益を含む。2025Q4 EPS13.39ドルと、これを含む2026Q2時点TTMに影響し、実績PERを押し下げる。",
+    "2024Q2にはEDFへのSteam Power原子力事業一部売却に伴う約0.9十億ドルの税前利益を含む。一時損益を除いた調整EPS系列は本ファイルでは作成しない。",
+    "四半期EPSの4倍や半年EPSの2倍は次の期間も同水準の利益を仮定する参考値であり、会社予想や外部予想ではない。GAAP利益には一時利益を残すため恒常利益の評価には単独で用いない。",
+    "最新公表実績は2026Q2。2026Q3は2026-10-28寄り前発表予定であり、2026-10-18時点では未公表。",
+    "最新会社ガイダンスは売上・調整EBITDA率・FCF等で、同じ基準のEPS予想を取得していないためcompanyForecastはnull。外部アナリストEPSも根拠を確認できた値を取得しておらずanalystはnull。"
+  ],
+  "quarterly": [
+    {
+      "periodEnd": "2024-03-31",
+      "publishedDate": "2024-04-25",
+      "knownFrom": "2024-04-25",
+      "eps": -0.47,
+      "source": "https://www.sec.gov/Archives/edgar/data/1996810/000199681024000004/gev1q2024earningsrelease.htm",
+      "timingSource": "https://www.gevernova.com/news/press-releases/ge-vernova-to-announce-first-quarter-2024-financial-results-april-25",
+      "releaseTiming": "NYSE寄り前。現地日付の同日終値から利用可"
+    },
+    {
+      "periodEnd": "2024-06-30",
+      "publishedDate": "2024-07-24",
+      "knownFrom": "2024-07-24",
+      "eps": 4.65,
+      "source": "https://www.sec.gov/Archives/edgar/data/1996810/000199681024000065/gev2q2024earningsrelease.htm",
+      "timingSource": "https://www.gevernova.com/news/press-releases/ge-vernova-announce-second-quarter-2024-financial",
+      "releaseTiming": "NYSE寄り前。現地日付の同日終値から利用可"
+    },
+    {
+      "periodEnd": "2024-09-30",
+      "publishedDate": "2024-10-23",
+      "knownFrom": "2024-10-23",
+      "eps": -0.35,
+      "source": "https://www.sec.gov/Archives/edgar/data/1996810/000199681024000080/gev3q2024earningsrelease.htm",
+      "timingSource": "https://www.gevernova.com/news/press-releases/ge-vernova-announce-third-quarter-2024-financial",
+      "releaseTiming": "NYSE寄り前。現地日付の同日終値から利用可"
+    },
+    {
+      "periodEnd": "2024-12-31",
+      "publishedDate": "2025-01-22",
+      "knownFrom": "2025-01-22",
+      "eps": 1.73,
+      "source": "https://www.gevernova.com/news/press-releases/ge-vernova-reports-fourth-quarter-full-year-2024",
+      "timingSource": "https://www.gevernova.com/news/press-releases/ge-vernova-announce-fourth-quarter-full-year-2024",
+      "releaseTiming": "NYSE寄り前。現地日付の同日終値から利用可"
+    },
+    {
+      "periodEnd": "2025-03-31",
+      "publishedDate": "2025-04-23",
+      "knownFrom": "2025-04-23",
+      "eps": 0.91,
+      "source": "https://www.sec.gov/Archives/edgar/data/1996810/000199681025000072/gevpressrelease1q25.htm",
+      "timingSource": "https://www.gevernova.com/news/press-releases/ge-vernova-announce-first-quarter-2025-financial",
+      "releaseTiming": "NYSE寄り前。現地日付の同日終値から利用可"
+    },
+    {
+      "periodEnd": "2025-06-30",
+      "publishedDate": "2025-07-23",
+      "knownFrom": "2025-07-23",
+      "eps": 1.86,
+      "source": "https://www.sec.gov/Archives/edgar/data/1996810/000199681025000132/gevpressrelease2q25.htm",
+      "timingSource": "https://www.gevernova.com/news/press-releases/ge-vernova-announce-second-quarter-2025-financial",
+      "releaseTiming": "NYSE寄り前。現地日付の同日終値から利用可"
+    },
+    {
+      "periodEnd": "2025-09-30",
+      "publishedDate": "2025-10-22",
+      "knownFrom": "2025-10-22",
+      "eps": 1.64,
+      "source": "https://www.sec.gov/Archives/edgar/data/1996810/000199681025000159/gevpressrelease3q25.htm",
+      "timingSource": "https://www.gevernova.com/news/press-releases/ge-vernova-announce-third-quarter-2025-financial",
+      "releaseTiming": "NYSE寄り前。現地日付の同日終値から利用可"
+    },
+    {
+      "periodEnd": "2025-12-31",
+      "publishedDate": "2026-01-28",
+      "knownFrom": "2026-01-28",
+      "eps": 13.39,
+      "source": "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000012/gevpressrelease4q25.htm",
+      "timingSource": "https://www.gevernova.com/news/press-releases/ge-vernova-announce-fourth-quarter-full-year-2025",
+      "releaseTiming": "NYSE寄り前。現地日付の同日終値から利用可"
+    },
+    {
+      "periodEnd": "2026-03-31",
+      "publishedDate": "2026-04-22",
+      "knownFrom": "2026-04-22",
+      "eps": 17.44,
+      "source": "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000063/gevpressrelease1q26.htm",
+      "timingSource": "https://www.gevernova.com/news/press-releases/ge-vernova-announce-first-quarter-2026-financial",
+      "releaseTiming": "NYSE寄り前。現地日付の同日終値から利用可"
+    },
+    {
+      "periodEnd": "2026-06-30",
+      "publishedDate": "2026-07-22",
+      "knownFrom": "2026-07-22",
+      "eps": 2.47,
+      "source": "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000147/gevpressrelease2q26.htm",
+      "timingSource": "https://www.gevernova.com/news/press-releases/ge-vernova-announce-second-quarter-2026-financial-results-july-22",
+      "releaseTiming": "NYSE寄り前。現地日付の同日終値から利用可"
+    }
+  ],
+  "annual": [
+    {
+      "periodEnd": "2024-12-31",
+      "publishedDate": "2025-01-22",
+      "knownFrom": "2025-01-22",
+      "eps": 5.58,
+      "source": "https://www.gevernova.com/news/press-releases/ge-vernova-reports-fourth-quarter-full-year-2024"
+    },
+    {
+      "periodEnd": "2025-12-31",
+      "publishedDate": "2026-01-28",
+      "knownFrom": "2026-01-28",
+      "eps": 17.69,
+      "source": "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000012/gevpressrelease4q25.htm"
+    }
+  ],
+  "ttm": [
+    {
+      "periodEnd": "2024-12-31",
+      "publishedDate": "2025-01-22",
+      "knownFrom": "2025-01-22",
+      "eps": 5.56,
+      "source": "https://www.gevernova.com/news/press-releases/ge-vernova-reports-fourth-quarter-full-year-2024",
+      "profitPeriodStart": "2024-01-01",
+      "halfYearAnnualizedEps": 2.76,
+      "formula": "公表GAAP希薄化後四半期EPSの直近4期合計。半年年換算は直近2期合計×2",
+      "quarterSources": [
+        "https://www.sec.gov/Archives/edgar/data/1996810/000199681024000004/gev1q2024earningsrelease.htm",
+        "https://www.sec.gov/Archives/edgar/data/1996810/000199681024000065/gev2q2024earningsrelease.htm",
+        "https://www.sec.gov/Archives/edgar/data/1996810/000199681024000080/gev3q2024earningsrelease.htm",
+        "https://www.gevernova.com/news/press-releases/ge-vernova-reports-fourth-quarter-full-year-2024"
+      ]
+    },
+    {
+      "periodEnd": "2025-03-31",
+      "publishedDate": "2025-04-23",
+      "knownFrom": "2025-04-23",
+      "eps": 6.94,
+      "source": "https://www.sec.gov/Archives/edgar/data/1996810/000199681025000072/gevpressrelease1q25.htm",
+      "profitPeriodStart": "2024-04-01",
+      "halfYearAnnualizedEps": 5.28,
+      "formula": "公表GAAP希薄化後四半期EPSの直近4期合計。半年年換算は直近2期合計×2",
+      "quarterSources": [
+        "https://www.sec.gov/Archives/edgar/data/1996810/000199681024000065/gev2q2024earningsrelease.htm",
+        "https://www.sec.gov/Archives/edgar/data/1996810/000199681024000080/gev3q2024earningsrelease.htm",
+        "https://www.gevernova.com/news/press-releases/ge-vernova-reports-fourth-quarter-full-year-2024",
+        "https://www.sec.gov/Archives/edgar/data/1996810/000199681025000072/gevpressrelease1q25.htm"
+      ]
+    },
+    {
+      "periodEnd": "2025-06-30",
+      "publishedDate": "2025-07-23",
+      "knownFrom": "2025-07-23",
+      "eps": 4.15,
+      "source": "https://www.sec.gov/Archives/edgar/data/1996810/000199681025000132/gevpressrelease2q25.htm",
+      "profitPeriodStart": "2024-07-01",
+      "halfYearAnnualizedEps": 5.54,
+      "formula": "公表GAAP希薄化後四半期EPSの直近4期合計。半年年換算は直近2期合計×2",
+      "quarterSources": [
+        "https://www.sec.gov/Archives/edgar/data/1996810/000199681024000080/gev3q2024earningsrelease.htm",
+        "https://www.gevernova.com/news/press-releases/ge-vernova-reports-fourth-quarter-full-year-2024",
+        "https://www.sec.gov/Archives/edgar/data/1996810/000199681025000072/gevpressrelease1q25.htm",
+        "https://www.sec.gov/Archives/edgar/data/1996810/000199681025000132/gevpressrelease2q25.htm"
+      ]
+    },
+    {
+      "periodEnd": "2025-09-30",
+      "publishedDate": "2025-10-22",
+      "knownFrom": "2025-10-22",
+      "eps": 6.14,
+      "source": "https://www.sec.gov/Archives/edgar/data/1996810/000199681025000159/gevpressrelease3q25.htm",
+      "profitPeriodStart": "2024-10-01",
+      "halfYearAnnualizedEps": 7.0,
+      "formula": "公表GAAP希薄化後四半期EPSの直近4期合計。半年年換算は直近2期合計×2",
+      "quarterSources": [
+        "https://www.gevernova.com/news/press-releases/ge-vernova-reports-fourth-quarter-full-year-2024",
+        "https://www.sec.gov/Archives/edgar/data/1996810/000199681025000072/gevpressrelease1q25.htm",
+        "https://www.sec.gov/Archives/edgar/data/1996810/000199681025000132/gevpressrelease2q25.htm",
+        "https://www.sec.gov/Archives/edgar/data/1996810/000199681025000159/gevpressrelease3q25.htm"
+      ]
+    },
+    {
+      "periodEnd": "2025-12-31",
+      "publishedDate": "2026-01-28",
+      "knownFrom": "2026-01-28",
+      "eps": 17.8,
+      "source": "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000012/gevpressrelease4q25.htm",
+      "profitPeriodStart": "2025-01-01",
+      "halfYearAnnualizedEps": 30.06,
+      "formula": "公表GAAP希薄化後四半期EPSの直近4期合計。半年年換算は直近2期合計×2",
+      "quarterSources": [
+        "https://www.sec.gov/Archives/edgar/data/1996810/000199681025000072/gevpressrelease1q25.htm",
+        "https://www.sec.gov/Archives/edgar/data/1996810/000199681025000132/gevpressrelease2q25.htm",
+        "https://www.sec.gov/Archives/edgar/data/1996810/000199681025000159/gevpressrelease3q25.htm",
+        "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000012/gevpressrelease4q25.htm"
+      ]
+    },
+    {
+      "periodEnd": "2026-03-31",
+      "publishedDate": "2026-04-22",
+      "knownFrom": "2026-04-22",
+      "eps": 34.33,
+      "source": "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000063/gevpressrelease1q26.htm",
+      "profitPeriodStart": "2025-04-01",
+      "halfYearAnnualizedEps": 61.66,
+      "formula": "公表GAAP希薄化後四半期EPSの直近4期合計。半年年換算は直近2期合計×2",
+      "quarterSources": [
+        "https://www.sec.gov/Archives/edgar/data/1996810/000199681025000132/gevpressrelease2q25.htm",
+        "https://www.sec.gov/Archives/edgar/data/1996810/000199681025000159/gevpressrelease3q25.htm",
+        "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000012/gevpressrelease4q25.htm",
+        "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000063/gevpressrelease1q26.htm"
+      ]
+    },
+    {
+      "periodEnd": "2026-06-30",
+      "publishedDate": "2026-07-22",
+      "knownFrom": "2026-07-22",
+      "eps": 34.94,
+      "source": "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000147/gevpressrelease2q26.htm",
+      "profitPeriodStart": "2025-07-01",
+      "halfYearAnnualizedEps": 39.82,
+      "formula": "公表GAAP希薄化後四半期EPSの直近4期合計。半年年換算は直近2期合計×2",
+      "quarterSources": [
+        "https://www.sec.gov/Archives/edgar/data/1996810/000199681025000159/gevpressrelease3q25.htm",
+        "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000012/gevpressrelease4q25.htm",
+        "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000063/gevpressrelease1q26.htm",
+        "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000147/gevpressrelease2q26.htm"
+      ]
+    }
+  ],
+  "companyForecast": null,
+  "companyForecastNote": "2026-07-22会社予想は売上45.5〜46.5十億ドル、調整EBITDA率12〜14%、FCF11.5〜12.5十億ドル。同一基準の会社EPS予想は未取得のためnull。これらから仮のEPSを逆算しない。",
+  "analyst": null,
+  "nextEarnings": {
+    "date": "2026-10-28",
+    "source": "https://www.gevernova.com/news/press-releases/ge-vernova-announce-third-quarter-2026-financial-results-october-28"
+  },
+  "sources": [
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1996810/000199681024000004/gev1q2024earningsrelease.htm",
+      "publishedDate": "2024-04-25",
+      "title": "GE Vernova 2024 Q1 financial results"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1996810/000199681024000065/gev2q2024earningsrelease.htm",
+      "publishedDate": "2024-07-24",
+      "title": "GE Vernova 2024 Q2 financial results"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1996810/000199681024000080/gev3q2024earningsrelease.htm",
+      "publishedDate": "2024-10-23",
+      "title": "GE Vernova 2024 Q3 financial results"
+    },
+    {
+      "url": "https://www.gevernova.com/news/press-releases/ge-vernova-reports-fourth-quarter-full-year-2024",
+      "publishedDate": "2025-01-22",
+      "title": "GE Vernova 2024 Q4 financial results"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1996810/000199681025000072/gevpressrelease1q25.htm",
+      "publishedDate": "2025-04-23",
+      "title": "GE Vernova 2025 Q1 financial results"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1996810/000199681025000132/gevpressrelease2q25.htm",
+      "publishedDate": "2025-07-23",
+      "title": "GE Vernova 2025 Q2 financial results"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1996810/000199681025000159/gevpressrelease3q25.htm",
+      "publishedDate": "2025-10-22",
+      "title": "GE Vernova 2025 Q3 financial results"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000012/gevpressrelease4q25.htm",
+      "publishedDate": "2026-01-28",
+      "title": "GE Vernova 2025 Q4 financial results"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000063/gevpressrelease1q26.htm",
+      "publishedDate": "2026-04-22",
+      "title": "GE Vernova 2026 Q1 financial results"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000147/gevpressrelease2q26.htm",
+      "publishedDate": "2026-07-22",
+      "title": "GE Vernova 2026 Q2 financial results"
+    },
+    {
+      "url": "https://www.gevernova.com/news/press-releases/ge-vernova-announce-third-quarter-2026-financial-results-october-28",
+      "publishedDate": "2026-10-13",
+      "title": "GE Vernova to announce third quarter 2026 financial results on October 28"
+    }
+  ]
+}

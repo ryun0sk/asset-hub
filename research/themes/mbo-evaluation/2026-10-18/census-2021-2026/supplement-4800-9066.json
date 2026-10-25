@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-10-18",
+  "prepared_at": "2026-10-18T18:32:41+09:00",
+  "scope": "2025–2026担当台帳の4800/9066向け、正式公表日と固有公表動機のみを補う。主台帳・結果認定は変更しない。",
+  "sources": {
+    "4800-mbo-company-original": {
+      "source_id": "4800-mbo-company-original",
+      "title": "MBOの実施及び応募の推奨に関するお知らせ",
+      "url": "https://www.oricon.jp/files/2026/05/%E3%80%904800%E3%82%AA%E3%83%AA%E3%82%B3%E3%83%B3%E3%80%91%EF%BC%AD%EF%BC%A2%EF%BC%AF%E3%81%AE%E5%AE%9F%E6%96%BD%E5%8F%8A%E3%81%B3%E5%BF%9C%E5%8B%9F%E3%81%AE%E6%8E%A8%E5%A5%A8%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B.pdf",
+      "public_at": "2026-05-28",
+      "issuer": "オリコン株式会社",
+      "source_type": "primary_company_disclosure",
+      "locator": "PDF p1（公表日・正式MBO実施）、p13-14（固有施策・スポンサー支援）",
+      "short_quote": "事業運営の更なる高度化",
+      "accessed_at": "2026-10-18",
+      "local_path": "working/2025-2026/4800-supplement-start.pdf",
+      "sha256": "e94c8ab6f69977889d8330692495189c80ef9229d7dbe115e90f233c9ccf2b3d",
+      "read_method": "pdf_page_images_and_text"
+    },
+    "9066-mbo-company-original": {
+      "source_id": "9066-mbo-company-original",
+      "title": "MBOの実施に関する賛同の意見表明及び応募の推奨に関するお知らせ",
+      "url": "https://pdf.irpocket.com/C9066/vAfC/SPiB/l8Sd.pdf",
+      "public_at": "2025-05-12",
+      "issuer": "株式会社日新",
+      "source_type": "primary_company_disclosure",
+      "locator": "PDF p1（公表日・MBO該当）、p9-11,p17-18（固有課題・施策）",
+      "short_quote": "デジタルフォワーディングサービスの高度化",
+      "accessed_at": "2026-10-18",
+      "local_path": "working/2025-2026/9066-supplement-start.pdf",
+      "sha256": "25528e78453453e9ab0525c5084ee3db1b306894b27196fde703ef638463b5b3",
+      "read_method": "pdf_text_extraction"
+    }
+  },
+  "episodes": [
+    {
+      "episode_id": "mbo-4800-2026-01",
+      "code": "4800",
+      "name": "オリコン",
+      "announcement_date": "2026-05-28",
+      "announcement_date_status": "verified",
+      "announcement_source_id": "4800-mbo-company-original",
+      "announcement_locator": "PDF p1（ページ画像で日付と正式実施を照合）",
+      "transaction_classification": "formal_mbo_tob",
+      "motives": [
+        {
+          "category": "growth_investment",
+          "text": "「オリコンニュース」等について、記事・動画制作への投資、ジャンルや配信先の拡大、UI/UX・コンテンツ制作体制の改善により媒体価値を高める。",
+          "source_id": "4800-mbo-company-original",
+          "locator": "PDF p13（イ）",
+          "availability_phase": "at_announcement",
+          "evidence_kind": "issuer_or_buyer_statement"
+        },
+        {
+          "category": "growth_investment",
+          "text": "蓄積した調査・ニュース・消費者動向データとAIを融合し、記事・動画制作の効率化・自動化、CS調査データの深層分析、顧客企業へのコンサルティング等の新事業へ広げる。",
+          "source_id": "4800-mbo-company-original",
+          "locator": "PDF p13（ウ）",
+          "availability_phase": "at_announcement",
+          "evidence_kind": "issuer_or_buyer_statement"
+        },
+        {
+          "category": "sponsor_resources",
+          "text": "丸の内キャピタル及び三菱商事グループのAI・DX知見、事業ネットワーク、人材・技術獲得やM&A支援を活用し、中長期の投資判断と経営体制強化を進める。",
+          "source_id": "4800-mbo-company-original",
+          "locator": "PDF p13（ウ）-p14（エ）",
+          "availability_phase": "at_announcement",
+          "evidence_kind": "issuer_or_buyer_statement"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "4800-mbo-company-original",
+          "title": "MBOの実施及び応募の推奨に関するお知らせ",
+          "url": "https://www.oricon.jp/files/2026/05/%E3%80%904800%E3%82%AA%E3%83%AA%E3%82%B3%E3%83%B3%E3%80%91%EF%BC%AD%EF%BC%A2%EF%BC%AF%E3%81%AE%E5%AE%9F%E6%96%BD%E5%8F%8A%E3%81%B3%E5%BF%9C%E5%8B%9F%E3%81%AE%E6%8E%A8%E5%A5%A8%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B.pdf",
+          "public_at": "2026-05-28",
+          "issuer": "オリコン株式会社",
+          "source_type": "primary_company_disclosure",
+          "locator": "PDF p1（公表日・正式MBO実施）、p13-14（固有施策・スポンサー支援）",
+          "short_quote": "事業運営の更なる高度化",
+          "accessed_at": "2026-10-18",
+          "local_path": "working/2025-2026/4800-supplement-start.pdf",
+          "sha256": "e94c8ab6f69977889d8330692495189c80ef9229d7dbe115e90f233c9ccf2b3d",
+          "read_method": "pdf_page_images_and_text"
+        }
+      ],
+      "verification": {
+        "announcement": "verified_company_original",
+        "motive": "verified_company_original_body"
+      },
+      "cautions": [
+        "会社PDFの文字抽出は大きく乱れるため、公表日p1・動機p13-14はページ画像で確認した。",
+        "公表原本が遡って記す内部検討・提案・交渉は、正式公表前の公開情報として用いない。",
+        "結果・価格変更の追加確認は本追補の対象外。元台帳の結果根拠を維持する。"
+      ]
+    },
+    {
+      "episode_id": "mbo-9066-2025-01",
+      "code": "9066",
+      "name": "日新",
+      "announcement_date": "2025-05-12",
+      "announcement_date_status": "verified",
+      "announcement_source_id": "9066-mbo-company-original",
+      "announcement_locator": "PDF p1（日付・MBO実施及び賛同応募推奨決議）",
+      "transaction_classification": "formal_mbo_tob",
+      "motives": [
+        {
+          "category": "growth_investment",
+          "text": "運賃市況正常化で競争が激化する中、倉庫等への投資、危険品物流など高付加価値サービス、海上・航空輸送スペースの調達力と海外事業を強化する。",
+          "source_id": "9066-mbo-company-original",
+          "locator": "PDF p9-10, p17",
+          "availability_phase": "at_announcement",
+          "evidence_kind": "issuer_or_buyer_statement"
+        },
+        {
+          "category": "growth_investment",
+          "text": "国際物流の算出・発注・書類授受・進捗管理等を一貫提供する「Forward ONE」を高度化し、省力化・効率化に対応する。ドライバー・作業員及びM&A/DX専門人材の確保・育成も課題とする。",
+          "source_id": "9066-mbo-company-original",
+          "locator": "PDF p10（エ）（オ）",
+          "availability_phase": "at_announcement",
+          "evidence_kind": "issuer_or_buyer_statement"
+        },
+        {
+          "category": "sponsor_resources",
+          "text": "危険品輸送の国内外M&Aは社内ノウハウ・人材の制約で進捗が限定的だったため、ベインのネットワーク、M&A/PMI知見、人材紹介、海外展開支援を活用する。",
+          "source_id": "9066-mbo-company-original",
+          "locator": "PDF p17-18（エ）(a)-(c)",
+          "availability_phase": "at_announcement",
+          "evidence_kind": "issuer_or_buyer_statement"
+        },
+        {
+          "category": "long_term_governance",
+          "text": "抜本施策に必要な初期・継続投資は短期の利益・CF・財務を悪化させ得るため、非公開化による中長期の意思決定と、上場維持・開示監査・IR対応資源の事業投資への振替を説明する。",
+          "source_id": "9066-mbo-company-original",
+          "locator": "PDF p17（イ）（ウ）",
+          "availability_phase": "at_announcement",
+          "evidence_kind": "issuer_or_buyer_statement"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "9066-mbo-company-original",
+          "title": "MBOの実施に関する賛同の意見表明及び応募の推奨に関するお知らせ",
+          "url": "https://pdf.irpocket.com/C9066/vAfC/SPiB/l8Sd.pdf",
+          "public_at": "2025-05-12",
+          "issuer": "株式会社日新",
+          "source_type": "primary_company_disclosure",
+          "locator": "PDF p1（公表日・MBO該当）、p9-11,p17-18（固有課題・施策）",
+          "short_quote": "デジタルフォワーディングサービスの高度化",
+          "accessed_at": "2026-10-18",
+          "local_path": "working/2025-2026/9066-supplement-start.pdf",
+          "sha256": "25528e78453453e9ab0525c5084ee3db1b306894b27196fde703ef638463b5b3",
+          "read_method": "pdf_text_extraction"
+        }
+      ],
+      "verification": {
+        "announcement": "verified_company_original",
+        "motive": "verified_company_original_body"
+      },
+      "cautions": [
+        "正式MBO実施公表日は2025-05-12。2025-05-13のTOB開始日と区別する。",
+        "会社IR一覧には2025-05-09の報道に関する会社開示の存在もあるが、本追補では当該本文を読んでおらず、初報前の情報可視性を判定しない。",
+        "結果・価格変更の追加確認は本追補の対象外。元台帳の結果根拠を維持する。"
+      ]
+    }
+  ],
+  "limitations": [
+    "動機は発行会社・買収者の公表説明であり、独立した因果認定・公表前の予測証拠ではない。",
+    "短引用は各原本から1つに限定。出所別の短引用上限内。"
+  ]
+}

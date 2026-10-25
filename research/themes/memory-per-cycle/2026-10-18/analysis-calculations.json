@@ -1,0 +1,218 @@
+{
+  "researchDateJST": "2026-10-18",
+  "stockPriceAsOf": "2026-10-15",
+  "pricePolicy": "Reuse dated saved prices; not current quotes or new consensus.",
+  "inputHashes": {
+    "research/companies/285A-kioxia/2026-10-15/eps-per-history.json": "00b9e4026257290779982ae0081c381228f973c5c727dbcee23dcd228b16df2d",
+    "research/themes/ai-supply-chain/2026-10-18/valuation.json": "e54dda4763469eb2e0b94810f0a10f249fdcae8395708e489dd93dacf4df7d46"
+  },
+  "kioxiaReconstructedDilutedTTM": {
+    "points": [
+      {
+        "date": "2026-01-05",
+        "closeJPY": 3783.333251953125,
+        "ttmDilutedEPSJPY": 96.15891002101914,
+        "trailingPER": 39.34459376802561,
+        "reportDate": "2025-11-13"
+      },
+      {
+        "date": "2026-03-31",
+        "closeJPY": 6360.0,
+        "ttmDilutedEPSJPY": 101.90583925590134,
+        "trailingPER": 62.41055514031002,
+        "reportDate": "2026-02-12"
+      },
+      {
+        "date": "2026-04-30",
+        "closeJPY": 12520.0,
+        "ttmDilutedEPSJPY": 101.90583925590134,
+        "trailingPER": 122.85851420702538,
+        "reportDate": "2026-02-12"
+      },
+      {
+        "date": "2026-05-13",
+        "closeJPY": 16833.333984375,
+        "ttmDilutedEPSJPY": 101.90583925590134,
+        "trailingPER": 165.1851759162092,
+        "reportDate": "2026-02-12"
+      },
+      {
+        "date": "2026-05-15",
+        "closeJPY": 14816.6669921875,
+        "ttmDilutedEPSJPY": 101.90583925590134,
+        "trailingPER": 145.39566231313356,
+        "reportDate": "2026-02-12"
+      },
+      {
+        "date": "2026-05-18",
+        "closeJPY": 17150.0,
+        "ttmDilutedEPSJPY": 336.38425952000307,
+        "trailingPER": 50.98336059027214,
+        "reportDate": "2026-05-15"
+      },
+      {
+        "date": "2026-06-22",
+        "closeJPY": 36233.33203125,
+        "ttmDilutedEPSJPY": 336.38425952000307,
+        "trailingPER": 107.71411267266917,
+        "reportDate": "2026-05-15"
+      },
+      {
+        "date": "2026-07-31",
+        "closeJPY": 15500.0,
+        "ttmDilutedEPSJPY": 336.38425952000307,
+        "trailingPER": 46.07825592706811,
+        "reportDate": "2026-05-15"
+      },
+      {
+        "date": "2026-08-03",
+        "closeJPY": 16386.666015625,
+        "ttmDilutedEPSJPY": 832.2357213223275,
+        "trailingPER": 19.689933507766835,
+        "reportDate": "2026-07-31"
+      },
+      {
+        "date": "2026-10-02",
+        "closeJPY": 19300.0,
+        "ttmDilutedEPSJPY": 832.2357213223275,
+        "trailingPER": 23.190545064966095,
+        "reportDate": "2026-07-31"
+      },
+      {
+        "date": "2026-10-15",
+        "closeJPY": 12880.0,
+        "ttmDilutedEPSJPY": 832.2357213223275,
+        "trailingPER": 15.476384478588772,
+        "reportDate": "2026-07-31"
+      }
+    ],
+    "intervals": [
+      {
+        "start": "2026-01-05",
+        "end": "2026-05-13",
+        "priceFactor": 4.449339474836081,
+        "epsFactor": 1.0597649165701442,
+        "perFactor": 4.198421183101684,
+        "priceChangePct": 344.9339474836081,
+        "epsChangePct": 5.9764916570144155,
+        "perChangePct": 319.84211831016836
+      },
+      {
+        "start": "2026-03-31",
+        "end": "2026-04-30",
+        "priceFactor": 1.9685534591194969,
+        "epsFactor": 1.0,
+        "perFactor": 1.9685534591194969,
+        "priceChangePct": 96.85534591194968,
+        "epsChangePct": 0.0,
+        "perChangePct": 96.85534591194968
+      },
+      {
+        "start": "2026-05-15",
+        "end": "2026-05-18",
+        "priceFactor": 1.1574802895308922,
+        "epsFactor": 3.300932134765017,
+        "perFactor": 0.35065255578581883,
+        "priceChangePct": 15.748028953089221,
+        "epsChangePct": 230.0932134765017,
+        "perChangePct": -64.93474442141812
+      },
+      {
+        "start": "2026-07-31",
+        "end": "2026-08-03",
+        "priceFactor": 1.0572042590725808,
+        "epsFactor": 2.4740626166927964,
+        "perFactor": 0.42731507761343507,
+        "priceChangePct": 5.720425907258075,
+        "epsChangePct": 147.40626166927964,
+        "perChangePct": -57.268492238656485
+      },
+      {
+        "start": "2026-05-13",
+        "end": "2026-10-15",
+        "priceFactor": 0.7651484852587993,
+        "epsFactor": 8.166712794862077,
+        "perFactor": 0.0936911220558873,
+        "priceChangePct": -23.48515147412007,
+        "epsChangePct": 716.6712794862077,
+        "perChangePct": -90.63088779441128
+      },
+      {
+        "start": "2026-10-02",
+        "end": "2026-10-15",
+        "priceFactor": 0.6673575129533679,
+        "epsFactor": 1.0,
+        "perFactor": 0.6673575129533679,
+        "priceChangePct": -33.26424870466321,
+        "epsChangePct": 0.0,
+        "perChangePct": -33.26424870466321
+      }
+    ]
+  },
+  "kioxiaSavedChartAudit": {
+    "date": "2026-05-13",
+    "closeJPY": 16833.333984375,
+    "savedEPSJPY": 95.96666667,
+    "savedPER": 175.40813460010742,
+    "reconstructedEPSJPY": 101.90583925590134,
+    "reconstructedPER": 165.1851759162092,
+    "savedOverstatementPct": 6.188786994472095,
+    "explanation": "Saved TTM lacks the 2025-12 quarter; update timing also uses period-end+45 days."
+  },
+  "skHynixAtSavedOct15Price": {
+    "currency": "KRW",
+    "price": 1262000,
+    "fy2025CompanyBasicEPS": 62044,
+    "priorHalfYearBasicEPS": 21890,
+    "currentHalfYearBasicEPS": 189546,
+    "ttmCompanyBasicEPSApprox": 229700,
+    "fy2025CompanyBasicPER": 20.3404035845529,
+    "ttmCompanyBasicPERApprox": 5.494122768828907,
+    "savedGraphTTMEPS": 227575.0,
+    "savedGraphEPSAppliedToOct15PER": 5.545424585301549,
+    "previouslyRetrievedFY2026AdjustedForecastEPS": 355218.9,
+    "forecastPER": 3.552738888612064,
+    "methodNote": "Basic EPS differences are approximate when weighted shares change. Forecast adjustments not reconciled."
+  },
+  "skQ2FinancialIncomeTrillionKRW": {
+    "dividendIncome": 10.027945,
+    "financialAssetFairValueGain": 53.237425,
+    "sumPretaxIncomeItems": 63.265370000000004,
+    "operatingProfit": 60.542608,
+    "pretaxProfit": 122.708355,
+    "parentAttributableProfit": 93.820236,
+    "note": "Not a tax-adjusted exclusion from net profit; not all attributed to Kioxia."
+  },
+  "kioxiaFixedPriceForecastSensitivity": [
+    {
+      "profitFractionOfSavedForecast": 1,
+      "priceJPY": 12880,
+      "epsJPY": 3443,
+      "per": 3.740923613128086
+    },
+    {
+      "profitFractionOfSavedForecast": 0.5,
+      "priceJPY": 12880,
+      "epsJPY": 1721.5,
+      "per": 7.481847226256172
+    },
+    {
+      "profitFractionOfSavedForecast": 0.25,
+      "priceJPY": 12880,
+      "epsJPY": 860.75,
+      "per": 14.963694452512344
+    }
+  ],
+  "sources": {
+    "skReportedEPSAndFinancialIncome": "https://www.sec.gov/Archives/edgar/data/2120882/000119312526354777/d147827d6k.htm",
+    "skForecastDefinition": "https://stockanalysis.com/quote/krx/000660/forecast/",
+    "savedPricesAndForecasts": "research/companies/285A-kioxia/2026-10-15/per-analysis.md",
+    "kioxiaOriginalReportSources": {
+      "annual": "https://www2.jpx.co.jp/disc/285A0/140120260515537803.pdf",
+      "halfYear": "https://www2.jpx.co.jp/disc/285A0/140120251113599856.pdf",
+      "thirdQuarter": "https://www2.jpx.co.jp/disc/285A0/140120260212556330.pdf",
+      "firstQuarter": "https://www2.jpx.co.jp/disc/285A0/140120260731505265.pdf",
+      "externalTTMCrossCheck": "https://stockanalysis.com/quote/tyo/285A/financials/"
+    }
+  }
+}

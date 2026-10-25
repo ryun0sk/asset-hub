@@ -1,0 +1,95 @@
+{
+  "date": "2026-10-18",
+  "scope": "三菱重工・GE Vernova・Siemens EnergyをEPS/PER一覧・月次表・PER/EPS/株価グラフへ追加",
+  "unitTests": {
+    "command": "node --test tests/*.cjs",
+    "passed": 98
+  },
+  "data": {
+    "listedCompanies": 46,
+    "stages": 18,
+    "actualMonthlyCompanies": 7,
+    "newPriceCutoff": "2026-10-16",
+    "originalPriceCutoff": "2026-10-02",
+    "originalMonthlyCutoff": "2026-10-15",
+    "currencies": [
+      "JPY",
+      "USD",
+      "EUR"
+    ],
+    "original43RecordsUnchanged": true,
+    "original4MonthlyRecordsUnchanged": true,
+    "releaseBoundaryTests": true,
+    "offlineRebuildExactOutputs": 8
+  },
+  "browser": {
+    "browser": "Chrome / CUA",
+    "overviewGenerationCount": 3,
+    "monthlyOptions": 7,
+    "perLines": 3,
+    "epsCards": 3,
+    "priceComparisonCompanies": 3,
+    "accountingWarningVisible": true,
+    "consoleErrors": 0,
+    "keyboardSelectionVerified": true
+  },
+  "screenshots": [
+    "eps-per-overview.jpg",
+    "per-chart.jpg",
+    "eps-charts.jpg",
+    "production-overview.jpg",
+    "production-eps-charts.jpg"
+  ],
+  "deployment": {
+    "baselineRevision": "asset-hub-00034-svt",
+    "baselineImage": "asia-northeast1-docker.pkg.dev/ryun0sk-asset-hub/asset-hub/app@sha256:c2247b764b95e0cc4e7afb869b5c62837d20c5eb174856d114182e81d488ed36",
+    "revision": "asset-hub-00036-9m2",
+    "image": "asia-northeast1-docker.pkg.dev/ryun0sk-asset-hub/asset-hub/app@sha256:dc3bb8fad58658b9d48f33f09980a7df080700354ad0d03b699d1aacfdd6074c",
+    "buildId": "a5cbed9b-25a5-47b3-908a-57909a02aec9",
+    "trafficPercent": 100,
+    "overlayFilesVerified": 42,
+    "unrelatedFilesPreserved": 287,
+    "catalogEntriesAdded": 5,
+    "productionOverviewVerified": true,
+    "productionPerGraphVerified": true,
+    "productionMonthlyCurrencyVerified": true,
+    "url": "https://asset-hub-pvgbytjsqa-an.a.run.app/#ai/valuation",
+    "iapVerified": true,
+    "iapViewers": 2,
+    "dataRevision": "asset-hub-00035-wrb",
+    "dataBuildId": "f876b1af-d6d7-483d-a6f9-2742ff0fbd72",
+    "cachePatch": {
+      "overlayFilesVerified": 3,
+      "unrelatedFilesPreserved": 327,
+      "baselineFiles": 330,
+      "baselineRevision": "asset-hub-00035-wrb",
+      "changes": [
+        "304 Content-Length matches representation bytes",
+        "correct saved source reference date"
+      ]
+    },
+    "productionEpsGraphVerified": true,
+    "repeatedRouteSwitches": [
+      "EPS",
+      "PER",
+      "EPS",
+      "PER"
+    ],
+    "revalidated304VisibleVerified": true,
+    "revalidationLogTimes": [
+      "2026-10-18T02:25:00.180012Z",
+      "2026-10-18T02:25:07.564690Z"
+    ]
+  },
+  "backendTests": {
+    "command": "python3 -m unittest discover -s tests",
+    "ran": 100,
+    "passed": 92,
+    "skipped": 8
+  },
+  "staticRevalidation": {
+    "contentLengthMatchesRepresentation": true,
+    "notModifiedBodyEmpty": true,
+    "cspPreserved": true
+  }
+}

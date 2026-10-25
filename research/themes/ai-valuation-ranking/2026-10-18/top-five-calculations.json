@@ -1,0 +1,311 @@
+{
+  "as_of": "2026-10-18 JST",
+  "price_date": "2026-10-16",
+  "status": "independent sensitivity calculations; not forecast probabilities or target-price returns",
+  "discount_years": 3.2087611225188226,
+  "discount_factor": 1.4385629723916442,
+  "purchase_preference_order": [
+    "AVGO",
+    "000660.KS",
+    "2382.TW",
+    "6669.TW",
+    "SMCI"
+  ],
+  "purchase_preference_basis": "qualitative judgment, not expected-return optimization",
+  "rows": [
+    {
+      "symbol": "AVGO",
+      "name": "Broadcom",
+      "currency": "USD",
+      "price": 328.75,
+      "year": 2029,
+      "base_NI_bn": 145.45091666666667,
+      "base_EPS": 28.51978758169935,
+      "base_diluted_shares_bn": 5.1,
+      "base_PE": 11.52708445174231,
+      "terminal_PE": 25,
+      "conditional_price_12pct": 495.6298078193363,
+      "gap_pct": 50.761918728315216,
+      "initial_published_EPS": 28.51978758169935,
+      "initial_published_shares_bn": 5.1,
+      "initial_published_gap_pct": 50.761918728315216,
+      "thresholds": [
+        {
+          "terminal_pe": 20,
+          "required_eps_for_12pct": 23.64637885868765,
+          "earnings_shortfall_allowance_pct": 17.08781564046038
+        },
+        {
+          "terminal_pe": 25,
+          "required_eps_for_12pct": 18.91710308695012,
+          "earnings_shortfall_allowance_pct": 33.67025251236831
+        }
+      ],
+      "weak_scenario_gap_pct": -61.17215217235356,
+      "joint_EPS_minus20pct_PE_minus20pct": {
+        "eps": 22.81583006535948,
+        "terminal_pe": 20.0,
+        "conditional_price": 317.20307700437525,
+        "gap_pct": -3.512372013878251
+      }
+    },
+    {
+      "symbol": "000660.KS",
+      "name": "SK hynix",
+      "currency": "KRW",
+      "price": 1272000.0,
+      "year": 2029,
+      "base_NI_bn": 184734.52681788482,
+      "base_EPS": 262034.7898126026,
+      "base_diluted_shares_bn": 0.705,
+      "base_PE": 4.854317248903042,
+      "terminal_PE": 11,
+      "conditional_price_12pct": 2003654.162700018,
+      "gap_pct": 57.51998134434102,
+      "initial_published_EPS": 262034.7898126026,
+      "initial_published_shares_bn": 0.705,
+      "initial_published_gap_pct": 57.51998134434102,
+      "thresholds": [
+        {
+          "terminal_pe": 8,
+          "required_eps_for_12pct": 228731.51261027143,
+          "earnings_shortfall_allowance_pct": 12.709486868575127
+        },
+        {
+          "terminal_pe": 11,
+          "required_eps_for_12pct": 166350.1909892883,
+          "earnings_shortfall_allowance_pct": 36.515990449872824
+        }
+      ],
+      "weak_scenario_gap_pct": -83.22931870432761,
+      "joint_EPS_minus20pct_PE_minus20pct": {
+        "eps": 209627.8318500821,
+        "terminal_pe": 8.8,
+        "conditional_price": 1282338.6641280116,
+        "gap_pct": 0.8127880603782778
+      }
+    },
+    {
+      "symbol": "2382.TW",
+      "name": "Quanta Computer",
+      "currency": "TWD",
+      "price": 322.0,
+      "year": 2029,
+      "base_NI_bn": 201.24817626424831,
+      "base_EPS": 45.29699616347504,
+      "base_diluted_shares_bn": 4.442859202803464,
+      "base_PE": 7.108639143264929,
+      "terminal_PE": 15,
+      "conditional_price_12pct": 472.3150501521085,
+      "gap_pct": 46.68169259382251,
+      "initial_published_EPS": 47.27149858408288,
+      "initial_published_shares_bn": 4.257283612582826,
+      "initial_published_gap_pct": 53.075568162085716,
+      "thresholds": [
+        {
+          "terminal_pe": 12,
+          "required_eps_for_12pct": 38.60143975917578,
+          "earnings_shortfall_allowance_pct": 14.781457870043447
+        },
+        {
+          "terminal_pe": 15,
+          "required_eps_for_12pct": 30.88115180734063,
+          "earnings_shortfall_allowance_pct": 31.82516629603476
+        }
+      ],
+      "weak_scenario_gap_pct": -71.04156371725361,
+      "joint_EPS_minus20pct_PE_minus20pct": {
+        "eps": 36.237596930780036,
+        "terminal_pe": 12.0,
+        "conditional_price": 302.2816320973494,
+        "gap_pct": -6.1237167399536
+      },
+      "OPM_minus1pt": {
+        "eps": 32.94320866052276,
+        "EPS_change_pct": -27.272862550019784,
+        "conditional_price": 343.50121572106684,
+        "gap_pct": 6.6773961866667175
+      }
+    },
+    {
+      "symbol": "6669.TW",
+      "name": "Wiwynn",
+      "currency": "TWD",
+      "price": 1845.0,
+      "year": 2029,
+      "base_NI_bn": 141.67148430037196,
+      "base_EPS": 218.64855465398136,
+      "base_diluted_shares_bn": 0.6479415540824032,
+      "base_PE": 8.438198930332625,
+      "terminal_PE": 18,
+      "conditional_price_12pct": 2735.837123089937,
+      "gap_pct": 48.28385491002369,
+      "initial_published_EPS": 244.00458035461003,
+      "initial_published_shares_bn": 0.5806099381187101,
+      "initial_published_gap_pct": 65.47989465534468,
+      "thresholds": [
+        {
+          "terminal_pe": 14,
+          "required_eps_for_12pct": 189.58204886161312,
+          "earnings_shortfall_allowance_pct": 13.293710465347896
+        },
+        {
+          "terminal_pe": 18,
+          "required_eps_for_12pct": 147.45270467014353,
+          "earnings_shortfall_allowance_pct": 32.561774806381706
+        }
+      ],
+      "weak_scenario_gap_pct": -74.34621128757708,
+      "joint_EPS_minus20pct_PE_minus20pct": {
+        "eps": 174.9188437231851,
+        "terminal_pe": 14.4,
+        "conditional_price": 1750.9357587775596,
+        "gap_pct": -5.0983328575848414
+      },
+      "OPM_minus1pt": {
+        "eps": 184.88172823536274,
+        "EPS_change_pct": -15.44342539654825,
+        "conditional_price": 2313.330158014471,
+        "gap_pct": 25.383748401868367
+      }
+    },
+    {
+      "symbol": "SMCI",
+      "name": "Super Micro Computer",
+      "currency": "USD",
+      "price": 31.62999916,
+      "year": 2029,
+      "base_NI_bn": 5.3928948528000005,
+      "base_EPS": 5.502953931428572,
+      "base_diluted_shares_bn": 0.98,
+      "base_PE": 5.747821906949677,
+      "terminal_PE": 12,
+      "conditional_price_12pct": 45.90375843426403,
+      "gap_pct": 45.12728312783183,
+      "initial_published_EPS": 5.502953931428572,
+      "initial_published_shares_bn": 0.98,
+      "initial_published_gap_pct": 45.12728312783183,
+      "thresholds": [
+        {
+          "terminal_pe": 8,
+          "required_eps_for_12pct": 5.687718201044351,
+          "earnings_shortfall_allowance_pct": -3.357547090491697
+        },
+        {
+          "terminal_pe": 12,
+          "required_eps_for_12pct": 3.7918121340295676,
+          "earnings_shortfall_allowance_pct": 31.094968606338856
+        }
+      ],
+      "weak_scenario_gap_pct": -87.36000584789882,
+      "joint_EPS_minus20pct_PE_minus20pct": {
+        "eps": 4.402363145142858,
+        "terminal_pe": 9.600000000000001,
+        "conditional_price": 29.37840539792898,
+        "gap_pct": -7.118538798187624
+      },
+      "OPM_minus1pt": {
+        "eps": 4.601746414040817,
+        "EPS_change_pct": -16.376795601372606,
+        "conditional_price": 38.38619374213677,
+        "gap_pct": 21.36008460816148
+      }
+    }
+  ],
+  "ranking_sha256": "109fd2db33482967b4f83dc5f80c57e762214b3cd03734ecd4e947cbd2096a70",
+  "AVGO_independent_stresses": [
+    {
+      "ai_revenue_USD_bn": 250.24,
+      "AI_margin_before_SBC_and_acq_amort": 0.6,
+      "SBC_USD_bn": 13,
+      "EPS_USD": 28.519787581699344,
+      "terminal_PE": 25,
+      "conditional_price": 495.6298078193361,
+      "gap_pct": 50.761918728315166,
+      "conditional_price_if_PE20": 396.5038462554689
+    },
+    {
+      "ai_revenue_USD_bn": 200,
+      "AI_margin_before_SBC_and_acq_amort": 0.6,
+      "SBC_USD_bn": 13,
+      "EPS_USD": 23.67310522875817,
+      "terminal_PE": 25,
+      "conditional_price": 411.40196298464934,
+      "gap_pct": 25.141281516243154,
+      "conditional_price_if_PE20": 329.12157038771943
+    },
+    {
+      "ai_revenue_USD_bn": 180,
+      "AI_margin_before_SBC_and_acq_amort": 0.6,
+      "SBC_USD_bn": 13,
+      "EPS_USD": 21.743693464052285,
+      "terminal_PE": 25,
+      "conditional_price": 377.8717699772102,
+      "gap_pct": 14.941983263029712,
+      "conditional_price_if_PE20": 302.29741598176815
+    },
+    {
+      "ai_revenue_USD_bn": 150,
+      "AI_margin_before_SBC_and_acq_amort": 0.6,
+      "SBC_USD_bn": 13,
+      "EPS_USD": 18.849575816993465,
+      "terminal_PE": 25,
+      "conditional_price": 327.57648046605163,
+      "gap_pct": -0.3569641167903814,
+      "conditional_price_if_PE20": 262.0611843728413
+    },
+    {
+      "ai_revenue_USD_bn": 200,
+      "AI_margin_before_SBC_and_acq_amort": 0.5,
+      "SBC_USD_bn": 13,
+      "EPS_USD": 20.457418954248364,
+      "terminal_PE": 25,
+      "conditional_price": 355.5183079722508,
+      "gap_pct": 8.142451094220782,
+      "conditional_price_if_PE20": 284.41464637780064
+    },
+    {
+      "ai_revenue_USD_bn": 200,
+      "AI_margin_before_SBC_and_acq_amort": 0.5,
+      "SBC_USD_bn": 21.8,
+      "EPS_USD": 19.042516993464055,
+      "terminal_PE": 25,
+      "conditional_price": 330.9294997667956,
+      "gap_pct": 0.6629657085309715,
+      "conditional_price_if_PE20": 264.7435998134365
+    }
+  ],
+  "SK_independent_stresses": [
+    {
+      "consolidated_OPM": 0.5,
+      "terminal_PE": 11,
+      "normal_NI_KRW_bn": 136458.28835635993,
+      "EPS_KRW": 193557.855824624,
+      "conditional_price": 1480043.9431102036,
+      "gap_pct": 16.35565590489021
+    },
+    {
+      "consolidated_OPM": 0.4,
+      "terminal_PE": 11,
+      "normal_NI_KRW_bn": 109346.63068508795,
+      "EPS_KRW": 155101.6038086354,
+      "conditional_price": 1185987.457371108,
+      "gap_pct": -6.761992345038681
+    },
+    {
+      "consolidated_OPM": 0.5,
+      "terminal_PE": 8,
+      "normal_NI_KRW_bn": 136458.28835635993,
+      "EPS_KRW": 193557.855824624,
+      "conditional_price": 1076395.594989239,
+      "gap_pct": -15.37770479644347
+    }
+  ],
+  "checks": {
+    "new_case_math": "30 of 30 rows checked",
+    "AVGO_base_identity": "passed",
+    "discount_matches_prior_model": true,
+    "no_probabilities_assigned": true,
+    "prices_unchanged": true
+  }
+}

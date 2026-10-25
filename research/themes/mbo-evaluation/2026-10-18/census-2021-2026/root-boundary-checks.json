@@ -1,0 +1,46 @@
+{
+  "as_of": "2026-10-18",
+  "exclusions": [
+    {
+      "code": "9246",
+      "name": "プロジェクトホールディングス",
+      "announcement_date": "2026-09-28",
+      "classification": "ordinary_tob_explicitly_not_mbo",
+      "reason": "経営陣の直接・間接出資予定がなく、会社原本がMBOに該当しないと明記。通常の完全子会社化TOBとして母集団から除外。",
+      "sources": [
+        {
+          "source_id": "9246-not-mbo-root",
+          "title": "プロジェクトホールディングス 公開買付けへの賛同・応募推奨",
+          "url": "https://www.release.tdnet.info/inbs/140120260928541243.pdf",
+          "public_at": "2026-09-28",
+          "issuer": "プロジェクトホールディングス",
+          "locator": "PDF p13・p17（MBO非該当を明記）",
+          "accessed_at": "2026-10-18",
+          "short_quote": "ＭＢＯにも該当いたしません"
+        }
+      ]
+    },
+    {
+      "code": "3297",
+      "name": "東武住販",
+      "announcement_date": "2026-10-13",
+      "classification": "ordinary_tob_explicitly_not_mbo",
+      "reason": "経営陣の直接・間接出資予定がなく、会社原本がMBOに該当しないと明記。通常の完全子会社化TOBとして母集団から除外。",
+      "sources": [
+        {
+          "source_id": "3297-not-mbo-root",
+          "title": "東武住販 公開買付けへの賛同・応募推奨",
+          "url": "https://www2.jpx.co.jp/disc/32970/140120261013549832.pdf",
+          "public_at": "2026-10-13",
+          "issuer": "東武住販",
+          "locator": "PDF p13（MBO非該当）、添付買付者資料p23",
+          "accessed_at": "2026-10-18",
+          "short_quote": "ＭＢＯにも該当いたしません"
+        }
+      ]
+    }
+  ],
+  "coverage_notes": [
+    "2026年後半は10/14更新の別TOB一覧も照合。上場廃止済みだけでは漏れるデジタルハーツHDを追加発見。直近プロジェクトHD・東武住販は会社原本で非MBOを確認して別枠へ置いた。"
+  ]
+}

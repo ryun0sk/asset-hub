@@ -1,0 +1,658 @@
+{
+  "as_of": "2026-10-18",
+  "currency": "USD",
+  "money_unit": "billion",
+  "share_unit": "billion",
+  "status": "aligned with parent shared macro; all future parameters are independent scenarios",
+  "method": {
+    "revenue": "AI_addressable_market * company_value_share + non_AI_revenue",
+    "operating_income": "total_revenue * operating_margin_after_SBC_and_amortization",
+    "pretax_income": "operating_income + recurring_net_interest_income",
+    "normal_net_income": "pretax_income * (1 - normal_tax_rate)",
+    "eps": "normal_net_income / diluted_shares",
+    "all_scenario_parameters": "independent analyst assumptions, not company guidance"
+  },
+  "sources": {
+    "anet_results": "https://investors.arista.com/Communications/Press-Releases-and-Events/Press-Release-Detail/2026/Arista-Networks-Inc--Reports-Second-Quarter-2026-Financial-Results/default.aspx",
+    "anet_sec": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000175/anet-20260630.htm",
+    "anet_presentation": "https://s21.q4cdn.com/861911615/files/doc_financials/2026/q2/ANET_Investor_Presentation_Q226.pdf",
+    "vrt_results": "https://investors.vertiv.com/news/news-details/2026/Vertiv-Reports-Strong-Second-Quarter-2026-with-Diluted-EPS-Growth-of-53-Adjusted-Diluted-EPS-Growth-of-60-Raises-Full-Year-2026-Guidance-Across-All-Key-Metrics/default.aspx",
+    "vrt_market": "https://s205.q4cdn.com/554782763/files/doc_presentations/2026/05/22/Vertiv-2026-Investor-Conference_May-19-2026.pdf"
+  },
+  "companies": {
+    "VRT": {
+      "actual_Q2_2026": {
+        "revenue": 3.2743,
+        "gaap_operating_income": 0.6379,
+        "pretax_income": 0.62,
+        "tax_expense": 0.1222,
+        "net_income": 0.4978,
+        "diluted_shares": 0.392746991,
+        "sbc": 0.0138,
+        "intangible_amortization": 0.0737
+      },
+      "actual_H1_2026": {
+        "revenue": 5.9238,
+        "gaap_operating_income": 1.078,
+        "net_income": 0.8879,
+        "sbc": 0.0308,
+        "intangible_amortization": 0.1513
+      },
+      "company_FY2026_guidance": {
+        "revenue": [
+          13.8,
+          14.2
+        ],
+        "adjusted_eps": [
+          6.65,
+          6.75
+        ],
+        "not_model_normal_eps": true
+      },
+      "market_anchor": {
+        "2025_legacy_served_market": 62,
+        "2025_datacenter": 49.5,
+        "2025_cloud_colocation": 29.5,
+        "2025_enterprise_distributed_IT": 20,
+        "2025_expanded_market": 75,
+        "company_market_CAGR_2025_2030": [
+          0.16,
+          0.18
+        ],
+        "ai_only_share_disclosed": false
+      },
+      "baseline_model_assumption_2026": {
+        "revenue": 14,
+        "ai_revenue": 7,
+        "non_ai_revenue": 7,
+        "ai_split_not_company_disclosure": true,
+        "AI_market": 35.0,
+        "company_value_share": 0.2,
+        "allocation_to_addressable_AI_market": 0.035,
+        "sensitivity_AI_revenue_range": [
+          5,
+          9
+        ]
+      },
+      "scenarios": [
+        {
+          "year": 2028,
+          "case": "weak",
+          "AI_market": 29.75,
+          "company_value_share": 0.18,
+          "AI_revenue": 5.3549999999999995,
+          "non_AI_revenue": 7,
+          "revenue": 12.355,
+          "normal_operating_margin": 0.18,
+          "normal_operating_income": 2.2239,
+          "SBC_ratio_included_not_added_back": 0.006,
+          "implied_SBC": 0.07413,
+          "recurring_net_interest_income": -0.1,
+          "normal_tax_rate": 0.24,
+          "normal_net_income": 1.614164,
+          "diluted_shares": 0.405,
+          "normal_EPS": 3.98559012345679,
+          "macro_AI_infrastructure_spend": 1000,
+          "allocation_to_AI_addressable_market": 0.029750000000000002,
+          "content_per_macro_dollar_factor_vs_2026": 0.85,
+          "non_AI_revenue_CAGR_from_2026": 0,
+          "AI_split_sensitivity_holds_2026_total_fixed": [
+            {
+              "2026_AI_revenue": 5,
+              "2026_non_AI_revenue": 9,
+              "revenue": 12.825,
+              "EPS": 4.144345679012345
+            },
+            {
+              "2026_AI_revenue": 9,
+              "2026_non_AI_revenue": 5,
+              "revenue": 11.884999999999998,
+              "EPS": 3.8268345679012334
+            }
+          ],
+          "terminal_PE_assumption": 18,
+          "terminal_price": 71.74062222222221,
+          "discount_years": 2.209445585215606,
+          "present_value_12pct": 55.84966805187645,
+          "price_to_scenario_EPS": 51.79157755965317,
+          "present_value_return_vs_price": -0.7294367403745933,
+          "required_terminal_PE_for_12pct": 66.52787974583428
+        },
+        {
+          "year": 2028,
+          "case": "base",
+          "AI_market": 49.00000000000001,
+          "company_value_share": 0.2,
+          "AI_revenue": 9.800000000000002,
+          "non_AI_revenue": 8.0143,
+          "revenue": 17.814300000000003,
+          "normal_operating_margin": 0.23,
+          "normal_operating_income": 4.097289000000001,
+          "SBC_ratio_included_not_added_back": 0.005,
+          "implied_SBC": 0.08907150000000001,
+          "recurring_net_interest_income": -0.06,
+          "normal_tax_rate": 0.23,
+          "normal_net_income": 3.108712530000001,
+          "diluted_shares": 0.4,
+          "normal_EPS": 7.771781325000002,
+          "macro_AI_infrastructure_spend": 1400,
+          "allocation_to_AI_addressable_market": 0.035,
+          "content_per_macro_dollar_factor_vs_2026": 1,
+          "non_AI_revenue_CAGR_from_2026": 0.07,
+          "AI_split_sensitivity_holds_2026_total_fixed": [
+            {
+              "2026_AI_revenue": 5,
+              "2026_non_AI_revenue": 9,
+              "revenue": 17.3041,
+              "EPS": 7.545890274999999
+            },
+            {
+              "2026_AI_revenue": 9,
+              "2026_non_AI_revenue": 5,
+              "revenue": 18.3245,
+              "EPS": 7.9976723750000005
+            }
+          ],
+          "terminal_PE_assumption": 25,
+          "terminal_price": 194.29453312500004,
+          "discount_years": 2.209445585215606,
+          "present_value_12pct": 151.25719352855427,
+          "price_to_scenario_EPS": 26.56019146292693,
+          "present_value_return_vs_price": -0.2672357643224771,
+          "required_terminal_PE_for_12pct": 34.11738562388309
+        },
+        {
+          "year": 2028,
+          "case": "strong",
+          "AI_market": 76.475,
+          "company_value_share": 0.22,
+          "AI_revenue": 16.8245,
+          "non_AI_revenue": 8.6247,
+          "revenue": 25.4492,
+          "normal_operating_margin": 0.26,
+          "normal_operating_income": 6.616792,
+          "SBC_ratio_included_not_added_back": 0.005,
+          "implied_SBC": 0.127246,
+          "recurring_net_interest_income": -0.04,
+          "normal_tax_rate": 0.22,
+          "normal_net_income": 5.12989776,
+          "diluted_shares": 0.398,
+          "normal_EPS": 12.889190351758794,
+          "macro_AI_infrastructure_spend": 1900,
+          "allocation_to_AI_addressable_market": 0.04025,
+          "content_per_macro_dollar_factor_vs_2026": 1.15,
+          "non_AI_revenue_CAGR_from_2026": 0.11,
+          "AI_split_sensitivity_holds_2026_total_fixed": [
+            {
+              "2026_AI_revenue": 5,
+              "2026_non_AI_revenue": 9,
+              "revenue": 23.1064,
+              "EPS": 11.695421909547738
+            },
+            {
+              "2026_AI_revenue": 9,
+              "2026_non_AI_revenue": 5,
+              "revenue": 27.791999999999994,
+              "EPS": 14.082958793969846
+            }
+          ],
+          "terminal_PE_assumption": 32,
+          "terminal_price": 412.4540912562814,
+          "discount_years": 2.209445585215606,
+          "present_value_12pct": 321.0931738499234,
+          "price_to_scenario_EPS": 16.01497024767215,
+          "present_value_return_vs_price": 0.5555332518647584,
+          "required_terminal_PE_for_12pct": 20.571723530589082
+        },
+        {
+          "year": 2029,
+          "case": "weak",
+          "AI_market": 28.2625,
+          "company_value_share": 0.17,
+          "AI_revenue": 4.804625000000001,
+          "non_AI_revenue": 7,
+          "revenue": 11.804625000000001,
+          "normal_operating_margin": 0.17,
+          "normal_operating_income": 2.00678625,
+          "SBC_ratio_included_not_added_back": 0.006,
+          "implied_SBC": 0.07082775000000001,
+          "recurring_net_interest_income": -0.1,
+          "normal_tax_rate": 0.24,
+          "normal_net_income": 1.44915755,
+          "diluted_shares": 0.41,
+          "normal_EPS": 3.534530609756098,
+          "macro_AI_infrastructure_spend": 950,
+          "allocation_to_AI_addressable_market": 0.029750000000000002,
+          "content_per_macro_dollar_factor_vs_2026": 0.85,
+          "non_AI_revenue_CAGR_from_2026": 0,
+          "AI_split_sensitivity_holds_2026_total_fixed": [
+            {
+              "2026_AI_revenue": 5,
+              "2026_non_AI_revenue": 9,
+              "revenue": 12.431875,
+              "EPS": 3.732190853658537
+            },
+            {
+              "2026_AI_revenue": 9,
+              "2026_non_AI_revenue": 5,
+              "revenue": 11.177374999999998,
+              "EPS": 3.3368703658536583
+            }
+          ],
+          "terminal_PE_assumption": 18,
+          "terminal_price": 63.62155097560976,
+          "discount_years": 3.2087611225188226,
+          "present_value_12pct": 44.22576709995354,
+          "price_to_scenario_EPS": 58.40096544368139,
+          "present_value_return_vs_price": -0.7857486333690846,
+          "required_terminal_PE_for_12pct": 84.01346643920401
+        },
+        {
+          "year": 2029,
+          "case": "base",
+          "AI_market": 59.50000000000001,
+          "company_value_share": 0.2,
+          "AI_revenue": 11.900000000000002,
+          "non_AI_revenue": 8.575301000000001,
+          "revenue": 20.475301,
+          "normal_operating_margin": 0.24,
+          "normal_operating_income": 4.91407224,
+          "SBC_ratio_included_not_added_back": 0.005,
+          "implied_SBC": 0.102376505,
+          "recurring_net_interest_income": -0.04,
+          "normal_tax_rate": 0.23,
+          "normal_net_income": 3.7530356248000003,
+          "diluted_shares": 0.402,
+          "normal_EPS": 9.335909514427861,
+          "macro_AI_infrastructure_spend": 1700,
+          "allocation_to_AI_addressable_market": 0.035,
+          "content_per_macro_dollar_factor_vs_2026": 1,
+          "non_AI_revenue_CAGR_from_2026": 0.07,
+          "AI_split_sensitivity_holds_2026_total_fixed": [
+            {
+              "2026_AI_revenue": 5,
+              "2026_non_AI_revenue": 9,
+              "revenue": 19.525387000000002,
+              "EPS": 8.899232630845772
+            },
+            {
+              "2026_AI_revenue": 9,
+              "2026_non_AI_revenue": 5,
+              "revenue": 21.425215,
+              "EPS": 9.77258639800995
+            }
+          ],
+          "terminal_PE_assumption": 25,
+          "terminal_price": 233.39773786069654,
+          "discount_years": 3.2087611225188226,
+          "present_value_12pct": 162.2436711774024,
+          "price_to_scenario_EPS": 22.11032569253111,
+          "present_value_return_vs_price": -0.21401186330102506,
+          "required_terminal_PE_for_12pct": 31.807095848794894
+        },
+        {
+          "year": 2029,
+          "case": "strong",
+          "AI_market": 100.62500000000001,
+          "company_value_share": 0.23,
+          "AI_revenue": 23.143750000000004,
+          "non_AI_revenue": 9.573417000000003,
+          "revenue": 32.717167,
+          "normal_operating_margin": 0.27,
+          "normal_operating_income": 8.833635090000001,
+          "SBC_ratio_included_not_added_back": 0.005,
+          "implied_SBC": 0.163585835,
+          "recurring_net_interest_income": 0,
+          "normal_tax_rate": 0.22,
+          "normal_net_income": 6.890235370200001,
+          "diluted_shares": 0.4,
+          "normal_EPS": 17.2255884255,
+          "macro_AI_infrastructure_spend": 2500,
+          "allocation_to_AI_addressable_market": 0.04025,
+          "content_per_macro_dollar_factor_vs_2026": 1.15,
+          "non_AI_revenue_CAGR_from_2026": 0.11,
+          "AI_split_sensitivity_holds_2026_total_fixed": [
+            {
+              "2026_AI_revenue": 5,
+              "2026_non_AI_revenue": 9,
+              "revenue": 28.839928999999998,
+              "EPS": 15.1842226185
+            },
+            {
+              "2026_AI_revenue": 9,
+              "2026_non_AI_revenue": 5,
+              "revenue": 36.594404999999995,
+              "EPS": 19.266954232499998
+            }
+          ],
+          "terminal_PE_assumption": 32,
+          "terminal_price": 551.218829616,
+          "discount_years": 3.2087611225188226,
+          "present_value_12pct": 383.1732362050067,
+          "price_to_scenario_EPS": 11.983335193033229,
+          "present_value_return_vs_price": 0.8562796056826214,
+          "required_terminal_PE_for_12pct": 17.23878229445528
+        }
+      ],
+      "price_2026_10_16": 206.42
+    },
+    "ANET": {
+      "actual_Q2_2026": {
+        "revenue": 3.0357,
+        "gaap_operating_income": 1.378,
+        "pretax_income": 1.5043,
+        "tax_expense": 0.2914,
+        "net_income": 1.2129,
+        "diluted_shares": 1.276,
+        "sbc": 0.1204,
+        "intangible_amortization": 0.0153,
+        "interest_income": 0.1224
+      },
+      "actual_H1_2026": {
+        "revenue": 5.7447,
+        "gaap_operating_income": 2.5358,
+        "net_income": 2.2358,
+        "sbc": 0.2413,
+        "intangible_amortization": 0.0306
+      },
+      "company_FY2026_guidance": {
+        "revenue": 12.6,
+        "source": "August investor presentation p5; F denotes company forecast"
+      },
+      "market_anchor": {
+        "2029_TAM": 105,
+        "2029_core_DC_AI_cloud": 70,
+        "2029_campus_routing": 20,
+        "2029_software_services": 15,
+        "AI_only_market_disclosed": false
+      },
+      "baseline_model_assumption_2026": {
+        "revenue": 12.6,
+        "ai_revenue": 3.6,
+        "non_ai_revenue": 9,
+        "ai_split_not_verified_primary": true,
+        "AI_market": 15.652173913043478,
+        "company_value_share": 0.23,
+        "allocation_to_addressable_AI_market": 0.01565217391304348,
+        "sensitivity_AI_revenue_range": [
+          3,
+          4.5
+        ]
+      },
+      "scenarios": [
+        {
+          "year": 2028,
+          "case": "weak",
+          "AI_market": 14.086956521739133,
+          "company_value_share": 0.18,
+          "AI_revenue": 2.5356521739130438,
+          "non_AI_revenue": 9.0,
+          "revenue": 11.535652173913043,
+          "normal_operating_margin": 0.37,
+          "normal_operating_income": 4.268191304347826,
+          "SBC_ratio_included_not_added_back": 0.05,
+          "implied_SBC": 0.5767826086956521,
+          "recurring_net_interest_income": 0.3,
+          "normal_tax_rate": 0.23,
+          "normal_net_income": 3.5175073043478258,
+          "diluted_shares": 1.32,
+          "normal_EPS": 2.6647782608695647,
+          "macro_AI_infrastructure_spend": 1000,
+          "allocation_to_AI_addressable_market": 0.014086956521739132,
+          "content_per_macro_dollar_factor_vs_2026": 0.9,
+          "non_AI_revenue_CAGR_from_2026": 0,
+          "AI_split_sensitivity_holds_2026_total_fixed": [
+            {
+              "2026_AI_revenue": 3,
+              "2026_non_AI_revenue": 9.6,
+              "revenue": 11.713043478260868,
+              "EPS": 2.703065217391304
+            },
+            {
+              "2026_AI_revenue": 4.5,
+              "2026_non_AI_revenue": 8.1,
+              "revenue": 11.269565217391303,
+              "EPS": 2.607347826086956
+            }
+          ],
+          "terminal_PE_assumption": 20,
+          "terminal_price": 53.29556521739129,
+          "discount_years": 2.209445585215606,
+          "present_value_12pct": 41.49029564879394,
+          "price_to_scenario_EPS": 66.41453159492838,
+          "present_value_return_vs_price": -0.7655650601831058,
+          "required_terminal_PE_for_12pct": 85.31151549176514
+        },
+        {
+          "year": 2028,
+          "case": "base",
+          "AI_market": 25.2,
+          "company_value_share": 0.23,
+          "AI_revenue": 5.796,
+          "non_AI_revenue": 10.890000000000002,
+          "revenue": 16.686000000000003,
+          "normal_operating_margin": 0.43,
+          "normal_operating_income": 7.1749800000000015,
+          "SBC_ratio_included_not_added_back": 0.045,
+          "implied_SBC": 0.7508700000000001,
+          "recurring_net_interest_income": 0.4,
+          "normal_tax_rate": 0.22,
+          "normal_net_income": 5.908484400000002,
+          "diluted_shares": 1.3,
+          "normal_EPS": 4.544988000000001,
+          "macro_AI_infrastructure_spend": 1400,
+          "allocation_to_AI_addressable_market": 0.018,
+          "content_per_macro_dollar_factor_vs_2026": 1.15,
+          "non_AI_revenue_CAGR_from_2026": 0.1,
+          "AI_split_sensitivity_holds_2026_total_fixed": [
+            {
+              "2026_AI_revenue": 3,
+              "2026_non_AI_revenue": 9.6,
+              "revenue": 16.446,
+              "EPS": 4.483068
+            },
+            {
+              "2026_AI_revenue": 4.5,
+              "2026_non_AI_revenue": 8.1,
+              "revenue": 17.046,
+              "EPS": 4.637868
+            }
+          ],
+          "terminal_PE_assumption": 28,
+          "terminal_price": 127.25966400000003,
+          "discount_years": 2.209445585215606,
+          "present_value_12pct": 99.0709276088737,
+          "price_to_scenario_EPS": 38.93959676021146,
+          "present_value_return_vs_price": -0.4402139924913905,
+          "required_terminal_PE_for_12pct": 50.01911377638242
+        },
+        {
+          "year": 2028,
+          "case": "strong",
+          "AI_market": 38.660869565217396,
+          "company_value_share": 0.27,
+          "AI_revenue": 10.438434782608697,
+          "non_AI_revenue": 11.902499999999998,
+          "revenue": 22.340934782608695,
+          "normal_operating_margin": 0.46,
+          "normal_operating_income": 10.27683,
+          "SBC_ratio_included_not_added_back": 0.04,
+          "implied_SBC": 0.8936373913043478,
+          "recurring_net_interest_income": 0.45,
+          "normal_tax_rate": 0.21,
+          "normal_net_income": 8.4741957,
+          "diluted_shares": 1.285,
+          "normal_EPS": 6.594704824902723,
+          "macro_AI_infrastructure_spend": 1900,
+          "allocation_to_AI_addressable_market": 0.020347826086956525,
+          "content_per_macro_dollar_factor_vs_2026": 1.3,
+          "non_AI_revenue_CAGR_from_2026": 0.15,
+          "AI_split_sensitivity_holds_2026_total_fixed": [
+            {
+              "2026_AI_revenue": 3,
+              "2026_non_AI_revenue": 9.6,
+              "revenue": 21.394695652173912,
+              "EPS": 6.327106926070038
+            },
+            {
+              "2026_AI_revenue": 4.5,
+              "2026_non_AI_revenue": 8.1,
+              "revenue": 23.760293478260866,
+              "EPS": 6.996101673151751
+            }
+          ],
+          "terminal_PE_assumption": 36,
+          "terminal_price": 237.40937369649802,
+          "discount_years": 2.209445585215606,
+          "present_value_12pct": 184.8218527054558,
+          "price_to_scenario_EPS": 26.83668256563865,
+          "present_value_return_vs_price": 0.044309259269159185,
+          "required_terminal_PE_for_12pct": 34.472546978271495
+        },
+        {
+          "year": 2029,
+          "case": "weak",
+          "AI_market": 13.382608695652175,
+          "company_value_share": 0.16,
+          "AI_revenue": 2.141217391304348,
+          "non_AI_revenue": 9.0,
+          "revenue": 11.141217391304348,
+          "normal_operating_margin": 0.35,
+          "normal_operating_income": 3.8994260869565216,
+          "SBC_ratio_included_not_added_back": 0.05,
+          "implied_SBC": 0.5570608695652174,
+          "recurring_net_interest_income": 0.3,
+          "normal_tax_rate": 0.23,
+          "normal_net_income": 3.233558086956522,
+          "diluted_shares": 1.34,
+          "normal_EPS": 2.4131030499675536,
+          "macro_AI_infrastructure_spend": 950,
+          "allocation_to_AI_addressable_market": 0.014086956521739132,
+          "content_per_macro_dollar_factor_vs_2026": 0.9,
+          "non_AI_revenue_CAGR_from_2026": 0,
+          "AI_split_sensitivity_holds_2026_total_fixed": [
+            {
+              "2026_AI_revenue": 3,
+              "2026_non_AI_revenue": 9.6,
+              "revenue": 11.384347826086955,
+              "EPS": 2.462001297858533
+            },
+            {
+              "2026_AI_revenue": 4.5,
+              "2026_non_AI_revenue": 8.1,
+              "revenue": 10.776521739130434,
+              "EPS": 2.3397556781310835
+            }
+          ],
+          "terminal_PE_assumption": 20,
+          "terminal_price": 48.26206099935107,
+          "discount_years": 3.2087611225188226,
+          "present_value_12pct": 33.5487996880069,
+          "price_to_scenario_EPS": 73.34125246013826,
+          "present_value_return_vs_price": -0.8104373393151378,
+          "required_terminal_PE_for_12pct": 105.50601013798249
+        },
+        {
+          "year": 2029,
+          "case": "base",
+          "AI_market": 30.599999999999998,
+          "company_value_share": 0.23,
+          "AI_revenue": 7.038,
+          "non_AI_revenue": 11.979000000000003,
+          "revenue": 19.017000000000003,
+          "normal_operating_margin": 0.43,
+          "normal_operating_income": 8.17731,
+          "SBC_ratio_included_not_added_back": 0.045,
+          "implied_SBC": 0.8557650000000001,
+          "recurring_net_interest_income": 0.45,
+          "normal_tax_rate": 0.22,
+          "normal_net_income": 6.7293018,
+          "diluted_shares": 1.31,
+          "normal_EPS": 5.136871603053435,
+          "macro_AI_infrastructure_spend": 1700,
+          "allocation_to_AI_addressable_market": 0.018,
+          "content_per_macro_dollar_factor_vs_2026": 1.15,
+          "non_AI_revenue_CAGR_from_2026": 0.1,
+          "AI_split_sensitivity_holds_2026_total_fixed": [
+            {
+              "2026_AI_revenue": 3,
+              "2026_non_AI_revenue": 9.6,
+              "revenue": 18.6426,
+              "EPS": 5.041013770992366
+            },
+            {
+              "2026_AI_revenue": 4.5,
+              "2026_non_AI_revenue": 8.1,
+              "revenue": 19.5786,
+              "EPS": 5.280658351145038
+            }
+          ],
+          "terminal_PE_assumption": 28,
+          "terminal_price": 143.83240488549617,
+          "discount_years": 3.2087611225188226,
+          "present_value_12pct": 99.9833915135265,
+          "price_to_scenario_EPS": 34.4528759283764,
+          "present_value_return_vs_price": -0.4350582466181122,
+          "required_terminal_PE_for_12pct": 49.56263160296569
+        },
+        {
+          "year": 2029,
+          "case": "strong",
+          "AI_market": 50.869565217391305,
+          "company_value_share": 0.28,
+          "AI_revenue": 14.243478260869567,
+          "non_AI_revenue": 13.687874999999998,
+          "revenue": 27.931353260869564,
+          "normal_operating_margin": 0.47,
+          "normal_operating_income": 13.127736032608695,
+          "SBC_ratio_included_not_added_back": 0.04,
+          "implied_SBC": 1.1172541304347825,
+          "recurring_net_interest_income": 0.5,
+          "normal_tax_rate": 0.21,
+          "normal_net_income": 10.765911465760869,
+          "diluted_shares": 1.29,
+          "normal_EPS": 8.345667802915402,
+          "macro_AI_infrastructure_spend": 2500,
+          "allocation_to_AI_addressable_market": 0.020347826086956525,
+          "content_per_macro_dollar_factor_vs_2026": 1.3,
+          "non_AI_revenue_CAGR_from_2026": 0.15,
+          "AI_split_sensitivity_holds_2026_total_fixed": [
+            {
+              "2026_AI_revenue": 3,
+              "2026_non_AI_revenue": 9.6,
+              "revenue": 26.4699652173913,
+              "EPS": 7.9250372753623175
+            },
+            {
+              "2026_AI_revenue": 4.5,
+              "2026_non_AI_revenue": 8.1,
+              "revenue": 30.123435326086955,
+              "EPS": 8.976613594245029
+            }
+          ],
+          "terminal_PE_assumption": 36,
+          "terminal_price": 300.4440409049545,
+          "discount_years": 3.2087611225188226,
+          "present_value_12pct": 208.85011408673984,
+          "price_to_scenario_EPS": 21.206211914902166,
+          "present_value_return_vs_price": 0.18007748947191682,
+          "required_terminal_PE_for_12pct": 30.506471245468763
+        }
+      ],
+      "price_2026_10_16": 176.98
+    }
+  },
+  "macro": {
+    "2026": 1000,
+    "2028": {
+      "weak": 1000,
+      "base": 1400,
+      "strong": 1900
+    },
+    "2029": {
+      "weak": 950,
+      "base": 1700,
+      "strong": 2500
+    }
+  }
+}

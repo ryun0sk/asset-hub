@@ -1,0 +1,375 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-10-18",
+  "description": "上場廃止理由MBOの探索入口。初回正式公表年・当初取引の成立はこの一覧だけでは確定しない。未来の廃止予定と2020初回案件を含む。",
+  "items": [
+    {
+      "code": "7490",
+      "name": "日新商事(株)",
+      "delisting_date": "2026-10-09",
+      "market": "スタンダード",
+      "reason": "MBO(公開買付け、株式併合)",
+      "source_url": "https://www.jpx.co.jp/listing/stocks/delisted/"
+    },
+    {
+      "code": "4800",
+      "name": "オリコン(株)",
+      "delisting_date": "2026-09-28",
+      "market": "スタンダード",
+      "reason": "MBO(公開買付け、株式併合)",
+      "source_url": "https://www.jpx.co.jp/listing/stocks/delisted/"
+    },
+    {
+      "code": "6197",
+      "name": "(株)ソラスト",
+      "delisting_date": "2026-08-06",
+      "market": "プライム",
+      "reason": "MBO(公開買付け、株式併合)",
+      "source_url": "https://www.jpx.co.jp/listing/stocks/delisted/"
+    },
+    {
+      "code": "5903",
+      "name": "シンポ(株)",
+      "delisting_date": "2026-07-22",
+      "market": "スタンダード",
+      "reason": "MBO(公開買付け、株式等売渡請求による取得)",
+      "source_url": "https://www.jpx.co.jp/listing/stocks/delisted/"
+    },
+    {
+      "code": "7922",
+      "name": "三光産業(株)",
+      "delisting_date": "2026-06-25",
+      "market": "スタンダード",
+      "reason": "MBO(公開買付け、株式併合)",
+      "source_url": "https://www.jpx.co.jp/listing/stocks/delisted/"
+    },
+    {
+      "code": "9927",
+      "name": "(株)ワットマン",
+      "delisting_date": "2026-06-19",
+      "market": "スタンダード",
+      "reason": "MBO(公開買付け、株式併合)",
+      "source_url": "https://www.jpx.co.jp/listing/stocks/delisted/"
+    },
+    {
+      "code": "6670",
+      "name": "(株)MCJ",
+      "delisting_date": "2026-06-16",
+      "market": "スタンダード",
+      "reason": "MBO(公開買付け、株式併合)",
+      "source_url": "https://www.jpx.co.jp/listing/stocks/delisted/"
+    },
+    {
+      "code": "9338",
+      "name": "(株)INFORICH",
+      "delisting_date": "2026-06-16",
+      "market": "グロース",
+      "reason": "MBO(公開買付け、株式併合)",
+      "source_url": "https://www.jpx.co.jp/listing/stocks/delisted/"
+    },
+    {
+      "code": "4384",
+      "name": "ラクスル(株)",
+      "delisting_date": "2026-05-29",
+      "market": "プライム",
+      "reason": "MBO(公開買付け、株式併合)",
+      "source_url": "https://www.jpx.co.jp/listing/stocks/delisted/"
+    },
+    {
+      "code": "4917",
+      "name": "(株)マンダム",
+      "delisting_date": "2026-05-15",
+      "market": "プライム",
+      "reason": "MBO(公開買付け、株式併合)",
+      "source_url": "https://www.jpx.co.jp/listing/stocks/delisted/"
+    },
+    {
+      "code": "4530",
+      "name": "久光製薬(株)",
+      "delisting_date": "2026-05-11",
+      "market": "プライム",
+      "reason": "MBO(公開買付け、株式併合)",
+      "source_url": "https://www.jpx.co.jp/listing/stocks/delisted/"
+    },
+    {
+      "code": "7092",
+      "name": "(株)Fast Fitness Japan",
+      "delisting_date": "2026-04-20",
+      "market": "プライム",
+      "reason": "MBO(公開買付け、株式併合)",
+      "source_url": "https://www.jpx.co.jp/listing/stocks/delisted/"
+    },
+    {
+      "code": "7250",
+      "name": "太平洋工業(株)",
+      "delisting_date": "2026-04-13",
+      "market": "プライム",
+      "reason": "MBO(公開買付け、株式併合)",
+      "source_url": "https://www.jpx.co.jp/listing/stocks/delisted/"
+    },
+    {
+      "code": "7455",
+      "name": "(株)パリミキホールディングス",
+      "delisting_date": "2026-03-30",
+      "market": "スタンダード",
+      "reason": "MBO(公開買付け、株式併合)",
+      "source_url": "https://www.jpx.co.jp/listing/stocks/delisted/"
+    },
+    {
+      "code": "1841",
+      "name": "サンユー建設(株)",
+      "delisting_date": "2026-03-27",
+      "market": "スタンダード",
+      "reason": "MBO(公開買付け、株式併合)",
+      "source_url": "https://www.jpx.co.jp/listing/stocks/delisted/"
+    },
+    {
+      "code": "7635",
+      "name": "杉田エース(株)",
+      "delisting_date": "2026-03-24",
+      "market": "スタンダード",
+      "reason": "MBO(公開買付け、株式併合)",
+      "source_url": "https://www.jpx.co.jp/listing/stocks/delisted/"
+    },
+    {
+      "code": "2374",
+      "name": "セントケア・ホールディング(株)",
+      "delisting_date": "2026-03-13",
+      "market": "プライム",
+      "reason": "MBO(公開買付け、株式併合)",
+      "source_url": "https://www.jpx.co.jp/listing/stocks/delisted/"
+    },
+    {
+      "code": "4957",
+      "name": "ヤスハラケミカル(株)",
+      "delisting_date": "2026-03-06",
+      "market": "スタンダード",
+      "reason": "MBO(公開買付け、株式併合)",
+      "source_url": "https://www.jpx.co.jp/listing/stocks/delisted/"
+    },
+    {
+      "code": "7817",
+      "name": "パラマウントベッドホールディングス(株)",
+      "delisting_date": "2026-02-05",
+      "market": "プライム",
+      "reason": "MBO(公開買付け、株式併合)",
+      "source_url": "https://www.jpx.co.jp/listing/stocks/delisted/"
+    },
+    {
+      "code": "6312",
+      "name": "フロイント産業(株)",
+      "delisting_date": "2026-01-27",
+      "market": "スタンダード",
+      "reason": "MBO(公開買付け、株式併合)",
+      "source_url": "https://www.jpx.co.jp/listing/stocks/delisted/"
+    },
+    {
+      "code": "4319",
+      "name": "TAC(株)",
+      "delisting_date": "2025-12-19",
+      "market": "スタンダード",
+      "reason": "MBO(公開買付け、株式併合)",
+      "source_url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-01.html"
+    },
+    {
+      "code": "5070",
+      "name": "(株)ドラフト",
+      "delisting_date": "2025-12-12",
+      "market": "グロース",
+      "reason": "MBO(公開買付け、株式併合)",
+      "source_url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-01.html"
+    },
+    {
+      "code": "7732",
+      "name": "(株)トプコン",
+      "delisting_date": "2025-12-02",
+      "market": "プライム",
+      "reason": "MBO(公開買付け、株式併合)",
+      "source_url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-01.html"
+    },
+    {
+      "code": "3073",
+      "name": "(株)DDグループ",
+      "delisting_date": "2025-11-21",
+      "market": "プライム",
+      "reason": "MBO(公開買付け、株式併合)",
+      "source_url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-01.html"
+    },
+    {
+      "code": "6416",
+      "name": "桂川電機(株)",
+      "delisting_date": "2025-11-05",
+      "market": "スタンダード",
+      "reason": "MBO(公開買付け、株式等売渡請求による取得)",
+      "source_url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-01.html"
+    },
+    {
+      "code": "9386",
+      "name": "日本コンセプト(株)",
+      "delisting_date": "2025-11-04",
+      "market": "プライム",
+      "reason": "MBO(公開買付け、株式併合)",
+      "source_url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-01.html"
+    },
+    {
+      "code": "6095",
+      "name": "メドピア(株)",
+      "delisting_date": "2025-10-17",
+      "market": "プライム",
+      "reason": "MBO(公開買付け、株式併合)",
+      "source_url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-01.html"
+    },
+    {
+      "code": "9066",
+      "name": "(株)日新",
+      "delisting_date": "2025-10-15",
+      "market": "プライム",
+      "reason": "MBO(公開買付け、株式併合)",
+      "source_url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-01.html"
+    },
+    {
+      "code": "3319",
+      "name": "(株)ゴルフダイジェスト・オンライン",
+      "delisting_date": "2025-09-29",
+      "market": "プライム",
+      "reason": "MBO(公開買付け、株式併合)",
+      "source_url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-01.html"
+    },
+    {
+      "code": "6879",
+      "name": "(株)IMAGICA GROUP",
+      "delisting_date": "2025-09-29",
+      "market": "プライム",
+      "reason": "MBO(公開買付け、株式併合)",
+      "source_url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-01.html"
+    },
+    {
+      "code": "7623",
+      "name": "(株)サンオータス",
+      "delisting_date": "2025-08-18",
+      "market": "スタンダード",
+      "reason": "MBO(公開買付け、株式併合)",
+      "source_url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-01.html"
+    },
+    {
+      "code": "7958",
+      "name": "天馬(株)",
+      "delisting_date": "2025-08-18",
+      "market": "プライム",
+      "reason": "MBO(公開買付け、株式併合)",
+      "source_url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-01.html"
+    },
+    {
+      "code": "4267",
+      "name": "(株)ライトワークス",
+      "delisting_date": "2025-07-28",
+      "market": "グロース",
+      "reason": "MBO(公開買付け、株式併合)",
+      "source_url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-01.html"
+    },
+    {
+      "code": "9070",
+      "name": "トナミホールディングス(株)",
+      "delisting_date": "2025-06-19",
+      "market": "プライム",
+      "reason": "MBO(公開買付け、株式併合)",
+      "source_url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-01.html"
+    },
+    {
+      "code": "4298",
+      "name": "(株)プロトコーポレーション",
+      "delisting_date": "2025-06-16",
+      "market": "プライム",
+      "reason": "MBO(公開買付け、株式併合)",
+      "source_url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-01.html"
+    },
+    {
+      "code": "6131",
+      "name": "浜井産業(株)",
+      "delisting_date": "2025-06-09",
+      "market": "スタンダード",
+      "reason": "MBO(公開買付け、株式併合)",
+      "source_url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-01.html"
+    },
+    {
+      "code": "3458",
+      "name": "(株)シーアールイー",
+      "delisting_date": "2025-05-29",
+      "market": "プライム",
+      "reason": "MBO(公開買付け、株式併合)",
+      "source_url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-01.html"
+    },
+    {
+      "code": "7559",
+      "name": "ジーエフシー(株)",
+      "delisting_date": "2025-05-28",
+      "market": "スタンダード",
+      "reason": "MBO(公開買付け、株式併合)",
+      "source_url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-01.html"
+    },
+    {
+      "code": "2372",
+      "name": "(株)アイロムグループ",
+      "delisting_date": "2025-05-12",
+      "market": "プライム",
+      "reason": "MBO(公開買付け、株式併合)",
+      "source_url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-01.html"
+    },
+    {
+      "code": "9260",
+      "name": "西本Wismettacホールディングス(株)",
+      "delisting_date": "2025-04-23",
+      "market": "プライム",
+      "reason": "MBO(公開買付け、株式併合)",
+      "source_url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-01.html"
+    },
+    {
+      "code": "5935",
+      "name": "元旦ビューティ工業(株)",
+      "delisting_date": "2025-03-21",
+      "market": "スタンダード",
+      "reason": "MBO(公開買付け、株式併合)",
+      "source_url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-01.html"
+    },
+    {
+      "code": "9522",
+      "name": "リニューアブル・ジャパン(株)",
+      "delisting_date": "2025-03-19",
+      "market": "グロース",
+      "reason": "MBO(公開買付け、株式併合)",
+      "source_url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-01.html"
+    },
+    {
+      "code": "5610",
+      "name": "大和重工(株)",
+      "delisting_date": "2025-03-11",
+      "market": "スタンダード",
+      "reason": "MBO(公開買付け、株式併合)",
+      "source_url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-01.html"
+    },
+    {
+      "code": "6640",
+      "name": "I-PEX(株)",
+      "delisting_date": "2025-03-10",
+      "market": "プライム",
+      "reason": "MBO(公開買付け、株式併合)",
+      "source_url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-01.html"
+    },
+    {
+      "code": "4295",
+      "name": "(株)フェイス",
+      "delisting_date": "2025-01-30",
+      "market": "スタンダード",
+      "reason": "MBO(公開買付け、株式等売渡請求による取得)",
+      "source_url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-01.html"
+    },
+    {
+      "code": "9058",
+      "name": "トランコム(株)",
+      "delisting_date": "2025-01-15",
+      "market": "プライム",
+      "reason": "MBO(公開買付け、株式併合)",
+      "source_url": "https://www.jpx.co.jp/listing/stocks/delisted/archives-01.html"
+    }
+  ]
+}

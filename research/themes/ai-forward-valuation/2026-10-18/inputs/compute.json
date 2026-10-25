@@ -1,0 +1,1387 @@
+{
+  "as_of": "2026-10-18 JST",
+  "forecast_basis": "Independent conditional scenarios for calendar-year-equivalent 2028 and 2029, not company or consensus forecasts.",
+  "money_unit": "USD billion unless named TWD; share unit billion ordinary shares; EPS USD per US traded ordinary share or TSM ADR.",
+  "price_date": "2026-10-16",
+  "fx_twd_per_usd": 32.4280014,
+  "common_macro_usd_bn": {
+    "2028": {
+      "weak": 1000,
+      "base": 1400,
+      "strong": 1900
+    },
+    "2029": {
+      "weak": 950,
+      "base": 1700,
+      "strong": 2500
+    }
+  },
+  "macro_source_and_definition": "Parent-provided broad AI infrastructure expenditure scenarios; not GDP, not sum of suppliers revenue. Detailed Gartner/IDC sources held by parent.",
+  "sources": {
+    "nv_q2": {
+      "publication_date": "2026-08-26",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/"
+    },
+    "nv_10q": {
+      "publication_date": "2026-08-27",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+    },
+    "nv_call": {
+      "publication_date": "2026-08-26",
+      "url": "https://investor.nvidia.com/files/content_files/TRANSCRIPT_-NVIDIA-Corp-NVDA-US-Q2-2027-Earnings-Call-26-August-2026-5_00-PM-ET.pdf"
+    },
+    "nv_fy26": {
+      "publication_date": "2026-02-25",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Fourth-Quarter-and-Fiscal-2026/"
+    },
+    "av_q3": {
+      "publication_date": "2026-09-02",
+      "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial"
+    },
+    "av_q1": {
+      "publication_date": "2026-03-04",
+      "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-first-quarter-fiscal-year-2026-financial"
+    },
+    "av_q2": {
+      "publication_date": "2026-06-03",
+      "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-second-quarter-fiscal-year-2026-financial"
+    },
+    "av_10q": {
+      "publication_date": "2026-09-10",
+      "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000080/avgo-20260802.htm"
+    },
+    "av_fy25": {
+      "publication_date": "2025-12-11",
+      "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-fourth-quarter-and-fiscal-year-2025"
+    },
+    "ts_q3": {
+      "publication_date": "2026-10-15",
+      "url": "https://pr.tsmc.com/english/news/3346"
+    },
+    "ts_fs3": {
+      "publication_date": "2026-10-15",
+      "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/3a94d1034b9e6b22446b674f7aaf3d088a12a193/FS.pdf"
+    },
+    "ts_mr3": {
+      "publication_date": "2026-10-15",
+      "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/f83780000ddc0c3b48e57a87eab6814c4ab35058/3Q26%20ManagementReport.pdf"
+    },
+    "ts_call3": {
+      "publication_date": "2026-10-15",
+      "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/eba4fac72873bf546b669bd2b5d973df5c93215d/TSMC%203Q26%20Transcript.pdf"
+    },
+    "ts_call4": {
+      "publication_date": "2026-01-15",
+      "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-01/51d09df96cd89ac19d65af39032b038dc2896a24/TSMC%204Q25%20Transcript.pdf"
+    },
+    "ts_fy25": {
+      "publication_date": "2026-02 (audited financial statements, exact posting date unverified)",
+      "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-02/cb73d5f4e019a8f6d7a494a0f8f6c6da2dfc4ee2/FS.pdf"
+    }
+  },
+  "pool_definition": "Effective eligible vendor-invoice pool for accelerated-compute platforms/subsystems, including their embedded memory/manufacturing costs, plus network electronics. Not a measured discrete industry TAM. Excludes separate downstream server integration, buildings, cooling/power etc. Upstream TSMC revenue is cost embedded in this same chain and must not be added as new final expenditure.",
+  "calibration_2026": {
+    "broad_ai_spend_usd_bn_assumed": 1000,
+    "eligible_pool_fraction_assumed": 0.65,
+    "eligible_pool_usd_bn": 650,
+    "NVDA_dc_revenue_round_annualization_usd_bn": 360,
+    "NVDA_effective_capture": 0.5538461538461539,
+    "AVGO_ai_revenue_calibration_usd_bn": 58,
+    "AVGO_effective_capture": 0.08923076923076922,
+    "TSMC_ai_related_upstream_revenue_calibration_usd_bn": 49.72500000000001,
+    "TSMC_2026_other_revenue_calibration_usd_bn": 126.575,
+    "AVGO_ai_full_year_bridge": {
+      "q1_actual": 8.4,
+      "q2_actual": 10.8,
+      "q3_actual": 16.7,
+      "q4_company_guide": 21.7,
+      "sum_actual_plus_guide": 57.6,
+      "source_ids": [
+        "av_q1",
+        "av_q2",
+        "av_q3"
+      ]
+    },
+    "status": "Calibration quantities are own approximations, not actual CY2026 revenues or observed market shares. NVDA DC89 latest quarter annualizes356; rounded360. AVGO58 rounds57.6=sumQ1–Q3actual+Q4companyguide, not a wholly realized year. Fiscal/quarter-mix approximations do not constitute comparable observed full-year shares."
+  },
+  "engine": {
+    "revenue": "sum(segments.revenue_usd_bn)",
+    "operating_profit": "sum(segment revenue * segment operating_margin) - sbc_separate_deduction_usd_bn - acquired_amortization_separate_deduction_usd_bn - other_normal_operating_cost_usd_bn",
+    "net_income": "(operating_profit + normal_net_interest_usd_bn + normal_other_nonoperating_usd_bn)*(1-tax_rate) - noncontrolling_interest_usd_bn",
+    "eps": "net_income / diluted_ordinary_shares_bn * ordinary_shares_per_us_traded_unit",
+    "note": "NVDA/AVGO segment margins are before separately deducted SBC and acquired-intangible amortization; TSMC margin includes both so their separate deductions are zero (not a claim expense is zero). PPE depreciation remains in every operating margin. No equity valuation gains, disposals, discrete tax benefits or nonrecurring credit loss assumed. Debt/guarantee stress shown separately."
+  },
+  "companies": {
+    "NVDA": {
+      "symbol": "NVDA",
+      "price_usd": 214.13000488,
+      "ordinary_shares_per_us_traded_unit": 1,
+      "benchmark": {
+        "period": "FY2027Q2 ended2026-07-26",
+        "source_ids": [
+          "nv_q2",
+          "nv_10q"
+        ],
+        "revenue_usd_bn": 96.221,
+        "dc_revenue_usd_bn": 89,
+        "non_dc_revenue_usd_bn": 7.221,
+        "gaap_operating_profit_usd_bn": 63.734,
+        "gaap_net_income_usd_bn": 59.688,
+        "gaap_diluted_eps_usd": 2.46,
+        "diluted_ordinary_shares_bn": 24.285,
+        "period_end_shares_bn": 24.147,
+        "sbc_usd_bn": 2.027,
+        "net_interest_usd_bn": 0.269,
+        "equity_security_gain_usd_bn": 7.771,
+        "actual_effective_tax_rate": 0.165,
+        "normalization_tax_assumed": 0.18,
+        "own_normalized_quarter_net_income_usd_bn": 52.48246,
+        "own_normalized_annualized_runrate_eps_usd": 8.644424130121475,
+        "normalization_note": "Own operating-profit plus ordinary net interest bridge at18% tax; exclude equity gains / other nonoperating items; keep SBC and acquired amortization. Quarter*4 is NOT TTM or full-year forecast."
+      },
+      "latest_full_year": {
+        "period": "FY2026 ended2026-01-25 (~CY2025)",
+        "source_ids": [
+          "nv_fy26"
+        ],
+        "revenue_usd_bn": 215.938,
+        "gaap_operating_profit_usd_bn": 130.387,
+        "gaap_net_income_usd_bn": 120.067,
+        "gaap_diluted_eps_usd": 4.9
+      },
+      "company_guidance": [
+        {
+          "date": "2026-08-26",
+          "source_ids": [
+            "nv_q2"
+          ],
+          "period": "FY2027Q3",
+          "revenue_usd_bn_midpoint": 108,
+          "revenue_tolerance": 0.02,
+          "gross_margin_midpoint": 0.74,
+          "gaap_opex_usd_bn": 9.2,
+          "tax_rate_range": [
+            0.16,
+            0.18
+          ]
+        },
+        {
+          "date": "2026-08-26",
+          "source_ids": [
+            "nv_call"
+          ],
+          "period": "FY2028 (~CY2027)",
+          "preliminary_revenue_yoy": 0.7,
+          "gross_margin_range": [
+            0.72,
+            0.73
+          ],
+          "status": "preliminary supply-constrained outlook, not actual or CY2028 forecast"
+        }
+      ],
+      "bridge": "2026 indicative full-year revenue ~400bn is own bridge from first-half177.836 + Q3guide108 + ownQ4~114, not company full-year guidance. Applying company preliminary70% implies roughly680bn FY28(~CY27). CY28 base689bn including DC655.2/nonDC34 therefore assumes sharp deceleration after that outlook, not70% annual compounding. Weak misses company outlook; strong extends more supply / adoption.",
+      "expense_basis": "Segment operating margins before separate SBC/acquired amortization, after allocated ordinary R&D, SG&A and PPE depreciation. All SBC is then deducted; not company non-GAAP (which includes SBC from FY27).",
+      "capacity_and_funding": "FY27Q2 supply/capacity commitments279bn (prior119bn), $25bn senior debt issuance, half-year equity investments42.404bn and receivable term extension demonstrate funding burden. Commitments are not deducted as one-year capex or loss; purchased goods costs are within margins. Stress additional credit/inventory/guarantee losses separately.",
+      "source_ids": [
+        "nv_q2",
+        "nv_10q",
+        "nv_call"
+      ],
+      "forecasts": [
+        {
+          "year": 2028,
+          "case": "weak",
+          "status": "own independent scenario",
+          "macro_ai_spend_usd_bn": 1000,
+          "eligible_pool_fraction": 0.55,
+          "eligible_pool_usd_bn": 550.0,
+          "segments": [
+            {
+              "name": "DataCenter platform/network including embedded HBM/manufacturing",
+              "revenue_usd_bn": 319.0,
+              "operating_margin": 0.54,
+              "pool_capture": 0.58
+            },
+            {
+              "name": "Edge/gaming/auto/nonDC",
+              "revenue_usd_bn": 30,
+              "operating_margin": 0.24
+            }
+          ],
+          "sbc_separate_deduction_usd_bn": 10,
+          "acquired_amortization_separate_deduction_usd_bn": 0.8,
+          "normal_net_interest_usd_bn": 0.5,
+          "tax_rate": 0.21,
+          "diluted_ordinary_shares_bn": 24.55,
+          "expense_basis": "segment margins before separately deducted SBC and acquired amortization; other depreciation included",
+          "other_normal_operating_cost_usd_bn": 0,
+          "normal_other_nonoperating_usd_bn": 0,
+          "noncontrolling_interest_usd_bn": 0,
+          "calculated": {
+            "revenue_usd_bn": 349.0,
+            "operating_profit_usd_bn": 168.66,
+            "operating_margin": 0.48326647564469916,
+            "normal_pretax_income_usd_bn": 169.16,
+            "normal_parent_net_income_usd_bn": 133.6364,
+            "eps_usd_per_us_traded_unit": 5.443437881873727,
+            "current_price_over_future_eps": 39.33727352580584
+          }
+        },
+        {
+          "year": 2028,
+          "case": "base",
+          "status": "own independent scenario",
+          "macro_ai_spend_usd_bn": 1400,
+          "eligible_pool_fraction": 0.65,
+          "eligible_pool_usd_bn": 910.0,
+          "segments": [
+            {
+              "name": "DataCenter platform/network including embedded HBM/manufacturing",
+              "revenue_usd_bn": 655.1999999999999,
+              "operating_margin": 0.64,
+              "pool_capture": 0.72
+            },
+            {
+              "name": "Edge/gaming/auto/nonDC",
+              "revenue_usd_bn": 34,
+              "operating_margin": 0.3
+            }
+          ],
+          "sbc_separate_deduction_usd_bn": 16,
+          "acquired_amortization_separate_deduction_usd_bn": 1,
+          "normal_net_interest_usd_bn": 1,
+          "tax_rate": 0.18,
+          "diluted_ordinary_shares_bn": 24.1,
+          "expense_basis": "segment margins before separately deducted SBC and acquired amortization; other depreciation included",
+          "other_normal_operating_cost_usd_bn": 0,
+          "normal_other_nonoperating_usd_bn": 0,
+          "noncontrolling_interest_usd_bn": 0,
+          "calculated": {
+            "revenue_usd_bn": 689.1999999999999,
+            "operating_profit_usd_bn": 412.52799999999996,
+            "operating_margin": 0.5985606500290191,
+            "normal_pretax_income_usd_bn": 413.52799999999996,
+            "normal_parent_net_income_usd_bn": 339.09296,
+            "eps_usd_per_us_traded_unit": 14.070247302904564,
+            "current_price_over_future_eps": 15.21863832740143
+          }
+        },
+        {
+          "year": 2028,
+          "case": "strong",
+          "status": "own independent scenario",
+          "macro_ai_spend_usd_bn": 1900,
+          "eligible_pool_fraction": 0.67,
+          "eligible_pool_usd_bn": 1273.0,
+          "segments": [
+            {
+              "name": "DataCenter platform/network including embedded HBM/manufacturing",
+              "revenue_usd_bn": 891.0999999999999,
+              "operating_margin": 0.68,
+              "pool_capture": 0.7
+            },
+            {
+              "name": "Edge/gaming/auto/nonDC",
+              "revenue_usd_bn": 40,
+              "operating_margin": 0.32
+            }
+          ],
+          "sbc_separate_deduction_usd_bn": 20,
+          "acquired_amortization_separate_deduction_usd_bn": 1.2,
+          "normal_net_interest_usd_bn": 2,
+          "tax_rate": 0.17,
+          "diluted_ordinary_shares_bn": 23.8,
+          "expense_basis": "segment margins before separately deducted SBC and acquired amortization; other depreciation included",
+          "other_normal_operating_cost_usd_bn": 0,
+          "normal_other_nonoperating_usd_bn": 0,
+          "noncontrolling_interest_usd_bn": 0,
+          "calculated": {
+            "revenue_usd_bn": 931.0999999999999,
+            "operating_profit_usd_bn": 597.5479999999999,
+            "operating_margin": 0.641765653528085,
+            "normal_pretax_income_usd_bn": 599.5479999999999,
+            "normal_parent_net_income_usd_bn": 497.6248399999999,
+            "eps_usd_per_us_traded_unit": 20.908606722689072,
+            "current_price_over_future_eps": 10.24123738707256
+          }
+        },
+        {
+          "year": 2029,
+          "case": "weak",
+          "status": "own independent scenario",
+          "macro_ai_spend_usd_bn": 950,
+          "eligible_pool_fraction": 0.55,
+          "eligible_pool_usd_bn": 522.5,
+          "segments": [
+            {
+              "name": "DataCenter platform/network including embedded HBM/manufacturing",
+              "revenue_usd_bn": 282.15000000000003,
+              "operating_margin": 0.5,
+              "pool_capture": 0.54
+            },
+            {
+              "name": "Edge/gaming/auto/nonDC",
+              "revenue_usd_bn": 30,
+              "operating_margin": 0.22
+            }
+          ],
+          "sbc_separate_deduction_usd_bn": 11,
+          "acquired_amortization_separate_deduction_usd_bn": 0.8,
+          "normal_net_interest_usd_bn": 0,
+          "tax_rate": 0.21,
+          "diluted_ordinary_shares_bn": 24.65,
+          "expense_basis": "segment margins before separately deducted SBC and acquired amortization; other depreciation included",
+          "other_normal_operating_cost_usd_bn": 0,
+          "normal_other_nonoperating_usd_bn": 0,
+          "noncontrolling_interest_usd_bn": 0,
+          "calculated": {
+            "revenue_usd_bn": 312.15000000000003,
+            "operating_profit_usd_bn": 135.875,
+            "operating_margin": 0.4352875220246676,
+            "normal_pretax_income_usd_bn": 135.875,
+            "normal_parent_net_income_usd_bn": 107.34125,
+            "eps_usd_per_us_traded_unit": 4.354614604462475,
+            "current_price_over_future_eps": 49.17312422104269
+          }
+        },
+        {
+          "year": 2029,
+          "case": "base",
+          "status": "own independent scenario",
+          "macro_ai_spend_usd_bn": 1700,
+          "eligible_pool_fraction": 0.64,
+          "eligible_pool_usd_bn": 1088.0,
+          "segments": [
+            {
+              "name": "DataCenter platform/network including embedded HBM/manufacturing",
+              "revenue_usd_bn": 707.2,
+              "operating_margin": 0.62,
+              "pool_capture": 0.65
+            },
+            {
+              "name": "Edge/gaming/auto/nonDC",
+              "revenue_usd_bn": 37,
+              "operating_margin": 0.3
+            }
+          ],
+          "sbc_separate_deduction_usd_bn": 18,
+          "acquired_amortization_separate_deduction_usd_bn": 1.2,
+          "normal_net_interest_usd_bn": 1,
+          "tax_rate": 0.18,
+          "diluted_ordinary_shares_bn": 24.0,
+          "expense_basis": "segment margins before separately deducted SBC and acquired amortization; other depreciation included",
+          "other_normal_operating_cost_usd_bn": 0,
+          "normal_other_nonoperating_usd_bn": 0,
+          "noncontrolling_interest_usd_bn": 0,
+          "calculated": {
+            "revenue_usd_bn": 744.2,
+            "operating_profit_usd_bn": 430.36400000000003,
+            "operating_margin": 0.5782907820478366,
+            "normal_pretax_income_usd_bn": 431.36400000000003,
+            "normal_parent_net_income_usd_bn": 353.71848000000006,
+            "eps_usd_per_us_traded_unit": 14.738270000000002,
+            "current_price_over_future_eps": 14.528842590073324
+          }
+        },
+        {
+          "year": 2029,
+          "case": "strong",
+          "status": "own independent scenario",
+          "macro_ai_spend_usd_bn": 2500,
+          "eligible_pool_fraction": 0.65,
+          "eligible_pool_usd_bn": 1625.0,
+          "segments": [
+            {
+              "name": "DataCenter platform/network including embedded HBM/manufacturing",
+              "revenue_usd_bn": 1056.25,
+              "operating_margin": 0.67,
+              "pool_capture": 0.65
+            },
+            {
+              "name": "Edge/gaming/auto/nonDC",
+              "revenue_usd_bn": 45,
+              "operating_margin": 0.32
+            }
+          ],
+          "sbc_separate_deduction_usd_bn": 24,
+          "acquired_amortization_separate_deduction_usd_bn": 1.5,
+          "normal_net_interest_usd_bn": 2,
+          "tax_rate": 0.17,
+          "diluted_ordinary_shares_bn": 23.6,
+          "expense_basis": "segment margins before separately deducted SBC and acquired amortization; other depreciation included",
+          "other_normal_operating_cost_usd_bn": 0,
+          "normal_other_nonoperating_usd_bn": 0,
+          "noncontrolling_interest_usd_bn": 0,
+          "calculated": {
+            "revenue_usd_bn": 1101.25,
+            "operating_profit_usd_bn": 696.5875,
+            "operating_margin": 0.6325425652667424,
+            "normal_pretax_income_usd_bn": 698.5875,
+            "normal_parent_net_income_usd_bn": 579.8276249999999,
+            "eps_usd_per_us_traded_unit": 24.568967161016943,
+            "current_price_over_future_eps": 8.715466282186885
+          }
+        }
+      ]
+    },
+    "AVGO": {
+      "symbol": "AVGO",
+      "price_usd": 328.75,
+      "ordinary_shares_per_us_traded_unit": 1,
+      "benchmark": {
+        "period": "FY2026Q3 ended2026-08-02",
+        "source_ids": [
+          "av_q3",
+          "av_10q"
+        ],
+        "revenue_usd_bn": 29.591,
+        "ai_revenue_usd_bn": 16.7,
+        "non_ai_semiconductor_revenue_usd_bn": 4.139,
+        "software_revenue_usd_bn": 8.752,
+        "gaap_operating_profit_usd_bn": 15.955,
+        "gaap_net_income_usd_bn": 13.088,
+        "gaap_diluted_eps_usd": 2.68,
+        "diluted_ordinary_shares_bn": 4.887,
+        "period_end_shares_bn": 4.774,
+        "sbc_usd_bn": 2.019,
+        "acquired_amortization_usd_bn": 2.006,
+        "interest_expense_usd_bn": 0.778,
+        "other_income_usd_bn": 0.098,
+        "normalization_tax_assumed": 0.18,
+        "own_normalized_quarter_net_income_usd_bn": 12.44514,
+        "own_normalized_annualized_runrate_eps_usd": 10.18632289748312,
+        "normalization_note": "Own operating-profit plus ordinary net interest bridge at18% tax; exclude equity gains / other nonoperating items; keep SBC and acquired amortization. Quarter*4 is NOT TTM or full-year forecast."
+      },
+      "latest_full_year": {
+        "period": "FY2025 ended2025-11-02",
+        "source_ids": [
+          "av_fy25"
+        ],
+        "revenue_usd_bn": 63.887,
+        "gaap_operating_profit_usd_bn": 25.484,
+        "gaap_net_income_usd_bn": 23.126,
+        "gaap_diluted_eps_usd": 4.77,
+        "diluted_shares_bn": 4.853,
+        "warning": "FY25 includes net tax benefit0.397bn; reported EPS is not normalized earnings."
+      },
+      "company_guidance": [
+        {
+          "date": "2026-09-02",
+          "source_ids": [
+            "av_q3"
+          ],
+          "period": "FY2026Q4",
+          "revenue_usd_bn": 34.8,
+          "ai_revenue_usd_bn": 21.7,
+          "non_gaap_operating_margin": 0.66
+        }
+      ],
+      "unverified_longterm_management_claim": "FY27AI115bn/FY28AI230bn appears in multiple third-party transcripts; official webcast/text not independently checked this pass. Not entered as primary-verified company guidance. Own baseAI191.1/250.24 below/around that reported trajectory; strongAI292.79/406.25 exceeds it.",
+      "expense_basis": "Semiconductor and software segment margins exclude SBC/acquired intangibles in company CODM reporting. Future segment margins likewise pre-SBC/pre-acq-amort; deduct both explicitly. Existing asset amortization FY28 5.833/FY29 4.686/FY30 3.479bn; CY approximation=(10*FYcurrent+2*FYnext)/12. New SBC awards are allowed: do not let current award run-off make future SBC zero.",
+      "capacity_and_funding": "126.821bn purchase commitments at2026-08-02, 61.079bn debt principal, AI rack lease backstop max29bn undiscounted after full deployment, top5endcustomers~50% nine-monthsales. RPO179.2bn includes AI/nonAIsoftware and semis; not AI-only orders. Normal profit excludes discrete default losses; stress separately.",
+      "source_ids": [
+        "av_q3",
+        "av_10q"
+      ],
+      "forecasts": [
+        {
+          "year": 2028,
+          "case": "weak",
+          "status": "own independent scenario",
+          "macro_ai_spend_usd_bn": 1000,
+          "eligible_pool_fraction": 0.55,
+          "eligible_pool_usd_bn": 550.0,
+          "segments": [
+            {
+              "name": "AI custom ASIC",
+              "revenue_usd_bn": 77.0,
+              "operating_margin": 0.52,
+              "pool_capture": 0.13999999999999999
+            },
+            {
+              "name": "AI network electronics",
+              "revenue_usd_bn": 33.00000000000001,
+              "operating_margin": 0.52,
+              "pool_capture": 0.06000000000000001
+            },
+            {
+              "name": "NonAIsemiconductor",
+              "revenue_usd_bn": 16,
+              "operating_margin": 0.35
+            },
+            {
+              "name": "InfrastructureSoftware",
+              "revenue_usd_bn": 36,
+              "operating_margin": 0.74
+            }
+          ],
+          "ai_combined_capture": 0.2,
+          "asic_share_of_ai_own_assumption": 0.7,
+          "sbc_separate_deduction_usd_bn": 10,
+          "acquired_amortization_separate_deduction_usd_bn": 5.6418333333333335,
+          "normal_net_interest_usd_bn": -3.2,
+          "tax_rate": 0.21,
+          "diluted_ordinary_shares_bn": 5.2,
+          "expense_basis": "margins before SBC/acquired amortization; per-company disclosed segment basis, not GAAP all-in margin",
+          "other_normal_operating_cost_usd_bn": 0,
+          "normal_other_nonoperating_usd_bn": 0,
+          "noncontrolling_interest_usd_bn": 0,
+          "calculated": {
+            "revenue_usd_bn": 162.0,
+            "operating_profit_usd_bn": 73.79816666666666,
+            "operating_margin": 0.45554423868312754,
+            "normal_pretax_income_usd_bn": 70.59816666666666,
+            "normal_parent_net_income_usd_bn": 55.772551666666665,
+            "eps_usd_per_us_traded_unit": 10.725490705128204,
+            "current_price_over_future_eps": 30.6512782527343
+          }
+        },
+        {
+          "year": 2028,
+          "case": "base",
+          "status": "own independent scenario",
+          "macro_ai_spend_usd_bn": 1400,
+          "eligible_pool_fraction": 0.65,
+          "eligible_pool_usd_bn": 910.0,
+          "segments": [
+            {
+              "name": "AI custom ASIC",
+              "revenue_usd_bn": 143.325,
+              "operating_margin": 0.61,
+              "pool_capture": 0.1575
+            },
+            {
+              "name": "AI network electronics",
+              "revenue_usd_bn": 47.775,
+              "operating_margin": 0.61,
+              "pool_capture": 0.0525
+            },
+            {
+              "name": "NonAIsemiconductor",
+              "revenue_usd_bn": 20,
+              "operating_margin": 0.42
+            },
+            {
+              "name": "InfrastructureSoftware",
+              "revenue_usd_bn": 44,
+              "operating_margin": 0.8
+            }
+          ],
+          "ai_combined_capture": 0.21,
+          "asic_share_of_ai_own_assumption": 0.75,
+          "sbc_separate_deduction_usd_bn": 12,
+          "acquired_amortization_separate_deduction_usd_bn": 5.6418333333333335,
+          "normal_net_interest_usd_bn": -2.8,
+          "tax_rate": 0.18,
+          "diluted_ordinary_shares_bn": 5.05,
+          "expense_basis": "margins before SBC/acquired amortization; per-company disclosed segment basis, not GAAP all-in margin",
+          "other_normal_operating_cost_usd_bn": 0,
+          "normal_other_nonoperating_usd_bn": 0,
+          "noncontrolling_interest_usd_bn": 0,
+          "calculated": {
+            "revenue_usd_bn": 255.1,
+            "operating_profit_usd_bn": 142.52916666666667,
+            "operating_margin": 0.558718803083758,
+            "normal_pretax_income_usd_bn": 139.72916666666666,
+            "normal_parent_net_income_usd_bn": 114.57791666666667,
+            "eps_usd_per_us_traded_unit": 22.688696369636965,
+            "current_price_over_future_eps": 14.489594053537076
+          }
+        },
+        {
+          "year": 2028,
+          "case": "strong",
+          "status": "own independent scenario",
+          "macro_ai_spend_usd_bn": 1900,
+          "eligible_pool_fraction": 0.67,
+          "eligible_pool_usd_bn": 1273.0,
+          "segments": [
+            {
+              "name": "AI custom ASIC",
+              "revenue_usd_bn": 228.3762,
+              "operating_margin": 0.64,
+              "pool_capture": 0.1794
+            },
+            {
+              "name": "AI network electronics",
+              "revenue_usd_bn": 64.4138,
+              "operating_margin": 0.64,
+              "pool_capture": 0.0506
+            },
+            {
+              "name": "NonAIsemiconductor",
+              "revenue_usd_bn": 23,
+              "operating_margin": 0.45
+            },
+            {
+              "name": "InfrastructureSoftware",
+              "revenue_usd_bn": 50,
+              "operating_margin": 0.83
+            }
+          ],
+          "ai_combined_capture": 0.23,
+          "asic_share_of_ai_own_assumption": 0.78,
+          "sbc_separate_deduction_usd_bn": 15,
+          "acquired_amortization_separate_deduction_usd_bn": 5.6418333333333335,
+          "normal_net_interest_usd_bn": -2,
+          "tax_rate": 0.17,
+          "diluted_ordinary_shares_bn": 5.0,
+          "expense_basis": "margins before SBC/acquired amortization; per-company disclosed segment basis, not GAAP all-in margin",
+          "other_normal_operating_cost_usd_bn": 0,
+          "normal_other_nonoperating_usd_bn": 0,
+          "noncontrolling_interest_usd_bn": 0,
+          "calculated": {
+            "revenue_usd_bn": 365.79,
+            "operating_profit_usd_bn": 218.59376666666668,
+            "operating_margin": 0.5975936101770597,
+            "normal_pretax_income_usd_bn": 216.59376666666668,
+            "normal_parent_net_income_usd_bn": 179.77282633333334,
+            "eps_usd_per_us_traded_unit": 35.95456526666667,
+            "current_price_over_future_eps": 9.143484215752228
+          }
+        },
+        {
+          "year": 2029,
+          "case": "weak",
+          "status": "own independent scenario",
+          "macro_ai_spend_usd_bn": 950,
+          "eligible_pool_fraction": 0.55,
+          "eligible_pool_usd_bn": 522.5,
+          "segments": [
+            {
+              "name": "AI custom ASIC",
+              "revenue_usd_bn": 80.465,
+              "operating_margin": 0.49,
+              "pool_capture": 0.154
+            },
+            {
+              "name": "AI network electronics",
+              "revenue_usd_bn": 34.48500000000001,
+              "operating_margin": 0.49,
+              "pool_capture": 0.06600000000000002
+            },
+            {
+              "name": "NonAIsemiconductor",
+              "revenue_usd_bn": 16,
+              "operating_margin": 0.33
+            },
+            {
+              "name": "InfrastructureSoftware",
+              "revenue_usd_bn": 36,
+              "operating_margin": 0.72
+            }
+          ],
+          "ai_combined_capture": 0.22,
+          "asic_share_of_ai_own_assumption": 0.7,
+          "sbc_separate_deduction_usd_bn": 11,
+          "acquired_amortization_separate_deduction_usd_bn": 4.4848333333333334,
+          "normal_net_interest_usd_bn": -3.6,
+          "tax_rate": 0.21,
+          "diluted_ordinary_shares_bn": 5.3,
+          "expense_basis": "margins before SBC/acquired amortization; per-company disclosed segment basis, not GAAP all-in margin",
+          "other_normal_operating_cost_usd_bn": 0,
+          "normal_other_nonoperating_usd_bn": 0,
+          "noncontrolling_interest_usd_bn": 0,
+          "calculated": {
+            "revenue_usd_bn": 166.95000000000002,
+            "operating_profit_usd_bn": 72.04066666666667,
+            "operating_margin": 0.4315104322651492,
+            "normal_pretax_income_usd_bn": 68.44066666666667,
+            "normal_parent_net_income_usd_bn": 54.06812666666667,
+            "eps_usd_per_us_traded_unit": 10.201533333333334,
+            "current_price_over_future_eps": 32.225547793468955
+          }
+        },
+        {
+          "year": 2029,
+          "case": "base",
+          "status": "own independent scenario",
+          "macro_ai_spend_usd_bn": 1700,
+          "eligible_pool_fraction": 0.64,
+          "eligible_pool_usd_bn": 1088.0,
+          "segments": [
+            {
+              "name": "AI custom ASIC",
+              "revenue_usd_bn": 187.68,
+              "operating_margin": 0.6,
+              "pool_capture": 0.17250000000000001
+            },
+            {
+              "name": "AI network electronics",
+              "revenue_usd_bn": 62.56,
+              "operating_margin": 0.6,
+              "pool_capture": 0.0575
+            },
+            {
+              "name": "NonAIsemiconductor",
+              "revenue_usd_bn": 21,
+              "operating_margin": 0.42
+            },
+            {
+              "name": "InfrastructureSoftware",
+              "revenue_usd_bn": 48,
+              "operating_margin": 0.8
+            }
+          ],
+          "ai_combined_capture": 0.23,
+          "asic_share_of_ai_own_assumption": 0.75,
+          "sbc_separate_deduction_usd_bn": 13,
+          "acquired_amortization_separate_deduction_usd_bn": 4.4848333333333334,
+          "normal_net_interest_usd_bn": -2.5,
+          "tax_rate": 0.18,
+          "diluted_ordinary_shares_bn": 5.1,
+          "expense_basis": "margins before SBC/acquired amortization; per-company disclosed segment basis, not GAAP all-in margin",
+          "other_normal_operating_cost_usd_bn": 0,
+          "normal_other_nonoperating_usd_bn": 0,
+          "noncontrolling_interest_usd_bn": 0,
+          "calculated": {
+            "revenue_usd_bn": 319.24,
+            "operating_profit_usd_bn": 179.87916666666666,
+            "operating_margin": 0.5634606147934678,
+            "normal_pretax_income_usd_bn": 177.37916666666666,
+            "normal_parent_net_income_usd_bn": 145.45091666666667,
+            "eps_usd_per_us_traded_unit": 28.51978758169935,
+            "current_price_over_future_eps": 11.52708445174231
+          }
+        },
+        {
+          "year": 2029,
+          "case": "strong",
+          "status": "own independent scenario",
+          "macro_ai_spend_usd_bn": 2500,
+          "eligible_pool_fraction": 0.65,
+          "eligible_pool_usd_bn": 1625.0,
+          "segments": [
+            {
+              "name": "AI custom ASIC",
+              "revenue_usd_bn": 316.875,
+              "operating_margin": 0.63,
+              "pool_capture": 0.195
+            },
+            {
+              "name": "AI network electronics",
+              "revenue_usd_bn": 89.37499999999999,
+              "operating_margin": 0.63,
+              "pool_capture": 0.05499999999999999
+            },
+            {
+              "name": "NonAIsemiconductor",
+              "revenue_usd_bn": 25,
+              "operating_margin": 0.45
+            },
+            {
+              "name": "InfrastructureSoftware",
+              "revenue_usd_bn": 58,
+              "operating_margin": 0.83
+            }
+          ],
+          "ai_combined_capture": 0.25,
+          "asic_share_of_ai_own_assumption": 0.78,
+          "sbc_separate_deduction_usd_bn": 18,
+          "acquired_amortization_separate_deduction_usd_bn": 4.4848333333333334,
+          "normal_net_interest_usd_bn": -1.5,
+          "tax_rate": 0.17,
+          "diluted_ordinary_shares_bn": 5.0,
+          "expense_basis": "margins before SBC/acquired amortization; per-company disclosed segment basis, not GAAP all-in margin",
+          "other_normal_operating_cost_usd_bn": 0,
+          "normal_other_nonoperating_usd_bn": 0,
+          "noncontrolling_interest_usd_bn": 0,
+          "calculated": {
+            "revenue_usd_bn": 489.25,
+            "operating_profit_usd_bn": 292.8426666666667,
+            "operating_margin": 0.5985542497019247,
+            "normal_pretax_income_usd_bn": 291.3426666666667,
+            "normal_parent_net_income_usd_bn": 241.81441333333333,
+            "eps_usd_per_us_traded_unit": 48.362882666666664,
+            "current_price_over_future_eps": 6.79756833904745
+          }
+        }
+      ]
+    },
+    "TSMC": {
+      "symbol": "TSM",
+      "price_usd": 412.60998535,
+      "ordinary_shares_per_us_traded_unit": 5,
+      "benchmark": {
+        "period": "CY2026Q3 ended2026-09-30",
+        "source_ids": [
+          "ts_q3",
+          "ts_fs3",
+          "ts_mr3"
+        ],
+        "revenue_usd_bn_reported_at_quarter_average_fx": 46.72,
+        "revenue_twd_bn": 1494.243,
+        "gaap_operating_profit_twd_bn": 876.445,
+        "gaap_net_income_parent_twd_bn": 763.064,
+        "gaap_eps_twd_per_ordinary": 29.43,
+        "reported_usd_adr_eps_at_quarter_average_fx": 4.6,
+        "diluted_ordinary_shares_bn": 25.932,
+        "net_interest_twd_bn": 31.66,
+        "noncontrolling_interest_twd_bn": 0.277,
+        "actual_effective_tax_rate": 0.162,
+        "normalization_tax_assumed": 0.18,
+        "ordinary_shares_per_adr": 5,
+        "wafer_shipments_million_12in_equivalent": 4.476,
+        "quarter_capex_twd_bn": 443.21,
+        "quarter_cfo_twd_bn": 919.77,
+        "own_normalized_quarter_parent_net_income_twd_bn": 744.3690999999999,
+        "gaap_quarter_eps_usd_adr_at_spot_fx": 4.5377449625988975,
+        "own_normalized_annualized_runrate_eps_usd_adr_at_spot_fx": 17.703622327430995,
+        "normalization_note": "Own bridge at18% tax in TWD, excludes associates / equity/disposal/mark-to-market gains and other income, keeps operating costs. Quarter*4 is NOT TTM. TWD per ordinary to USD ADR uses spot32.4280014 once."
+      },
+      "latest_full_year": {
+        "period": "CY2025 audited",
+        "source_ids": [
+          "ts_fy25"
+        ],
+        "revenue_usd_bn_at_year_average_fx": 122.424,
+        "revenue_twd_bn": 3809.054,
+        "operating_profit_twd_bn": 1936.092,
+        "parent_net_income_twd_bn": 1717.883,
+        "diluted_eps_twd_ordinary": 66.25,
+        "diluted_ordinary_shares_bn": 25.931
+      },
+      "company_guidance": [
+        {
+          "date": "2026-10-15",
+          "source_ids": [
+            "ts_q3",
+            "ts_call3"
+          ],
+          "period": "CY2026Q4",
+          "revenue_usd_bn_range": [
+            52.3,
+            54.3
+          ],
+          "gross_margin_range": [
+            0.65,
+            0.67
+          ],
+          "operating_margin_range": [
+            0.565,
+            0.585
+          ]
+        },
+        {
+          "date": "2026-10-15",
+          "source_ids": [
+            "ts_call3"
+          ],
+          "period": "CY2026",
+          "revenue_growth_usd_approx": 0.44,
+          "capex_usd_bn_range": [
+            60,
+            64
+          ]
+        },
+        {
+          "date": "2026-01-15; reiterated2026-10-15",
+          "source_ids": [
+            "ts_call4",
+            "ts_call3"
+          ],
+          "period": "CY2024–2029",
+          "narrow_ai_accelerator_revenue_cagr_description": "mid-to-high50s percent",
+          "warning": "Narrow accelerator category excludes CPU/network; not our broader upstream attribution."
+        }
+      ],
+      "bridge": "CY26 own revenue calibration176.3bn is122.424*1.44 rounded, not company exact dollar guidance. 2026 own broadAIupstream49.725 + other126.575. BaseCY28/29 broadAI106.47/137.088 + other145/155. BroadAI includes manufacture/packaging attributable to compute/network pool, not company narrow accelerator series; do not compare them as identical.",
+      "expense_basis": "Blended GAAP-like operating margin already includes SBC, ordinary R&D and PPE/intangible depreciation. Zero separate SBC/amort deductions mean already expensed, not zero cost. No carryover of Q2VIS disposal/mark-to-market gains.",
+      "capacity_and_funding": "Q3 shipments4.476m12in-equivalent and capex60–64bn guide; new fabs take2–3years,2026investment contributes primarily2028/29. Independent supply ceiling330/410bn for strongCY28/29 corresponds to22m*15k/25m*16.4k effective revenue per wafer, including packaging. This is an own broad capacity check, NOT company wafer ASP or formal ceiling. Overseas fab gross margin dilution3–4pt refers later-five-year-plan period, not exact2027 guarantee.",
+      "source_ids": [
+        "ts_fs3",
+        "ts_mr3",
+        "ts_call3",
+        "ts_call4"
+      ],
+      "forecasts": [
+        {
+          "year": 2028,
+          "case": "weak",
+          "status": "own independent scenario",
+          "macro_ai_spend_usd_bn": 1000,
+          "eligible_pool_fraction": 0.55,
+          "eligible_pool_usd_bn": 550.0,
+          "upstream_foundry_packaging_content_fraction": 0.09,
+          "TSMC_upstream_effective_capture": 0.8,
+          "upstream_AI_revenue_before_supply_ceiling_usd_bn": 39.6,
+          "total_revenue_before_supply_ceiling_usd_bn": 159.6,
+          "own_supply_ceiling_usd_bn": 200,
+          "supply_scale_factor": 1,
+          "segments": [
+            {
+              "name": "AI-associated upstream manufacturing/packaging",
+              "revenue_usd_bn": 39.6,
+              "operating_margin": 0.42
+            },
+            {
+              "name": "Other business excluding that upstream allocation",
+              "revenue_usd_bn": 120,
+              "operating_margin": 0.42
+            }
+          ],
+          "sbc_separate_deduction_usd_bn": 0,
+          "acquired_amortization_separate_deduction_usd_bn": 0,
+          "normal_net_interest_usd_bn": 3,
+          "tax_rate": 0.21,
+          "noncontrolling_interest_usd_bn": 0.1,
+          "diluted_ordinary_shares_bn": 26.0,
+          "expense_basis": "both segments use blended GAAP-like margin inclusive of SBC and all amortization; zero separate deductions do not mean zero expense",
+          "other_normal_operating_cost_usd_bn": 0,
+          "normal_other_nonoperating_usd_bn": 0,
+          "calculated": {
+            "revenue_usd_bn": 159.6,
+            "operating_profit_usd_bn": 67.032,
+            "operating_margin": 0.42,
+            "normal_pretax_income_usd_bn": 70.032,
+            "normal_parent_net_income_usd_bn": 55.22528,
+            "eps_usd_per_us_traded_unit": 10.620246153846153,
+            "current_price_over_future_eps": 38.85126383822771,
+            "revenue_twd_bn": 5175.5090234399995,
+            "operating_profit_twd_bn": 2173.7137898448,
+            "normal_parent_net_income_twd_bn": 1790.8454571553918,
+            "eps_twd_per_ordinary": 68.87867142905353
+          }
+        },
+        {
+          "year": 2028,
+          "case": "base",
+          "status": "own independent scenario",
+          "macro_ai_spend_usd_bn": 1400,
+          "eligible_pool_fraction": 0.65,
+          "eligible_pool_usd_bn": 910.0,
+          "upstream_foundry_packaging_content_fraction": 0.13,
+          "TSMC_upstream_effective_capture": 0.9,
+          "upstream_AI_revenue_before_supply_ceiling_usd_bn": 106.47,
+          "total_revenue_before_supply_ceiling_usd_bn": 251.47,
+          "own_supply_ceiling_usd_bn": 270,
+          "supply_scale_factor": 1,
+          "segments": [
+            {
+              "name": "AI-associated upstream manufacturing/packaging",
+              "revenue_usd_bn": 106.47,
+              "operating_margin": 0.54
+            },
+            {
+              "name": "Other business excluding that upstream allocation",
+              "revenue_usd_bn": 145,
+              "operating_margin": 0.54
+            }
+          ],
+          "sbc_separate_deduction_usd_bn": 0,
+          "acquired_amortization_separate_deduction_usd_bn": 0,
+          "normal_net_interest_usd_bn": 4,
+          "tax_rate": 0.18,
+          "noncontrolling_interest_usd_bn": 0.15,
+          "diluted_ordinary_shares_bn": 26.0,
+          "expense_basis": "both segments use blended GAAP-like margin inclusive of SBC and all amortization; zero separate deductions do not mean zero expense",
+          "other_normal_operating_cost_usd_bn": 0,
+          "normal_other_nonoperating_usd_bn": 0,
+          "calculated": {
+            "revenue_usd_bn": 251.47,
+            "operating_profit_usd_bn": 135.7938,
+            "operating_margin": 0.54,
+            "normal_pretax_income_usd_bn": 139.7938,
+            "normal_parent_net_income_usd_bn": 114.48091600000001,
+            "eps_usd_per_us_traded_unit": 22.015560769230767,
+            "current_price_over_future_eps": 18.741743154990132,
+            "revenue_twd_bn": 8154.669512058,
+            "operating_profit_twd_bn": 4403.52153651132,
+            "normal_parent_net_income_twd_bn": 3712.3873043212825,
+            "eps_twd_per_ordinary": 142.7841270892801
+          }
+        },
+        {
+          "year": 2028,
+          "case": "strong",
+          "status": "own independent scenario",
+          "macro_ai_spend_usd_bn": 1900,
+          "eligible_pool_fraction": 0.67,
+          "eligible_pool_usd_bn": 1273.0,
+          "upstream_foundry_packaging_content_fraction": 0.15,
+          "TSMC_upstream_effective_capture": 0.95,
+          "upstream_AI_revenue_before_supply_ceiling_usd_bn": 181.40249999999997,
+          "total_revenue_before_supply_ceiling_usd_bn": 346.4025,
+          "own_supply_ceiling_usd_bn": 330,
+          "supply_scale_factor": 0.9526490137917597,
+          "segments": [
+            {
+              "name": "AI-associated upstream manufacturing/packaging",
+              "revenue_usd_bn": 172.81291272435968,
+              "operating_margin": 0.59
+            },
+            {
+              "name": "Other business excluding that upstream allocation",
+              "revenue_usd_bn": 157.18708727564035,
+              "operating_margin": 0.59
+            }
+          ],
+          "sbc_separate_deduction_usd_bn": 0,
+          "acquired_amortization_separate_deduction_usd_bn": 0,
+          "normal_net_interest_usd_bn": 5,
+          "tax_rate": 0.17,
+          "noncontrolling_interest_usd_bn": 0.2,
+          "diluted_ordinary_shares_bn": 26.0,
+          "expense_basis": "both segments use blended GAAP-like margin inclusive of SBC and all amortization; zero separate deductions do not mean zero expense",
+          "other_normal_operating_cost_usd_bn": 0,
+          "normal_other_nonoperating_usd_bn": 0,
+          "calculated": {
+            "revenue_usd_bn": 330.0,
+            "operating_profit_usd_bn": 194.7,
+            "operating_margin": 0.59,
+            "normal_pretax_income_usd_bn": 199.7,
+            "normal_parent_net_income_usd_bn": 165.551,
+            "eps_usd_per_us_traded_unit": 31.836730769230766,
+            "current_price_over_future_eps": 12.960187034931835,
+            "revenue_twd_bn": 10701.240462,
+            "operating_profit_twd_bn": 6313.73187258,
+            "normal_parent_net_income_twd_bn": 5368.488059771399,
+            "eps_twd_per_ordinary": 206.48030999120766
+          }
+        },
+        {
+          "year": 2029,
+          "case": "weak",
+          "status": "own independent scenario",
+          "macro_ai_spend_usd_bn": 950,
+          "eligible_pool_fraction": 0.55,
+          "eligible_pool_usd_bn": 522.5,
+          "upstream_foundry_packaging_content_fraction": 0.09,
+          "TSMC_upstream_effective_capture": 0.78,
+          "upstream_AI_revenue_before_supply_ceiling_usd_bn": 36.6795,
+          "total_revenue_before_supply_ceiling_usd_bn": 154.6795,
+          "own_supply_ceiling_usd_bn": 205,
+          "supply_scale_factor": 1,
+          "segments": [
+            {
+              "name": "AI-associated upstream manufacturing/packaging",
+              "revenue_usd_bn": 36.6795,
+              "operating_margin": 0.4
+            },
+            {
+              "name": "Other business excluding that upstream allocation",
+              "revenue_usd_bn": 118,
+              "operating_margin": 0.4
+            }
+          ],
+          "sbc_separate_deduction_usd_bn": 0,
+          "acquired_amortization_separate_deduction_usd_bn": 0,
+          "normal_net_interest_usd_bn": 3,
+          "tax_rate": 0.21,
+          "noncontrolling_interest_usd_bn": 0.1,
+          "diluted_ordinary_shares_bn": 26.1,
+          "expense_basis": "both segments use blended GAAP-like margin inclusive of SBC and all amortization; zero separate deductions do not mean zero expense",
+          "other_normal_operating_cost_usd_bn": 0,
+          "normal_other_nonoperating_usd_bn": 0,
+          "calculated": {
+            "revenue_usd_bn": 154.6795,
+            "operating_profit_usd_bn": 61.8718,
+            "operating_margin": 0.4,
+            "normal_pretax_income_usd_bn": 64.87180000000001,
+            "normal_parent_net_income_usd_bn": 51.14872200000001,
+            "eps_usd_per_us_traded_unit": 9.798605747126437,
+            "current_price_over_future_eps": 42.10905061375727,
+            "revenue_twd_bn": 5015.9470425513,
+            "operating_profit_twd_bn": 2006.37881702052,
+            "normal_parent_net_income_twd_bn": 1658.650828624211,
+            "eps_twd_per_ordinary": 63.54984017717283
+          }
+        },
+        {
+          "year": 2029,
+          "case": "base",
+          "status": "own independent scenario",
+          "macro_ai_spend_usd_bn": 1700,
+          "eligible_pool_fraction": 0.64,
+          "eligible_pool_usd_bn": 1088.0,
+          "upstream_foundry_packaging_content_fraction": 0.14,
+          "TSMC_upstream_effective_capture": 0.9,
+          "upstream_AI_revenue_before_supply_ceiling_usd_bn": 137.08800000000002,
+          "total_revenue_before_supply_ceiling_usd_bn": 292.088,
+          "own_supply_ceiling_usd_bn": 325,
+          "supply_scale_factor": 1,
+          "segments": [
+            {
+              "name": "AI-associated upstream manufacturing/packaging",
+              "revenue_usd_bn": 137.08800000000002,
+              "operating_margin": 0.55
+            },
+            {
+              "name": "Other business excluding that upstream allocation",
+              "revenue_usd_bn": 155,
+              "operating_margin": 0.55
+            }
+          ],
+          "sbc_separate_deduction_usd_bn": 0,
+          "acquired_amortization_separate_deduction_usd_bn": 0,
+          "normal_net_interest_usd_bn": 4,
+          "tax_rate": 0.18,
+          "noncontrolling_interest_usd_bn": 0.2,
+          "diluted_ordinary_shares_bn": 26.0,
+          "expense_basis": "both segments use blended GAAP-like margin inclusive of SBC and all amortization; zero separate deductions do not mean zero expense",
+          "other_normal_operating_cost_usd_bn": 0,
+          "normal_other_nonoperating_usd_bn": 0,
+          "calculated": {
+            "revenue_usd_bn": 292.088,
+            "operating_profit_usd_bn": 160.64840000000004,
+            "operating_margin": 0.55,
+            "normal_pretax_income_usd_bn": 164.64840000000004,
+            "normal_parent_net_income_usd_bn": 134.81168800000006,
+            "eps_usd_per_us_traded_unit": 25.92532461538463,
+            "current_price_over_future_eps": 15.915325708405927,
+            "revenue_twd_bn": 9471.830072923201,
+            "operating_profit_twd_bn": 5209.506540107761,
+            "normal_parent_net_income_twd_bn": 4371.673607200365,
+            "eps_twd_per_ordinary": 168.1412925846294
+          }
+        },
+        {
+          "year": 2029,
+          "case": "strong",
+          "status": "own independent scenario",
+          "macro_ai_spend_usd_bn": 2500,
+          "eligible_pool_fraction": 0.65,
+          "eligible_pool_usd_bn": 1625.0,
+          "upstream_foundry_packaging_content_fraction": 0.16,
+          "TSMC_upstream_effective_capture": 0.95,
+          "upstream_AI_revenue_before_supply_ceiling_usd_bn": 247.0,
+          "total_revenue_before_supply_ceiling_usd_bn": 432.0,
+          "own_supply_ceiling_usd_bn": 410,
+          "supply_scale_factor": 0.9490740740740741,
+          "segments": [
+            {
+              "name": "AI-associated upstream manufacturing/packaging",
+              "revenue_usd_bn": 234.4212962962963,
+              "operating_margin": 0.6
+            },
+            {
+              "name": "Other business excluding that upstream allocation",
+              "revenue_usd_bn": 175.5787037037037,
+              "operating_margin": 0.6
+            }
+          ],
+          "sbc_separate_deduction_usd_bn": 0,
+          "acquired_amortization_separate_deduction_usd_bn": 0,
+          "normal_net_interest_usd_bn": 6,
+          "tax_rate": 0.17,
+          "noncontrolling_interest_usd_bn": 0.25,
+          "diluted_ordinary_shares_bn": 26.0,
+          "expense_basis": "both segments use blended GAAP-like margin inclusive of SBC and all amortization; zero separate deductions do not mean zero expense",
+          "other_normal_operating_cost_usd_bn": 0,
+          "normal_other_nonoperating_usd_bn": 0,
+          "calculated": {
+            "revenue_usd_bn": 410.0,
+            "operating_profit_usd_bn": 246.0,
+            "operating_margin": 0.6,
+            "normal_pretax_income_usd_bn": 252.0,
+            "normal_parent_net_income_usd_bn": 208.91,
+            "eps_usd_per_us_traded_unit": 40.175,
+            "current_price_over_future_eps": 10.270316996888612,
+            "revenue_twd_bn": 13295.480574,
+            "operating_profit_twd_bn": 7977.2883444,
+            "normal_parent_net_income_twd_bn": 6774.533772474,
+            "eps_twd_per_ordinary": 260.55899124900003
+          }
+        }
+      ]
+    }
+  },
+  "pool_checks": [
+    {
+      "year": 2028,
+      "case": "weak",
+      "pool_usd_bn": 550.0,
+      "NVDA_plus_AVGO_capture": 0.78,
+      "other_vendor_capture": 0.22000000000000003,
+      "passes": true
+    },
+    {
+      "year": 2028,
+      "case": "base",
+      "pool_usd_bn": 910.0,
+      "NVDA_plus_AVGO_capture": 0.9299999999999999,
+      "other_vendor_capture": 0.07000000000000003,
+      "passes": true
+    },
+    {
+      "year": 2028,
+      "case": "strong",
+      "pool_usd_bn": 1273.0,
+      "NVDA_plus_AVGO_capture": 0.9299999999999999,
+      "other_vendor_capture": 0.07000000000000003,
+      "passes": true
+    },
+    {
+      "year": 2029,
+      "case": "weak",
+      "pool_usd_bn": 522.5,
+      "NVDA_plus_AVGO_capture": 0.76,
+      "other_vendor_capture": 0.23999999999999996,
+      "passes": true
+    },
+    {
+      "year": 2029,
+      "case": "base",
+      "pool_usd_bn": 1088.0,
+      "NVDA_plus_AVGO_capture": 0.88,
+      "other_vendor_capture": 0.11999999999999997,
+      "passes": true
+    },
+    {
+      "year": 2029,
+      "case": "strong",
+      "pool_usd_bn": 1625.0,
+      "NVDA_plus_AVGO_capture": 0.9,
+      "other_vendor_capture": 0.09999999999999998,
+      "passes": true
+    }
+  ],
+  "sensitivity_2029_base_only": {
+    "NVDA": {
+      "year": 2029,
+      "case": "base_macro_frozen_2026_capture_or_content_sensitivity",
+      "status": "own independent scenario",
+      "macro_ai_spend_usd_bn": 1700,
+      "eligible_pool_fraction": 0.64,
+      "eligible_pool_usd_bn": 1088.0,
+      "segments": [
+        {
+          "name": "DataCenter platform/network including embedded HBM/manufacturing",
+          "revenue_usd_bn": 602.5846153846154,
+          "operating_margin": 0.62,
+          "pool_capture": 0.5538461538461539
+        },
+        {
+          "name": "Edge/gaming/auto/nonDC",
+          "revenue_usd_bn": 37,
+          "operating_margin": 0.3
+        }
+      ],
+      "sbc_separate_deduction_usd_bn": 18,
+      "acquired_amortization_separate_deduction_usd_bn": 1.2,
+      "normal_net_interest_usd_bn": 1,
+      "tax_rate": 0.18,
+      "diluted_ordinary_shares_bn": 24.0,
+      "expense_basis": "segment margins before separately deducted SBC and acquired amortization; other depreciation included",
+      "other_normal_operating_cost_usd_bn": 0,
+      "normal_other_nonoperating_usd_bn": 0,
+      "noncontrolling_interest_usd_bn": 0,
+      "calculated": {
+        "revenue_usd_bn": 639.5846153846154,
+        "operating_profit_usd_bn": 365.5024615384616,
+        "operating_margin": 0.5714685011906767,
+        "normal_pretax_income_usd_bn": 366.5024615384616,
+        "normal_parent_net_income_usd_bn": 300.53201846153854,
+        "eps_usd_per_us_traded_unit": 12.522167435897439,
+        "current_price_over_future_eps": 17.100075204724632
+      },
+      "explanation": "Only NVDA effective vendor-pool capture held at own2026calibration55.4%; future costs/tax/shares unchanged."
+    },
+    "AVGO": {
+      "year": 2029,
+      "case": "base_macro_frozen_2026_capture_or_content_sensitivity",
+      "status": "own independent scenario",
+      "macro_ai_spend_usd_bn": 1700,
+      "eligible_pool_fraction": 0.64,
+      "eligible_pool_usd_bn": 1088.0,
+      "segments": [
+        {
+          "name": "AI custom ASIC",
+          "revenue_usd_bn": 72.81230769230768,
+          "operating_margin": 0.6
+        },
+        {
+          "name": "AI network electronics",
+          "revenue_usd_bn": 24.27076923076923,
+          "operating_margin": 0.6
+        },
+        {
+          "name": "NonAIsemiconductor",
+          "revenue_usd_bn": 21,
+          "operating_margin": 0.42
+        },
+        {
+          "name": "InfrastructureSoftware",
+          "revenue_usd_bn": 48,
+          "operating_margin": 0.8
+        }
+      ],
+      "ai_combined_capture": 0.08923076923076922,
+      "asic_share_of_ai_own_assumption": 0.75,
+      "sbc_separate_deduction_usd_bn": 13,
+      "acquired_amortization_separate_deduction_usd_bn": 4.4848333333333334,
+      "normal_net_interest_usd_bn": -2.5,
+      "tax_rate": 0.18,
+      "diluted_ordinary_shares_bn": 5.1,
+      "expense_basis": "margins before SBC/acquired amortization; per-company disclosed segment basis, not GAAP all-in margin",
+      "other_normal_operating_cost_usd_bn": 0,
+      "normal_other_nonoperating_usd_bn": 0,
+      "noncontrolling_interest_usd_bn": 0,
+      "calculated": {
+        "revenue_usd_bn": 166.0830769230769,
+        "operating_profit_usd_bn": 87.98501282051282,
+        "operating_margin": 0.5297650696901768,
+        "normal_pretax_income_usd_bn": 85.48501282051282,
+        "normal_parent_net_income_usd_bn": 70.09771051282051,
+        "eps_usd_per_us_traded_unit": 13.744649120160886,
+        "current_price_over_future_eps": 23.918398871149346
+      },
+      "explanation": "Only AVGO effective vendor-pool capture held at own2026calibration8.9%; future costs/tax/shares unchanged."
+    },
+    "TSMC": {
+      "year": 2029,
+      "case": "base_macro_frozen_2026_capture_or_content_sensitivity",
+      "status": "own independent scenario",
+      "macro_ai_spend_usd_bn": 1700,
+      "eligible_pool_fraction": 0.64,
+      "eligible_pool_usd_bn": 1088.0,
+      "upstream_foundry_packaging_content_fraction": 0.085,
+      "TSMC_upstream_effective_capture": 0.9,
+      "upstream_AI_revenue_before_supply_ceiling_usd_bn": 83.232,
+      "total_revenue_before_supply_ceiling_usd_bn": 238.232,
+      "own_supply_ceiling_usd_bn": 325,
+      "supply_scale_factor": 1,
+      "segments": [
+        {
+          "name": "AI-associated upstream manufacturing/packaging",
+          "revenue_usd_bn": 83.232,
+          "operating_margin": 0.55
+        },
+        {
+          "name": "Other business excluding that upstream allocation",
+          "revenue_usd_bn": 155,
+          "operating_margin": 0.55
+        }
+      ],
+      "sbc_separate_deduction_usd_bn": 0,
+      "acquired_amortization_separate_deduction_usd_bn": 0,
+      "normal_net_interest_usd_bn": 4,
+      "tax_rate": 0.18,
+      "noncontrolling_interest_usd_bn": 0.2,
+      "diluted_ordinary_shares_bn": 26.0,
+      "expense_basis": "both segments use blended GAAP-like margin inclusive of SBC and all amortization; zero separate deductions do not mean zero expense",
+      "other_normal_operating_cost_usd_bn": 0,
+      "normal_other_nonoperating_usd_bn": 0,
+      "calculated": {
+        "revenue_usd_bn": 238.232,
+        "operating_profit_usd_bn": 131.0276,
+        "operating_margin": 0.55,
+        "normal_pretax_income_usd_bn": 135.0276,
+        "normal_parent_net_income_usd_bn": 110.52263200000002,
+        "eps_usd_per_us_traded_unit": 21.25435230769231,
+        "current_price_over_future_eps": 19.412964430850682,
+        "revenue_twd_bn": 7725.3876295248,
+        "operating_profit_twd_bn": 4248.96319623864,
+        "normal_parent_net_income_twd_bn": 3584.028065227685,
+        "eps_twd_per_ordinary": 137.8472332779879
+      },
+      "explanation": "Only upstream foundry/packaging cost content held at own2026calibration8.5%, versus14%mainbase; capture90%unchanged. Future costs/tax/shares unchanged."
+    }
+  },
+  "valuation_sensitivity_notes": [
+    "Forward price/EPS is not a target price or expected return. It divides16Oct2026 close by own CY2028/29 EPS, with no discounting or interim dividends.",
+    "2029 base standalone normalized EPS comparisons require large vendor-capture assumptions. Calibration is not comparable actual full-year market share. Revenue share includes embedded component price inflation and system scope, not unit GPU/ASIC share.",
+    "An additional10bn pretax credit/inventory/guarantee charge, at18%tax, reduces NVDA baseEPS by~0.34 and AVGO by~1.61; do not describe commitments/maxbackstop as current realized loss.",
+    "TSMC USD model NI / (ordinary shares/5) gives ADR EPS; multiplying by spot to show TWD then dividing by same spot once returns identical result. Do not apply FX twice."
+  ]
+}

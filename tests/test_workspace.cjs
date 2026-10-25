@@ -58,6 +58,27 @@ test('AI comparison routes use the newest saved HTML and its named source views'
   for (const section of AI_SECTIONS.filter(item => item.view)) assert.equal(aiDocument(fixture, section.id).entry.id, future.id);
 });
 
+test('EPS trend is a direct comparison tab alongside PER and preserves the earnings route', async () => {
+  const {AI_SECTIONS, aiDocument, renderAiHub} = await helpers();
+  const {parseRoute, itemUrl} = await routing();
+  const eps = AI_SECTIONS.find(section => section.id === 'eps');
+  const per = AI_SECTIONS.find(section => section.id === 'multiples');
+  const earnings = AI_SECTIONS.find(section => section.id === 'earnings');
+  assert.equal(eps.label, 'EPSの推移');
+  assert.equal(eps.group, per.group);
+  assert.equal(earnings.label, 'EPS予想・決算');
+  assert.deepEqual(parseRoute('#ai/eps'), {view: 'ai', section: 'eps'});
+  assert.deepEqual(parseRoute('#ai/eps/'), {view: 'ai', section: 'eps'});
+  const epsDocument = aiDocument(catalog, 'eps');
+  for (const section of ['multiples', 'earnings']) {
+    const document = aiDocument(catalog, section);
+    assert.equal(document.entry.id, epsDocument.entry.id);
+    assert.equal(itemUrl(document.item), itemUrl(epsDocument.item), 'each route reuses the immutable fundamental data');
+  }
+  const links = hrefs(renderAiHub(catalog));
+  for (const section of ['eps', 'multiples', 'earnings']) assert.ok(links.has(`#ai/${section}`));
+});
+
 test('old snapshots retain their own research identity and current AI documents map to their workflow', async () => {
   const {aiSectionForResearch, aiEntry} = await helpers();
   const {versionsOf} = await routing();

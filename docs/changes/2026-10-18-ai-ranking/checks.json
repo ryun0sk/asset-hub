@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-18 JST",
+  "status": "production_verified",
+  "url": "https://asset-hub-pvgbytjsqa-an.a.run.app/#ai/forward",
+  "revision": "asset-hub-00042-kb2",
+  "traffic_percent": 100,
+  "image": "asia-northeast1-docker.pkg.dev/ryun0sk-asset-hub/asset-hub/app@sha256:d19f60f2675b1a131e943093daa0bff2f91f376fe979ad1849c0d9fcff5a6943",
+  "company_count": 46,
+  "rank_eligible_count": 45,
+  "scenario_count": 276,
+  "price_date": "2026-10-16",
+  "builds": [
+    {
+      "id": "0b4d4c3e-9df5-425b-abb1-e47de95509c3",
+      "result": "SUCCESS",
+      "overlay_files_verified": 40,
+      "unrelated_files_preserved": 332,
+      "catalog_entries_merged": 4
+    },
+    {
+      "id": "62bfcad8-e02d-4c19-aa21-a93a8dd87b60",
+      "result": "SUCCESS",
+      "overlay_files_verified": 1,
+      "unrelated_files_preserved": 372
+    }
+  ],
+  "checks": {
+    "javascript_tests": {
+      "passed": 133,
+      "failed": 0
+    },
+    "independent_financial_reviews": "passed with disclosed assumption limitations",
+    "independent_ui_review": "no release-blocking issues",
+    "design_tokens": "passed",
+    "diff_check": "passed",
+    "catalog": "current; generated 118 local documents including unrelated work, only four related entries deployed",
+    "archives": "8 match; no new archives",
+    "desktop_width": 1440,
+    "mobile_width": 375,
+    "browser_console_errors": 0,
+    "production_rows": 46,
+    "production_top5": [
+      "6669.TW",
+      "000660.KS",
+      "2382.TW",
+      "AVGO",
+      "SMCI"
+    ],
+    "negative_eps": "unavailable, not zero",
+    "company_stage_labels": "wrapped within cells"
+  },
+  "security": {
+    "iap_enabled": true,
+    "viewer_count": 2,
+    "viewer_policy_unchanged": true,
+    "invoker_policy_unchanged": true,
+    "public_invoker": false,
+    "other_services_changed": false,
+    "cost_job_changed": false
+  },
+  "screenshot": {
+    "path": "production-ranking.png",
+    "sha256": "2cf518c757659eeea57fe0745c1e529a1dff0cf3fdcdc1dac688c51e5dc2fedd"
+  }
+}

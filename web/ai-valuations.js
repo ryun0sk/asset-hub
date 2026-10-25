@@ -40,7 +40,7 @@ function forecastCell(forecast, currency, originalCurrency, originalEps) {
   if (!forecast || !finite(forecast.eps)) return missing('取得なし');
   const converted = originalCurrency && originalCurrency !== currency
     ? `<small>報告 ${number(originalEps)} ${esc(originalCurrency)}／株・為替換算</small>` : '';
-  return `<strong>${number(forecast.eps)} <small class="ai-val-unit">${esc(currency)}／株</small></strong><small>${period(forecast.periodEnd)}</small><span class="ai-val-per">→ ${multiple(forecast.pe)}</span>${converted}${forecast.announced ? `<small>公表 ${esc(forecast.announced)}</small>` : ''}`;
+  return `<strong>${number(forecast.eps)} <small class="ai-val-unit">${esc(currency)}／株</small></strong><small>${period(forecast.periodEnd)}</small><span class="ai-val-per">→ ${multiple(forecast.pe)}</span>${converted}${forecast.label ? `<small>${esc(forecast.label)}</small>` : ''}${forecast.announced ? `<small>公表 ${esc(forecast.announced)}</small>` : ''}`;
 }
 
 function analystCell(company, key) {
@@ -60,7 +60,7 @@ function companyRow(company, groups) {
   return `<tr data-symbol="${esc(company.symbol)}">
     <th scope="row"><strong>${esc(company.name)}</strong><small>${esc(company.symbol)}</small><small>${esc(stages.join(' / '))}</small></th>
     <td class="ai-val-num"><strong>${number(snapshot.close)} <small class="ai-val-unit">${esc(currency)}</small></strong><small>${esc(snapshot.date)}</small></td>
-    <td class="ai-val-num"><strong>${number(snapshot.ttmEpsPriceCurrency)} <small class="ai-val-unit">${esc(currency)}／株</small></strong><small>${period(snapshot.ttmPeriodEnd)}</small>${fx}</td>
+    <td class="ai-val-num"><strong>${number(snapshot.ttmEpsPriceCurrency)} <small class="ai-val-unit">${esc(currency)}／株</small></strong><small>${period(snapshot.ttmPeriodEnd)}</small>${fx}${snapshot.warning ? `<small>${missing(snapshot.warning)}</small>` : ''}</td>
     <td class="ai-val-num ai-val-per">${snapshot.status === 'loss' ? missing('赤字・算出不能') : multiple(snapshot.pe)}</td>
     <td class="ai-val-num">${companyForecast}</td>
     <td class="ai-val-num">${analystCell(company, '0y')}</td>
@@ -78,8 +78,8 @@ export function renderAiValuations(valuation, chainCatalog, sourceUrl = '') {
   const total = companies.length;
   return `<section class="ai-valuations" aria-labelledby="ai-val-title">
     <div class="ai-val-heading"><div><h2 id="ai-val-title">AI銘柄のEPS・PER一覧 <span class="ai-val-count" data-ai-count aria-live="polite">${total} / ${total}社</span></h2>
-      <p>株価は${esc(valuation.asOf)}までの終値 · アナリスト予想は${esc(valuation.analystRetrieved?.from?.slice(0, 10) || '取得日未確認')}取得 · 保存時点の比較表</p>
-      <p><a href="#ai/multiples">キオクシア・アドバンテスト・イビデン・ディスコの実績月次表 →</a><small> 2026-10-15終値まで／TTM・半年年換算</small></p></div></div>
+      <p>${valuation.snapshotNote ? esc(valuation.snapshotNote) : `株価は${esc(valuation.asOf)}までの終値`} · アナリスト予想は${esc(valuation.analystRetrieved?.from?.slice(0, 10) || '取得日未確認')}取得 · 保存時点の比較表</p>
+      <p><a href="#ai/multiples">発電3社を含む7銘柄の実績EPS・PER月次表 →</a><small> 各社の基準日・現地通貨／TTM・半年年換算</small></p></div></div>
     <div class="ai-val-controls">
       <label>銘柄を検索<input type="search" data-ai-query placeholder="銘柄名・コード" autocomplete="off"></label>
       <label>工程<select data-ai-group><option value="">全工程（${total}社）</option>${groups.map(group => `<option value="${esc(group.id)}">${esc(group.name)}</option>`).join('')}</select></label>
@@ -94,7 +94,7 @@ export function renderAiValuations(valuation, chainCatalog, sourceUrl = '') {
     <div class="ai-val-footer"><span>株価・EPSの通貨は各セルに表示。予想の会計期末は会社ごとに異なります。</span>${sourceUrl ? `<a href="${esc(sourceUrl)}" target="_blank" rel="noopener noreferrer">保存データ・出所を開く ↗</a>` : ''}</div>
     <details class="ai-val-method"><summary>計算基準と注意点</summary><ul>
       <li>株価・実績EPSは既存の調査資料を使用。休場の銘柄は直前の取引日を表示し、株価や予想を更新していません。赤字・EPSが0以下の場合はPERを算出せず、未取得の予想は「取得なし」と表示します。</li>
-      <li>実績EPSは希薄化後（なければ基本EPS）のTTM。原資料に公表日がない場合は期末＋${esc(valuation.method?.knownLagDays)}日から既知とする前提で、期末から${esc(valuation.method?.maxAgeDays)}日を超えるTTMは使いません。ASMLとLenovoは保存時点の為替で株価通貨に換算しています。</li>
+      <li>実績EPSは希薄化後（なければ基本EPS）のTTM。原資料に公表日がない場合は期末＋${esc(valuation.method?.knownLagDays)}日から既知とする前提で、期末から${esc(valuation.method?.maxAgeDays)}日を超えるTTMは使いません。追加した発電3社は公式決算の公表時刻を確認した既知日と、四半期EPSの合算によるTTM概算を使います。ASMLとLenovoは保存時点の為替で株価通貨に換算しています。</li>
       <li>会社予想は会社開示、外部予想はYahoo Financeのアナリスト平均。海外の外部予想は調整後（Non-GAAP）EPSの場合があり、実績EPSと会計基準が異なることがあります。両者のPERの差を利益成長だけで解釈しないでください。</li>
       <li>MicronのTTMは1四半期遅れ。外部予想の会計年度の補正を含む個別の前提は、該当銘柄の「注記」で確認できます。</li>
     </ul></details>

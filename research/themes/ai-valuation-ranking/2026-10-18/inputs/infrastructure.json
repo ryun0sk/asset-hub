@@ -1,0 +1,5095 @@
+{
+  "as_of": "2026-10-18",
+  "amount_unit": "billion of financial_currency",
+  "share_unit": "billion ordinary diluted shares",
+  "macro_ai_capex_usd_bn": {
+    "2028": [
+      1000,
+      1400,
+      1900
+    ],
+    "2029": [
+      950,
+      1700,
+      2500
+    ]
+  },
+  "year_convention": "2028/2029は暦年に近い年間ランレートの独自モデル。各社の厳密な決算期EPS予測ではない。FY差は残り、同一日に実現する利益ではない。",
+  "common_limitations": [
+    "全将来入力は独自シナリオ。会社予想/コンセンサスではない。",
+    "share_factor=1は実測市場シェアではなく事業売上を起点とする追加シェア変化なし。事業売上は工程間で重複し合計不可。",
+    "営業率はSBC/R&D/減価償却込み。簿価評価益/一時税便益を除く。",
+    "株数・税率・金融損益は独自仮定。株数減少は買戻し資金を別途配当加算しない前提。",
+    "配当・途中蓄積現金・分離会社価値を独立評価しない利益法。単一精密順位に適さない。",
+    "広義AI投資は全社売上ではない。発電/クラウド/一般事業は納入・利用率・既存需要のシナリオを介し、機械的な全社倍率にしない。"
+  ],
+  "companies": [
+    {
+      "symbol": "5803.T",
+      "name": "フジクラ",
+      "financial_currency": "JPY",
+      "quote_currency": "JPY",
+      "model_quality": "中低",
+      "anchor_facts": [
+        {
+          "date": "2026-08-07",
+          "scope": "実績・会社計画。将来モデルとは区別",
+          "facts": "Q1売上402/OP104.8、ICT売上264.4/OP98（JPY bn）。FY27/3会社売上1755/OP432/親会社NI326/EPS196.88。2026-04-01に1:6分割。",
+          "sourceURLs": [
+            "https://ssl4.eir-parts.net/doc/5803/tdnet/2866589/00.pdf",
+            "https://ssl4.eir-parts.net/doc/5803/tdnet/2866585/00.pdf",
+            "https://www.fujikura.co.jp/en/ir/basic-information/"
+          ]
+        }
+      ],
+      "method": "2026のICT/その他配分はQ1と会社通期売上を整合させた独自推定。分割後株数でEPS算出。",
+      "risks": "不足利幅の正常化、増産減価償却、円高。2030米国大型増産を29年売上に全額算入しない。",
+      "terminal_pe": {
+        "weak": 18,
+        "base": 24,
+        "strong": 30
+      },
+      "terminal_pe_basis": "独自仮定。弱気は競争・景気循環で倍率縮小、標準は継続利益の成長と資本負担、強気は持続成長を反映。株価から逆算していない。",
+      "assumptions": {
+        "segments": [
+          {
+            "name": "ICT・光配線",
+            "anchor": 1200,
+            "growth": {
+              "2028": [
+                0.95,
+                1.05,
+                1.15
+              ],
+              "2029": [
+                0.9,
+                1.1,
+                1.2
+              ]
+            },
+            "margin": {
+              "2028": [
+                0.24,
+                0.32,
+                0.36
+              ],
+              "2029": [
+                0.22,
+                0.31,
+                0.35
+              ]
+            },
+            "bridge": "独自2026配分1200。AI投資倍率×密度/価格/競争係数。ICT全額がAIではなく倍率感応度を0.8乗に減衰。",
+            "mode": "ai08"
+          },
+          {
+            "name": "その他",
+            "anchor": 555,
+            "growth": {
+              "2028": [
+                0.98,
+                1.08,
+                1.15
+              ],
+              "2029": [
+                0.97,
+                1.12,
+                1.22
+              ]
+            },
+            "margin": {
+              "2028": [
+                0.035,
+                0.05,
+                0.065
+              ],
+              "2029": [
+                0.03,
+                0.055,
+                0.07
+              ]
+            },
+            "bridge": "非AIの需要・価格、連結消去込",
+            "mode": "delivery"
+          }
+        ],
+        "shares": {
+          "2028": [
+            1.68,
+            1.66,
+            1.65
+          ],
+          "2029": [
+            1.7,
+            1.66,
+            1.64
+          ]
+        },
+        "finance": [
+          5,
+          10,
+          15
+        ],
+        "tax": 0.29,
+        "cost": [
+          0,
+          0,
+          0
+        ],
+        "minor": [
+          6,
+          8,
+          10
+        ]
+      },
+      "rows": [
+        {
+          "year": 2028,
+          "case": "weak",
+          "segments": [
+            {
+              "name": "ICT・光配線",
+              "market_or_revenue_anchor_bn": 1200,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 0.95,
+              "share_factor": 1.0,
+              "revenue_bn": 1140.0,
+              "operating_margin": 0.24,
+              "growth_bridge": "独自2026配分1200。AI投資倍率×密度/価格/競争係数。ICT全額がAIではなく倍率感応度を0.8乗に減衰。",
+              "macro_ai_capex_bn": 1000,
+              "independent_factor": 0.95
+            },
+            {
+              "name": "その他",
+              "market_or_revenue_anchor_bn": 555,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 0.98,
+              "share_factor": 1.0,
+              "revenue_bn": 543.9,
+              "operating_margin": 0.035,
+              "growth_bridge": "非AIの需要・価格、連結消去込",
+              "macro_ai_capex_bn": 1000,
+              "independent_factor": 0.98
+            }
+          ],
+          "revenue_bn": 1683.9,
+          "operating_income_bn": 292.63649999999996,
+          "unallocated_cost_bn": 0,
+          "net_finance_bn": 5,
+          "tax_rate": 0.29,
+          "minority_bn": 6,
+          "normal_net_income_bn": 205.32191499999996,
+          "diluted_shares_bn": 1.68,
+          "eps_quote_currency": 122.21542559523807
+        },
+        {
+          "year": 2028,
+          "case": "base",
+          "segments": [
+            {
+              "name": "ICT・光配線",
+              "market_or_revenue_anchor_bn": 1200,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.374332217938251,
+              "share_factor": 1.0,
+              "revenue_bn": 1649.1986615259013,
+              "operating_margin": 0.32,
+              "growth_bridge": "独自2026配分1200。AI投資倍率×密度/価格/競争係数。ICT全額がAIではなく倍率感応度を0.8乗に減衰。",
+              "macro_ai_capex_bn": 1400,
+              "independent_factor": 1.05
+            },
+            {
+              "name": "その他",
+              "market_or_revenue_anchor_bn": 555,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.08,
+              "share_factor": 1.0,
+              "revenue_bn": 599.4000000000001,
+              "operating_margin": 0.05,
+              "growth_bridge": "非AIの需要・価格、連結消去込",
+              "macro_ai_capex_bn": 1400,
+              "independent_factor": 1.08
+            }
+          ],
+          "revenue_bn": 2248.5986615259017,
+          "operating_income_bn": 557.7135716882884,
+          "unallocated_cost_bn": 0,
+          "net_finance_bn": 10,
+          "tax_rate": 0.29,
+          "minority_bn": 8,
+          "normal_net_income_bn": 395.07663589868474,
+          "diluted_shares_bn": 1.66,
+          "eps_quote_currency": 237.99797343294262
+        },
+        {
+          "year": 2028,
+          "case": "strong",
+          "segments": [
+            {
+              "name": "ICT・光配線",
+              "market_or_revenue_anchor_bn": 1200,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.9217669538800621,
+              "share_factor": 1.0,
+              "revenue_bn": 2306.1203446560744,
+              "operating_margin": 0.36,
+              "growth_bridge": "独自2026配分1200。AI投資倍率×密度/価格/競争係数。ICT全額がAIではなく倍率感応度を0.8乗に減衰。",
+              "macro_ai_capex_bn": 1900,
+              "independent_factor": 1.15
+            },
+            {
+              "name": "その他",
+              "market_or_revenue_anchor_bn": 555,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.15,
+              "share_factor": 1.0,
+              "revenue_bn": 638.25,
+              "operating_margin": 0.065,
+              "growth_bridge": "非AIの需要・価格、連結消去込",
+              "macro_ai_capex_bn": 1900,
+              "independent_factor": 1.15
+            }
+          ],
+          "revenue_bn": 2944.3703446560744,
+          "operating_income_bn": 871.6895740761868,
+          "unallocated_cost_bn": 0,
+          "net_finance_bn": 15,
+          "tax_rate": 0.29,
+          "minority_bn": 10,
+          "normal_net_income_bn": 619.5495975940926,
+          "diluted_shares_bn": 1.65,
+          "eps_quote_currency": 375.4846046024804
+        },
+        {
+          "year": 2029,
+          "case": "weak",
+          "segments": [
+            {
+              "name": "ICT・光配線",
+              "market_or_revenue_anchor_bn": 1200,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 0.8638162977168353,
+              "share_factor": 1.0,
+              "revenue_bn": 1036.5795572602024,
+              "operating_margin": 0.22,
+              "growth_bridge": "独自2026配分1200。AI投資倍率×密度/価格/競争係数。ICT全額がAIではなく倍率感応度を0.8乗に減衰。",
+              "macro_ai_capex_bn": 950,
+              "independent_factor": 0.9
+            },
+            {
+              "name": "その他",
+              "market_or_revenue_anchor_bn": 555,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 0.97,
+              "share_factor": 1.0,
+              "revenue_bn": 538.35,
+              "operating_margin": 0.03,
+              "growth_bridge": "非AIの需要・価格、連結消去込",
+              "macro_ai_capex_bn": 950,
+              "independent_factor": 0.97
+            }
+          ],
+          "revenue_bn": 1574.9295572602023,
+          "operating_income_bn": 244.1980025972445,
+          "unallocated_cost_bn": 0,
+          "net_finance_bn": 5,
+          "tax_rate": 0.29,
+          "minority_bn": 6,
+          "normal_net_income_bn": 170.9305818440436,
+          "diluted_shares_bn": 1.7,
+          "eps_quote_currency": 100.54740108473152
+        },
+        {
+          "year": 2029,
+          "case": "base",
+          "segments": [
+            {
+              "name": "ICT・光配線",
+              "market_or_revenue_anchor_bn": 1200,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.6817127710590651,
+              "share_factor": 1.0,
+              "revenue_bn": 2018.0553252708783,
+              "operating_margin": 0.31,
+              "growth_bridge": "独自2026配分1200。AI投資倍率×密度/価格/競争係数。ICT全額がAIではなく倍率感応度を0.8乗に減衰。",
+              "macro_ai_capex_bn": 1700,
+              "independent_factor": 1.1
+            },
+            {
+              "name": "その他",
+              "market_or_revenue_anchor_bn": 555,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.12,
+              "share_factor": 1.0,
+              "revenue_bn": 621.6,
+              "operating_margin": 0.055,
+              "growth_bridge": "非AIの需要・価格、連結消去込",
+              "macro_ai_capex_bn": 1700,
+              "independent_factor": 1.12
+            }
+          ],
+          "revenue_bn": 2639.655325270878,
+          "operating_income_bn": 659.7851508339722,
+          "unallocated_cost_bn": 0,
+          "net_finance_bn": 10,
+          "tax_rate": 0.29,
+          "minority_bn": 8,
+          "normal_net_income_bn": 467.5474570921203,
+          "diluted_shares_bn": 1.66,
+          "eps_quote_currency": 281.65509463380744
+        },
+        {
+          "year": 2029,
+          "case": "strong",
+          "segments": [
+            {
+              "name": "ICT・光配線",
+              "market_or_revenue_anchor_bn": 1200,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 2.4976596222056195,
+              "share_factor": 1.0,
+              "revenue_bn": 2997.1915466467435,
+              "operating_margin": 0.35,
+              "growth_bridge": "独自2026配分1200。AI投資倍率×密度/価格/競争係数。ICT全額がAIではなく倍率感応度を0.8乗に減衰。",
+              "macro_ai_capex_bn": 2500,
+              "independent_factor": 1.2
+            },
+            {
+              "name": "その他",
+              "market_or_revenue_anchor_bn": 555,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.22,
+              "share_factor": 1.0,
+              "revenue_bn": 677.1,
+              "operating_margin": 0.07,
+              "growth_bridge": "非AIの需要・価格、連結消去込",
+              "macro_ai_capex_bn": 2500,
+              "independent_factor": 1.22
+            }
+          ],
+          "revenue_bn": 3674.2915466467434,
+          "operating_income_bn": 1096.4140413263601,
+          "unallocated_cost_bn": 0,
+          "net_finance_bn": 15,
+          "tax_rate": 0.29,
+          "minority_bn": 10,
+          "normal_net_income_bn": 779.1039693417157,
+          "diluted_shares_bn": 1.64,
+          "eps_quote_currency": 475.06339594007056
+        }
+      ]
+    },
+    {
+      "symbol": "COHR",
+      "name": "Coherent",
+      "financial_currency": "USD",
+      "quote_currency": "USD",
+      "model_quality": "中低",
+      "anchor_facts": [
+        {
+          "date": "2026-08-12",
+          "scope": "実績・会社計画。将来モデルとは区別",
+          "facts": "FY26売上7.118/GAAP OP.898。Q4売上2.046、DC通信1.615/産業.4305、GAAP OP率12.4%、希薄化株数.2022bn。Q1FY27売上会社予想2.2–2.4。",
+          "sourceURLs": [
+            "https://www.sec.gov/Archives/edgar/data/820318/000119312526346860/d128030dex991.htm"
+          ]
+        }
+      ],
+      "method": "2026Q4年換算売上8.182を独自校正。非GAAP利益を使用せず、GAAP OPから改善を仮定。",
+      "risks": "増産資金・運転資本、顧客集中、光技術交代。営業率はSBC/償却を含む。",
+      "terminal_pe": {
+        "weak": 18,
+        "base": 24,
+        "strong": 30
+      },
+      "terminal_pe_basis": "独自仮定。弱気は競争・景気循環で倍率縮小、標準は継続利益の成長と資本負担、強気は持続成長を反映。株価から逆算していない。",
+      "assumptions": {
+        "segments": [
+          {
+            "name": "DC・通信光学",
+            "anchor": 6.46,
+            "growth": {
+              "2028": [
+                0.95,
+                1.1,
+                1.2
+              ],
+              "2029": [
+                0.9,
+                1.15,
+                1.25
+              ]
+            },
+            "margin": {
+              "2028": [
+                0.11,
+                0.2,
+                0.26
+              ],
+              "2029": [
+                0.1,
+                0.22,
+                0.28
+              ]
+            },
+            "bridge": "Q4年換算。通信も含むためAI倍率0.8乗、追加係数は高速化/競争。",
+            "mode": "ai08"
+          },
+          {
+            "name": "産業",
+            "anchor": 1.722,
+            "growth": {
+              "2028": [
+                0.96,
+                1.08,
+                1.16
+              ],
+              "2029": [
+                0.95,
+                1.12,
+                1.24
+              ]
+            },
+            "margin": {
+              "2028": [
+                0.08,
+                0.12,
+                0.15
+              ],
+              "2029": [
+                0.08,
+                0.13,
+                0.16
+              ]
+            },
+            "bridge": "産業回復",
+            "mode": "delivery"
+          }
+        ],
+        "shares": {
+          "2028": [
+            0.216,
+            0.212,
+            0.208
+          ],
+          "2029": [
+            0.225,
+            0.217,
+            0.211
+          ]
+        },
+        "finance": [
+          -0.24,
+          -0.2,
+          -0.16
+        ],
+        "tax": 0.24,
+        "cost": [
+          0,
+          0,
+          0
+        ],
+        "minor": [
+          0,
+          0,
+          0
+        ]
+      },
+      "rows": [
+        {
+          "year": 2028,
+          "case": "weak",
+          "segments": [
+            {
+              "name": "DC・通信光学",
+              "market_or_revenue_anchor_bn": 6.46,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 0.95,
+              "share_factor": 1.0,
+              "revenue_bn": 6.137,
+              "operating_margin": 0.11,
+              "growth_bridge": "Q4年換算。通信も含むためAI倍率0.8乗、追加係数は高速化/競争。",
+              "macro_ai_capex_bn": 1000,
+              "independent_factor": 0.95
+            },
+            {
+              "name": "産業",
+              "market_or_revenue_anchor_bn": 1.722,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 0.96,
+              "share_factor": 1.0,
+              "revenue_bn": 1.65312,
+              "operating_margin": 0.08,
+              "growth_bridge": "産業回復",
+              "macro_ai_capex_bn": 1000,
+              "independent_factor": 0.96
+            }
+          ],
+          "revenue_bn": 7.79012,
+          "operating_income_bn": 0.8073195999999999,
+          "unallocated_cost_bn": 0,
+          "net_finance_bn": -0.24,
+          "tax_rate": 0.24,
+          "minority_bn": 0,
+          "normal_net_income_bn": 0.43116289599999996,
+          "diluted_shares_bn": 0.216,
+          "eps_quote_currency": 1.9961245185185184
+        },
+        {
+          "year": 2028,
+          "case": "base",
+          "segments": [
+            {
+              "name": "DC・通信光学",
+              "market_or_revenue_anchor_bn": 6.46,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.439776609268644,
+              "share_factor": 1.0,
+              "revenue_bn": 9.300956895875439,
+              "operating_margin": 0.2,
+              "growth_bridge": "Q4年換算。通信も含むためAI倍率0.8乗、追加係数は高速化/競争。",
+              "macro_ai_capex_bn": 1400,
+              "independent_factor": 1.1
+            },
+            {
+              "name": "産業",
+              "market_or_revenue_anchor_bn": 1.722,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.08,
+              "share_factor": 1.0,
+              "revenue_bn": 1.85976,
+              "operating_margin": 0.12,
+              "growth_bridge": "産業回復",
+              "macro_ai_capex_bn": 1400,
+              "independent_factor": 1.08
+            }
+          ],
+          "revenue_bn": 11.160716895875439,
+          "operating_income_bn": 2.083362579175088,
+          "unallocated_cost_bn": 0,
+          "net_finance_bn": -0.2,
+          "tax_rate": 0.24,
+          "minority_bn": 0,
+          "normal_net_income_bn": 1.431355560173067,
+          "diluted_shares_bn": 0.212,
+          "eps_quote_currency": 6.751677170627675
+        },
+        {
+          "year": 2028,
+          "case": "strong",
+          "segments": [
+            {
+              "name": "DC・通信光学",
+              "market_or_revenue_anchor_bn": 6.46,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 2.0053220388313693,
+              "share_factor": 1.0,
+              "revenue_bn": 12.954380370850645,
+              "operating_margin": 0.26,
+              "growth_bridge": "Q4年換算。通信も含むためAI倍率0.8乗、追加係数は高速化/競争。",
+              "macro_ai_capex_bn": 1900,
+              "independent_factor": 1.2
+            },
+            {
+              "name": "産業",
+              "market_or_revenue_anchor_bn": 1.722,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.16,
+              "share_factor": 1.0,
+              "revenue_bn": 1.9975199999999997,
+              "operating_margin": 0.15,
+              "growth_bridge": "産業回復",
+              "macro_ai_capex_bn": 1900,
+              "independent_factor": 1.16
+            }
+          ],
+          "revenue_bn": 14.951900370850645,
+          "operating_income_bn": 3.6677668964211674,
+          "unallocated_cost_bn": 0,
+          "net_finance_bn": -0.16,
+          "tax_rate": 0.24,
+          "minority_bn": 0,
+          "normal_net_income_bn": 2.665902841280087,
+          "diluted_shares_bn": 0.208,
+          "eps_quote_currency": 12.816840583077342
+        },
+        {
+          "year": 2029,
+          "case": "weak",
+          "segments": [
+            {
+              "name": "DC・通信光学",
+              "market_or_revenue_anchor_bn": 6.46,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 0.8638162977168353,
+              "share_factor": 1.0,
+              "revenue_bn": 5.580253283250756,
+              "operating_margin": 0.1,
+              "growth_bridge": "Q4年換算。通信も含むためAI倍率0.8乗、追加係数は高速化/競争。",
+              "macro_ai_capex_bn": 950,
+              "independent_factor": 0.9
+            },
+            {
+              "name": "産業",
+              "market_or_revenue_anchor_bn": 1.722,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 0.95,
+              "share_factor": 1.0,
+              "revenue_bn": 1.6359,
+              "operating_margin": 0.08,
+              "growth_bridge": "産業回復",
+              "macro_ai_capex_bn": 950,
+              "independent_factor": 0.95
+            }
+          ],
+          "revenue_bn": 7.2161532832507564,
+          "operating_income_bn": 0.6888973283250757,
+          "unallocated_cost_bn": 0,
+          "net_finance_bn": -0.24,
+          "tax_rate": 0.24,
+          "minority_bn": 0,
+          "normal_net_income_bn": 0.3411619695270575,
+          "diluted_shares_bn": 0.225,
+          "eps_quote_currency": 1.5162754201202555
+        },
+        {
+          "year": 2029,
+          "case": "base",
+          "segments": [
+            {
+              "name": "DC・通信光学",
+              "market_or_revenue_anchor_bn": 6.46,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.7581542606526586,
+              "share_factor": 1.0,
+              "revenue_bn": 11.357676523816174,
+              "operating_margin": 0.22,
+              "growth_bridge": "Q4年換算。通信も含むためAI倍率0.8乗、追加係数は高速化/競争。",
+              "macro_ai_capex_bn": 1700,
+              "independent_factor": 1.15
+            },
+            {
+              "name": "産業",
+              "market_or_revenue_anchor_bn": 1.722,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.12,
+              "share_factor": 1.0,
+              "revenue_bn": 1.9286400000000001,
+              "operating_margin": 0.13,
+              "growth_bridge": "産業回復",
+              "macro_ai_capex_bn": 1700,
+              "independent_factor": 1.12
+            }
+          ],
+          "revenue_bn": 13.286316523816174,
+          "operating_income_bn": 2.7494120352395583,
+          "unallocated_cost_bn": 0,
+          "net_finance_bn": -0.2,
+          "tax_rate": 0.24,
+          "minority_bn": 0,
+          "normal_net_income_bn": 1.9375531467820641,
+          "diluted_shares_bn": 0.217,
+          "eps_quote_currency": 8.928816344617807
+        },
+        {
+          "year": 2029,
+          "case": "strong",
+          "segments": [
+            {
+              "name": "DC・通信光学",
+              "market_or_revenue_anchor_bn": 6.46,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 2.6017287731308536,
+              "share_factor": 1.0,
+              "revenue_bn": 16.807167874425314,
+              "operating_margin": 0.28,
+              "growth_bridge": "Q4年換算。通信も含むためAI倍率0.8乗、追加係数は高速化/競争。",
+              "macro_ai_capex_bn": 2500,
+              "independent_factor": 1.25
+            },
+            {
+              "name": "産業",
+              "market_or_revenue_anchor_bn": 1.722,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.24,
+              "share_factor": 1.0,
+              "revenue_bn": 2.13528,
+              "operating_margin": 0.16,
+              "growth_bridge": "産業回復",
+              "macro_ai_capex_bn": 2500,
+              "independent_factor": 1.24
+            }
+          ],
+          "revenue_bn": 18.942447874425312,
+          "operating_income_bn": 5.047651804839089,
+          "unallocated_cost_bn": 0,
+          "net_finance_bn": -0.16,
+          "tax_rate": 0.24,
+          "minority_bn": 0,
+          "normal_net_income_bn": 3.7146153716777075,
+          "diluted_shares_bn": 0.211,
+          "eps_quote_currency": 17.604812188046008
+        }
+      ]
+    },
+    {
+      "symbol": "LITE",
+      "name": "Lumentum",
+      "financial_currency": "USD",
+      "quote_currency": "USD",
+      "model_quality": "中低",
+      "anchor_facts": [
+        {
+          "date": "2026-08-11",
+          "scope": "実績・会社計画。将来モデルとは区別",
+          "facts": "FY26Q4売上1.0063/GAAP OP.2793。債務消滅損失7.7566除外。Q1FY27売上予想1.225–1.275、調整OP率約40%。会社non-GAAP希薄化株数.1011bnを利益時の分母校正に利用。GAAP実績EPSではなく、損失時GAAP株数.0846bnは将来分母へ使用しない。",
+          "sourceURLs": [
+            "https://investor.lumentum.com/financial-news-releases/news-details/2026/Lumentum-Announces-Fourth-Quarter-and-Full-Fiscal-Year-2026-Results/default.aspx"
+          ]
+        }
+      ],
+      "method": "調整営業率40%をGAAPとしない。SBC・無形償却を残すため将来標準32–33%。債務損失と関連税効果は除く。",
+      "risks": "CPO/EML競争、利益率正常化、転換株希薄化、設備資金。",
+      "terminal_pe": {
+        "weak": 18,
+        "base": 25,
+        "strong": 32
+      },
+      "terminal_pe_basis": "独自仮定。弱気は競争・景気循環で倍率縮小、標準は継続利益の成長と資本負担、強気は持続成長を反映。株価から逆算していない。",
+      "assumptions": {
+        "segments": [
+          {
+            "name": "AI光学感応部分（仮定）",
+            "anchor": 4,
+            "growth": {
+              "2028": [
+                0.95,
+                1.1,
+                1.2
+              ],
+              "2029": [
+                0.9,
+                1.15,
+                1.25
+              ]
+            },
+            "margin": {
+              "2028": [
+                0.22,
+                0.32,
+                0.38
+              ],
+              "2029": [
+                0.2,
+                0.33,
+                0.39
+              ]
+            },
+            "bridge": "Q1guide年換算5の80%を独自感応配分。AI投資倍率×単価/製品構成。",
+            "mode": "ai"
+          },
+          {
+            "name": "通信・産業等残余（仮定）",
+            "anchor": 1,
+            "growth": {
+              "2028": [
+                0.95,
+                1.06,
+                1.14
+              ],
+              "2029": [
+                0.93,
+                1.1,
+                1.22
+              ]
+            },
+            "margin": {
+              "2028": [
+                0.08,
+                0.12,
+                0.16
+              ],
+              "2029": [
+                0.07,
+                0.13,
+                0.17
+              ]
+            },
+            "bridge": "非AI80/20区分は未開示の独自仮定",
+            "mode": "delivery"
+          }
+        ],
+        "shares": {
+          "2028": [
+            0.112,
+            0.108,
+            0.105
+          ],
+          "2029": [
+            0.119,
+            0.113,
+            0.109
+          ]
+        },
+        "finance": [
+          0,
+          0.03,
+          0.05
+        ],
+        "tax": 0.24,
+        "cost": [
+          0,
+          0,
+          0
+        ],
+        "minor": [
+          0,
+          0,
+          0
+        ]
+      },
+      "rows": [
+        {
+          "year": 2028,
+          "case": "weak",
+          "segments": [
+            {
+              "name": "AI光学感応部分（仮定）",
+              "market_or_revenue_anchor_bn": 4,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 0.95,
+              "share_factor": 1.0,
+              "revenue_bn": 3.8,
+              "operating_margin": 0.22,
+              "growth_bridge": "Q1guide年換算5の80%を独自感応配分。AI投資倍率×単価/製品構成。",
+              "macro_ai_capex_bn": 1000,
+              "independent_factor": 0.95
+            },
+            {
+              "name": "通信・産業等残余（仮定）",
+              "market_or_revenue_anchor_bn": 1,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 0.95,
+              "share_factor": 1.0,
+              "revenue_bn": 0.95,
+              "operating_margin": 0.08,
+              "growth_bridge": "非AI80/20区分は未開示の独自仮定",
+              "macro_ai_capex_bn": 1000,
+              "independent_factor": 0.95
+            }
+          ],
+          "revenue_bn": 4.75,
+          "operating_income_bn": 0.9119999999999999,
+          "unallocated_cost_bn": 0,
+          "net_finance_bn": 0,
+          "tax_rate": 0.24,
+          "minority_bn": 0,
+          "normal_net_income_bn": 0.69312,
+          "diluted_shares_bn": 0.112,
+          "eps_quote_currency": 6.188571428571428
+        },
+        {
+          "year": 2028,
+          "case": "base",
+          "segments": [
+            {
+              "name": "AI光学感応部分（仮定）",
+              "market_or_revenue_anchor_bn": 4,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.54,
+              "share_factor": 1.0,
+              "revenue_bn": 6.16,
+              "operating_margin": 0.32,
+              "growth_bridge": "Q1guide年換算5の80%を独自感応配分。AI投資倍率×単価/製品構成。",
+              "macro_ai_capex_bn": 1400,
+              "independent_factor": 1.1
+            },
+            {
+              "name": "通信・産業等残余（仮定）",
+              "market_or_revenue_anchor_bn": 1,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.06,
+              "share_factor": 1.0,
+              "revenue_bn": 1.06,
+              "operating_margin": 0.12,
+              "growth_bridge": "非AI80/20区分は未開示の独自仮定",
+              "macro_ai_capex_bn": 1400,
+              "independent_factor": 1.06
+            }
+          ],
+          "revenue_bn": 7.220000000000001,
+          "operating_income_bn": 2.0984000000000003,
+          "unallocated_cost_bn": 0,
+          "net_finance_bn": 0.03,
+          "tax_rate": 0.24,
+          "minority_bn": 0,
+          "normal_net_income_bn": 1.6175840000000001,
+          "diluted_shares_bn": 0.108,
+          "eps_quote_currency": 14.97762962962963
+        },
+        {
+          "year": 2028,
+          "case": "strong",
+          "segments": [
+            {
+              "name": "AI光学感応部分（仮定）",
+              "market_or_revenue_anchor_bn": 4,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 2.28,
+              "share_factor": 1.0,
+              "revenue_bn": 9.12,
+              "operating_margin": 0.38,
+              "growth_bridge": "Q1guide年換算5の80%を独自感応配分。AI投資倍率×単価/製品構成。",
+              "macro_ai_capex_bn": 1900,
+              "independent_factor": 1.2
+            },
+            {
+              "name": "通信・産業等残余（仮定）",
+              "market_or_revenue_anchor_bn": 1,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.14,
+              "share_factor": 1.0,
+              "revenue_bn": 1.14,
+              "operating_margin": 0.16,
+              "growth_bridge": "非AI80/20区分は未開示の独自仮定",
+              "macro_ai_capex_bn": 1900,
+              "independent_factor": 1.14
+            }
+          ],
+          "revenue_bn": 10.26,
+          "operating_income_bn": 3.6479999999999997,
+          "unallocated_cost_bn": 0,
+          "net_finance_bn": 0.05,
+          "tax_rate": 0.24,
+          "minority_bn": 0,
+          "normal_net_income_bn": 2.8104799999999996,
+          "diluted_shares_bn": 0.105,
+          "eps_quote_currency": 26.766476190476187
+        },
+        {
+          "year": 2029,
+          "case": "weak",
+          "segments": [
+            {
+              "name": "AI光学感応部分（仮定）",
+              "market_or_revenue_anchor_bn": 4,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 0.855,
+              "share_factor": 1.0,
+              "revenue_bn": 3.42,
+              "operating_margin": 0.2,
+              "growth_bridge": "Q1guide年換算5の80%を独自感応配分。AI投資倍率×単価/製品構成。",
+              "macro_ai_capex_bn": 950,
+              "independent_factor": 0.9
+            },
+            {
+              "name": "通信・産業等残余（仮定）",
+              "market_or_revenue_anchor_bn": 1,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 0.93,
+              "share_factor": 1.0,
+              "revenue_bn": 0.93,
+              "operating_margin": 0.07,
+              "growth_bridge": "非AI80/20区分は未開示の独自仮定",
+              "macro_ai_capex_bn": 950,
+              "independent_factor": 0.93
+            }
+          ],
+          "revenue_bn": 4.35,
+          "operating_income_bn": 0.7491000000000001,
+          "unallocated_cost_bn": 0,
+          "net_finance_bn": 0,
+          "tax_rate": 0.24,
+          "minority_bn": 0,
+          "normal_net_income_bn": 0.569316,
+          "diluted_shares_bn": 0.119,
+          "eps_quote_currency": 4.784168067226891
+        },
+        {
+          "year": 2029,
+          "case": "base",
+          "segments": [
+            {
+              "name": "AI光学感応部分（仮定）",
+              "market_or_revenue_anchor_bn": 4,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.9549999999999998,
+              "share_factor": 1.0,
+              "revenue_bn": 7.819999999999999,
+              "operating_margin": 0.33,
+              "growth_bridge": "Q1guide年換算5の80%を独自感応配分。AI投資倍率×単価/製品構成。",
+              "macro_ai_capex_bn": 1700,
+              "independent_factor": 1.15
+            },
+            {
+              "name": "通信・産業等残余（仮定）",
+              "market_or_revenue_anchor_bn": 1,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.1,
+              "share_factor": 1.0,
+              "revenue_bn": 1.1,
+              "operating_margin": 0.13,
+              "growth_bridge": "非AI80/20区分は未開示の独自仮定",
+              "macro_ai_capex_bn": 1700,
+              "independent_factor": 1.1
+            }
+          ],
+          "revenue_bn": 8.92,
+          "operating_income_bn": 2.7236000000000002,
+          "unallocated_cost_bn": 0,
+          "net_finance_bn": 0.03,
+          "tax_rate": 0.24,
+          "minority_bn": 0,
+          "normal_net_income_bn": 2.092736,
+          "diluted_shares_bn": 0.113,
+          "eps_quote_currency": 18.519787610619467
+        },
+        {
+          "year": 2029,
+          "case": "strong",
+          "segments": [
+            {
+              "name": "AI光学感応部分（仮定）",
+              "market_or_revenue_anchor_bn": 4,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 3.125,
+              "share_factor": 1.0,
+              "revenue_bn": 12.5,
+              "operating_margin": 0.39,
+              "growth_bridge": "Q1guide年換算5の80%を独自感応配分。AI投資倍率×単価/製品構成。",
+              "macro_ai_capex_bn": 2500,
+              "independent_factor": 1.25
+            },
+            {
+              "name": "通信・産業等残余（仮定）",
+              "market_or_revenue_anchor_bn": 1,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.22,
+              "share_factor": 1.0,
+              "revenue_bn": 1.22,
+              "operating_margin": 0.17,
+              "growth_bridge": "非AI80/20区分は未開示の独自仮定",
+              "macro_ai_capex_bn": 2500,
+              "independent_factor": 1.22
+            }
+          ],
+          "revenue_bn": 13.72,
+          "operating_income_bn": 5.0824,
+          "unallocated_cost_bn": 0,
+          "net_finance_bn": 0.05,
+          "tax_rate": 0.24,
+          "minority_bn": 0,
+          "normal_net_income_bn": 3.9006239999999996,
+          "diluted_shares_bn": 0.109,
+          "eps_quote_currency": 35.785541284403664
+        }
+      ]
+    },
+    {
+      "symbol": "6501.T",
+      "name": "日立製作所",
+      "financial_currency": "JPY",
+      "quote_currency": "JPY",
+      "model_quality": "中低",
+      "anchor_facts": [
+        {
+          "date": "2026-07-29",
+          "scope": "実績・会社計画。将来モデルとは区別",
+          "facts": "FY26会社売上11700/調整EBITA1520/親NI900/EPS201.14。Energy売上4060/調整EBITA576。Energy Q1受注残63.6USD bn。",
+          "sourceURLs": [
+            "https://www.hitachi.com/content/dam/hitachi/global/en/press/files/2026/07/260729/2026_1Qpre.pdf"
+          ]
+        }
+      ],
+      "method": "調整EBITAをそのまま使わず、買収償却を含む正常営業率を独自設定。基本株数900/201.14=4.4745bnを校正。",
+      "risks": "送電納期・固定価格採算、円高、非AI需要。",
+      "terminal_pe": {
+        "weak": 16,
+        "base": 22,
+        "strong": 28
+      },
+      "terminal_pe_basis": "独自仮定。弱気は競争・景気循環で倍率縮小、標準は継続利益の成長と資本負担、強気は持続成長を反映。株価から逆算していない。",
+      "assumptions": {
+        "segments": [
+          {
+            "name": "Energy",
+            "anchor": 4060,
+            "growth": {
+              "2028": [
+                1.12,
+                1.35,
+                1.55
+              ],
+              "2029": [
+                1.18,
+                1.55,
+                1.85
+              ]
+            },
+            "margin": {
+              "2028": [
+                0.115,
+                0.145,
+                0.165
+              ],
+              "2029": [
+                0.115,
+                0.15,
+                0.175
+              ]
+            },
+            "bridge": "受注残と納入能力。AI投資を全額乗算せず送電全体の納入シナリオ",
+            "mode": "delivery"
+          },
+          {
+            "name": "DSS・Mobility・CI等（消去込）",
+            "anchor": 7640,
+            "growth": {
+              "2028": [
+                1,
+                1.1,
+                1.2
+              ],
+              "2029": [
+                1.01,
+                1.17,
+                1.32
+              ]
+            },
+            "margin": {
+              "2028": [
+                0.1,
+                0.12,
+                0.135
+              ],
+              "2029": [
+                0.1,
+                0.125,
+                0.14
+              ]
+            },
+            "bridge": "会社他部門売上合算から消去を控除。非AI成長",
+            "mode": "delivery"
+          }
+        ],
+        "shares": {
+          "2028": [
+            4.48,
+            4.42,
+            4.35
+          ],
+          "2029": [
+            4.48,
+            4.38,
+            4.28
+          ]
+        },
+        "finance": [
+          -30,
+          -10,
+          0
+        ],
+        "tax": 0.3,
+        "cost": [
+          0,
+          0,
+          0
+        ],
+        "minor": [
+          60,
+          75,
+          90
+        ]
+      },
+      "rows": [
+        {
+          "year": 2028,
+          "case": "weak",
+          "segments": [
+            {
+              "name": "Energy",
+              "market_or_revenue_anchor_bn": 4060,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.12,
+              "share_factor": 1.0,
+              "revenue_bn": 4547.200000000001,
+              "operating_margin": 0.115,
+              "growth_bridge": "受注残と納入能力。AI投資を全額乗算せず送電全体の納入シナリオ",
+              "macro_ai_capex_bn": 1000,
+              "independent_factor": 1.12
+            },
+            {
+              "name": "DSS・Mobility・CI等（消去込）",
+              "market_or_revenue_anchor_bn": 7640,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1,
+              "share_factor": 1.0,
+              "revenue_bn": 7640,
+              "operating_margin": 0.1,
+              "growth_bridge": "会社他部門売上合算から消去を控除。非AI成長",
+              "macro_ai_capex_bn": 1000,
+              "independent_factor": 1
+            }
+          ],
+          "revenue_bn": 12187.2,
+          "operating_income_bn": 1286.928,
+          "unallocated_cost_bn": 0,
+          "net_finance_bn": -30,
+          "tax_rate": 0.3,
+          "minority_bn": 60,
+          "normal_net_income_bn": 819.8496,
+          "diluted_shares_bn": 4.48,
+          "eps_quote_currency": 183.00214285714284
+        },
+        {
+          "year": 2028,
+          "case": "base",
+          "segments": [
+            {
+              "name": "Energy",
+              "market_or_revenue_anchor_bn": 4060,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.35,
+              "share_factor": 1.0,
+              "revenue_bn": 5481.0,
+              "operating_margin": 0.145,
+              "growth_bridge": "受注残と納入能力。AI投資を全額乗算せず送電全体の納入シナリオ",
+              "macro_ai_capex_bn": 1400,
+              "independent_factor": 1.35
+            },
+            {
+              "name": "DSS・Mobility・CI等（消去込）",
+              "market_or_revenue_anchor_bn": 7640,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.1,
+              "share_factor": 1.0,
+              "revenue_bn": 8404.0,
+              "operating_margin": 0.12,
+              "growth_bridge": "会社他部門売上合算から消去を控除。非AI成長",
+              "macro_ai_capex_bn": 1400,
+              "independent_factor": 1.1
+            }
+          ],
+          "revenue_bn": 13885.0,
+          "operating_income_bn": 1803.225,
+          "unallocated_cost_bn": 0,
+          "net_finance_bn": -10,
+          "tax_rate": 0.3,
+          "minority_bn": 75,
+          "normal_net_income_bn": 1180.2575,
+          "diluted_shares_bn": 4.42,
+          "eps_quote_currency": 267.02658371040724
+        },
+        {
+          "year": 2028,
+          "case": "strong",
+          "segments": [
+            {
+              "name": "Energy",
+              "market_or_revenue_anchor_bn": 4060,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.55,
+              "share_factor": 1.0,
+              "revenue_bn": 6293.0,
+              "operating_margin": 0.165,
+              "growth_bridge": "受注残と納入能力。AI投資を全額乗算せず送電全体の納入シナリオ",
+              "macro_ai_capex_bn": 1900,
+              "independent_factor": 1.55
+            },
+            {
+              "name": "DSS・Mobility・CI等（消去込）",
+              "market_or_revenue_anchor_bn": 7640,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.2,
+              "share_factor": 1.0,
+              "revenue_bn": 9168.0,
+              "operating_margin": 0.135,
+              "growth_bridge": "会社他部門売上合算から消去を控除。非AI成長",
+              "macro_ai_capex_bn": 1900,
+              "independent_factor": 1.2
+            }
+          ],
+          "revenue_bn": 15461.0,
+          "operating_income_bn": 2276.025,
+          "unallocated_cost_bn": 0,
+          "net_finance_bn": 0,
+          "tax_rate": 0.3,
+          "minority_bn": 90,
+          "normal_net_income_bn": 1503.2175,
+          "diluted_shares_bn": 4.35,
+          "eps_quote_currency": 345.56724137931036
+        },
+        {
+          "year": 2029,
+          "case": "weak",
+          "segments": [
+            {
+              "name": "Energy",
+              "market_or_revenue_anchor_bn": 4060,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.18,
+              "share_factor": 1.0,
+              "revenue_bn": 4790.8,
+              "operating_margin": 0.115,
+              "growth_bridge": "受注残と納入能力。AI投資を全額乗算せず送電全体の納入シナリオ",
+              "macro_ai_capex_bn": 950,
+              "independent_factor": 1.18
+            },
+            {
+              "name": "DSS・Mobility・CI等（消去込）",
+              "market_or_revenue_anchor_bn": 7640,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.01,
+              "share_factor": 1.0,
+              "revenue_bn": 7716.4,
+              "operating_margin": 0.1,
+              "growth_bridge": "会社他部門売上合算から消去を控除。非AI成長",
+              "macro_ai_capex_bn": 950,
+              "independent_factor": 1.01
+            }
+          ],
+          "revenue_bn": 12507.2,
+          "operating_income_bn": 1322.5819999999999,
+          "unallocated_cost_bn": 0,
+          "net_finance_bn": -30,
+          "tax_rate": 0.3,
+          "minority_bn": 60,
+          "normal_net_income_bn": 844.8073999999998,
+          "diluted_shares_bn": 4.48,
+          "eps_quote_currency": 188.5730803571428
+        },
+        {
+          "year": 2029,
+          "case": "base",
+          "segments": [
+            {
+              "name": "Energy",
+              "market_or_revenue_anchor_bn": 4060,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.55,
+              "share_factor": 1.0,
+              "revenue_bn": 6293.0,
+              "operating_margin": 0.15,
+              "growth_bridge": "受注残と納入能力。AI投資を全額乗算せず送電全体の納入シナリオ",
+              "macro_ai_capex_bn": 1700,
+              "independent_factor": 1.55
+            },
+            {
+              "name": "DSS・Mobility・CI等（消去込）",
+              "market_or_revenue_anchor_bn": 7640,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.17,
+              "share_factor": 1.0,
+              "revenue_bn": 8938.8,
+              "operating_margin": 0.125,
+              "growth_bridge": "会社他部門売上合算から消去を控除。非AI成長",
+              "macro_ai_capex_bn": 1700,
+              "independent_factor": 1.17
+            }
+          ],
+          "revenue_bn": 15231.8,
+          "operating_income_bn": 2061.2999999999997,
+          "unallocated_cost_bn": 0,
+          "net_finance_bn": -10,
+          "tax_rate": 0.3,
+          "minority_bn": 75,
+          "normal_net_income_bn": 1360.9099999999996,
+          "diluted_shares_bn": 4.38,
+          "eps_quote_currency": 310.71004566210036
+        },
+        {
+          "year": 2029,
+          "case": "strong",
+          "segments": [
+            {
+              "name": "Energy",
+              "market_or_revenue_anchor_bn": 4060,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.85,
+              "share_factor": 1.0,
+              "revenue_bn": 7511.0,
+              "operating_margin": 0.175,
+              "growth_bridge": "受注残と納入能力。AI投資を全額乗算せず送電全体の納入シナリオ",
+              "macro_ai_capex_bn": 2500,
+              "independent_factor": 1.85
+            },
+            {
+              "name": "DSS・Mobility・CI等（消去込）",
+              "market_or_revenue_anchor_bn": 7640,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.32,
+              "share_factor": 1.0,
+              "revenue_bn": 10084.800000000001,
+              "operating_margin": 0.14,
+              "growth_bridge": "会社他部門売上合算から消去を控除。非AI成長",
+              "macro_ai_capex_bn": 2500,
+              "independent_factor": 1.32
+            }
+          ],
+          "revenue_bn": 17595.800000000003,
+          "operating_income_bn": 2726.2970000000005,
+          "unallocated_cost_bn": 0,
+          "net_finance_bn": 0,
+          "tax_rate": 0.3,
+          "minority_bn": 90,
+          "normal_net_income_bn": 1818.4079000000002,
+          "diluted_shares_bn": 4.28,
+          "eps_quote_currency": 424.86165887850467
+        }
+      ]
+    },
+    {
+      "symbol": "ETN",
+      "name": "Eaton",
+      "financial_currency": "USD",
+      "quote_currency": "USD",
+      "model_quality": "中低",
+      "anchor_facts": [
+        {
+          "date": "2026-07-31",
+          "scope": "実績・会社計画。将来モデルとは区別",
+          "facts": "Q2売上8.5、EA4/利益1.1、EG2.5/.499、航空1.2/.278、Mobility.841/.109。希薄化.3895bn。通期GAAP EPS10.36–10.56/調整13.4–13.6。Mobility分離27Q1計画。",
+          "sourceURLs": [
+            "https://www.sec.gov/Archives/edgar/data/1551182/000155118226000030/etn-20260630.htm",
+            "https://www.eaton.com/us/en-us/company/news-insights/news-releases/2026/eaton-reports-record-second-quarter-2026-results.html"
+          ]
+        }
+      ],
+      "method": "部門利益率から本社費/取得無形償却等1.6–1.8bn控除。SBC残す。Mobility将来売上は除くため現株主総価値比較は不完全。",
+      "risks": "Mobility分離株式の価値をこの残存ETN EPS法は評価しない。負債配賦と分離費用不明。",
+      "terminal_pe": {
+        "weak": 18,
+        "base": 24,
+        "strong": 30
+      },
+      "terminal_pe_basis": "独自仮定。弱気は競争・景気循環で倍率縮小、標準は継続利益の成長と資本負担、強気は持続成長を反映。株価から逆算していない。",
+      "assumptions": {
+        "segments": [
+          {
+            "name": "DC電源冷却（推定）",
+            "anchor": 9,
+            "growth": {
+              "2028": [
+                1,
+                1.05,
+                1.1
+              ],
+              "2029": [
+                0.95,
+                1.08,
+                1.15
+              ]
+            },
+            "margin": {
+              "2028": [
+                0.23,
+                0.28,
+                0.3
+              ],
+              "2029": [
+                0.22,
+                0.29,
+                0.31
+              ]
+            },
+            "bridge": "会社2025DC比率21%と買収を踏まえ26年9を独自配分。倍率0.8乗。",
+            "mode": "ai08"
+          },
+          {
+            "name": "その他Electrical",
+            "anchor": 17,
+            "growth": {
+              "2028": [
+                1,
+                1.1,
+                1.18
+              ],
+              "2029": [
+                1,
+                1.16,
+                1.28
+              ]
+            },
+            "margin": {
+              "2028": [
+                0.21,
+                0.24,
+                0.26
+              ],
+              "2029": [
+                0.21,
+                0.25,
+                0.27
+              ]
+            },
+            "bridge": "26年EA+EG Q2年換算26から9控除",
+            "mode": "delivery"
+          },
+          {
+            "name": "Aerospace",
+            "anchor": 4.8,
+            "growth": {
+              "2028": [
+                1.08,
+                1.18,
+                1.28
+              ],
+              "2029": [
+                1.12,
+                1.28,
+                1.42
+              ]
+            },
+            "margin": {
+              "2028": [
+                0.21,
+                0.23,
+                0.25
+              ],
+              "2029": [
+                0.21,
+                0.24,
+                0.26
+              ]
+            },
+            "bridge": "航空需要・供給増",
+            "mode": "delivery"
+          }
+        ],
+        "shares": {
+          "2028": [
+            0.391,
+            0.386,
+            0.38
+          ],
+          "2029": [
+            0.392,
+            0.383,
+            0.375
+          ]
+        },
+        "finance": [
+          -0.9,
+          -0.75,
+          -0.6
+        ],
+        "tax": 0.24,
+        "cost": [
+          1.8,
+          1.7,
+          1.6
+        ],
+        "minor": [
+          0.01,
+          0.01,
+          0.01
+        ]
+      },
+      "rows": [
+        {
+          "year": 2028,
+          "case": "weak",
+          "segments": [
+            {
+              "name": "DC電源冷却（推定）",
+              "market_or_revenue_anchor_bn": 9,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.0,
+              "share_factor": 1.0,
+              "revenue_bn": 9.0,
+              "operating_margin": 0.23,
+              "growth_bridge": "会社2025DC比率21%と買収を踏まえ26年9を独自配分。倍率0.8乗。",
+              "macro_ai_capex_bn": 1000,
+              "independent_factor": 1
+            },
+            {
+              "name": "その他Electrical",
+              "market_or_revenue_anchor_bn": 17,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1,
+              "share_factor": 1.0,
+              "revenue_bn": 17,
+              "operating_margin": 0.21,
+              "growth_bridge": "26年EA+EG Q2年換算26から9控除",
+              "macro_ai_capex_bn": 1000,
+              "independent_factor": 1
+            },
+            {
+              "name": "Aerospace",
+              "market_or_revenue_anchor_bn": 4.8,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.08,
+              "share_factor": 1.0,
+              "revenue_bn": 5.184,
+              "operating_margin": 0.21,
+              "growth_bridge": "航空需要・供給増",
+              "macro_ai_capex_bn": 1000,
+              "independent_factor": 1.08
+            }
+          ],
+          "revenue_bn": 31.184,
+          "operating_income_bn": 4.928640000000001,
+          "unallocated_cost_bn": 1.8,
+          "net_finance_bn": -0.9,
+          "tax_rate": 0.24,
+          "minority_bn": 0.01,
+          "normal_net_income_bn": 3.0517664000000004,
+          "diluted_shares_bn": 0.391,
+          "eps_quote_currency": 7.805029156010231
+        },
+        {
+          "year": 2028,
+          "case": "base",
+          "segments": [
+            {
+              "name": "DC電源冷却（推定）",
+              "market_or_revenue_anchor_bn": 9,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.374332217938251,
+              "share_factor": 1.0,
+              "revenue_bn": 12.36898996144426,
+              "operating_margin": 0.28,
+              "growth_bridge": "会社2025DC比率21%と買収を踏まえ26年9を独自配分。倍率0.8乗。",
+              "macro_ai_capex_bn": 1400,
+              "independent_factor": 1.05
+            },
+            {
+              "name": "その他Electrical",
+              "market_or_revenue_anchor_bn": 17,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.1,
+              "share_factor": 1.0,
+              "revenue_bn": 18.700000000000003,
+              "operating_margin": 0.24,
+              "growth_bridge": "26年EA+EG Q2年換算26から9控除",
+              "macro_ai_capex_bn": 1400,
+              "independent_factor": 1.1
+            },
+            {
+              "name": "Aerospace",
+              "market_or_revenue_anchor_bn": 4.8,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.18,
+              "share_factor": 1.0,
+              "revenue_bn": 5.664,
+              "operating_margin": 0.23,
+              "growth_bridge": "航空需要・供給増",
+              "macro_ai_capex_bn": 1400,
+              "independent_factor": 1.18
+            }
+          ],
+          "revenue_bn": 36.73298996144426,
+          "operating_income_bn": 7.554037189204393,
+          "unallocated_cost_bn": 1.7,
+          "net_finance_bn": -0.75,
+          "tax_rate": 0.24,
+          "minority_bn": 0.01,
+          "normal_net_income_bn": 5.161068263795339,
+          "diluted_shares_bn": 0.386,
+          "eps_quote_currency": 13.370643170454246
+        },
+        {
+          "year": 2028,
+          "case": "strong",
+          "segments": [
+            {
+              "name": "DC電源冷却（推定）",
+              "market_or_revenue_anchor_bn": 9,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.8382118689287554,
+              "share_factor": 1.0,
+              "revenue_bn": 16.5439068203588,
+              "operating_margin": 0.3,
+              "growth_bridge": "会社2025DC比率21%と買収を踏まえ26年9を独自配分。倍率0.8乗。",
+              "macro_ai_capex_bn": 1900,
+              "independent_factor": 1.1
+            },
+            {
+              "name": "その他Electrical",
+              "market_or_revenue_anchor_bn": 17,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.18,
+              "share_factor": 1.0,
+              "revenue_bn": 20.06,
+              "operating_margin": 0.26,
+              "growth_bridge": "26年EA+EG Q2年換算26から9控除",
+              "macro_ai_capex_bn": 1900,
+              "independent_factor": 1.18
+            },
+            {
+              "name": "Aerospace",
+              "market_or_revenue_anchor_bn": 4.8,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.28,
+              "share_factor": 1.0,
+              "revenue_bn": 6.144,
+              "operating_margin": 0.25,
+              "growth_bridge": "航空需要・供給増",
+              "macro_ai_capex_bn": 1900,
+              "independent_factor": 1.28
+            }
+          ],
+          "revenue_bn": 42.7479068203588,
+          "operating_income_bn": 10.11477204610764,
+          "unallocated_cost_bn": 1.6,
+          "net_finance_bn": -0.6,
+          "tax_rate": 0.24,
+          "minority_bn": 0.01,
+          "normal_net_income_bn": 7.221226755041807,
+          "diluted_shares_bn": 0.38,
+          "eps_quote_currency": 19.003228302741597
+        },
+        {
+          "year": 2029,
+          "case": "weak",
+          "segments": [
+            {
+              "name": "DC電源冷却（推定）",
+              "market_or_revenue_anchor_bn": 9,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 0.9118060920344373,
+              "share_factor": 1.0,
+              "revenue_bn": 8.206254828309936,
+              "operating_margin": 0.22,
+              "growth_bridge": "会社2025DC比率21%と買収を踏まえ26年9を独自配分。倍率0.8乗。",
+              "macro_ai_capex_bn": 950,
+              "independent_factor": 0.95
+            },
+            {
+              "name": "その他Electrical",
+              "market_or_revenue_anchor_bn": 17,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1,
+              "share_factor": 1.0,
+              "revenue_bn": 17,
+              "operating_margin": 0.21,
+              "growth_bridge": "26年EA+EG Q2年換算26から9控除",
+              "macro_ai_capex_bn": 950,
+              "independent_factor": 1
+            },
+            {
+              "name": "Aerospace",
+              "market_or_revenue_anchor_bn": 4.8,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.12,
+              "share_factor": 1.0,
+              "revenue_bn": 5.376,
+              "operating_margin": 0.21,
+              "growth_bridge": "航空需要・供給増",
+              "macro_ai_capex_bn": 950,
+              "independent_factor": 1.12
+            }
+          ],
+          "revenue_bn": 30.582254828309935,
+          "operating_income_bn": 4.704336062228186,
+          "unallocated_cost_bn": 1.8,
+          "net_finance_bn": -0.9,
+          "tax_rate": 0.24,
+          "minority_bn": 0.01,
+          "normal_net_income_bn": 2.8812954072934214,
+          "diluted_shares_bn": 0.392,
+          "eps_quote_currency": 7.350243385952605
+        },
+        {
+          "year": 2029,
+          "case": "base",
+          "segments": [
+            {
+              "name": "DC電源冷却（推定）",
+              "market_or_revenue_anchor_bn": 9,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.6511361752216274,
+              "share_factor": 1.0,
+              "revenue_bn": 14.860225576994646,
+              "operating_margin": 0.29,
+              "growth_bridge": "会社2025DC比率21%と買収を踏まえ26年9を独自配分。倍率0.8乗。",
+              "macro_ai_capex_bn": 1700,
+              "independent_factor": 1.08
+            },
+            {
+              "name": "その他Electrical",
+              "market_or_revenue_anchor_bn": 17,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.16,
+              "share_factor": 1.0,
+              "revenue_bn": 19.72,
+              "operating_margin": 0.25,
+              "growth_bridge": "26年EA+EG Q2年換算26から9控除",
+              "macro_ai_capex_bn": 1700,
+              "independent_factor": 1.16
+            },
+            {
+              "name": "Aerospace",
+              "market_or_revenue_anchor_bn": 4.8,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.28,
+              "share_factor": 1.0,
+              "revenue_bn": 6.144,
+              "operating_margin": 0.24,
+              "growth_bridge": "航空需要・供給増",
+              "macro_ai_capex_bn": 1700,
+              "independent_factor": 1.28
+            }
+          ],
+          "revenue_bn": 40.72422557699464,
+          "operating_income_bn": 9.014025417328448,
+          "unallocated_cost_bn": 1.7,
+          "net_finance_bn": -0.75,
+          "tax_rate": 0.24,
+          "minority_bn": 0.01,
+          "normal_net_income_bn": 6.2706593171696206,
+          "diluted_shares_bn": 0.383,
+          "eps_quote_currency": 16.372478634907626
+        },
+        {
+          "year": 2029,
+          "case": "strong",
+          "segments": [
+            {
+              "name": "DC電源冷却（推定）",
+              "market_or_revenue_anchor_bn": 9,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 2.393590471280385,
+              "share_factor": 1.0,
+              "revenue_bn": 21.542314241523464,
+              "operating_margin": 0.31,
+              "growth_bridge": "会社2025DC比率21%と買収を踏まえ26年9を独自配分。倍率0.8乗。",
+              "macro_ai_capex_bn": 2500,
+              "independent_factor": 1.15
+            },
+            {
+              "name": "その他Electrical",
+              "market_or_revenue_anchor_bn": 17,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.28,
+              "share_factor": 1.0,
+              "revenue_bn": 21.76,
+              "operating_margin": 0.27,
+              "growth_bridge": "26年EA+EG Q2年換算26から9控除",
+              "macro_ai_capex_bn": 2500,
+              "independent_factor": 1.28
+            },
+            {
+              "name": "Aerospace",
+              "market_or_revenue_anchor_bn": 4.8,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.42,
+              "share_factor": 1.0,
+              "revenue_bn": 6.816,
+              "operating_margin": 0.26,
+              "growth_bridge": "航空需要・供給増",
+              "macro_ai_capex_bn": 2500,
+              "independent_factor": 1.42
+            }
+          ],
+          "revenue_bn": 50.118314241523464,
+          "operating_income_bn": 12.725477414872275,
+          "unallocated_cost_bn": 1.6,
+          "net_finance_bn": -0.6,
+          "tax_rate": 0.24,
+          "minority_bn": 0.01,
+          "normal_net_income_bn": 9.20536283530293,
+          "diluted_shares_bn": 0.375,
+          "eps_quote_currency": 24.54763422747448
+        }
+      ]
+    },
+    {
+      "symbol": "6367.T",
+      "name": "ダイキン工業",
+      "financial_currency": "JPY",
+      "quote_currency": "JPY",
+      "model_quality": "中低",
+      "anchor_facts": [
+        {
+          "date": "2026-08-04",
+          "scope": "実績・会社計画。将来モデルとは区別",
+          "facts": "FY27/3会社売上5150/OP436/経常414/NI278。Q1売上1426.8/OP130.56。6月自己株除く株数.278335bn。北米DC2025売上100→2030超300会社計画。",
+          "sourceURLs": [
+            "https://www.daikin.com/-/media/993A6303AC814F598BD75FA6B53CFF56.ashx",
+            "https://www.daikin.com/-/media/Project/Daikin/daikin_com/investor/data/others/20251127-DC-Strategy/Presentation-3-Time.pdf"
+          ]
+        }
+      ],
+      "method": "DC分割150は実測ではない。全社会社計画5150と整合。",
+      "risks": "DC全社構成小。一般空調需要と買収償却・円高の影響大。",
+      "terminal_pe": {
+        "weak": 15,
+        "base": 20,
+        "strong": 25
+      },
+      "terminal_pe_basis": "独自仮定。弱気は競争・景気循環で倍率縮小、標準は継続利益の成長と資本負担、強気は持続成長を反映。株価から逆算していない。",
+      "assumptions": {
+        "segments": [
+          {
+            "name": "北米DC（独自26年校正）",
+            "anchor": 150,
+            "growth": {
+              "2028": [
+                1,
+                1.1,
+                1.15
+              ],
+              "2029": [
+                1,
+                1.1,
+                1.15
+              ]
+            },
+            "margin": {
+              "2028": [
+                0.1,
+                0.14,
+                0.17
+              ],
+              "2029": [
+                0.1,
+                0.15,
+                0.18
+              ]
+            },
+            "bridge": "25年100と30年300計画の途中。AI倍率0.8乗。",
+            "mode": "ai08"
+          },
+          {
+            "name": "その他空調・化学等",
+            "anchor": 5000,
+            "growth": {
+              "2028": [
+                0.98,
+                1.08,
+                1.16
+              ],
+              "2029": [
+                0.98,
+                1.13,
+                1.25
+              ]
+            },
+            "margin": {
+              "2028": [
+                0.075,
+                0.09,
+                0.105
+              ],
+              "2029": [
+                0.075,
+                0.095,
+                0.11
+              ]
+            },
+            "bridge": "一般住宅/商用/中国/欧州需要回復",
+            "mode": "delivery"
+          }
+        ],
+        "shares": {
+          "2028": [
+            0.283,
+            0.28,
+            0.278
+          ],
+          "2029": [
+            0.285,
+            0.28,
+            0.277
+          ]
+        },
+        "finance": [
+          -30,
+          -22,
+          -15
+        ],
+        "tax": 0.3,
+        "cost": [
+          0,
+          0,
+          0
+        ],
+        "minor": [
+          10,
+          12,
+          14
+        ]
+      },
+      "rows": [
+        {
+          "year": 2028,
+          "case": "weak",
+          "segments": [
+            {
+              "name": "北米DC（独自26年校正）",
+              "market_or_revenue_anchor_bn": 150,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.0,
+              "share_factor": 1.0,
+              "revenue_bn": 150.0,
+              "operating_margin": 0.1,
+              "growth_bridge": "25年100と30年300計画の途中。AI倍率0.8乗。",
+              "macro_ai_capex_bn": 1000,
+              "independent_factor": 1
+            },
+            {
+              "name": "その他空調・化学等",
+              "market_or_revenue_anchor_bn": 5000,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 0.98,
+              "share_factor": 1.0,
+              "revenue_bn": 4900.0,
+              "operating_margin": 0.075,
+              "growth_bridge": "一般住宅/商用/中国/欧州需要回復",
+              "macro_ai_capex_bn": 1000,
+              "independent_factor": 0.98
+            }
+          ],
+          "revenue_bn": 5050.0,
+          "operating_income_bn": 382.5,
+          "unallocated_cost_bn": 0,
+          "net_finance_bn": -30,
+          "tax_rate": 0.3,
+          "minority_bn": 10,
+          "normal_net_income_bn": 236.74999999999997,
+          "diluted_shares_bn": 0.283,
+          "eps_quote_currency": 836.5724381625441
+        },
+        {
+          "year": 2028,
+          "case": "base",
+          "segments": [
+            {
+              "name": "北米DC（独自26年校正）",
+              "market_or_revenue_anchor_bn": 150,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.439776609268644,
+              "share_factor": 1.0,
+              "revenue_bn": 215.9664913902966,
+              "operating_margin": 0.14,
+              "growth_bridge": "25年100と30年300計画の途中。AI倍率0.8乗。",
+              "macro_ai_capex_bn": 1400,
+              "independent_factor": 1.1
+            },
+            {
+              "name": "その他空調・化学等",
+              "market_or_revenue_anchor_bn": 5000,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.08,
+              "share_factor": 1.0,
+              "revenue_bn": 5400.0,
+              "operating_margin": 0.09,
+              "growth_bridge": "一般住宅/商用/中国/欧州需要回復",
+              "macro_ai_capex_bn": 1400,
+              "independent_factor": 1.08
+            }
+          ],
+          "revenue_bn": 5615.966491390296,
+          "operating_income_bn": 516.2353087946415,
+          "unallocated_cost_bn": 0,
+          "net_finance_bn": -22,
+          "tax_rate": 0.3,
+          "minority_bn": 12,
+          "normal_net_income_bn": 333.964716156249,
+          "diluted_shares_bn": 0.28,
+          "eps_quote_currency": 1192.7311291294604
+        },
+        {
+          "year": 2028,
+          "case": "strong",
+          "segments": [
+            {
+              "name": "北米DC（独自26年校正）",
+              "market_or_revenue_anchor_bn": 150,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.9217669538800621,
+              "share_factor": 1.0,
+              "revenue_bn": 288.2650430820093,
+              "operating_margin": 0.17,
+              "growth_bridge": "25年100と30年300計画の途中。AI倍率0.8乗。",
+              "macro_ai_capex_bn": 1900,
+              "independent_factor": 1.15
+            },
+            {
+              "name": "その他空調・化学等",
+              "market_or_revenue_anchor_bn": 5000,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.16,
+              "share_factor": 1.0,
+              "revenue_bn": 5800.0,
+              "operating_margin": 0.105,
+              "growth_bridge": "一般住宅/商用/中国/欧州需要回復",
+              "macro_ai_capex_bn": 1900,
+              "independent_factor": 1.16
+            }
+          ],
+          "revenue_bn": 6088.2650430820095,
+          "operating_income_bn": 658.0050573239416,
+          "unallocated_cost_bn": 0,
+          "net_finance_bn": -15,
+          "tax_rate": 0.3,
+          "minority_bn": 14,
+          "normal_net_income_bn": 436.1035401267591,
+          "diluted_shares_bn": 0.278,
+          "eps_quote_currency": 1568.7177702401407
+        },
+        {
+          "year": 2029,
+          "case": "weak",
+          "segments": [
+            {
+              "name": "北米DC（独自26年校正）",
+              "market_or_revenue_anchor_bn": 150,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 0.9597958863520393,
+              "share_factor": 1.0,
+              "revenue_bn": 143.9693829528059,
+              "operating_margin": 0.1,
+              "growth_bridge": "25年100と30年300計画の途中。AI倍率0.8乗。",
+              "macro_ai_capex_bn": 950,
+              "independent_factor": 1
+            },
+            {
+              "name": "その他空調・化学等",
+              "market_or_revenue_anchor_bn": 5000,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 0.98,
+              "share_factor": 1.0,
+              "revenue_bn": 4900.0,
+              "operating_margin": 0.075,
+              "growth_bridge": "一般住宅/商用/中国/欧州需要回復",
+              "macro_ai_capex_bn": 950,
+              "independent_factor": 0.98
+            }
+          ],
+          "revenue_bn": 5043.969382952806,
+          "operating_income_bn": 381.89693829528056,
+          "unallocated_cost_bn": 0,
+          "net_finance_bn": -30,
+          "tax_rate": 0.3,
+          "minority_bn": 10,
+          "normal_net_income_bn": 236.3278568066964,
+          "diluted_shares_bn": 0.285,
+          "eps_quote_currency": 829.2205501989348
+        },
+        {
+          "year": 2029,
+          "case": "base",
+          "segments": [
+            {
+              "name": "北米DC（独自26年校正）",
+              "market_or_revenue_anchor_bn": 150,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.6817127710590651,
+              "share_factor": 1.0,
+              "revenue_bn": 252.25691565885978,
+              "operating_margin": 0.15,
+              "growth_bridge": "25年100と30年300計画の途中。AI倍率0.8乗。",
+              "macro_ai_capex_bn": 1700,
+              "independent_factor": 1.1
+            },
+            {
+              "name": "その他空調・化学等",
+              "market_or_revenue_anchor_bn": 5000,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.13,
+              "share_factor": 1.0,
+              "revenue_bn": 5649.999999999999,
+              "operating_margin": 0.095,
+              "growth_bridge": "一般住宅/商用/中国/欧州需要回復",
+              "macro_ai_capex_bn": 1700,
+              "independent_factor": 1.13
+            }
+          ],
+          "revenue_bn": 5902.256915658859,
+          "operating_income_bn": 574.5885373488288,
+          "unallocated_cost_bn": 0,
+          "net_finance_bn": -22,
+          "tax_rate": 0.3,
+          "minority_bn": 12,
+          "normal_net_income_bn": 374.81197614418016,
+          "diluted_shares_bn": 0.28,
+          "eps_quote_currency": 1338.614200514929
+        },
+        {
+          "year": 2029,
+          "case": "strong",
+          "segments": [
+            {
+              "name": "北米DC（独自26年校正）",
+              "market_or_revenue_anchor_bn": 150,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 2.393590471280385,
+              "share_factor": 1.0,
+              "revenue_bn": 359.03857069205776,
+              "operating_margin": 0.18,
+              "growth_bridge": "25年100と30年300計画の途中。AI倍率0.8乗。",
+              "macro_ai_capex_bn": 2500,
+              "independent_factor": 1.15
+            },
+            {
+              "name": "その他空調・化学等",
+              "market_or_revenue_anchor_bn": 5000,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.25,
+              "share_factor": 1.0,
+              "revenue_bn": 6250.0,
+              "operating_margin": 0.11,
+              "growth_bridge": "一般住宅/商用/中国/欧州需要回復",
+              "macro_ai_capex_bn": 2500,
+              "independent_factor": 1.25
+            }
+          ],
+          "revenue_bn": 6609.038570692058,
+          "operating_income_bn": 752.1269427245704,
+          "unallocated_cost_bn": 0,
+          "net_finance_bn": -15,
+          "tax_rate": 0.3,
+          "minority_bn": 14,
+          "normal_net_income_bn": 501.9888599071993,
+          "diluted_shares_bn": 0.277,
+          "eps_quote_currency": 1812.234151289528
+        }
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "name": "Amazon",
+      "financial_currency": "USD",
+      "quote_currency": "USD",
+      "model_quality": "中低",
+      "anchor_facts": [
+        {
+          "date": "2026-07-30",
+          "scope": "実績・会社計画。将来モデルとは区別",
+          "facts": "Q2売上200.606/OP27.461。NA116.177/OP9.123、International42.197/1.717、AWS42.232/16.621。希薄化10.903bn。NI62.647は投資評価益で歪む。TTM FCF−7.6。",
+          "sourceURLs": [
+            "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/default.aspx"
+          ]
+        }
+      ],
+      "method": "2026年売上校正830は独自年率換算。営業率はSBC・R&D・償却を含む。capex自体をNIから控除せず、AWS弱気率28/27%で償却負担を反映。投資評価益は0。",
+      "risks": "データセンター償却増、利用率/価格、Anthropic投資損失、物流労務費。",
+      "terminal_pe": {
+        "weak": 20,
+        "base": 26,
+        "strong": 32
+      },
+      "terminal_pe_basis": "独自仮定。弱気は競争・景気循環で倍率縮小、標準は継続利益の成長と資本負担、強気は持続成長を反映。株価から逆算していない。",
+      "assumptions": {
+        "segments": [
+          {
+            "name": "AWS",
+            "anchor": 170,
+            "growth": {
+              "2028": [
+                1.1,
+                1.4,
+                1.75
+              ],
+              "2029": [
+                1.15,
+                1.72,
+                2.35
+              ]
+            },
+            "margin": {
+              "2028": [
+                0.28,
+                0.35,
+                0.39
+              ],
+              "2029": [
+                0.27,
+                0.36,
+                0.4
+              ]
+            },
+            "bridge": "Q2年換算169を校正。投資倍率はサービス売上でなく利用率/価格/既存クラウド移行を介し独自倍率",
+            "mode": "delivery"
+          },
+          {
+            "name": "North America",
+            "anchor": 480,
+            "growth": {
+              "2028": [
+                1.08,
+                1.17,
+                1.28
+              ],
+              "2029": [
+                1.12,
+                1.27,
+                1.44
+              ]
+            },
+            "margin": {
+              "2028": [
+                0.065,
+                0.09,
+                0.105
+              ],
+              "2029": [
+                0.065,
+                0.095,
+                0.115
+              ]
+            },
+            "bridge": "小売/広告/物流。AI売上追加を別加算しない",
+            "mode": "delivery"
+          },
+          {
+            "name": "International",
+            "anchor": 180,
+            "growth": {
+              "2028": [
+                1.05,
+                1.17,
+                1.3
+              ],
+              "2029": [
+                1.08,
+                1.27,
+                1.48
+              ]
+            },
+            "margin": {
+              "2028": [
+                0.02,
+                0.05,
+                0.07
+              ],
+              "2029": [
+                0.02,
+                0.06,
+                0.08
+              ]
+            },
+            "bridge": "海外小売採算/広告",
+            "mode": "delivery"
+          }
+        ],
+        "shares": {
+          "2028": [
+            11.25,
+            11.12,
+            11.02
+          ],
+          "2029": [
+            11.45,
+            11.22,
+            11.05
+          ]
+        },
+        "finance": [
+          -3,
+          -2,
+          -1
+        ],
+        "tax": 0.23,
+        "cost": [
+          0,
+          0,
+          0
+        ],
+        "minor": [
+          0,
+          0,
+          0
+        ]
+      },
+      "rows": [
+        {
+          "year": 2028,
+          "case": "weak",
+          "segments": [
+            {
+              "name": "AWS",
+              "market_or_revenue_anchor_bn": 170,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.1,
+              "share_factor": 1.0,
+              "revenue_bn": 187.00000000000003,
+              "operating_margin": 0.28,
+              "growth_bridge": "Q2年換算169を校正。投資倍率はサービス売上でなく利用率/価格/既存クラウド移行を介し独自倍率",
+              "macro_ai_capex_bn": 1000,
+              "independent_factor": 1.1
+            },
+            {
+              "name": "North America",
+              "market_or_revenue_anchor_bn": 480,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.08,
+              "share_factor": 1.0,
+              "revenue_bn": 518.4000000000001,
+              "operating_margin": 0.065,
+              "growth_bridge": "小売/広告/物流。AI売上追加を別加算しない",
+              "macro_ai_capex_bn": 1000,
+              "independent_factor": 1.08
+            },
+            {
+              "name": "International",
+              "market_or_revenue_anchor_bn": 180,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.05,
+              "share_factor": 1.0,
+              "revenue_bn": 189.0,
+              "operating_margin": 0.02,
+              "growth_bridge": "海外小売採算/広告",
+              "macro_ai_capex_bn": 1000,
+              "independent_factor": 1.05
+            }
+          ],
+          "revenue_bn": 894.4000000000001,
+          "operating_income_bn": 89.83600000000001,
+          "unallocated_cost_bn": 0,
+          "net_finance_bn": -3,
+          "tax_rate": 0.23,
+          "minority_bn": 0,
+          "normal_net_income_bn": 66.86372000000001,
+          "diluted_shares_bn": 11.25,
+          "eps_quote_currency": 5.943441777777779
+        },
+        {
+          "year": 2028,
+          "case": "base",
+          "segments": [
+            {
+              "name": "AWS",
+              "market_or_revenue_anchor_bn": 170,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.4,
+              "share_factor": 1.0,
+              "revenue_bn": 237.99999999999997,
+              "operating_margin": 0.35,
+              "growth_bridge": "Q2年換算169を校正。投資倍率はサービス売上でなく利用率/価格/既存クラウド移行を介し独自倍率",
+              "macro_ai_capex_bn": 1400,
+              "independent_factor": 1.4
+            },
+            {
+              "name": "North America",
+              "market_or_revenue_anchor_bn": 480,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.17,
+              "share_factor": 1.0,
+              "revenue_bn": 561.5999999999999,
+              "operating_margin": 0.09,
+              "growth_bridge": "小売/広告/物流。AI売上追加を別加算しない",
+              "macro_ai_capex_bn": 1400,
+              "independent_factor": 1.17
+            },
+            {
+              "name": "International",
+              "market_or_revenue_anchor_bn": 180,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.17,
+              "share_factor": 1.0,
+              "revenue_bn": 210.6,
+              "operating_margin": 0.05,
+              "growth_bridge": "海外小売採算/広告",
+              "macro_ai_capex_bn": 1400,
+              "independent_factor": 1.17
+            }
+          ],
+          "revenue_bn": 1010.1999999999998,
+          "operating_income_bn": 144.37399999999997,
+          "unallocated_cost_bn": 0,
+          "net_finance_bn": -2,
+          "tax_rate": 0.23,
+          "minority_bn": 0,
+          "normal_net_income_bn": 109.62797999999998,
+          "diluted_shares_bn": 11.12,
+          "eps_quote_currency": 9.858631294964027
+        },
+        {
+          "year": 2028,
+          "case": "strong",
+          "segments": [
+            {
+              "name": "AWS",
+              "market_or_revenue_anchor_bn": 170,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.75,
+              "share_factor": 1.0,
+              "revenue_bn": 297.5,
+              "operating_margin": 0.39,
+              "growth_bridge": "Q2年換算169を校正。投資倍率はサービス売上でなく利用率/価格/既存クラウド移行を介し独自倍率",
+              "macro_ai_capex_bn": 1900,
+              "independent_factor": 1.75
+            },
+            {
+              "name": "North America",
+              "market_or_revenue_anchor_bn": 480,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.28,
+              "share_factor": 1.0,
+              "revenue_bn": 614.4,
+              "operating_margin": 0.105,
+              "growth_bridge": "小売/広告/物流。AI売上追加を別加算しない",
+              "macro_ai_capex_bn": 1900,
+              "independent_factor": 1.28
+            },
+            {
+              "name": "International",
+              "market_or_revenue_anchor_bn": 180,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.3,
+              "share_factor": 1.0,
+              "revenue_bn": 234.0,
+              "operating_margin": 0.07,
+              "growth_bridge": "海外小売採算/広告",
+              "macro_ai_capex_bn": 1900,
+              "independent_factor": 1.3
+            }
+          ],
+          "revenue_bn": 1145.9,
+          "operating_income_bn": 196.917,
+          "unallocated_cost_bn": 0,
+          "net_finance_bn": -1,
+          "tax_rate": 0.23,
+          "minority_bn": 0,
+          "normal_net_income_bn": 150.85609,
+          "diluted_shares_bn": 11.02,
+          "eps_quote_currency": 13.689300362976407
+        },
+        {
+          "year": 2029,
+          "case": "weak",
+          "segments": [
+            {
+              "name": "AWS",
+              "market_or_revenue_anchor_bn": 170,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.15,
+              "share_factor": 1.0,
+              "revenue_bn": 195.49999999999997,
+              "operating_margin": 0.27,
+              "growth_bridge": "Q2年換算169を校正。投資倍率はサービス売上でなく利用率/価格/既存クラウド移行を介し独自倍率",
+              "macro_ai_capex_bn": 950,
+              "independent_factor": 1.15
+            },
+            {
+              "name": "North America",
+              "market_or_revenue_anchor_bn": 480,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.12,
+              "share_factor": 1.0,
+              "revenue_bn": 537.6,
+              "operating_margin": 0.065,
+              "growth_bridge": "小売/広告/物流。AI売上追加を別加算しない",
+              "macro_ai_capex_bn": 950,
+              "independent_factor": 1.12
+            },
+            {
+              "name": "International",
+              "market_or_revenue_anchor_bn": 180,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.08,
+              "share_factor": 1.0,
+              "revenue_bn": 194.4,
+              "operating_margin": 0.02,
+              "growth_bridge": "海外小売採算/広告",
+              "macro_ai_capex_bn": 950,
+              "independent_factor": 1.08
+            }
+          ],
+          "revenue_bn": 927.5,
+          "operating_income_bn": 91.617,
+          "unallocated_cost_bn": 0,
+          "net_finance_bn": -3,
+          "tax_rate": 0.23,
+          "minority_bn": 0,
+          "normal_net_income_bn": 68.23509,
+          "diluted_shares_bn": 11.45,
+          "eps_quote_currency": 5.959396506550219
+        },
+        {
+          "year": 2029,
+          "case": "base",
+          "segments": [
+            {
+              "name": "AWS",
+              "market_or_revenue_anchor_bn": 170,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.72,
+              "share_factor": 1.0,
+              "revenue_bn": 292.4,
+              "operating_margin": 0.36,
+              "growth_bridge": "Q2年換算169を校正。投資倍率はサービス売上でなく利用率/価格/既存クラウド移行を介し独自倍率",
+              "macro_ai_capex_bn": 1700,
+              "independent_factor": 1.72
+            },
+            {
+              "name": "North America",
+              "market_or_revenue_anchor_bn": 480,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.27,
+              "share_factor": 1.0,
+              "revenue_bn": 609.6,
+              "operating_margin": 0.095,
+              "growth_bridge": "小売/広告/物流。AI売上追加を別加算しない",
+              "macro_ai_capex_bn": 1700,
+              "independent_factor": 1.27
+            },
+            {
+              "name": "International",
+              "market_or_revenue_anchor_bn": 180,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.27,
+              "share_factor": 1.0,
+              "revenue_bn": 228.6,
+              "operating_margin": 0.06,
+              "growth_bridge": "海外小売採算/広告",
+              "macro_ai_capex_bn": 1700,
+              "independent_factor": 1.27
+            }
+          ],
+          "revenue_bn": 1130.6,
+          "operating_income_bn": 176.892,
+          "unallocated_cost_bn": 0,
+          "net_finance_bn": -2,
+          "tax_rate": 0.23,
+          "minority_bn": 0,
+          "normal_net_income_bn": 134.66684,
+          "diluted_shares_bn": 11.22,
+          "eps_quote_currency": 12.002392156862745
+        },
+        {
+          "year": 2029,
+          "case": "strong",
+          "segments": [
+            {
+              "name": "AWS",
+              "market_or_revenue_anchor_bn": 170,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 2.35,
+              "share_factor": 1.0,
+              "revenue_bn": 399.5,
+              "operating_margin": 0.4,
+              "growth_bridge": "Q2年換算169を校正。投資倍率はサービス売上でなく利用率/価格/既存クラウド移行を介し独自倍率",
+              "macro_ai_capex_bn": 2500,
+              "independent_factor": 2.35
+            },
+            {
+              "name": "North America",
+              "market_or_revenue_anchor_bn": 480,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.44,
+              "share_factor": 1.0,
+              "revenue_bn": 691.1999999999999,
+              "operating_margin": 0.115,
+              "growth_bridge": "小売/広告/物流。AI売上追加を別加算しない",
+              "macro_ai_capex_bn": 2500,
+              "independent_factor": 1.44
+            },
+            {
+              "name": "International",
+              "market_or_revenue_anchor_bn": 180,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.48,
+              "share_factor": 1.0,
+              "revenue_bn": 266.4,
+              "operating_margin": 0.08,
+              "growth_bridge": "海外小売採算/広告",
+              "macro_ai_capex_bn": 2500,
+              "independent_factor": 1.48
+            }
+          ],
+          "revenue_bn": 1357.1,
+          "operating_income_bn": 260.6,
+          "unallocated_cost_bn": 0,
+          "net_finance_bn": -1,
+          "tax_rate": 0.23,
+          "minority_bn": 0,
+          "normal_net_income_bn": 199.89200000000002,
+          "diluted_shares_bn": 11.05,
+          "eps_quote_currency": 18.08977375565611
+        }
+      ]
+    },
+    {
+      "symbol": "GOOGL",
+      "name": "Alphabet",
+      "financial_currency": "USD",
+      "quote_currency": "USD",
+      "model_quality": "中低",
+      "anchor_facts": [
+        {
+          "date": "2026-07-22",
+          "scope": "実績・会社計画。将来モデルとは区別",
+          "facts": "Q2売上119.796/OP40.770。Services94.540/39.544、Cloud24.768/8.814、OtherBets.382/−1.799、本社AI R&D−5.789。希薄化12.309bn。その他利益97.983に未実現益。H1capex80.598。",
+          "sourceURLs": [
+            "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm",
+            "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm"
+          ]
+        }
+      ],
+      "method": "共有AI R&Dを年32–38bn別控除。潜在転換株を含む将来の完全希薄化株数を独自仮定。if-converted EPSと同様、優先配当は分子で加算戻すため別途二重控除しない。正式なGAAP EPS予想や転換時期の予想ではない。投資評価益0。",
+      "risks": "検索代替、設備償却、追加資金調達。優先株転換は将来株数に含む仮定。",
+      "terminal_pe": {
+        "weak": 18,
+        "base": 23,
+        "strong": 28
+      },
+      "terminal_pe_basis": "独自仮定。弱気は競争・景気循環で倍率縮小、標準は継続利益の成長と資本負担、強気は持続成長を反映。株価から逆算していない。",
+      "assumptions": {
+        "segments": [
+          {
+            "name": "Google Services",
+            "anchor": 380,
+            "growth": {
+              "2028": [
+                1.02,
+                1.18,
+                1.32
+              ],
+              "2029": [
+                1.02,
+                1.29,
+                1.52
+              ]
+            },
+            "margin": {
+              "2028": [
+                0.34,
+                0.4,
+                0.43
+              ],
+              "2029": [
+                0.32,
+                0.4,
+                0.44
+              ]
+            },
+            "bridge": "検索AI代替/広告単価/YouTube/サブスク。既存AI効果を重複加算しない",
+            "mode": "delivery"
+          },
+          {
+            "name": "Google Cloud",
+            "anchor": 99,
+            "growth": {
+              "2028": [
+                1.1,
+                1.48,
+                1.9
+              ],
+              "2029": [
+                1.15,
+                1.85,
+                2.65
+              ]
+            },
+            "margin": {
+              "2028": [
+                0.23,
+                0.32,
+                0.37
+              ],
+              "2029": [
+                0.22,
+                0.34,
+                0.39
+              ]
+            },
+            "bridge": "利用率/価格/企業クラウドとAI。AIcapexの直接売上換算ではない",
+            "mode": "delivery"
+          },
+          {
+            "name": "Other Bets",
+            "anchor": 1.6,
+            "growth": {
+              "2028": [
+                1,
+                1.3,
+                1.8
+              ],
+              "2029": [
+                1,
+                1.5,
+                2.4
+              ]
+            },
+            "margin": {
+              "2028": [
+                -3,
+                -2.5,
+                -2
+              ],
+              "2029": [
+                -3,
+                -2.3,
+                -1.5
+              ]
+            },
+            "bridge": "研究事業損失を保持",
+            "mode": "delivery"
+          }
+        ],
+        "shares": {
+          "2028": [
+            12.8,
+            12.55,
+            12.4
+          ],
+          "2029": [
+            13,
+            12.65,
+            12.4
+          ]
+        },
+        "finance": [
+          1,
+          2,
+          3
+        ],
+        "tax": 0.22,
+        "cost": [
+          32,
+          34,
+          38
+        ],
+        "minor": [
+          0,
+          0,
+          0
+        ]
+      },
+      "rows": [
+        {
+          "year": 2028,
+          "case": "weak",
+          "segments": [
+            {
+              "name": "Google Services",
+              "market_or_revenue_anchor_bn": 380,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.02,
+              "share_factor": 1.0,
+              "revenue_bn": 387.6,
+              "operating_margin": 0.34,
+              "growth_bridge": "検索AI代替/広告単価/YouTube/サブスク。既存AI効果を重複加算しない",
+              "macro_ai_capex_bn": 1000,
+              "independent_factor": 1.02
+            },
+            {
+              "name": "Google Cloud",
+              "market_or_revenue_anchor_bn": 99,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.1,
+              "share_factor": 1.0,
+              "revenue_bn": 108.9,
+              "operating_margin": 0.23,
+              "growth_bridge": "利用率/価格/企業クラウドとAI。AIcapexの直接売上換算ではない",
+              "macro_ai_capex_bn": 1000,
+              "independent_factor": 1.1
+            },
+            {
+              "name": "Other Bets",
+              "market_or_revenue_anchor_bn": 1.6,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1,
+              "share_factor": 1.0,
+              "revenue_bn": 1.6,
+              "operating_margin": -3,
+              "growth_bridge": "研究事業損失を保持",
+              "macro_ai_capex_bn": 1000,
+              "independent_factor": 1
+            }
+          ],
+          "revenue_bn": 498.1,
+          "operating_income_bn": 120.03100000000003,
+          "unallocated_cost_bn": 32,
+          "net_finance_bn": 1,
+          "tax_rate": 0.22,
+          "minority_bn": 0,
+          "normal_net_income_bn": 94.40418000000003,
+          "diluted_shares_bn": 12.8,
+          "eps_quote_currency": 7.3753265625000015
+        },
+        {
+          "year": 2028,
+          "case": "base",
+          "segments": [
+            {
+              "name": "Google Services",
+              "market_or_revenue_anchor_bn": 380,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.18,
+              "share_factor": 1.0,
+              "revenue_bn": 448.4,
+              "operating_margin": 0.4,
+              "growth_bridge": "検索AI代替/広告単価/YouTube/サブスク。既存AI効果を重複加算しない",
+              "macro_ai_capex_bn": 1400,
+              "independent_factor": 1.18
+            },
+            {
+              "name": "Google Cloud",
+              "market_or_revenue_anchor_bn": 99,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.48,
+              "share_factor": 1.0,
+              "revenue_bn": 146.52,
+              "operating_margin": 0.32,
+              "growth_bridge": "利用率/価格/企業クラウドとAI。AIcapexの直接売上換算ではない",
+              "macro_ai_capex_bn": 1400,
+              "independent_factor": 1.48
+            },
+            {
+              "name": "Other Bets",
+              "market_or_revenue_anchor_bn": 1.6,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.3,
+              "share_factor": 1.0,
+              "revenue_bn": 2.08,
+              "operating_margin": -2.5,
+              "growth_bridge": "研究事業損失を保持",
+              "macro_ai_capex_bn": 1400,
+              "independent_factor": 1.3
+            }
+          ],
+          "revenue_bn": 597.0,
+          "operating_income_bn": 187.0464,
+          "unallocated_cost_bn": 34,
+          "net_finance_bn": 2,
+          "tax_rate": 0.22,
+          "minority_bn": 0,
+          "normal_net_income_bn": 147.45619200000002,
+          "diluted_shares_bn": 12.55,
+          "eps_quote_currency": 11.749497370517929
+        },
+        {
+          "year": 2028,
+          "case": "strong",
+          "segments": [
+            {
+              "name": "Google Services",
+              "market_or_revenue_anchor_bn": 380,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.32,
+              "share_factor": 1.0,
+              "revenue_bn": 501.6,
+              "operating_margin": 0.43,
+              "growth_bridge": "検索AI代替/広告単価/YouTube/サブスク。既存AI効果を重複加算しない",
+              "macro_ai_capex_bn": 1900,
+              "independent_factor": 1.32
+            },
+            {
+              "name": "Google Cloud",
+              "market_or_revenue_anchor_bn": 99,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.9,
+              "share_factor": 1.0,
+              "revenue_bn": 188.1,
+              "operating_margin": 0.37,
+              "growth_bridge": "利用率/価格/企業クラウドとAI。AIcapexの直接売上換算ではない",
+              "macro_ai_capex_bn": 1900,
+              "independent_factor": 1.9
+            },
+            {
+              "name": "Other Bets",
+              "market_or_revenue_anchor_bn": 1.6,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.8,
+              "share_factor": 1.0,
+              "revenue_bn": 2.8800000000000003,
+              "operating_margin": -2,
+              "growth_bridge": "研究事業損失を保持",
+              "macro_ai_capex_bn": 1900,
+              "independent_factor": 1.8
+            }
+          ],
+          "revenue_bn": 692.58,
+          "operating_income_bn": 241.52500000000003,
+          "unallocated_cost_bn": 38,
+          "net_finance_bn": 3,
+          "tax_rate": 0.22,
+          "minority_bn": 0,
+          "normal_net_income_bn": 190.72950000000003,
+          "diluted_shares_bn": 12.4,
+          "eps_quote_currency": 15.381411290322582
+        },
+        {
+          "year": 2029,
+          "case": "weak",
+          "segments": [
+            {
+              "name": "Google Services",
+              "market_or_revenue_anchor_bn": 380,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.02,
+              "share_factor": 1.0,
+              "revenue_bn": 387.6,
+              "operating_margin": 0.32,
+              "growth_bridge": "検索AI代替/広告単価/YouTube/サブスク。既存AI効果を重複加算しない",
+              "macro_ai_capex_bn": 950,
+              "independent_factor": 1.02
+            },
+            {
+              "name": "Google Cloud",
+              "market_or_revenue_anchor_bn": 99,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.15,
+              "share_factor": 1.0,
+              "revenue_bn": 113.85,
+              "operating_margin": 0.22,
+              "growth_bridge": "利用率/価格/企業クラウドとAI。AIcapexの直接売上換算ではない",
+              "macro_ai_capex_bn": 950,
+              "independent_factor": 1.15
+            },
+            {
+              "name": "Other Bets",
+              "market_or_revenue_anchor_bn": 1.6,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1,
+              "share_factor": 1.0,
+              "revenue_bn": 1.6,
+              "operating_margin": -3,
+              "growth_bridge": "研究事業損失を保持",
+              "macro_ai_capex_bn": 950,
+              "independent_factor": 1
+            }
+          ],
+          "revenue_bn": 503.05,
+          "operating_income_bn": 112.279,
+          "unallocated_cost_bn": 32,
+          "net_finance_bn": 1,
+          "tax_rate": 0.22,
+          "minority_bn": 0,
+          "normal_net_income_bn": 88.35762,
+          "diluted_shares_bn": 13,
+          "eps_quote_currency": 6.79674
+        },
+        {
+          "year": 2029,
+          "case": "base",
+          "segments": [
+            {
+              "name": "Google Services",
+              "market_or_revenue_anchor_bn": 380,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.29,
+              "share_factor": 1.0,
+              "revenue_bn": 490.2,
+              "operating_margin": 0.4,
+              "growth_bridge": "検索AI代替/広告単価/YouTube/サブスク。既存AI効果を重複加算しない",
+              "macro_ai_capex_bn": 1700,
+              "independent_factor": 1.29
+            },
+            {
+              "name": "Google Cloud",
+              "market_or_revenue_anchor_bn": 99,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.85,
+              "share_factor": 1.0,
+              "revenue_bn": 183.15,
+              "operating_margin": 0.34,
+              "growth_bridge": "利用率/価格/企業クラウドとAI。AIcapexの直接売上換算ではない",
+              "macro_ai_capex_bn": 1700,
+              "independent_factor": 1.85
+            },
+            {
+              "name": "Other Bets",
+              "market_or_revenue_anchor_bn": 1.6,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.5,
+              "share_factor": 1.0,
+              "revenue_bn": 2.4000000000000004,
+              "operating_margin": -2.3,
+              "growth_bridge": "研究事業損失を保持",
+              "macro_ai_capex_bn": 1700,
+              "independent_factor": 1.5
+            }
+          ],
+          "revenue_bn": 675.75,
+          "operating_income_bn": 218.83100000000002,
+          "unallocated_cost_bn": 34,
+          "net_finance_bn": 2,
+          "tax_rate": 0.22,
+          "minority_bn": 0,
+          "normal_net_income_bn": 172.24818000000002,
+          "diluted_shares_bn": 12.65,
+          "eps_quote_currency": 13.616456916996048
+        },
+        {
+          "year": 2029,
+          "case": "strong",
+          "segments": [
+            {
+              "name": "Google Services",
+              "market_or_revenue_anchor_bn": 380,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.52,
+              "share_factor": 1.0,
+              "revenue_bn": 577.6,
+              "operating_margin": 0.44,
+              "growth_bridge": "検索AI代替/広告単価/YouTube/サブスク。既存AI効果を重複加算しない",
+              "macro_ai_capex_bn": 2500,
+              "independent_factor": 1.52
+            },
+            {
+              "name": "Google Cloud",
+              "market_or_revenue_anchor_bn": 99,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 2.65,
+              "share_factor": 1.0,
+              "revenue_bn": 262.34999999999997,
+              "operating_margin": 0.39,
+              "growth_bridge": "利用率/価格/企業クラウドとAI。AIcapexの直接売上換算ではない",
+              "macro_ai_capex_bn": 2500,
+              "independent_factor": 2.65
+            },
+            {
+              "name": "Other Bets",
+              "market_or_revenue_anchor_bn": 1.6,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 2.4,
+              "share_factor": 1.0,
+              "revenue_bn": 3.84,
+              "operating_margin": -1.5,
+              "growth_bridge": "研究事業損失を保持",
+              "macro_ai_capex_bn": 2500,
+              "independent_factor": 2.4
+            }
+          ],
+          "revenue_bn": 843.79,
+          "operating_income_bn": 312.7005,
+          "unallocated_cost_bn": 38,
+          "net_finance_bn": 3,
+          "tax_rate": 0.22,
+          "minority_bn": 0,
+          "normal_net_income_bn": 246.24639,
+          "diluted_shares_bn": 12.4,
+          "eps_quote_currency": 19.858579838709677
+        }
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "name": "Apple",
+      "financial_currency": "USD",
+      "quote_currency": "USD",
+      "model_quality": "中低",
+      "anchor_facts": [
+        {
+          "date": "2026-07-30",
+          "scope": "実績・会社計画。将来モデルとは区別",
+          "facts": "FY26Q3売上109.417/OP35.695/NI29.789/希薄化14.714676bn。9m売上364.357/OP122.432。Q3Services30.739。関税返金がGM約2pp/EPS.11押上げ。",
+          "sourceURLs": [
+            "https://www.apple.com/newsroom/pdfs/fy2026q3/FY26_Q3_Consolidated_Financial_Statements.pdf",
+            "https://www.apple.com/newsroom/2026/07/apple-reports-third-quarter-results/"
+          ]
+        }
+      ],
+      "method": "9mとQ3を用いた独自年間校正。季節性があり会社FY予想ではない。関税返金を外し継続営業率設定。SBC/R&D/償却を配賦後。",
+      "risks": "AI収益化は不確実。AppStore規制、中国競争。買戻し減少ならEPS低下。",
+      "terminal_pe": {
+        "weak": 20,
+        "base": 26,
+        "strong": 32
+      },
+      "terminal_pe_basis": "独自仮定。弱気は競争・景気循環で倍率縮小、標準は継続利益の成長と資本負担、強気は持続成長を反映。株価から逆算していない。",
+      "assumptions": {
+        "segments": [
+          {
+            "name": "Products",
+            "anchor": 350,
+            "growth": {
+              "2028": [
+                0.98,
+                1.1,
+                1.24
+              ],
+              "2029": [
+                0.97,
+                1.16,
+                1.38
+              ]
+            },
+            "margin": {
+              "2028": [
+                0.22,
+                0.26,
+                0.29
+              ],
+              "2029": [
+                0.21,
+                0.27,
+                0.3
+              ]
+            },
+            "bridge": "独自年間校正。AI端末更新・シェア・価格と製品循環。設備投資倍率との直接連動なし",
+            "mode": "delivery"
+          },
+          {
+            "name": "Services",
+            "anchor": 123,
+            "growth": {
+              "2028": [
+                1.12,
+                1.27,
+                1.42
+              ],
+              "2029": [
+                1.18,
+                1.44,
+                1.68
+              ]
+            },
+            "margin": {
+              "2028": [
+                0.4,
+                0.46,
+                0.5
+              ],
+              "2029": [
+                0.39,
+                0.47,
+                0.51
+              ]
+            },
+            "bridge": "インストール基盤/課金/広告、規制リスク。共有R&DとSG&Aを配賦した営業率",
+            "mode": "delivery"
+          }
+        ],
+        "shares": {
+          "2028": [
+            14.5,
+            14.1,
+            13.8
+          ],
+          "2029": [
+            14.4,
+            13.8,
+            13.3
+          ]
+        },
+        "finance": [
+          -1,
+          0,
+          1
+        ],
+        "tax": 0.18,
+        "cost": [
+          0,
+          0,
+          0
+        ],
+        "minor": [
+          0,
+          0,
+          0
+        ]
+      },
+      "rows": [
+        {
+          "year": 2028,
+          "case": "weak",
+          "segments": [
+            {
+              "name": "Products",
+              "market_or_revenue_anchor_bn": 350,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 0.98,
+              "share_factor": 1.0,
+              "revenue_bn": 343.0,
+              "operating_margin": 0.22,
+              "growth_bridge": "独自年間校正。AI端末更新・シェア・価格と製品循環。設備投資倍率との直接連動なし",
+              "macro_ai_capex_bn": 1000,
+              "independent_factor": 0.98
+            },
+            {
+              "name": "Services",
+              "market_or_revenue_anchor_bn": 123,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.12,
+              "share_factor": 1.0,
+              "revenue_bn": 137.76000000000002,
+              "operating_margin": 0.4,
+              "growth_bridge": "インストール基盤/課金/広告、規制リスク。共有R&DとSG&Aを配賦した営業率",
+              "macro_ai_capex_bn": 1000,
+              "independent_factor": 1.12
+            }
+          ],
+          "revenue_bn": 480.76,
+          "operating_income_bn": 130.56400000000002,
+          "unallocated_cost_bn": 0,
+          "net_finance_bn": -1,
+          "tax_rate": 0.18,
+          "minority_bn": 0,
+          "normal_net_income_bn": 106.24248000000003,
+          "diluted_shares_bn": 14.5,
+          "eps_quote_currency": 7.327067586206899
+        },
+        {
+          "year": 2028,
+          "case": "base",
+          "segments": [
+            {
+              "name": "Products",
+              "market_or_revenue_anchor_bn": 350,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.1,
+              "share_factor": 1.0,
+              "revenue_bn": 385.00000000000006,
+              "operating_margin": 0.26,
+              "growth_bridge": "独自年間校正。AI端末更新・シェア・価格と製品循環。設備投資倍率との直接連動なし",
+              "macro_ai_capex_bn": 1400,
+              "independent_factor": 1.1
+            },
+            {
+              "name": "Services",
+              "market_or_revenue_anchor_bn": 123,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.27,
+              "share_factor": 1.0,
+              "revenue_bn": 156.21,
+              "operating_margin": 0.46,
+              "growth_bridge": "インストール基盤/課金/広告、規制リスク。共有R&DとSG&Aを配賦した営業率",
+              "macro_ai_capex_bn": 1400,
+              "independent_factor": 1.27
+            }
+          ],
+          "revenue_bn": 541.21,
+          "operating_income_bn": 171.95660000000004,
+          "unallocated_cost_bn": 0,
+          "net_finance_bn": 0,
+          "tax_rate": 0.18,
+          "minority_bn": 0,
+          "normal_net_income_bn": 141.00441200000003,
+          "diluted_shares_bn": 14.1,
+          "eps_quote_currency": 10.00031290780142
+        },
+        {
+          "year": 2028,
+          "case": "strong",
+          "segments": [
+            {
+              "name": "Products",
+              "market_or_revenue_anchor_bn": 350,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.24,
+              "share_factor": 1.0,
+              "revenue_bn": 434.0,
+              "operating_margin": 0.29,
+              "growth_bridge": "独自年間校正。AI端末更新・シェア・価格と製品循環。設備投資倍率との直接連動なし",
+              "macro_ai_capex_bn": 1900,
+              "independent_factor": 1.24
+            },
+            {
+              "name": "Services",
+              "market_or_revenue_anchor_bn": 123,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.42,
+              "share_factor": 1.0,
+              "revenue_bn": 174.66,
+              "operating_margin": 0.5,
+              "growth_bridge": "インストール基盤/課金/広告、規制リスク。共有R&DとSG&Aを配賦した営業率",
+              "macro_ai_capex_bn": 1900,
+              "independent_factor": 1.42
+            }
+          ],
+          "revenue_bn": 608.66,
+          "operating_income_bn": 213.19,
+          "unallocated_cost_bn": 0,
+          "net_finance_bn": 1,
+          "tax_rate": 0.18,
+          "minority_bn": 0,
+          "normal_net_income_bn": 175.63580000000002,
+          "diluted_shares_bn": 13.8,
+          "eps_quote_currency": 12.727231884057971
+        },
+        {
+          "year": 2029,
+          "case": "weak",
+          "segments": [
+            {
+              "name": "Products",
+              "market_or_revenue_anchor_bn": 350,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 0.97,
+              "share_factor": 1.0,
+              "revenue_bn": 339.5,
+              "operating_margin": 0.21,
+              "growth_bridge": "独自年間校正。AI端末更新・シェア・価格と製品循環。設備投資倍率との直接連動なし",
+              "macro_ai_capex_bn": 950,
+              "independent_factor": 0.97
+            },
+            {
+              "name": "Services",
+              "market_or_revenue_anchor_bn": 123,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.18,
+              "share_factor": 1.0,
+              "revenue_bn": 145.14,
+              "operating_margin": 0.39,
+              "growth_bridge": "インストール基盤/課金/広告、規制リスク。共有R&DとSG&Aを配賦した営業率",
+              "macro_ai_capex_bn": 950,
+              "independent_factor": 1.18
+            }
+          ],
+          "revenue_bn": 484.64,
+          "operating_income_bn": 127.89959999999999,
+          "unallocated_cost_bn": 0,
+          "net_finance_bn": -1,
+          "tax_rate": 0.18,
+          "minority_bn": 0,
+          "normal_net_income_bn": 104.057672,
+          "diluted_shares_bn": 14.4,
+          "eps_quote_currency": 7.226227222222222
+        },
+        {
+          "year": 2029,
+          "case": "base",
+          "segments": [
+            {
+              "name": "Products",
+              "market_or_revenue_anchor_bn": 350,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.16,
+              "share_factor": 1.0,
+              "revenue_bn": 406.0,
+              "operating_margin": 0.27,
+              "growth_bridge": "独自年間校正。AI端末更新・シェア・価格と製品循環。設備投資倍率との直接連動なし",
+              "macro_ai_capex_bn": 1700,
+              "independent_factor": 1.16
+            },
+            {
+              "name": "Services",
+              "market_or_revenue_anchor_bn": 123,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.44,
+              "share_factor": 1.0,
+              "revenue_bn": 177.12,
+              "operating_margin": 0.47,
+              "growth_bridge": "インストール基盤/課金/広告、規制リスク。共有R&DとSG&Aを配賦した営業率",
+              "macro_ai_capex_bn": 1700,
+              "independent_factor": 1.44
+            }
+          ],
+          "revenue_bn": 583.12,
+          "operating_income_bn": 192.8664,
+          "unallocated_cost_bn": 0,
+          "net_finance_bn": 0,
+          "tax_rate": 0.18,
+          "minority_bn": 0,
+          "normal_net_income_bn": 158.150448,
+          "diluted_shares_bn": 13.8,
+          "eps_quote_currency": 11.460177391304349
+        },
+        {
+          "year": 2029,
+          "case": "strong",
+          "segments": [
+            {
+              "name": "Products",
+              "market_or_revenue_anchor_bn": 350,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.38,
+              "share_factor": 1.0,
+              "revenue_bn": 482.99999999999994,
+              "operating_margin": 0.3,
+              "growth_bridge": "独自年間校正。AI端末更新・シェア・価格と製品循環。設備投資倍率との直接連動なし",
+              "macro_ai_capex_bn": 2500,
+              "independent_factor": 1.38
+            },
+            {
+              "name": "Services",
+              "market_or_revenue_anchor_bn": 123,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.68,
+              "share_factor": 1.0,
+              "revenue_bn": 206.64,
+              "operating_margin": 0.51,
+              "growth_bridge": "インストール基盤/課金/広告、規制リスク。共有R&DとSG&Aを配賦した営業率",
+              "macro_ai_capex_bn": 2500,
+              "independent_factor": 1.68
+            }
+          ],
+          "revenue_bn": 689.6399999999999,
+          "operating_income_bn": 250.28639999999996,
+          "unallocated_cost_bn": 0,
+          "net_finance_bn": 1,
+          "tax_rate": 0.18,
+          "minority_bn": 0,
+          "normal_net_income_bn": 206.054848,
+          "diluted_shares_bn": 13.3,
+          "eps_quote_currency": 15.492845714285712
+        }
+      ]
+    },
+    {
+      "symbol": "7011.T",
+      "name": "三菱重工業",
+      "financial_currency": "JPY",
+      "quote_currency": "JPY",
+      "model_quality": "中低",
+      "anchor_facts": [
+        {
+          "date": "2026-08-04",
+          "scope": "実績・会社計画。将来モデルとは区別",
+          "facts": "FY26会社売上5400/事業利益540/NI380/EPS113.09。GTCC売上計画1100、Energy2200。GTCC能力FY28まで30%増。Q1NIに為替益。",
+          "sourceURLs": [
+            "https://www.mhi.com/finance/library/result/pdf/fy20261q/presentation.pdf"
+          ]
+        }
+      ],
+      "method": "2024年1:10分割後の株数を会社予想NI/EPSから校正。全社費用を別控除。",
+      "risks": "長期工事原価・検収、円高、防衛案件。事業利益内の非反復損益を将来算入しない。",
+      "terminal_pe": {
+        "weak": 16,
+        "base": 22,
+        "strong": 28
+      },
+      "terminal_pe_basis": "独自仮定。弱気は競争・景気循環で倍率縮小、標準は継続利益の成長と資本負担、強気は持続成長を反映。株価から逆算していない。",
+      "assumptions": {
+        "segments": [
+          {
+            "name": "GTCC",
+            "anchor": 1100,
+            "growth": {
+              "2028": [
+                1.15,
+                1.35,
+                1.55
+              ],
+              "2029": [
+                1.22,
+                1.55,
+                1.85
+              ]
+            },
+            "margin": {
+              "2028": [
+                0.15,
+                0.2,
+                0.24
+              ],
+              "2029": [
+                0.15,
+                0.22,
+                0.26
+              ]
+            },
+            "bridge": "能力+30%に価格/工事進捗/サービスを合わせる。強気は能力超の売上増で執行リスク高",
+            "mode": "delivery"
+          },
+          {
+            "name": "Energy残余",
+            "anchor": 1100,
+            "growth": {
+              "2028": [
+                1.05,
+                1.15,
+                1.25
+              ],
+              "2029": [
+                1.08,
+                1.25,
+                1.4
+              ]
+            },
+            "margin": {
+              "2028": [
+                0.1,
+                0.14,
+                0.17
+              ],
+              "2029": [
+                0.1,
+                0.15,
+                0.18
+              ]
+            },
+            "bridge": "原子力/航空エンジン等",
+            "mode": "delivery"
+          },
+          {
+            "name": "その他3部門",
+            "anchor": 3200,
+            "growth": {
+              "2028": [
+                1.05,
+                1.16,
+                1.28
+              ],
+              "2029": [
+                1.08,
+                1.26,
+                1.46
+              ]
+            },
+            "margin": {
+              "2028": [
+                0.08,
+                0.095,
+                0.11
+              ],
+              "2029": [
+                0.08,
+                0.1,
+                0.12
+              ]
+            },
+            "bridge": "防衛/インフラ/産業。AIと別",
+            "mode": "delivery"
+          }
+        ],
+        "shares": {
+          "2028": [
+            3.38,
+            3.36,
+            3.33
+          ],
+          "2029": [
+            3.4,
+            3.36,
+            3.3
+          ]
+        },
+        "finance": [
+          -10,
+          0,
+          10
+        ],
+        "tax": 0.3,
+        "cost": [
+          100,
+          105,
+          115
+        ],
+        "minor": [
+          8,
+          10,
+          12
+        ]
+      },
+      "rows": [
+        {
+          "year": 2028,
+          "case": "weak",
+          "segments": [
+            {
+              "name": "GTCC",
+              "market_or_revenue_anchor_bn": 1100,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.15,
+              "share_factor": 1.0,
+              "revenue_bn": 1265.0,
+              "operating_margin": 0.15,
+              "growth_bridge": "能力+30%に価格/工事進捗/サービスを合わせる。強気は能力超の売上増で執行リスク高",
+              "macro_ai_capex_bn": 1000,
+              "independent_factor": 1.15
+            },
+            {
+              "name": "Energy残余",
+              "market_or_revenue_anchor_bn": 1100,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.05,
+              "share_factor": 1.0,
+              "revenue_bn": 1155.0,
+              "operating_margin": 0.1,
+              "growth_bridge": "原子力/航空エンジン等",
+              "macro_ai_capex_bn": 1000,
+              "independent_factor": 1.05
+            },
+            {
+              "name": "その他3部門",
+              "market_or_revenue_anchor_bn": 3200,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.05,
+              "share_factor": 1.0,
+              "revenue_bn": 3360.0,
+              "operating_margin": 0.08,
+              "growth_bridge": "防衛/インフラ/産業。AIと別",
+              "macro_ai_capex_bn": 1000,
+              "independent_factor": 1.05
+            }
+          ],
+          "revenue_bn": 5780.0,
+          "operating_income_bn": 474.04999999999995,
+          "unallocated_cost_bn": 100,
+          "net_finance_bn": -10,
+          "tax_rate": 0.3,
+          "minority_bn": 8,
+          "normal_net_income_bn": 316.8349999999999,
+          "diluted_shares_bn": 3.38,
+          "eps_quote_currency": 93.73816568047336
+        },
+        {
+          "year": 2028,
+          "case": "base",
+          "segments": [
+            {
+              "name": "GTCC",
+              "market_or_revenue_anchor_bn": 1100,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.35,
+              "share_factor": 1.0,
+              "revenue_bn": 1485.0,
+              "operating_margin": 0.2,
+              "growth_bridge": "能力+30%に価格/工事進捗/サービスを合わせる。強気は能力超の売上増で執行リスク高",
+              "macro_ai_capex_bn": 1400,
+              "independent_factor": 1.35
+            },
+            {
+              "name": "Energy残余",
+              "market_or_revenue_anchor_bn": 1100,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.15,
+              "share_factor": 1.0,
+              "revenue_bn": 1265.0,
+              "operating_margin": 0.14,
+              "growth_bridge": "原子力/航空エンジン等",
+              "macro_ai_capex_bn": 1400,
+              "independent_factor": 1.15
+            },
+            {
+              "name": "その他3部門",
+              "market_or_revenue_anchor_bn": 3200,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.16,
+              "share_factor": 1.0,
+              "revenue_bn": 3711.9999999999995,
+              "operating_margin": 0.095,
+              "growth_bridge": "防衛/インフラ/産業。AIと別",
+              "macro_ai_capex_bn": 1400,
+              "independent_factor": 1.16
+            }
+          ],
+          "revenue_bn": 6462.0,
+          "operating_income_bn": 721.74,
+          "unallocated_cost_bn": 105,
+          "net_finance_bn": 0,
+          "tax_rate": 0.3,
+          "minority_bn": 10,
+          "normal_net_income_bn": 495.21799999999996,
+          "diluted_shares_bn": 3.36,
+          "eps_quote_currency": 147.38630952380953
+        },
+        {
+          "year": 2028,
+          "case": "strong",
+          "segments": [
+            {
+              "name": "GTCC",
+              "market_or_revenue_anchor_bn": 1100,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.55,
+              "share_factor": 1.0,
+              "revenue_bn": 1705.0,
+              "operating_margin": 0.24,
+              "growth_bridge": "能力+30%に価格/工事進捗/サービスを合わせる。強気は能力超の売上増で執行リスク高",
+              "macro_ai_capex_bn": 1900,
+              "independent_factor": 1.55
+            },
+            {
+              "name": "Energy残余",
+              "market_or_revenue_anchor_bn": 1100,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.25,
+              "share_factor": 1.0,
+              "revenue_bn": 1375.0,
+              "operating_margin": 0.17,
+              "growth_bridge": "原子力/航空エンジン等",
+              "macro_ai_capex_bn": 1900,
+              "independent_factor": 1.25
+            },
+            {
+              "name": "その他3部門",
+              "market_or_revenue_anchor_bn": 3200,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.28,
+              "share_factor": 1.0,
+              "revenue_bn": 4096.0,
+              "operating_margin": 0.11,
+              "growth_bridge": "防衛/インフラ/産業。AIと別",
+              "macro_ai_capex_bn": 1900,
+              "independent_factor": 1.28
+            }
+          ],
+          "revenue_bn": 7176.0,
+          "operating_income_bn": 978.51,
+          "unallocated_cost_bn": 115,
+          "net_finance_bn": 10,
+          "tax_rate": 0.3,
+          "minority_bn": 12,
+          "normal_net_income_bn": 679.957,
+          "diluted_shares_bn": 3.33,
+          "eps_quote_currency": 204.1912912912913
+        },
+        {
+          "year": 2029,
+          "case": "weak",
+          "segments": [
+            {
+              "name": "GTCC",
+              "market_or_revenue_anchor_bn": 1100,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.22,
+              "share_factor": 1.0,
+              "revenue_bn": 1342.0,
+              "operating_margin": 0.15,
+              "growth_bridge": "能力+30%に価格/工事進捗/サービスを合わせる。強気は能力超の売上増で執行リスク高",
+              "macro_ai_capex_bn": 950,
+              "independent_factor": 1.22
+            },
+            {
+              "name": "Energy残余",
+              "market_or_revenue_anchor_bn": 1100,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.08,
+              "share_factor": 1.0,
+              "revenue_bn": 1188.0,
+              "operating_margin": 0.1,
+              "growth_bridge": "原子力/航空エンジン等",
+              "macro_ai_capex_bn": 950,
+              "independent_factor": 1.08
+            },
+            {
+              "name": "その他3部門",
+              "market_or_revenue_anchor_bn": 3200,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.08,
+              "share_factor": 1.0,
+              "revenue_bn": 3456.0,
+              "operating_margin": 0.08,
+              "growth_bridge": "防衛/インフラ/産業。AIと別",
+              "macro_ai_capex_bn": 950,
+              "independent_factor": 1.08
+            }
+          ],
+          "revenue_bn": 5986.0,
+          "operating_income_bn": 496.58000000000004,
+          "unallocated_cost_bn": 100,
+          "net_finance_bn": -10,
+          "tax_rate": 0.3,
+          "minority_bn": 8,
+          "normal_net_income_bn": 332.606,
+          "diluted_shares_bn": 3.4,
+          "eps_quote_currency": 97.82529411764706
+        },
+        {
+          "year": 2029,
+          "case": "base",
+          "segments": [
+            {
+              "name": "GTCC",
+              "market_or_revenue_anchor_bn": 1100,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.55,
+              "share_factor": 1.0,
+              "revenue_bn": 1705.0,
+              "operating_margin": 0.22,
+              "growth_bridge": "能力+30%に価格/工事進捗/サービスを合わせる。強気は能力超の売上増で執行リスク高",
+              "macro_ai_capex_bn": 1700,
+              "independent_factor": 1.55
+            },
+            {
+              "name": "Energy残余",
+              "market_or_revenue_anchor_bn": 1100,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.25,
+              "share_factor": 1.0,
+              "revenue_bn": 1375.0,
+              "operating_margin": 0.15,
+              "growth_bridge": "原子力/航空エンジン等",
+              "macro_ai_capex_bn": 1700,
+              "independent_factor": 1.25
+            },
+            {
+              "name": "その他3部門",
+              "market_or_revenue_anchor_bn": 3200,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.26,
+              "share_factor": 1.0,
+              "revenue_bn": 4032.0,
+              "operating_margin": 0.1,
+              "growth_bridge": "防衛/インフラ/産業。AIと別",
+              "macro_ai_capex_bn": 1700,
+              "independent_factor": 1.26
+            }
+          ],
+          "revenue_bn": 7112.0,
+          "operating_income_bn": 879.5500000000001,
+          "unallocated_cost_bn": 105,
+          "net_finance_bn": 0,
+          "tax_rate": 0.3,
+          "minority_bn": 10,
+          "normal_net_income_bn": 605.6850000000001,
+          "diluted_shares_bn": 3.36,
+          "eps_quote_currency": 180.2633928571429
+        },
+        {
+          "year": 2029,
+          "case": "strong",
+          "segments": [
+            {
+              "name": "GTCC",
+              "market_or_revenue_anchor_bn": 1100,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.85,
+              "share_factor": 1.0,
+              "revenue_bn": 2035.0,
+              "operating_margin": 0.26,
+              "growth_bridge": "能力+30%に価格/工事進捗/サービスを合わせる。強気は能力超の売上増で執行リスク高",
+              "macro_ai_capex_bn": 2500,
+              "independent_factor": 1.85
+            },
+            {
+              "name": "Energy残余",
+              "market_or_revenue_anchor_bn": 1100,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.4,
+              "share_factor": 1.0,
+              "revenue_bn": 1540.0,
+              "operating_margin": 0.18,
+              "growth_bridge": "原子力/航空エンジン等",
+              "macro_ai_capex_bn": 2500,
+              "independent_factor": 1.4
+            },
+            {
+              "name": "その他3部門",
+              "market_or_revenue_anchor_bn": 3200,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.46,
+              "share_factor": 1.0,
+              "revenue_bn": 4672.0,
+              "operating_margin": 0.12,
+              "growth_bridge": "防衛/インフラ/産業。AIと別",
+              "macro_ai_capex_bn": 2500,
+              "independent_factor": 1.46
+            }
+          ],
+          "revenue_bn": 8247.0,
+          "operating_income_bn": 1251.94,
+          "unallocated_cost_bn": 115,
+          "net_finance_bn": 10,
+          "tax_rate": 0.3,
+          "minority_bn": 12,
+          "normal_net_income_bn": 871.358,
+          "diluted_shares_bn": 3.3,
+          "eps_quote_currency": 264.0478787878788
+        }
+      ]
+    },
+    {
+      "symbol": "GEV",
+      "name": "GE Vernova",
+      "financial_currency": "USD",
+      "quote_currency": "USD",
+      "model_quality": "中低",
+      "anchor_facts": [
+        {
+          "date": "2026-07-22",
+          "scope": "実績・会社計画。将来モデルとは区別",
+          "facts": "Q2売上11.1、Power5.5/EBITDA18.8%、Electrification3.6/18.4%、Wind EBITDA−.275。受注残176。ガス能力20GW26年→24GW28年。希薄化.270bn。Prolec再評価益3.992、過去税便益2.9は除外。",
+          "sourceURLs": [
+            "https://www.gevernova.com/sites/default/files/gev_webcast_pressrelease_07222026.pdf",
+            "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000148/gev-20260630.htm"
+          ]
+        },
+        {
+          "date": "2026-01-28",
+          "scope": "2025Q4実績。一時税便益の除外根拠",
+          "facts": "Q4の税便益約2.9bnUSDを将来継続利益へ延長しない。",
+          "sourceURLs": [
+            "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000012/gevpressrelease4q25.htm"
+          ]
+        }
+      ],
+      "method": "Q2年換算独自売上校正。EBITDA率をそのまま使用せず償却後営業率。税便益や投資再評価なし。",
+      "risks": "前受CFは恒常利益でない。風力損失、ガス納期遅延。",
+      "terminal_pe": {
+        "weak": 18,
+        "base": 25,
+        "strong": 32
+      },
+      "terminal_pe_basis": "独自仮定。弱気は競争・景気循環で倍率縮小、標準は継続利益の成長と資本負担、強気は持続成長を反映。株価から逆算していない。",
+      "assumptions": {
+        "segments": [
+          {
+            "name": "Power",
+            "anchor": 22,
+            "growth": {
+              "2028": [
+                1.1,
+                1.25,
+                1.4
+              ],
+              "2029": [
+                1.17,
+                1.4,
+                1.65
+              ]
+            },
+            "margin": {
+              "2028": [
+                0.14,
+                0.19,
+                0.23
+              ],
+              "2029": [
+                0.14,
+                0.21,
+                0.25
+              ]
+            },
+            "bridge": "能力増/高採算受注納入/既存サービス。予約116GWは全量確定受注ではない",
+            "mode": "delivery"
+          },
+          {
+            "name": "Electrification",
+            "anchor": 14.4,
+            "growth": {
+              "2028": [
+                1.12,
+                1.4,
+                1.65
+              ],
+              "2029": [
+                1.2,
+                1.65,
+                2.05
+              ]
+            },
+            "margin": {
+              "2028": [
+                0.13,
+                0.19,
+                0.23
+              ],
+              "2029": [
+                0.13,
+                0.21,
+                0.25
+              ]
+            },
+            "bridge": "送電受注・生産能力。Prolec取得償却を営業率内控除",
+            "mode": "delivery"
+          },
+          {
+            "name": "Wind",
+            "anchor": 8,
+            "growth": {
+              "2028": [
+                0.9,
+                1.05,
+                1.2
+              ],
+              "2029": [
+                0.9,
+                1.12,
+                1.35
+              ]
+            },
+            "margin": {
+              "2028": [
+                -0.1,
+                0,
+                0.04
+              ],
+              "2029": [
+                -0.08,
+                0.02,
+                0.06
+              ]
+            },
+            "bridge": "品質/案件再建シナリオ",
+            "mode": "delivery"
+          }
+        ],
+        "shares": {
+          "2028": [
+            0.272,
+            0.264,
+            0.256
+          ],
+          "2029": [
+            0.274,
+            0.26,
+            0.248
+          ]
+        },
+        "finance": [
+          0.1,
+          0.2,
+          0.3
+        ],
+        "tax": 0.25,
+        "cost": [
+          0.8,
+          0.8,
+          0.9
+        ],
+        "minor": [
+          0.05,
+          0.05,
+          0.06
+        ]
+      },
+      "rows": [
+        {
+          "year": 2028,
+          "case": "weak",
+          "segments": [
+            {
+              "name": "Power",
+              "market_or_revenue_anchor_bn": 22,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.1,
+              "share_factor": 1.0,
+              "revenue_bn": 24.200000000000003,
+              "operating_margin": 0.14,
+              "growth_bridge": "能力増/高採算受注納入/既存サービス。予約116GWは全量確定受注ではない",
+              "macro_ai_capex_bn": 1000,
+              "independent_factor": 1.1
+            },
+            {
+              "name": "Electrification",
+              "market_or_revenue_anchor_bn": 14.4,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.12,
+              "share_factor": 1.0,
+              "revenue_bn": 16.128000000000004,
+              "operating_margin": 0.13,
+              "growth_bridge": "送電受注・生産能力。Prolec取得償却を営業率内控除",
+              "macro_ai_capex_bn": 1000,
+              "independent_factor": 1.12
+            },
+            {
+              "name": "Wind",
+              "market_or_revenue_anchor_bn": 8,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 0.9,
+              "share_factor": 1.0,
+              "revenue_bn": 7.2,
+              "operating_margin": -0.1,
+              "growth_bridge": "品質/案件再建シナリオ",
+              "macro_ai_capex_bn": 1000,
+              "independent_factor": 0.9
+            }
+          ],
+          "revenue_bn": 47.528000000000006,
+          "operating_income_bn": 3.964640000000002,
+          "unallocated_cost_bn": 0.8,
+          "net_finance_bn": 0.1,
+          "tax_rate": 0.25,
+          "minority_bn": 0.05,
+          "normal_net_income_bn": 2.9984800000000016,
+          "diluted_shares_bn": 0.272,
+          "eps_quote_currency": 11.02382352941177
+        },
+        {
+          "year": 2028,
+          "case": "base",
+          "segments": [
+            {
+              "name": "Power",
+              "market_or_revenue_anchor_bn": 22,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.25,
+              "share_factor": 1.0,
+              "revenue_bn": 27.5,
+              "operating_margin": 0.19,
+              "growth_bridge": "能力増/高採算受注納入/既存サービス。予約116GWは全量確定受注ではない",
+              "macro_ai_capex_bn": 1400,
+              "independent_factor": 1.25
+            },
+            {
+              "name": "Electrification",
+              "market_or_revenue_anchor_bn": 14.4,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.4,
+              "share_factor": 1.0,
+              "revenue_bn": 20.16,
+              "operating_margin": 0.19,
+              "growth_bridge": "送電受注・生産能力。Prolec取得償却を営業率内控除",
+              "macro_ai_capex_bn": 1400,
+              "independent_factor": 1.4
+            },
+            {
+              "name": "Wind",
+              "market_or_revenue_anchor_bn": 8,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.05,
+              "share_factor": 1.0,
+              "revenue_bn": 8.4,
+              "operating_margin": 0,
+              "growth_bridge": "品質/案件再建シナリオ",
+              "macro_ai_capex_bn": 1400,
+              "independent_factor": 1.05
+            }
+          ],
+          "revenue_bn": 56.06,
+          "operating_income_bn": 8.255399999999998,
+          "unallocated_cost_bn": 0.8,
+          "net_finance_bn": 0.2,
+          "tax_rate": 0.25,
+          "minority_bn": 0.05,
+          "normal_net_income_bn": 6.291549999999998,
+          "diluted_shares_bn": 0.264,
+          "eps_quote_currency": 23.83162878787878
+        },
+        {
+          "year": 2028,
+          "case": "strong",
+          "segments": [
+            {
+              "name": "Power",
+              "market_or_revenue_anchor_bn": 22,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.4,
+              "share_factor": 1.0,
+              "revenue_bn": 30.799999999999997,
+              "operating_margin": 0.23,
+              "growth_bridge": "能力増/高採算受注納入/既存サービス。予約116GWは全量確定受注ではない",
+              "macro_ai_capex_bn": 1900,
+              "independent_factor": 1.4
+            },
+            {
+              "name": "Electrification",
+              "market_or_revenue_anchor_bn": 14.4,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.65,
+              "share_factor": 1.0,
+              "revenue_bn": 23.759999999999998,
+              "operating_margin": 0.23,
+              "growth_bridge": "送電受注・生産能力。Prolec取得償却を営業率内控除",
+              "macro_ai_capex_bn": 1900,
+              "independent_factor": 1.65
+            },
+            {
+              "name": "Wind",
+              "market_or_revenue_anchor_bn": 8,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.2,
+              "share_factor": 1.0,
+              "revenue_bn": 9.6,
+              "operating_margin": 0.04,
+              "growth_bridge": "品質/案件再建シナリオ",
+              "macro_ai_capex_bn": 1900,
+              "independent_factor": 1.2
+            }
+          ],
+          "revenue_bn": 64.16,
+          "operating_income_bn": 12.032799999999998,
+          "unallocated_cost_bn": 0.9,
+          "net_finance_bn": 0.3,
+          "tax_rate": 0.25,
+          "minority_bn": 0.06,
+          "normal_net_income_bn": 9.189599999999999,
+          "diluted_shares_bn": 0.256,
+          "eps_quote_currency": 35.896874999999994
+        },
+        {
+          "year": 2029,
+          "case": "weak",
+          "segments": [
+            {
+              "name": "Power",
+              "market_or_revenue_anchor_bn": 22,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.17,
+              "share_factor": 1.0,
+              "revenue_bn": 25.74,
+              "operating_margin": 0.14,
+              "growth_bridge": "能力増/高採算受注納入/既存サービス。予約116GWは全量確定受注ではない",
+              "macro_ai_capex_bn": 950,
+              "independent_factor": 1.17
+            },
+            {
+              "name": "Electrification",
+              "market_or_revenue_anchor_bn": 14.4,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.2,
+              "share_factor": 1.0,
+              "revenue_bn": 17.28,
+              "operating_margin": 0.13,
+              "growth_bridge": "送電受注・生産能力。Prolec取得償却を営業率内控除",
+              "macro_ai_capex_bn": 950,
+              "independent_factor": 1.2
+            },
+            {
+              "name": "Wind",
+              "market_or_revenue_anchor_bn": 8,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 0.9,
+              "share_factor": 1.0,
+              "revenue_bn": 7.2,
+              "operating_margin": -0.08,
+              "growth_bridge": "品質/案件再建シナリオ",
+              "macro_ai_capex_bn": 950,
+              "independent_factor": 0.9
+            }
+          ],
+          "revenue_bn": 50.22,
+          "operating_income_bn": 4.474000000000001,
+          "unallocated_cost_bn": 0.8,
+          "net_finance_bn": 0.1,
+          "tax_rate": 0.25,
+          "minority_bn": 0.05,
+          "normal_net_income_bn": 3.3805000000000005,
+          "diluted_shares_bn": 0.274,
+          "eps_quote_currency": 12.337591240875913
+        },
+        {
+          "year": 2029,
+          "case": "base",
+          "segments": [
+            {
+              "name": "Power",
+              "market_or_revenue_anchor_bn": 22,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.4,
+              "share_factor": 1.0,
+              "revenue_bn": 30.799999999999997,
+              "operating_margin": 0.21,
+              "growth_bridge": "能力増/高採算受注納入/既存サービス。予約116GWは全量確定受注ではない",
+              "macro_ai_capex_bn": 1700,
+              "independent_factor": 1.4
+            },
+            {
+              "name": "Electrification",
+              "market_or_revenue_anchor_bn": 14.4,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.65,
+              "share_factor": 1.0,
+              "revenue_bn": 23.759999999999998,
+              "operating_margin": 0.21,
+              "growth_bridge": "送電受注・生産能力。Prolec取得償却を営業率内控除",
+              "macro_ai_capex_bn": 1700,
+              "independent_factor": 1.65
+            },
+            {
+              "name": "Wind",
+              "market_or_revenue_anchor_bn": 8,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.12,
+              "share_factor": 1.0,
+              "revenue_bn": 8.96,
+              "operating_margin": 0.02,
+              "growth_bridge": "品質/案件再建シナリオ",
+              "macro_ai_capex_bn": 1700,
+              "independent_factor": 1.12
+            }
+          ],
+          "revenue_bn": 63.519999999999996,
+          "operating_income_bn": 10.836799999999998,
+          "unallocated_cost_bn": 0.8,
+          "net_finance_bn": 0.2,
+          "tax_rate": 0.25,
+          "minority_bn": 0.05,
+          "normal_net_income_bn": 8.227599999999997,
+          "diluted_shares_bn": 0.26,
+          "eps_quote_currency": 31.644615384615374
+        },
+        {
+          "year": 2029,
+          "case": "strong",
+          "segments": [
+            {
+              "name": "Power",
+              "market_or_revenue_anchor_bn": 22,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.65,
+              "share_factor": 1.0,
+              "revenue_bn": 36.3,
+              "operating_margin": 0.25,
+              "growth_bridge": "能力増/高採算受注納入/既存サービス。予約116GWは全量確定受注ではない",
+              "macro_ai_capex_bn": 2500,
+              "independent_factor": 1.65
+            },
+            {
+              "name": "Electrification",
+              "market_or_revenue_anchor_bn": 14.4,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 2.05,
+              "share_factor": 1.0,
+              "revenue_bn": 29.52,
+              "operating_margin": 0.25,
+              "growth_bridge": "送電受注・生産能力。Prolec取得償却を営業率内控除",
+              "macro_ai_capex_bn": 2500,
+              "independent_factor": 2.05
+            },
+            {
+              "name": "Wind",
+              "market_or_revenue_anchor_bn": 8,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.35,
+              "share_factor": 1.0,
+              "revenue_bn": 10.8,
+              "operating_margin": 0.06,
+              "growth_bridge": "品質/案件再建シナリオ",
+              "macro_ai_capex_bn": 2500,
+              "independent_factor": 1.35
+            }
+          ],
+          "revenue_bn": 76.62,
+          "operating_income_bn": 16.203,
+          "unallocated_cost_bn": 0.9,
+          "net_finance_bn": 0.3,
+          "tax_rate": 0.25,
+          "minority_bn": 0.06,
+          "normal_net_income_bn": 12.31725,
+          "diluted_shares_bn": 0.248,
+          "eps_quote_currency": 49.66633064516129
+        }
+      ]
+    },
+    {
+      "symbol": "ENR.DE",
+      "name": "Siemens Energy",
+      "financial_currency": "EUR",
+      "quote_currency": "EUR",
+      "model_quality": "中低",
+      "anchor_facts": [
+        {
+          "date": "2026-08-05",
+          "scope": "実績・会社計画。将来モデルとは区別",
+          "facts": "FY26Q3売上11.447/NI1.188。Gas3.756/Grid3.624/Industry1.527/Gamesa2.743。9m売上31.416。受注残162。Q3基本株数.848584bn。",
+          "sourceURLs": [
+            "https://assets.siemens-energy.com/dam/d0147174-31a9-4a78-b062-b49d00428fc4/earnings-release-q3-fy2026-en-pdf_Original%20file.pdf"
+          ]
+        }
+      ],
+      "method": "Q3/9mから年間売上独自校正。取得無形償却を含む営業率、全社費用と非支配株主利益を控除。",
+      "risks": "Gamesa品質・大型固定価格案件。前受資金を現金価値に別加算しない。",
+      "terminal_pe": {
+        "weak": 16,
+        "base": 22,
+        "strong": 28
+      },
+      "terminal_pe_basis": "独自仮定。弱気は競争・景気循環で倍率縮小、標準は継続利益の成長と資本負担、強気は持続成長を反映。株価から逆算していない。",
+      "assumptions": {
+        "segments": [
+          {
+            "name": "Gas Services",
+            "anchor": 14,
+            "growth": {
+              "2028": [
+                1.1,
+                1.28,
+                1.45
+              ],
+              "2029": [
+                1.16,
+                1.45,
+                1.75
+              ]
+            },
+            "margin": {
+              "2028": [
+                0.145,
+                0.18,
+                0.21
+              ],
+              "2029": [
+                0.145,
+                0.2,
+                0.23
+              ]
+            },
+            "bridge": "受注残73・サービス基盤と納入能力",
+            "mode": "delivery"
+          },
+          {
+            "name": "Grid Technologies",
+            "anchor": 13.5,
+            "growth": {
+              "2028": [
+                1.12,
+                1.38,
+                1.6
+              ],
+              "2029": [
+                1.2,
+                1.62,
+                1.95
+              ]
+            },
+            "margin": {
+              "2028": [
+                0.16,
+                0.2,
+                0.23
+              ],
+              "2029": [
+                0.16,
+                0.22,
+                0.25
+              ]
+            },
+            "bridge": "変圧器/系統受注の検収",
+            "mode": "delivery"
+          },
+          {
+            "name": "Industry",
+            "anchor": 5.8,
+            "growth": {
+              "2028": [
+                1.02,
+                1.1,
+                1.2
+              ],
+              "2029": [
+                1.04,
+                1.17,
+                1.32
+              ]
+            },
+            "margin": {
+              "2028": [
+                0.1,
+                0.13,
+                0.15
+              ],
+              "2029": [
+                0.1,
+                0.14,
+                0.16
+              ]
+            },
+            "bridge": "非AI産業需要",
+            "mode": "delivery"
+          },
+          {
+            "name": "Gamesa",
+            "anchor": 10.5,
+            "growth": {
+              "2028": [
+                0.9,
+                1.05,
+                1.18
+              ],
+              "2029": [
+                0.9,
+                1.12,
+                1.32
+              ]
+            },
+            "margin": {
+              "2028": [
+                -0.06,
+                0.025,
+                0.055
+              ],
+              "2029": [
+                -0.04,
+                0.045,
+                0.075
+              ]
+            },
+            "bridge": "再建/保証費用、AIとは別",
+            "mode": "delivery"
+          },
+          {
+            "name": "連結消去",
+            "anchor": -0.7,
+            "growth": {
+              "2028": [
+                1,
+                1.15,
+                1.3
+              ],
+              "2029": [
+                1,
+                1.3,
+                1.5
+              ]
+            },
+            "margin": {
+              "2028": [
+                0,
+                0,
+                0
+              ],
+              "2029": [
+                0,
+                0,
+                0
+              ]
+            },
+            "bridge": "部門間売上控除",
+            "mode": "delivery"
+          }
+        ],
+        "shares": {
+          "2028": [
+            0.865,
+            0.855,
+            0.845
+          ],
+          "2029": [
+            0.875,
+            0.855,
+            0.83
+          ]
+        },
+        "finance": [
+          0,
+          0.1,
+          0.2
+        ],
+        "tax": 0.28,
+        "cost": [
+          0.35,
+          0.35,
+          0.4
+        ],
+        "minor": [
+          0.3,
+          0.35,
+          0.4
+        ]
+      },
+      "rows": [
+        {
+          "year": 2028,
+          "case": "weak",
+          "segments": [
+            {
+              "name": "Gas Services",
+              "market_or_revenue_anchor_bn": 14,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.1,
+              "share_factor": 1.0,
+              "revenue_bn": 15.400000000000002,
+              "operating_margin": 0.145,
+              "growth_bridge": "受注残73・サービス基盤と納入能力",
+              "macro_ai_capex_bn": 1000,
+              "independent_factor": 1.1
+            },
+            {
+              "name": "Grid Technologies",
+              "market_or_revenue_anchor_bn": 13.5,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.12,
+              "share_factor": 1.0,
+              "revenue_bn": 15.120000000000001,
+              "operating_margin": 0.16,
+              "growth_bridge": "変圧器/系統受注の検収",
+              "macro_ai_capex_bn": 1000,
+              "independent_factor": 1.12
+            },
+            {
+              "name": "Industry",
+              "market_or_revenue_anchor_bn": 5.8,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.02,
+              "share_factor": 1.0,
+              "revenue_bn": 5.9159999999999995,
+              "operating_margin": 0.1,
+              "growth_bridge": "非AI産業需要",
+              "macro_ai_capex_bn": 1000,
+              "independent_factor": 1.02
+            },
+            {
+              "name": "Gamesa",
+              "market_or_revenue_anchor_bn": 10.5,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 0.9,
+              "share_factor": 1.0,
+              "revenue_bn": 9.450000000000001,
+              "operating_margin": -0.06,
+              "growth_bridge": "再建/保証費用、AIとは別",
+              "macro_ai_capex_bn": 1000,
+              "independent_factor": 0.9
+            },
+            {
+              "name": "連結消去",
+              "market_or_revenue_anchor_bn": -0.7,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1,
+              "share_factor": 1.0,
+              "revenue_bn": -0.7,
+              "operating_margin": 0,
+              "growth_bridge": "部門間売上控除",
+              "macro_ai_capex_bn": 1000,
+              "independent_factor": 1
+            }
+          ],
+          "revenue_bn": 45.18600000000001,
+          "operating_income_bn": 4.3268,
+          "unallocated_cost_bn": 0.35,
+          "net_finance_bn": 0,
+          "tax_rate": 0.28,
+          "minority_bn": 0.3,
+          "normal_net_income_bn": 2.8152960000000005,
+          "diluted_shares_bn": 0.865,
+          "eps_quote_currency": 3.2546774566473995
+        },
+        {
+          "year": 2028,
+          "case": "base",
+          "segments": [
+            {
+              "name": "Gas Services",
+              "market_or_revenue_anchor_bn": 14,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.28,
+              "share_factor": 1.0,
+              "revenue_bn": 17.92,
+              "operating_margin": 0.18,
+              "growth_bridge": "受注残73・サービス基盤と納入能力",
+              "macro_ai_capex_bn": 1400,
+              "independent_factor": 1.28
+            },
+            {
+              "name": "Grid Technologies",
+              "market_or_revenue_anchor_bn": 13.5,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.38,
+              "share_factor": 1.0,
+              "revenue_bn": 18.63,
+              "operating_margin": 0.2,
+              "growth_bridge": "変圧器/系統受注の検収",
+              "macro_ai_capex_bn": 1400,
+              "independent_factor": 1.38
+            },
+            {
+              "name": "Industry",
+              "market_or_revenue_anchor_bn": 5.8,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.1,
+              "share_factor": 1.0,
+              "revenue_bn": 6.38,
+              "operating_margin": 0.13,
+              "growth_bridge": "非AI産業需要",
+              "macro_ai_capex_bn": 1400,
+              "independent_factor": 1.1
+            },
+            {
+              "name": "Gamesa",
+              "market_or_revenue_anchor_bn": 10.5,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.05,
+              "share_factor": 1.0,
+              "revenue_bn": 11.025,
+              "operating_margin": 0.025,
+              "growth_bridge": "再建/保証費用、AIとは別",
+              "macro_ai_capex_bn": 1400,
+              "independent_factor": 1.05
+            },
+            {
+              "name": "連結消去",
+              "market_or_revenue_anchor_bn": -0.7,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.15,
+              "share_factor": 1.0,
+              "revenue_bn": -0.8049999999999999,
+              "operating_margin": 0,
+              "growth_bridge": "部門間売上控除",
+              "macro_ai_capex_bn": 1400,
+              "independent_factor": 1.15
+            }
+          ],
+          "revenue_bn": 53.15,
+          "operating_income_bn": 7.706625000000001,
+          "unallocated_cost_bn": 0.35,
+          "net_finance_bn": 0.1,
+          "tax_rate": 0.28,
+          "minority_bn": 0.35,
+          "normal_net_income_bn": 5.270770000000001,
+          "diluted_shares_bn": 0.855,
+          "eps_quote_currency": 6.164643274853802
+        },
+        {
+          "year": 2028,
+          "case": "strong",
+          "segments": [
+            {
+              "name": "Gas Services",
+              "market_or_revenue_anchor_bn": 14,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.45,
+              "share_factor": 1.0,
+              "revenue_bn": 20.3,
+              "operating_margin": 0.21,
+              "growth_bridge": "受注残73・サービス基盤と納入能力",
+              "macro_ai_capex_bn": 1900,
+              "independent_factor": 1.45
+            },
+            {
+              "name": "Grid Technologies",
+              "market_or_revenue_anchor_bn": 13.5,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.6,
+              "share_factor": 1.0,
+              "revenue_bn": 21.6,
+              "operating_margin": 0.23,
+              "growth_bridge": "変圧器/系統受注の検収",
+              "macro_ai_capex_bn": 1900,
+              "independent_factor": 1.6
+            },
+            {
+              "name": "Industry",
+              "market_or_revenue_anchor_bn": 5.8,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.2,
+              "share_factor": 1.0,
+              "revenue_bn": 6.96,
+              "operating_margin": 0.15,
+              "growth_bridge": "非AI産業需要",
+              "macro_ai_capex_bn": 1900,
+              "independent_factor": 1.2
+            },
+            {
+              "name": "Gamesa",
+              "market_or_revenue_anchor_bn": 10.5,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.18,
+              "share_factor": 1.0,
+              "revenue_bn": 12.389999999999999,
+              "operating_margin": 0.055,
+              "growth_bridge": "再建/保証費用、AIとは別",
+              "macro_ai_capex_bn": 1900,
+              "independent_factor": 1.18
+            },
+            {
+              "name": "連結消去",
+              "market_or_revenue_anchor_bn": -0.7,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.3,
+              "share_factor": 1.0,
+              "revenue_bn": -0.9099999999999999,
+              "operating_margin": 0,
+              "growth_bridge": "部門間売上控除",
+              "macro_ai_capex_bn": 1900,
+              "independent_factor": 1.3
+            }
+          ],
+          "revenue_bn": 60.34,
+          "operating_income_bn": 10.55645,
+          "unallocated_cost_bn": 0.4,
+          "net_finance_bn": 0.2,
+          "tax_rate": 0.28,
+          "minority_bn": 0.4,
+          "normal_net_income_bn": 7.344643999999999,
+          "diluted_shares_bn": 0.845,
+          "eps_quote_currency": 8.691886390532543
+        },
+        {
+          "year": 2029,
+          "case": "weak",
+          "segments": [
+            {
+              "name": "Gas Services",
+              "market_or_revenue_anchor_bn": 14,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.16,
+              "share_factor": 1.0,
+              "revenue_bn": 16.24,
+              "operating_margin": 0.145,
+              "growth_bridge": "受注残73・サービス基盤と納入能力",
+              "macro_ai_capex_bn": 950,
+              "independent_factor": 1.16
+            },
+            {
+              "name": "Grid Technologies",
+              "market_or_revenue_anchor_bn": 13.5,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.2,
+              "share_factor": 1.0,
+              "revenue_bn": 16.2,
+              "operating_margin": 0.16,
+              "growth_bridge": "変圧器/系統受注の検収",
+              "macro_ai_capex_bn": 950,
+              "independent_factor": 1.2
+            },
+            {
+              "name": "Industry",
+              "market_or_revenue_anchor_bn": 5.8,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.04,
+              "share_factor": 1.0,
+              "revenue_bn": 6.032,
+              "operating_margin": 0.1,
+              "growth_bridge": "非AI産業需要",
+              "macro_ai_capex_bn": 950,
+              "independent_factor": 1.04
+            },
+            {
+              "name": "Gamesa",
+              "market_or_revenue_anchor_bn": 10.5,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 0.9,
+              "share_factor": 1.0,
+              "revenue_bn": 9.450000000000001,
+              "operating_margin": -0.04,
+              "growth_bridge": "再建/保証費用、AIとは別",
+              "macro_ai_capex_bn": 950,
+              "independent_factor": 0.9
+            },
+            {
+              "name": "連結消去",
+              "market_or_revenue_anchor_bn": -0.7,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1,
+              "share_factor": 1.0,
+              "revenue_bn": -0.7,
+              "operating_margin": 0,
+              "growth_bridge": "部門間売上控除",
+              "macro_ai_capex_bn": 950,
+              "independent_factor": 1
+            }
+          ],
+          "revenue_bn": 47.222,
+          "operating_income_bn": 4.822,
+          "unallocated_cost_bn": 0.35,
+          "net_finance_bn": 0,
+          "tax_rate": 0.28,
+          "minority_bn": 0.3,
+          "normal_net_income_bn": 3.17184,
+          "diluted_shares_bn": 0.875,
+          "eps_quote_currency": 3.62496
+        },
+        {
+          "year": 2029,
+          "case": "base",
+          "segments": [
+            {
+              "name": "Gas Services",
+              "market_or_revenue_anchor_bn": 14,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.45,
+              "share_factor": 1.0,
+              "revenue_bn": 20.3,
+              "operating_margin": 0.2,
+              "growth_bridge": "受注残73・サービス基盤と納入能力",
+              "macro_ai_capex_bn": 1700,
+              "independent_factor": 1.45
+            },
+            {
+              "name": "Grid Technologies",
+              "market_or_revenue_anchor_bn": 13.5,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.62,
+              "share_factor": 1.0,
+              "revenue_bn": 21.87,
+              "operating_margin": 0.22,
+              "growth_bridge": "変圧器/系統受注の検収",
+              "macro_ai_capex_bn": 1700,
+              "independent_factor": 1.62
+            },
+            {
+              "name": "Industry",
+              "market_or_revenue_anchor_bn": 5.8,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.17,
+              "share_factor": 1.0,
+              "revenue_bn": 6.786,
+              "operating_margin": 0.14,
+              "growth_bridge": "非AI産業需要",
+              "macro_ai_capex_bn": 1700,
+              "independent_factor": 1.17
+            },
+            {
+              "name": "Gamesa",
+              "market_or_revenue_anchor_bn": 10.5,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.12,
+              "share_factor": 1.0,
+              "revenue_bn": 11.760000000000002,
+              "operating_margin": 0.045,
+              "growth_bridge": "再建/保証費用、AIとは別",
+              "macro_ai_capex_bn": 1700,
+              "independent_factor": 1.12
+            },
+            {
+              "name": "連結消去",
+              "market_or_revenue_anchor_bn": -0.7,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.3,
+              "share_factor": 1.0,
+              "revenue_bn": -0.9099999999999999,
+              "operating_margin": 0,
+              "growth_bridge": "部門間売上控除",
+              "macro_ai_capex_bn": 1700,
+              "independent_factor": 1.3
+            }
+          ],
+          "revenue_bn": 59.806000000000004,
+          "operating_income_bn": 10.00064,
+          "unallocated_cost_bn": 0.35,
+          "net_finance_bn": 0.1,
+          "tax_rate": 0.28,
+          "minority_bn": 0.35,
+          "normal_net_income_bn": 6.9224608000000005,
+          "diluted_shares_bn": 0.855,
+          "eps_quote_currency": 8.09644538011696
+        },
+        {
+          "year": 2029,
+          "case": "strong",
+          "segments": [
+            {
+              "name": "Gas Services",
+              "market_or_revenue_anchor_bn": 14,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.75,
+              "share_factor": 1.0,
+              "revenue_bn": 24.5,
+              "operating_margin": 0.23,
+              "growth_bridge": "受注残73・サービス基盤と納入能力",
+              "macro_ai_capex_bn": 2500,
+              "independent_factor": 1.75
+            },
+            {
+              "name": "Grid Technologies",
+              "market_or_revenue_anchor_bn": 13.5,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.95,
+              "share_factor": 1.0,
+              "revenue_bn": 26.325,
+              "operating_margin": 0.25,
+              "growth_bridge": "変圧器/系統受注の検収",
+              "macro_ai_capex_bn": 2500,
+              "independent_factor": 1.95
+            },
+            {
+              "name": "Industry",
+              "market_or_revenue_anchor_bn": 5.8,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.32,
+              "share_factor": 1.0,
+              "revenue_bn": 7.656,
+              "operating_margin": 0.16,
+              "growth_bridge": "非AI産業需要",
+              "macro_ai_capex_bn": 2500,
+              "independent_factor": 1.32
+            },
+            {
+              "name": "Gamesa",
+              "market_or_revenue_anchor_bn": 10.5,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.32,
+              "share_factor": 1.0,
+              "revenue_bn": 13.860000000000001,
+              "operating_margin": 0.075,
+              "growth_bridge": "再建/保証費用、AIとは別",
+              "macro_ai_capex_bn": 2500,
+              "independent_factor": 1.32
+            },
+            {
+              "name": "連結消去",
+              "market_or_revenue_anchor_bn": -0.7,
+              "anchor_type": "独自2026年間校正（資料からの推定。会社実測市場規模ではない）",
+              "growth_factor": 1.5,
+              "share_factor": 1.0,
+              "revenue_bn": -1.0499999999999998,
+              "operating_margin": 0,
+              "growth_bridge": "部門間売上控除",
+              "macro_ai_capex_bn": 2500,
+              "independent_factor": 1.5
+            }
+          ],
+          "revenue_bn": 71.291,
+          "operating_income_bn": 14.08071,
+          "unallocated_cost_bn": 0.4,
+          "net_finance_bn": 0.2,
+          "tax_rate": 0.28,
+          "minority_bn": 0.4,
+          "normal_net_income_bn": 9.882111199999999,
+          "diluted_shares_bn": 0.83,
+          "eps_quote_currency": 11.906158072289156
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "as_of": "2026-10-18 JST",
+  "price_date": "2026-10-16",
+  "status": "comparison of scenarios and dated public forecasts; not accuracy validation or backtest",
+  "input_sha256": {
+    "results.json": "6352d3e1ed0adbaebcf1cd0627b2ef9b79a4c0258c553b9cef069472393f688f",
+    "analyst-comparison-sources.json": "1f0afb59ad4aaa41bbf5d873da3b2e10d65eb0e1e39af80c92a51bfbf2de8bb2"
+  },
+  "rows": [
+    {
+      "symbol": "AVGO",
+      "currency": "USD",
+      "own_2028": {
+        "revenue_bn": 255.1,
+        "operating_income_bn": 142.52916666666667,
+        "normal_net_income_bn": 114.57791666666665,
+        "diluted_shares_bn": 5.05,
+        "eps_quote_currency": 22.68869636963696
+      },
+      "own_2029_EPS": 28.51978758169935,
+      "own_2029_terminal_PE": 25,
+      "own_2029_conditional_present_price": 495.6298078193363,
+      "price": 328.75,
+      "EPS_gap_is_not_prediction_error": true,
+      "illustrative_adjusted_2028_EPS": 25.553310891089108,
+      "illustrative_adjusted_2029_EPS": 31.331074509803926,
+      "external_source_id": "marketscreener-avgo",
+      "external_FY2028_EPS_reference": 27.72,
+      "same_calendar_period": false,
+      "fully_reconciled_accounting_basis": false,
+      "EPS_gap_not_computed_due_to_period_and_basis": true,
+      "external_NI_div_EPS_shares_bn_reference": 4.846897546897547,
+      "own_2028_OPM": 0.558718803083758,
+      "own_terminal_PE_sensitivity_only": {
+        "alternative_PE": 20,
+        "conditional_present_price": 396.50384625546906,
+        "price_gap_pct": 20.60953498265219
+      }
+    },
+    {
+      "symbol": "000660.KS",
+      "currency": "KRW",
+      "own_2028": {
+        "revenue_bn": 319908.5310348207,
+        "operating_income_bn": 220599.44009008125,
+        "normal_net_income_bn": 166349.58006756095,
+        "diluted_shares_bn": 0.71,
+        "eps_quote_currency": 234295.18319374783
+      },
+      "own_2029_EPS": 262034.7898126026,
+      "own_2029_terminal_PE": 11,
+      "own_2029_conditional_present_price": 2003654.162700018,
+      "price": 1272000.0,
+      "EPS_gap_is_not_prediction_error": true,
+      "external_source_id": "fnguide-sk",
+      "external_2028_EPS": 500960,
+      "same_calendar_period": true,
+      "fully_reconciled_accounting_basis": false,
+      "EPS_arithmetic_gap_pct": -53.230760301471605,
+      "revenue_gap_pct": -44.689239004423044,
+      "operating_income_gap_pct": -49.41310914904281,
+      "external_2028_OPM": 0.7539633408530794,
+      "external_NI_div_EPS_shares_bn_reference": 0.7304928736825296,
+      "own_2028_OPM": 0.6895703574284173,
+      "own_terminal_PE_sensitivity_only": {
+        "alternative_PE": 7,
+        "conditional_present_price": 1275052.6489909203,
+        "price_gap_pct": 0.23998812821699467
+      }
+    },
+    {
+      "symbol": "2382.TW",
+      "currency": "TWD",
+      "own_2028": {
+        "revenue_bn": 5779.233961411996,
+        "operating_income_bn": 215.92795922760354,
+        "normal_net_income_bn": 165.43320596222844,
+        "diluted_shares_bn": 4.390177077869035,
+        "eps_quote_currency": 37.68258159703405
+      },
+      "own_2029_EPS": 45.29699616347504,
+      "own_2029_terminal_PE": 15,
+      "own_2029_conditional_present_price": 472.3150501521085,
+      "price": 322.0,
+      "EPS_gap_is_not_prediction_error": true,
+      "external_source_id": "factset-quanta",
+      "same_calendar_period": true,
+      "fully_reconciled_accounting_basis": false,
+      "external_2028_EPS_median": 39.79,
+      "external_2028_EPS_mean": 37.58,
+      "EPS_arithmetic_gap_vs_median_pct": -5.2963518546517925,
+      "EPS_arithmetic_gap_vs_mean_pct": 0.2729685924269587,
+      "revenue_gap_vs_median_pct": -13.179328158391868,
+      "own_2028_OPM": 0.037362730193890185,
+      "own_terminal_PE_sensitivity_only": {
+        "alternative_PE": 12,
+        "conditional_present_price": 377.85204012168674,
+        "price_gap_pct": 17.345354075057994
+      }
+    },
+    {
+      "symbol": "6669.TW",
+      "currency": "TWD",
+      "own_2028": {
+        "revenue_bn": 2227.684832037,
+        "operating_income_bn": 147.93920411413498,
+        "normal_net_income_bn": 110.83318716788393,
+        "diluted_shares_bn": 0.640258452650596,
+        "eps_quote_currency": 173.10694877833686
+      },
+      "own_2029_EPS": 218.64855465398136,
+      "own_2029_terminal_PE": 18,
+      "own_2029_conditional_present_price": 2735.837123089937,
+      "price": 1845.0,
+      "EPS_gap_is_not_prediction_error": true,
+      "external_source_id": "factset-wiwynn",
+      "same_calendar_period": true,
+      "fully_reconciled_accounting_basis": false,
+      "external_2028_EPS_median": 221.97,
+      "external_2028_EPS_mean": 233.22,
+      "EPS_arithmetic_gap_vs_median_pct": -22.013358211318256,
+      "EPS_arithmetic_gap_vs_mean_pct": -25.77525564774168,
+      "revenue_gap_vs_median_pct": -30.409401431901053,
+      "own_2028_OPM": 0.06640939597315436,
+      "own_terminal_PE_sensitivity_only": {
+        "alternative_PE": 12,
+        "conditional_present_price": 1823.8914153932915,
+        "price_gap_pct": -1.1440967266508673
+      }
+    },
+    {
+      "symbol": "SMCI",
+      "currency": "USD",
+      "own_2028": {
+        "revenue_bn": 89.34592,
+        "operating_income_bn": 5.605664000000001,
+        "normal_net_income_bn": 4.177417920000001,
+        "diluted_shares_bn": 0.95,
+        "eps_quote_currency": 4.397282021052632
+      },
+      "own_2029_EPS": 5.502953931428572,
+      "own_2029_terminal_PE": 12,
+      "own_2029_conditional_present_price": 45.90375843426403,
+      "price": 31.62999916,
+      "EPS_gap_is_not_prediction_error": true,
+      "external_source_id": "sp-smci",
+      "external_FY2028_adjusted_EPS_reference": 5.33,
+      "same_calendar_period": false,
+      "fully_reconciled_accounting_basis": false,
+      "EPS_gap_not_computed_due_to_period_and_basis": true,
+      "CY2028_revenue_half_year_weight_proxy_bn": 85.2415,
+      "own_revenue_vs_calendar_proxy_gap_pct": 4.815049007818972,
+      "proxy_caveat": "0.5*FY2028+0.5*FY2029 ignores seasonality and intra-year ramp; not reported CY consensus",
+      "own_2028_OPM": 0.0627411302049383,
+      "own_terminal_PE_sensitivity_only": {
+        "alternative_PE": 8,
+        "conditional_present_price": 30.602505622842685,
+        "price_gap_pct": -3.248477914778791
+      }
+    }
+  ],
+  "checks": {
+    "EPS_identity": "5 of 5 passed",
+    "period_basis_not_silently_equated": true,
+    "no_future_consensus_imputation": true,
+    "no_price_or_original_model_mutation": true
+  }
+}

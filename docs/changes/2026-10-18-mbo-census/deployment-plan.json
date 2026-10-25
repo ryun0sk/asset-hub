@@ -1,0 +1,39 @@
+{
+  "base_revision": "asset-hub-00048-f5b",
+  "base_image": "asia-northeast1-docker.pkg.dev/ryun0sk-asset-hub/asset-hub/app@sha256:1552fb3ac5df8e4273ba4f83a606ee2f73ed8205108dbab13ca22a31b3cbae89",
+  "before": {
+    "backend/mbo_dashboard.py": "ff408bc947edd1f7e7fdfcbe099439a67945a7ce60ed16bdcb83f58e95cba062",
+    "web/mbo-app.js": "6295d524e597e165fbb5f697711c2196d3ce3b2ad27ead88a20ae9d2fe82b3d4",
+    "web/mbo-cases.js": "ac4c43315540781ab18c7e91a3b365fb6dbed00033b01e6d1fef6c0e1838e7c4"
+  },
+  "after": {
+    "backend/mbo_dashboard.py": "b3cdaa47bec17d5c7721e9f8e7c4c5438f8a7c028ea3d8d2bc7458dbfe1f99da",
+    "web/mbo-app.js": "e633edd878e9555d0fd6356d9ca32f79f2eba6d51079e516114c467e197029e4",
+    "web/mbo-cases.js": "317b58a424ddd2df8e2d0bdb87764af8c585d11661acf60bd431dedd8b87f96f",
+    "web/mbo-census.js": "68bba852be77b4b7b14dfc1e5d4bbde326c796df3012cbc9b5fe93f5b01db3dc",
+    "web/mbo-census-data.js": "8fc6b7b392f1518d5138ee950fd6a005199fd62eb6a954cbe4b7780ae21bf5b7"
+  },
+  "added": [
+    "web/mbo-census.js",
+    "web/mbo-census-data.js"
+  ],
+  "iap_change": false,
+  "weekly_results_change": true,
+  "new_run": "run-2026-10-18-9d94b45f8ffc",
+  "episodes": 115,
+  "companies": 112,
+  "source_urls": 212,
+  "scope_gap_candidates": 6,
+  "preliminary_build_id": "15b7c2e1-65ff-43d1-9e19-2fbedc41e26e",
+  "build_id": "46246c30-1dcd-40f2-9ef1-1d42edb0da0b",
+  "revision": "asset-hub-00049-mbr",
+  "image_digest": "asia-northeast1-docker.pkg.dev/ryun0sk-asset-hub/asset-hub/app@sha256:f50992bf2d50eed56cdec855dd7960968af4c7d386b04a6f99e7dbcf9fd97375",
+  "other_files_preserved": 381,
+  "traffic_percent": 100,
+  "iap_verified": true,
+  "viewer_count": 2,
+  "results_generation": "1792316983315165",
+  "results_size": 1344293,
+  "results_sha256": "4ca4b65e443512ec7e81cf14b600dc3bbf27937dc110b8f103ce64d5048ead97",
+  "census_sha256": "84e348507689c057a6313af0f9bd1682aa7f88321bfd13c3bf08608a05407b3c"
+}

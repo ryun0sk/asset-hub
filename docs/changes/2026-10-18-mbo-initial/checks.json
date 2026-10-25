@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-18",
+  "run_id": "run-2026-10-18-2f4170da4bf7",
+  "rule_version": "mbo-local-2-explicit-cash-adjustment",
+  "coverage": {
+    "events": 1,
+    "pending": 17,
+    "prices": 6,
+    "universe": 20,
+    "valued": 2
+  },
+  "screened": 23,
+  "deep_researched": 6,
+  "inputs": {
+    "documents": 69,
+    "unique_source_hashes": 61,
+    "securities": 23,
+    "facts": 89,
+    "prices": 6,
+    "events": 1,
+    "scenarios": 60
+  },
+  "upload": {
+    "destination": "gs://ryun0sk-asset-hub-asset-state/mbo/results.json",
+    "generation": "1792299183240106",
+    "bytes": 357901,
+    "payload_sha256": "0e79ead1758e5bb9ecca194ce0e54cee87824a80173137b4b020c7b078b69608",
+    "precondition": "if-generation-match=0",
+    "cloud_runtime_code_changed": false,
+    "iap_or_permissions_changed": false
+  },
+  "validation": {
+    "python_mbo_tests": 115,
+    "python_mbo_tests_passed": true,
+    "independent_dcf_lbo_recalculation": true,
+    "price_rows_matched_saved_html": 6,
+    "raw_source_hash_checks": true,
+    "public_export_has_no_raw_paths_or_database": true,
+    "demo": false,
+    "archive_check": "8 archives unchanged"
+  },
+  "production_browser": {
+    "url": "https://asset-hub-pvgbytjsqa-an.a.run.app/#mbo/candidates",
+    "displayed_run_id": "run-2026-10-18-2f4170da4bf7",
+    "candidate_rows": 19,
+    "error_banner_hidden": true,
+    "console_warnings_or_errors": 0,
+    "candidate_filter_and_detail_checked": true,
+    "tenryu_asset_sensitivity_note_present": true,
+    "maruzen_reported_and_estimated_shares_present": true,
+    "event_mbo_count": 1,
+    "weekly_history_count": 1
+  },
+  "screenshots": [
+    "production-candidates.png",
+    "production-comparison.png"
+  ],
+  "limitations": [
+    "限定23社のシード調査、全上場会社の網羅ではない",
+    "参考DCFのBSは通期同日一式、最新企業価値の確定ではない",
+    "own_scenario株数と現金留保は実績と区別",
+    "深掘り4社の割安率は保留、金融資産感応度とMBO確率を混同しない"
+  ]
+}

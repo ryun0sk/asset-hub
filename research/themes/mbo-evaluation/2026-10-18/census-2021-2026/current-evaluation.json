@@ -1,0 +1,32 @@
+{
+  "as_of": "2026-10-18",
+  "run_id": "run-2026-10-18-9d94b45f8ffc",
+  "baseline_run_id": "run-2026-10-18-3714ada8f872",
+  "baseline_sha256": "f3ff0d66e96d4adf93bbfe3871b11f160ffa0d98b6dc744670c4d6f48b37eec8",
+  "rule_version": "mbo-local-4-census-checks",
+  "coverage": {
+    "events": 1,
+    "pending": 17,
+    "prices": 6,
+    "universe": 20,
+    "valued": 2
+  },
+  "input_record_ids_unchanged": true,
+  "prices_facts_valuations_events_unchanged": true,
+  "baseline_bytes_unchanged": true,
+  "new_checks_unknown": [
+    "tender_feasibility",
+    "execution_conditions",
+    "price_acceptability"
+  ],
+  "workflow_counts": {
+    "research": 6,
+    "event": 1,
+    "awaiting": 13
+  },
+  "export": {
+    "status": "exported",
+    "runs": 3,
+    "latest_run_id": "run-2026-10-18-9d94b45f8ffc"
+  }
+}

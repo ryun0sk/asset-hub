@@ -15,7 +15,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from infra.common import COST_JOB, ROOT, REPOSITORY, Gcloud, load_config, names, require_config  # noqa: E402
-from backend.paths import SHELL_TYPES, extension, research_files  # noqa: E402
+from backend.paths import MBO_LOCAL_ASSETS, SHELL_TYPES, extension, research_files  # noqa: E402
 
 BUILD_FILES = ['Dockerfile', 'requirements.txt', '.dockerignore']
 SERVICES = ['run.googleapis.com', 'artifactregistry.googleapis.com', 'cloudbuild.googleapis.com',
@@ -35,7 +35,8 @@ def stage(root, destination):
     for source in sorted((root / 'backend').glob('*.py')):
         copy(f'backend/{source.name}')
     for source in sorted((root / 'web').iterdir()):
-        if source.is_file() and not source.is_symlink() and not source.name.startswith('.') and extension(source.name) in SHELL_TYPES:
+        if (source.name not in MBO_LOCAL_ASSETS and source.is_file() and not source.is_symlink()
+                and not source.name.startswith('.') and extension(source.name) in SHELL_TYPES):
             copy(f'web/{source.name}')
     for relative in research_files(root / 'research'):
         copy(f'research/{relative}')

@@ -1,0 +1,547 @@
+{
+  "as_of": "2026-10-18 JST",
+  "price_date": "2026-10-16",
+  "provider": "Yahoo Finance public chart API",
+  "price_basis": "Daily Close in local trading currency; split adjusted, not dividend adjusted. FX is provider daily close, not same-clock fixing.",
+  "items": [
+    {
+      "symbol": "285A.T",
+      "name": "キオクシア",
+      "currency": "JPY",
+      "exchange": "Tokyo",
+      "timezone": "Asia/Tokyo",
+      "last": {
+        "date": "2026-10-16",
+        "close": 13375.0,
+        "adjusted_close": 13375.0
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 17505.0,
+          "adjusted_close": 17505.0
+        },
+        {
+          "date": "2026-10-13",
+          "close": 15180.0,
+          "adjusted_close": 15180.0
+        },
+        {
+          "date": "2026-10-14",
+          "close": 14690.0,
+          "adjusted_close": 14690.0
+        },
+        {
+          "date": "2026-10-15",
+          "close": 12880.0,
+          "adjusted_close": 12880.0
+        },
+        {
+          "date": "2026-10-16",
+          "close": 13375.0,
+          "adjusted_close": 13375.0
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/285A.T?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/285A.T/history/",
+      "retrieved_at_utc": "2026-10-18T04:06:15.565590+00:00",
+      "raw_sha256": "03c0a9dacdb9b945185d5021c8ac4d33933b23949666b77b9c77061d0ff7093b",
+      "events": {}
+    },
+    {
+      "symbol": "6857.T",
+      "name": "アドバンテスト",
+      "currency": "JPY",
+      "exchange": "Tokyo",
+      "timezone": "Asia/Tokyo",
+      "last": {
+        "date": "2026-10-16",
+        "close": 34530.0,
+        "adjusted_close": 34530.0
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 41610.0,
+          "adjusted_close": 41610.0
+        },
+        {
+          "date": "2026-10-13",
+          "close": 40400.0,
+          "adjusted_close": 40400.0
+        },
+        {
+          "date": "2026-10-14",
+          "close": 40380.0,
+          "adjusted_close": 40380.0
+        },
+        {
+          "date": "2026-10-15",
+          "close": 34340.0,
+          "adjusted_close": 34340.0
+        },
+        {
+          "date": "2026-10-16",
+          "close": 34530.0,
+          "adjusted_close": 34530.0
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/6857.T?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/6857.T/history/",
+      "retrieved_at_utc": "2026-10-18T04:06:15.571779+00:00",
+      "raw_sha256": "8ee923ba8c79401734730abb48e3a07ee3748390fc1353003c4ab2ec2ae7ff88",
+      "events": {}
+    },
+    {
+      "symbol": "TSM",
+      "name": "TSMC・米国ADR",
+      "currency": "USD",
+      "exchange": "NYSE",
+      "timezone": "America/New_York",
+      "last": {
+        "date": "2026-10-16",
+        "close": 412.60998535,
+        "adjusted_close": 412.60998535
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 453.30999756,
+          "adjusted_close": 453.30999756
+        },
+        {
+          "date": "2026-10-12",
+          "close": 444.3500061,
+          "adjusted_close": 444.3500061
+        },
+        {
+          "date": "2026-10-13",
+          "close": 445.11999512,
+          "adjusted_close": 445.11999512
+        },
+        {
+          "date": "2026-10-14",
+          "close": 430.0,
+          "adjusted_close": 430.0
+        },
+        {
+          "date": "2026-10-15",
+          "close": 422.25,
+          "adjusted_close": 422.25
+        },
+        {
+          "date": "2026-10-16",
+          "close": 412.60998535,
+          "adjusted_close": 412.60998535
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/TSM?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/TSM/history/",
+      "retrieved_at_utc": "2026-10-18T04:06:15.570440+00:00",
+      "raw_sha256": "e3caa24409ba65df0fb98258714a217f976e86f975323e5a8d5a507485f27418",
+      "events": {}
+    },
+    {
+      "symbol": "NVDA",
+      "name": "NVIDIA",
+      "currency": "USD",
+      "exchange": "NasdaqGS",
+      "timezone": "America/New_York",
+      "last": {
+        "date": "2026-10-16",
+        "close": 214.13000488,
+        "adjusted_close": 214.13000488
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 229.27999878,
+          "adjusted_close": 229.27999878
+        },
+        {
+          "date": "2026-10-12",
+          "close": 226.32000732,
+          "adjusted_close": 226.32000732
+        },
+        {
+          "date": "2026-10-13",
+          "close": 228.52000427,
+          "adjusted_close": 228.52000427
+        },
+        {
+          "date": "2026-10-14",
+          "close": 221.30000305,
+          "adjusted_close": 221.30000305
+        },
+        {
+          "date": "2026-10-15",
+          "close": 217.22999573,
+          "adjusted_close": 217.22999573
+        },
+        {
+          "date": "2026-10-16",
+          "close": 214.13000488,
+          "adjusted_close": 214.13000488
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/NVDA?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/NVDA/history/",
+      "retrieved_at_utc": "2026-10-18T04:06:15.579182+00:00",
+      "raw_sha256": "1972f2e09938e06fc6042ad09038fc0ce927114a49e382f018469483cb01565e",
+      "events": {}
+    },
+    {
+      "symbol": "AVGO",
+      "name": "Broadcom",
+      "currency": "USD",
+      "exchange": "NasdaqGS",
+      "timezone": "America/New_York",
+      "last": {
+        "date": "2026-10-16",
+        "close": 328.75,
+        "adjusted_close": 328.75
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 361.54000854,
+          "adjusted_close": 361.54000854
+        },
+        {
+          "date": "2026-10-12",
+          "close": 354.73001099,
+          "adjusted_close": 354.73001099
+        },
+        {
+          "date": "2026-10-13",
+          "close": 357.30999756,
+          "adjusted_close": 357.30999756
+        },
+        {
+          "date": "2026-10-14",
+          "close": 346.25,
+          "adjusted_close": 346.25
+        },
+        {
+          "date": "2026-10-15",
+          "close": 344.32998657,
+          "adjusted_close": 344.32998657
+        },
+        {
+          "date": "2026-10-16",
+          "close": 328.75,
+          "adjusted_close": 328.75
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/AVGO?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/AVGO/history/",
+      "retrieved_at_utc": "2026-10-18T04:06:15.892463+00:00",
+      "raw_sha256": "cd55a29ff137d96a79e8aa76732f7d230df9889c6e372c77c8e41042eca55dbb",
+      "events": {}
+    },
+    {
+      "symbol": "ASML",
+      "name": "ASML・米国上場株",
+      "currency": "USD",
+      "exchange": "NasdaqGS",
+      "timezone": "America/New_York",
+      "last": {
+        "date": "2026-10-16",
+        "close": 1641.52001953,
+        "adjusted_close": 1641.52001953
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 1780.33996582,
+          "adjusted_close": 1780.33996582
+        },
+        {
+          "date": "2026-10-12",
+          "close": 1750.23999023,
+          "adjusted_close": 1750.23999023
+        },
+        {
+          "date": "2026-10-13",
+          "close": 1717.76000977,
+          "adjusted_close": 1717.76000977
+        },
+        {
+          "date": "2026-10-14",
+          "close": 1650.0,
+          "adjusted_close": 1650.0
+        },
+        {
+          "date": "2026-10-15",
+          "close": 1657.43994141,
+          "adjusted_close": 1657.43994141
+        },
+        {
+          "date": "2026-10-16",
+          "close": 1641.52001953,
+          "adjusted_close": 1641.52001953
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/ASML?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/ASML/history/",
+      "retrieved_at_utc": "2026-10-18T04:06:15.892256+00:00",
+      "raw_sha256": "2b0b7dd445d0bd47befc620ee8ddfb60ae0097f46ef8128d9ca5a36fd3a4a08c",
+      "events": {}
+    },
+    {
+      "symbol": "VRT",
+      "name": "Vertiv",
+      "currency": "USD",
+      "exchange": "NYSE",
+      "timezone": "America/New_York",
+      "last": {
+        "date": "2026-10-16",
+        "close": 206.41999817,
+        "adjusted_close": 206.41999817
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 242.77999878,
+          "adjusted_close": 242.77999878
+        },
+        {
+          "date": "2026-10-12",
+          "close": 239.36000061,
+          "adjusted_close": 239.36000061
+        },
+        {
+          "date": "2026-10-13",
+          "close": 237.28999329,
+          "adjusted_close": 237.28999329
+        },
+        {
+          "date": "2026-10-14",
+          "close": 222.83000183,
+          "adjusted_close": 222.83000183
+        },
+        {
+          "date": "2026-10-15",
+          "close": 214.75,
+          "adjusted_close": 214.75
+        },
+        {
+          "date": "2026-10-16",
+          "close": 206.41999817,
+          "adjusted_close": 206.41999817
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/VRT?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/VRT/history/",
+      "retrieved_at_utc": "2026-10-18T04:06:15.878159+00:00",
+      "raw_sha256": "b6aa968896fd8b30c5bb8fb2d7d657fd360c3f7b7f25eb95f918a354a53b5212",
+      "events": {}
+    },
+    {
+      "symbol": "ANET",
+      "name": "Arista",
+      "currency": "USD",
+      "exchange": "NYSE",
+      "timezone": "America/New_York",
+      "last": {
+        "date": "2026-10-16",
+        "close": 176.97999573,
+        "adjusted_close": 176.97999573
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 216.74000549,
+          "adjusted_close": 216.74000549
+        },
+        {
+          "date": "2026-10-12",
+          "close": 210.88000488,
+          "adjusted_close": 210.88000488
+        },
+        {
+          "date": "2026-10-13",
+          "close": 204.52000427,
+          "adjusted_close": 204.52000427
+        },
+        {
+          "date": "2026-10-14",
+          "close": 195.41999817,
+          "adjusted_close": 195.41999817
+        },
+        {
+          "date": "2026-10-15",
+          "close": 185.58000183,
+          "adjusted_close": 185.58000183
+        },
+        {
+          "date": "2026-10-16",
+          "close": 176.97999573,
+          "adjusted_close": 176.97999573
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/ANET?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/ANET/history/",
+      "retrieved_at_utc": "2026-10-18T04:06:15.868895+00:00",
+      "raw_sha256": "2a09e137e1de77779e06f573cf0ef398c3b8c90de0e681ce8c1b3cc1b0d86367",
+      "events": {}
+    },
+    {
+      "symbol": "TWD=X",
+      "name": "USD/TWD",
+      "currency": "TWD",
+      "exchange": "CCY",
+      "timezone": "Europe/London",
+      "last": {
+        "date": "2026-10-16",
+        "close": 32.4280014,
+        "adjusted_close": 32.4280014
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 31.92539978,
+          "adjusted_close": 31.92539978
+        },
+        {
+          "date": "2026-10-12",
+          "close": 31.91609955,
+          "adjusted_close": 31.91609955
+        },
+        {
+          "date": "2026-10-13",
+          "close": 31.92779922,
+          "adjusted_close": 31.92779922
+        },
+        {
+          "date": "2026-10-14",
+          "close": 32.10499954,
+          "adjusted_close": 32.10499954
+        },
+        {
+          "date": "2026-10-15",
+          "close": 32.18989944,
+          "adjusted_close": 32.18989944
+        },
+        {
+          "date": "2026-10-16",
+          "close": 32.32690048,
+          "adjusted_close": 32.32690048
+        },
+        {
+          "date": "2026-10-16",
+          "close": 32.4280014,
+          "adjusted_close": 32.4280014
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/TWD%3DX?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/TWD%3DX/history/",
+      "retrieved_at_utc": "2026-10-18T04:06:16.259093+00:00",
+      "raw_sha256": "16ac00e4297753b3482e036ff07c1b20594757ca61ced63bc744b5002fc9a710",
+      "events": {}
+    },
+    {
+      "symbol": "EURUSD=X",
+      "name": "EUR/USD",
+      "currency": "USD",
+      "exchange": "CCY",
+      "timezone": "Europe/London",
+      "last": {
+        "date": "2026-10-16",
+        "close": 1.12131512,
+        "adjusted_close": 1.12131512
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 1.12130249,
+          "adjusted_close": 1.12130249
+        },
+        {
+          "date": "2026-10-12",
+          "close": 1.12047327,
+          "adjusted_close": 1.12047327
+        },
+        {
+          "date": "2026-10-13",
+          "close": 1.11602163,
+          "adjusted_close": 1.11602163
+        },
+        {
+          "date": "2026-10-14",
+          "close": 1.12044823,
+          "adjusted_close": 1.12044823
+        },
+        {
+          "date": "2026-10-15",
+          "close": 1.11950743,
+          "adjusted_close": 1.11950743
+        },
+        {
+          "date": "2026-10-16",
+          "close": 1.12131512,
+          "adjusted_close": 1.12131512
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/EURUSD%3DX?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/EURUSD%3DX/history/",
+      "retrieved_at_utc": "2026-10-18T04:06:16.392330+00:00",
+      "raw_sha256": "6c60ec45a9e3c511991aeaa3217ac6251e1ad5d6c4328c55b6db16c8426d867d",
+      "events": {}
+    },
+    {
+      "symbol": "JPY=X",
+      "name": "USD/JPY",
+      "currency": "JPY",
+      "exchange": "CCY",
+      "timezone": "Europe/London",
+      "last": {
+        "date": "2026-10-16",
+        "close": 157.98699951,
+        "adjusted_close": 157.98699951
+      },
+      "rows": [
+        {
+          "date": "2026-10-09",
+          "close": 158.06300354,
+          "adjusted_close": 158.06300354
+        },
+        {
+          "date": "2026-10-12",
+          "close": 158.20300293,
+          "adjusted_close": 158.20300293
+        },
+        {
+          "date": "2026-10-13",
+          "close": 158.52000427,
+          "adjusted_close": 158.52000427
+        },
+        {
+          "date": "2026-10-14",
+          "close": 158.32200623,
+          "adjusted_close": 158.32200623
+        },
+        {
+          "date": "2026-10-15",
+          "close": 157.95700073,
+          "adjusted_close": 157.95700073
+        },
+        {
+          "date": "2026-10-16",
+          "close": 158.14300537,
+          "adjusted_close": 158.14300537
+        },
+        {
+          "date": "2026-10-16",
+          "close": 157.98699951,
+          "adjusted_close": 157.98699951
+        }
+      ],
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/JPY%3DX?period1=1791504000&period2=1792281600&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "history_url": "https://finance.yahoo.com/quote/JPY%3DX/history/",
+      "retrieved_at_utc": "2026-10-18T04:06:16.259284+00:00",
+      "raw_sha256": "e6877d313e4af19182dbe9b4230404e8b5282c33c0ba10bfb13ea9f14d6c12f0",
+      "events": {}
+    }
+  ]
+}

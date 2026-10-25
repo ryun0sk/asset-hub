@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-18 JST",
+  "status": "production_verified",
+  "cases": 9,
+  "primary_sources": 36,
+  "javascript_tests_passed": 34,
+  "canonical_eight_unchanged": true,
+  "generated_base_eight_deep_equal": true,
+  "inforich_searchable_in_japanese": true,
+  "reference_role_excludes_weight_tuning_and_accuracy_claims": true,
+  "formal_announcement_date": "2026-02-13",
+  "official_report_ack_date": "2026-02-13",
+  "tob_result_publication_date": "2026-04-01",
+  "actual_delisting_date": "2026-06-16",
+  "independent_review": "Dates/outcomes and planned-versus-executed funding checked; parent-equity upper limit wording corrected.",
+  "catalog_build": "unchanged",
+  "archive_snapshots_match": 8,
+  "weekly_results_changed": false,
+  "commit_or_push": false,
+  "revision": "asset-hub-00048-f5b",
+  "build_id": "e6498d7b-81e1-4734-864e-9105c8f20477",
+  "image_digest": "asia-northeast1-docker.pkg.dev/ryun0sk-asset-hub/asset-hub/app@sha256:1552fb3ac5df8e4273ba4f83a606ee2f73ed8205108dbab13ca22a31b3cbae89",
+  "other_files_preserved": 382,
+  "iap": true,
+  "viewers": 2,
+  "browser_final_errors_or_warnings": 0,
+  "production_checks": [
+    "9 companies and 36 sources",
+    "INFORICH displayed first",
+    "Japanese name search",
+    "reference-role and non-exhaustive coverage notice",
+    "formal announcement, TOB result, actual delisting dates",
+    "parent equity and bank financing described as upper limits/plans, not executed commitments"
+  ],
+  "initial_deployment_fetch_issue": "Catalog and dynamic module temporarily failed after deployment. Case-module retry retained browser module failure; a full page reload recovered. Final reload and display were successful.",
+  "screenshots": {
+    "production-cases.png": "45f05a36700feb7994f88eea778cf6af9e08132f877bb8ba37cc457b00c87f42",
+    "production-inforich-detail.png": "97a6ce72a24d10427ae6ad50f95538f8cf95321679e47eec41b3f29c311d8fe8"
+  }
+}

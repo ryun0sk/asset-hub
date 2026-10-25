@@ -1,0 +1,764 @@
+{
+  "as_of": "2026-10-18 JST",
+  "horizon": "2027-2029 approximate; next 2-3 years",
+  "universe_source": "../../ai-supply-chain/2026-10-18/catalog.json",
+  "company_count": 46,
+  "stage_count": 18,
+  "primary_results_review_count": 28,
+  "stage_role_only_count": 18,
+  "depth_warning": "一次資料確認の深さは均等ではない。roleは独自調査の分類で、同日株価による推奨順位ではない。sourceは決算原典の入口。追加の10-Q/説明会/Q&Aはreport.mdに記載。",
+  "companies": [
+    {
+      "symbol": "4063.T",
+      "name": "信越化学",
+      "stages": [
+        {
+          "id": "wafer",
+          "name": "シリコンウェーハ"
+        }
+      ],
+      "current_price_reverified": false,
+      "depth": "stage_role_only_not_fresh_results",
+      "research_role": "not_ranked",
+      "note": "今回、最新決算を同じ深さで再確認していない。選定外を劣後と解釈しない。"
+    },
+    {
+      "symbol": "3436.T",
+      "name": "SUMCO",
+      "stages": [
+        {
+          "id": "wafer",
+          "name": "シリコンウェーハ"
+        }
+      ],
+      "current_price_reverified": false,
+      "depth": "stage_role_only_not_fresh_results",
+      "research_role": "not_ranked",
+      "note": "今回、最新決算を同じ深さで再確認していない。選定外を劣後と解釈しない。"
+    },
+    {
+      "symbol": "6488.TWO",
+      "name": "GlobalWafers",
+      "stages": [
+        {
+          "id": "wafer",
+          "name": "シリコンウェーハ"
+        }
+      ],
+      "current_price_reverified": false,
+      "depth": "stage_role_only_not_fresh_results",
+      "research_role": "not_ranked",
+      "note": "今回、最新決算を同じ深さで再確認していない。選定外を劣後と解釈しない。"
+    },
+    {
+      "symbol": "WAF.DE",
+      "name": "Siltronic",
+      "stages": [
+        {
+          "id": "wafer",
+          "name": "シリコンウェーハ"
+        }
+      ],
+      "current_price_reverified": false,
+      "depth": "stage_role_only_not_fresh_results",
+      "research_role": "not_ranked",
+      "note": "今回、最新決算を同じ深さで再確認していない。選定外を劣後と解釈しない。"
+    },
+    {
+      "symbol": "8035.T",
+      "name": "東京エレクトロン",
+      "stages": [
+        {
+          "id": "equipment",
+          "name": "前工程装置"
+        }
+      ],
+      "current_price_reverified": false,
+      "depth": "primary_results_review",
+      "primary_result_published": "2026-07-30",
+      "period_or_scope": "FY2027 Q1",
+      "research_role": "strong_alternative",
+      "primary_source": "https://www.tel.com/ir/library/report/i242su0000000goz-att/fy27q1tanshin-e.pdf"
+    },
+    {
+      "symbol": "LRCX",
+      "name": "Lam Research",
+      "stages": [
+        {
+          "id": "equipment",
+          "name": "前工程装置"
+        }
+      ],
+      "current_price_reverified": false,
+      "depth": "primary_results_review",
+      "primary_result_published": "2026-07-29",
+      "period_or_scope": "Quarter ended June 28 2026",
+      "research_role": "strong_alternative",
+      "primary_source": "https://investor.lamresearch.com/2026-07-29-Lam-Research-Corporation-Reports-Financial-Results-for-the-Quarter-Ended-June-28%2C-2026"
+    },
+    {
+      "symbol": "ASML",
+      "name": "ASML",
+      "stages": [
+        {
+          "id": "equipment",
+          "name": "前工程装置"
+        }
+      ],
+      "current_price_reverified": false,
+      "depth": "primary_results_review",
+      "primary_result_published": "2026-10-14",
+      "period_or_scope": "Q3 2026",
+      "research_role": "center",
+      "primary_source": "https://www.investor.asml.com/news-releases/news-release-details/asml-reports-eu11.7-billion-total-net-sales-and-eu5.0-billion-net-income-q3-2026"
+    },
+    {
+      "symbol": "NVDA",
+      "name": "NVIDIA",
+      "stages": [
+        {
+          "id": "server",
+          "name": "AIサーバー・ラック"
+        },
+        {
+          "id": "compute",
+          "name": "GPU・専用AI半導体"
+        },
+        {
+          "id": "network",
+          "name": "通信スイッチ"
+        }
+      ],
+      "current_price_reverified": false,
+      "depth": "primary_results_review",
+      "primary_result_published": "2026-08-26",
+      "period_or_scope": "FY2027 Q2; August guarantees also reviewed",
+      "research_role": "center",
+      "primary_source": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/"
+    },
+    {
+      "symbol": "AMD",
+      "name": "AMD",
+      "stages": [
+        {
+          "id": "compute",
+          "name": "GPU・専用AI半導体"
+        }
+      ],
+      "current_price_reverified": false,
+      "depth": "primary_results_review",
+      "primary_result_published": "2026-08-04",
+      "period_or_scope": "Q2 2026",
+      "research_role": "challenger",
+      "primary_source": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000121/q22026991.htm"
+    },
+    {
+      "symbol": "AVGO",
+      "name": "Broadcom",
+      "stages": [
+        {
+          "id": "compute",
+          "name": "GPU・専用AI半導体"
+        },
+        {
+          "id": "network",
+          "name": "通信スイッチ"
+        }
+      ],
+      "current_price_reverified": false,
+      "depth": "primary_results_review",
+      "primary_result_published": "2026-09-02",
+      "period_or_scope": "FY2026 Q3",
+      "research_role": "center",
+      "primary_source": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial"
+    },
+    {
+      "symbol": "2330.TW",
+      "name": "TSMC",
+      "stages": [
+        {
+          "id": "fab",
+          "name": "製造受託・先端実装"
+        }
+      ],
+      "current_price_reverified": false,
+      "depth": "primary_results_review",
+      "primary_result_published": "2026-10-15",
+      "period_or_scope": "Q3 2026",
+      "research_role": "center",
+      "primary_source": "https://pr.tsmc.com/english/news/3346"
+    },
+    {
+      "symbol": "3711.TW",
+      "name": "ASE Technology",
+      "stages": [
+        {
+          "id": "fab",
+          "name": "製造受託・先端実装"
+        }
+      ],
+      "current_price_reverified": false,
+      "depth": "stage_role_only_not_fresh_results",
+      "research_role": "not_ranked",
+      "note": "今回、最新決算を同じ深さで再確認していない。選定外を劣後と解釈しない。"
+    },
+    {
+      "symbol": "2802.T",
+      "name": "味の素",
+      "stages": [
+        {
+          "id": "packaging",
+          "name": "実装材料・基板・加工"
+        }
+      ],
+      "current_price_reverified": false,
+      "depth": "primary_results_review",
+      "primary_result_published": "2026-08-06",
+      "period_or_scope": "FY2026 Q1",
+      "research_role": "indirect_whole_company",
+      "primary_source": "https://www.ajinomoto.co.jp/company/en/ir/event/presentation/main/011111113/teaserItems1/01/linkList/02/link/FY26Q1_Forecast_E.pdf"
+    },
+    {
+      "symbol": "4062.T",
+      "name": "イビデン",
+      "stages": [
+        {
+          "id": "packaging",
+          "name": "実装材料・基板・加工"
+        }
+      ],
+      "current_price_reverified": false,
+      "depth": "primary_results_review",
+      "primary_result_published": "2026-08-05",
+      "period_or_scope": "FY2026 Q1",
+      "research_role": "conditional_growth",
+      "primary_source": "https://www.ibiden.com/ir/items/en_kessannsetsumei2026Q1.pdf"
+    },
+    {
+      "symbol": "3037.TW",
+      "name": "Unimicron",
+      "stages": [
+        {
+          "id": "packaging",
+          "name": "実装材料・基板・加工"
+        }
+      ],
+      "current_price_reverified": false,
+      "depth": "stage_role_only_not_fresh_results",
+      "research_role": "not_ranked",
+      "note": "今回、最新決算を同じ深さで再確認していない。選定外を劣後と解釈しない。"
+    },
+    {
+      "symbol": "6146.T",
+      "name": "ディスコ",
+      "stages": [
+        {
+          "id": "packaging",
+          "name": "実装材料・基板・加工"
+        }
+      ],
+      "current_price_reverified": false,
+      "depth": "primary_results_review",
+      "primary_result_published": "2026-10-06",
+      "period_or_scope": "Jul-Sep non-consolidated preliminary shipments/sales; July consolidated results",
+      "research_role": "complement",
+      "primary_source": "https://www-hq.disco.co.jp/eg/ir/library/doc/news/202610061_Preliminary_Report_on_Non-Consolidated_Sales_Figures_and_Shipment_Figures_(Second_Quarter_of_Fiscal_Year_2026).pdf"
+    },
+    {
+      "symbol": "6857.T",
+      "name": "アドバンテスト",
+      "stages": [
+        {
+          "id": "test",
+          "name": "半導体テスト装置"
+        }
+      ],
+      "current_price_reverified": false,
+      "depth": "primary_results_review",
+      "primary_result_published": "2026-07-29",
+      "period_or_scope": "FY2026 Q1",
+      "research_role": "center",
+      "primary_source": "https://www.advantest.com/document/en/investors/ir-library/result/E_FR_FY2026_1Q.pdf"
+    },
+    {
+      "symbol": "TER",
+      "name": "Teradyne",
+      "stages": [
+        {
+          "id": "test",
+          "name": "半導体テスト装置"
+        }
+      ],
+      "current_price_reverified": false,
+      "depth": "stage_role_only_not_fresh_results",
+      "research_role": "not_ranked",
+      "note": "今回、最新決算を同じ深さで再確認していない。選定外を劣後と解釈しない。"
+    },
+    {
+      "symbol": "000660.KS",
+      "name": "SK hynix",
+      "stages": [
+        {
+          "id": "ssd",
+          "name": "企業向けSSD"
+        },
+        {
+          "id": "hbm",
+          "name": "HBM・DRAM"
+        },
+        {
+          "id": "nand",
+          "name": "NANDフラッシュ"
+        }
+      ],
+      "current_price_reverified": false,
+      "depth": "primary_results_review",
+      "primary_result_published": "2026-07-29",
+      "period_or_scope": "Q2 2026; 6-K financial-income notes",
+      "research_role": "cyclical_challenger",
+      "primary_source": "https://news.skhynix.com/en/q2-2026-business-results/"
+    },
+    {
+      "symbol": "MU",
+      "name": "Micron",
+      "stages": [
+        {
+          "id": "ssd",
+          "name": "企業向けSSD"
+        },
+        {
+          "id": "hbm",
+          "name": "HBM・DRAM"
+        },
+        {
+          "id": "nand",
+          "name": "NANDフラッシュ"
+        }
+      ],
+      "current_price_reverified": false,
+      "depth": "primary_results_review",
+      "primary_result_published": "2026-09-30",
+      "period_or_scope": "FY2026 Q4",
+      "research_role": "cyclical_challenger",
+      "primary_source": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/default.aspx"
+    },
+    {
+      "symbol": "005930.KS",
+      "name": "Samsung Electronics",
+      "stages": [
+        {
+          "id": "ssd",
+          "name": "企業向けSSD"
+        },
+        {
+          "id": "hbm",
+          "name": "HBM・DRAM"
+        },
+        {
+          "id": "nand",
+          "name": "NANDフラッシュ"
+        }
+      ],
+      "current_price_reverified": false,
+      "depth": "stage_role_only_not_fresh_results",
+      "research_role": "not_ranked",
+      "note": "今回、最新決算を同じ深さで再確認していない。選定外を劣後と解釈しない。"
+    },
+    {
+      "symbol": "285A.T",
+      "name": "キオクシアHD",
+      "stages": [
+        {
+          "id": "ssd",
+          "name": "企業向けSSD"
+        },
+        {
+          "id": "nand",
+          "name": "NANDフラッシュ"
+        }
+      ],
+      "current_price_reverified": false,
+      "depth": "primary_results_review",
+      "primary_result_published": "2026-07-31",
+      "period_or_scope": "FY2026 Q1; Investor Day contract discussion",
+      "research_role": "cyclical_challenger",
+      "primary_source": "https://ssl4.eir-parts.net/doc/285A/ir_material_for_fiscal_ym4/209425/00.pdf"
+    },
+    {
+      "symbol": "SNDK",
+      "name": "Sandisk",
+      "stages": [
+        {
+          "id": "ssd",
+          "name": "企業向けSSD"
+        },
+        {
+          "id": "nand",
+          "name": "NANDフラッシュ"
+        }
+      ],
+      "current_price_reverified": false,
+      "depth": "stage_role_only_not_fresh_results",
+      "research_role": "not_ranked",
+      "note": "今回、最新決算を同じ深さで再確認していない。選定外を劣後と解釈しない。"
+    },
+    {
+      "symbol": "6702.T",
+      "name": "富士通",
+      "stages": [
+        {
+          "id": "server",
+          "name": "AIサーバー・ラック"
+        }
+      ],
+      "current_price_reverified": false,
+      "depth": "stage_role_only_not_fresh_results",
+      "research_role": "not_ranked",
+      "note": "今回、最新決算を同じ深さで再確認していない。選定外を劣後と解釈しない。"
+    },
+    {
+      "symbol": "6701.T",
+      "name": "NEC",
+      "stages": [
+        {
+          "id": "server",
+          "name": "AIサーバー・ラック"
+        }
+      ],
+      "current_price_reverified": false,
+      "depth": "stage_role_only_not_fresh_results",
+      "research_role": "not_ranked",
+      "note": "今回、最新決算を同じ深さで再確認していない。選定外を劣後と解釈しない。"
+    },
+    {
+      "symbol": "DELL",
+      "name": "Dell Technologies",
+      "stages": [
+        {
+          "id": "server",
+          "name": "AIサーバー・ラック"
+        }
+      ],
+      "current_price_reverified": false,
+      "depth": "primary_results_review",
+      "primary_result_published": "2026-09-01",
+      "period_or_scope": "FY2027 Q2",
+      "research_role": "challenger",
+      "primary_source": "https://investors.delltechnologies.com/sec-filings/all-sec-filings/content/0001571996-26-000039/exhibit991earnings8kq2fy27.htm"
+    },
+    {
+      "symbol": "HPE",
+      "name": "Hewlett Packard Enterprise",
+      "stages": [
+        {
+          "id": "server",
+          "name": "AIサーバー・ラック"
+        }
+      ],
+      "current_price_reverified": false,
+      "depth": "stage_role_only_not_fresh_results",
+      "research_role": "not_ranked",
+      "note": "今回、最新決算を同じ深さで再確認していない。選定外を劣後と解釈しない。"
+    },
+    {
+      "symbol": "SMCI",
+      "name": "Super Micro Computer",
+      "stages": [
+        {
+          "id": "server",
+          "name": "AIサーバー・ラック"
+        }
+      ],
+      "current_price_reverified": false,
+      "depth": "stage_role_only_not_fresh_results",
+      "research_role": "not_ranked",
+      "note": "今回、最新決算を同じ深さで再確認していない。選定外を劣後と解釈しない。"
+    },
+    {
+      "symbol": "0992.HK",
+      "name": "Lenovo Group",
+      "stages": [
+        {
+          "id": "server",
+          "name": "AIサーバー・ラック"
+        }
+      ],
+      "current_price_reverified": false,
+      "depth": "stage_role_only_not_fresh_results",
+      "research_role": "not_ranked",
+      "note": "今回、最新決算を同じ深さで再確認していない。選定外を劣後と解釈しない。"
+    },
+    {
+      "symbol": "2382.TW",
+      "name": "Quanta Computer",
+      "stages": [
+        {
+          "id": "server",
+          "name": "AIサーバー・ラック"
+        }
+      ],
+      "current_price_reverified": false,
+      "depth": "stage_role_only_not_fresh_results",
+      "research_role": "not_ranked",
+      "note": "今回、最新決算を同じ深さで再確認していない。選定外を劣後と解釈しない。"
+    },
+    {
+      "symbol": "6669.TW",
+      "name": "Wiwynn",
+      "stages": [
+        {
+          "id": "server",
+          "name": "AIサーバー・ラック"
+        }
+      ],
+      "current_price_reverified": false,
+      "depth": "stage_role_only_not_fresh_results",
+      "research_role": "not_ranked",
+      "note": "今回、最新決算を同じ深さで再確認していない。選定外を劣後と解釈しない。"
+    },
+    {
+      "symbol": "2317.TW",
+      "name": "Hon Hai Precision",
+      "stages": [
+        {
+          "id": "server",
+          "name": "AIサーバー・ラック"
+        }
+      ],
+      "current_price_reverified": false,
+      "depth": "stage_role_only_not_fresh_results",
+      "research_role": "not_ranked",
+      "note": "今回、最新決算を同じ深さで再確認していない。選定外を劣後と解釈しない。"
+    },
+    {
+      "symbol": "ANET",
+      "name": "Arista Networks",
+      "stages": [
+        {
+          "id": "network",
+          "name": "通信スイッチ"
+        }
+      ],
+      "current_price_reverified": false,
+      "depth": "primary_results_review",
+      "primary_result_published": "2026-08-04",
+      "period_or_scope": "Q2 2026",
+      "research_role": "center",
+      "primary_source": "https://investors.arista.com/Communications/Press-Releases-and-Events/Press-Release-Detail/2026/Arista-Networks-Inc--Reports-Second-Quarter-2026-Financial-Results/default.aspx"
+    },
+    {
+      "symbol": "5803.T",
+      "name": "フジクラ",
+      "stages": [
+        {
+          "id": "optical",
+          "name": "光部品・光配線"
+        }
+      ],
+      "current_price_reverified": false,
+      "depth": "primary_results_review",
+      "primary_result_published": "2026-08-07",
+      "period_or_scope": "FY2026 Q1; revised FY outlook",
+      "research_role": "conditional_growth",
+      "primary_source": "https://ssl4.eir-parts.net/doc/5803/tdnet/2866585/00.pdf"
+    },
+    {
+      "symbol": "COHR",
+      "name": "Coherent",
+      "stages": [
+        {
+          "id": "optical",
+          "name": "光部品・光配線"
+        }
+      ],
+      "current_price_reverified": false,
+      "depth": "primary_results_review",
+      "primary_result_published": "2026-08-12",
+      "period_or_scope": "FY2026 Q4",
+      "research_role": "challenger",
+      "primary_source": "https://www.sec.gov/Archives/edgar/data/820318/000119312526346860/d128030dex991.htm"
+    },
+    {
+      "symbol": "LITE",
+      "name": "Lumentum",
+      "stages": [
+        {
+          "id": "optical",
+          "name": "光部品・光配線"
+        }
+      ],
+      "current_price_reverified": false,
+      "depth": "primary_results_review",
+      "primary_result_published": "2026-08-11",
+      "period_or_scope": "FY2026 Q4",
+      "research_role": "challenger",
+      "primary_source": "https://investor.lumentum.com/financial-news-releases/news-details/2026/Lumentum-Announces-Fourth-Quarter-and-Full-Fiscal-Year-2026-Results/default.aspx"
+    },
+    {
+      "symbol": "6501.T",
+      "name": "日立製作所",
+      "stages": [
+        {
+          "id": "power",
+          "name": "電源・送配電"
+        }
+      ],
+      "current_price_reverified": false,
+      "depth": "primary_results_review",
+      "primary_result_published": "2026-07-29",
+      "period_or_scope": "FY2026 Q1",
+      "research_role": "stability_complement",
+      "primary_source": "https://www.hitachi.com/content/dam/hitachi/global/en/press/files/2026/07/260729/2026_1Qpre.pdf"
+    },
+    {
+      "symbol": "ETN",
+      "name": "Eaton",
+      "stages": [
+        {
+          "id": "power",
+          "name": "電源・送配電"
+        }
+      ],
+      "current_price_reverified": false,
+      "depth": "primary_results_review",
+      "primary_result_published": "2026-07-31",
+      "period_or_scope": "Q2 2026",
+      "research_role": "stability_complement",
+      "primary_source": "https://www.eaton.com/content/dam/eaton/company/investor-relations/quarterly-earnings/filings/2026/q2/q2-2026-analyst-presentation.pdf"
+    },
+    {
+      "symbol": "VRT",
+      "name": "Vertiv",
+      "stages": [
+        {
+          "id": "power",
+          "name": "電源・送配電"
+        },
+        {
+          "id": "cooling",
+          "name": "冷却"
+        }
+      ],
+      "current_price_reverified": false,
+      "depth": "primary_results_review",
+      "primary_result_published": "2026-07-29",
+      "period_or_scope": "Q2 2026",
+      "research_role": "center",
+      "primary_source": "https://investors.vertiv.com/news/news-details/2026/Vertiv-Reports-Strong-Second-Quarter-2026-with-Diluted-EPS-Growth-of-53-Adjusted-Diluted-EPS-Growth-of-60-Raises-Full-Year-2026-Guidance-Across-All-Key-Metrics/default.aspx"
+    },
+    {
+      "symbol": "6367.T",
+      "name": "ダイキン工業",
+      "stages": [
+        {
+          "id": "cooling",
+          "name": "冷却"
+        }
+      ],
+      "current_price_reverified": false,
+      "depth": "primary_results_review",
+      "primary_result_published": "2026-08-04",
+      "period_or_scope": "FY2026 Q1",
+      "research_role": "indirect_whole_company",
+      "primary_source": "https://www.daikin.com/-/media/993A6303AC814F598BD75FA6B53CFF56.ashx"
+    },
+    {
+      "symbol": "AMZN",
+      "name": "Amazon",
+      "stages": [
+        {
+          "id": "cloud",
+          "name": "クラウド・AIサービス"
+        }
+      ],
+      "current_price_reverified": false,
+      "depth": "primary_results_review",
+      "primary_result_published": "2026-07-30",
+      "period_or_scope": "Q2 2026",
+      "research_role": "demand_and_cloud_candidate",
+      "primary_source": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/default.aspx"
+    },
+    {
+      "symbol": "GOOGL",
+      "name": "Alphabet",
+      "stages": [
+        {
+          "id": "ai_services",
+          "name": "AIモデル・サービス"
+        },
+        {
+          "id": "cloud",
+          "name": "クラウド・AIサービス"
+        }
+      ],
+      "current_price_reverified": false,
+      "depth": "primary_results_review",
+      "primary_result_published": "2026-07-22",
+      "period_or_scope": "Q2 2026",
+      "research_role": "demand_and_cloud_candidate",
+      "primary_source": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm"
+    },
+    {
+      "symbol": "AAPL",
+      "name": "Apple",
+      "stages": [
+        {
+          "id": "device",
+          "name": "スマホ・PCメーカー"
+        }
+      ],
+      "current_price_reverified": false,
+      "depth": "stage_role_only_not_fresh_results",
+      "research_role": "not_ranked",
+      "note": "今回、最新決算を同じ深さで再確認していない。選定外を劣後と解釈しない。"
+    },
+    {
+      "symbol": "7011.T",
+      "name": "三菱重工",
+      "stages": [
+        {
+          "id": "generation",
+          "name": "発電・ガスタービン"
+        }
+      ],
+      "current_price_reverified": false,
+      "depth": "primary_results_review",
+      "primary_result_published": "2026-08-04",
+      "period_or_scope": "FY2026 Q1",
+      "research_role": "complement",
+      "primary_source": "https://www.mhi.com/finance/library/result/pdf/fy20261q/presentation.pdf"
+    },
+    {
+      "symbol": "GEV",
+      "name": "GE Vernova",
+      "stages": [
+        {
+          "id": "generation",
+          "name": "発電・ガスタービン"
+        }
+      ],
+      "current_price_reverified": false,
+      "depth": "primary_results_review",
+      "primary_result_published": "2026-07-22",
+      "period_or_scope": "Q2 2026",
+      "research_role": "complement",
+      "primary_source": "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000148/gev-20260630.htm"
+    },
+    {
+      "symbol": "ENR.DE",
+      "name": "Siemens Energy",
+      "stages": [
+        {
+          "id": "generation",
+          "name": "発電・ガスタービン"
+        }
+      ],
+      "current_price_reverified": false,
+      "depth": "primary_results_review",
+      "primary_result_published": "2026-08-05",
+      "period_or_scope": "FY2026 Q3",
+      "research_role": "complement",
+      "primary_source": "https://assets.siemens-energy.com/dam/d0147174-31a9-4a78-b062-b49d00428fc4/earnings-release-q3-fy2026-en-pdf_Original%20file.pdf"
+    }
+  ]
+}

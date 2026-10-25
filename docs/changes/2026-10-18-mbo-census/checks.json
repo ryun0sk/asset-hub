@@ -1,0 +1,34 @@
+{
+  "python_core_assessment_dashboard_publish_and_census": {
+    "passed": 72
+  },
+  "python_local_http": {
+    "passed": 17
+  },
+  "javascript_cases_census_ui_shell": {
+    "passed": 38
+  },
+  "archive_check": "8 archives unchanged",
+  "diff_check": "passed",
+  "production": {
+    "episodes": 115,
+    "companies": 112,
+    "primary_urls": 212,
+    "scope_gap_candidates": 6,
+    "japanese_inforich_search": "passed",
+    "inforich_dates": [
+      "2026-02-13",
+      "2026-04-01",
+      "2026-06-16"
+    ],
+    "failed_filter": 6,
+    "piped_distinct_attempts": 2,
+    "non_tob_not_applicable": "7338 confirmed",
+    "current_run": "run-2026-10-18-9d94b45f8ffc",
+    "current_candidates": 19,
+    "new_factors": "all unknown with criteria displayed",
+    "historical_runs_available": 3,
+    "console_errors_or_warnings": 0,
+    "screenshot": "production-census.png"
+  }
+}

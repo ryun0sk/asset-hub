@@ -1,0 +1,39 @@
+{
+  "as_of": "2026-10-18 JST",
+  "type": "hypothetical_method_example_not_company_forecast",
+  "currency": "JPY, illustrative nominal target-year basis",
+  "input_warning": "800 trillion is Son's stated long-term scenario; all allocation/share/margin inputs are arbitrary illustrative assumptions, not verified company data.",
+  "son_scenario_source": "https://www.softbank.jp/business/content/blog/202607/sbw2026-softbank-son-main-keynote",
+  "cases": [
+    {
+      "year": 2040,
+      "annual_budget_trillion_jpy": 800,
+      "component_purchase_allocation": 0.03,
+      "company_value_share_in_same_component_market": 0.2,
+      "normal_attributable_net_margin_assumption": 0.15,
+      "component_market_trillion_jpy": 24.0,
+      "company_ai_revenue_trillion_jpy": 4.8,
+      "company_ai_net_profit_trillion_jpy": 0.72,
+      "company_ai_net_profit_oku_jpy": 7200.0
+    },
+    {
+      "year": 2040,
+      "annual_budget_trillion_jpy": 800,
+      "component_purchase_allocation": 0.03,
+      "company_value_share_in_same_component_market": 0.2,
+      "normal_attributable_net_margin_assumption": 0.05,
+      "component_market_trillion_jpy": 24.0,
+      "company_ai_revenue_trillion_jpy": 4.8,
+      "company_ai_net_profit_trillion_jpy": 0.24,
+      "company_ai_net_profit_oku_jpy": 2400.0
+    }
+  ],
+  "required_profit_formula": "V0*(1+r)**n*(future_shares/current_shares)/terminal_PE; excludes dividends and FX",
+  "not_included": [
+    "current company valuations",
+    "actual company market shares",
+    "non-AI profits",
+    "2028/2029 forecasts",
+    "discounted cash-flow valuation"
+  ]
+}

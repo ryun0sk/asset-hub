@@ -1,0 +1,446 @@
+{
+  "symbol": "7011.T",
+  "name": "三菱重工",
+  "currency": "JPY",
+  "code": "7011",
+  "basis": "IFRS連結・希薄化後実績EPS（継続事業と非継続事業の合算）。単独四半期は第1四半期以外を累計EPSの差分で概算。",
+  "splitBasis": "2024年4月1日の1株→10株の株式分割後基準。2023年12月期累計EPS410.59円は10で割り41.059円へ換算。",
+  "notes": [
+    "株価の分割調整基準をEPSに合わせる。会社予想は基本EPS、実績は希薄化後EPSであり基準差を明記する。",
+    "EPS差分には期間ごとの加重平均株式数、希薄化効果、丸めの差があるため、単独四半期・TTM・半年年換算は会社の公式EPSではなく概算。",
+    "knownFromは終値比較に用いる日付。場中13:30の決算公表を当日から反映。月初・月末比較では公表当日/翌営業日の差は生じない。",
+    "2025年9月期以降ロジスネクストを非継続事業に分類しているが、本系列は継続・非継続を合算する親会社帰属利益のEPSを一貫して使用。",
+    "固定資産売却、金融収益、非継続事業などの一時的な損益を調整していない全社実績。ガスタービン事業だけのEPSではない。",
+    "半年年換算は直近2四半期の機械的な年換算で、会社予想ではない。案件進捗・利益認識の季節性や一時利益によりTTMとの差が拡大する。",
+    "2024年3月期短信は会社ウェブサイト公開分に誤りがあり訂正済み。会社説明では当初TDnet開示資料は正しい。本保存は訂正版。"
+  ],
+  "quarterly": [
+    {
+      "periodEnd": "2024-03-31",
+      "publishedDate": "2024-05-08",
+      "knownFrom": "2024-05-08",
+      "eps": 24.98,
+      "source": "https://www.mhi.com/jp/finance/library/result/pdf/fy20234q/kessan_tansin.pdf",
+      "componentSources": [
+        "https://www.mhi.com/jp/finance/library/result/pdf/fy20233q/kessan_tansin.pdf",
+        "https://www.mhi.com/jp/finance/library/result/pdf/fy20234q/kessan_tansin.pdf"
+      ],
+      "method": "累計差分による概算: 66.04 - 41.059"
+    },
+    {
+      "periodEnd": "2024-06-30",
+      "publishedDate": "2024-08-06",
+      "knownFrom": "2024-08-06",
+      "eps": 18.52,
+      "source": "https://www.mhi.com/jp/finance/library/result/pdf/fy20241q/kessan_tansin.pdf",
+      "method": "会社公表の第1四半期希薄化後EPS"
+    },
+    {
+      "periodEnd": "2024-09-30",
+      "publishedDate": "2024-11-05",
+      "knownFrom": "2024-11-05",
+      "eps": 13.33,
+      "source": "https://www.mhi.com/jp/finance/library/result/pdf/fy20242q/kessan_tansin.pdf",
+      "componentSources": [
+        "https://www.mhi.com/jp/finance/library/result/pdf/fy20241q/kessan_tansin.pdf",
+        "https://www.mhi.com/jp/finance/library/result/pdf/fy20242q/kessan_tansin.pdf"
+      ],
+      "method": "累計差分による概算: 31.85 - 18.52"
+    },
+    {
+      "periodEnd": "2024-12-31",
+      "publishedDate": "2025-02-04",
+      "knownFrom": "2025-02-04",
+      "eps": 19.34,
+      "source": "https://www.mhi.com/jp/finance/library/result/pdf/fy20243q/kessan_tansin.pdf",
+      "componentSources": [
+        "https://www.mhi.com/jp/finance/library/result/pdf/fy20242q/kessan_tansin.pdf",
+        "https://www.mhi.com/jp/finance/library/result/pdf/fy20243q/kessan_tansin.pdf"
+      ],
+      "method": "累計差分による概算: 51.19 - 31.85"
+    },
+    {
+      "periodEnd": "2025-03-31",
+      "publishedDate": "2025-05-09",
+      "knownFrom": "2025-05-09",
+      "eps": 21.83,
+      "source": "https://www.mhi.com/jp/finance/library/result/pdf/fy20244q/kessan_tansin.pdf",
+      "componentSources": [
+        "https://www.mhi.com/jp/finance/library/result/pdf/fy20243q/kessan_tansin.pdf",
+        "https://www.mhi.com/jp/finance/library/result/pdf/fy20244q/kessan_tansin.pdf"
+      ],
+      "method": "累計差分による概算: 73.02 - 51.19"
+    },
+    {
+      "periodEnd": "2025-06-30",
+      "publishedDate": "2025-08-05",
+      "knownFrom": "2025-08-05",
+      "eps": 20.31,
+      "source": "https://www.mhi.com/jp/finance/library/result/pdf/fy20251q/kessan_tansin.pdf",
+      "method": "会社公表の第1四半期希薄化後EPS"
+    },
+    {
+      "periodEnd": "2025-09-30",
+      "publishedDate": "2025-11-07",
+      "knownFrom": "2025-11-07",
+      "eps": 13.89,
+      "source": "https://www.mhi.com/jp/finance/library/result/pdf/fy20252q/kessan_tansin.pdf",
+      "componentSources": [
+        "https://www.mhi.com/jp/finance/library/result/pdf/fy20251q/kessan_tansin.pdf",
+        "https://www.mhi.com/jp/finance/library/result/pdf/fy20252q/kessan_tansin.pdf"
+      ],
+      "method": "累計差分による概算: 34.20 - 20.31"
+    },
+    {
+      "periodEnd": "2025-12-31",
+      "publishedDate": "2026-02-04",
+      "knownFrom": "2026-02-04",
+      "eps": 28.59,
+      "source": "https://www.mhi.com/jp/finance/library/result/pdf/fy20253q/kessan_tansin.pdf",
+      "componentSources": [
+        "https://www.mhi.com/jp/finance/library/result/pdf/fy20252q/kessan_tansin.pdf",
+        "https://www.mhi.com/jp/finance/library/result/pdf/fy20253q/kessan_tansin.pdf"
+      ],
+      "method": "累計差分による概算: 62.79 - 34.20"
+    },
+    {
+      "periodEnd": "2026-03-31",
+      "publishedDate": "2026-05-12",
+      "knownFrom": "2026-05-12",
+      "eps": 36.05,
+      "source": "https://www.mhi.com/jp/finance/library/result/pdf/fy20254q/kessan_tansin.pdf",
+      "componentSources": [
+        "https://www.mhi.com/jp/finance/library/result/pdf/fy20253q/kessan_tansin.pdf",
+        "https://www.mhi.com/jp/finance/library/result/pdf/fy20254q/kessan_tansin.pdf"
+      ],
+      "method": "累計差分による概算: 98.84 - 62.79"
+    },
+    {
+      "periodEnd": "2026-06-30",
+      "publishedDate": "2026-08-04",
+      "knownFrom": "2026-08-04",
+      "eps": 40.07,
+      "source": "https://www.mhi.com/jp/finance/library/result/pdf/fy20261q/kessan_tansin.pdf",
+      "method": "会社公表の第1四半期希薄化後EPS"
+    }
+  ],
+  "annual": [
+    {
+      "periodEnd": "2024-03-31",
+      "publishedDate": "2024-05-08",
+      "knownFrom": "2024-05-08",
+      "eps": 66.04,
+      "source": "https://www.mhi.com/jp/finance/library/result/pdf/fy20234q/kessan_tansin.pdf"
+    },
+    {
+      "periodEnd": "2025-03-31",
+      "publishedDate": "2025-05-09",
+      "knownFrom": "2025-05-09",
+      "eps": 73.02,
+      "source": "https://www.mhi.com/jp/finance/library/result/pdf/fy20244q/kessan_tansin.pdf"
+    },
+    {
+      "periodEnd": "2026-03-31",
+      "publishedDate": "2026-05-12",
+      "knownFrom": "2026-05-12",
+      "eps": 98.84,
+      "source": "https://www.mhi.com/jp/finance/library/result/pdf/fy20254q/kessan_tansin.pdf"
+    }
+  ],
+  "ttm": [
+    {
+      "periodEnd": "2024-12-31",
+      "publishedDate": "2025-02-04",
+      "knownFrom": "2025-02-04",
+      "source": "https://www.mhi.com/jp/finance/library/result/pdf/fy20243q/kessan_tansin.pdf",
+      "eps": 76.17,
+      "profitPeriodStart": "2024-01-01",
+      "halfYearAnnualizedEps": 65.34,
+      "method": "独自概算: 直近4四半期の希薄化後EPS合算。半年年換算は直近2四半期合計×2。",
+      "componentSources": [
+        "https://www.mhi.com/jp/finance/library/result/pdf/fy20234q/kessan_tansin.pdf",
+        "https://www.mhi.com/jp/finance/library/result/pdf/fy20241q/kessan_tansin.pdf",
+        "https://www.mhi.com/jp/finance/library/result/pdf/fy20242q/kessan_tansin.pdf",
+        "https://www.mhi.com/jp/finance/library/result/pdf/fy20243q/kessan_tansin.pdf"
+      ]
+    },
+    {
+      "periodEnd": "2025-03-31",
+      "publishedDate": "2025-05-09",
+      "knownFrom": "2025-05-09",
+      "source": "https://www.mhi.com/jp/finance/library/result/pdf/fy20244q/kessan_tansin.pdf",
+      "eps": 73.02,
+      "profitPeriodStart": "2024-04-01",
+      "halfYearAnnualizedEps": 82.34,
+      "method": "独自概算: 直近4四半期の希薄化後EPS合算。半年年換算は直近2四半期合計×2。",
+      "componentSources": [
+        "https://www.mhi.com/jp/finance/library/result/pdf/fy20241q/kessan_tansin.pdf",
+        "https://www.mhi.com/jp/finance/library/result/pdf/fy20242q/kessan_tansin.pdf",
+        "https://www.mhi.com/jp/finance/library/result/pdf/fy20243q/kessan_tansin.pdf",
+        "https://www.mhi.com/jp/finance/library/result/pdf/fy20244q/kessan_tansin.pdf"
+      ]
+    },
+    {
+      "periodEnd": "2025-06-30",
+      "publishedDate": "2025-08-05",
+      "knownFrom": "2025-08-05",
+      "source": "https://www.mhi.com/jp/finance/library/result/pdf/fy20251q/kessan_tansin.pdf",
+      "eps": 74.81,
+      "profitPeriodStart": "2024-07-01",
+      "halfYearAnnualizedEps": 84.28,
+      "method": "独自概算: 直近4四半期の希薄化後EPS合算。半年年換算は直近2四半期合計×2。",
+      "componentSources": [
+        "https://www.mhi.com/jp/finance/library/result/pdf/fy20242q/kessan_tansin.pdf",
+        "https://www.mhi.com/jp/finance/library/result/pdf/fy20243q/kessan_tansin.pdf",
+        "https://www.mhi.com/jp/finance/library/result/pdf/fy20244q/kessan_tansin.pdf",
+        "https://www.mhi.com/jp/finance/library/result/pdf/fy20251q/kessan_tansin.pdf"
+      ]
+    },
+    {
+      "periodEnd": "2025-09-30",
+      "publishedDate": "2025-11-07",
+      "knownFrom": "2025-11-07",
+      "source": "https://www.mhi.com/jp/finance/library/result/pdf/fy20252q/kessan_tansin.pdf",
+      "eps": 75.37,
+      "profitPeriodStart": "2024-10-01",
+      "halfYearAnnualizedEps": 68.4,
+      "method": "独自概算: 直近4四半期の希薄化後EPS合算。半年年換算は直近2四半期合計×2。",
+      "componentSources": [
+        "https://www.mhi.com/jp/finance/library/result/pdf/fy20243q/kessan_tansin.pdf",
+        "https://www.mhi.com/jp/finance/library/result/pdf/fy20244q/kessan_tansin.pdf",
+        "https://www.mhi.com/jp/finance/library/result/pdf/fy20251q/kessan_tansin.pdf",
+        "https://www.mhi.com/jp/finance/library/result/pdf/fy20252q/kessan_tansin.pdf"
+      ]
+    },
+    {
+      "periodEnd": "2025-12-31",
+      "publishedDate": "2026-02-04",
+      "knownFrom": "2026-02-04",
+      "source": "https://www.mhi.com/jp/finance/library/result/pdf/fy20253q/kessan_tansin.pdf",
+      "eps": 84.62,
+      "profitPeriodStart": "2025-01-01",
+      "halfYearAnnualizedEps": 84.96,
+      "method": "独自概算: 直近4四半期の希薄化後EPS合算。半年年換算は直近2四半期合計×2。",
+      "componentSources": [
+        "https://www.mhi.com/jp/finance/library/result/pdf/fy20244q/kessan_tansin.pdf",
+        "https://www.mhi.com/jp/finance/library/result/pdf/fy20251q/kessan_tansin.pdf",
+        "https://www.mhi.com/jp/finance/library/result/pdf/fy20252q/kessan_tansin.pdf",
+        "https://www.mhi.com/jp/finance/library/result/pdf/fy20253q/kessan_tansin.pdf"
+      ]
+    },
+    {
+      "periodEnd": "2026-03-31",
+      "publishedDate": "2026-05-12",
+      "knownFrom": "2026-05-12",
+      "source": "https://www.mhi.com/jp/finance/library/result/pdf/fy20254q/kessan_tansin.pdf",
+      "eps": 98.84,
+      "profitPeriodStart": "2025-04-01",
+      "halfYearAnnualizedEps": 129.28,
+      "method": "独自概算: 直近4四半期の希薄化後EPS合算。半年年換算は直近2四半期合計×2。",
+      "componentSources": [
+        "https://www.mhi.com/jp/finance/library/result/pdf/fy20251q/kessan_tansin.pdf",
+        "https://www.mhi.com/jp/finance/library/result/pdf/fy20252q/kessan_tansin.pdf",
+        "https://www.mhi.com/jp/finance/library/result/pdf/fy20253q/kessan_tansin.pdf",
+        "https://www.mhi.com/jp/finance/library/result/pdf/fy20254q/kessan_tansin.pdf"
+      ]
+    },
+    {
+      "periodEnd": "2026-06-30",
+      "publishedDate": "2026-08-04",
+      "knownFrom": "2026-08-04",
+      "source": "https://www.mhi.com/jp/finance/library/result/pdf/fy20261q/kessan_tansin.pdf",
+      "eps": 118.6,
+      "profitPeriodStart": "2025-07-01",
+      "halfYearAnnualizedEps": 152.24,
+      "method": "独自概算: 直近4四半期の希薄化後EPS合算。半年年換算は直近2四半期合計×2。",
+      "componentSources": [
+        "https://www.mhi.com/jp/finance/library/result/pdf/fy20252q/kessan_tansin.pdf",
+        "https://www.mhi.com/jp/finance/library/result/pdf/fy20253q/kessan_tansin.pdf",
+        "https://www.mhi.com/jp/finance/library/result/pdf/fy20254q/kessan_tansin.pdf",
+        "https://www.mhi.com/jp/finance/library/result/pdf/fy20261q/kessan_tansin.pdf"
+      ]
+    }
+  ],
+  "cumulative": [
+    {
+      "periodEnd": "2023-12-31",
+      "publishedDate": "2024-02-06",
+      "knownFrom": "2024-02-06",
+      "eps": 41.059,
+      "source": "https://www.mhi.com/jp/finance/library/result/pdf/fy20233q/kessan_tansin.pdf"
+    },
+    {
+      "periodEnd": "2024-03-31",
+      "publishedDate": "2024-05-08",
+      "knownFrom": "2024-05-08",
+      "eps": 66.04,
+      "source": "https://www.mhi.com/jp/finance/library/result/pdf/fy20234q/kessan_tansin.pdf"
+    },
+    {
+      "periodEnd": "2024-06-30",
+      "publishedDate": "2024-08-06",
+      "knownFrom": "2024-08-06",
+      "eps": 18.52,
+      "source": "https://www.mhi.com/jp/finance/library/result/pdf/fy20241q/kessan_tansin.pdf"
+    },
+    {
+      "periodEnd": "2024-09-30",
+      "publishedDate": "2024-11-05",
+      "knownFrom": "2024-11-05",
+      "eps": 31.85,
+      "source": "https://www.mhi.com/jp/finance/library/result/pdf/fy20242q/kessan_tansin.pdf"
+    },
+    {
+      "periodEnd": "2024-12-31",
+      "publishedDate": "2025-02-04",
+      "knownFrom": "2025-02-04",
+      "eps": 51.19,
+      "source": "https://www.mhi.com/jp/finance/library/result/pdf/fy20243q/kessan_tansin.pdf"
+    },
+    {
+      "periodEnd": "2025-03-31",
+      "publishedDate": "2025-05-09",
+      "knownFrom": "2025-05-09",
+      "eps": 73.02,
+      "source": "https://www.mhi.com/jp/finance/library/result/pdf/fy20244q/kessan_tansin.pdf"
+    },
+    {
+      "periodEnd": "2025-06-30",
+      "publishedDate": "2025-08-05",
+      "knownFrom": "2025-08-05",
+      "eps": 20.31,
+      "source": "https://www.mhi.com/jp/finance/library/result/pdf/fy20251q/kessan_tansin.pdf"
+    },
+    {
+      "periodEnd": "2025-09-30",
+      "publishedDate": "2025-11-07",
+      "knownFrom": "2025-11-07",
+      "eps": 34.2,
+      "source": "https://www.mhi.com/jp/finance/library/result/pdf/fy20252q/kessan_tansin.pdf"
+    },
+    {
+      "periodEnd": "2025-12-31",
+      "publishedDate": "2026-02-04",
+      "knownFrom": "2026-02-04",
+      "eps": 62.79,
+      "source": "https://www.mhi.com/jp/finance/library/result/pdf/fy20253q/kessan_tansin.pdf"
+    },
+    {
+      "periodEnd": "2026-03-31",
+      "publishedDate": "2026-05-12",
+      "knownFrom": "2026-05-12",
+      "eps": 98.84,
+      "source": "https://www.mhi.com/jp/finance/library/result/pdf/fy20254q/kessan_tansin.pdf"
+    },
+    {
+      "periodEnd": "2026-06-30",
+      "publishedDate": "2026-08-04",
+      "knownFrom": "2026-08-04",
+      "eps": 40.07,
+      "source": "https://www.mhi.com/jp/finance/library/result/pdf/fy20261q/kessan_tansin.pdf"
+    }
+  ],
+  "companyForecast": {
+    "eps": 113.09,
+    "periodEnd": "2027-03-31",
+    "announced": "2026-08-04",
+    "source": "https://www.mhi.com/jp/finance/library/result/pdf/fy20261q/kessan_tansin.pdf"
+  },
+  "companyForecastNote": "2027年3月期の会社予想基本EPS113.09円（8月4日短信再掲、業績予想修正なし）。実績の希薄化後EPSとは基準が異なる。外部予想ではない。",
+  "analyst": null,
+  "nextEarnings": {
+    "date": "2026-11-06",
+    "time": "13:30",
+    "timezone": "Asia/Tokyo",
+    "source": "https://www.mhi.com/jp/finance"
+  },
+  "sources": [
+    {
+      "url": "https://www.mhi.com/jp/finance/library/result/pdf/fy20233q/kessan_tansin.pdf",
+      "publishedDate": "2024-02-06",
+      "title": "三菱重工 2024年3月期9か月累計 決算短信",
+      "localPath": "sources/fy20233q-kessan-tansin.pdf",
+      "sha256": "7f9cd5a0e9577337b4018d6605fd4d7864c89acdf2a485d723beb9e3c2414f6c"
+    },
+    {
+      "url": "https://www.mhi.com/jp/finance/library/result/pdf/fy20234q/kessan_tansin.pdf",
+      "publishedDate": "2024-05-08",
+      "title": "三菱重工 2024年3月期通期 決算短信",
+      "localPath": "sources/fy20234q-kessan-tansin.pdf",
+      "sha256": "8aa317114cab56a74c040ebee700b8f7481ebd280a732461ea77d060d6cfb8c3"
+    },
+    {
+      "url": "https://www.mhi.com/jp/finance/library/result/pdf/fy20241q/kessan_tansin.pdf",
+      "publishedDate": "2024-08-06",
+      "title": "三菱重工 2025年3月期第1四半期 決算短信",
+      "localPath": "sources/fy20241q-kessan-tansin.pdf",
+      "sha256": "936dcf0594f09306f90a854a3840c7fe5b881ca091c2aa474ec2fc6e9e667405"
+    },
+    {
+      "url": "https://www.mhi.com/jp/finance/library/result/pdf/fy20242q/kessan_tansin.pdf",
+      "publishedDate": "2024-11-05",
+      "title": "三菱重工 2025年3月期中間期 決算短信",
+      "localPath": "sources/fy20242q-kessan-tansin.pdf",
+      "sha256": "15d9dc1ec28745851f106827da4b556a0d6998e957c4d93aa48021c9de27f23e"
+    },
+    {
+      "url": "https://www.mhi.com/jp/finance/library/result/pdf/fy20243q/kessan_tansin.pdf",
+      "publishedDate": "2025-02-04",
+      "title": "三菱重工 2025年3月期9か月累計 決算短信",
+      "localPath": "sources/fy20243q-kessan-tansin.pdf",
+      "sha256": "94d8469aac040f860e973b92c575b68777b4f98ed66cd60dd6943fddf580d889"
+    },
+    {
+      "url": "https://www.mhi.com/jp/finance/library/result/pdf/fy20244q/kessan_tansin.pdf",
+      "publishedDate": "2025-05-09",
+      "title": "三菱重工 2025年3月期通期 決算短信",
+      "localPath": "sources/fy20244q-kessan-tansin.pdf",
+      "sha256": "3f0ea909e1de83925059d60e5b9bb0a524e8d7036a84f1c0e08bb95fe60b84d4"
+    },
+    {
+      "url": "https://www.mhi.com/jp/finance/library/result/pdf/fy20251q/kessan_tansin.pdf",
+      "publishedDate": "2025-08-05",
+      "title": "三菱重工 2026年3月期第1四半期 決算短信",
+      "localPath": "sources/fy20251q-kessan-tansin.pdf",
+      "sha256": "2990deacc892bfd00020bda3982bc05c25aadba9d2b4054aaf48c8f458c81060"
+    },
+    {
+      "url": "https://www.mhi.com/jp/finance/library/result/pdf/fy20252q/kessan_tansin.pdf",
+      "publishedDate": "2025-11-07",
+      "title": "三菱重工 2026年3月期中間期 決算短信",
+      "localPath": "sources/fy20252q-kessan-tansin.pdf",
+      "sha256": "bb272d291623af8515db694502dda84450a5c21ffda9cef5e6e3351b567367ef"
+    },
+    {
+      "url": "https://www.mhi.com/jp/finance/library/result/pdf/fy20253q/kessan_tansin.pdf",
+      "publishedDate": "2026-02-04",
+      "title": "三菱重工 2026年3月期9か月累計 決算短信",
+      "localPath": "sources/fy20253q-kessan-tansin.pdf",
+      "sha256": "014c30530a6199299131a5d768013fac5812666183903120016bbe5056f85080"
+    },
+    {
+      "url": "https://www.mhi.com/jp/finance/library/result/pdf/fy20254q/kessan_tansin.pdf",
+      "publishedDate": "2026-05-12",
+      "title": "三菱重工 2026年3月期通期 決算短信",
+      "localPath": "sources/fy20254q-kessan-tansin.pdf",
+      "sha256": "463baf56a5df2d65c74b813254dc4618396e5a0c750d4056f088b61f5bedd8f0"
+    },
+    {
+      "url": "https://www.mhi.com/jp/finance/library/result/pdf/fy20261q/kessan_tansin.pdf",
+      "publishedDate": "2026-08-04",
+      "title": "三菱重工 2027年3月期第1四半期 決算短信",
+      "localPath": "sources/fy20261q-kessan-tansin.pdf",
+      "sha256": "e9ac0704f305471dbce7c9f760426f9e84c4ac597be13ad3661c2f145de22e9c"
+    },
+    {
+      "url": "https://www.mhi.com/jp/finance",
+      "publishedDate": "2026-10-16",
+      "title": "三菱重工IR情報: 次回決算予定"
+    },
+    {
+      "url": "https://www.mhi.com/jp/finance/library/result_archive",
+      "publishedDate": null,
+      "title": "決算短信アーカイブ・2024年3月期資料訂正に関する注記"
+    }
+  ]
+}

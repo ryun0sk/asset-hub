@@ -1,0 +1,13 @@
+{
+  "research/themes/ai-forward-valuation/2026-10-18/build_model.py": "67d4b9c982673ee8869ba2a3132a37cb9011ab0aee05fb097100b39e74e5332f",
+  "research/themes/ai-forward-valuation/2026-10-18/inputs/compute.json": "e4232072b7b85c7c4b6db667f753a84681df5dfc327ca8fe6febd315e0b1a216",
+  "research/themes/ai-forward-valuation/2026-10-18/inputs/japan.json": "c110f3975f1cd06570cf0ca40bac17ff2a7e84c9674c5358821eb902b39f8267",
+  "research/themes/ai-forward-valuation/2026-10-18/inputs/network-power.json": "c357538fefcf1753f2004576d8d9fe79f56707d499406050d613a6c590bc6c89",
+  "research/themes/ai-forward-valuation/2026-10-18/macro.json": "a663b4203fbf767c91335d4cd6e166570f1b43d966bcf86892a7ea454c4a9386",
+  "research/themes/ai-valuation-ranking/2026-10-18/inputs/compute.json": "15a7c2c60c416378154046f713365c44ea97657a92afae74012e0a64afead2aa",
+  "research/themes/ai-valuation-ranking/2026-10-18/inputs/detailed-eight-notes.json": "96ab0e9086df9b8c905f7d6e178f1395b6a850d00cbbf797af6e5304a7a55cd8",
+  "research/themes/ai-valuation-ranking/2026-10-18/inputs/infrastructure.json": "120e7d1d9c6a68a429d1b0ce81d4e96e0922d5a4882a08ecbd7383e60639496c",
+  "research/themes/ai-valuation-ranking/2026-10-18/inputs/japan.json": "64e7b457be411c62c123205ca6a25bd102831d5536effac13562b4c6593cba4c",
+  "research/themes/ai-valuation-ranking/2026-10-18/inputs/twse-primary.json": "af6436620a453a2df0de2294880fd90aca0c91bcf571641084552a837eeb3e1e",
+  "research/themes/ai-valuation-ranking/2026-10-18/prices.json": "b54b9c4eb7f5bdcf45ad790d89f67e279528b9256cdbd2ba54d2da619ebebb25"
+}

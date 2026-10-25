@@ -1,4 +1,5 @@
 import {mountActualValuationHistory} from './ai-actual-valuations.js';
+import {mountEpsTrend} from './ai-eps-trend.js';
 
 // Present a single question from the existing snapshot without changing its data or calculations.
 export const AI_DETAIL_SECTIONS = Object.freeze({
@@ -10,7 +11,12 @@ export const AI_DETAIL_SECTIONS = Object.freeze({
   multiples: Object.freeze({
     blockId: 'val-pe',
     title: 'PERの推移・過去比較',
-    description: '4銘柄の実績EPS・PER月次表と、保存版のPERグラフを確認します。',
+    description: '発電3社を含む7銘柄の実績EPS・PER月次表と、保存版のPERグラフを確認します。',
+  }),
+  eps: Object.freeze({
+    blockId: 'ai-eps-trend',
+    title: 'EPSの推移',
+    description: 'その日に分かっていた直近12か月の実績EPSを、期間と企業を選んで比較します。',
   }),
   earnings: Object.freeze({
     blockId: 'val-eps',
@@ -20,7 +26,7 @@ export const AI_DETAIL_SECTIONS = Object.freeze({
 });
 
 const mounts = new WeakMap();
-const BLOCK_IDS = ['val-now', ...Object.values(AI_DETAIL_SECTIONS).map(section => section.blockId)];
+const BLOCK_IDS = ['val-now', 'val-decomp', 'val-pe', 'val-eps'];
 
 // Only apply after the expected snapshot has loaded; unfamiliar documents retain their original view.
 export function applyAiDetail(doc, section = 'drivers') {
@@ -41,6 +47,15 @@ export function applyAiDetail(doc, section = 'drivers') {
   panel.hidden = false;
   fundamentals.hidden = false;
   for (const id of BLOCK_IDS) doc.getElementById(id).hidden = id !== selected.blockId;
+  let epsTrend = doc.getElementById('ai-eps-trend');
+  if (section === 'eps' && !epsTrend) {
+    epsTrend = doc.createElement('section');
+    epsTrend.id = 'ai-eps-trend';
+    epsTrend.className = 'ai-eps-trend';
+    epsTrend.setAttribute('aria-label', '直近12か月の実績EPSの推移');
+    fundamentals.append(epsTrend);
+  }
+  if (epsTrend) epsTrend.hidden = section !== 'eps';
   const actualHistory = doc.getElementById('ai-actual-history');
   if (actualHistory) actualHistory.hidden = section !== 'multiples';
   panel.setAttribute('aria-label', selected.title);
@@ -69,6 +84,7 @@ export function mountAiDetail(frame, section = 'drivers') {
   let pendingResize = null;
   let loadedStyle = null;
   let historyCleanup = null;
+  let epsCleanup = null;
   let pickerScript = null;
   let pickerReady = null;
   let pickerCleanup = null;
@@ -87,6 +103,8 @@ export function mountAiDetail(frame, section = 'drivers') {
     let doc;
     try { doc = frame.contentDocument; } catch { return; }
     if (!doc || !applyAiDetail(doc, section)) return;
+    epsCleanup?.();
+    epsCleanup = section === 'eps' ? mountEpsTrend(doc.getElementById('ai-eps-trend'), doc) : null;
     pickerCleanup?.();
     pickerCleanup = null;
     if (pickerScript) {
@@ -156,6 +174,7 @@ export function mountAiDetail(frame, section = 'drivers') {
     frame.removeEventListener('load', load);
     loadedStyle?.removeEventListener('load', resize);
     historyCleanup?.();
+    epsCleanup?.();
     pickerCleanup?.();
     pickerScript?.removeEventListener('load', pickerReady);
     pickerScript?.remove();

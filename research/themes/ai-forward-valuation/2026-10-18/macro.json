@@ -1,0 +1,63 @@
+{
+  "as_of": "2026-10-18 JST",
+  "money_unit": "USD billion per year",
+  "scenario_type": "independent conditional assumptions, not company guidance or consensus",
+  "scenario_probabilities": null,
+  "scope": "Broad physical AI infrastructure annual investment envelope. Component and upstream supplier revenues are different transaction layers and must not be summed into final demand.",
+  "calibration_2026": 1000,
+  "calibration_2026_status": "Rounded modelling anchor from Gartner's nearly USD1trillion expectation; not a measured full-year result.",
+  "annual_spend": {
+    "2028": {"weak": 1000, "base": 1400, "strong": 1900},
+    "2029": {"weak": 950, "base": 1700, "strong": 2500}
+  },
+  "rationale": {
+    "weak": "Financing/power constraints and investment pause; nominal 2029 spending falls from 2028 despite continued AI usage growth.",
+    "base": "Continued buildout with slower growth and partial normalization of equipment mix/pricing. Not an automatic full realization of every supplier's bullish outlook.",
+    "strong": "Faster monetization, power delivery and supplier expansion; high spending together with favorable company share and margins is a joint upside case, not a confidence bound."
+  },
+  "external_anchors": [
+    {
+      "publisher": "Gartner", "published": "2026-10-14", "type": "external forecast",
+      "2026_AI_infrastructure_nearly": 1000,
+      "additional_cumulative_2027_2030": 6000,
+      "warning": "Cumulative 2027-2030 is not annual spending. The article also warns of funding/ROIC/write-down risk; it does not promise supplier profits.",
+      "url": "https://gcom.pdo.aws.gartner.com/en/newsroom/press-releases/2026-10-14-gartner-says-over-us-dollars-three-and-a-half-trillion-of-artificial-intelligence-infrastructure-spending-could-be-exposed-to-impairment-by-the-end-of-2030"
+    },
+    {
+      "publisher": "IDC", "published": "2026-07-21", "type": "external forecast",
+      "2026_AI_infrastructure_server_storage": 497,
+      "2029_AI_infrastructure_server_storage": 1080,
+      "2030_AI_infrastructure_server_storage": 1210,
+      "warning": "Narrower server/storage vendor-spending scope; do not add to Gartner infrastructure envelope. 1080/1700~64% is a scale sanity check, not a verified allocation ratio or formal reconciliation of the two taxonomies.",
+      "url": "https://www.idc.com/resource-center/blog/ai-infrastructure-spending-holds-near-90-billion-in-q1-2026-as-arm-overtakes-x86-in-accelerated-servers-2026-forecast-raised-to-497-billion/"
+    },
+    {
+      "publisher": "NVIDIA", "published": "2026-08-26", "type": "company preliminary outlook",
+      "top5_hyperscaler_capex_2026_approx": 800,
+      "top5_hyperscaler_capex_2027_expected": 1300,
+      "FY2028_revenue_growth_supply_constrained_outlook": 0.70,
+      "warning": "Company view; capex may include non-AI, and FY2028 is approximately calendar2027, not calendar2028. Explicit benchmark to test the independent 2028 model, not an extra spending line to add.",
+      "url": "https://investor.nvidia.com/files/content_files/TRANSCRIPT_-NVIDIA-Corp-NVDA-US-Q2-2027-Earnings-Call-26-August-2026-5_00-PM-ET.pdf"
+    }
+  ],
+  "valuation": {
+    "price_date": "2026-10-16",
+    "target_dates": {"2028": "2028-12-31", "2029": "2029-12-31"},
+    "required_annual_return": 0.12,
+    "sensitivity_required_returns": [0.08, 0.12, 0.16],
+    "dividends_assumed": 0,
+    "terminal_pe": {
+      "285A.T": {"weak": 8, "base": 12, "strong": 16},
+      "TSM": {"weak": 16, "base": 22, "strong": 28},
+      "NVDA": {"weak": 18, "base": 25, "strong": 32},
+      "AVGO": {"weak": 18, "base": 25, "strong": 32},
+      "ASML": {"weak": 20, "base": 28, "strong": 36},
+      "6857.T": {"weak": 20, "base": 28, "strong": 36},
+      "VRT": {"weak": 18, "base": 25, "strong": 32},
+      "ANET": {"weak": 20, "base": 28, "strong": 36}
+    },
+    "terminal_pe_status": "Independent assumptions specified before model outputs, not measured fair-value multiples. Check same-PER, +/-25% PE and discount-rate sensitivities.",
+    "price_vs_eps_definition": "Oct16 share price divided by each future scenario's annual normalized EPS; neither observed current TTM PE nor published consensus forward PE.",
+    "present_value_definition": "Future annual normalized EPS times assumed terminal PE discounted from target date; conditional entry-price equivalent excluding dividends/tax/FX changes, not a full cash-flow DCF or market price target."
+  }
+}

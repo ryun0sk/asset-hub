@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-18 JST",
+  "status": "production_verified",
+  "revision": "asset-hub-00045-l4z",
+  "traffic_percent": 100,
+  "image": "asia-northeast1-docker.pkg.dev/ryun0sk-asset-hub/asset-hub/app@sha256:99edab09974c1070295f2d80072d308324c759f2a5d4194bc94a0b2bdeb30ee5",
+  "build_id": "ae2c4df5-e70e-4e1c-aa69-51dc2f210c0f",
+  "overlay_files_verified": 16,
+  "unrelated_files_preserved": 363,
+  "catalog_unchanged": true,
+  "prices_and_profit_assumptions_unchanged": true,
+  "Taiwan_cases_changed": 12,
+  "initial_published_values_preserved": true,
+  "independent_review": "12 corrected cases and caveats passed",
+  "current_focused_tests_passed": 5,
+  "prior_full_javascript_suite_passed": 133,
+  "production_rows": 46,
+  "production_order": [
+    "000660.KS",
+    "AVGO",
+    "6669.TW",
+    "2382.TW",
+    "SMCI"
+  ],
+  "purchase_preference": [
+    "AVGO",
+    "000660.KS",
+    "2382.TW",
+    "6669.TW",
+    "SMCI"
+  ],
+  "production_EPS": {
+    "6669.TW": 218.65,
+    "2382.TW": 45.3
+  },
+  "responsive_widths": [
+    375,
+    1440
+  ],
+  "browser_console_errors": 0,
+  "report_body_verified": true,
+  "iap_enabled": true,
+  "viewer_policy_unchanged": true,
+  "invoker_policy_unchanged": true,
+  "other_services_changed": false,
+  "screenshot_sha256": "e6dad84cfd28152169ad159ca4ec51ab0a6f71fdcd7f42bc0fc7b5f45e641a0d"
+}

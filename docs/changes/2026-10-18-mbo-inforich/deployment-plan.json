@@ -1,0 +1,21 @@
+{
+  "base_revision": "asset-hub-00047-99m",
+  "base_image": "asia-northeast1-docker.pkg.dev/ryun0sk-asset-hub/asset-hub/app@sha256:4248db86be09d6552342e227610e285208d33b30207ca9548e706133e28c2291",
+  "before": {
+    "web/mbo-cases.js": "ee8e6e2ce37231b6d71c3d05a8e16379a819026892646244f8afb2c8e8976013",
+    "web/mbo-case-data.js": "f4411d663ff1f48e098df2f292350859d09d023968cf3c6405429135b74afb33"
+  },
+  "after": {
+    "web/mbo-cases.js": "ac4c43315540781ab18c7e91a3b365fb6dbed00033b01e6d1fef6c0e1838e7c4",
+    "web/mbo-case-data.js": "abbd99e98cb6a583d44947d3af7157bc1ceef597d0c31e5013da7f470ad69993"
+  },
+  "canonical_eight_sha256": "13fd68404e1fc73d16cf8f1be80eb179f4ba29e255d7484303f2473af2bf71c4",
+  "supplement_sha256": "7057ae167087739c97e61b2bd9e9a5114d25c71971b9033af628a07c3bcba044",
+  "weekly_results_change": false,
+  "iap_change": false,
+  "revision": "asset-hub-00048-f5b",
+  "build_id": "e6498d7b-81e1-4734-864e-9105c8f20477",
+  "image_digest": "asia-northeast1-docker.pkg.dev/ryun0sk-asset-hub/asset-hub/app@sha256:1552fb3ac5df8e4273ba4f83a606ee2f73ed8205108dbab13ca22a31b3cbae89",
+  "other_files_preserved": 382,
+  "traffic_percent": 100
+}

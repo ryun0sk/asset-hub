@@ -1,5 +1,5 @@
 // Catalog helpers and hash routing. Pure functions so tests can run them without a DOM.
-// Routes: #home (default), #cost, #a/all (資産の保有・推移), #r/<entryId>/<itemIndex>[/<heading id>].
+// Routes: #home (default), #cost, #a/all, #mbo/<section>, #r/<entryId>/<itemIndex>[/<heading id>].
 export const KIND_LABELS = Object.freeze({theme: 'テーマ', company: '企業', crypto: '仮想通貨'});
 export const TYPE_LABELS = Object.freeze({html: 'HTML', md: '文書', pdf: 'PDF', code: 'コード'});
 
@@ -43,6 +43,8 @@ export function parseRoute(hash) {
   const value = String(hash || '').replace(/^#/, '');
   if (value === 'cost') return {view: 'cost'};
   if (value === 'library') return {view: 'library'};
+  const mbo = value.match(/^mbo(?:\/(candidates|events|cases|history))?\/?$/);
+  if (mbo) return {view: 'mbo', section: mbo[1] || 'candidates'};
   const ai = value.match(/^ai\/([a-z]+)\/?$/);
   if (ai) return {view: 'ai', section: ai[1]};
   const asset = value.match(/^a\/([a-z]+)\/?$/);

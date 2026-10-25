@@ -1,0 +1,75 @@
+{
+  "sources": {
+    "vcube-withdrawal-20260331": {
+      "source_id": "vcube-withdrawal-20260331",
+      "title": "ブイキューブ 上場廃止基準抵触の見込み及びスポンサー基本契約締結",
+      "url": "https://www2.jpx.co.jp/disc/36810/140120260331595191.pdf",
+      "public_at": "2026-03-31",
+      "issuer": "ブイキューブ",
+      "source_type": "primary_company_or_buyer_or_exchange",
+      "locator": "PDF p3-4・当初の検討過程/当初MBO提案の撤回",
+      "accessed_at": "2026-10-18",
+      "short_quote": "LBOローンとしての取組みが困難"
+    }
+  },
+  "cases": [
+    {
+      "case_id": "vcube-unlaunched-2026",
+      "code": "3681",
+      "name": "ブイキューブ（正式MBO実施前の提案撤回）",
+      "first_official_disclosure_date": "2026-03-31",
+      "first_formal_mbo_announcement_date": null,
+      "first_date_source_ids": [
+        "vcube-withdrawal-20260331"
+      ],
+      "transaction_class": "unlaunched_management_proposal_withdrawn",
+      "actors": "J-INCと経営陣が関与する当初案。代替案では経営陣の資本参加を想定しないとの会社説明。",
+      "factor_ids": [
+        "funding_gap",
+        "funding_capacity",
+        "price_acceptability",
+        "operating_uncertainty"
+      ],
+      "public_motives": [
+        {
+          "text": "債務超過のおそれに備え、再建策の一つとして非公開化を検討。2026年1月にMBOを前提とする意向表明書を受領したと3月末に説明。",
+          "source_ids": [
+            "vcube-withdrawal-20260331"
+          ],
+          "locator": "PDF p3",
+          "evidence_kind": "public_statement",
+          "availability_phase": "after_announcement"
+        }
+      ],
+      "observed_obstacles": [
+        {
+          "text": "DDに基づく株式価値が市場価格を大きく下回るとの提案者判断、既存銀行からLBO融資が困難との回答を理由に、3月3日に当初提案を撤回し3月4日に検討終了と会社が説明。",
+          "source_ids": [
+            "vcube-withdrawal-20260331"
+          ],
+          "locator": "PDF p4",
+          "evidence_kind": "documented_process",
+          "availability_phase": "after_announcement"
+        }
+      ],
+      "observed_enabling_conditions": [],
+      "outcome": {
+        "mbo_tob_status": "not_launched_formal_proposal_not_available",
+        "summary": "当初のMBO提案は正式実施前に検討終了。経営陣が出資しない代替の資本増強・非公開化案へ。公表済TOBの不成立件数には入れない。",
+        "source_ids": [
+          "vcube-withdrawal-20260331"
+        ],
+        "reviewed_as_of": "2026-10-18"
+      },
+      "preannouncement_independent_evidence": {
+        "independent_source_verified": false,
+        "reason": "2026-03-31の事後説明から内部提案と撤回を確認。1月の提案受領日を当時の公開情報の日付と扱わない。"
+      },
+      "classification_cautions": [
+        "正式に実施公表されたMBOの母集団から除き、提案段階の資金・価格条件による見送りの参考例として表示する。",
+        "3月31日は本調査で確認した会社の説明日。内部提案の受領・撤回日と公表日を分離する。"
+      ],
+      "factor_mapping_note": "参考例による確認項目の追加であり、非公開化の結果やMBO予測精度を測る標本には加えない。"
+    }
+  ]
+}

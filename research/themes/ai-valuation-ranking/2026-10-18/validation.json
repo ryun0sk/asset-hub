@@ -1,0 +1,83 @@
+{
+  "as_of": "2026-10-18 JST",
+  "status": "passed",
+  "company_count": 46,
+  "scenario_count": 276,
+  "rank_eligible_count": 45,
+  "reference_symbols": [
+    "ETN"
+  ],
+  "checks": [
+    "all 276 unique company-year-case records",
+    "46 companies match the saved AI universe",
+    "all 51 stock/FX raw hashes and Oct16 dates",
+    "quote/EPS currencies, positive diluted shares and case monotonicity",
+    "loss valuation stays null, not zero",
+    "six shared NVDA/AVGO/AMD pool allocations <= 100%",
+    "SMCI maximum potential dilution and future SBC covered",
+    "CSV row count and source manifest hashes",
+    "offline build idempotence",
+    "133 JavaScript tests passed"
+  ],
+  "independent_reviews": {
+    "japan_materials_equipment": {
+      "companies": 12,
+      "rows": 72,
+      "result": "math passed; main primary anchors and share actions checked",
+      "qualification": "Siltronic recovery requires strong EBITDA improvement; sensitivity disclosed"
+    },
+    "infrastructure_cloud_optics": {
+      "companies": 12,
+      "rows": 72,
+      "result": "math passed; major primary anchors checked",
+      "qualification": "Fujikura EIR financial PDFs independently not retrievable; original researcher primary verification retained. Split and implied shares independently verified. GOOGL if-converted basis clarified."
+    },
+    "compute_memory_servers": {
+      "companies": 14,
+      "rows": 84,
+      "segments": 300,
+      "result": "final version independently recalculated and major anchors checked",
+      "fixes": [
+        "SMCI audited10K current status",
+        "SMCI maximum conversion dilution + SBC",
+        "Lenovo updated conversion terms",
+        "Wiwynn stock dividend and TWSE shares",
+        "Samsung preferred/common participation"
+      ]
+    }
+  },
+  "ui_checks": {
+    "status": "passed local browser verification",
+    "desktop_width": 1440,
+    "mobile_width": 375,
+    "checks": [
+      "46 rows with base ranking and Eaton reference last",
+      "company/stage/quality filters",
+      "2028/2029, weak/base/strong and 8/12/16% selection synchronized",
+      "negative EPS valuation is unavailable, not zero",
+      "SMCI six-case assumptions and latest audited10K links displayed",
+      "EPS/PER existing view and forward route coexist",
+      "375px body width has no horizontal overflow; table scroll contained",
+      "no browser warning/error logs"
+    ],
+    "independent_ui_review": "no release-blocking finding; 5 focused tests passed"
+  },
+  "limitations": [
+    "Independent scenario assumptions are not validated forecasts or probabilities",
+    "EPS times PE is not full DCF; interim cash/payout and spinoff values need separate assessment",
+    "Data/model granularity differs across companies",
+    "Taiwan CB latest remaining principal not fully reconciled; current version deliberately uses possible-overlap full-original-principal upper bound, not confirmed actual diluted shares."
+  ],
+  "followup_CB_review": {
+    "status": "math passed; remaining-principal uncertainty disclosed",
+    "price_unchanged": true,
+    "profit_assumptions_unchanged": true,
+    "company_cases_changed": 12,
+    "Wiwynn_base_shares_bn": 0.6479415540815467,
+    "Quanta_base_shares_bn": 4.44285920298785,
+    "basis": "current issued shares plus full-original-CB potential upper bound times unchanged future share growth; possible already-converted overlap, not exact GAAP shares",
+    "initial_version": "revisions/initial-published/manifest.json",
+    "independent_reviews": "SGX conversion terms and upper-bound arithmetic independently checked",
+    "tests": "5 current ranking tests passed; prior full JavaScript suite 133 passed before follow-up"
+  }
+}

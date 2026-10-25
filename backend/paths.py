@@ -37,6 +37,8 @@ RESEARCH_TYPES = {
 
 # Local-only working material is never served, even when present on disk.
 EXCLUDED_SEGMENTS = {'working', 'qa'}
+# Local-only research application: never included in the normal/cloud shell or image.
+MBO_LOCAL_ASSETS = {'mbo.html', 'mbo.css'}
 
 
 def extension(name):
@@ -100,11 +102,13 @@ def shell_assets(web_dir):
     if not web.is_dir():
         return assets
     for entry in web.iterdir():
+        if entry.name in MBO_LOCAL_ASSETS:
+            continue
         mime = SHELL_TYPES.get(extension(entry.name))
         if mime and not entry.name.startswith('.') and entry.is_file() and not entry.is_symlink():
             assets['/' + entry.name] = (entry, mime)
     index = web / 'index.html'
-    if index.is_file():
+    if index.is_file() and not index.is_symlink():
         assets['/'] = (index, SHELL_TYPES['html'])
     return assets
 
