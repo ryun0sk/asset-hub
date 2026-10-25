@@ -1,10 +1,10 @@
 // Loader for the weekly asset state (same shape as costs.js): fetch /api/assets, keep the last good
-// payload, and render the selected 保有・推移 page into #assetSection. Chart choices (range, stacked or
-// lines, unchecked classes / positions) live here and survive re-renders until the page is reloaded.
+// payload, and render the selected 保有・推移 page into #assetSection. Chart choices (range and
+// unchecked classes / positions) live here and survive re-renders until the page is reloaded.
 import {assetsView, assetPolicyView} from './asset-view.js';
 import {UiCharts} from './charts.js';
 
-let catalogRef = null, payload = null, loading = false, error = '', loadedAt = 0, range = '52', mode = 'stack', active = false;
+let catalogRef = null, payload = null, loading = false, error = '', loadedAt = 0, range = '52', active = false;
 const hiddenClasses = new Set(), hiddenPositions = new Set();
 const TTL = 60000;
 let subview = 'all';
@@ -21,11 +21,10 @@ function render(focus = null) {
   UiCharts.destroy(root);
   root.innerHTML = (subview === 'policy'
     ? assetPolicyView(payload, {loading, error})
-    : assetsView(payload, catalogRef, {view: subview, loading, error, range, mode, hiddenClasses, hiddenPositions}));
+    : assetsView(payload, catalogRef, {view: subview, loading, error, range, hiddenClasses, hiddenPositions}));
   UiCharts.mount(root);
   const rangeSelect = root.querySelector('#asset-range');
   if (rangeSelect) rangeSelect.onchange = () => { range = rangeSelect.value; render({select: true}); };
-  root.querySelectorAll('input[name="asset-mode"]').forEach(input => { input.onchange = () => { mode = input.value; render({mode: input.value}); }; });
   root.querySelectorAll('input[data-toggle]').forEach(input => {
     input.onchange = () => {
       const [kind, ...rest] = input.dataset.toggle.split(':'), key = rest.join(':');
@@ -37,7 +36,7 @@ function render(focus = null) {
   if (!focus) return;
   // Re-rendering replaces the controls; hand the keyboard focus to the same one.
   const next = focus.toggle ? [...root.querySelectorAll('input[data-toggle]')].find(input => input.dataset.toggle === focus.toggle)
-    : focus.mode ? root.querySelector(`input[name="asset-mode"][value="${focus.mode}"]`) : root.querySelector('#asset-range');
+    : root.querySelector('#asset-range');
   next?.focus();
 }
 

@@ -1,6 +1,6 @@
 // 保有・推移 as separate summary, trend, holdings and policy HTML views.
 // Charts come from UiCharts only; every string is escaped and no style attribute is emitted.
-import {CLASS_ORDER, CLASS_LABELS, RANGES, datesOf, limitDates, seriesByDate, portfolioSummary, movers, holdings, researchEntryFor, weekRows, yen, signedYen, man, signedMan, percent, signedPercent, quantityText, deltaClass} from './asset-model.js';
+import {CLASS_ORDER, CLASS_LABELS, RANGES, datesOf, limitDates, seriesByDate, portfolioSummary, movers, holdings, trendPositions, researchEntryFor, weekRows, yen, signedYen, man, signedMan, percent, signedPercent, quantityText, deltaClass} from './asset-model.js';
 import {routeFor} from './catalog.js';
 import {UiCharts} from './charts.js';
 import {renderMarkdown} from './markdown.js';
@@ -46,19 +46,18 @@ function nameCell(row, catalog) {
   return entry ? `<a class="entry-link" href="${routeFor(entry.id, 0)}" title="調査を開く">${label}</a>` : label;
 }
 
-const MODES = [{value: 'stack', label: '積み上げ'}, {value: 'line', label: '折れ線'}];
-const modeRadios = mode => `<fieldset class="asset-mode"><legend>表示形式</legend>${MODES.map(option => `<label><input type="radio" name="asset-mode" value="${option.value}"${option.value === mode ? ' checked' : ''}> ${option.label}</label>`).join('')}</fieldset>`;
 // One checkbox per series; `toggle` identifies it for assets.js ("c:<class>" or "p:<position key>").
 const checkbox = (toggle, label, checked, tone) => `<label class="asset-check"><input type="checkbox" data-toggle="${esc(toggle)}"${checked ? ' checked' : ''}><span class="asset-check-swatch ${tone}" aria-hidden="true"></span>${esc(label)}</label>`;
-const positionLabel = row => `${row.symbol === row.name || row.symbol === 'JPY' ? row.name : `${row.symbol} ${row.name}`}（${row.accountLabel}）`;
+const positionLabel = row => `${row.symbol === row.name || row.symbol === 'JPY' ? row.name : `${row.symbol} ${row.name}`}（${row.accountLabel}）${row.pastHolding ? ' · 過去保有' : ''}`;
 
-// Stacked bars or lines for the chosen series; with lines a dashed line adds up the selection.
-function seriesChart({title, mode, entries, values, rows}) {
+// Every asset chart is a line chart, with a distinct selection total even for one
+// chosen item. Missing position rows break that item; the recorded absence adds 0 to the total.
+function seriesChart({title, entries, values, rows}) {
   if (!entries.length) return '<p class="asset-empty" role="status">表示する項目にチェックを入れてください。</p>';
   const data = rows.map((row, index) => ({...row, ...Object.fromEntries(entries.map(entry => [entry.id, values[entry.key]?.[index] ?? null])), total: entries.reduce((sum, entry) => sum + (values[entry.key]?.[index] ?? 0), 0)}));
-  const series = entries.map(entry => ({key: entry.id, label: entry.label, kind: mode === 'stack' ? 'bar' : 'line', tone: entry.tone}));
-  if (mode === 'line' && entries.length > 1) series.push({key: 'total', label: '選択の合計', tone: 'primary', dashed: true});
-  return UiCharts.render({title, unit: 'man', stacked: mode === 'stack', slot: 14, rows: data, series});
+  const series = entries.map(entry => ({key: entry.id, label: entry.label, kind: 'line', tone: entry.tone}));
+  series.push({key: 'total', label: '選択項目の合計', kind: 'line', tone: 'primary', dashed: true, marker: 'ring'});
+  return UiCharts.render({title, unit: 'man', labels: 'all', labelSize: 'compact', rows: data, series});
 }
 
 function moversPanel(state, catalog, summary) {
@@ -97,7 +96,7 @@ function compositionPanel(title, label, rows, summary, classes = false) {
 
 // options.view selects the page. The default remains the existing trend route (#a/all).
 // hiddenClasses / hiddenPositions are Sets of unchecked ids (everything is checked by default).
-export function assetsView(payload, catalog, {view = 'all', loading = false, error = '', range = '52', mode = 'stack', hiddenClasses = new Set(), hiddenPositions = new Set()} = {}) {
+export function assetsView(payload, catalog, {view = 'all', loading = false, error = '', range = '52', hiddenClasses = new Set(), hiddenPositions = new Set()} = {}) {
   const state = payload?.state || null, summary = portfolioSummary(state);
   const head = status({loading, error});
   if (!summary) return `<section class="asset-page">${head}${payload || !loading ? emptyState(payload) : ''}</section>`;
@@ -120,23 +119,22 @@ export function assetsView(payload, catalog, {view = 'all', loading = false, err
   const classEntries = classes.map(cls => ({id: `c-${cls}`, key: cls, label: CLASS_LABELS[cls] || cls, tone: CLASS_TONES[cls] || 'cat-1'}));
   const overall = classEntries.filter(entry => !hiddenClasses.has(entry.key));
   const sections = classes.map(cls => {
-    const label = CLASS_LABELS[cls] || cls, held = holdings(state, cls);
+    const label = CLASS_LABELS[cls] || cls, held = trendPositions(state, cls, {dates});
     if (!held.length) return '';
     const part = summary.byClass.find(row => row.cls === cls) || {value: 0, delta: null, previous: null, share: 0};
-    const offset = allDates.length - dates.length;
     const entries = held.map((row, index) => ({id: `p${index}`, key: row.key, label: positionLabel(row), tone: `cat-${(index % 6) + 1}`}));
     const shown = entries.filter(entry => !hiddenPositions.has(entry.key));
     return `<section class="panel asset-class-panel" id="asset-class-${esc(cls)}">
       ${classHeading(label, held, part)}
       <div class="asset-checks" role="group" aria-label="${esc(label)}の表示する内訳">${entries.map(entry => checkbox(`p:${entry.key}`, entry.label, !hiddenPositions.has(entry.key), entry.tone)).join('')}</div>
-      <div class="asset-chart">${seriesChart({title: `${label}の内訳の推移`, mode, entries: shown, values: Object.fromEntries(held.map(row => [row.key, row.history.slice(offset)])), rows})}</div>
+      <div class="asset-chart">${seriesChart({title: `${label}の内訳の推移`, entries: shown, values: Object.fromEntries(held.map(row => [row.key, row.history])), rows})}</div>
     </section>`;
   }).join('');
   return `<section class="asset-page asset-trends">${head}${metrics(summary)}
-    <div class="asset-toolbar">${rangeSelect(range, allDates)}${modeRadios(mode)}</div>
+    <div class="asset-toolbar">${rangeSelect(range, dates)}<span>折れ線 · 破線は選択項目の合計</span></div>
     <section class="panel asset-chart-panel"><div class="panel-heading"><h2>資産全体の推移</h2><span class="subtle">チェックした資産クラスだけを表示</span></div>
       <div class="asset-checks" role="group" aria-label="表示する資産クラス">${classEntries.map(entry => checkbox(`c:${entry.key}`, entry.label, !hiddenClasses.has(entry.key), entry.tone)).join('')}</div>
-      <div class="asset-chart">${seriesChart({title: '資産全体の推移', mode, entries: overall, values: byClass.values, rows})}</div>
+      <div class="asset-chart">${seriesChart({title: '資産全体の推移', entries: overall, values: byClass.values, rows})}</div>
     </section>
     <h2 class="asset-section-title">資産クラスごとの推移</h2>
     ${sections}

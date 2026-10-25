@@ -50,6 +50,7 @@
   /* Shared charts keep one SVG unit equal to one CSS pixel. */
   --chart-font-axis: 10.5;
   --chart-font-value: 10;
+  --chart-font-value-compact: 9;
   --chart-point-radius: 3;
   --stroke-chart-point: 1.5px;
   --stroke-chart-line: 2.5px;
@@ -57,6 +58,7 @@
   --stroke-grid: 1;
   --font-size-chart-axis: calc(var(--chart-font-axis) * 1px);
   --font-size-chart-value: calc(var(--chart-font-value) * 1px);
+  --font-size-chart-value-compact: calc(var(--chart-font-value-compact) * 1px);
   --font-size-chart-legend: calc(var(--chart-font-axis) * 1px);
 
   /* Brand colours (shared base tokens). */

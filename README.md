@@ -140,3 +140,5 @@ node research/companies/285A-kioxia/2026-09-05/valuation.mjs   # アーカイブ
 続けて「PERの推移」の隣に[EPSの推移](https://asset-hub-pvgbytjsqa-an.a.run.app/#ai/eps)を追加しました。保存版46社のTTM EPSを公表済み日から階段状の折れ線で表示し、現地通貨別の実額と開始時点＝100を切り替えられます。工程・企業・期間を選べ、開始・終了EPSと増減率も表で確認できます。[実装と検証の記録](docs/changes/2026-10-18-eps-trend/README.md)
 
 2026-10-25に、残っていたMBO・AI調査・画面変更を全体レビューしました。入力・評価・配信境界の修正と、保存計算の再現性を確認しています。[統合レビューと検証の記録](docs/changes/2026-10-25-pending-review/README.md)。
+
+同日に、資産推移の全グラフを折れ線へ統一し、各観測点の小さな数値と選択項目の合計線を追加しました。過去保有も含めて各週の合計が一致し、チェック・期間変更は引き続き利用できます。[実装と検証](docs/changes/2026-10-25-asset-line-charts/README.md) · [資産推移](https://asset-hub-pvgbytjsqa-an.a.run.app/#a/all)。
