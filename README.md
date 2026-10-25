@@ -44,7 +44,7 @@ python3 scripts/archive_snapshots.py --write    # 新しくアーカイブにな
 
 資産の残高は Git には入れません。週末に `/weekly-assets` スキル（[.claude/skills/weekly-assets/SKILL.md](.claude/skills/weekly-assets/SKILL.md)）の手順で `data/private/assets/`（Git 対象外）に記録し、`python3 -m backend.assets build` → `push` で非公開バケットへ反映します。仕組みとスキーマは [docs/assets.md](docs/assets.md)。
 
-最新の残高記録は [2026-10-12の資産スナップショット](data/private/assets/snapshots/2026-10-12.json) です。各金融機関の画面を読んだ日付で保存し、前回の記録は残しています。このファイルはGit対象外で、ローカルでのみ閲覧できます。
+最新の残高記録は [2026-10-25の資産スナップショット](data/private/assets/snapshots/2026-10-25.json) です。各金融機関の画面を読んだ日付で保存し、前回の記録は残しています。このファイルはGit対象外で、ローカルでのみ閲覧できます。
 
 個人用の運用検討の現在の提案は [2026-10-05・最終配分と両替手順](data/private/assets/plans/2026-10-05/final-plan-usd900-acwi500-ai500.md) です。配分の根拠と検算は [NISAの将来資金も米国債へ回す配分案](data/private/assets/plans/2026-10-05/revised-plan-nisa-usd-reserve.md) に残しています。同日の先の案は [ドル建て債券の比較・NISA資金を円で確保した案](data/private/assets/plans/2026-10-05/bond-alternatives-usd.md)、[追加オルカンを反映した配分案](data/private/assets/plans/2026-10-05/final-plan-acwi500-ai500.md)、[来年までのNISAを普通預金に残す案](data/private/assets/plans/2026-10-05/revised-plan-nisa-rolling-reserve.md)、[NISAの財源を現在の預金に限定した案](data/private/assets/plans/2026-10-05/revised-plan-nisa-current-deposits.md)、[給与条件変更を反映した案](data/private/assets/plans/2026-10-05/revised-plan-income-rise.md)、[AI個人投資の増額・円資産再配分](data/private/assets/plans/2026-10-05/revised-plan-ai-expanded.md)、[現預金・S&P500中心のNISA・AI株の案](data/private/assets/plans/2026-10-05/revised-plan-sp500-ai.md)、[当初の運用案](data/private/assets/plans/2026-10-05/report.md)、[当初のアクションプラン](data/private/assets/plans/2026-10-05/action-plan.md) に残しています。個人の資産情報を含むため Git 対象外で、ローカルで閲覧する資料です。 個人用の追加比較は [定期資金をオルカンへ回す案](data/private/assets/plans/2026-10-05/acwi-additional-360-comparison.md) に保存しています。
 
