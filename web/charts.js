@@ -16,7 +16,8 @@ export const UiCharts = (() => {
     const currency = options.currency || 'JPY';
     const money = (value, digits) => new Intl.NumberFormat('ja-JP', {style: 'currency', currency, minimumFractionDigits: digits[0], maximumFractionDigits: digits[1]}).format(value);
     const valueDigits = options.labelSize === 'compact' ? 4 : 2;
-    if (options.unit === 'man') return {tick: v => number(v / 10000), value: v => `${number(v / 10000, valueDigits)}万`, exact: v => `${number(v / 10000, valueDigits)}万円`, label: '万円'};
+    const labelDigits = Number.isInteger(options.labelDigits) && options.labelDigits >= 0 && options.labelDigits <= 4 ? options.labelDigits : valueDigits;
+    if (options.unit === 'man') return {tick: v => number(v / 10000), value: v => `${number(v / 10000, labelDigits)}万`, exact: v => `${number(v / 10000, valueDigits)}万円`, label: '万円'};
     if (options.unit === 'yen') return {tick: v => money(v, [0, 2]), value: v => money(v, [0, 2]), exact: v => money(v, [2, 2]), label: currency === 'JPY' ? '円' : currency};
     return {tick: v => number(v), value: v => `${number(v)}件`, exact: v => `${number(v)}件`, label: '件'};
   }
