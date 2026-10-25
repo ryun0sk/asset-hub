@@ -73,6 +73,16 @@
   paint-order: stroke;
   pointer-events: none;
 }
+.ui-chart-value-compact {
+  font-size: var(--font-size-chart-value-compact);
+  font-weight: var(--font-weight-medium);
+}
+.ui-chart-label-leader {
+  stroke: currentColor;
+  stroke-width: var(--stroke-grid);
+  stroke-dasharray: 2 2;
+  pointer-events: none;
+}
 .ui-chart-legend {
   display: flex;
   flex-wrap: wrap;

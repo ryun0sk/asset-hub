@@ -20,3 +20,9 @@ MBO調査のローカル計算・非公開閲覧画面、AI46社の将来利益�
 - ステージング436ファイルにprivateデータ・原本DB・ローカル計算コード・ローカル専用画面が含まれないことを確認。
 
 PRのCI成功と最終レビュー後にmasterへ統合し、既存の非公開Cloud Runへ反映する。本番のIAP、閲覧者、private stateを維持し、AI比較・EPS推移・MBO台帳・資産最新日付を受入確認する。資産グラフの表示変更は、この統合と本番確認の後に別PRで扱う。
+
+## 本番確認
+
+[PR #21](https://github.com/ryun0sk/asset-hub/pull/21)をマージし、コミット `dfb947419e8f2a9401e1d8d8355e394d8f4cc3f3` をCloud Build `ca4dc169-a4d0-4941-b5c6-2ac1e161a08a`で構築。Cloud Run `asset-hub-00050-lz9`へ100%反映した。作業ブランチはローカルとGitHubから削除済み。
+
+IAP有効、IAP/InvokerのIAMポリシー、実行アカウント、環境変数が反映前と同一。資産stateの世代も同じことを確認した。本番で将来利益46社、実績EPSのTTM画面、MBO115件、資産最新日付10月25日を確認した。

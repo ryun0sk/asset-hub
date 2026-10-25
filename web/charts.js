@@ -4,7 +4,7 @@ export const UiCharts = (() => {
   const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[c]));
   const finite = value => typeof value === 'number' && Number.isFinite(value);
   const number = (value, digits = 2) => value.toLocaleString('ja-JP', {maximumFractionDigits: digits});
-  const geometry = Object.freeze({height: 260, left: 72, right: 24, top: 28, bottom: 48, minWidth: 280, lineSlot: 44, barSlot: 24, axisLabelWidth: 40, labelOffset: 14, nearOffset: 7.5, labelGap: 16});
+  const geometry = Object.freeze({height: 260, left: 72, right: 24, top: 28, bottom: 48, minWidth: 280, lineSlot: 44, barSlot: 24, axisLabelWidth: 40, labelOffset: 14, nearOffset: 7.5, labelGap: 16, compactLabelGap: 14, compactCharacterWidth: 5.5, compactLabelOffset: 9, labelColumnGap: 12});
   // Meaning tones for measured/plan series; cat-N are fixed category colours for composition charts.
   const tones = new Set(['primary', 'secondary', 'target', 'accent', 'negative', 'context', 'cat-1', 'cat-2', 'cat-3', 'cat-4', 'cat-5', 'cat-6']);
   const units = new Set(['count', 'man', 'yen']);
@@ -15,7 +15,8 @@ export const UiCharts = (() => {
   function formats(options) {
     const currency = options.currency || 'JPY';
     const money = (value, digits) => new Intl.NumberFormat('ja-JP', {style: 'currency', currency, minimumFractionDigits: digits[0], maximumFractionDigits: digits[1]}).format(value);
-    if (options.unit === 'man') return {tick: v => number(v / 10000), value: v => `${number(v / 10000)}万`, exact: v => `${number(v / 10000)}万円`, label: '万円'};
+    const valueDigits = options.labelSize === 'compact' ? 4 : 2;
+    if (options.unit === 'man') return {tick: v => number(v / 10000), value: v => `${number(v / 10000, valueDigits)}万`, exact: v => `${number(v / 10000, valueDigits)}万円`, label: '万円'};
     if (options.unit === 'yen') return {tick: v => money(v, [0, 2]), value: v => money(v, [0, 2]), exact: v => money(v, [2, 2]), label: currency === 'JPY' ? '円' : currency};
     return {tick: v => number(v), value: v => `${number(v)}件`, exact: v => `${number(v)}件`, label: '件'};
   }
@@ -55,12 +56,18 @@ export const UiCharts = (() => {
     const bars = series.filter(s => s.kind === 'bar');
     // Stacked bars share one lane; side-by-side bars take one lane each.
     const lanes = stacked ? Math.min(1, bars.length) : bars.length;
-    const slot = options.slot || (bars.length ? geometry.barSlot * lanes : geometry.lineSlot);
+    // Complete point labels opt in to wider observation columns and enough
+    // vertical room. Other chart callers retain their existing geometry.
+    const completeLabels = options.labels === 'all';
+    const rowValues = row => series.map(s => row[s.key]).filter(finite);
+    const widestLabel = completeLabels ? Math.max(0, ...rows.flatMap(row => rowValues(row).map(value => format.value(value).length * geometry.compactCharacterWidth))) : 0;
+    const slot = Math.max(options.slot || (bars.length ? geometry.barSlot * lanes : geometry.lineSlot), completeLabels ? widestLabel + geometry.labelColumnGap : 0);
     const width = Math.max(geometry.minWidth, availableWidth, rows.length * slot + geometry.left + geometry.right);
     const step = (width - geometry.left - geometry.right) / Math.max(1, rows.length);
     const extent = stacked ? rows.map(r => total(r, series)) : rows.flatMap(r => series.map(s => r[s.key]));
     const scale = domain(extent, {floor: options.floor, ceiling: options.ceiling, includeZero: stacked || series.some(s => s.kind !== 'line') || options.includeZero !== false, minimumRange: options.minimumRange || (options.unit === 'man' ? 10000 : options.unit === 'count' ? 4 : 1), integer: options.unit === 'count'});
-    const height = options.height || geometry.height;
+    const labelLanes = completeLabels ? Math.max(0, ...rows.map(row => rowValues(row).length)) : 0;
+    const height = Math.max(options.height || geometry.height, completeLabels ? labelLanes * geometry.compactLabelGap + geometry.top + geometry.bottom + 16 : 0);
     const x = i => geometry.left + step * (i + 0.5);
     const y = value => geometry.top + (scale.max - value) / (scale.max - scale.min) * (height - geometry.top - geometry.bottom);
     const barWidth = Math.max(3, Math.min(22, (step - 8) / Math.max(1, lanes)));
@@ -87,8 +94,26 @@ export const UiCharts = (() => {
       return {series: s, path, area, points};
     });
     const labels = [];
+    if (completeLabels) {
+      // Place every finite observation, including equal values and a matching
+      // total. Sorting within each column keeps nearby labels in value order;
+      // back-propagation from the bottom prevents clipping without dropping any.
+      rows.forEach((row, index) => {
+        const column = plots.flatMap(({series: s, points}, seriesIndex) => {
+          const point = points[index];
+          return point ? [{x: point.x, pointY: point.y, y: point.y - geometry.compactLabelOffset,
+            text: format.value(point.value), tone: s.tone, seriesKey: s.key, seriesIndex, index}] : [];
+        }).sort((a, b) => a.y - b.y || a.seriesIndex - b.seriesIndex);
+        for (let i = 0; i < column.length; i++) column[i].y = Math.max(column[i].y, i ? column[i - 1].y + geometry.compactLabelGap : 12);
+        const last = column.at(-1), bottom = height - geometry.bottom - 8;
+        if (last && last.y > bottom) {
+          last.y = bottom;
+          for (let i = column.length - 2; i >= 0; i--) column[i].y = Math.min(column[i].y, column[i + 1].y - geometry.compactLabelGap);
+        }
+        labels.push(...column);
+      });
     // Stacked segments default to no value labels: a label on a segment reads as a cumulative value.
-    if ((options.labels || (stacked ? 'none' : 'auto')) !== 'none') {
+    } else if ((options.labels || (stacked ? 'none' : 'auto')) !== 'none') {
       const placed = [];
       plots.forEach(({series: s, points}, seriesIndex) => points.forEach(point => {
         if (!point) return;
@@ -141,7 +166,7 @@ export const UiCharts = (() => {
       return `${label}${group}`;
     }).join('');
     return `<svg class="ui-chart-svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" role="group" aria-label="${esc(options.title)}。左右キーで移動して値を確認できます。">
-      <g aria-hidden="true">${grid}${marks}${axis}<g>${labels.map(l => `<text class="ui-chart-value ui-chart-tone-${l.tone}" x="${l.x}" y="${l.y}" text-anchor="middle">${esc(l.text)}</text>`).join('')}</g></g>
+      <g aria-hidden="true">${grid}${marks}${axis}<g>${labels.filter(l => finite(l.pointY) && Math.abs(l.y - l.pointY) > geometry.labelOffset).map(l => `<line class="ui-chart-label-leader ui-chart-tone-${l.tone}" x1="${l.x}" x2="${l.x}" y1="${l.pointY}" y2="${l.y + (l.y < l.pointY ? 5 : -5)}"/>`).join('')}${labels.map(l => `<text class="ui-chart-value${options.labelSize === 'compact' ? ' ui-chart-value-compact' : ''} ui-chart-tone-${l.tone}" x="${l.x}" y="${l.y}" text-anchor="middle">${esc(l.text)}</text>`).join('')}</g></g>
       ${rows.map((row, i) => `<rect class="ui-chart-hit" data-chart-index="${i}" x="${x(i) - step / 2}" y="${geometry.top - 12}" width="${step}" height="${height - geometry.top - geometry.bottom + 24}" tabindex="${i === 0 ? 0 : -1}" role="button" aria-label="${esc(description(row, model))}" aria-describedby="${id}-tooltip"/>`).join('')}</svg>`;
   }
 

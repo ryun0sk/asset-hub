@@ -153,6 +153,24 @@ export function holdings(state, cls) {
   }).sort((a, b) => b.value - a.value || a.key.localeCompare(b.key));
 }
 
+// Trend charts include every holding seen in the selected history, including sold
+// positions. The current holdings table above intentionally remains latest-only.
+export function trendPositions(state, cls, {dates = null} = {}) {
+  const snapshots = snapshotsOf(state), metadata = new Map();
+  for (const snapshot of snapshots) {
+    for (const position of positionsOf(snapshot)) {
+      if (position.class === cls) metadata.set(positionKey(position), position);
+    }
+  }
+  const latest = new Map(positionsOf(snapshots.at(-1)).map(position => [positionKey(position), position]));
+  const history = seriesByDate(state, 'position', {cls, dates});
+  return history.keys.map(key => {
+    const position = metadata.get(key), current = latest.get(key), values = history.values[key];
+    return {...describe(state, position), value: current ? valueOf(current) : 0,
+      pastHolding: !current, history: values};
+  }).sort((a, b) => b.value - a.value || a.key.localeCompare(b.key));
+}
+
 // Newest research entry for a holding: same asset class as its group and the symbol as entry code
 // (285A) or slug prefix (BTC-bitcoin). Null when nothing matches.
 export function researchEntryFor(position, catalog) {

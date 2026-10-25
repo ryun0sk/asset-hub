@@ -66,6 +66,56 @@ test('shared values keep a single label while every series stays in the tooltip'
   assert.equal(layout.labels.length,1);
   assert.equal(charts.layout({unit:'count',labels:'none',rows:[{label:'1月',a:2}],series:[{key:'a',label:'A'}]}).labels.length,0);
 });
+test('complete compact labels retain equal values, zero and every finite observation',()=>{
+  const input={title:'選択した資産',unit:'man',labels:'all',labelSize:'compact',rows:[{label:'1/3',a:10000,b:10000,total:20000},{label:'1/10',a:null,b:0,total:0},{label:'1/17',a:1,b:null,total:1}],series:[{key:'a',label:'A',tone:'cat-1'},{key:'b',label:'B',tone:'cat-2'},{key:'total',label:'選択項目の合計',dashed:true,marker:'ring'}]};
+  const layout=charts.layout(input,390), html=charts.render(input);
+  assert.equal(layout.labels.length,7);
+  assert.equal(layout.labels.filter(label=>label.index===0&&label.text==='1万').length,2,'same amount in two holdings keeps both labels');
+  assert.equal(layout.labels.filter(label=>label.index===1&&label.text==='0万').length,2,'zero is a label, missing values are not');
+  assert.equal(layout.labels.filter(label=>label.index===2&&label.text==='0.0001万').length,2,'small nonzero yen amounts remain nonzero');
+  assert.match(html,/ui-chart-value-compact/);
+  assert.match(html,/ui-chart-label-leader/);
+  assert.match(html,/ui-chart-point-ring/);
+  assert.equal((html.match(/data-chart-index=/g)||[]).length,3);
+  assert.match(html,/選択項目の合計 0\.0001万円/);
+  assert.doesNotMatch(html,/NaN|Infinity|undefined|style=|font-size=/);
+});
+test('dense complete labels grow the chart and columns without thinning or overlapping labels',()=>{
+  const denseSeries=Array.from({length:24},(_,i)=>({key:`s${i}`,label:`項目${i}`}));
+  const denseRows=Array.from({length:52},(_,index)=>({label:`W${index+1}`,...Object.fromEntries(denseSeries.map((s,i)=>[s.key,index%2?0:5000000+i]))}));
+  const input={unit:'man',labels:'all',labelSize:'compact',rows:denseRows,series:denseSeries};
+  for(const available of [280,390,1100]) {
+    const model=charts.layout(input,available);
+    assert.equal(model.labels.length,52*24);
+    assert.ok(model.width>available);
+    assert.ok(model.height>charts.geometry.height);
+    const maxTextWidth=Math.max(...model.labels.map(label=>label.text.length*charts.geometry.compactCharacterWidth));
+    assert.ok(model.step>=maxTextWidth+charts.geometry.labelColumnGap-1e-8);
+    for(let index=0;index<denseRows.length;index++) {
+      const labels=model.labels.filter(label=>label.index===index).sort((a,b)=>a.y-b.y);
+      assert.ok(labels[0].y>=12);
+      assert.ok(labels.at(-1).y<=model.height-charts.geometry.bottom-8);
+      for(let i=1;i<labels.length;i++) assert.ok(labels[i].y-labels[i-1].y>=charts.geometry.compactLabelGap-1e-8);
+    }
+  }
+});
+test('complete labels preserve missing-value line breaks and negative values',()=>{
+  const input={unit:'count',labels:'all',labelSize:'compact',rows:[{label:'1',a:-2,b:0},{label:'2',a:null,b:0},{label:'3',a:3,b:null}],series:[{key:'a',label:'A'},{key:'b',label:'B'}]};
+  const model=charts.layout(input);
+  assert.equal(model.labels.length,4);
+  assert.equal(model.labels.some(label=>label.text==='-2件'),true);
+  assert.equal(model.plots[0].points[1],null);
+  assert.equal(model.plots[0].path.trim().split(/(?=M)/).length,2);
+});
+test('complete-label opt-in leaves existing chart geometry and font classes unchanged',()=>{
+  const normal={unit:'man',rows:[{label:'1',a:12345,b:12345}],series:[{key:'a',label:'A'},{key:'b',label:'B'}]};
+  const model=charts.layout(normal,390), html=charts.render(normal);
+  assert.equal(model.width,390);
+  assert.equal(model.height,260);
+  assert.equal(model.labels.length,1);
+  assert.equal(model.labels[0].text,'1.23万');
+  assert.doesNotMatch(html,/ui-chart-value-compact|ui-chart-label-leader/);
+});
 test('stacked bars sit on each other in series order and the scale covers the row total',()=>{
   const stackRows=[{label:'1月',name:'1月',a:3,b:4},{label:'2月',name:'2月',a:-2,b:5},{label:'3月',name:'3月',a:null,b:2}];
   const stackSeries=[{key:'a',label:'A',kind:'bar',tone:'cat-1'},{key:'b',label:'B',kind:'bar',tone:'cat-2'}];

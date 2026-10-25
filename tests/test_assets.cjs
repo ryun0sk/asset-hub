@@ -32,6 +32,7 @@ function buildState() {
 const state = buildState();
 const payload = {state, status: {status: 'ok', pushedAt: null}};
 const sumValues = snapshot => snapshot.positions.reduce((sum, p) => sum + p.valueJpy, 0);
+const chartOptions = html => [...html.matchAll(/data-chart-options="([^"]+)"/g)].map(([, value]) => JSON.parse(value.replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&')));
 
 test('policy is a separate safe view with dated private content and an empty state', async () => {
   const {assetPolicyView, assetsView} = await import(web('asset-view.js'));
@@ -149,6 +150,26 @@ test('holdings sort by value, keep history, and show pnl only with a cost', asyn
   assert.deepEqual(holdings(state, 'bond'), []);
 });
 
+test('trend positions retain sold holdings and reconcile to each recorded class total', async () => {
+  const {trendPositions, CLASS_ORDER, holdings} = await import(web('asset-model.js'));
+  const before = structuredClone(state);
+  const stock = trendPositions(state, 'stock');
+  const sold = stock.find(row => row.symbol === '523A');
+  assert.equal(sold.pastHolding, true);
+  assert.equal(sold.value, 0);
+  assert.deepEqual(sold.history, [180000, 176000, null]);
+  assert.equal(holdings(state, 'stock').some(row => row.symbol === '523A'), false);
+  for (const cls of CLASS_ORDER) {
+    const positions = trendPositions(state, cls);
+    state.snapshots.forEach((snapshot, index) => assert.equal(
+      positions.reduce((sum, row) => sum + (row.history[index] ?? 0), 0),
+      snapshot.positions.filter(row => row.class === cls).reduce((sum, row) => sum + row.valueJpy, 0), cls));
+  }
+  assert.deepEqual(trendPositions(state, 'stock', {dates: [state.latestDate]}).map(row => row.symbol), holdings(state, 'stock').map(row => row.symbol));
+  assert.deepEqual(trendPositions(null, 'stock'), []);
+  assert.deepEqual(state, before);
+});
+
 test('research lookup matches code or slug prefix within the same asset class', async () => {
   const {researchEntryFor} = await import(web('asset-model.js'));
   const kioxia = researchEntryFor({class: 'stock', symbol: '285A'}, catalog);
@@ -182,18 +203,20 @@ test('week rows carry a short label, the full date and the year group; formattin
 
 test('trend view keeps tiles and checkbox-driven charts without duplicating holdings or movers', async () => {
   const {assetsView, EMPTY_TEXT} = await import(web('asset-view.js'));
-  const html = assetsView(payload, catalog, {range: '52', mode: 'stack'});
+  const html = assetsView(payload, catalog, {range: '52'});
   assert.doesNotMatch(html, /style=/);
   assert.doesNotMatch(html, /NaN|undefined|Infinity/);
   for (const text of ['総資産', '前週比', '記録週数', '最終記録日', '資産全体の推移', '資産クラスごとの推移']) assert.match(html, new RegExp(text));
   assert.match(html, /id="asset-range"/);
-  assert.match(html, /name="asset-mode" value="stack" checked/);
+  assert.doesNotMatch(html, /name="asset-mode"|ui-chart-bar|ui-chart-area/);
+  assert.match(html, /折れ線 · 破線は選択項目の合計/);
   for (const cls of ['stock', 'fund', 'crypto', 'cash', 'private']) assert.match(html, new RegExp(`data-toggle="c:${cls}" checked`));
   assert.match(html, /data-toggle="p:sbi-tokutei\/stock\/6857" checked/);
   for (const cls of ['stock', 'fund', 'crypto', 'cash', 'private']) assert.match(html, new RegExp(`id="asset-class-${cls}"`));
   assert.doesNotMatch(html, /id="asset-class-bond"/);
   assert.equal((html.match(/class="ui-chart"/g) || []).length, 6, 'overall chart plus one per class');
-  assert.match(html, /、合計 /, 'stacked charts describe a total');
+  assert.match(html, /選択項目の合計/);
+  assert.match(html, /523A[^<]*過去保有/);
   assert.doesNotMatch(html, /今週の増減|取得額|評価損益|asset-table|売却・解約/);
   assert.match(html, /各サイト表示の円換算評価額を週次で手入力した記録/);
   assert.doesNotMatch(html, /data-slot/);
@@ -249,19 +272,59 @@ test('summary and holdings preserve empty, loading and escaped content states', 
   }
 });
 
-test('unchecked classes and positions leave the charts and line mode adds a selection total', async () => {
+test('unchecked classes and positions leave line charts and their selection totals', async () => {
   const {assetsView} = await import(web('asset-view.js'));
-  const html = assetsView(payload, catalog, {mode: 'stack', hiddenClasses: new Set(['cash', 'private']), hiddenPositions: new Set(['sbi-tokutei/stock/6857'])});
+  const html = assetsView(payload, catalog, {hiddenClasses: new Set(['cash', 'private']), hiddenPositions: new Set(['sbi-tokutei/stock/6857'])});
   assert.match(html, /data-toggle="c:cash"(?! checked)/);
   assert.match(html, /data-toggle="p:sbi-tokutei\/stock\/6857"(?! checked)/);
   assert.match(html, /data-toggle="c:stock" checked/);
   assert.match(html, /id="asset-class-cash"/);
-  const line = assetsView(payload, catalog, {mode: 'line'});
-  assert.match(line, /選択の合計/);
-  assert.match(line, /name="asset-mode" value="line" checked/);
-  assert.doesNotMatch(assetsView(payload, catalog, {mode: 'stack'}), /選択の合計/);
+  const models = chartOptions(html), overall = models[0];
+  assert.equal(overall.series.some(series => ['c-cash', 'c-private'].includes(series.key)), false);
+  for (const chart of models) {
+    assert.equal(chart.stacked, undefined);
+    assert.equal(chart.labels, 'all');
+    assert.equal(chart.labelSize, 'compact');
+    assert.ok(chart.series.every(series => series.kind === 'line'));
+    const total = chart.series.at(-1);
+    assert.deepEqual({key: total.key, label: total.label, dashed: total.dashed, marker: total.marker}, {key: 'total', label: '選択項目の合計', dashed: true, marker: 'ring'});
+    chart.rows.forEach(row => assert.equal(row.total, chart.series.slice(0, -1).reduce((sum, series) => sum + (row[series.key] ?? 0), 0)));
+  }
+  const stock = models.find(chart => chart.title === '個別株の内訳の推移');
+  assert.equal(stock.series.some(series => series.label.startsWith('6857 ')), false);
   const none = assetsView(payload, catalog, {hiddenClasses: new Set(['stock', 'fund', 'crypto', 'cash', 'private'])});
   assert.match(none, /表示する項目にチェックを入れてください/);
+  assert.equal(chartOptions(none).some(chart => chart.title === '資産全体の推移'), false);
+});
+
+test('every asset line chart includes a total, even with one item, and retains zero and missing weeks', async () => {
+  const {assetsView} = await import(web('asset-view.js'));
+  const models = chartOptions(assetsView(payload, catalog));
+  assert.deepEqual(models[0].rows.map(row => row.total), state.snapshots.map(sumValues));
+  const stock = models.find(chart => chart.title === '個別株の内訳の推移');
+  const sold = stock.series.find(series => series.label.startsWith('523A '));
+  const purchased = stock.series.find(series => series.label.startsWith('4062 '));
+  assert.deepEqual(stock.rows.map(row => row[sold.key]), [180000, 176000, null]);
+  assert.deepEqual(stock.rows.map(row => row[purchased.key]), [null, null, 800000]);
+  assert.deepEqual(stock.rows.map(row => row.total), state.snapshots.map(snapshot => snapshot.positions.filter(row => row.class === 'stock').reduce((sum, row) => sum + row.valueJpy, 0)));
+  const one = models.find(chart => chart.series.length === 2);
+  assert.ok(one, 'fixture includes a class with one position plus its total');
+  assert.deepEqual(one.rows.map(row => row.total), one.rows.map(row => row[one.series[0].key]));
+  const restricted = chartOptions(assetsView(payload, catalog, {range: '2'}));
+  assert.ok(restricted.every(chart => chart.rows.length === 2));
+  assert.deepEqual(restricted[0].rows.map(row => row.total), state.snapshots.slice(-2).map(sumValues));
+});
+
+test('a class held only in the past keeps its trend while current holdings stay empty', async () => {
+  const {assetsView} = await import(web('asset-view.js'));
+  const past = structuredClone(state);
+  past.snapshots.slice(1).forEach(snapshot => { snapshot.positions = snapshot.positions.filter(position => position.class !== 'crypto'); });
+  const data = {state: past, status: {status: 'ok'}};
+  const html = assetsView(data, catalog), chart = chartOptions(html).find(chart => chart.title === '仮想通貨の内訳の推移');
+  assert.ok(chart);
+  assert.deepEqual(chart.rows.map(row => row.total), [past.snapshots[0].positions.filter(position => position.class === 'crypto').reduce((sum, row) => sum + row.valueJpy, 0), 0, 0]);
+  assert.ok(chart.series.slice(0, -1).every(series => series.label.endsWith('過去保有')));
+  assert.doesNotMatch(assetsView(data, catalog, {view: 'holdings'}), /id="asset-class-crypto"/);
 });
 
 test('assets view escapes names and account labels', async () => {

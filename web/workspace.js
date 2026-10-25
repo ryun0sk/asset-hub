@@ -2,7 +2,7 @@ import {latestGroups, routeFor, versionsOf} from './catalog.js';
 const esc = value => String(value ?? '').replace(/[&<>"']/g, ch => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[ch]));
 export const ASSET_SECTIONS = Object.freeze({
   summary: {label: '資産サマリー', description: '今の資産配分と、前週からの増減を確認'},
-  all: {label: '資産推移', description: '資産クラス・銘柄の推移を、期間と表示形式を切り替えて比較'},
+  all: {label: '資産推移', description: '資産クラス・銘柄と選択項目の合計を、期間や表示項目を変えて比較'},
   holdings: {label: '保有一覧', description: '口座・銘柄・数量・評価額・評価損益を確認'},
   policy: {label: '全体方針', description: '資産配分・資金移動・購入スケジュールを確認'},
 });

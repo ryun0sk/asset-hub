@@ -171,9 +171,6 @@
 .asset-check-swatch.cat-4, .asset-composition-dot.cat-4 { color: var(--chart-cat-4); }
 .asset-check-swatch.cat-5, .asset-composition-dot.cat-5 { color: var(--chart-cat-5); }
 .asset-check-swatch.cat-6, .asset-composition-dot.cat-6 { color: var(--chart-cat-6); }
-.asset-mode { display: flex; align-items: center; gap: var(--space-12); margin: var(--space-0); padding: var(--space-0); border: var(--space-0); }
-.asset-mode legend { float: left; padding: var(--space-0); margin-right: var(--space-8); }
-.asset-mode label { display: inline-flex; align-items: center; gap: var(--space-4); cursor: pointer; }
 .asset-section-title {
   margin: var(--space-24) var(--space-0) var(--space-12);
   font-size: var(--font-size-section);
