@@ -1,0 +1,558 @@
+{
+  "as_of": "2026-11-06",
+  "warning": "Conditional independent earnings multiples; not current TTM/company forecast PER, fair prices, confidence intervals or numerical buy ranking.",
+  "companies": [
+    {
+      "symbol": "NVDA",
+      "period": "FY2028（暦年2027に近い）",
+      "currency": "USD",
+      "profit_unit": "billion in specified currency",
+      "near_net_income_bn": [
+        280,
+        360
+      ],
+      "cautious_net_income_bn": [
+        180,
+        260
+      ],
+      "diluted_shares_bn_range": [
+        24,
+        24.5
+      ],
+      "kind": "independent conditional scenario; not company guidance or consensus",
+      "note": "GAAP費用を含む利益率、投資評価益除外。製品需要と売上成長は独自仮定。",
+      "price": 181.6,
+      "price_time_local": "2026-11-05T16:00:01-05:00",
+      "near": {
+        "net_income_bn": [
+          280,
+          360
+        ],
+        "eps_low": 11.428571428571429,
+        "eps_high": 15.0,
+        "reference_PE_low": 12.106666666666666,
+        "reference_PE_high": 15.889999999999999
+      },
+      "cautious": {
+        "net_income_bn": [
+          180,
+          260
+        ],
+        "eps_low": 7.346938775510204,
+        "eps_high": 10.833333333333334,
+        "reference_PE_low": 16.763076923076923,
+        "reference_PE_high": 24.717777777777776
+      }
+    },
+    {
+      "symbol": "AVGO",
+      "period": "FY2027",
+      "currency": "USD",
+      "profit_unit": "billion in specified currency",
+      "near_net_income_bn": [
+        60,
+        85
+      ],
+      "cautious_net_income_bn": [
+        45,
+        65
+      ],
+      "diluted_shares_bn_range": [
+        5,
+        5.2
+      ],
+      "kind": "independent conditional scenario; not company guidance or consensus",
+      "note": "GAAP費用にSBC・買収償却を残す。顧客信用支援は利益率モデル外のリスク。",
+      "price": 291.53,
+      "price_time_local": "2026-11-05T16:00:01-05:00",
+      "near": {
+        "net_income_bn": [
+          60,
+          85
+        ],
+        "eps_low": 11.538461538461538,
+        "eps_high": 17.0,
+        "reference_PE_low": 17.148823529411764,
+        "reference_PE_high": 25.265933333333333
+      },
+      "cautious": {
+        "net_income_bn": [
+          45,
+          65
+        ],
+        "eps_low": 8.653846153846153,
+        "eps_high": 13.0,
+        "reference_PE_low": 22.425384615384612,
+        "reference_PE_high": 33.68791111111111
+      }
+    },
+    {
+      "symbol": "000660.KS",
+      "period": "CY2027",
+      "currency": "KRW",
+      "profit_unit": "billion in specified currency",
+      "near_net_income_bn": [
+        200000,
+        300000
+      ],
+      "cautious_net_income_bn": [
+        100000,
+        170000
+      ],
+      "diluted_shares_bn_range": [
+        0.705,
+        0.715
+      ],
+      "kind": "independent conditional scenario; not company guidance or consensus",
+      "note": "KRW billion。非営業投資損益を平準化した親会社利益代理。株数は保守的な独自分母で最新確定値ではない。",
+      "price": 1159000.0,
+      "price_time_local": "2026-11-06T12:47:02+09:00",
+      "near": {
+        "net_income_bn": [
+          200000,
+          300000
+        ],
+        "eps_low": 279720.27972027974,
+        "eps_high": 425531.91489361704,
+        "reference_PE_low": 2.7236499999999997,
+        "reference_PE_high": 4.143425
+      },
+      "cautious": {
+        "net_income_bn": [
+          100000,
+          170000
+        ],
+        "eps_low": 139860.13986013987,
+        "eps_high": 241134.75177304965,
+        "reference_PE_low": 4.806441176470588,
+        "reference_PE_high": 8.28685
+      }
+    },
+    {
+      "symbol": "MU",
+      "period": "FY2027",
+      "currency": "USD",
+      "profit_unit": "billion in specified currency",
+      "near_net_income_bn": [
+        160,
+        190
+      ],
+      "cautious_net_income_bn": [
+        70,
+        120
+      ],
+      "diluted_shares_bn_range": [
+        1.16,
+        1.16
+      ],
+      "kind": "independent conditional scenario; not company guidance or consensus",
+      "note": "FQ1会社EPSを起点にした独自シナリオ。正常化は独立したASP予想ではなく利益ストレス。",
+      "price": 656.39,
+      "price_time_local": "2026-11-05T16:00:02-05:00",
+      "near": {
+        "net_income_bn": [
+          160,
+          190
+        ],
+        "eps_low": 137.93103448275863,
+        "eps_high": 163.79310344827587,
+        "reference_PE_low": 4.007433684210526,
+        "reference_PE_high": 4.7588275
+      },
+      "cautious": {
+        "net_income_bn": [
+          70,
+          120
+        ],
+        "eps_low": 60.344827586206904,
+        "eps_high": 103.44827586206897,
+        "reference_PE_low": 6.345103333333333,
+        "reference_PE_high": 10.87732
+      }
+    },
+    {
+      "symbol": "SNDK",
+      "period": "FY2027",
+      "currency": "USD",
+      "profit_unit": "billion in specified currency",
+      "near_net_income_bn": [
+        32,
+        36
+      ],
+      "cautious_net_income_bn": [
+        15,
+        23
+      ],
+      "diluted_shares_bn_range": [
+        0.151,
+        0.155
+      ],
+      "kind": "independent conditional scenario; not company guidance or consensus",
+      "note": "11/19引け後8対1分割前の株価・EPS・株数。評価益除外、SBCを費用に残す。",
+      "price": 806.43,
+      "price_time_local": "2026-11-05T16:00:01-05:00",
+      "near": {
+        "net_income_bn": [
+          32,
+          36
+        ],
+        "eps_low": 206.45161290322582,
+        "eps_high": 238.41059602649008,
+        "reference_PE_low": 3.382525833333333,
+        "reference_PE_high": 3.9061453124999996
+      },
+      "cautious": {
+        "net_income_bn": [
+          15,
+          23
+        ],
+        "eps_low": 96.7741935483871,
+        "eps_high": 152.31788079470198,
+        "reference_PE_low": 5.294388260869566,
+        "reference_PE_high": 8.33311
+      }
+    },
+    {
+      "symbol": "285A.T",
+      "period": "FY2027/3",
+      "currency": "JPY",
+      "profit_unit": "billion in specified currency",
+      "near_net_income_bn": [
+        5000,
+        5400
+      ],
+      "cautious_net_income_bn": [
+        2000,
+        4000
+      ],
+      "diluted_shares_bn_range": [
+        1.597905534,
+        1.597905534
+      ],
+      "kind": "independent conditional scenario; not company guidance or consensus",
+      "note": "利益単位JPY billion。自己株控除後株数固定。正常化中心は3000bn。",
+      "price": 8483.0,
+      "price_time_local": "2026-11-06T12:52:02+09:00",
+      "near": {
+        "net_income_bn": [
+          5000,
+          5400
+        ],
+        "eps_low": 3129.0961158909163,
+        "eps_high": 3379.4238051621896,
+        "reference_PE_low": 2.510191230541111,
+        "reference_PE_high": 2.7110065289843996
+      },
+      "cautious": {
+        "net_income_bn": [
+          2000,
+          4000
+        ],
+        "eps_low": 1251.6384463563666,
+        "eps_high": 2503.276892712733,
+        "reference_PE_low": 3.3887581612304998,
+        "reference_PE_high": 6.7775163224609996
+      }
+    },
+    {
+      "symbol": "5803.T",
+      "period": "FY2028/3",
+      "currency": "JPY",
+      "profit_unit": "billion in specified currency",
+      "near_net_income_bn": [
+        306.8,
+        425.6
+      ],
+      "cautious_net_income_bn": [
+        242,
+        328.4
+      ],
+      "diluted_shares_bn_range": [
+        1.66,
+        1.66
+      ],
+      "kind": "independent conditional scenario; not company guidance or consensus",
+      "note": "営業利益から税・非支配を控除する独自ケース。Q2未確認でQ1会社予想が起点。",
+      "price": 2898.0,
+      "price_time_local": "2026-11-06T12:52:02+09:00",
+      "near": {
+        "net_income_bn": [
+          306.8,
+          425.6
+        ],
+        "eps_low": 184.81927710843374,
+        "eps_high": 256.3855421686747,
+        "reference_PE_low": 11.30328947368421,
+        "reference_PE_high": 15.680182529335072
+      },
+      "cautious": {
+        "net_income_bn": [
+          242,
+          328.4
+        ],
+        "eps_low": 145.7831325301205,
+        "eps_high": 197.83132530120483,
+        "reference_PE_low": 14.64884287454324,
+        "reference_PE_high": 19.87884297520661
+      }
+    },
+    {
+      "symbol": "8035.T",
+      "period": "FY2028/3",
+      "currency": "JPY",
+      "profit_unit": "billion in specified currency",
+      "near_net_income_bn": [
+        794.02,
+        1084.248
+      ],
+      "cautious_net_income_bn": [
+        555,
+        794.02
+      ],
+      "diluted_shares_bn_range": [
+        2.27,
+        2.27
+      ],
+      "kind": "independent conditional scenario; not company guidance or consensus",
+      "note": "独自将来希薄化分母約2.27bn。正常化では売上・利益率とも低下。",
+      "price": 8217.0,
+      "price_time_local": "2026-11-06T12:52:00+09:00",
+      "near": {
+        "net_income_bn": [
+          794.02,
+          1084.248
+        ],
+        "eps_low": 349.7885462555066,
+        "eps_high": 477.6422907488987,
+        "reference_PE_low": 17.20325054784514,
+        "reference_PE_high": 23.49133523085061
+      },
+      "cautious": {
+        "net_income_bn": [
+          555,
+          794.02
+        ],
+        "eps_low": 244.4933920704846,
+        "eps_high": 349.7885462555066,
+        "reference_PE_low": 23.49133523085061,
+        "reference_PE_high": 33.60827027027027
+      }
+    },
+    {
+      "symbol": "6857.T",
+      "period": "FY2028/3",
+      "currency": "JPY",
+      "profit_unit": "billion in specified currency",
+      "near_net_income_bn": [
+        652.8,
+        881.3
+      ],
+      "cautious_net_income_bn": [
+        438,
+        631
+      ],
+      "diluted_shares_bn_range": [
+        0.725,
+        0.725
+      ],
+      "kind": "independent conditional scenario; not company guidance or consensus",
+      "note": "投資評価益を延長しない。独自希薄化分母0.725bn。",
+      "price": 27945.0,
+      "price_time_local": "2026-11-06T12:52:01+09:00",
+      "near": {
+        "net_income_bn": [
+          652.8,
+          881.3
+        ],
+        "eps_low": 900.4137931034483,
+        "eps_high": 1215.5862068965516,
+        "reference_PE_low": 22.988908430727335,
+        "reference_PE_high": 31.035730698529413
+      },
+      "cautious": {
+        "net_income_bn": [
+          438,
+          631
+        ],
+        "eps_low": 604.1379310344828,
+        "eps_high": 870.344827586207,
+        "reference_PE_low": 32.10796354992076,
+        "reference_PE_high": 46.25599315068493
+      }
+    },
+    {
+      "symbol": "VRT",
+      "period": "CY2027",
+      "currency": "USD",
+      "profit_unit": "billion in specified currency",
+      "near_net_income_bn": [
+        3.0107,
+        3.8423
+      ],
+      "cautious_net_income_bn": null,
+      "diluted_shares_bn_range": [
+        0.4,
+        0.4
+      ],
+      "kind": "independent conditional scenario; not company guidance or consensus",
+      "note": "GAAP費用を残す。来年成長と利幅の独自仮定で、中立的な景気循環利益ではない。",
+      "price": 176.73,
+      "price_time_local": "2026-11-05T16:00:03-05:00",
+      "near": {
+        "net_income_bn": [
+          3.0107,
+          3.8423
+        ],
+        "eps_low": 7.52675,
+        "eps_high": 9.605749999999999,
+        "reference_PE_low": 18.398355151862166,
+        "reference_PE_high": 23.480253761583683
+      },
+      "cautious": null
+    },
+    {
+      "symbol": "ANET",
+      "period": "CY2027",
+      "currency": "USD",
+      "profit_unit": "billion in specified currency",
+      "near_net_income_bn": [
+        5.696,
+        7.16
+      ],
+      "cautious_net_income_bn": null,
+      "diluted_shares_bn_range": [
+        1.3,
+        1.3
+      ],
+      "kind": "independent conditional scenario; not company guidance or consensus",
+      "note": "投資益を延長せずSBC費用を残す。GAAP営業率・税率・株数は独自仮定。",
+      "price": 159.16,
+      "price_time_local": "2026-11-05T16:00:03-05:00",
+      "near": {
+        "net_income_bn": [
+          5.696,
+          7.16
+        ],
+        "eps_low": 4.381538461538462,
+        "eps_high": 5.507692307692308,
+        "reference_PE_low": 28.897765363128492,
+        "reference_PE_high": 36.3251404494382
+      },
+      "cautious": null
+    },
+    {
+      "symbol": "2330.TW",
+      "period": "CY2027",
+      "currency": "TWD",
+      "profit_unit": "billion in specified currency",
+      "near_net_income_bn": [
+        3145,
+        3896
+      ],
+      "cautious_net_income_bn": [
+        2416.8,
+        2416.8
+      ],
+      "diluted_shares_bn_range": [
+        26,
+        26
+      ],
+      "kind": "independent conditional scenario; not company guidance or consensus",
+      "note": "台湾普通株、ADRは使わない。純利益率46〜50%、USD/TWD31.8固定の独自計算。慎重値は売上190bnUSD・純利益率40%。",
+      "price": 2140.0,
+      "price_time_local": "2026-11-06T11:46:59+08:00",
+      "near": {
+        "net_income_bn": [
+          3145,
+          3896
+        ],
+        "eps_low": 120.96153846153847,
+        "eps_high": 149.84615384615384,
+        "reference_PE_low": 14.281314168377824,
+        "reference_PE_high": 17.691573926868045
+      },
+      "cautious": {
+        "net_income_bn": [
+          2416.8,
+          2416.8
+        ],
+        "eps_low": 92.95384615384616,
+        "eps_high": 92.95384615384616,
+        "reference_PE_low": 23.02217808672625,
+        "reference_PE_high": 23.02217808672625
+      }
+    },
+    {
+      "symbol": "GOOGL",
+      "period": "CY2027",
+      "currency": "USD",
+      "profit_unit": "billion in specified currency",
+      "near_net_income_bn": [
+        132.8,
+        157.44
+      ],
+      "cautious_net_income_bn": null,
+      "diluted_shares_bn_range": [
+        12.8,
+        12.8
+      ],
+      "kind": "independent conditional scenario; not company guidance or consensus",
+      "note": "投資評価益を延長せずSBC費用を残す。巨大設備投資後のFCFをこの利益幅で代用しない。",
+      "price": 282.57,
+      "price_time_local": "2026-11-05T16:00:01-05:00",
+      "near": {
+        "net_income_bn": [
+          132.8,
+          157.44
+        ],
+        "eps_low": 10.375,
+        "eps_high": 12.299999999999999,
+        "reference_PE_low": 22.97317073170732,
+        "reference_PE_high": 27.23566265060241
+      },
+      "cautious": null
+    },
+    {
+      "symbol": "SMCI",
+      "period": "FY2027",
+      "currency": "USD",
+      "profit_unit": "billion in specified currency",
+      "near_net_income_bn": [
+        5,
+        6.5
+      ],
+      "cautious_net_income_bn": [
+        3,
+        5
+      ],
+      "diluted_shares_bn_range": [
+        0.9,
+        1.0
+      ],
+      "kind": "independent conditional scenario; not company guidance or consensus",
+      "note": "連結正常NIを全転換仮定の経済分母で割る。優先配分を二重控除しない。厳密なGAAP希薄化EPSではなく、CB利息加戻しもしない。",
+      "price": 27.08,
+      "price_time_local": "2026-11-05T16:00:01-05:00",
+      "near": {
+        "net_income_bn": [
+          5,
+          6.5
+        ],
+        "eps_low": 5.0,
+        "eps_high": 7.222222222222222,
+        "reference_PE_low": 3.749538461538461,
+        "reference_PE_high": 5.4159999999999995
+      },
+      "cautious": {
+        "net_income_bn": [
+          3,
+          5
+        ],
+        "eps_low": 3.0,
+        "eps_high": 5.555555555555555,
+        "reference_PE_low": 4.8744,
+        "reference_PE_high": 9.026666666666666
+      }
+    }
+  ]
+}

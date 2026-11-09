@@ -1,0 +1,238 @@
+{
+  "asOf": "2026-11-06",
+  "source": {
+    "financials": "https://ssl4.eir-parts.net/doc/285A/tdnet/2902676/00.pdf",
+    "presentation": "https://ssl4.eir-parts.net/doc/285A/ir_material_for_fiscal_ym3/216828/00.pdf",
+    "qa": "https://ssl4.eir-parts.net/doc/285A/ir_material_for_fiscal_ym3/216830/00.pdf",
+    "published": "2026-10-30"
+  },
+  "facts": {
+    "actualH1ParentNetIncomeTrn": 2.197871,
+    "q3CompanyGuidanceTrn": {
+      "revenue": 2.5,
+      "operatingProfit": 1.995,
+      "pretaxProfit": 1.98,
+      "parentNetIncome": 1.36
+    },
+    "q3CompanyGuidanceFxJpyPerUsd": 157,
+    "sharesExTreasury": 1597905534,
+    "shareBasis": "post 3-for-1 split effective 2026-10-01; shares as of 2026-09-30",
+    "referencePriceJpy": 8700,
+    "referencePriceKind": "rounded price in user question, not a fresh market observation"
+  },
+  "baseline": {
+    "annualRevenueTrn": 10,
+    "annualOperatingExpenseTrn": 2.0199999999999996,
+    "annualNetNonOperatingExpenseTrn": 0.0600000000000005,
+    "afterTaxFactor": 0.686868686868687,
+    "annualizedParentNetIncomeTrn": 5.44,
+    "kind": "mechanical annualization of one quarter of company guidance, not full-year guidance"
+  },
+  "caveats": [
+    "Effective sales-value factor is applied to all consolidated sales and is not a pure NAND ASP forecast.",
+    "Volume, operating expenses and timing are independent choices; FX and net financial costs are held fixed.",
+    "Product mix, JV accounting, fixed and variable cost structure, impairments and tax changes are simplified.",
+    "Net income is after accrual tax expense; tax payments must not be subtracted again from net income.",
+    "These net-income scenarios do not estimate free cash flow or distributable cash.",
+    "Central ranges are judgmental scenario ranges, not probability intervals or profit floors and ceilings."
+  ],
+  "nineMonthsActualPlusGuidanceTrn": 3.5578710000000004,
+  "fy2027": [
+    {
+      "q4NetIncomeTrn": 1.36,
+      "kind": "Q4 equal to Q3 guidance: independent carry-forward",
+      "fullYearParentNetIncomeTrn": 4.917871000000001
+    },
+    {
+      "q4NetIncomeTrn": 1.45,
+      "kind": "independent Q4 assumption",
+      "fullYearParentNetIncomeTrn": 5.007871000000001
+    },
+    {
+      "q4NetIncomeTrn": 1.65,
+      "kind": "independent Q4 assumption",
+      "fullYearParentNetIncomeTrn": 5.207871000000001
+    },
+    {
+      "q4NetIncomeTrn": 1.8,
+      "kind": "independent Q4 assumption",
+      "fullYearParentNetIncomeTrn": 5.357871
+    }
+  ],
+  "fy2028": [
+    {
+      "name": "lower_central_example",
+      "kind": "independent FY2028 scenario, not a confidence interval",
+      "priceFactor": 0.85,
+      "volumeFactor": 1.15,
+      "operatingExpenseFactor": 1.2,
+      "revenueTrn": 9.774999999999999,
+      "operatingExpenseTrn": 2.4239999999999995,
+      "operatingProfitTrn": 7.350999999999999,
+      "pretaxProfitTrn": 7.290999999999999,
+      "parentNetIncomeTrn": 5.007959595959596,
+      "epsJpy": 3134.0773840511624,
+      "referencePER": 2.775936562470653
+    },
+    {
+      "name": "central_example",
+      "kind": "independent FY2028 scenario, not a confidence interval",
+      "priceFactor": 0.95,
+      "volumeFactor": 1.15,
+      "operatingExpenseFactor": 1.2,
+      "revenueTrn": 10.924999999999999,
+      "operatingExpenseTrn": 2.4239999999999995,
+      "operatingProfitTrn": 8.501,
+      "pretaxProfitTrn": 8.440999999999999,
+      "parentNetIncomeTrn": 5.797858585858586,
+      "epsJpy": 3628.41135629898,
+      "referencePER": 2.3977435703084384
+    },
+    {
+      "name": "upper_central_example",
+      "kind": "independent FY2028 scenario, not a confidence interval",
+      "priceFactor": 1,
+      "volumeFactor": 1.2,
+      "operatingExpenseFactor": 1.2,
+      "revenueTrn": 12,
+      "operatingExpenseTrn": 2.4239999999999995,
+      "operatingProfitTrn": 9.576,
+      "pretaxProfitTrn": 9.516,
+      "parentNetIncomeTrn": 6.536242424242425,
+      "epsJpy": 4090.506156443679,
+      "referencePER": 2.1268761535281135
+    }
+  ],
+  "normalized": [
+    {
+      "name": "normalization_price_0.7",
+      "kind": "independent long-run valuation assumption; date of normalization unspecified",
+      "priceFactor": 0.7,
+      "volumeFactor": 1.2,
+      "operatingExpenseFactor": 1.5,
+      "revenueTrn": 8.4,
+      "operatingExpenseTrn": 3.0299999999999994,
+      "operatingProfitTrn": 5.370000000000001,
+      "pretaxProfitTrn": 5.3100000000000005,
+      "parentNetIncomeTrn": 3.647272727272728,
+      "epsJpy": 2282.5333849007925,
+      "referencePER": 3.811554327113658
+    },
+    {
+      "name": "normalization_price_0.6",
+      "kind": "independent long-run valuation assumption; date of normalization unspecified",
+      "priceFactor": 0.6,
+      "volumeFactor": 1.2,
+      "operatingExpenseFactor": 1.5,
+      "revenueTrn": 7.199999999999999,
+      "operatingExpenseTrn": 3.0299999999999994,
+      "operatingProfitTrn": 4.17,
+      "pretaxProfitTrn": 4.109999999999999,
+      "parentNetIncomeTrn": 2.8230303030303032,
+      "epsJpy": 1766.7066312508955,
+      "referencePER": 4.924416904373121
+    },
+    {
+      "name": "normalization_price_0.5",
+      "kind": "independent long-run valuation assumption; date of normalization unspecified",
+      "priceFactor": 0.5,
+      "volumeFactor": 1.2,
+      "operatingExpenseFactor": 1.5,
+      "revenueTrn": 6,
+      "operatingExpenseTrn": 3.0299999999999994,
+      "operatingProfitTrn": 2.9700000000000006,
+      "pretaxProfitTrn": 2.91,
+      "parentNetIncomeTrn": 1.9987878787878792,
+      "epsJpy": 1250.8798776009992,
+      "referencePER": 6.955104287619768
+    }
+  ],
+  "priceOnlySensitivity": [
+    {
+      "name": "price_only_1",
+      "kind": "mechanical sensitivity, not a forecast",
+      "priceFactor": 1,
+      "volumeFactor": 1,
+      "operatingExpenseFactor": 1,
+      "revenueTrn": 10,
+      "operatingExpenseTrn": 2.0199999999999996,
+      "operatingProfitTrn": 7.98,
+      "pretaxProfitTrn": 7.92,
+      "parentNetIncomeTrn": 5.44,
+      "epsJpy": 3404.4565740893167,
+      "referencePER": 2.555473923860294
+    },
+    {
+      "name": "price_only_0.8",
+      "kind": "mechanical sensitivity, not a forecast",
+      "priceFactor": 0.8,
+      "volumeFactor": 1,
+      "operatingExpenseFactor": 1,
+      "revenueTrn": 8,
+      "operatingExpenseTrn": 2.0199999999999996,
+      "operatingProfitTrn": 5.98,
+      "pretaxProfitTrn": 5.92,
+      "parentNetIncomeTrn": 4.066262626262627,
+      "epsJpy": 2544.745318006156,
+      "referencePER": 3.4188097089482308
+    },
+    {
+      "name": "price_only_0.7",
+      "kind": "mechanical sensitivity, not a forecast",
+      "priceFactor": 0.7,
+      "volumeFactor": 1,
+      "operatingExpenseFactor": 1,
+      "revenueTrn": 7,
+      "operatingExpenseTrn": 2.0199999999999996,
+      "operatingProfitTrn": 4.98,
+      "pretaxProfitTrn": 4.92,
+      "parentNetIncomeTrn": 3.37939393939394,
+      "epsJpy": 2114.8896899645756,
+      "referencePER": 4.1136897310921805
+    },
+    {
+      "name": "price_only_0.6",
+      "kind": "mechanical sensitivity, not a forecast",
+      "priceFactor": 0.6,
+      "volumeFactor": 1,
+      "operatingExpenseFactor": 1,
+      "revenueTrn": 6,
+      "operatingExpenseTrn": 2.0199999999999996,
+      "operatingProfitTrn": 3.9800000000000004,
+      "pretaxProfitTrn": 3.92,
+      "parentNetIncomeTrn": 2.692525252525253,
+      "epsJpy": 1685.0340619229953,
+      "referencePER": 5.163100376778961
+    },
+    {
+      "name": "price_only_0.5",
+      "kind": "mechanical sensitivity, not a forecast",
+      "priceFactor": 0.5,
+      "volumeFactor": 1,
+      "operatingExpenseFactor": 1,
+      "revenueTrn": 5,
+      "operatingExpenseTrn": 2.0199999999999996,
+      "operatingProfitTrn": 2.9800000000000004,
+      "pretaxProfitTrn": 2.92,
+      "parentNetIncomeTrn": 2.0056565656565657,
+      "epsJpy": 1255.1784338814148,
+      "referencePER": 6.931285437319701
+    }
+  ],
+  "externalConsensus": [
+    {
+      "provider": "Minkabu",
+      "asOf": "2026-11-06",
+      "fiscalYearEnd": "2027-03",
+      "parentNetIncomeTrn": 5.397981,
+      "url": "https://minkabu.jp/stock/285A/analyst_consensus"
+    },
+    {
+      "provider": "IFIS / Kabuyoho Pro",
+      "asOf": "2026-11-05",
+      "fiscalYearEnd": "2027-03",
+      "parentNetIncomeTrn": 5.464233,
+      "url": "https://ko5yqxb8d4.execute-api.ap-northeast-1.amazonaws.com/reportAnalyst?bcode=285A"
+    }
+  ]
+}

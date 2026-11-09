@@ -1,12 +1,69 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-18T05:35:20Z",
+  "generatedAt": "2026-11-09T13:35:31Z",
   "groups": [
     {
       "id": "themes",
       "label": "テーマ",
       "assetClass": "stock",
       "entries": [
+        {
+          "id": "undervalued-screen-2026-11-06",
+          "title": "割安企業スクリーン（日本・米国・欧州アジア＋AI関連46社の統合評価）",
+          "date": "2026-11-06",
+          "kind": "theme",
+          "slug": "undervalued-screen",
+          "items": [
+            {
+              "label": "レポート",
+              "path": "research/themes/undervalued-screen/2026-11-06/report.md",
+              "type": "md"
+            },
+            {
+              "label": "README・資料一覧",
+              "path": "research/themes/undervalued-screen/2026-11-06/README.md",
+              "type": "md"
+            }
+          ]
+        },
+        {
+          "id": "ai-current-review-2026-11-06",
+          "title": "AI関連46社の最新決算・利益持続性と株価評価",
+          "date": "2026-11-06",
+          "kind": "theme",
+          "slug": "ai-current-review",
+          "items": [
+            {
+              "label": "レポート",
+              "path": "research/themes/ai-current-review/2026-11-06/report.md",
+              "type": "md"
+            },
+            {
+              "label": "README・資料一覧",
+              "path": "research/themes/ai-current-review/2026-11-06/README.md",
+              "type": "md"
+            }
+          ]
+        },
+        {
+          "id": "memory-per-cycle-2026-11-06",
+          "title": "メモリ株の低PER・LTAの実効性と下振れリスク",
+          "date": "2026-11-06",
+          "kind": "theme",
+          "slug": "memory-per-cycle",
+          "items": [
+            {
+              "label": "レポート",
+              "path": "research/themes/memory-per-cycle/2026-11-06/report.md",
+              "type": "md"
+            },
+            {
+              "label": "README・資料一覧",
+              "path": "research/themes/memory-per-cycle/2026-11-06/README.md",
+              "type": "md"
+            }
+          ]
+        },
         {
           "id": "ai-valuation-ranking-2026-10-18",
           "title": "AI関連46社 将来利益と割安度ランキング",
@@ -66,7 +123,7 @@
         },
         {
           "id": "memory-per-cycle-2026-10-18",
-          "title": "メモリ株の低PERとキオクシアのPER上昇",
+          "title": "メモリ株の低PER・LTAの実効性と下振れリスク",
           "date": "2026-10-18",
           "kind": "theme",
           "slug": "memory-per-cycle",
@@ -488,6 +545,61 @@
       "label": "企業",
       "assetClass": "stock",
       "entries": [
+        {
+          "id": "2914-jt-2026-11-09",
+          "title": "JT（日本たばこ産業・2914）",
+          "date": "2026-11-09",
+          "kind": "company",
+          "slug": "2914-jt",
+          "items": [
+            {
+              "label": "レポート",
+              "path": "research/companies/2914-jt/2026-11-09/report.md",
+              "type": "md"
+            },
+            {
+              "label": "README・資料一覧",
+              "path": "research/companies/2914-jt/2026-11-09/README.md",
+              "type": "md"
+            },
+            {
+              "label": "関連資料・着想元",
+              "path": "research/companies/2914-jt/2026-11-09/related-links.md",
+              "type": "md"
+            },
+            {
+              "label": "2026年度第3四半期・決算レポート原本",
+              "path": "research/companies/2914-jt/2026-11-09/sources/20261029_03.pdf",
+              "type": "pdf"
+            }
+          ],
+          "code": "2914"
+        },
+        {
+          "id": "285A-kioxia-2026-11-06",
+          "title": "キオクシア（285A）",
+          "date": "2026-11-06",
+          "kind": "company",
+          "slug": "285A-kioxia",
+          "items": [
+            {
+              "label": "投資判断レポート",
+              "path": "research/companies/285A-kioxia/2026-11-06/report.md",
+              "type": "md"
+            },
+            {
+              "label": "資料・引き継ぎ",
+              "path": "research/companies/285A-kioxia/2026-11-06/README.md",
+              "type": "md"
+            },
+            {
+              "label": "評価モデル",
+              "path": "research/companies/285A-kioxia/2026-11-06/valuation.mjs",
+              "type": "code"
+            }
+          ],
+          "code": "285A"
+        },
         {
           "id": "7011-mitsubishi-heavy-industries-2026-10-18",
           "title": "三菱重工（7011）",

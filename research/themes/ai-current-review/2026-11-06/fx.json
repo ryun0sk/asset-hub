@@ -1,0 +1,23 @@
+{
+  "items": [
+    {
+      "symbol": "EURUSD=X",
+      "meaning": "USD per EUR",
+      "rate": 1.1198,
+      "time_utc": "2026-11-06T04:10:27+00:00",
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/EURUSD%3DX?range=5d&interval=1d",
+      "retrieved_at_utc": "2026-11-06T04:11:07.856033+00:00",
+      "raw_sha256": "2623d328942f01b37209725a22d1dc4278605eaee6c1785359a761ba1cf869d0"
+    },
+    {
+      "symbol": "HKD=X",
+      "meaning": "HKD per USD",
+      "rate": 7.8349,
+      "time_utc": "2026-11-06T04:11:07+00:00",
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/HKD%3DX?range=5d&interval=1d",
+      "retrieved_at_utc": "2026-11-06T04:11:07.980110+00:00",
+      "raw_sha256": "176b4582a128aa415deadb8b95db0edc9dd0f48294906ecbe8591d14fbd6c565"
+    }
+  ],
+  "note": "FX observation timestamps differ from equity closes."
+}

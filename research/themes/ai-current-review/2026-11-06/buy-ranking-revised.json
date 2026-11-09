@@ -1,0 +1,80 @@
+{
+  "as_of": "2026-11-06 JST",
+  "kind": "subjective revised preference after LTA and deeper downside review",
+  "holding_period": "1-3 years cash equities",
+  "price_basis": "unchanged saved observations in buy-ranking-prices.json; no new prices or earnings forecast",
+  "basis_report": "../../memory-per-cycle/2026-11-06/report.md",
+  "new_probability_estimates": null,
+  "companies": [
+    {
+      "rank": 1,
+      "symbol": "NVDA",
+      "previous_rank": 1,
+      "price": 181.6,
+      "price_time_local": "2026-11-05T16:00:01-05:00"
+    },
+    {
+      "rank": 2,
+      "symbol": "2330.TW",
+      "previous_rank": 6,
+      "price": 2130.0,
+      "price_time_local": "2026-11-06T12:22:19+08:00"
+    },
+    {
+      "rank": 3,
+      "symbol": "000660.KS",
+      "previous_rank": 2,
+      "price": 1141000.0,
+      "price_time_local": "2026-11-06T13:22:18+09:00"
+    },
+    {
+      "rank": 4,
+      "symbol": "AVGO",
+      "previous_rank": 7,
+      "price": 291.53,
+      "price_time_local": "2026-11-05T16:00:01-05:00"
+    },
+    {
+      "rank": 5,
+      "symbol": "MU",
+      "previous_rank": 4,
+      "price": 656.39,
+      "price_time_local": "2026-11-05T16:00:02-05:00"
+    },
+    {
+      "rank": 6,
+      "symbol": "285A.T",
+      "previous_rank": 3,
+      "price": 8417.0,
+      "price_time_local": "2026-11-06T13:27:19+09:00"
+    },
+    {
+      "rank": 7,
+      "symbol": "8035.T",
+      "previous_rank": 8,
+      "price": 8274.0,
+      "price_time_local": "2026-11-06T13:27:17+09:00"
+    },
+    {
+      "rank": 8,
+      "symbol": "SNDK",
+      "previous_rank": 5,
+      "price": 806.43,
+      "price_time_local": "2026-11-05T16:00:01-05:00"
+    },
+    {
+      "rank": 9,
+      "symbol": "VRT",
+      "previous_rank": 10,
+      "price": 176.73,
+      "price_time_local": "2026-11-05T16:00:03-05:00"
+    },
+    {
+      "rank": 10,
+      "symbol": "5803.T",
+      "previous_rank": 9,
+      "price": 2953.0,
+      "price_time_local": "2026-11-06T13:27:19+09:00"
+    }
+  ]
+}

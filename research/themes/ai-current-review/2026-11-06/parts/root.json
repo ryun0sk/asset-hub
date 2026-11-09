@@ -1,0 +1,126 @@
+{
+  "as_of": "2026-11-06",
+  "companies": [
+    {
+      "symbol": "2330.TW",
+      "name": "TSMC",
+      "currency": "TWD",
+      "status": "confirmed",
+      "latest_report_date": "2026-10-15",
+      "latest_period": "2026Q3",
+      "actuals": {
+        "revenue_bn_twd": 1494.243,
+        "operating_profit_bn_twd": 876.445,
+        "parent_net_income_bn_twd": 763.064,
+        "diluted_eps_twd": 29.43,
+        "weighted_shares_bn": 25.932,
+        "accounting": "TIFRS"
+      },
+      "guidance": {
+        "period": "2026Q4",
+        "revenue_bn_usd_range": [
+          52.3,
+          54.3
+        ],
+        "operating_margin_range": [
+          0.565,
+          0.585
+        ],
+        "fx_twd_per_usd": 31.8,
+        "annual_net_income_guidance": null
+      },
+      "key_change": "10/18以降の新四半期決算はない。10月月次売上は11/10予定。Q3とQ4会社見通しを再確認し、株価下落を評価へ反映。",
+      "profit_durability": "先端工程・先端実装・顧客基盤を評価。Q3営業率58.7%とQ4会社56.5〜58.5%は強いが、海外工場・巨額投資の償却・地政学が制約。",
+      "risks": [
+        "2027年の会社通期純利益予想はない",
+        "台湾地政学と海外工場費用",
+        "数量増と同時にcapex・減価償却が増える",
+        "ADR5株相当と台湾普通株を混ぜない"
+      ],
+      "sources": [
+        {
+          "date": "2026-10-15",
+          "title": "Q3会社決算・Q4見通し、SEC原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm"
+        },
+        {
+          "date": "2026-11-06確認",
+          "title": "会社Financial Calendar",
+          "url": "https://investor.tsmc.com/english/financial-calendar"
+        }
+      ],
+      "deep_dive_priority": "high",
+      "independent_profit_range": {
+        "period": "CY2027",
+        "kind": "独自シナリオ、会社予想ではない",
+        "net_income_bn_twd": [
+          3145,
+          3896
+        ],
+        "eps_twd": [
+          121,
+          150
+        ],
+        "assumptions": "年間売上USD215〜245bn×固定USD/TWD31.8×純利益率46〜50%。普通株希薄化分母26bn。2026Q4中点年率USD213.2bnを起点。",
+        "normalized_downside_example": "売上USD190bn×純利益率40%×31.8＝TWD2416.8bn。成長鈍化と利幅低下を重ねた独自例。"
+      }
+    },
+    {
+      "symbol": "285A.T",
+      "name": "キオクシアHD",
+      "currency": "JPY",
+      "status": "confirmed",
+      "latest_report_date": "2026-10-30",
+      "latest_period": "FY2027/3 H1 and Q2 standalone",
+      "actuals": {
+        "h1_parent_net_income_bn_jpy": 2197.871,
+        "q2_parent_net_income_bn_jpy": 1355.706,
+        "q2_basic_eps_jpy": 838.31,
+        "accounting": "IFRS"
+      },
+      "guidance": {
+        "period": "FY2027/3 Q3 standalone",
+        "revenue_bn_jpy": 2500,
+        "parent_net_income_bn_jpy": 1360,
+        "basic_eps_jpy": 851.11,
+        "full_year_guidance": null
+      },
+      "key_change": "10/30 Q2とQ3見通しを反映。成長は一服するがQ4数量増を会社は予想。会社通期予想はない。",
+      "profit_durability": "直近は年5兆円前後の利益を見込みやすい。長期評価には年3兆円前後、慎重ケース2兆円を置く独自モデル。",
+      "risks": [
+        "NAND価格の正常化",
+        "企業SSDと消費者向けの需給差",
+        "設備投資・償却・現金税負担",
+        "LTAは長期利益率の保証ではない"
+      ],
+      "sources": [
+        {
+          "date": "2026-10-30",
+          "title": "Q2決算短信",
+          "url": "https://ssl4.eir-parts.net/doc/285A/tdnet/2902676/00.pdf"
+        },
+        {
+          "date": "2026-10-30決算対応",
+          "title": "Q2説明会Q&A",
+          "url": "https://ssl4.eir-parts.net/doc/285A/ir_material_for_fiscal_ym3/216830/00.pdf"
+        }
+      ],
+      "deep_dive_priority": "already_reviewed",
+      "independent_profit_range": {
+        "period": "FY2027/3",
+        "kind": "独自予想",
+        "net_income_bn_jpy": [
+          5000,
+          5400
+        ],
+        "normalized_net_income_bn_jpy": [
+          2000,
+          4000
+        ],
+        "normalized_central_bn_jpy": 3000,
+        "shares_ex_treasury_bn": 1.597905534,
+        "details": "../../../companies/285A-kioxia/2026-11-06/profit-outlook.md"
+      }
+    }
+  ]
+}

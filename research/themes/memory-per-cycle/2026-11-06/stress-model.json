@@ -1,0 +1,121 @@
+{
+  "asOf": "2026-11-06",
+  "priceJpy": 8417,
+  "priceTimeJst": "2026-11-06T13:27:19+09:00",
+  "shares": 1597905534,
+  "marketCapTrn": 13.449570879678,
+  "baseline": {
+    "annualRevenueTrn": 10,
+    "annualOperatingExpenseTrn": 2.02,
+    "annualNetNonOperatingExpenseTrn": 0.06,
+    "afterTaxFactor": 0.686868686868687,
+    "annualizedNetIncomeTrn": 5.44,
+    "source": "https://ssl4.eir-parts.net/doc/285A/tdnet/2902676/00.pdf",
+    "kind": "Q3 company guidance multiplied by four, not full-year or FY2028 guidance"
+  },
+  "scenarios": [
+    {
+      "name": "guidance_annualization",
+      "salesValueFactor": 1,
+      "volumeFactor": 1,
+      "expenseFactor": 1,
+      "revenueTrn": 10,
+      "operatingExpenseTrn": 2.02,
+      "operatingProfitTrn": 7.98,
+      "netIncomeTrn": 5.440000000000001,
+      "referencePE": 2.472347588176102
+    },
+    {
+      "name": "previous_normalization_center",
+      "salesValueFactor": 0.6,
+      "volumeFactor": 1.2,
+      "expenseFactor": 1.5,
+      "revenueTrn": 7.199999999999999,
+      "operatingExpenseTrn": 3.0300000000000002,
+      "operatingProfitTrn": 4.169999999999999,
+      "netIncomeTrn": 2.8230303030303032,
+      "referencePE": 4.764231848748111
+    },
+    {
+      "name": "previous_normalization_lower",
+      "salesValueFactor": 0.5,
+      "volumeFactor": 1.2,
+      "expenseFactor": 1.5,
+      "revenueTrn": 6,
+      "operatingExpenseTrn": 3.0300000000000002,
+      "operatingProfitTrn": 2.9699999999999998,
+      "netIncomeTrn": 1.9987878787878788,
+      "referencePE": 6.728863538953517
+    },
+    {
+      "name": "deeper_price_decline",
+      "salesValueFactor": 0.4,
+      "volumeFactor": 1.2,
+      "expenseFactor": 1.5,
+      "revenueTrn": 4.8,
+      "operatingExpenseTrn": 3.0300000000000002,
+      "operatingProfitTrn": 1.7699999999999996,
+      "netIncomeTrn": 1.1745454545454543,
+      "referencePE": 11.450873039973532
+    },
+    {
+      "name": "deeper_price_and_volume_decline",
+      "salesValueFactor": 0.4,
+      "volumeFactor": 0.9,
+      "expenseFactor": 1.5,
+      "revenueTrn": 3.6,
+      "operatingExpenseTrn": 3.0300000000000002,
+      "operatingProfitTrn": 0.5699999999999998,
+      "netIncomeTrn": 0.3503030303030302,
+      "referencePE": 38.39410372226419
+    }
+  ],
+  "multipleBridge": [
+    {
+      "initialPE": 3,
+      "newPE": 7.8,
+      "newEPSAsFractionOfOld": 0.38461538461538464,
+      "epsDeclinePct": 61.53846153846154,
+      "assumptions": "Same share price and share count; net EPS denominator, not operating profit."
+    },
+    {
+      "initialPE": 3,
+      "newPE": 10,
+      "newEPSAsFractionOfOld": 0.3,
+      "epsDeclinePct": 70,
+      "assumptions": "Same share price and share count; net EPS denominator, not operating profit."
+    }
+  ],
+  "cashFlowIllustrations": [
+    {
+      "annualCashFlow": 100,
+      "years": 3,
+      "discountRate": 0.12,
+      "terminalValue": 0,
+      "presentValue": 240.18312682215742,
+      "kind": "abstract equity cash-flow example; not a forecast for a company"
+    },
+    {
+      "annualCashFlow": 100,
+      "years": 4,
+      "discountRate": 0.12,
+      "terminalValue": 0,
+      "presentValue": 303.7349346626405,
+      "kind": "abstract equity cash-flow example; not a forecast for a company"
+    },
+    {
+      "annualCashFlow": 100,
+      "years": 5,
+      "discountRate": 0.12,
+      "terminalValue": 0,
+      "presentValue": 360.4776202345004,
+      "kind": "abstract equity cash-flow example; not a forecast for a company"
+    }
+  ],
+  "caveats": [
+    "Sales-value factor is an approximation across consolidated sales, not a pure NAND ASP forecast.",
+    "Volume and expenses are independent assumptions, not statistically estimated outcomes.",
+    "No customer default, impairment, legal recovery or working-capital changes are modeled.",
+    "Accrual net income is not shareholder free cash flow. Scenarios are neither floors nor confidence intervals."
+  ]
+}
