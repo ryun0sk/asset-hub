@@ -1,0 +1,48 @@
+{
+  "checkedAt": "2026-11-09T22:39:06+09:00",
+  "scope": [
+    "285A-kioxia-2026-11-06",
+    "2914-jt-2026-11-09",
+    "ai-current-review-2026-11-06",
+    "memory-per-cycle-2026-11-06",
+    "undervalued-screen-2026-11-06"
+  ],
+  "review": {
+    "independentReReview": "passed",
+    "remainingActionableFindings": 0
+  },
+  "validation": {
+    "python": {
+      "passed": 262,
+      "failed": 0
+    },
+    "node": {
+      "passed": 159,
+      "failed": 0
+    },
+    "catalog": "up_to_date",
+    "catalogDocuments": 132,
+    "archiveSnapshotsChecked": 10,
+    "priorArchiveRecordsUnchanged": 8,
+    "designTokens": "passed",
+    "datedMarkdownLocalAndAllowlistLinks": "passed",
+    "localResearchHttpDocumentsCompared": 10,
+    "stagedPrivateFiles": 0
+  },
+  "models": {
+    "kioxiaAndMemory": "saved_json_matches",
+    "aiReviewAndCandidates": "saved_json_csv_matches",
+    "jt": "saved_json_matches",
+    "screen": {
+      "rows": 104,
+      "firstTier": 17,
+      "secondTier": 26,
+      "thirdTier": 36,
+      "g3Excluded": 9,
+      "g4PendingExcluded": 4,
+      "outOfScope": 12,
+      "originalPricesScoresAndRanksUnchanged": true
+    }
+  },
+  "releaseMethod": "Build the merged source with infra/deploy.py deploy --skip-costs; preserve existing private state and IAP settings."
+}

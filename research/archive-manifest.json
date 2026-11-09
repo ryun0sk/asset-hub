@@ -61,6 +61,68 @@
         "sha256": "6fe85cad4f66bbb2544044cc6c1e06bd9c26fddf069039a0929da01b8f786311"
       }
     },
+    "research/companies/285A-kioxia/2026-10-15": {
+      "README.md": {
+        "bytes": 3417,
+        "sha256": "9ae40b0a79a5bb8afa1a393018dc41bf8006d57083eb28381a486af4b32850e5"
+      },
+      "eps-per-history-inputs.json": {
+        "bytes": 29262,
+        "sha256": "7f0ec28dad58075928bf06a26b2e19b49360e9609a6c505445e9ad655c484bc1"
+      },
+      "eps-per-history.csv": {
+        "bytes": 29376,
+        "sha256": "659232cc775fe15fbd9f0a3c942be77b22c27f3ff22523ec90ee1a13f2578f8d"
+      },
+      "eps-per-history.json": {
+        "bytes": 103129,
+        "sha256": "00b9e4026257290779982ae0081c381228f973c5c727dbcee23dcd228b16df2d"
+      },
+      "eps-per-history.png": {
+        "bytes": 191579,
+        "sha256": "5c951ae4841ef9b1b33c81ad56d49dc1c292557ddb9001752c365a5141aefec4"
+      },
+      "eps-per-history.py": {
+        "bytes": 12149,
+        "sha256": "b6c70daf219ff2f357d3cb9dd2cf497699a68d9c722c490c5f1af8d6bf3718ce"
+      },
+      "eps-per-history.svg": {
+        "bytes": 116150,
+        "sha256": "cd727def0c4de08999ad642c860ad39a26250bc8ac2ac6e1246261b32d3fc0a7"
+      },
+      "eps-per-monthly.csv": {
+        "bytes": 1851,
+        "sha256": "077bb9648f75926d6acb1412cbd22cf55cd5ada8d812a03bf40a0a801adfd4b2"
+      },
+      "per-analysis.md": {
+        "bytes": 53461,
+        "sha256": "47d89e258a2fe1769f193f419d17e1545ee0b38d026ce41b5c186a9a0bf2e822"
+      },
+      "per-audit.json": {
+        "bytes": 12723,
+        "sha256": "789ce3e5279d2f8056c38ed1b23672edbd7b1978bf3b18e5f6e183794a9007e0"
+      },
+      "per-audit.mjs": {
+        "bytes": 12615,
+        "sha256": "9b5de37afb465abd252b86ec0bc09d4285c7d9fe9d51add8b812c12d8fc1118e"
+      },
+      "related-links.md": {
+        "bytes": 10043,
+        "sha256": "6a96d4de2addaacf4da4c41abc1d7f5e5c7d8994e7a0e50273c31625b31b41d5"
+      },
+      "report.md": {
+        "bytes": 14801,
+        "sha256": "cabe7041a8697b245c33d0f2c181017d8f6e7040e7cfc9a1c6da6962e01b68b6"
+      },
+      "valuation.json": {
+        "bytes": 11663,
+        "sha256": "7e8cad47ceeb3cdfe52d8a12b4380f233423d9ff8d5e38674cc4b6002a2b7162"
+      },
+      "valuation.mjs": {
+        "bytes": 5174,
+        "sha256": "4609df0bcd6cda23f37f86ea5664afd1ee63f160b24b10ee2d0c156e0f1c8b2f"
+      }
+    },
     "research/companies/4062-ibiden/2026-10-03": {
       "README.md": {
         "bytes": 3971,
@@ -725,6 +787,24 @@
       "views.json": {
         "bytes": 228,
         "sha256": "775bc82796eba40182326f7e4eb6f87d482d8272c10071258cc4aed28ef82265"
+      }
+    },
+    "research/themes/memory-per-cycle/2026-10-18": {
+      "README.md": {
+        "bytes": 1882,
+        "sha256": "1a1db7abbfa36c5978ef08ebb1ceb16e05d48ef747d9211802cb8f1001cfe1d1"
+      },
+      "analysis-calculations.json": {
+        "bytes": 7373,
+        "sha256": "b42556a993357253768d29c4494ec6950656aac3aebcae40f9a81d0f9d247c5f"
+      },
+      "build_analysis.py": {
+        "bytes": 5936,
+        "sha256": "728a2cca32433cec7a25a0afa1c017aefc19792131989666dd1144c8879f81e0"
+      },
+      "report.md": {
+        "bytes": 15006,
+        "sha256": "2d2de5daa58a6e777aaf7f5664eb664b6617263d7a946116b8d1852d83f09218"
       }
     },
     "research/themes/photonics/2026-09-05": {

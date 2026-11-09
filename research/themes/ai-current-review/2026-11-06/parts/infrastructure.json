@@ -1,0 +1,856 @@
+{
+  "as_of": "2026-11-06",
+  "cutoff": "2026-11-06 13:07 JST; US reports through Nov5, MHI13:30 Q2 excluded",
+  "scope": "14 infrastructure/cloud/power/network companies",
+  "status_definitions": {
+    "confirmed": "最新取得資料の数値を一次情報で確認。発表後に未取得資料が絶対にないことを保証しない。",
+    "pending_report": "次回発表がカットオフ後で旧最新実績を使用",
+    "limited": "一次情報取得が限定的"
+  },
+  "companies": [
+    {
+      "symbol": "5803.T",
+      "name": "フジクラ",
+      "currency": "JPY",
+      "latest_report_date": "2026-08-07",
+      "latest_period": "FY2027/3 Q1 (2026-04–06)",
+      "status": "confirmed",
+      "actuals": {
+        "basis": "Japanese GAAP; amount JPY billion; post 1:6 split 2026-04-01",
+        "revenue_bn": 402.009,
+        "operating_income_bn": 104.828,
+        "parent_net_income_bn": 80.434,
+        "basic_eps": 48.58
+      },
+      "guidance": {
+        "period": "FY2027/3",
+        "classification": "company_guidance",
+        "revenue_bn": 1755,
+        "operating_income_bn": 432,
+        "parent_net_income_bn": 326,
+        "basic_eps": 196.88,
+        "fx_jpy_per_usd": 160
+      },
+      "key_change": "前回10/18の最新Q1入力と業績予想は同じ。今回公式Q1説明資料で再確認。Q2実績は未確認。公式IRカレンダーは画像のため日付を一次資料から抽出できず、11/10予定の二次情報だけでは確定扱いしない。",
+      "profit_durability": "ICT売上264.4/営業98.0bnで高収益。大型DC光部品案件と値上げ/ミックス良化が支え。反面、ICT営業利益率37%は長期固定しない。",
+      "risks": [
+        "高採算大型案件の継続性",
+        "供給増後の価格・利幅正常化",
+        "円高、供給制約、増設後償却",
+        "Q2発表前の判断更新余地"
+      ],
+      "sources": [
+        {
+          "date": "2026-08-07",
+          "title": "公式Q1決算説明資料（p.5,8,18）",
+          "url": "https://ssl4.eir-parts.net/doc/5803/ir_material_for_fiscal_ym/210022/00.pdf"
+        },
+        {
+          "date": "2026-11-06 accessed",
+          "title": "公式決算資料一覧",
+          "url": "https://www.fujikura.co.jp/ir/financials/"
+        }
+      ],
+      "deep_dive_priority": "high",
+      "independent_profit_range": {
+        "status": "independent_scenarios_not_company_or_consensus",
+        "period": "FY2028/3",
+        "net_income_bn": [
+          306.8,
+          425.6
+        ],
+        "rounded_range_bn": [
+          300,
+          430
+        ],
+        "currency": "JPY",
+        "formula": "(ICT revenue × ICT OP margin + other OP 30 + net finance/equity-method 20) × (1-0.28) - NCI 10",
+        "inputs_lower": {
+          "ICT_revenue_bn": 1300,
+          "ICT_margin": 0.3
+        },
+        "inputs_upper": {
+          "ICT_revenue_bn": 1500,
+          "ICT_margin": 0.37
+        },
+        "diluted_shares_bn_assumption": 1.66,
+        "eps_range": [
+          184.82,
+          256.39
+        ],
+        "normalized_valuation_range_bn": [
+          242,
+          328.4
+        ],
+        "normalization_formula": "ICT revenue 1200–1400 × margin 25–30%, other OP 30, net finance20, tax28%, NCI10",
+        "caveat": "Q2未確認。高採算案件の継続とICT成長は独自仮定で、確率区間/利益下限ではない。"
+      }
+    },
+    {
+      "symbol": "COHR",
+      "name": "Coherent",
+      "currency": "USD",
+      "latest_report_date": "2026-11-04",
+      "latest_period": "FY2027 Q1 ended 2026-09-30",
+      "status": "confirmed",
+      "actuals": {
+        "basis": "US GAAP; USD billion except EPS",
+        "revenue_bn": 2.3703,
+        "operating_income_bn": 0.3779,
+        "parent_net_income_bn": 0.3847,
+        "diluted_eps": 1.9,
+        "non_gaap_eps": 2.09,
+        "pretax_income_bn": 0.3588,
+        "tax_expense_bn": -0.0228,
+        "sbc_bn": 0.0732,
+        "intangible_amortization_bn": 0.0695
+      },
+      "guidance": {
+        "period": "FY2027 Q2",
+        "classification": "company_guidance_non_GAAP",
+        "revenue_bn": [
+          2.55,
+          2.75
+        ],
+        "non_gaap_eps": [
+          2.28,
+          2.48
+        ],
+        "non_gaap_gross_margin": [
+          0.4,
+          0.42
+        ],
+        "non_gaap_operating_expenses_bn": [
+          0.43,
+          0.45
+        ],
+        "non_gaap_tax_rate": [
+          0.18,
+          0.2
+        ],
+        "FY2027_pro_forma_revenue_growth": "above 60%",
+        "FY2027_exit_quarter_revenue_target_bn": 3,
+        "FY2028_first_4bn_quarter_target": true
+      },
+      "key_change": "Q1売上+49.9%、Q2売上ガイド2.55–2.75bnへ増勢。GAAP利益には税便益があり、EPS1.90×4を正常利益扱いしない。",
+      "profit_durability": "DC/通信売上1.9517bnが牽引。高度光通信の強さが確認できるがSBCと無形資産償却を残すと会社調整EPSより利益は小さい。",
+      "risks": [
+        "増産歩留まり・顧客集中",
+        "税便益とnon-GAAP差",
+        "光部品の競争/製品世代交代"
+      ],
+      "sources": [
+        {
+          "date": "2026-11-04",
+          "title": "FY2027 Q1 earnings release",
+          "url": "https://ir.coherent.com/news-releases/news-release-details/coherent-corp-reports-first-quarter-fiscal-2027-results"
+        }
+      ],
+      "deep_dive_priority": "medium",
+      "independent_profit_range": null
+    },
+    {
+      "symbol": "LITE",
+      "name": "Lumentum",
+      "currency": "USD",
+      "latest_report_date": "2026-11-02",
+      "latest_period": "FY2027 Q1 ended 2026-09-26",
+      "status": "confirmed",
+      "actuals": {
+        "basis": "US GAAP; USD billion except EPS",
+        "revenue_bn": 1.2626,
+        "operating_income_bn": 0.3598,
+        "net_income_bn": 0.3603,
+        "diluted_eps": 3.54,
+        "non_gaap_eps": 4.57,
+        "non_gaap_operating_margin": 0.423,
+        "sbc_and_payroll_bn": 0.1467
+      },
+      "guidance": {
+        "period": "FY2027 Q2",
+        "classification": "company_guidance_non_GAAP",
+        "revenue_bn": [
+          1.575,
+          1.625
+        ],
+        "non_gaap_operating_margin": [
+          0.45,
+          0.46
+        ],
+        "non_gaap_eps": [
+          5.9,
+          6.2
+        ],
+        "merger_exchange_ratio_MRVL_per_LITE": 4.5,
+        "merger_expected_close": "CY2028 H1; approvals required"
+      },
+      "key_change": "業績急拡大に加え11/2 Marvellとの全株式交換合意。LITE単独利益に基づく割安順位を取引後まで延長しない。",
+      "profit_durability": "OCS・光部品とNPO/CPOコミットメントが成長を支えるが、投資対象はMRVL株価連動と取引成立リスクを持つ。",
+      "risks": [
+        "MRVL株価と4.5倍の交換対価に連動",
+        "規制/株主承認・成立遅延/破談",
+        "SBCが大きくGAAPと調整EPSの差が大きい"
+      ],
+      "sources": [
+        {
+          "date": "2026-11-02",
+          "title": "FY2027 Q1 results",
+          "url": "https://investor.lumentum.com/financial-news-releases/news-details/2026/Lumentum-Announces-First-Quarter-of-Fiscal-Year-2027-Financial-Results/default.aspx"
+        },
+        {
+          "date": "2026-11-02",
+          "title": "Marvell/Lumentum merger terms",
+          "url": "https://investor.marvell.com/news-events/press-releases/detail/1040/marvell-and-lumentum-to-combine-creating-a-category-leader-in-ai-connectivity"
+        }
+      ],
+      "deep_dive_priority": "special_situation",
+      "independent_profit_range": null
+    },
+    {
+      "symbol": "6501.T",
+      "name": "日立製作所",
+      "currency": "JPY",
+      "latest_report_date": "2026-10-28",
+      "latest_period": "FY2027/3 H1 (company FY2026)",
+      "status": "confirmed",
+      "actuals": {
+        "basis": "IFRS; JPY billion except EPS",
+        "revenue_bn": 5614.028,
+        "adjusted_operating_income_bn": 643.26,
+        "EBIT_bn": 627.49,
+        "parent_net_income_bn": 416.621,
+        "basic_eps": 93.2,
+        "diluted_eps": 93.1
+      },
+      "guidance": {
+        "period": "FY2027/3",
+        "classification": "company_guidance",
+        "revenue_bn": 12000,
+        "adjusted_EBITA_bn": 1560,
+        "parent_net_income_bn": 920,
+        "basic_eps": 206.41,
+        "core_FCF_bn": 920
+      },
+      "key_change": "売上+300bn・調整EBITA+40bn・親会社純利益+20bnへ上方。上期純利益は前年一時益反動で減益でも、本業調整営業利益は+26.6%。",
+      "profit_durability": "送配電とデジタルが支え。会計上の純利益増減より調整営業利益・キャッシュ回収を重視。",
+      "risks": [
+        "Energy設備投資/大型案件実行",
+        "一時益反動と指標定義",
+        "高い期待、金利/為替"
+      ],
+      "sources": [
+        {
+          "date": "2026-10-28",
+          "title": "H1 consolidated financial results",
+          "url": "https://www.hitachi.com/content/dam/hitachi/global/en/press/files/2026/10/261028/2026_2Q.pdf"
+        },
+        {
+          "date": "2026-10-28",
+          "title": "Q2 FY2026 presentation",
+          "url": "https://www.hitachi.com/content/dam/hitachi/global/en/press/files/2026/10/261028/2026_2Qpre.pdf"
+        }
+      ],
+      "deep_dive_priority": "medium",
+      "independent_profit_range": null
+    },
+    {
+      "symbol": "ETN",
+      "name": "Eaton",
+      "currency": "USD",
+      "latest_report_date": "2026-11-03",
+      "latest_period": "CY2026 Q3",
+      "status": "confirmed",
+      "actuals": {
+        "basis": "US GAAP; USD billion except EPS",
+        "revenue_bn": 8.947,
+        "diluted_eps": 2.77,
+        "adjusted_eps": 3.68,
+        "segment_margin": 0.253,
+        "operating_CF_bn": 1.31,
+        "FCF_bn": 1.03,
+        "parent_net_income_bn": 1.078,
+        "diluted_shares_bn": 0.3896
+      },
+      "guidance": {
+        "period": "CY2026",
+        "classification": "company_guidance",
+        "gaap_eps": [
+          10.39,
+          10.49
+        ],
+        "adjusted_eps": [
+          13.7,
+          13.8
+        ],
+        "organic_growth": [
+          0.13,
+          0.15
+        ]
+      },
+      "key_change": "売上28%増（オーガニック19%）、調整EPS中点13.75へ上方。GAAP EPS中点10.44は旧中点10.46からほぼ横ばい。調整値だけで利益上方と断定しない。",
+      "profit_durability": "Electrical受注・受注残の伸びが強く、データセンタと電力系統の両方へ分散。買収寄与と有機成長を分ける。",
+      "risks": [
+        "買収・Mobility分離の価値/会計",
+        "GAAP EPSと調整EPSの差",
+        "受注の売上化と供給能力増強"
+      ],
+      "sources": [
+        {
+          "date": "2026-11-03",
+          "title": "Q3 2026 results",
+          "url": "https://www.eaton.com/us/en-us/company/news-insights/news-releases/2026/eaton-reports-record-third-quarter-2026-results.html"
+        },
+        {
+          "date": "2026-11-03",
+          "title": "SEC-filed Q3 release with exact publication date",
+          "url": "https://www.sec.gov/Archives/edgar/data/1551182/000155118226000037/etn09302026exhibit99.htm"
+        }
+      ],
+      "deep_dive_priority": "medium",
+      "independent_profit_range": null
+    },
+    {
+      "symbol": "6367.T",
+      "name": "ダイキン工業",
+      "currency": "JPY",
+      "latest_report_date": "2026-11-05",
+      "latest_period": "FY2027/3 H1",
+      "status": "confirmed",
+      "actuals": {
+        "basis": "Japanese GAAP; JPY billion except EPS",
+        "revenue_bn": 2910.766,
+        "operating_income_bn": 270.793,
+        "parent_net_income_bn": 172.959,
+        "basic_eps": 612.34,
+        "diluted_eps": 611.84
+      },
+      "guidance": {
+        "period": "FY2027/3",
+        "classification": "company_guidance",
+        "revenue_bn": 5440,
+        "operating_income_bn": 455,
+        "parent_net_income_bn": 280,
+        "basic_eps": 1006.45,
+        "annual_dividend_jpy": 370
+      },
+      "key_change": "売上5.6%・営業利益4.4%・純利益0.7%上方。純利益の増勢はAI専業より緩く、全社空調の需要が支配。EPS修正は株数変化も含む。",
+      "profit_durability": "DC冷却は成長要因だが全社利益をDC成長率で伸ばさない。住宅/業務用空調と為替・金融損益の影響が残る。",
+      "risks": [
+        "住宅・業務用空調景況",
+        "為替/金利・地域構成",
+        "DC事業成長を全社へ過大適用"
+      ],
+      "sources": [
+        {
+          "date": "2026-11-05",
+          "title": "FY2027/3 H1 financial results",
+          "url": "https://www.daikin.co.jp/-/media/Project/Daikin/daikin_co_jp/investor/data/kessan/2027/2Q_brief_report_jp-pdf.pdf?hash=5A9AF697633DD7C4DE197714E92279E1&rev=6249d1ebc5cd4bc4924559edd231cd23"
+        }
+      ],
+      "deep_dive_priority": "low",
+      "independent_profit_range": null
+    },
+    {
+      "symbol": "AMZN",
+      "name": "Amazon",
+      "currency": "USD",
+      "latest_report_date": "2026-10-29",
+      "latest_period": "CY2026 Q3",
+      "status": "confirmed",
+      "actuals": {
+        "basis": "US GAAP; USD billion except EPS",
+        "revenue_bn": 201.9,
+        "operating_income_bn": 28.1,
+        "net_income_bn": 20.7,
+        "diluted_eps": 1.89,
+        "AWS_revenue_bn": 46.0,
+        "AWS_operating_income_bn": 17.8,
+        "TTM_operating_CF_bn": 168.3,
+        "TTM_FCF_bn": -42.4
+      },
+      "guidance": {
+        "period": "CY2026 Q4",
+        "classification": "company_guidance",
+        "revenue_bn": [
+          240,
+          247
+        ],
+        "operating_income_bn": [
+          28.5,
+          33.5
+        ],
+        "FY2026_cash_capex_bn": 220,
+        "net_income_guidance": null
+      },
+      "key_change": "AWS成長39.3%・OP17.8bnと加速。Q2純利益62.6bnの投資評価益からQ3純利益20.7bnへ変化、売上増でも利益単純比較は不適切。TTM FCFは−42.4bnへ悪化。",
+      "profit_durability": "本業は強いがAI投資が現金収支を圧迫。利益成長と株主に残る現金の差を評価。",
+      "risks": [
+        "220bn設備投資の回収/償却増",
+        "Anthropic投資評価損益",
+        "小売利益率・競争"
+      ],
+      "sources": [
+        {
+          "date": "2026-10-29",
+          "title": "Q3 2026 earnings release",
+          "url": "https://ir.aboutamazon.com/files/doc_earnings/2026/q3/earnings-result/AMZN-Q3-2026-Earnings-Release.pdf"
+        }
+      ],
+      "deep_dive_priority": "medium",
+      "independent_profit_range": null
+    },
+    {
+      "symbol": "GOOGL",
+      "name": "Alphabet",
+      "currency": "USD",
+      "latest_report_date": "2026-10-28",
+      "latest_period": "CY2026 Q3",
+      "status": "confirmed",
+      "actuals": {
+        "basis": "US GAAP; USD billion except EPS; net income available to common shareholders",
+        "revenue_bn": 127.577,
+        "operating_income_bn": 40.576,
+        "parent_common_net_income_bn": 26.17,
+        "diluted_eps": 2.12,
+        "Cloud_revenue_bn": 30.709,
+        "Cloud_operating_income_bn": 11.121,
+        "equity_investment_loss_bn": 8.7,
+        "after_tax_equity_loss_effect_bn": 6.7,
+        "quarter_operating_CF_bn": 42.29,
+        "quarter_capex_bn": 51.355,
+        "quarter_FCF_bn_calculated": -9.065,
+        "diluted_shares_bn": 12.368
+      },
+      "guidance": {
+        "period": "CY2026 Q4/full year",
+        "classification": "not_provided_in_release",
+        "annual_eps_guidance": null,
+        "annual_net_income_guidance": null
+      },
+      "key_change": "Cloud売上+103%、本業OP+30%。Q3は投資評価損で純益減、9M純益200.855bnは過去評価益の影響が大きい。Q3資金調達は普通株12.37bn・社債約28.7bn、設備投資後FCF赤字。",
+      "profit_durability": "SearchとCloudの両輪は強い。投資評価損益を除く利益と、資本支出・将来償却・希薄化/優先配当まで見る。",
+      "risks": [
+        "投資評価損益でEPSが歪む",
+        "高額設備投資/将来償却",
+        "普通株ATM・強制転換優先株/優先配当",
+        "検索広告競争・規制"
+      ],
+      "sources": [
+        {
+          "date": "2026-10-28",
+          "title": "Q3 2026 earnings release",
+          "url": "https://s206.q4cdn.com/479360582/files/doc_news/2026/Oct/28/attachments/2026q3-alphabet-earnings-release.pdf"
+        }
+      ],
+      "deep_dive_priority": "high",
+      "independent_profit_range": {
+        "status": "independent_scenarios_not_company_or_consensus",
+        "period": "CY2027",
+        "currency": "USD",
+        "net_income_bn": [
+          132.8,
+          157.44
+        ],
+        "rounded_range_bn": [
+          130,
+          160
+        ],
+        "formula": "(revenue × GAAP operating margin - recurring net finance expense3) × (1-0.20) - preferred dividends1.2",
+        "inputs_lower": {
+          "revenue_bn": 550,
+          "margin": 0.31
+        },
+        "inputs_upper": {
+          "revenue_bn": 610,
+          "margin": 0.33
+        },
+        "diluted_shares_bn_assumption": 12.8,
+        "eps_range": [
+          10.375,
+          12.3
+        ],
+        "caveat": "SBCを費用に残し投資評価益を延長しない独自仮定。FCF予想ではなく償却増/追加株式発行に感応。Q3 common NI26.17+評価損税後6.7を年換算すると131.48bnで下側の参考。"
+      }
+    },
+    {
+      "symbol": "AAPL",
+      "name": "Apple",
+      "currency": "USD",
+      "latest_report_date": "2026-11-02",
+      "latest_period": "FY2026 Q4 and year ended 2026-09-26",
+      "status": "confirmed",
+      "actuals": {
+        "basis": "US GAAP; USD billion except EPS",
+        "Q4_revenue_bn": 114.477,
+        "Q4_operating_income_bn": 35.631,
+        "Q4_net_income_bn": 30.711,
+        "Q4_diluted_eps": 2.1,
+        "FY_revenue_bn": 478.834,
+        "FY_operating_income_bn": 158.063,
+        "FY_net_income_bn": 132.175,
+        "FY_diluted_eps": 8.98,
+        "FY_operating_CF_bn": 145.097,
+        "FY_capex_bn": 9.041,
+        "FY_FCF_bn_calculated": 136.056,
+        "tariff_refund_Q4_eps_effect": 0.05
+      },
+      "guidance": {
+        "period": "FY2027",
+        "classification": "not_provided_in_release",
+        "annual_net_income_guidance": null,
+        "annual_eps_guidance": null
+      },
+      "key_change": "FY26通期を更新、売上約479bn/純利益132.175bn/EPS8.98。Q4EPSには関税還付0.05押上げ、旧Q3の還付0.11と合わせて恒常利益化しない。",
+      "profit_durability": "Servicesと機器基盤の利益/現金創出は強いがAI設備投資への売上感応度は半導体/冷却より小さい。",
+      "risks": [
+        "ハードウェア買替周期",
+        "中国/関税/規制",
+        "還付一時益",
+        "高い評価倍率"
+      ],
+      "sources": [
+        {
+          "date": "2026-11-02",
+          "title": "FY2026 Q4 release",
+          "url": "https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/"
+        },
+        {
+          "date": "2026-11-02",
+          "title": "FY26 statements",
+          "url": "https://www.apple.com/newsroom/pdfs/fy2026q4/FY26_Q4_Consolidated_Financial_Statements.pdf"
+        }
+      ],
+      "deep_dive_priority": "low",
+      "independent_profit_range": null
+    },
+    {
+      "symbol": "7011.T",
+      "name": "三菱重工業",
+      "currency": "JPY",
+      "latest_report_date": "2026-08-04",
+      "latest_period": "FY2027/3 Q1 (company FY2026)",
+      "status": "pending_report",
+      "actuals": {
+        "basis": "IFRS; JPY billion except EPS",
+        "revenue_bn": 1194.2,
+        "profit_from_business_activities_bn": 159.6,
+        "parent_net_income_bn": 134.6
+      },
+      "guidance": {
+        "period": "FY2027/3",
+        "classification": "company_guidance_as_of_2026-08-04",
+        "revenue_bn": 5400,
+        "profit_from_business_activities_bn": 540,
+        "parent_net_income_bn": 380,
+        "basic_eps": 113.09,
+        "Q2_scheduled": "2026-11-06 13:30 JST; excluded at 13:07 cutoff"
+      },
+      "key_change": "11/6 13:30予定のQ2発表直前。カットオフ時点でQ1/旧通期予想を維持、未公表Q2を織り込まない。",
+      "profit_durability": "GTCC・防衛の受注可視性は強いが売上化は長期、Q1の為替益を四半期単純年換算しない。",
+      "risks": [
+        "発表直前の予想更新余地",
+        "長期案件の原価/実行",
+        "為替益・費用認識"
+      ],
+      "sources": [
+        {
+          "date": "2026-08-04",
+          "title": "FY2026 Q1 financial results",
+          "url": "https://www.mhi.com/finance/library/result"
+        },
+        {
+          "date": "2026-11-06 accessed",
+          "title": "Official IR schedule: 13:30 Q2",
+          "url": "https://www.mhi.com/jp/finance"
+        }
+      ],
+      "deep_dive_priority": "pending_earnings",
+      "independent_profit_range": null
+    },
+    {
+      "symbol": "GEV",
+      "name": "GE Vernova",
+      "currency": "USD",
+      "latest_report_date": "2026-10-28",
+      "latest_period": "CY2026 Q3",
+      "status": "confirmed",
+      "actuals": {
+        "basis": "US GAAP; USD billion",
+        "revenue_bn": 12.6,
+        "net_income_bn": 1.289,
+        "adjusted_EBITDA_bn": 1.943,
+        "Q3_FCF_bn": 5.4,
+        "9M_net_income_bn": 6.687,
+        "9M_business_interest_gains_pretax_bn": 4.481,
+        "backlog_bn": 197,
+        "gas_equipment_backlog_and_slots_GW": 122
+      },
+      "guidance": {
+        "period": "CY2026",
+        "classification": "company_guidance_non_GAAP_partly",
+        "revenue_bn": [
+          46.5,
+          47.5
+        ],
+        "adjusted_EBITDA_margin": [
+          0.135,
+          0.145
+        ],
+        "FCF_bn": [
+          16,
+          17
+        ],
+        "annual_eps_guidance": null,
+        "annual_net_income_guidance": null
+      },
+      "key_change": "受注残197bnへ増、売上/調整EBITDA/FCF予想上方。Trench Group9bn買収合意（2027年後半見込み）。9M純利益は持分取得売却益で大きく膨らむ。",
+      "profit_durability": "ガスタービンと系統投資の長期受注は支え。FCFには前受金・運転資金の大きな寄与があり毎年の稼ぎと同一視しない。",
+      "risks": [
+        "一時利益でTTM PER過小",
+        "前受金の反転/受注取消",
+        "風力・買収価格と統合",
+        "EBITDAを純利益に使わない"
+      ],
+      "sources": [
+        {
+          "date": "2026-10-28",
+          "title": "Q3 2026 release and GAAP reconciliation",
+          "url": "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm"
+        }
+      ],
+      "deep_dive_priority": "medium",
+      "independent_profit_range": null
+    },
+    {
+      "symbol": "ENR.DE",
+      "name": "Siemens Energy",
+      "currency": "EUR",
+      "latest_report_date": "2026-08-05",
+      "latest_period": "FY2026 Q3 ended 2026-06-30",
+      "status": "pending_report",
+      "actuals": {
+        "basis": "IFRS; EUR billion except EPS",
+        "revenue_bn": 11.447,
+        "operating_income_bn": 1.515,
+        "group_net_income_bn": 1.188,
+        "parent_net_income_bn": 1.083,
+        "basic_eps": 1.28,
+        "diluted_eps": 1.26,
+        "backlog_bn": 162,
+        "9M_parent_net_income_bn": 2.525
+      },
+      "guidance": {
+        "period": "FY2026",
+        "classification": "company_guidance",
+        "comparable_revenue_growth": [
+          0.14,
+          0.16
+        ],
+        "profit_margin_before_special_items": [
+          0.1,
+          0.12
+        ],
+        "group_net_income_around_bn": 4,
+        "group_net_income_not_parent_profit": true,
+        "FCF_pretax_around_bn": 8,
+        "Q4_scheduled": "2026-11-11"
+      },
+      "key_change": "Q4は11/11予定で未発表。9/30 pre-closeを確認したがQ4実績ではない。通期4bnは非支配を含むNet income、親会社EPSへ直接割らない。",
+      "profit_durability": "ガス/系統受注とGamesa改善が支え。前受金でFCF膨らむため正常化して評価。",
+      "risks": [
+        "Gamesa保証/損失再発",
+        "長期受注採算と前受金",
+        "親会社帰属とグループ利益の区別",
+        "11/11予想更新"
+      ],
+      "sources": [
+        {
+          "date": "2026-08-05",
+          "title": "FY26 Q3 earnings release",
+          "url": "https://assets.siemens-energy.com/dam/30018eed-275d-4e73-811e-b49d004cdc3d/2026-08-05-Earnings_Release_Q3_FY26_EN-pdf_Original%20file.pdf"
+        },
+        {
+          "date": "2026-09-30",
+          "title": "Q4 pre-close transcript",
+          "url": "https://assets.siemens-energy.com/dam/e8ced7ab-8dcc-48e5-b0b5-b4d500fee9a5/2026-09-30---Q4-FY26-Pre-Close-Call_transcript-pdf_Original%20file.pdf"
+        },
+        {
+          "date": "2026-11-06 accessed",
+          "title": "IR calendar",
+          "url": "https://www.siemensenergy.com/global/en/home/investor-relations.html"
+        }
+      ],
+      "deep_dive_priority": "pending_earnings",
+      "independent_profit_range": null
+    },
+    {
+      "symbol": "ANET",
+      "name": "Arista Networks",
+      "currency": "USD",
+      "latest_report_date": "2026-11-03",
+      "latest_period": "CY2026 Q3",
+      "status": "confirmed",
+      "actuals": {
+        "basis": "US GAAP; USD billion except EPS; post 2024 4:1 split",
+        "revenue_bn": 3.6576,
+        "operating_income_bn": 1.6424,
+        "net_income_bn": 1.5604,
+        "diluted_eps": 1.22,
+        "non_gaap_eps": 1.2,
+        "operating_margin": 0.449,
+        "strategic_investment_gains_bn": 0.1345,
+        "sbc_bn": 0.1381,
+        "diluted_shares_bn": 1.2782,
+        "9M_net_income_bn": 3.7962
+      },
+      "guidance": {
+        "period": "CY2026 Q4",
+        "classification": "company_guidance_non_GAAP",
+        "revenue_bn": [
+          3.9,
+          4.0
+        ],
+        "non_gaap_operating_margin": [
+          0.48,
+          0.49
+        ],
+        "non_gaap_eps": [
+          1.26,
+          1.3
+        ],
+        "annual_gaap_eps_guidance": null
+      },
+      "key_change": "売上+58.5%/前四半期+20.5%、Q4売上中点3.95bnへ増勢。GAAP EPSが調整EPSを上回るのは投資益/税項目が関係、GAAP単純年換算にも注意。",
+      "profit_durability": "Ethernet AIネットワーク需要と高い営業利益率、キャッシュ/有価証券約14.4bnが支え。大口CSP集中とmerchant silicon依存は残る。",
+      "risks": [
+        "大口顧客集中・NVDAネットワーク競争",
+        "投資評価益/株式報酬の税効果",
+        "部材調達/在庫・SBC"
+      ],
+      "sources": [
+        {
+          "date": "2026-11-03",
+          "title": "Q3 2026 financial results with GAAP statements",
+          "url": "https://investors.arista.com/Communications/Press-Releases-and-Events/Press-Release-Detail/2026/Arista-Networks-Inc--Reports-Third-Quarter-2026-Financial-Results/default.aspx"
+        }
+      ],
+      "deep_dive_priority": "high",
+      "independent_profit_range": {
+        "status": "independent_scenarios_not_company_or_consensus",
+        "period": "CY2027",
+        "currency": "USD",
+        "net_income_bn": [
+          5.696,
+          7.16
+        ],
+        "rounded_range_bn": [
+          5.7,
+          7.2
+        ],
+        "formula": "(revenue × GAAP OP margin + recurring net interest0.4) × (1-0.20)",
+        "inputs_lower": {
+          "revenue_bn": 16,
+          "margin": 0.42
+        },
+        "inputs_upper": {
+          "revenue_bn": 19,
+          "margin": 0.45
+        },
+        "diluted_shares_bn_assumption": 1.3,
+        "eps_range": [
+          4.3815,
+          5.5077
+        ],
+        "caveat": "SBC/償却を費用に残す。投資益0.1345bn/Q3は延長せず、税効果は平準化。成長率・利益率は独自仮定でQ4調整EPSの4倍ではない。"
+      }
+    },
+    {
+      "symbol": "VRT",
+      "name": "Vertiv",
+      "currency": "USD",
+      "latest_report_date": "2026-10-28",
+      "latest_period": "CY2026 Q3",
+      "status": "confirmed",
+      "actuals": {
+        "basis": "US GAAP; USD billion except EPS",
+        "revenue_bn": 4.313,
+        "operating_income_bn": 0.9838,
+        "net_income_bn": 0.7645,
+        "diluted_eps": 1.95,
+        "adjusted_eps": 2.21,
+        "adjusted_operating_margin": 0.252,
+        "operating_CF_bn": 0.794,
+        "adjusted_FCF_bn": 0.652,
+        "diluted_shares_bn": 0.392682064
+      },
+      "guidance": {
+        "period": "CY2026",
+        "classification": "company_guidance",
+        "revenue_bn": [
+          14.45,
+          14.85
+        ],
+        "gaap_eps_midpoint": 6.29,
+        "adjusted_eps": [
+          7.1,
+          7.2
+        ],
+        "adjusted_FCF_bn": [
+          2.6,
+          2.8
+        ],
+        "Q4_gaap_eps_midpoint": 2.08
+      },
+      "key_change": "売上+61%（有機55%）/有機受注100%超増、通期売上中点14.65bnへ上方、調整EPS中点6.70→7.15。",
+      "profit_durability": "電源/冷却の需要と受注可視性が強い。受注取消・投資延期と増産費用を考慮してGAAP利益で判断。",
+      "risks": [
+        "CSP投資延期・受注取消",
+        "液冷方式の競争/技術変化",
+        "買収/contingent consideration・償却差",
+        "大口顧客条件と供給能力"
+      ],
+      "sources": [
+        {
+          "date": "2026-10-28",
+          "title": "Q3 2026 earnings release",
+          "url": "https://investors.vertiv.com/news/news-details/2026/Vertiv-Reports-Strong-Third-Quarter-2026-with-Net-Sales-Growth-of-61-Organic-Orders-Growth-over-100-and-Diluted-EPS-Growth-of-91-Adjusted-Diluted-EPS-Growth-of-78-Raises-Full-Year-2026-Guidance-Across-All-Key-Metrics/default.aspx"
+        }
+      ],
+      "deep_dive_priority": "high",
+      "independent_profit_range": {
+        "status": "independent_scenarios_not_company_or_consensus",
+        "period": "CY2027",
+        "currency": "USD",
+        "net_income_bn": [
+          3.0107,
+          3.8423
+        ],
+        "rounded_range_bn": [
+          3.0,
+          3.8
+        ],
+        "formula": "(revenue × GAAP OP margin - net finance0.05) × (1-0.23)",
+        "inputs_lower": {
+          "revenue_bn": 18,
+          "margin": 0.22
+        },
+        "inputs_upper": {
+          "revenue_bn": 21,
+          "margin": 0.24
+        },
+        "diluted_shares_bn_assumption": 0.4,
+        "eps_range": [
+          7.5268,
+          9.6058
+        ],
+        "caveat": "GAAP費用を残し調整EPSと混ぜない。売上/マージン/税率/株数は独自仮定。注文の売上化と供給増が必要。"
+      }
+    }
+  ],
+  "limitations": [
+    "株価はrootが別ファイルで取得。ここでのhighは業績深掘り優先度で割安順位ではない。",
+    "future rangeは独自シナリオ、会社予想/コンセンサス/確率区間ではない。",
+    "X/有料API/秘密情報は使用していない。",
+    "フジクラの次回決算日時は公式カレンダーが画像で一次確定できず、外部11/10推計を確定日扱いしていない。"
+  ]
+}

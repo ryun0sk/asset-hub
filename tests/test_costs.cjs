@@ -6,10 +6,16 @@ const {pathToFileURL} = require('node:url');
 const web = name => pathToFileURL(path.join(__dirname, '..', 'web', name)).href;
 const month = new Intl.DateTimeFormat('sv-SE', {timeZone: 'Asia/Tokyo', year: 'numeric', month: '2-digit'}).format(new Date());
 const record = (date, serviceId, service, gross, credits, net) => ({date, serviceId, service, currency: 'JPY', gross, credits, net, exportedAt: '2026-09-30T00:00:00Z'});
+const snapshotWindow = records => {
+  const dates = records.map(row => row.date).sort();
+  const end = new Date((dates.at(-1) || month + '-01') + 'T00:00:00Z');
+  end.setUTCDate(end.getUTCDate() + 1);
+  return {start: dates[0] || month + '-01', end: end.toISOString().slice(0, 10)};
+};
 const payload = (records, extra = {}) => ({
   project: 'asset-hub-prod',
   budget: {currency: 'JPY', projectBudget: 1000},
-  snapshot: {version: 1, projectId: 'asset-hub-prod', fetchedAt: new Date().toISOString(), window: {start: '2026-08-01', end: '2026-10-03'}, currency: 'JPY', records, latestExportAt: null, latestUsageDate: null},
+  snapshot: {version: 1, projectId: 'asset-hub-prod', fetchedAt: new Date().toISOString(), window: snapshotWindow(records), currency: 'JPY', records, latestExportAt: null, latestUsageDate: null},
   syncStatus: {status: 'ok'},
   ...extra,
 });

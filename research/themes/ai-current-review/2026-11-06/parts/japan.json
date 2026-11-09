@@ -1,0 +1,794 @@
+{
+  "as_of": "2026-11-06",
+  "cutoff": "around 13:07 JST; no later releases used",
+  "scope": "14 equipment/materials/test companies",
+  "money_unit": "bn of each company financial currency; EPS local currency per ordinary share",
+  "status_definitions": {
+    "confirmed": "latest issuer filing/release read",
+    "limited": "latest reproduced company filing read but original host not obtained",
+    "pending_report": "new quarterly report still awaited; last available numbers retained with their dates"
+  },
+  "companies": [
+    {
+      "symbol": "4063.T",
+      "name": "信越化学",
+      "currency": "JPY",
+      "latest_report_date": "2026-10-27",
+      "latest_period": "FY2027/3 H1",
+      "status": "confirmed",
+      "actuals": {
+        "basis": "Japanese GAAP",
+        "money_unit": "JPY billion",
+        "revenue_bn": 1420.684,
+        "operating_profit_bn": 385.918,
+        "parent_net_income_bn": 286.939,
+        "basic_eps": 155.71,
+        "diluted_eps": 155.45
+      },
+      "guidance": {
+        "period": "FY2027/3",
+        "basis": "Japanese GAAP, company guidance",
+        "revenue_bn": 2700,
+        "operating_profit_bn": 700,
+        "parent_net_income_bn": 525,
+        "basic_eps": 286.0
+      },
+      "key_change": "H1営業利益+15.6%、電子材料OP+28%。7月の通期純利益525bn/EPS286円は据置。AI材料好調をPVC全体へ延長しない。",
+      "profit_durability": "電子材料・シリコンの需要と価格改定は支え。全社ではPVCの営業減益が相殺し、AI専業ほどの伸びではない。",
+      "risks": [
+        "PVC供給・景気循環",
+        "ウェーハ新設償却と契約更新価格",
+        "円高"
+      ],
+      "sources": [
+        {
+          "date": "2026-10-27",
+          "title": "H1 consolidated results",
+          "url": "https://www.shinetsu.co.jp/wp-content/uploads/2026/07/20261027_con_E.pdf"
+        }
+      ],
+      "deep_dive_priority": "medium"
+    },
+    {
+      "symbol": "3436.T",
+      "name": "SUMCO",
+      "currency": "JPY",
+      "latest_report_date": "2026-08-06",
+      "latest_period": "FY2026/12 H1; Q3未発表",
+      "status": "pending_report",
+      "actuals": {
+        "basis": "Japanese GAAP",
+        "money_unit": "JPY billion",
+        "revenue_bn": 215.016,
+        "operating_profit_bn": -6.363,
+        "parent_net_income_bn": -12.895,
+        "basic_eps": -36.87
+      },
+      "guidance": {
+        "period": "FY2026/12 9M cumulative",
+        "basis": "Japanese GAAP, company guidance",
+        "revenue_bn": 333,
+        "operating_profit_bn": -6.3,
+        "parent_net_income_bn": -12.8,
+        "basic_eps": -36.6,
+        "full_year_eps": null
+      },
+      "key_change": "11/6時点でQ3未公表。会社8/6予想はQ3単独営業損益ほぼ均衡、9M純損失12.8bn。11/11予定を外部カレンダーで確認。",
+      "profit_durability": "数量回復はあるが価格・高償却負担が利益転換を妨げる。AI需要から全社利益の急回復は未確認。",
+      "risks": [
+        "新工場償却と減損",
+        "LTA更新価格",
+        "FST持分法化による連結範囲・一時損益"
+      ],
+      "sources": [
+        {
+          "date": "2026-08-06",
+          "title": "H1 company financial results",
+          "url": "https://ssl4.eir-parts.net/doc/3436/tdnet/2864809/00.pdf"
+        },
+        {
+          "date": "2026-11-06 accessed",
+          "title": "IR calendar",
+          "url": "https://www.sumcosi.com/english/ir/event/calendar.html"
+        },
+        {
+          "date": "2026-11-06 accessed",
+          "title": "External Q3 scheduled November 11",
+          "url": "https://kabuyoho.jp/sp/report?bcode=3436"
+        }
+      ],
+      "deep_dive_priority": "low",
+      "next_report_expected": "2026-11-11 (external calendar)"
+    },
+    {
+      "symbol": "6488.TWO",
+      "name": "GlobalWafers",
+      "currency": "TWD",
+      "latest_report_date": "2026-11-03",
+      "latest_period": "CY2026 Q3",
+      "status": "confirmed",
+      "actuals": {
+        "basis": "company release, Taiwan IFRS; EPS basic/diluted not specified in release",
+        "money_unit": "TWD billion",
+        "revenue_bn": 14.87,
+        "operating_profit_bn": 1.45,
+        "reported_net_profit_bn": 1.51,
+        "parent_net_income_bn": null,
+        "reported_eps": 3.13,
+        "nine_month_revenue_bn": 44.07,
+        "nine_month_reported_net_profit_bn": 7.18,
+        "nine_month_reported_eps": 15.0
+      },
+      "guidance": {
+        "period": null,
+        "basis": "no numerical full-year profit/EPS guidance confirmed",
+        "parent_net_income_bn": null,
+        "basic_eps": null
+      },
+      "key_change": "Q3利益/EPS公表へ更新。Q2投資評価益の高い比較基準と伊8インチ工場火災の影響。11/3にMicron向け最大US$500m・10年CB案（年0.5%）を承認。",
+      "profit_durability": "新設の立ち上げと現地需要・LTAは中期支え。ただし現時点のOP margin9.8%はNAND高利益とは別物。",
+      "risks": [
+        "投資評価益を正常利益と誤認",
+        "Italy復旧と新設稼働率・償却",
+        "GDR増資と今後のCBによる希薄化"
+      ],
+      "sources": [
+        {
+          "date": "2026-11-03",
+          "title": "Q3 results release",
+          "url": "https://www.sas-globalwafers.com/en/globalwafers-reports-q3-2026-results/"
+        },
+        {
+          "date": "2026-11-03",
+          "title": "Micron private convertible-bond proposal",
+          "url": "https://www.sas-globalwafers.com/en/gwc_news_en_20261103-1/"
+        }
+      ],
+      "deep_dive_priority": "medium"
+    },
+    {
+      "symbol": "WAF.DE",
+      "name": "Siltronic",
+      "currency": "EUR",
+      "latest_report_date": "2026-11-04",
+      "latest_period": "CY2026 Q3 and 9M",
+      "status": "confirmed",
+      "actuals": {
+        "basis": "IFRS, reported period result includes NCI; parent NI not separately extracted",
+        "money_unit": "EUR billion",
+        "q3_revenue_bn": 0.3554,
+        "q3_ebit_bn": -0.0424,
+        "q3_reported_net_result_bn": -0.055,
+        "q3_reported_eps": -1.46,
+        "revenue_bn": 0.9835,
+        "operating_profit_bn": -0.1467,
+        "reported_net_result_bn": -0.1849,
+        "reported_eps": -5.08,
+        "ebitda_bn": 0.2157
+      },
+      "guidance": {
+        "period": "CY2026",
+        "basis": "company guidance",
+        "revenue_bn_approx": 1.3467,
+        "revenue_basis": "around previous-year sales",
+        "ebitda_margin_range": [
+          0.22,
+          0.24
+        ],
+        "parent_net_income_bn": null,
+        "eps": null
+      },
+      "key_change": "売上見通しを前年並みへ上方、EBITDA率22〜24%へ絞る。数量は回復したが新設償却で9M EBIT赤字。",
+      "profit_durability": "需給改善でFCF改善。利益の持続より黒字化の検証段階。EBITDAを純利益として評価しない。",
+      "risks": [
+        "シンガポール新設の高償却",
+        "為替・価格改定",
+        "負債と増資後の1株利益"
+      ],
+      "sources": [
+        {
+          "date": "2026-11-04",
+          "title": "Q3 company release",
+          "url": "https://www.siltronic.com/en/press/press-releases/siltronic-slightly-raises-sales-guidance-for-2026-higher-demand-drives-volume-development-in-q3-2026.html"
+        }
+      ],
+      "deep_dive_priority": "low"
+    },
+    {
+      "symbol": "8035.T",
+      "name": "東京エレクトロン",
+      "currency": "JPY",
+      "latest_report_date": "2026-10-30",
+      "latest_period": "FY2027/3 H1",
+      "status": "confirmed",
+      "actuals": {
+        "basis": "Japanese GAAP",
+        "money_unit": "JPY billion",
+        "revenue_bn": 1667.455,
+        "operating_profit_bn": 506.776,
+        "parent_net_income_bn": 376.929,
+        "basic_eps": 166.13,
+        "diluted_eps": 165.59
+      },
+      "guidance": {
+        "period": "FY2027/3",
+        "basis": "Japanese GAAP, company full-year guidance newly published",
+        "revenue_bn": 3700,
+        "operating_profit_bn": 1169,
+        "parent_net_income_bn": 865,
+        "basic_eps": 381.69
+      },
+      "key_change": "前回はH1予想のみ。10/30に通期NI865bn/EPS381.69円を公表、H1も7月予想349bnを上回る。",
+      "profit_durability": "AI先端ロジック・DRAM/メモリ投資と工程複雑化が支え。顧客投資延期と中国規制には循環性が残る。",
+      "risks": [
+        "輸出規制と中国売上",
+        "大口顧客の設備投資時期",
+        "高成長時の利益率正常化"
+      ],
+      "sources": [
+        {
+          "date": "2026-10-30",
+          "title": "H1 and full-year forecast",
+          "url": "https://www.tel.com/ir/library/report/i61j9u00000000gf-att/fy27q2tanshin-e.pdf"
+        }
+      ],
+      "deep_dive_priority": "high",
+      "share_basis": "2026-10-01 1:5分割後。会社基本EPS381.69円。",
+      "independent_profit_range": {
+        "status": "independent conditional scenarios, not guidance or consensus",
+        "period": "FY2028/3",
+        "unit": "JPY billion",
+        "near_term_range": [
+          794.02,
+          1084.248
+        ],
+        "near_term_center": 963.776,
+        "normalized_range": [
+          555,
+          794.02
+        ],
+        "assumptions": {
+          "revenue_bn_range": [
+            3700,
+            4440
+          ],
+          "operating_margin_range": [
+            0.29,
+            0.33
+          ],
+          "tax_rate": 0.26,
+          "center_revenue_bn": 4070,
+          "center_operating_margin": 0.32,
+          "normalized_revenue_bn_range": [
+            3000,
+            3700
+          ],
+          "normalized_operating_margin_range": [
+            0.25,
+            0.29
+          ]
+        },
+        "formula": "近い年度:売上×営業利益率×0.74。営業外損益は0とする簡易経常利益。正常化の時点は未特定。"
+      }
+    },
+    {
+      "symbol": "LRCX",
+      "name": "Lam Research",
+      "currency": "USD",
+      "latest_report_date": "2026-10-21",
+      "latest_period": "FY2027 Q1 ended 2026-09-27",
+      "status": "confirmed",
+      "actuals": {
+        "basis": "US GAAP unless explicitly adjusted",
+        "money_unit": "USD billion",
+        "revenue_bn": 8.219418,
+        "operating_profit_bn": 3.284,
+        "operating_profit_bn_precision": "approx from 40.0% published margin",
+        "parent_net_income_bn": 2.753138,
+        "diluted_eps": 2.19,
+        "non_gaap_diluted_eps": 2.2,
+        "diluted_shares_bn": 1.255768
+      },
+      "guidance": {
+        "period": "FY2027 Q2 ended 2026-12-27",
+        "basis": "US GAAP and non-GAAP, company quarterly guidance",
+        "revenue_bn_range": [
+          8.2,
+          9.0
+        ],
+        "gaap_diluted_eps_range": [
+          2.18,
+          2.48
+        ],
+        "non_gaap_diluted_eps_range": [
+          2.18,
+          2.48
+        ],
+        "full_year_eps": null
+      },
+      "key_change": "9月期売上+22%QoQ、GAAP EPS2.19、12月期売上中心8.6bn/EPS2.33へ。AI装置需要が強い。",
+      "profit_durability": "エッチング/成膜の工程数増とCSBG約2.49bn/四半期が支え。ただしサポートには装置売上も含む。",
+      "risks": [
+        "中国売上35%と輸出規制",
+        "WFE循環",
+        "供給制約と受注時期"
+      ],
+      "sources": [
+        {
+          "date": "2026-10-21",
+          "title": "September quarter results and December guidance",
+          "url": "https://investor.lamresearch.com/2026-10-21-Lam-Research-Corporation-Reports-Financial-Results-for-the-Quarter-Ended-September-27%2C-2026"
+        },
+        {
+          "date": "2026-10-22",
+          "title": "SEC 10-Q",
+          "url": "https://www.sec.gov/Archives/edgar/data/707549/000070754926000054/lrcx-20260927.htm"
+        }
+      ],
+      "deep_dive_priority": "high"
+    },
+    {
+      "symbol": "3711.TW",
+      "name": "ASE Technology",
+      "currency": "TWD",
+      "latest_report_date": "2026-10-29",
+      "latest_period": "CY2026 Q3",
+      "status": "confirmed",
+      "actuals": {
+        "basis": "Taiwan IFRS, unaudited company release",
+        "money_unit": "TWD billion",
+        "revenue_bn": 244.161159,
+        "operating_profit_bn": 33.141882,
+        "parent_net_income_bn": 26.996438,
+        "basic_eps": 6.13,
+        "diluted_eps": 5.84,
+        "diluted_shares_bn": 4.532143664
+      },
+      "guidance": {
+        "period": null,
+        "basis": "no full-year numerical parent profit/EPS guidance confirmed",
+        "parent_net_income_bn": null,
+        "eps": null
+      },
+      "key_change": "前回はQ3売上速報のみ。正式利益はNI26.996bn、OP33.142bnと強い。ATM営業利益率20.0%（Q2 15.7%）、営業外差引は損失で前四半期の為替・投資益依存が低下。",
+      "profit_durability": "先端実装/テスト増とATM採算改善は支え。EMS混在で全社をAI半導体倍率で伸ばさない。",
+      "risks": [
+        "顧客集中",
+        "高額設備投資と負債",
+        "台湾地政学",
+        "将来CB/潜在株を含む希薄化"
+      ],
+      "sources": [
+        {
+          "date": "2026-10-29",
+          "title": "SEC company Q3 financial release",
+          "url": "https://www.sec.gov/Archives/edgar/data/1122411/000095010326016324/dp255760_6k.htm"
+        },
+        {
+          "date": "2026-10-29",
+          "title": "SEC company Q3 presentation",
+          "url": "https://www.sec.gov/Archives/edgar/data/1122411/000095010326016323/dp255782_6k.htm"
+        }
+      ],
+      "deep_dive_priority": "high",
+      "independent_profit_range": {
+        "status": "independent conditional scenarios, not guidance or consensus",
+        "period": "CY2027",
+        "unit": "TWD billion",
+        "near_term_range": [
+          100,
+          150
+        ],
+        "near_term_center": 125,
+        "normalized_range": [
+          75,
+          110
+        ],
+        "assumptions": {
+          "revenue_bn_range": [
+            1000,
+            1150
+          ],
+          "operating_margin_range": [
+            0.13,
+            0.16
+          ],
+          "annual_nonoperating_expense_bn": 2,
+          "tax_rate": 0.16,
+          "annual_noncontrolling_income_bn": 4
+        },
+        "formula": "(売上×営業利益率−2)×0.84−4 = 103.5〜148.9bnを丸める。正常化は売上850〜1000、OP率11〜14%、税16%、NCI3で約74〜113bn。保証下限ではない。"
+      }
+    },
+    {
+      "symbol": "2802.T",
+      "name": "味の素",
+      "currency": "JPY",
+      "latest_report_date": "2026-08-06",
+      "latest_period": "FY2027/3 Q1; H1 scheduled 2026-11-09",
+      "status": "pending_report",
+      "actuals": {
+        "basis": "IFRS",
+        "money_unit": "JPY billion",
+        "revenue_bn": 412.105,
+        "business_profit_bn": 60.116,
+        "operating_profit_bn": 55.895,
+        "parent_net_income_bn": 36.452,
+        "diluted_eps": 38.1
+      },
+      "guidance": {
+        "period": "FY2027/3",
+        "basis": "IFRS, company guidance last updated August 6",
+        "revenue_bn": 1732,
+        "business_profit_bn": 202,
+        "parent_net_income_bn": 123.5,
+        "basic_eps": null
+      },
+      "key_change": "11/6時点Q2決算未発表、11/9予定。ABF強いが全社は食品・バイオ等を含む。",
+      "profit_durability": "ABFの強い立場は支えだが事業利益202bnと純利益123.5bnを区別。2032年新設を直近利益へ前倒ししない。",
+      "risks": [
+        "ABF顧客在庫・競合基板投資",
+        "食品原材料と為替",
+        "バイオ事業・構造改革"
+      ],
+      "sources": [
+        {
+          "date": "2026-08-06",
+          "title": "Q1 financial results",
+          "url": "https://www.ajinomoto.co.jp/company/en/ir/event/presentation/main/011111113/teaserItems1/01/linkList/0/link/FY26Q1_Tanshin_E.pdf"
+        },
+        {
+          "date": "2026-11-06 accessed",
+          "title": "IR November 9 Q2 results event",
+          "url": "https://ajinomoto-ir.swcms.net/company/en/ir.html"
+        }
+      ],
+      "deep_dive_priority": "medium",
+      "next_report_expected": "2026-11-09"
+    },
+    {
+      "symbol": "4062.T",
+      "name": "イビデン",
+      "currency": "JPY",
+      "latest_report_date": "2026-10-29",
+      "latest_period": "FY2027/3 H1",
+      "status": "confirmed",
+      "actuals": {
+        "basis": "Japanese GAAP",
+        "money_unit": "JPY billion",
+        "revenue_bn": 262.546,
+        "operating_profit_bn": 60.116,
+        "parent_net_income_bn": 38.574,
+        "basic_eps": 68.63,
+        "diluted_eps": 65.1
+      },
+      "guidance": {
+        "period": "FY2027/3",
+        "basis": "Japanese GAAP, company guidance",
+        "revenue_bn": 565,
+        "operating_profit_bn": 133,
+        "parent_net_income_bn": 89,
+        "basic_eps": 157.17
+      },
+      "key_change": "通期NI84→89bn、EPS149.68→157.17円へ上方。10/29の追加150bn投資はFY2029下期立上げ、利益寄与FY2030以降の説明。",
+      "profit_durability": "高機能ICパッケージ需要と価格・ミックス改善。供給能力制約は支えだが追加工場利益の寄与は先。",
+      "risks": [
+        "競合韓国メーカー参入",
+        "新工場償却と稼働率",
+        "大口顧客集中",
+        "過去の株式売却益でTTM低PERと誤認"
+      ],
+      "sources": [
+        {
+          "date": "2026-10-29",
+          "title": "H1 financial results and forecast",
+          "url": "https://www.ibiden.com/ir/library/statement/items/tannshinn2026Q2.pdf"
+        },
+        {
+          "date": "2026-11-02",
+          "title": "Company Q2 Q&A",
+          "url": "https://www.ibiden.com/ir/items/en_QA_FY2026Q2.pdf"
+        }
+      ],
+      "deep_dive_priority": "high",
+      "share_basis": "2026-01-01及び2026-10-01各1:2分割後。会社予想は基本EPS157.17円、H1希薄化後EPS65.10円。"
+    },
+    {
+      "symbol": "3037.TW",
+      "name": "Unimicron",
+      "currency": "TWD",
+      "latest_report_date": "2026-10-27",
+      "latest_period": "CY2026 9M",
+      "status": "limited",
+      "actuals": {
+        "basis": "company MOPS announcement republished verbatim; original-host statements not fetched",
+        "money_unit": "TWD billion",
+        "revenue_bn": 132.986108,
+        "operating_profit_bn": 19.935519,
+        "pretax_income_bn": 35.037876,
+        "parent_net_income_bn": 28.209851,
+        "basic_eps": 17.85
+      },
+      "guidance": {
+        "period": null,
+        "basis": "no numerical company full-year profit/EPS guidance confirmed",
+        "parent_net_income_bn": null,
+        "eps": null
+      },
+      "key_change": "9M会社開示を転載本文で確認。Q3売上速報52.65bnから正式9M利益まで更新。ただし原ホスト財務報告を直接取得できず確認限定。",
+      "profit_durability": "AI基板の数量・価格は改善方向。ただし9M税前利益が営業利益を15.10bn上回り、営業外益を正常利益へ延長しない。",
+      "risks": [
+        "評価益等の営業外益",
+        "増産投資と減価償却",
+        "顧客集中",
+        "CB・潜在株の分母"
+      ],
+      "sources": [
+        {
+          "date": "2026-10-27",
+          "title": "MOPS company announcement reproduced",
+          "url": "https://financialfilings.com/filings/unimicron-3037/earnings-release/2026/74787084/"
+        },
+        {
+          "date": "2026-11-06 accessed",
+          "title": "official monthly sales",
+          "url": "https://www.unimicron.com/money01.html"
+        }
+      ],
+      "deep_dive_priority": "medium",
+      "source_limitation": "転載されたMOPS会社公告は読めたが原ホスト決算資料の直接取得は失敗。数字を確度上位の銘柄の比較倍率へ混ぜない。"
+    },
+    {
+      "symbol": "6146.T",
+      "name": "ディスコ",
+      "currency": "JPY",
+      "latest_report_date": "2026-10-22",
+      "latest_period": "FY2027/3 H1",
+      "status": "confirmed",
+      "actuals": {
+        "basis": "Japanese GAAP",
+        "money_unit": "JPY billion",
+        "revenue_bn": 257.058,
+        "operating_profit_bn": 116.639,
+        "parent_net_income_bn": 80.366,
+        "basic_eps": 740.84,
+        "diluted_eps": 738.72
+      },
+      "guidance": {
+        "period": "FY2027/3 9M cumulative",
+        "basis": "Japanese GAAP, company quarterly cumulative guidance",
+        "revenue_bn": 389.5,
+        "operating_profit_bn": 174.7,
+        "parent_net_income_bn": 121.9,
+        "basic_eps": 1123.43,
+        "full_year_eps": null
+      },
+      "key_change": "前回の個別出荷速報からH1正式決算へ更新。H1NI+43.7%。通期ではなく9Mまでの会社予想に注意。",
+      "profit_durability": "HBM・先端実装の薄化/切断、装置と消耗品の高付加価値が強み。売上は出荷と検収時期が異なる。",
+      "risks": [
+        "AI設備投資の検収時期",
+        "高利益率正常化",
+        "円高・高評価倍率"
+      ],
+      "sources": [
+        {
+          "date": "2026-10-22",
+          "title": "H1 financial results and 9M guidance",
+          "url": "https://www.disco.co.jp/jp/ir/library/doc/fr/fr20261022.pdf"
+        }
+      ],
+      "deep_dive_priority": "medium"
+    },
+    {
+      "symbol": "TER",
+      "name": "Teradyne",
+      "currency": "USD",
+      "latest_report_date": "2026-10-27",
+      "latest_period": "CY2026 Q3 ended 2026-09-27",
+      "status": "confirmed",
+      "actuals": {
+        "basis": "US GAAP unless adjusted",
+        "money_unit": "USD billion",
+        "revenue_bn": 1.306,
+        "parent_net_income_bn": 0.3424,
+        "diluted_eps": 2.17,
+        "non_gaap_diluted_eps": 2.29
+      },
+      "guidance": {
+        "period": "CY2026 Q4",
+        "basis": "company quarterly guidance",
+        "revenue_bn_range": [
+          1.25,
+          1.35
+        ],
+        "gaap_diluted_eps_range": [
+          1.88,
+          2.18
+        ],
+        "non_gaap_diluted_eps_range": [
+          1.95,
+          2.25
+        ],
+        "full_year_eps": null
+      },
+      "key_change": "Q3は売上ガイダンス上限を超え、前年比70%増。Q4売上1.25〜1.35bnでQ3付近、GAAP EPS1.88〜2.18。",
+      "profit_durability": "半導体テスト、メモリ、接続試験、ロボティクスへ需要が分散。ただしQ2比では利益減で直線外挿しない。",
+      "risks": [
+        "顧客集中",
+        "ロボティクス採算と景気循環",
+        "ADVとの競争",
+        "GAAP/non-GAAP差"
+      ],
+      "sources": [
+        {
+          "date": "2026-10-27",
+          "title": "Q3 company results, call October 28",
+          "url": "https://investors.teradyne.com/news-events/press-releases/detail/455/teradyne-reports-third-quarter-2026-results"
+        }
+      ],
+      "deep_dive_priority": "medium"
+    },
+    {
+      "symbol": "ASML",
+      "name": "ASML",
+      "currency": "EUR",
+      "latest_report_date": "2026-10-14",
+      "latest_period": "CY2026 Q3",
+      "status": "confirmed",
+      "actuals": {
+        "basis": "US GAAP",
+        "money_unit": "EUR billion",
+        "revenue_bn": 11.662,
+        "operating_profit_bn": 5.1728,
+        "parent_net_income_bn": 4.9604,
+        "basic_eps": 12.95,
+        "diluted_eps": 12.93,
+        "equity_investment_gain_pretax_bn": 0.5097,
+        "diluted_shares_bn": 0.3835
+      },
+      "guidance": {
+        "period": "CY2026 full-year sales; Q4 sales/margin only",
+        "basis": "company guidance; net income/EPS not directly guided",
+        "revenue_bn_range": [
+          44,
+          45
+        ],
+        "gross_margin": 0.56,
+        "q4_revenue_bn_range": [
+          14.2,
+          15.2
+        ],
+        "q4_gross_margin": 0.57,
+        "q4_rd_bn": 1.2,
+        "q4_sga_bn": 0.4,
+        "parent_net_income_bn": null,
+        "eps": null
+      },
+      "key_change": "10/18以降の新決算ではなく10/14Q3を再確認。2027〜28供給不足見込み、28年能力増検討。Q3純利益に税前EUR509.7m評価益が含まれる。",
+      "profit_durability": "EUV技術・Installed Baseサービスの継続性は高い。設備供給・受注認識・中国輸出規制による四半期変動は残る。",
+      "risks": [
+        "2027通期数値ガイダンスは未公表",
+        "投資評価益を本業へ延長",
+        "顧客設備投資と輸出規制",
+        "High-NA立上げ費用"
+      ],
+      "sources": [
+        {
+          "date": "2026-10-14",
+          "title": "Company Q3 results",
+          "url": "https://www.investor.asml.com/news-releases/news-release-details/asml-reports-eu11.7-billion-total-net-sales-and-eu5.0-billion-net-income-q3-2026"
+        },
+        {
+          "date": "2026-10-14",
+          "title": "SEC US-GAAP statements",
+          "url": "https://www.sec.gov/Archives/edgar/data/937966/000162828026065813/financial_statementsxusx.htm"
+        }
+      ],
+      "deep_dive_priority": "high",
+      "quote_currency": "USD",
+      "share_basis": "NASDAQ ASML普通株1株は欧州普通株1株相当。EUR EPSとUSD価格はEUR/USDで換算して比較する。",
+      "reference_eps_proxy": {
+        "status": "independent mechanical proxy, not full-year forecast or TTM",
+        "kind": "Q3 diluted EPS less investment gain, then multiplied by four",
+        "currency": "EUR",
+        "tax_assumption": 0.167,
+        "q3_adjusted_eps": 11.82288109517601,
+        "annualized_adjusted_eps": 47.29152438070404,
+        "caveat": "税率16.7%を仮定した概算。gainに対応する個別税効果は未照合。四半期の年換算なのでCY26通期EPSではない。"
+      }
+    },
+    {
+      "symbol": "6857.T",
+      "name": "アドバンテスト",
+      "currency": "JPY",
+      "latest_report_date": "2026-10-28",
+      "latest_period": "FY2027/3 H1 (company FY2026)",
+      "status": "confirmed",
+      "actuals": {
+        "basis": "IFRS",
+        "money_unit": "JPY billion",
+        "revenue_bn": 845.2,
+        "operating_profit_bn": 456.809,
+        "parent_net_income_bn": 368.083,
+        "basic_eps": 508.99,
+        "diluted_eps": 506.12,
+        "financial_income_bn_approx": 57
+      },
+      "guidance": {
+        "period": "FY2027/3",
+        "basis": "IFRS company guidance",
+        "revenue_bn": 1863,
+        "operating_profit_bn": 967,
+        "pretax_profit_bn": 1021.5,
+        "parent_net_income_bn": 741.5,
+        "basic_eps": 1027.08
+      },
+      "key_change": "通期NI660→741.5bn/EPS1027.08へ上方。AI半導体数量・テスト複雑化を反映。ただしH1金融収益約57bnは主に投資評価益。",
+      "profit_durability": "テスト時間増・高性能SoC需要・顧客投資は支え。高営業利益率と市場シェアの継続性を点検する。",
+      "risks": [
+        "投資評価益を恒常利益扱い",
+        "AI投資循環と顧客集中",
+        "為替",
+        "供給増・競争による利益率正常化"
+      ],
+      "sources": [
+        {
+          "date": "2026-10-28",
+          "title": "Q2 company financial release",
+          "url": "https://www.advantest.com/document/en/investors/ir-library/result/E_FR_FY2026_2Q.pdf"
+        },
+        {
+          "date": "2026-10-28",
+          "title": "Financial review: financial income mainly investment gains",
+          "url": "https://www.advantest.com/en/investors/financial-highlights/review/"
+        }
+      ],
+      "deep_dive_priority": "high",
+      "reference_eps_proxy": {
+        "status": "independent approximate adjustment, not official normalized EPS",
+        "currency": "JPY",
+        "reported_guide_basic_eps": 1027.08,
+        "tax_assumption": 0.27,
+        "pretax_financial_income_removed_bn": 57,
+        "adjusted_parent_net_income_bn": 699.89,
+        "adjusted_basic_eps": 969.4443981119352,
+        "caveat": "57bnの金融収益全額を除く慎重代理。評価益だけの正確な除外ではない。会社EPSとの差は独自税率仮定・対象範囲による。Yahoo表示EPS1025.35との小差は株数・時点未確定のため無理に解消しない。"
+      },
+      "independent_profit_range": {
+        "status": "independent conditional scenarios, not company guidance or consensus",
+        "period": "FY2028/3",
+        "unit": "JPY billion",
+        "near_term_range": [
+          652.8,
+          881.3
+        ],
+        "near_term_center": 780,
+        "normalized_range": [
+          438,
+          631
+        ],
+        "assumptions": {
+          "revenue_bn_range": [
+            1863,
+            2235.6
+          ],
+          "operating_margin_range": [
+            0.48,
+            0.54
+          ],
+          "tax_rate": 0.27,
+          "financial_income_assumed": 0,
+          "normalized_revenue_bn_range": [
+            1500,
+            1800
+          ],
+          "normalized_operating_margin_range": [
+            0.4,
+            0.48
+          ]
+        },
+        "formula": "近い年度:売上×営業利益率×0.73、評価益をゼロ。正常化は景気循環を含む独自評価用幅で時期未特定。"
+      }
+    }
+  ]
+}

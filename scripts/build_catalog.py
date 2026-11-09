@@ -72,12 +72,18 @@ def root_titles():
         cells = [cell.strip() for cell in line.strip().strip("|").split("|")]
         if len(cells) < 3 or not line.lstrip().startswith("|"):
             continue
+        target = None
         for _, href in LINK.findall(line):
             parts = Path(href).parts
             if len(parts) >= 4 and parts[0] == "research":
+                folder = "/".join(parts[:3])
+                if target is None:
+                    target = folder
+                if folder != target:
+                    continue
                 titles.setdefault("/".join(parts[:4]), strip_links(cells[0]))
                 # Target folder too, so every dated version of a target shares one title.
-                titles.setdefault("/".join(parts[:3]), strip_links(cells[0]))
+                titles.setdefault(folder, strip_links(cells[0]))
     return titles
 
 

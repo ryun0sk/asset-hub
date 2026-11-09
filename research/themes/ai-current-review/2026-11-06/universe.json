@@ -1,0 +1,508 @@
+[
+  {
+    "symbol": "4063.T",
+    "name": "信越化学",
+    "currency": "JPY",
+    "old_price": {
+      "close": 5978.0,
+      "date": "2026-10-16",
+      "currency": "JPY",
+      "url": "https://finance.yahoo.com/quote/4063.T/history/"
+    }
+  },
+  {
+    "symbol": "3436.T",
+    "name": "SUMCO",
+    "currency": "JPY",
+    "old_price": {
+      "close": 2703.0,
+      "date": "2026-10-16",
+      "currency": "JPY",
+      "url": "https://finance.yahoo.com/quote/3436.T/history/"
+    }
+  },
+  {
+    "symbol": "6488.TWO",
+    "name": "GlobalWafers",
+    "currency": "TWD",
+    "old_price": {
+      "close": 902.0,
+      "date": "2026-10-16",
+      "currency": "TWD",
+      "url": "https://finance.yahoo.com/quote/6488.TWO/history/"
+    }
+  },
+  {
+    "symbol": "WAF.DE",
+    "name": "Siltronic",
+    "currency": "EUR",
+    "old_price": {
+      "close": 65.90000153,
+      "date": "2026-10-16",
+      "currency": "EUR",
+      "url": "https://finance.yahoo.com/quote/WAF.DE/history/"
+    }
+  },
+  {
+    "symbol": "8035.T",
+    "name": "東京エレクトロン",
+    "currency": "JPY",
+    "old_price": {
+      "close": 10630.0,
+      "date": "2026-10-16",
+      "currency": "JPY",
+      "url": "https://finance.yahoo.com/quote/8035.T/history/"
+    }
+  },
+  {
+    "symbol": "LRCX",
+    "name": "Lam Research",
+    "currency": "USD",
+    "old_price": {
+      "close": 263.94000244,
+      "date": "2026-10-16",
+      "currency": "USD",
+      "url": "https://finance.yahoo.com/quote/LRCX/history/"
+    }
+  },
+  {
+    "symbol": "ASML",
+    "name": "ASML",
+    "currency": "USD",
+    "old_price": {
+      "close": 1641.52001953,
+      "date": "2026-10-16",
+      "currency": "USD",
+      "url": "https://finance.yahoo.com/quote/ASML/history/"
+    }
+  },
+  {
+    "symbol": "NVDA",
+    "name": "NVIDIA",
+    "currency": "USD",
+    "old_price": {
+      "close": 214.13000488,
+      "date": "2026-10-16",
+      "currency": "USD",
+      "url": "https://finance.yahoo.com/quote/NVDA/history/"
+    }
+  },
+  {
+    "symbol": "AMD",
+    "name": "AMD",
+    "currency": "USD",
+    "old_price": {
+      "close": 528.75,
+      "date": "2026-10-16",
+      "currency": "USD",
+      "url": "https://finance.yahoo.com/quote/AMD/history/"
+    }
+  },
+  {
+    "symbol": "AVGO",
+    "name": "Broadcom",
+    "currency": "USD",
+    "old_price": {
+      "close": 328.75,
+      "date": "2026-10-16",
+      "currency": "USD",
+      "url": "https://finance.yahoo.com/quote/AVGO/history/"
+    }
+  },
+  {
+    "symbol": "2330.TW",
+    "name": "TSMC",
+    "currency": "TWD",
+    "old_price": {
+      "close": 2420.0,
+      "date": "2026-10-16",
+      "currency": "TWD",
+      "url": "https://finance.yahoo.com/quote/2330.TW/history/"
+    }
+  },
+  {
+    "symbol": "3711.TW",
+    "name": "ASE Technology",
+    "currency": "TWD",
+    "old_price": {
+      "close": 671.0,
+      "date": "2026-10-16",
+      "currency": "TWD",
+      "url": "https://finance.yahoo.com/quote/3711.TW/history/"
+    }
+  },
+  {
+    "symbol": "2802.T",
+    "name": "味の素",
+    "currency": "JPY",
+    "old_price": {
+      "close": 5280.0,
+      "date": "2026-10-16",
+      "currency": "JPY",
+      "url": "https://finance.yahoo.com/quote/2802.T/history/"
+    }
+  },
+  {
+    "symbol": "4062.T",
+    "name": "イビデン",
+    "currency": "JPY",
+    "old_price": {
+      "close": 9764.0,
+      "date": "2026-10-16",
+      "currency": "JPY",
+      "url": "https://finance.yahoo.com/quote/4062.T/history/"
+    }
+  },
+  {
+    "symbol": "3037.TW",
+    "name": "Unimicron",
+    "currency": "TWD",
+    "old_price": {
+      "close": 1090.0,
+      "date": "2026-10-16",
+      "currency": "TWD",
+      "url": "https://finance.yahoo.com/quote/3037.TW/history/"
+    }
+  },
+  {
+    "symbol": "6146.T",
+    "name": "ディスコ",
+    "currency": "JPY",
+    "old_price": {
+      "close": 53850.0,
+      "date": "2026-10-16",
+      "currency": "JPY",
+      "url": "https://finance.yahoo.com/quote/6146.T/history/"
+    }
+  },
+  {
+    "symbol": "6857.T",
+    "name": "アドバンテスト",
+    "currency": "JPY",
+    "old_price": {
+      "close": 34530.0,
+      "date": "2026-10-16",
+      "currency": "JPY",
+      "url": "https://finance.yahoo.com/quote/6857.T/history/"
+    }
+  },
+  {
+    "symbol": "TER",
+    "name": "Teradyne",
+    "currency": "USD",
+    "old_price": {
+      "close": 325.0,
+      "date": "2026-10-16",
+      "currency": "USD",
+      "url": "https://finance.yahoo.com/quote/TER/history/"
+    }
+  },
+  {
+    "symbol": "000660.KS",
+    "name": "SK hynix",
+    "currency": "KRW",
+    "old_price": {
+      "close": 1272000.0,
+      "date": "2026-10-16",
+      "currency": "KRW",
+      "url": "https://finance.yahoo.com/quote/000660.KS/history/"
+    }
+  },
+  {
+    "symbol": "MU",
+    "name": "Micron",
+    "currency": "USD",
+    "old_price": {
+      "close": 878.84002686,
+      "date": "2026-10-16",
+      "currency": "USD",
+      "url": "https://finance.yahoo.com/quote/MU/history/"
+    }
+  },
+  {
+    "symbol": "005930.KS",
+    "name": "Samsung Electronics",
+    "currency": "KRW",
+    "old_price": {
+      "close": 215500.0,
+      "date": "2026-10-16",
+      "currency": "KRW",
+      "url": "https://finance.yahoo.com/quote/005930.KS/history/"
+    }
+  },
+  {
+    "symbol": "285A.T",
+    "name": "キオクシアHD",
+    "currency": "JPY",
+    "old_price": {
+      "close": 13375.0,
+      "date": "2026-10-16",
+      "currency": "JPY",
+      "url": "https://finance.yahoo.com/quote/285A.T/history/"
+    }
+  },
+  {
+    "symbol": "SNDK",
+    "name": "Sandisk",
+    "currency": "USD",
+    "old_price": {
+      "close": 1299.30004883,
+      "date": "2026-10-16",
+      "currency": "USD",
+      "url": "https://finance.yahoo.com/quote/SNDK/history/"
+    }
+  },
+  {
+    "symbol": "6702.T",
+    "name": "富士通",
+    "currency": "JPY",
+    "old_price": {
+      "close": 4423.0,
+      "date": "2026-10-16",
+      "currency": "JPY",
+      "url": "https://finance.yahoo.com/quote/6702.T/history/"
+    }
+  },
+  {
+    "symbol": "6701.T",
+    "name": "NEC",
+    "currency": "JPY",
+    "old_price": {
+      "close": 5390.0,
+      "date": "2026-10-16",
+      "currency": "JPY",
+      "url": "https://finance.yahoo.com/quote/6701.T/history/"
+    }
+  },
+  {
+    "symbol": "DELL",
+    "name": "Dell Technologies",
+    "currency": "USD",
+    "old_price": {
+      "close": 451.70999146,
+      "date": "2026-10-16",
+      "currency": "USD",
+      "url": "https://finance.yahoo.com/quote/DELL/history/"
+    }
+  },
+  {
+    "symbol": "HPE",
+    "name": "Hewlett Packard Enterprise",
+    "currency": "USD",
+    "old_price": {
+      "close": 55.13000107,
+      "date": "2026-10-16",
+      "currency": "USD",
+      "url": "https://finance.yahoo.com/quote/HPE/history/"
+    }
+  },
+  {
+    "symbol": "SMCI",
+    "name": "Super Micro Computer",
+    "currency": "USD",
+    "old_price": {
+      "close": 31.62999916,
+      "date": "2026-10-16",
+      "currency": "USD",
+      "url": "https://finance.yahoo.com/quote/SMCI/history/"
+    }
+  },
+  {
+    "symbol": "0992.HK",
+    "name": "Lenovo Group",
+    "currency": "HKD",
+    "old_price": {
+      "close": 28.05999947,
+      "date": "2026-10-16",
+      "currency": "HKD",
+      "url": "https://finance.yahoo.com/quote/0992.HK/history/"
+    }
+  },
+  {
+    "symbol": "2382.TW",
+    "name": "Quanta Computer",
+    "currency": "TWD",
+    "old_price": {
+      "close": 322.0,
+      "date": "2026-10-16",
+      "currency": "TWD",
+      "url": "https://finance.yahoo.com/quote/2382.TW/history/"
+    }
+  },
+  {
+    "symbol": "6669.TW",
+    "name": "Wiwynn",
+    "currency": "TWD",
+    "old_price": {
+      "close": 1845.0,
+      "date": "2026-10-16",
+      "currency": "TWD",
+      "url": "https://finance.yahoo.com/quote/6669.TW/history/"
+    }
+  },
+  {
+    "symbol": "2317.TW",
+    "name": "Hon Hai Precision",
+    "currency": "TWD",
+    "old_price": {
+      "close": 244.0,
+      "date": "2026-10-16",
+      "currency": "TWD",
+      "url": "https://finance.yahoo.com/quote/2317.TW/history/"
+    }
+  },
+  {
+    "symbol": "ANET",
+    "name": "Arista Networks",
+    "currency": "USD",
+    "old_price": {
+      "close": 176.97999573,
+      "date": "2026-10-16",
+      "currency": "USD",
+      "url": "https://finance.yahoo.com/quote/ANET/history/"
+    }
+  },
+  {
+    "symbol": "5803.T",
+    "name": "フジクラ",
+    "currency": "JPY",
+    "old_price": {
+      "close": 4503.0,
+      "date": "2026-10-16",
+      "currency": "JPY",
+      "url": "https://finance.yahoo.com/quote/5803.T/history/"
+    }
+  },
+  {
+    "symbol": "COHR",
+    "name": "Coherent",
+    "currency": "USD",
+    "old_price": {
+      "close": 232.8999939,
+      "date": "2026-10-16",
+      "currency": "USD",
+      "url": "https://finance.yahoo.com/quote/COHR/history/"
+    }
+  },
+  {
+    "symbol": "LITE",
+    "name": "Lumentum",
+    "currency": "USD",
+    "old_price": {
+      "close": 824.13000488,
+      "date": "2026-10-16",
+      "currency": "USD",
+      "url": "https://finance.yahoo.com/quote/LITE/history/"
+    }
+  },
+  {
+    "symbol": "6501.T",
+    "name": "日立製作所",
+    "currency": "JPY",
+    "old_price": {
+      "close": 5770.0,
+      "date": "2026-10-16",
+      "currency": "JPY",
+      "url": "https://finance.yahoo.com/quote/6501.T/history/"
+    }
+  },
+  {
+    "symbol": "ETN",
+    "name": "Eaton",
+    "currency": "USD",
+    "old_price": {
+      "close": 391.25,
+      "date": "2026-10-16",
+      "currency": "USD",
+      "url": "https://finance.yahoo.com/quote/ETN/history/"
+    }
+  },
+  {
+    "symbol": "VRT",
+    "name": "Vertiv",
+    "currency": "USD",
+    "old_price": {
+      "close": 206.41999817,
+      "date": "2026-10-16",
+      "currency": "USD",
+      "url": "https://finance.yahoo.com/quote/VRT/history/"
+    }
+  },
+  {
+    "symbol": "6367.T",
+    "name": "ダイキン工業",
+    "currency": "JPY",
+    "old_price": {
+      "close": 21345.0,
+      "date": "2026-10-16",
+      "currency": "JPY",
+      "url": "https://finance.yahoo.com/quote/6367.T/history/"
+    }
+  },
+  {
+    "symbol": "AMZN",
+    "name": "Amazon",
+    "currency": "USD",
+    "old_price": {
+      "close": 250.0,
+      "date": "2026-10-16",
+      "currency": "USD",
+      "url": "https://finance.yahoo.com/quote/AMZN/history/"
+    }
+  },
+  {
+    "symbol": "GOOGL",
+    "name": "Alphabet",
+    "currency": "USD",
+    "old_price": {
+      "close": 340.58999634,
+      "date": "2026-10-16",
+      "currency": "USD",
+      "url": "https://finance.yahoo.com/quote/GOOGL/history/"
+    }
+  },
+  {
+    "symbol": "AAPL",
+    "name": "Apple",
+    "currency": "USD",
+    "old_price": {
+      "close": 343.45999146,
+      "date": "2026-10-16",
+      "currency": "USD",
+      "url": "https://finance.yahoo.com/quote/AAPL/history/"
+    }
+  },
+  {
+    "symbol": "7011.T",
+    "name": "三菱重工",
+    "currency": "JPY",
+    "old_price": {
+      "close": 3796.0,
+      "date": "2026-10-16",
+      "currency": "JPY",
+      "url": "https://finance.yahoo.com/quote/7011.T/history/"
+    }
+  },
+  {
+    "symbol": "GEV",
+    "name": "GE Vernova",
+    "currency": "USD",
+    "old_price": {
+      "close": 921.20001221,
+      "date": "2026-10-16",
+      "currency": "USD",
+      "url": "https://finance.yahoo.com/quote/GEV/history/"
+    }
+  },
+  {
+    "symbol": "ENR.DE",
+    "name": "Siemens Energy",
+    "currency": "EUR",
+    "old_price": {
+      "close": 134.97999573,
+      "date": "2026-10-16",
+      "currency": "EUR",
+      "url": "https://finance.yahoo.com/quote/ENR.DE/history/"
+    }
+  }
+]

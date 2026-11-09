@@ -1,0 +1,42 @@
+{
+  "company_count": 46,
+  "candidate_count": 14,
+  "research_status": {
+    "confirmed": 35,
+    "pending_report": 10,
+    "limited": 1
+  },
+  "checks": [
+    "complete universe, no duplicate symbols",
+    "all quotes positive and timestamped",
+    "all companies have source records",
+    "candidate EPS range and currency checks",
+    "relative Markdown links exist",
+    "catalog current",
+    "archive manifest verified by archive_snapshots --write",
+    "git diff --check passed",
+    "old 10/18 ranking unchanged"
+  ],
+  "part_input_sha256": {
+    "parts/compute.json": "25d5a3f81e7fe065a6dc3c24e8b2398859cd398a18c44178accd1045d4fa1486",
+    "parts/infrastructure.json": "7cd1166bbd0dc3acc65b210574ca5f937ce01f63b9015d7ef14fb711eb43f57a",
+    "parts/japan.json": "d0d9c0c57b7995b8f8ed7df9e631433f37c42de9e92872de0c0b5cf70b7da073",
+    "parts/root.json": "38f718ed0d72fae532a583155f4ff4e4c21f48141430a8435a0e3b2fc8a962ff"
+  },
+  "independent_reviews": [
+    "compute units, dilution, split basis and conclusions reviewed",
+    "Japan/candidate calculations and ASML conversion reviewed; rounding corrected"
+  ],
+  "buy_ranking": {
+    "ranked_count": 10,
+    "updated_price_count": 14,
+    "cutoff_utc": "2026-11-06T04:42:18.964752+00:00",
+    "checks": [
+      "rank uniqueness and coverage",
+      "all updated price/EPS multipliers reproduced",
+      "relative links exist",
+      "old initial prices preserved separately"
+    ],
+    "independent_judgments": "Two independent reviews considered ranking changes; root adopted durability-first overall order with explicit Kioxia-profit sensitivity."
+  }
+}
